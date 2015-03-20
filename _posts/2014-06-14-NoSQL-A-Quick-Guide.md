@@ -2,7 +2,7 @@
 layout: post
 title:  "NoSQL - A Quick Guide"
 date:   2014-06-14 16:20:00
-category: "NoSQL,BigData"
+category: "BigData"
 tags: "NoSQL, BigData"
 excerpt: NoSQL is buzz word now-a-days among the developers and software professionals. What is NoSQL? Where to use NoSQL? 3. Advantages and Disadvantages of NoSQL DB. and many more
 
