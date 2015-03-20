@@ -2,13 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>http://localhost:4000/</loc>
-    <lastmod>2015-03-20T22:44:55+05:30</lastmod>
+    <lastmod>2015-03-20T22:54:30+05:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
     <url>
-      <loc>http://localhost:4000/2014/12/How%20Smart%20Watch%20can%20change%20your%20life</loc>
+      <loc>http://localhost:4000/2014/12/How-Smart-Watch-can-change-your-life</loc>
       
         <lastmod>2014-12-04T21:50:00+05:30</lastmod>
       
@@ -21,7 +21,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/2014/12/Wearable%20technology%20to%20monitor%20Parkinson%E2%80%99s%20disease</loc>
+      <loc>http://localhost:4000/2014/12/Wearable-technology-to-monitor-Parkinson%E2%80%99s-disease</loc>
       
         <lastmod>2014-12-01T21:50:00+05:30</lastmod>
       
@@ -34,7 +34,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/2014/11/Monolithic%20vs%20MicroService%20Architecture</loc>
+      <loc>http://localhost:4000/2014/11/Monolithic-vs-MicroService-Architecture</loc>
       
         <lastmod>2014-11-28T21:50:00+05:30</lastmod>
       
@@ -47,7 +47,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/2014/07/10%20Tips%20for%20fledgling%20developers</loc>
+      <loc>http://localhost:4000/2014/07/10-Tips-for-fledgling-developers</loc>
       
         <lastmod>2014-07-12T21:50:00+05:30</lastmod>
       
@@ -60,7 +60,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/2014/06/Microservice%20Architecture%20-%20A%20Quick%20Guide</loc>
+      <loc>http://localhost:4000/2014/06/Microservice-Architecture-A-Quick-Guide</loc>
       
         <lastmod>2014-06-20T21:50:00+05:30</lastmod>
       
@@ -73,7 +73,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/2014/06/NoSQL%20-%20A%20Quick%20Guide</loc>
+      <loc>http://localhost:4000/2014/06/NoSQL-A-Quick-Guide</loc>
       
         <lastmod>2014-06-14T21:50:00+05:30</lastmod>
       
@@ -86,7 +86,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/2014/06/Migrating%20Web%20Site%20to%20AWS%20Cloud%20-%20A%20Quick%20Guide</loc>
+      <loc>http://localhost:4000/2014/06/Migrating-Web-Site-to-AWS-Cloud-A%20Quick-Guide</loc>
       
         <lastmod>2014-06-05T21:50:00+05:30</lastmod>
       
@@ -102,7 +102,7 @@
   <url>
     <loc>http://localhost:4000/atom.xml</loc>
     
-      <lastmod>2015-03-20T22:44:55+05:30</lastmod>
+      <lastmod>2015-03-20T22:54:30+05:30</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -154,7 +154,7 @@
   <url>
     <loc>http://localhost:4000/sitemap.xml</loc>
     
-      <lastmod>2015-03-20T22:44:55+05:30</lastmod>
+      <lastmod>2015-03-20T22:54:30+05:30</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -167,7 +167,7 @@
   <url>
     <loc>http://localhost:4000//feed.xml</loc>
     
-      <lastmod>2015-03-20T22:44:55+05:30</lastmod>
+      <lastmod>2015-03-20T22:54:30+05:30</lastmod>
     
     
       <changefreq>monthly</changefreq>

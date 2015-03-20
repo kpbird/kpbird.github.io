@@ -1,13 +1,13 @@
 <!doctype html>
 <html lang="en-US">
-    <head>
+<head>
     <meta charset="utf-8" />
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-    <title>Ketan Parmar | Blog</title>
+    <title>Microservice Architecture - A Quick Guide</title>
     
 
-    <meta content="Ketan Parmar | Blog" property="og:title">
-    <meta content="Ketan Parmar | Blog" name="twitter:title">
+    <meta content="Microservice Architecture - A Quick Guide" property="og:title">
+    <meta content="Microservice Architecture - A Quick Guide" name="twitter:title">
     <meta content="Software developer, trainer, speaker and more by Ketan Parmar" property="og:site_name">
     <meta content="Ketan Parmar is a software developer, trainer, speaker." name="description">
     <meta content="Ketan Parmar is a software developer, trainer, speaker." property="og:description">
@@ -21,15 +21,20 @@
 
     <link href="/atom.xml" rel="alternate" title="Atom" type="application/atom+xml">
     <link href="/sitemap.xml" rel="sitemap" title="Sitemap" type="application/xml">
-    <link href="http://localhost:4000/blog/index.html" rel="canonical">
+    <link href="http://localhost:4000/2014/06/Microservice-Architecture-A-Quick-Guide" rel="canonical">
     <meta content="article" property="og:type">
     <meta content="summary" name="twitter:card">
-    <meta content="http://localhost:4000/blog/index.html" property="og:url">
-    <meta content="http://localhost:4000/blog/index.html" name="twitter:url">  
+    <meta content="http://localhost:4000/2014/06/Microservice-Architecture-A-Quick-Guide" property="og:url">
+    <meta content="http://localhost:4000/2014/06/Microservice-Architecture-A-Quick-Guide" name="twitter:url"> 
+    <meta content="2014-06-20T21:50:00+05:30" property="article:published_time">
+    <meta content="http://localhost:4000/index.html#about" property="article:author"> 
     
     
-    <meta property="og:image" content="http://localhost:4000/assets/images/preview/content/people/1.jpg">
-    <meta name="twitter:image:src" content="http://localhost:4000/assets/images/preview/content/people/1.jpg">  
+    <meta property="og:image" content="http://localhost:4000/assets/images/posts//25c6a49.jpg">
+    <meta name="twitter:image:src" content="http://localhost:4000/assets/images/posts//25c6a49.jpg">  
+    <meta property="article:section" content="architecture">   
+    <meta property="article:tag" content="Architecture,">
+    <meta property="article:tag" content="Microservice"> 
     <!--[if lt IE 9]>
     <script type="text/javascript" src="assets/plugins/lt-ie9/html5.js"></script>
     <script type="text/javascript" src="assets/plugins/lt-ie9/respond.min.js"></script>
@@ -57,8 +62,9 @@
    
 </head>
 
-    <body>
-        <div class="inner-cover blog-header" style="background-image:url('/../assets/images/preview/slider/blog.png')">
+
+<body>
+    <div class="inner-cover blog-header" style="background-image:url('/../assets/images/preview/slider/blog.png')">
     <div class="text-center">
         <h1 class="big-title">Blog</h1>
         <p>Share your knowledge. It’s a way to achieve immortality. - Dalai Lama</p>
@@ -88,110 +94,108 @@
         </div>
     </nav>
 </header>
-        <section id="blog">
-            <article class="container">
+    <section id="blog">
+        <article class="container">
             <div class="row">
                 <div class="left col-md-9">
-              
+                    <header>
+                        <h1>Microservice Architecture - A Quick Guide</h1>
+                        <small class="fsize13">
+                            <a href="/2014/06/Microservice-Architecture-A-Quick-Guide" class="label label-default light"><i class="fa fa-dot-circle-o"></i> architecture</a>
+                            <a href="/2014/06/Microservice-Architecture-A-Quick-Guide#disqus_thread" class="label label-default light">0 Comments</a>
+                            <span class="label label-default light">20 June 2014</span>
+                        </small>
+                    </header>
+
+                    <p><img src="/assets/images/posts/25c6a49.jpg" alt="Microservice Architecture - A Quick Guide" class="img-responsive"></p>
+
+<p><strong>1. What is Architecture (Software)?</strong></p>
+
+<p>Architecture is the fundamental organization of a system embodied in its components (i.e. Web Server, Application Server, Databases,Storage, Communication layer, etc...), their relationships to each other, and to the environment (i.e. deployment environment shared server, dedicated server, cloud deployment, etc..), and the principles guiding its design and evolution.</p>
+
+<p><strong>2. What is microservice architecture ?</strong></p>
+
+<p>Microservice means developing a single, small, meaningful functional feature as single service, each service has it’s own process and communicate with lightweight mechanism, deployed in single or multiple servers.</p>
+
+<p><strong>3. Advantages of microservice architecture ?</strong></p>
+
+<ul>
+<li><p>Each micro service is small and focused on a specific feature / business requirement.</p></li>
+<li><p>Microservice can be developed independently by small team of developers (normally 2 to 5 developers).</p></li>
+<li><p>Microservice is loosely coupled, means services are independent, in terms of development and deployment both.</p></li>
+<li><p>Microservice can be developed using different programming language (Personally I don&#39;t suggest to do it).</p></li>
+<li><p>Microservice allows easy and flexible way to integrate automatic deployment with Continuous Integration tools (for e.g: Jenkins, Hudson, bamboo etc..).</p></li>
+<li><p>The productivity of a new team member will be quick enough.</p></li>
+<li><p>Microservice is easy to understand, modify and maintain for a developer because separation of code,small team and focused work.</p></li>
+<li><p>Microservice allows you to take advantage of emerging and latest technologies (framework, programming language , programming practice, etc.).</p></li>
+<li><p>Microservice has code for business logic only, No mixup with HTML,CSS or other UI component.</p></li>
+<li><p>Microservice is easy to scale based on demand.</p></li>
+<li><p>Microservice can deploy on commodity hardware or low / medium configuration servers.</p></li>
+<li><p>Easy to integrate 3rd party service.</p></li>
+<li><p>Every microservice has it&#39;s own storage capability but it depends on the project’s requirement, you can have common database like MySQL or Oracle for all services.</p></li>
+</ul>
+
+<p><strong>4. Disadvantages of microservice architecture ?</strong></p>
+
+<ul>
+<li><p>Microservice architecture brings a lot of operations overhead.</p></li>
+<li><p>DevOps Skill required (http://en.wikipedia.org/wiki/DevOps).</p></li>
+<li><p>Duplication of Effort.</p></li>
+<li><p>Distributed System is complicated to manage .</p></li>
+<li><p>Default to trace problem because of distributed deployment.</p></li>
+<li><p>Complicated to manage whole products when number of services increases.</p></li>
+</ul>
+
+<p><strong>5. In which case / requirement microservice architecture best fit ?</strong></p>
+
+<p>When you need to support Desktop, web , mobile, Smart TVs, Wearable, etc... or you don&#39;t know in future which kind of devices you need to support.</p>
+
+<p><strong>6. Which products / companies are using Microservie architecture?</strong></p>
+
+<p>Most large scale web sites including Twitter, Netflix, Amazon and eBay have evolved from a monolithic architecture to a microservices architecture.</p>
+
+<p><strong>7. How independent micro services communicate with each other?</strong></p>
+
+<p>It&#39;s depend upon requirement, normally developers use HTTP/REST with JSON or Protobuf (Binary protocol) but are free to use any communication protocol.</p>
+
+<p><strong>8. Why is it that everyone are talking about microservices now?</strong></p>
+
+<p>It’s been nearly 15 years since the concept of Service Oriented Architecture really took hold. With the improvement of RESTful web service and JSON as a data interchange format has made it easier than ever to build easily interconnectable services simply and quickly.</p>
+
+<p><strong>9. Presentation</strong></p>
+
+<p><a href="http://www.infoq.com/presentations/Micro-Services">http://www.infoq.com/presentations/Micro-Services</a></p>
+
+<p><strong>10. Video</strong></p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2rKEveL55TY" frameborder="0" allowfullscreen></iframe>
+
+<p><strong>11. Picture: Monolithic vs Modular vs Service oriented architecture</strong></p>
+
+<p><img src="/assets/images/posts/0d60cc3.jpg" alt="Microservice Architecture - A Quick Guide" class="img-responsive"></p>
+
+               <!--      <p class="fsize16">Tags: 
+                        <a class="label label-default light" href="#"><i class="fa fa-tags"></i> </a> 
+                    </p> -->
+                    <br/>
+                     
+                        <div class="nav-previous">
+                          <a class="" href="http://localhost:4000/2014/06/NoSQL-A-Quick-Guide" rel="prev"><i class="fa fa-long-arrow-left nav-previous-link"></i>NoSQL - A Quick Guide</a>
+                        </div>
+                      
                     
-<div class="item">
-    <div class="item-title">
-        <h2><a href="/2014/12/How-Smart-Watch-can-change-your-life">How Smart Watch can change your life</a></h2>
-        <a href="/2014/12/How-Smart-Watch-can-change-your-life" class="label label-default light"><i class="fa fa-dot-circle-o"></i> smart watch</a>
-        <a href="/2014/12/How-Smart-Watch-can-change-your-life#disqus_thread" class="label label-default light">0 Comments</a>
-        <span class="label label-default light">4 December 2014</span>
-    </div>
-    
-    
-        <img src="/assets/images/posts//05be48e.jpg" alt="post image" title="post image" class="img-responsive">
-    
-    <p>A smartwatch (or smart watch) is a computerized wristwatch with functionality that is enhanced beyond timekeeping, and is often comparable to a personal digital assistant (PDA) device" - Wikipedia</p>
-    <a href="/2014/12/How-Smart-Watch-can-change-your-life" class="btn btn-xs"><i class="fa fa-sign-out"></i> READ MORE</a>
-</div>
-
-<div class="item">
-    <div class="item-title">
-        <h2><a href="/2014/12/Wearable-technology-to-monitor-Parkinson%E2%80%99s-disease">Wearable technology to monitor Parkinson’s disease</a></h2>
-        <a href="/2014/12/Wearable-technology-to-monitor-Parkinson%E2%80%99s-disease" class="label label-default light"><i class="fa fa-dot-circle-o"></i> wearable</a>
-        <a href="/2014/12/Wearable-technology-to-monitor-Parkinson%E2%80%99s-disease#disqus_thread" class="label label-default light">0 Comments</a>
-        <span class="label label-default light">1 December 2014</span>
-    </div>
-    
-    
-        <img src="/assets/images/posts//3504283.jpg" alt="post image" title="post image" class="img-responsive">
-    
-    <p>What is parkinson's disease, how smart watch and warable device help doctors and patients...</p>
-    <a href="/2014/12/Wearable-technology-to-monitor-Parkinson%E2%80%99s-disease" class="btn btn-xs"><i class="fa fa-sign-out"></i> READ MORE</a>
-</div>
-
-<div class="item">
-    <div class="item-title">
-        <h2><a href="/2014/11/Monolithic-vs-MicroService-Architecture">Monolithic vs MicroService Architecture</a></h2>
-        <a href="/2014/11/Monolithic-vs-MicroService-Architecture" class="label label-default light"><i class="fa fa-dot-circle-o"></i> architecture</a>
-        <a href="/2014/11/Monolithic-vs-MicroService-Architecture#disqus_thread" class="label label-default light">0 Comments</a>
-        <span class="label label-default light">28 November 2014</span>
-    </div>
-    
-    
-        <img src="/assets/images/posts//007ac2e.png" alt="post image" title="post image" class="img-responsive">
-    
-    <p>This is how industry move from monilighic to microservice...</p>
-    <a href="/2014/11/Monolithic-vs-MicroService-Architecture" class="btn btn-xs"><i class="fa fa-sign-out"></i> READ MORE</a>
-</div>
-
-<div class="item">
-    <div class="item-title">
-        <h2><a href="/2014/07/10-Tips-for-fledgling-developers">10 Tips for fledgling developers</a></h2>
-        <a href="/2014/07/10-Tips-for-fledgling-developers" class="label label-default light"><i class="fa fa-dot-circle-o"></i> random</a>
-        <a href="/2014/07/10-Tips-for-fledgling-developers#disqus_thread" class="label label-default light">0 Comments</a>
-        <span class="label label-default light">12 July 2014</span>
-    </div>
-    
-    
-        <img src="/assets/images/posts//22783b7.jpg" alt="post image" title="post image" class="img-responsive">
-    
-    <p>Continue Study, Learn professional ethics, read a lot of code, learn tool thoroughly, and many more...</p>
-    <a href="/2014/07/10-Tips-for-fledgling-developers" class="btn btn-xs"><i class="fa fa-sign-out"></i> READ MORE</a>
-</div>
-
-<div class="item">
-    <div class="item-title">
-        <h2><a href="/2014/06/Microservice-Architecture-A-Quick-Guide">Microservice Architecture - A Quick Guide</a></h2>
-        <a href="/2014/06/Microservice-Architecture-A-Quick-Guide" class="label label-default light"><i class="fa fa-dot-circle-o"></i> architecture</a>
-        <a href="/2014/06/Microservice-Architecture-A-Quick-Guide#disqus_thread" class="label label-default light">0 Comments</a>
-        <span class="label label-default light">20 June 2014</span>
-    </div>
-    
-    
-        <img src="/assets/images/posts//25c6a49.jpg" alt="post image" title="post image" class="img-responsive">
-    
-    <p>What is Architecture? What is microservice architecture? Advantage of microservice architecture? and many more...</p>
-    <a href="/2014/06/Microservice-Architecture-A-Quick-Guide" class="btn btn-xs"><i class="fa fa-sign-out"></i> READ MORE</a>
-</div>
-
-
-<div class="text-center">
-    <ul class="pagination">
-        
-        <li><a href=""><i class="fa fa-chevron-left"></i></a></li>
-        
-        
-        
-        
-            <li class="active"><a href="">1</a></li>
-        
-        
-        
-        
-                 <li><a href="/blog/page/2">2</a></li>
-        
-        
-        
-        <li><a href="/blog/page/2"><i class="fa fa-chevron-right"></i></a></li>
-        
-    </ul>
-</div>
-
+                        <div class="nav-next">
+                          <a class="" href="http://localhost:4000/2014/07/10-Tips-for-fledgling-developers" rel="next">10 Tips for fledgling developers<i class="fa fa-long-arrow-right nav-next-link"></i></a>
+                        </div>
+                       
+                     
+                      <br/>
+                    <hr/>
+                    <div id="disqus_thread"></div>
+                   
+                    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+                    </noscript>
+                    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
                 </div>
                 <div class="right col-md-3">
     <!-- blog search -->
@@ -224,9 +228,9 @@
     </div>
 </div>
             </div>
-            </article>
-        </section>
-         <footer>
+        </article>
+    </section>
+     <footer>
         <!-- SCROOL TO TOP -->
         <a href="#toTop" class="fa fa-arrow-up toTop"></a>
         <div class="container">
@@ -319,16 +323,27 @@
         window._gaq = [['_setAccount','UA-XXXXX-X'],['_trackPageview'],['_trackPageLoadTime']];
         Modernizr.load({load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'});
 </script>  -->
-        <script type="text/javascript">
+     <script type="text/javascript">
                     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-                    var disqus_shortname = 'kpbird'; // required: replace example with your forum shortname
+                    var disqus_shortname = 'kpbird';
                     /* * * DON'T EDIT BELOW THIS LINE * * */
-                    (function () {
-                        var s = document.createElement('script'); s.async = true;
+                     (function() {
+                        var dsq = document.createElement('script');
+                        dsq.type = 'text/javascript';
+                        dsq.async = true;
+                        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                    })();
+                    (function() {
+                        var s = document.createElement('script');
+                        s.async = true;
                         s.type = 'text/javascript';
                         s.src = '//' + disqus_shortname + '.disqus.com/count.js';
                         (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
                     }());
-        </script>
-    </body>
+                    </script>
+
+              
+</body>
+
 </html>

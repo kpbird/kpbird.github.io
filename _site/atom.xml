@@ -4,7 +4,7 @@
  <title>Ketan Parmar</title>
  <link type="application/atom+xml" href="http://romuluscrisan.com/atom.xml" rel="self"/>
  <link href="http://www.romuluscrisan.com/"/>
- <updated>2015-03-20T22:44:55+05:30</updated>
+ <updated>2015-03-20T22:54:30+05:30</updated>
  <id>http://www.kpbird.com/</id>
  <author>
    <name>Ketan Parmar</name>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>How Smart Watch can change your life</title>
-   <link href="http://www.romuluscrisan.com/2014/12/How%20Smart%20Watch%20can%20change%20your%20life"/>
+   <link href="http://www.romuluscrisan.com/2014/12/How-Smart-Watch-can-change-your-life"/>
    <updated>2014-12-04T21:50:00+05:30</updated>
-   <id>http://www.romuluscrisan.com/2014/12/How Smart Watch can change your life</id>
+   <id>http://www.romuluscrisan.com/2014/12/How-Smart-Watch-can-change-your-life</id>
    <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/images/posts/05be48e.jpg&quot; alt=&quot;Smart Watch&quot; title=&quot;Smart Watch&quot; class=&quot;img-responsive&quot;&gt;&lt;/p&gt;
 
 &lt;p&gt;_&amp;quot;A smartwatch (or smart watch) is a computerized wristwatch with functionality that is enhanced beyond timekeeping, and is often comparable to a personal digital assistant (PDA) device&amp;quot; - _Wikipedia&lt;/p&gt;
@@ -49,9 +49,9 @@
  
  <entry>
    <title>Wearable technology to monitor Parkinson’s disease</title>
-   <link href="http://www.romuluscrisan.com/2014/12/Wearable%20technology%20to%20monitor%20Parkinson%E2%80%99s%20disease"/>
+   <link href="http://www.romuluscrisan.com/2014/12/Wearable-technology-to-monitor-Parkinson%E2%80%99s-disease"/>
    <updated>2014-12-01T21:50:00+05:30</updated>
-   <id>http://www.romuluscrisan.com/2014/12/Wearable technology to monitor Parkinson’s disease</id>
+   <id>http://www.romuluscrisan.com/2014/12/Wearable-technology-to-monitor-Parkinson’s-disease</id>
    <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/images/posts/3504283.jpg&quot; alt=&quot;Wearable technology to monitor Parkinson’s disease&quot; class=&quot;img-responsive&quot;&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;/p&gt;
@@ -106,9 +106,9 @@ Real-time analysis.&lt;/li&gt;
  
  <entry>
    <title>Monolithic vs MicroService Architecture</title>
-   <link href="http://www.romuluscrisan.com/2014/11/Monolithic%20vs%20MicroService%20Architecture"/>
+   <link href="http://www.romuluscrisan.com/2014/11/Monolithic-vs-MicroService-Architecture"/>
    <updated>2014-11-28T21:50:00+05:30</updated>
-   <id>http://www.romuluscrisan.com/2014/11/Monolithic vs MicroService Architecture</id>
+   <id>http://www.romuluscrisan.com/2014/11/Monolithic-vs-MicroService-Architecture</id>
    <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/images/posts/007ac2e.png&quot; alt=&quot;Monolithic vs MicroService Architecture&quot; class=&quot;img-responsive&quot;&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Monolithic architecture is something that build from single piece of material, historically from rock. Monolith term normally use for object made from single large piece of material.”&lt;/em&gt; - &lt;strong&gt;Non-Technical Definition&lt;/strong&gt;&lt;/p&gt;
@@ -184,9 +184,9 @@ services-architecture-advantages&lt;/a&gt;&lt;/li&gt;
  
  <entry>
    <title>10 Tips for fledgling developers</title>
-   <link href="http://www.romuluscrisan.com/2014/07/10%20Tips%20for%20fledgling%20developers"/>
+   <link href="http://www.romuluscrisan.com/2014/07/10-Tips-for-fledgling-developers"/>
    <updated>2014-07-12T21:50:00+05:30</updated>
-   <id>http://www.romuluscrisan.com/2014/07/10 Tips for fledgling developers</id>
+   <id>http://www.romuluscrisan.com/2014/07/10-Tips-for-fledgling-developers</id>
    <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/images/posts/22783b7.jpg&quot; alt=&quot;10 Tips for fledgling developers&quot; class=&quot;img-responsive&quot;&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;1. Continues Study&lt;/strong&gt;&lt;/p&gt;
@@ -250,9 +250,9 @@ services-architecture-advantages&lt;/a&gt;&lt;/li&gt;
  
  <entry>
    <title>Microservice Architecture - A Quick Guide</title>
-   <link href="http://www.romuluscrisan.com/2014/06/Microservice%20Architecture%20-%20A%20Quick%20Guide"/>
+   <link href="http://www.romuluscrisan.com/2014/06/Microservice-Architecture-A-Quick-Guide"/>
    <updated>2014-06-20T21:50:00+05:30</updated>
-   <id>http://www.romuluscrisan.com/2014/06/Microservice Architecture - A Quick Guide</id>
+   <id>http://www.romuluscrisan.com/2014/06/Microservice-Architecture-A-Quick-Guide</id>
    <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/images/posts/25c6a49.jpg&quot; alt=&quot;Microservice Architecture - A Quick Guide&quot; class=&quot;img-responsive&quot;&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;1. What is Architecture (Software)?&lt;/strong&gt;&lt;/p&gt;
@@ -324,9 +324,9 @@ services-architecture-advantages&lt;/a&gt;&lt;/li&gt;
  
  <entry>
    <title>NoSQL - A Quick Guide</title>
-   <link href="http://www.romuluscrisan.com/2014/06/NoSQL%20-%20A%20Quick%20Guide"/>
+   <link href="http://www.romuluscrisan.com/2014/06/NoSQL-A-Quick-Guide"/>
    <updated>2014-06-14T21:50:00+05:30</updated>
-   <id>http://www.romuluscrisan.com/2014/06/NoSQL - A Quick Guide</id>
+   <id>http://www.romuluscrisan.com/2014/06/NoSQL-A-Quick-Guide</id>
    <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/images/posts/07e4e1f.jpg&quot; alt=&quot;NoSQL - A Quick Guide&quot; class=&quot;img-responsive&quot;&gt;&lt;/p&gt;
 
 &lt;p&gt;NoSQL is buzz word now-a-days among the developers and software professionals.&lt;/p&gt;
@@ -427,9 +427,9 @@ services-architecture-advantages&lt;/a&gt;&lt;/li&gt;
  
  <entry>
    <title>Migrating Web Site to AWS Cloud - A Quick Guide</title>
-   <link href="http://www.romuluscrisan.com/2014/06/Migrating%20Web%20Site%20to%20AWS%20Cloud%20-%20A%20Quick%20Guide"/>
+   <link href="http://www.romuluscrisan.com/2014/06/Migrating-Web-Site-to-AWS-Cloud-A%20Quick-Guide"/>
    <updated>2014-06-05T21:50:00+05:30</updated>
-   <id>http://www.romuluscrisan.com/2014/06/Migrating Web Site to AWS Cloud - A Quick Guide</id>
+   <id>http://www.romuluscrisan.com/2014/06/Migrating-Web-Site-to-AWS-Cloud-A Quick-Guide</id>
    <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/images/posts/33c24ac.jpg&quot; alt=&quot;Migrating Web Site to AWS Cloud - A Quick Guide&quot; class=&quot;img-responsive&quot;&gt;&lt;/p&gt;
 
 &lt;p&gt;This is a quick tip to migrate your existing website to AWS Cloud.I assume that you have basic knowledge of AWS Cloud and server side architecture. This post does not include a discussion of pros and cons of AWS or Cloud services. Elasticity and Auto-Scaling are two main features of Cloud. If we don&amp;#39;t leverage these feature then there isn&amp;#39;t any difference between hosting website in dedicate server or AWS Cloud. You can create EC2 instance and deploy your existing code. It will work perfect, but in this case you cannot apply auto-scale. There is no purpose of migrating web site to AWS Cloud without auto-scaling.&lt;/p&gt;
