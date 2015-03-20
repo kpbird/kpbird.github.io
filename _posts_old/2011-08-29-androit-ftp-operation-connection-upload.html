@@ -1,0 +1,36 @@
+---
+layout: post
+title: 'Androit : FTP  operation (connection, upload, download ,list,etc)'
+date: '2011-08-29T12:48:00.000+05:30'
+author: Ketan Parmar
+tags:
+- Android FTP demo
+- FTP
+- Android
+modified_time: '2011-08-29T12:48:07.527+05:30'
+blogger_id: tag:blogger.com,1999:blog-17114597.post-1118167114437520666
+blogger_orig_url: http://www.kpbird.com/2011/08/androit-ftp-operation-connection-upload.html
+---
+
+<div dir="ltr" style="text-align: left;" trbidi="on"><br />Android SDK does not provide FTP connection, so that We need to use external library for FTP operation, There are various option available for FTP connection like Apache, Here I am using ftp4j. I choose ftp4j because it's very lightweight api/jar file, the FTP library size is almost 70 KB. ftp4j provides listener (FTPDataTransferListener) to check progress of uploading or downloading.<br /><br /><a href="http://www.sauronsoftware.it/projects/ftp4j/">Click here to download ftp4j library</a><br /><br />To Test my android ftp demo application you need to have FTP Host Url or IP and FTP username and password.<br /><br />Here is the uploadFile function, just pass File object which you want to upload,  FTP_HOST, FTP_USER,FTP_PASS  are static final String object, you need to replace value of there variable before test the android ftp demo application<br /><br /><pre class="brush: java">public void uploadFile(File fileName){
+<br />    	
+<br />    	
+<br />		 FTPClient client = new FTPClient();
+<br />		try {
+<br />			client.connect(FTP_HOST,21);
+<br />			client.login(FTP_USER, FTP_PASS);
+<br />			client.setType(FTPClient.TYPE_BINARY);
+<br />			client.changeDirectory("/");
+<br />			client.upload(fileName, new MyTransferListener());
+<br />		} catch (Exception e) {
+<br />			e.printStackTrace();
+<br />			try {
+<br />				client.disconnect(true);	
+<br />			} catch (Exception e2) {
+<br />				e2.printStackTrace();
+<br />			}
+<br />		}
+<br />		
+<br />    }
+<br />
+<br /></pre><br /><a href="https://docs.google.com/viewer?a=v&amp;pid=explorer&amp;chrome=true&amp;srcid=0B9CK0aNgCtjRNDlkYjRhOTktMWUyNy00ODcxLTg1ZWItMjc5ZDRhNzg4ZTFi&amp;hl=en">Click Here to download full source code.</a><br /><br />Note: Click on File select download original.<br /><br /></div>

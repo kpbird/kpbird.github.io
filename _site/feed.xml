@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+  xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+  <channel>
+    <title>Ketan Parmar</title>
+    <link>http://localhost:4000</link>
+    <description>Ketan Parmar is a software developer, trainer, speaker.</description>
+    <pubDate>Thu, 04 Dec 2014 21:50:00 +0530</pubDate>
+    <item>
+      <title>How Smart Watch can change your life</title>
+      <link>http://localhost:4000/2014/12/How%20Smart%20Watch%20can%20change%20your%20life</link>
+      <description><![CDATA[A smartwatch (or smart watch) is a computerized wristwatch with functionality that is enhanced beyond timekeeping, and is often comparable to a personal digital assistant (PDA) device" - Wikipedia]]></description>
+      <comments>http://localhost:4000/2014/12/How%20Smart%20Watch%20can%20change%20your%20life#disqus_thread</comments>
+      <pubDate>Thu, 04 Dec 2014 21:50:00 +0530</pubDate>
+      <guid>http://localhost:4000/2014/12/How%20Smart%20Watch%20can%20change%20your%20life</guid>
+      <content:encoded><![CDATA[<p><img src="/assets/images/posts/05be48e.jpg" alt="Smart Watch" title="Smart Watch" class="img-responsive"></p>
+
+<p>_&quot;A smartwatch (or smart watch) is a computerized wristwatch with functionality that is enhanced beyond timekeeping, and is often comparable to a personal digital assistant (PDA) device&quot; - _Wikipedia</p>
+
+<p>Avi Greengart, a consumer device analyst, predicted that 2013 may be &quot;the year of Smart watch&quot;. This prediction turned out to be true as majority of smart phone manufacturer are focusing on smart watch and wearable. Many of them have already released smart watch and others have near future release plans. It is forecasted that 350 million smart watches will ship by 2020<a href="https://media.licdn.com/mpr/mpr/shrinknp_500_500/p/4/005/09f/13c/35409df.png">1</a>.</p>
+
+<p><img src="https://media.licdn.com/mpr/mpr/shrinknp_500_500/p/4/005/09f/13c/35409df.png" alt=""></p>
+
+<p>Smart watch shipments 2013-2020 (in millions)</p>
+
+<p>There are numerous day-to-day use cases that can be made simple yet secure with usage of smart watch. Let&#39;s have quick look, how smart watch can make your life easy.</p>
+
+<ol>
+<li><strong>Smart Watch as ID card:</strong> Do you forget to carry ID card every morning? NFC based smart watch can work as your ID card. Enterprise can do away with hassle of issuing separate ID card to employees having smart watch.</li>
+<li><strong>Smart Watch as Wallet:</strong> Do you feel your wallet is bulky with credit cards and other useless stuff? Smart watch can replace your need to carry credit cards. Smart Watch and &quot;Card on File&quot; concept can replace need of carrying plastic card in your wallet.</li>
+<li><strong>Smart Watch as Health monitor:</strong> Are you a health geek? Or having health issue which requires continuous monitoring? A smart watch with sensors like Heart Rate, Body Temperature, Accelerometer, etc., will collect your health data and upload to cloud for 24x7 care.</li>
+<li><strong>Smart Watch as Remote control</strong>: Are you confused with different remotes for different systems like home garage door, television, Set Top Box etc.? Smart Watch with Bluetooth can work as remote for your garage, television etc.</li>
+<li><strong>Smart Watch as Security Token:</strong> Do you need to carry RSA Token to access highly secure software or physical location (like Server Room). Smart watch can work as RSA token, it can generate software RSA key. Or it can add 3rd factor of authentication.</li>
+<li><strong>Smart Watch as SOS Device:</strong> Smart watch knows when you could be in danger and sends for help. Smart watch contains a gyroscope and an accelerometer, that detect physical activity or aggressive movements, and mobile app send SMS and email to configured emergency contacts with your current location.</li>
+<li><strong>Smart Watch as Notification/Reminder Device:</strong> This is prime feature of smart watch as of now. It will display different notification from smart phone and allow quick action. With smart watch you will never miss important things like breaking news, flight alerts, meeting calls, reminders, weather alerts.</li>
+</ol>
+
+<p>Smart Watch will change our life in many ways. It can become your identity for office access, wallet for payment, car door keys and much more…Vision is smart watch will replace your need of carrying disparate accessibility tokens including a smart phone.</p>
+
+<p><strong>Reference:</strong></p>
+
+<p>[1] <a href="http://www.forbes.com/sites/michaelwolf/2013/09/27/smartwatch-market-forecast-to-reach-15-million-in-2014/">http://www.forbes.com/sites/michaelwolf/2013/09/27/smartwatch-market-forecast-to-reach-15-million-in-2014/</a></p>
+]]></content:encoded>
+      <dc:date>2014-12-04T21:50:00+05:30</dc:date>
+    </item>
+    <item>
+      <title>Wearable technology to monitor Parkinson’s disease</title>
+      <link>http://localhost:4000/2014/12/Wearable%20technology%20to%20monitor%20Parkinson%E2%80%99s%20disease</link>
+      <description><![CDATA[What is parkinson's disease, how smart watch and warable device help doctors and patients...]]></description>
+      <comments>http://localhost:4000/2014/12/Wearable%20technology%20to%20monitor%20Parkinson%E2%80%99s%20disease#disqus_thread</comments>
+      <pubDate>Mon, 01 Dec 2014 21:50:00 +0530</pubDate>
+      <guid>http://localhost:4000/2014/12/Wearable%20technology%20to%20monitor%20Parkinson%E2%80%99s%20disease</guid>
+      <content:encoded><![CDATA[<p><img src="/assets/images/posts/3504283.jpg" alt="Wearable technology to monitor Parkinson’s disease" class="img-responsive"></p>
+
+<p><strong>Introduction</strong></p>
+
+<p>Parkinson&#39;s disease is a degenerative disorder of central nervous system. It&#39;s more common in older people after the age of 60. It is sometime call idiopathic because it has not external identifiable cause. The early symptoms of disease are shaking, difficulty with walking, rigidity, bradykinesia (slowness of movements), postural instability, freezing and loss a sense of smell. In later stage when disease increase, patient may have behavior and thinking issues. According to the National Parkinson’s Foundation survey in 2010 [1], nearly 1 million people in the U.S. are living with Parkinson’s disease, with between 50,000 and 60,000 new cases diagnosed each year. Medication costs for an individual person with Parkinson&#39;s disease average $2,500 a year [2].</p>
+
+<p><strong>Problem</strong></p>
+
+<p>There is not biological markers to diagnose Parkinson’s disease. Researchers are working hard to identify the cause of disease.</p>
+
+<p>The physicians are use following techniques for diagnosis.</p>
+
+<ol>
+<li>The doctor tries to observe if patient’s expression is animated.</li>
+<li>Patient’s arms are observed for tremor, which is present either when they are at rest, or extended.</li>
+<li>Is there stiffness in patient’s limbs or neck?</li>
+<li>Can patient rise from a chair easily?</li>
+<li>Do patient walk normally or with short steps, and symmetrically swing their arms? The doctor will pull patient backwards.</li>
+<li>How quickly can patient regain his/her balance?</li>
+</ol>
+
+<p>Above techniques are traditional and subjective, the result may vary as per doctor&#39;s observation. These techniques have not changed since Dr. James Parkinson suggested before 200 years (1817). There is no cure for Parkinson’s, but the drug levadopa and other medications can control symptoms for years together. In addition to above techniques physician suggest a patient to undergo PET Scan, CT Scan and MRI to check other effects on body. Accurate and objective diagnosis is primary challenge for physician.</p>
+
+<p><strong>Solution</strong></p>
+
+<p>The primary symptoms of Parkinson&#39;s disease is Moto symptoms - Shaking or tremor and walking difficulty. Latest technical innovation in sensors and wearable has potential to transform current practice of observing &amp; capturing effect of Moto symptoms on patients. With the wearable device monitoring, symptoms can be measured objectively. For instance, a patient might inform the doctor that he felt tremor for several minutes, whereas actual duration would have been few seconds. With these wearable device doctors can get precise measurements about the &quot;frequency and severity&quot; of symptoms.</p>
+
+<p>There are multifold benefits of using wearable to monitor patients.</p>
+
+<ol>
+<li>Automatically capture data without any effort made by patient.
+Real-time analysis.</li>
+<li>Data will be store in cloud to provide accessibility anywhere, anytime.</li>
+<li>Doctors can diagnosis multiple patient at a same time with cloud based system.</li>
+<li>Patient need not visit doctor for routine observation.</li>
+<li>Data will be helpful for research.</li>
+<li>Data will be used to monitor effect of new drug.</li>
+<li>Data will be used for progression of disease and behavior pattern.</li>
+</ol>
+
+<p><strong>Conclusion</strong></p>
+
+<p>Wearable has potential to revolutionize diagnosis technique for Parkinson&#39;s disease. Using wearable technology, researchers can actually monitor and measurable Moto symptoms. It will help to find new drugs, can save thousands of dollars and most importantly researchers will find cause and treatment of Parkinson&#39;s disease to save patient&#39;s life.</p>
+
+<p><strong>Reference</strong></p>
+
+<p>[1] <a href="http://www.webmd.com/parkinsons-disease/news/20101004/parkinsons-later-diagnosis-earlier-death">http://www.webmd.com/parkinsons-disease/news/20101004/parkinsons-later-diagnosis-earlier-death</a></p>
+
+<p>[2] <a href="http://www.pdf.org/en/parkinson_statistics">http://www.pdf.org/en/parkinson_statistics</a></p>
+]]></content:encoded>
+      <dc:date>2014-12-01T21:50:00+05:30</dc:date>
+    </item>
+    <item>
+      <title>Monolithic vs MicroService Architecture</title>
+      <link>http://localhost:4000/2014/11/Monolithic%20vs%20MicroService%20Architecture</link>
+      <description><![CDATA[This is how industry move from monilighic to microservice...]]></description>
+      <comments>http://localhost:4000/2014/11/Monolithic%20vs%20MicroService%20Architecture#disqus_thread</comments>
+      <pubDate>Fri, 28 Nov 2014 21:50:00 +0530</pubDate>
+      <guid>http://localhost:4000/2014/11/Monolithic%20vs%20MicroService%20Architecture</guid>
+      <content:encoded><![CDATA[<p><img src="/assets/images/posts/007ac2e.png" alt="Monolithic vs MicroService Architecture" class="img-responsive"></p>
+
+<p><em>Monolithic architecture is something that build from single piece of material, historically from rock. Monolith term normally use for object made from single large piece of material.”</em> - <strong>Non-Technical Definition</strong></p>
+
+<p><em>“Monolithic application has single code base with multiple modules. Modules are divided as either for business features or technical features. It has single build system which build entire application and/or dependency. It also has single executable or deployable binary”</em> – <strong>Technical Definition</strong></p>
+
+<p>Industry is using this approach since long to develop enterprise application. Many companies have invested years to build enterprise application with monolithic approach. Sometime it also called multi-tier architecture because monolithic applications are divided in three or more layers or tire i.e. presentation, business, database, application, etc. It was a time of browser evaluation. Enterprise was focused on desktop/laptop devices with Web Browser as client, which doesn&#39;t require to expose data with API, mainly because browsers can understand only HTML, CSS and JavaScript. Although, Enterprise was using Enterprise Data Bus(EDB), Electronic Data Interchange(EDI) , Enterprise Data Exchange (EDX) and many more (<a href="http://www.oasis-open.org/standards">https://www.oasis-open.org/standards</a>) data exchange format to interact with each other in back-end. Monolithic architecture need of enterprises&#39; at that time.</p>
+
+<p>Suddenly, entire paradigm shift from browser / desktop to mobile / smart devices. Enterprise need to serve data to different devices and form factors (smart phone, tablet, handheld, etc). Smart phone become always available, always on and personal device for everyone, which demand information anytime, anywhere, on fingertip. Mobile application is nearly useless without internet connectivity and backend services. Now is a time for mobile first, every enterprises are looking forward to develop mobile application before web. To developer mobile application enterprise need to expose data using API (REST or SOAP) because legacy data exchange format was not compatible with mobile application. With increasing demand of mobile application force to change back-end architecture. This is prime force behind migrating monolithic architecture to microservice architecture.</p>
+
+<p>Microservice architecture is an approach of building large enterprise application with multiple small unit called service, each service develop, deploy and test individually. Each service intercommunicate with a common communication protocol like REST web service with JSON. Each service run individually either in single machine or different machine but they execute its own separate process. Each service may have own database or storage system or they can share common database or storage system. Microservice is all about distribute or break application in small chunks.</p>
+
+<p>Microservice is more than code and structure. It’s way of working. Its culture in a way, every developer or team own some part of large application. Microservice is not ultimate solution for every application but it’s surely solution for large enterprise application. Microservice has some shortfalls like increase lot of operations overhead, DevOps skills required, complex to manage because of distributed system, bug tracking become challenging.</p>
+
+<p><strong>Difficulties with monolithic application, when it grow</strong></p>
+
+<ul>
+<li>Large monolithic code base makes complicated to understand, especially for new developer</li>
+<li>Scaling become challenging</li>
+<li>Continuously integration / deployment become complex and time consuming. You may require dedicated team for build and deploy</li>
+<li>Overloaded IDE, Large code base makes IDE slow, build time increase.</li>
+<li>Extremely difficult to change technology or language or framework because everything is tightly coupled and depend up on each other.</li>
+</ul>
+
+<p><strong>Privilege with Microservice architecture, when it grow</strong></p>
+
+<ul>
+<li>Each microservice is small and focused on a specific feature / business requirement.</li>
+<li>Microservice can be developed independently by small team of developers (normally 2 to 5 developers).</li>
+<li>Microservice is loosely coupled, means services are independent, in terms of development and deployment both.</li>
+<li>Microservice can be developed using different programming language (Personally I don&#39;t suggest to do it).</li>
+<li>Microservice allows easy and flexible way to integrate automatic deployment with Continuous Integration tools (for e.g: Jenkins, Hudson, bamboo etc..).
+The productivity of a new team member will be quick enough.</li>
+<li>Microservice allows you to take advantage of emerging and latest technologies (framework, programming language, programming practice, etc.).</li>
+<li>Microservice is easy to scale based on demand.
+In a nutshell, monolithic vs microservice architecture is like elephant vs ant approach. What you wants to build a giant system like elephant or army of ant, small, fast and effective.</li>
+</ul>
+
+<p><strong>People to follow</strong></p>
+
+<ul>
+<li>Martin Fowler <a href="http://twitter.com/@martinfowler">@martinfowler</a></li>
+<li>Victor Klang <a href="http://twitter.com/@viktorklang">@viktorklang</a></li>
+<li>Jeppe Cramon <a href="http://twitter.com/@jeppec">@jeppec</a></li>
+<li>Benjamin Wootton <a href="http://twitter.com/@benjaminwootton">@benjaminwootton</a></li>
+<li>Russ Miles <a href="http://twitter.com/@russmiles">@russmiles</a></li>
+</ul>
+
+<p><strong>Article &amp; Presentation</strong></p>
+
+<ul>
+<li><a href="http://martinfowler.com/articles/microservices.html">http://martinfowler.com/articles/microservices.html</a></li>
+<li><a href="http://yow.eventer.com/yow-2012-1012/micro-services-architecture-by-fred-george-1286">http://yow.eventer.com/yow-2012-1012/micro-services-architecture-by-fred-george-1286</a></li>
+<li><a href="http://www.infoq.com/presentations/Breaking-the-Monolith">http://www.infoq.com/presentations/Breaking-the-Monolith</a></li>
+<li><a href="http://www.linkedin.com/today/post/article/20140529022253-6461201-seven-micro-%0Aservices-architecture-advantages">https://www.linkedin.com/today/post/article/20140529022253-6461201-seven-micro-
+services-architecture-advantages</a></li>
+</ul>
+
+<p><strong>Case Studies</strong></p>
+
+<ul>
+<li>Build Microservices at Krma <a href="http://blog.yourkarma.com/building-microservices-at-karma">https://blog.yourkarma.com/building-microservices-at-karma</a></li>
+<li>Migrating to Microservice <a href="http://www.infoq.com/presentations/migration-cloud-native">http://www.infoq.com/presentations/migration-cloud-native</a></li>
+</ul>
+
+<p><strong>Event</strong></p>
+
+<ul>
+<li>µCon: The Microservices Conference : <a href="http://killsmatter.com/conferences/6312-mucon">https://skillsmatter.com/conferences/6312-mucon</a></li>
+</ul>
+]]></content:encoded>
+      <dc:date>2014-11-28T21:50:00+05:30</dc:date>
+    </item>
+    <item>
+      <title>10 Tips for fledgling developers</title>
+      <link>http://localhost:4000/2014/07/10%20Tips%20for%20fledgling%20developers</link>
+      <description><![CDATA[Continue Study, Learn professional ethics, read a lot of code, learn tool thoroughly, and many more...]]></description>
+      <comments>http://localhost:4000/2014/07/10%20Tips%20for%20fledgling%20developers#disqus_thread</comments>
+      <pubDate>Sat, 12 Jul 2014 21:50:00 +0530</pubDate>
+      <guid>http://localhost:4000/2014/07/10%20Tips%20for%20fledgling%20developers</guid>
+      <content:encoded><![CDATA[<p><img src="/assets/images/posts/22783b7.jpg" alt="10 Tips for fledgling developers" class="img-responsive"></p>
+
+<p><strong>1. Continues Study</strong></p>
+
+<p>Never think that you have acquired all or most of the knowledge existing in the world. Almost everybody in India at age of 24 starts thinking that he has acquired all the wisdom and knowledge that he needs. This should be strictly avoided. Continue study after education. Study should be habituated exactly in the same way as you are brushing teeth and taking bath every morning. A regular study, everyday, is extremely essential. Study not only computer science but also other subject in which you are interested. It does not matter whether you study for 10 minutes or 1 hour, but consistency is a must. You should always study basics and fundamentals. There is no point in going for advance topics, you can always go back and re-read or re-iterate over the fundamental concepts. There are plenty of things in computer science that you can study (like operating system, compiler, languages, networking, databases, algorithms, architecture, etc..)</p>
+
+<p>For computer science I suggest to read following books</p>
+
+<ul>
+<li>Structure and Interpretation of Computer Programs by Albenson and Sussman.</li>
+<li>Introduction to Computer Architecture by Hennessy and Patterson.</li>
+<li>Fundamentals of Programming by Donald Knuth.</li>
+<li>Introduction to Algorithms by Cormen, Leiserson and Rivest</li>
+</ul>
+
+<p><strong>2. Learn Professional Ethics</strong></p>
+
+<p>As computer science professional, you are morally obliged to do a good job. What this means is that you are supposed to do your job not for your manager or company or client but for yourself.</p>
+
+<blockquote>
+<p><strong>“Doing duties of your life” - Bhagwatgeeta</strong></p>
+</blockquote>
+
+<p>The direct implication of this is: never ever write a bad code. You don’t need to be the fastest and run after deadline rather you need to write quality code. Never write junk code. Rewrite it till you are satisfied with the quality. Remember that you are writing code not only for compiler but for humans also, your code must be easy to unstandable by other developers. Writing good code is an art and aesthetic beauty build in it. You should feel uneasy at writing bad code. To judge quality of code, you should compare with good and popular open source library written in the same language.</p>
+
+<p><strong>3. Read a lot of code</strong></p>
+
+<p>Read a lot of quality code written by excellent programmers. Not just good programmers, like the best guy in your circle, but those who have delivered on international scale. It’s very easy because you have access to the huge amount of open source codebase today. You can either refer github or code.google.com, this is easy and helpful for you. When I was learning Java, I read code from the Tomcat project and JDK source code. I&#39;ve read lots of good code ever since and I still refer to it. Read the code. Look at the comments, see what the authors are doing, and how they went about it.</p>
+
+<p><strong>4. Learn your tools thoroughly</strong></p>
+
+<p>I think the loss of programming time is not in debugging or rewriting code, but in the innumerable seconds lost here and there by developers who don&#39;t really know their tools. I am referring to: the IDE, the language, the build system, the SVN, etc.. the IDE and the language are by far the most important. Remember maximum shortcut keys of IDE, memorize most useful methods and classes of language. for the language I suggest to read API documents. Keep the API documentation handy while developing. Sometimes, it may happen that functionality which you are trying to develop is readily available in API or there should be some class which will help in saving your efforts to a great extent.</p>
+
+<p><strong>5. Academic is not like the real world</strong></p>
+
+<p>Your percentage largely doesn’t matter. What matters is your practical experience you earn by solving real world problems. To the extent that it does matter to meet minimum criteria for interview process. It only determines whether your resume gets selected for job interviews. Academic is just startup, subject that you learn in college is just an introduction for language or concept, there are lot in depth things and concept you need to study for real world development. There are only three things which will help you to crack the interview - Knowledge, Knowledge and Knowledge.</p>
+
+<p><strong>6. Don&#39;t focus on job security</strong></p>
+
+<p>It’s normal human behavior, everyone wants stable and secure job in large company but The thing is though, those large companies usually aren&#39;t a very satisfying place to work. Things take a long time to get done, and the bureaucracy alone is enough to drain you mentally after a few years. our skills are outdated faster if you don’t upgrade your self with new tools and technologies. Usually large companies don’t allow that freedom to you. At that point, you&#39;re pretty much stuck at a crappy job. If you want long-term job security, the best way to achieve that is to just make sure that you&#39;re very good at what you do, and that you love doing it. If you have knowledge and experience, you will find job in market even if market is not booming. Make sure that you enjoy your job, If not then don’t be afraid to leave.</p>
+
+<p><strong>7. Build your portfolio</strong></p>
+
+<p>Your portfolio means your public presence, create account in stackoverflow and help other people, create your blog and share your knowledge and experience. create account in github and make your side project / library open source. Attend meet-up, conference or technical event in your city or nearby. Take part in technical discussion. Read technical blogs written by others and write your thought in comment section.</p>
+
+<p><strong>8. Working with Humans</strong></p>
+
+<p>The unexpected part is that it’s the human aspect (mostly not the technical ones) that trump everything – unless it’s a one person project for yourself :-). You need to communicate with your team members and work within their personalities, strengths, and weaknesses. And, human craziness can destroy even the most technically brilliant project. Making non-technical people understand technical insights has been a bit difficult in my experience.</p>
+
+<p><strong>9. Figure out your Goals</strong></p>
+
+<p>Always aspire doing bigger things in life. Viewing promotion path as your career goal is completely wrong concept. If you are really interested to study and learn new things. Never aspire of being manager but aspire of being excellent programmer / developer. Normally in Indian software company you will be promoted as some kind of managerial role after 6 or 7 years of experience. You might feel that you want to do certain things which you cannot do till you become a manager. When you become a manager, you will soon realize that now you just cannot do anything that you thought of. The three biggest mistakes that people usually make are aiming for money, aiming for promotion and aiming for fame. The moment you get some of these, you aspire for some more and then there is no end. I do not mean that you should not earn money, but you should understand how much money would satisfy your needs. Bill Clinton might be the richest person in the world; he is certainly not the happiest.</p>
+
+<p><strong>10. Follow your culture</strong></p>
+
+<p>I have seen the tradition that whatever junk is created in US, it rapidly spreads up in India and specially in our industry. This cultural change creates a very strong impact on everybody’s life. To act and behave like pseudo US/UK/etc. citizen is stupid thing, but believe me, there is nothing great in that. This all just makes you run away from your culture. And there is no wisdom in running away from your culture. Indian culture, which has great Vedas and stories like Mahabharata and Bhagwatgeeta is really great. You should understand that fundamental things in Indian culture teach you a lot and you should never forget them.</p>
+
+<p><strong>Finally, I would like to conclude by saying that it’s your life...don&#39;t waste it on stupid things...develop your tests, and start the fight.</strong></p>
+]]></content:encoded>
+      <dc:date>2014-07-12T21:50:00+05:30</dc:date>
+    </item>
+    <item>
+      <title>Microservice Architecture - A Quick Guide</title>
+      <link>http://localhost:4000/2014/06/Microservice%20Architecture%20-%20A%20Quick%20Guide</link>
+      <description><![CDATA[What is Architecture? What is microservice architecture? Advantage of microservice architecture? and many more...]]></description>
+      <comments>http://localhost:4000/2014/06/Microservice%20Architecture%20-%20A%20Quick%20Guide#disqus_thread</comments>
+      <pubDate>Fri, 20 Jun 2014 21:50:00 +0530</pubDate>
+      <guid>http://localhost:4000/2014/06/Microservice%20Architecture%20-%20A%20Quick%20Guide</guid>
+      <content:encoded><![CDATA[<p><img src="/assets/images/posts/25c6a49.jpg" alt="Microservice Architecture - A Quick Guide" class="img-responsive"></p>
+
+<p><strong>1. What is Architecture (Software)?</strong></p>
+
+<p>Architecture is the fundamental organization of a system embodied in its components (i.e. Web Server, Application Server, Databases,Storage, Communication layer, etc...), their relationships to each other, and to the environment (i.e. deployment environment shared server, dedicated server, cloud deployment, etc..), and the principles guiding its design and evolution.</p>
+
+<p><strong>2. What is microservice architecture ?</strong></p>
+
+<p>Microservice means developing a single, small, meaningful functional feature as single service, each service has it’s own process and communicate with lightweight mechanism, deployed in single or multiple servers.</p>
+
+<p><strong>3. Advantages of microservice architecture ?</strong></p>
+
+<ul>
+<li><p>Each micro service is small and focused on a specific feature / business requirement.</p></li>
+<li><p>Microservice can be developed independently by small team of developers (normally 2 to 5 developers).</p></li>
+<li><p>Microservice is loosely coupled, means services are independent, in terms of development and deployment both.</p></li>
+<li><p>Microservice can be developed using different programming language (Personally I don&#39;t suggest to do it).</p></li>
+<li><p>Microservice allows easy and flexible way to integrate automatic deployment with Continuous Integration tools (for e.g: Jenkins, Hudson, bamboo etc..).</p></li>
+<li><p>The productivity of a new team member will be quick enough.</p></li>
+<li><p>Microservice is easy to understand, modify and maintain for a developer because separation of code,small team and focused work.</p></li>
+<li><p>Microservice allows you to take advantage of emerging and latest technologies (framework, programming language , programming practice, etc.).</p></li>
+<li><p>Microservice has code for business logic only, No mixup with HTML,CSS or other UI component.</p></li>
+<li><p>Microservice is easy to scale based on demand.</p></li>
+<li><p>Microservice can deploy on commodity hardware or low / medium configuration servers.</p></li>
+<li><p>Easy to integrate 3rd party service.</p></li>
+<li><p>Every microservice has it&#39;s own storage capability but it depends on the project’s requirement, you can have common database like MySQL or Oracle for all services.</p></li>
+</ul>
+
+<p><strong>4. Disadvantages of microservice architecture ?</strong></p>
+
+<ul>
+<li><p>Microservice architecture brings a lot of operations overhead.</p></li>
+<li><p>DevOps Skill required (http://en.wikipedia.org/wiki/DevOps).</p></li>
+<li><p>Duplication of Effort.</p></li>
+<li><p>Distributed System is complicated to manage .</p></li>
+<li><p>Default to trace problem because of distributed deployment.</p></li>
+<li><p>Complicated to manage whole products when number of services increases.</p></li>
+</ul>
+
+<p><strong>5. In which case / requirement microservice architecture best fit ?</strong></p>
+
+<p>When you need to support Desktop, web , mobile, Smart TVs, Wearable, etc... or you don&#39;t know in future which kind of devices you need to support.</p>
+
+<p><strong>6. Which products / companies are using Microservie architecture?</strong></p>
+
+<p>Most large scale web sites including Twitter, Netflix, Amazon and eBay have evolved from a monolithic architecture to a microservices architecture.</p>
+
+<p><strong>7. How independent micro services communicate with each other?</strong></p>
+
+<p>It&#39;s depend upon requirement, normally developers use HTTP/REST with JSON or Protobuf (Binary protocol) but are free to use any communication protocol.</p>
+
+<p><strong>8. Why is it that everyone are talking about microservices now?</strong></p>
+
+<p>It’s been nearly 15 years since the concept of Service Oriented Architecture really took hold. With the improvement of RESTful web service and JSON as a data interchange format has made it easier than ever to build easily interconnectable services simply and quickly.</p>
+
+<p><strong>9. Presentation</strong></p>
+
+<p><a href="http://www.infoq.com/presentations/Micro-Services">http://www.infoq.com/presentations/Micro-Services</a></p>
+
+<p><strong>10. Video</strong></p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2rKEveL55TY" frameborder="0" allowfullscreen></iframe>
+
+<p><strong>11. Picture: Monolithic vs Modular vs Service oriented architecture</strong></p>
+
+<p><img src="/assets/images/posts/0d60cc3.jpg" alt="Microservice Architecture - A Quick Guide" class="img-responsive"></p>
+]]></content:encoded>
+      <dc:date>2014-06-20T21:50:00+05:30</dc:date>
+    </item>
+    <item>
+      <title>NoSQL - A Quick Guide</title>
+      <link>http://localhost:4000/2014/06/NoSQL%20-%20A%20Quick%20Guide</link>
+      <description><![CDATA[NoSQL is buzz word now-a-days among the developers and software professionals. What is NoSQL? Where to use NoSQL? 3. Advantages and Disadvantages of NoSQL DB. and many more]]></description>
+      <comments>http://localhost:4000/2014/06/NoSQL%20-%20A%20Quick%20Guide#disqus_thread</comments>
+      <pubDate>Sat, 14 Jun 2014 21:50:00 +0530</pubDate>
+      <guid>http://localhost:4000/2014/06/NoSQL%20-%20A%20Quick%20Guide</guid>
+      <content:encoded><![CDATA[<p><img src="/assets/images/posts/07e4e1f.jpg" alt="NoSQL - A Quick Guide" class="img-responsive"></p>
+
+<p>NoSQL is buzz word now-a-days among the developers and software professionals.</p>
+
+<p><strong>1. What is NoSQL?</strong></p>
+
+<p>NoSQL database, also called Not Only SQL, is an approach to data management and database design that&#39;s useful for very large sets of distributed data.</p>
+
+<p><strong>2. Where to use NoSQL ?</strong></p>
+
+<p>Use NOSQL, When project has unstructured big data that require real-time or offline analysis or web/mobile application. i.e. Social Network app, Analytics app.</p>
+
+<p><strong>3. Advantages and Disadvantages of NoSQL DB.</strong></p>
+
+<p>Advantages of NoSQL</p>
+
+<ul>
+<li>Elastic scaling</li>
+<li>Big Data</li>
+<li>Ecomomics</li>
+<li>Flexible data models</li>
+</ul>
+
+<p>Disadvantages of NoSQL</p>
+
+<ul>
+<li>Maturity</li>
+<li>Support</li>
+<li>Analytics and business intelligence</li>
+<li>Administration</li>
+<li>Expertise</li>
+</ul>
+
+<p><strong>4. Category of NoSQL</strong></p>
+
+<ul>
+<li>Column</li>
+<li>Document</li>
+<li>Key-value</li>
+<li>Graph</li>
+</ul>
+
+<p><strong>5. How many NoSQL database are available in market?</strong></p>
+
+<p>More then 110 different (Open Source and Proprietary) NoSQL database available in market</p>
+
+<p><strong>6. If all NoSQL database fall under above category then what is purpose of having lots of NoSQL databases ?</strong></p>
+
+<p>Every NOSQL database has some special feature &amp; functionality which makes it different, Base on the project requirement one can choose NOSQL database.</p>
+
+<p><strong>7. Can I use multiple NoSQL in my project / application ?</strong></p>
+
+<p>Yes</p>
+
+<p><strong>8. List of popular NoSQL database with usage.</strong></p>
+
+<p><strong>Radis:</strong> For rapidly changing data (should fit mostly in memory). i.e. to store real-time stock prices, analytics, leaderboards and communication. And replacement of memcached.</p>
+
+<p><strong>MongoDB:</strong> When you need dynamic queries, defined indexes, map/reduce and good performance on a big DB. i.e. for most things that you would do with MySQL but having predefined columns really holds you back.</p>
+
+<p><strong>Cassandra:</strong> When you need to store data so huge that it doesn&#39;t fit on server, but still want a friendly familiar interface to it. When you don&#39;t need real-time analysis or other operation. i.e. Web analytics, Transaction logging, Data collection from huge sensor arrays.</p>
+
+<p><strong>Riak:</strong> If you need very good single-site scalability, availability and fault-tolerance, but you&#39;re ready to pay for multi-site replication. i.e. Point-of-sales data collection. Factory control systems. Places where even seconds of downtime hurt. Could be used as a well-update-able web server.</p>
+
+<p><strong>CouchDB:</strong> For accumulating, occasionally changing data, on which pre-defined queries are to be run. Places where versioning is important. i.e. CRM, CMS systems. Master-master replication is an especially interesting feature, allowing easy multi-site deployments.</p>
+
+<p><strong>HBase:</strong> Hadoop is probably still the best way to run Map/Reduce jobs on huge datasets. Best if you use the Hadoop/HDFS stack already. ie. Search engines. Analysing log data. Any place where scanning huge, two-dimensional join-less tables are a requirement.</p>
+
+<p><strong>Accumulo:</strong> If you need to restict access on the cell level. i.e. Same as HBase, since it&#39;s basically a replacement: Search engines.</p>
+
+<p><strong>Hypertable:</strong> If you need a better HBase. i.e/ Same as HBase, since it&#39;s basically a replacement: Search engines.</p>
+
+<p><strong>Neo4j:</strong> For graph-style, rich or complex, interconnected data. Neo4j is quite different from the others in this sense. i.e. For searching routes in social relations, public transport links, road maps, or network topologies.</p>
+
+<p><strong>ElasticSearch:</strong> When you have objects with (flexible) fields, and you need &quot;advanced search&quot; functionality. i.e. A dating service that handles age difference, geographic location, tastes and dislikes, etc. Or a leaderboard system that depends on many variables. you can replace your Solr with ElasticSearch.</p>
+
+<p><strong>Couchbase:</strong> Any application where low-latency data access, high concurrency support and high availability is a requirement. i.e. Low-latency use-cases like ad targeting or highly-concurrent web apps like online gaming (e.g. Zynga).</p>
+
+<p><strong>9. Can I have video tutorial to learn more about NoSQL?</strong></p>
+
+<p>Sure, Watch following video..</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qI_g07C_Q5I" frameborder="0" allowfullscreen></iframe>
+
+<p><strong>Reference &amp; More reading...</strong></p>
+
+<p><a href="http://en.wikipedia.org/wiki/NoSQL">http://en.wikipedia.org/wiki/NoSQL</a></p>
+
+<p><a href="http://kkovacs.eu/cassandra-vs-mongodb-vs-couchdb-vs-redis">http://kkovacs.eu/cassandra-vs-mongodb-vs-couchdb-vs-redis</a></p>
+
+<p><a href="http://www.dzone.com/mz/nosql">http://www.dzone.com/mz/nosql</a></p>
+
+<p><a href="http://www.nosqlweekly.com/">http://www.nosqlweekly.com/</a></p>
+
+<p><a href="http://nosql-database.org/">http://nosql-database.org/</a></p>
+]]></content:encoded>
+      <dc:date>2014-06-14T21:50:00+05:30</dc:date>
+    </item>
+    <item>
+      <title>Migrating Web Site to AWS Cloud - A Quick Guide</title>
+      <link>http://localhost:4000/2014/06/Migrating%20Web%20Site%20to%20AWS%20Cloud%20-%20A%20Quick%20Guide</link>
+      <description><![CDATA[This is a quick tip to migrate your existing website to AWS Cloud.I assume that you have basic knowledge of AWS Cloud and server side architecture. This post does not include a discussion of pros and cons of AWS or Cloud services. Elasticity and Auto-Scaling are two main features of Cloud. If we don't leverage these feature then there isn't any difference between hosting website in dedicate server or AWS Cloud. You can create EC2 instance and deploy your existing code. It will work perfect, but in this case you cannot apply auto-scale. There is no purpose of migrating web site to AWS Cloud without auto-scaling.]]></description>
+      <comments>http://localhost:4000/2014/06/Migrating%20Web%20Site%20to%20AWS%20Cloud%20-%20A%20Quick%20Guide#disqus_thread</comments>
+      <pubDate>Thu, 05 Jun 2014 21:50:00 +0530</pubDate>
+      <guid>http://localhost:4000/2014/06/Migrating%20Web%20Site%20to%20AWS%20Cloud%20-%20A%20Quick%20Guide</guid>
+      <content:encoded><![CDATA[<p><img src="/assets/images/posts/33c24ac.jpg" alt="Migrating Web Site to AWS Cloud - A Quick Guide" class="img-responsive"></p>
+
+<p>This is a quick tip to migrate your existing website to AWS Cloud.I assume that you have basic knowledge of AWS Cloud and server side architecture. This post does not include a discussion of pros and cons of AWS or Cloud services. Elasticity and Auto-Scaling are two main features of Cloud. If we don&#39;t leverage these feature then there isn&#39;t any difference between hosting website in dedicate server or AWS Cloud. You can create EC2 instance and deploy your existing code. It will work perfect, but in this case you cannot apply auto-scale. There is no purpose of migrating web site to AWS Cloud without auto-scaling.</p>
+
+<p><strong>AWS Cloud Service: Following list has description of essential AWS Cloud service.</strong></p>
+
+<p><strong>1. EC2 (Elastic Compute Cloud)</strong> - It supports operating systems that includes numerous Linux distributions, and Microsoft Windows Server. Amazon EC2 enables you to increase or decrease capacity within minutes, not hours or day.</p>
+
+<p><strong>2. RDS (Relational Database Service)</strong> - Amazon RDS gives you access to the capabilities of a familiar MySql, Oracle, Microsoft SQL Server, or PostgreSql database engine.</p>
+
+<p><strong>3. S3 (Simple Storage Service)</strong> - Amazon S3 provides a highly durable and available store for a variety of content, ranging from web applications to media files.</p>
+
+<p><strong>4. CloudFront</strong> - CloudFront is content delivery network. It can be used to deliver your entire website, including dynamic, static, streaming, and interactive content using a global network of edge locations.</p>
+
+<p><strong>5. ELB (Elastic Load Balancer)</strong> - Elastic Load Balancing automatically distributes incoming application traffic across multiple Amazon EC2 instances.</p>
+
+<p><strong>6. Auto-Scaling</strong> - Auto Scaling allows you to scale your Amazon EC2 capacity up or down automatically according to conditions you define. Mainly It&#39;s based on incoming traffic or CPU utilization.</p>
+
+<p><strong>7. Route 53 (DNS Service)</strong> - Amazon Route 53 is a highly available and scalable Domain Name System (DNS)</p>
+
+<p><strong>Architecture</strong>: Let&#39;s assume two different architecture, one deployed on dedicated server and another deployed in AWS Cloud. website developed in PHP/ASP/Java with MySql as backend.</p>
+
+<p><strong>Dedicated Server Architecture:</strong> This architecture has mainly three components load balancer, application servers and database.</p>
+
+<p><img src="/assets/images/posts/3ee65b8.jpg" alt="Migrating Web Site to AWS Cloud - A Quick Guide" class="img-responsive"></p>
+
+<p>AWS Cloud Architecture: This architecture has Route 53, ELB, EC2, CloudFront, S3, RDS and Auto-Scaling services used.</p>
+
+<p><img src="/assets/images/posts/2d2962b.jpg" alt="Migrating Web Site to AWS Cloud - A Quick Guide" class="img-responsive"></p>
+
+<p><strong>Migration Phases</strong></p>
+
+<p><strong>1. Planning</strong> – It will include financial assessment (TOC/ROI), technical assessment, prototype creation or proof of concept, data migration planning and application migration planning.</p>
+
+<p><strong>2. Execution</strong> – It will have execution of planning, modification of application source code and testing.</p>
+
+<p><strong>3. Deployment</strong> – It will have deploy application and data migration, AWS Cloud has various tools like AWS Elastic Beanstalk, AWS CloudFormation, AWS OpsWorks, etc.. for deployment and management.</p>
+
+<p><strong>4. Monitor</strong> – AWSCloud has AWS CloudTrail and Amazon CloudWatch services for monitor AWS resources.</p>
+
+<p><strong>Tips for the developers:</strong> Migrating to AWS Cloud require code and structure changes.</p>
+
+<ul>
+<li><p>Migrate MySQL database to RDS, MySql database can directly migrate (export - import) to RDS-MySql engine.</p></li>
+<li><p>As you are migrating to AWS Cloud, you have more storage options like SimpleDB and DynemoDB. You can take advantage of these storage services to off load data from MySql . It’s call hybrid approach -SQL and NOSQL</p></li>
+<li><p>In dedicated architecture all files, (for eg:- images, videos, etc...)are stored in web space /some folder in server. In case of AWS Cloud all files (images, videos, etc ...) should be stored on S3.</p></li>
+<li><p>In dedicated architecture, all web assets (CSS, JS, Icons, and Images) are stored in virtual directory of web server and web server or application will serve these assets, which is unnecessary on servers. In AWS Cloud, all web assets (CSS, JS, Icons, and Images) should be stored in S3 and link with CloudFront.</p></li>
+<li><p>In dedicated architecture, your cron jobs will run on same web server. In case of AWS Cloud, you may require dedicated EC2 instance for cron jobs or you can create schedule EC2 instance.</p></li>
+<li><p>In dedicate architecture, you may have only application which serves all request. For AWS you can use two separate servers, Web Server (i.e. Apache HTTP Server, Nginx Server, etc...) and Application Server (Tomcat, IIS, etc...)</p></li>
+<li><p>Few application services are available in AWS Cloud that you can use depending upon the requirement.</p></li>
+<li><p>Amazon SQS – Amazon Simple Queue Service (SQS) is a fast, reliable, scalable, fully managed message queuing service.</p></li>
+<li><p>Amazon SNS - Amazon Simple Notification Service is a fast, flexible, fully managed push messaging service. It also supports push notifications to Apple, Google, Fire OS, and Windows devices.</p></li>
+<li><p>Amazon SES - Amazon Simple Email Service is a cost-effective outbound-only email-sending service.</p></li>
+</ul>
+
+<p><strong>References:</strong></p>
+
+<p><a href="http://aws.amazon.com/whitepapers/migrating-your-existing-applications-to-the-aws-cloud-with-3-example-scenarios/">http://aws.amazon.com/whitepapers/migrating-your-existing-applications-to-the-aws-cloud-with-3-example-scenarios/
+</a></p>
+
+<p><a href="http://highscalability.com/blog/2010/12/21/sql-nosql-yes.html">http://highscalability.com/blog/2010/12/21/sql-nosql-yes.html</a></p>
+
+<p><a href="http://aws.amazon.com/products/">http://aws.amazon.com/products/</a></p>
+]]></content:encoded>
+      <dc:date>2014-06-05T21:50:00+05:30</dc:date>
+    </item>
+    <dc:date>2014-12-04T21:50:00+05:30</dc:date>
+  </channel>
+</rss>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>http://localhost:4000/</loc>
+    <lastmod>2015-03-20T22:44:55+05:30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+    <url>
+      <loc>http://localhost:4000/2014/12/How%20Smart%20Watch%20can%20change%20your%20life</loc>
+      
+        <lastmod>2014-12-04T21:50:00+05:30</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/2014/12/Wearable%20technology%20to%20monitor%20Parkinson%E2%80%99s%20disease</loc>
+      
+        <lastmod>2014-12-01T21:50:00+05:30</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/2014/11/Monolithic%20vs%20MicroService%20Architecture</loc>
+      
+        <lastmod>2014-11-28T21:50:00+05:30</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/2014/07/10%20Tips%20for%20fledgling%20developers</loc>
+      
+        <lastmod>2014-07-12T21:50:00+05:30</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/2014/06/Microservice%20Architecture%20-%20A%20Quick%20Guide</loc>
+      
+        <lastmod>2014-06-20T21:50:00+05:30</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/2014/06/NoSQL%20-%20A%20Quick%20Guide</loc>
+      
+        <lastmod>2014-06-14T21:50:00+05:30</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/2014/06/Migrating%20Web%20Site%20to%20AWS%20Cloud%20-%20A%20Quick%20Guide</loc>
+      
+        <lastmod>2014-06-05T21:50:00+05:30</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+  
+  
+  <url>
+    <loc>http://localhost:4000/atom.xml</loc>
+    
+      <lastmod>2015-03-20T22:44:55+05:30</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/index.html</loc>
+    
+      <lastmod>2014-02-24</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.7</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/search/index.html</loc>
+    
+      <lastmod>2014-10-02</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.7</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/blog/index.html</loc>
+    
+      <lastmod>2014-02-24</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.7</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/sitemap.xml</loc>
+    
+      <lastmod>2015-03-20T22:44:55+05:30</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000//feed.xml</loc>
+    
+      <lastmod>2015-03-20T22:44:55+05:30</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/blog/page/2/index.html</loc>
+    
+      <lastmod>2014-02-24</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.7</priority>
+    
+  </url>
+  
+</urlset>

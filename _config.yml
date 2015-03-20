@@ -1,0 +1,17 @@
+paginate: 5
+paginate_path: "/blog/page/:num"
+name: Ketan Parmar
+markdown: redcarpet
+highlighter: pygments
+#gems: ['jekyll-lunr-js-search']
+lunr_search:
+  excludes: [atom.xml, sitemap.xml, index.html]
+
+title: Software developer, trainer, speaker and more by Ketan Parmar
+author: Ketan Parmar
+description: Ketan Parmar is a software developer, trainer, speaker.
+email: contact@kpbird.com
+url: http://localhost:4000
+rss_name: feed.xml
+rss_post_limit: 10
+permalink: /:year/:month/:title

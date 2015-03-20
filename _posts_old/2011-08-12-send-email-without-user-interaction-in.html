@@ -1,0 +1,31 @@
+---
+layout: post
+title: Send Email without User Interaction (In Background)
+date: '2011-08-12T10:22:00.000+05:30'
+author: Ketan Parmar
+tags:
+- email
+- javamail
+- Android
+modified_time: '2011-08-12T10:22:39.649+05:30'
+blogger_id: tag:blogger.com,1999:blog-17114597.post-1638720213918276282
+blogger_orig_url: http://www.kpbird.com/2011/08/send-email-without-user-interaction-in.html
+---
+
+<div dir="ltr" style="text-align: left;" trbidi="on">Android provide Intent to send the email. It compose email in Native Email editor and user need to click on Send button to send the email. It crease issue when application need to send more then one email. User will not click on send button 10 or 20 times.<br /><br />To solve this issue. I found javaMail API implemented for Andorid.<br /><br />I have create Demo project, attached with this article. JavaMail also allowed to send email with attachment and HTML as body content. JavaMail required email user name &amp; password to send the email.<br /><br />You can find "Mail" class in attached source code.&nbsp; In following code you need to replace USER EMAIL, PASSWORD, user name and password is require to send email. <br /><br /><b>Code Snippet To Send Email</b><br /><pre class="brush: java">        Mail m = new Mail("USER EMAIL", "PASSWORD"); 
+<br />        String[] toArr = {"EMAIL-1", "EMAIL-2"}; 
+<br />        m.setTo(toArr); 
+<br />        m.setFrom("USER EMAIL"); 
+<br />        m.setSubject("This is an email sent using my Mail JavaMail wrapper from an Android device."); 
+<br />        m.setBody("Email body"); 
+<br />        try { 
+<br />          m.addAttachment("/sdcard/bday.jpg"); 
+<br />          if(m.send()) { 
+<br />            Toast.makeText(this, "Email was sent successfully.", Toast.LENGTH_LONG).show(); 
+<br />          } else { 
+<br />            Toast.makeText(this, "Email was not sent.", Toast.LENGTH_LONG).show(); 
+<br />          } 
+<br />        } catch(Exception e) { 
+<br />          Log.e("MailApp", "Could not send email", e); 
+<br />        } 
+<br /></pre><br /><div style="text-align: center;"><span style="font-size: large;"><a href="https://docs.google.com/viewer?a=v&amp;pid=explorer&amp;chrome=true&amp;srcid=0B9CK0aNgCtjROTgyYzUzMzgtYzk1MS00NDhhLThlZGUtZjVjMTQ1OTRjNTYw&amp;hl=en_US">Click Here to Download the Source Code</a></span><br /><span style="font-size: large;">&nbsp;<span style="color: orange; font-size: small;">Note: To download source code click on File-&gt;Download Original File</span></span></div></div>

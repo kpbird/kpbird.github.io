@@ -1,0 +1,22 @@
+<div class="right col-md-3">
+    <!-- blog search -->
+    <div class="widget">
+        <h3>Blog Search</h3>
+        <form action="/search" method="get" class="blog-search col-lg-12 nomargin nopadding">
+            <div class="input-group input-group-lg">
+                <input type="text" class="form-control" name="q" id="search-query" placeholder="Search" autocomplete="off" />
+                <span class="input-group-btn">
+                <button class="btn btn-primary"><i class="fa fa-search"></i></button>
+                </span>
+            </div>
+        </form>
+    </div>
+    <div class="widget">
+        <h3>Recent Posts</h3>
+        <ul>
+            {% for post in site.posts offset:0 limit:5 %}
+            <li><a href="{{ post.url }}"><i class="fa fa-sign-out"></i> {{post.title}}</a> <small>{{post.date | date:"%-d %B %Y" }}</small></li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>

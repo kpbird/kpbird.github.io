@@ -1,0 +1,75 @@
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title>{{page.title}}</title>
+    {% if page.title %}
+
+    <meta content="{{ page.title }}" property="og:title">
+    <meta content="{{ page.title }}" name="twitter:title">{% elsif page.grouptype == "tag" %}
+
+    <meta content="Posts Tagged “{{ page.tag }}” &ndash; {{ site.title }}" property="og:title">
+    <meta content="Posts Tagged “{{ page.tag }}” &ndash; {{ site.title }}" name="twitter:title">{% elsif page.grouptype == "category" %}
+
+    <meta content="Posts Categorized “{{ page.category | titlecase }}” &ndash; {{ site.title }}" property="og:title">
+    <meta content="Posts Categorized “{{ page.category | titlecase }}” &ndash; {{ site.title }}" name="twitter:title">{% else %}
+
+    <meta content="{{ site.title }}" property="og:title">
+    <meta content="{{ site.title }}" name="twitter:title">{% endif %}
+    <meta content="{{ site.title }}" property="og:site_name">{% if page.summary %}
+    <meta content="{{ page.summary }}" name="description">
+    <meta content="{{ page.summary }}" property="og:description">
+    <meta content="{{ page.summary }}" name="twitter:description">{% else %}
+    <meta content="{{ site.description }}" name="description">
+    <meta content="{{ site.description }}" property="og:description">
+    <meta content="{{ site.description }}" name="twitter:description">{% endif %}
+
+
+    <meta name="Author" content="Ketan Parmar" />
+    <link href="https://plus.google.com/+KetanParmar/posts" rel="author">
+    <meta content="@kpbird" name="twitter:site">
+    <meta content="@kpbird" name="twitter:creator">
+
+    <link href="/atom.xml" rel="alternate" title="Atom" type="application/atom+xml">
+    <link href="/sitemap.xml" rel="sitemap" title="Sitemap" type="application/xml">
+    <link href="{{ site.url }}{{ page.url }}" rel="canonical">{% if page.title %}
+    <meta content="article" property="og:type">{% else %}
+    <meta content="website" property="og:type">{% endif %}
+    <meta content="summary" name="twitter:card">{% if page.url %}
+    <meta content="{{ site.url }}{{ page.url }}" property="og:url">
+    <meta content="{{ site.url }}{{ page.url }}" name="twitter:url">{% endif %} {% if page.date %}
+    <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
+    <meta content="{{ site.url }}/index.html#about" property="article:author">{% endif %} 
+    
+    {% if page.image %}
+    <meta property="og:image" content="{{ site.url }}/assets/images/posts/{{ page.image }}">
+    <meta name="twitter:image:src" content="{{ site.url }}/assets/images/posts/{{ page.image }}">{% else %}
+    <meta property="og:image" content="{{ site.url }}/assets/images/preview/content/people/1.jpg">
+    <meta name="twitter:image:src" content="{{ site.url }}/assets/images/preview/content/people/1.jpg">{% endif %} {% if page.categories %} {% for category in page.categories limit:1 %}
+    <meta property="article:section" content="{{ category }}">{% endfor %} {% endif %} {% if page.tags %} {% for tag in page.tags %}
+    <meta property="article:tag" content="{{ tag }}">{% endfor %} {% endif %}
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="assets/plugins/lt-ie9/html5.js"></script>
+    <script type="text/javascript" src="assets/plugins/lt-ie9/respond.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/lt-ie9/excanvas.compiled.js"></script>
+    <![endif]-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800|Dosis:300,400" rel="stylesheet" type="text/css" />
+    <link href="/../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="/../assets/plugins/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="/../assets/plugins/font-linecons/linecons.css" rel="stylesheet" type="text/css" />
+    <link href="/../assets/css/superslides.css" rel="stylesheet" type="text/css" />
+    <link href="/../assets/css/owl.carousel.css" rel="stylesheet" type="text/css" />
+    <link href="/../assets/plugins/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css" />
+    <link href="/../assets/css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="/../assets/css/framework.css" rel="stylesheet" type="text/css" />
+    <link href="/../assets/css/typography.css" rel="stylesheet" type="text/css" />
+    <link href="/../assets/css/layout.css" rel="stylesheet" type="text/css" />
+    <link href="/../assets/css/blog.css" rel="stylesheet" type="text/css" />
+    <link href="/../assets/css/color/blue.css" rel="stylesheet" type="text/css" />
+    <link href="/../assets/css/syntax.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="/../assets/images/favicon.png" type="image/x-icon" />
+    <link rel="icon" href="/../assets/images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/../assets/images/favicon.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+    <script type="text/javascript" src="/../assets/plugins/modernizr.min.js"></script>
+   
+</head>

@@ -1,0 +1,15 @@
+---
+layout: post
+title: Android Light Sensor
+date: '2011-05-23T17:11:00.000+05:30'
+author: Ketan Parmar
+tags:
+- Light Sensor
+- Android
+modified_time: '2011-05-23T17:15:48.622+05:30'
+thumbnail: http://2.bp.blogspot.com/-n1zZ-SL5XOU/TdpI0yC5gkI/AAAAAAAADJ0/YGHXMK3J9mA/s72-c/SensorEvent.jpg
+blogger_id: tag:blogger.com,1999:blog-17114597.post-806418386062426902
+blogger_orig_url: http://www.kpbird.com/2011/05/android-light-sensor.html
+---
+
+<div dir="ltr" style="text-align: left;" trbidi="on">Hello Guys,<br /><br />Here I am explaining you how to use Light Sensor of Android.<br />1. Implement SensorEventListener<br />2. Create variable for SensorManager and Sensor<br />3. Get Object of SensorManager using system service<br />4. Get Object of Light Sensor from SensorManager<br />5. Implement onAccuracyChanged and onSensorChanged method<br /><br /><br /><br /><pre class="brush: java;">package com.test;<br /><br />import android.app.Activity;<br />import android.hardware.Sensor;<br />import android.hardware.SensorEvent;<br />import android.hardware.SensorEventListener;<br />import android.hardware.SensorManager;<br />import android.os.Bundle;<br />import android.util.Log;<br /><br />public class Test extends Activity implements SensorEventListener{<br /><br /> private SensorManager mSensorManager;<br /> private Sensor mLight;<br /><br /> @Override<br /> public void onCreate(Bundle savedInstanceState) {<br />  super.onCreate(savedInstanceState);<br />  setContentView(R.layout.main);<br /><br />   mSensorManager = (SensorManager)getSystemService(SENSOR_SERVICE);<br />         mLight = mSensorManager.getDefaultSensor(Sensor.TYPE_LIGHT);<br /><br /> }<br /> @Override<br /> protected void onResume() {<br />   mSensorManager.registerListener(this, mLight, SensorManager.SENSOR_DELAY_NORMAL);<br />  super.onResume();<br /> }<br /> @Override<br /> protected void onPause() {<br />  mSensorManager.unregisterListener(this);<br />  super.onPause();<br /> }<br /> public void onAccuracyChanged(Sensor sensor, int accuracy) {<br />   if(sensor.getType() == Sensor.TYPE_LIGHT){<br />    Log.i("Sensor Changed", "Accuracy :" + accuracy);<br />   }<br />  <br /> }<br /><br /> public void onSensorChanged(SensorEvent event) {<br />  if( event.sensor.getType() == Sensor.TYPE_LIGHT){<br />   Log.i("Sensor Changed", "onSensor Change :" + event.values[0]);<br />  }<br />  <br /> }<br />}</pre><br />Screen Shot of Change Values<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-n1zZ-SL5XOU/TdpI0yC5gkI/AAAAAAAADJ0/YGHXMK3J9mA/s1600/SensorEvent.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="121" src="http://2.bp.blogspot.com/-n1zZ-SL5XOU/TdpI0yC5gkI/AAAAAAAADJ0/YGHXMK3J9mA/s640/SensorEvent.jpg" width="640" /></a></div><br /></div>

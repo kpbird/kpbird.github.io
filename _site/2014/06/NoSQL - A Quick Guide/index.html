@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title>NoSQL - A Quick Guide</title>
+    
+
+    <meta content="NoSQL - A Quick Guide" property="og:title">
+    <meta content="NoSQL - A Quick Guide" name="twitter:title">
+    <meta content="Software developer, trainer, speaker and more by Ketan Parmar" property="og:site_name">
+    <meta content="Ketan Parmar is a software developer, trainer, speaker." name="description">
+    <meta content="Ketan Parmar is a software developer, trainer, speaker." property="og:description">
+    <meta content="Ketan Parmar is a software developer, trainer, speaker." name="twitter:description">
+
+
+    <meta name="Author" content="Ketan Parmar" />
+    <link href="https://plus.google.com/+KetanParmar/posts" rel="author">
+    <meta content="@kpbird" name="twitter:site">
+    <meta content="@kpbird" name="twitter:creator">
+
+    <link href="/atom.xml" rel="alternate" title="Atom" type="application/atom+xml">
+    <link href="/sitemap.xml" rel="sitemap" title="Sitemap" type="application/xml">
+    <link href="http://localhost:4000/2014/06/NoSQL%20-%20A%20Quick%20Guide" rel="canonical">
+    <meta content="article" property="og:type">
+    <meta content="summary" name="twitter:card">
+    <meta content="http://localhost:4000/2014/06/NoSQL%20-%20A%20Quick%20Guide" property="og:url">
+    <meta content="http://localhost:4000/2014/06/NoSQL%20-%20A%20Quick%20Guide" name="twitter:url"> 
+    <meta content="2014-06-14T21:50:00+05:30" property="article:published_time">
+    <meta content="http://localhost:4000/index.html#about" property="article:author"> 
+    
+    
+    <meta property="og:image" content="http://localhost:4000/assets/images/posts//07e4e1f.jpg">
+    <meta name="twitter:image:src" content="http://localhost:4000/assets/images/posts//07e4e1f.jpg">  
+    <meta property="article:section" content="nosql,bigdata">   
+    <meta property="article:tag" content="NoSQL,">
+    <meta property="article:tag" content="BigData"> 
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="assets/plugins/lt-ie9/html5.js"></script>
+    <script type="text/javascript" src="assets/plugins/lt-ie9/respond.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/lt-ie9/excanvas.compiled.js"></script>
+    <![endif]-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800|Dosis:300,400" rel="stylesheet" type="text/css" />
+    <link href="/../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="/../assets/plugins/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="/../assets/plugins/font-linecons/linecons.css" rel="stylesheet" type="text/css" />
+    <link href="/../assets/css/superslides.css" rel="stylesheet" type="text/css" />
+    <link href="/../assets/css/owl.carousel.css" rel="stylesheet" type="text/css" />
+    <link href="/../assets/plugins/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css" />
+    <link href="/../assets/css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="/../assets/css/framework.css" rel="stylesheet" type="text/css" />
+    <link href="/../assets/css/typography.css" rel="stylesheet" type="text/css" />
+    <link href="/../assets/css/layout.css" rel="stylesheet" type="text/css" />
+    <link href="/../assets/css/blog.css" rel="stylesheet" type="text/css" />
+    <link href="/../assets/css/color/blue.css" rel="stylesheet" type="text/css" />
+    <link href="/../assets/css/syntax.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="/../assets/images/favicon.png" type="image/x-icon" />
+    <link rel="icon" href="/../assets/images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/../assets/images/favicon.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+    <script type="text/javascript" src="/../assets/plugins/modernizr.min.js"></script>
+   
+</head>
+
+
+<body>
+    <div class="inner-cover blog-header" style="background-image:url('/../assets/images/preview/slider/blog.png')">
+    <div class="text-center">
+        <h1 class="big-title">Blog</h1>
+        <p>Share your knowledge. It’s a way to achieve immortality. - Dalai Lama</p>
+    </div>
+</div>
+<header id="header">
+    <nav class="navbar navbar-inverse" role="navigation"><!-- add "wihite" class for white nav bar -->
+    <div class="container">
+        <!-- Mobile Menu Button -->
+        <button id="mobileMenu" class="fa fa-bars" type="button" data-toggle="collapse" data-target=".navbar-collapse"></button>
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/index.html">
+            <span class="">Ketan Parmar</span>
+            </a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/index.html#home">Home</a></li>
+                <li><a href="/index.html#about">About</a></li>
+                <li><a href="/index.html#skills">Skills</a></li>
+                <li class="active"><a href="/blog">Blog</a></li>
+                <li><a href="/index.html#contact">Contact</a></li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+    <section id="blog">
+        <article class="container">
+            <div class="row">
+                <div class="left col-md-9">
+                    <header>
+                        <h1>NoSQL - A Quick Guide</h1>
+                        <small class="fsize13">
+                            <a href="/2014/06/NoSQL%20-%20A%20Quick%20Guide" class="label label-default light"><i class="fa fa-dot-circle-o"></i> nosql,bigdata</a>
+                            <a href="/2014/06/NoSQL%20-%20A%20Quick%20Guide#disqus_thread" class="label label-default light">0 Comments</a>
+                            <span class="label label-default light">14 June 2014</span>
+                        </small>
+                    </header>
+
+                    <p><img src="/assets/images/posts/07e4e1f.jpg" alt="NoSQL - A Quick Guide" class="img-responsive"></p>
+
+<p>NoSQL is buzz word now-a-days among the developers and software professionals.</p>
+
+<p><strong>1. What is NoSQL?</strong></p>
+
+<p>NoSQL database, also called Not Only SQL, is an approach to data management and database design that&#39;s useful for very large sets of distributed data.</p>
+
+<p><strong>2. Where to use NoSQL ?</strong></p>
+
+<p>Use NOSQL, When project has unstructured big data that require real-time or offline analysis or web/mobile application. i.e. Social Network app, Analytics app.</p>
+
+<p><strong>3. Advantages and Disadvantages of NoSQL DB.</strong></p>
+
+<p>Advantages of NoSQL</p>
+
+<ul>
+<li>Elastic scaling</li>
+<li>Big Data</li>
+<li>Ecomomics</li>
+<li>Flexible data models</li>
+</ul>
+
+<p>Disadvantages of NoSQL</p>
+
+<ul>
+<li>Maturity</li>
+<li>Support</li>
+<li>Analytics and business intelligence</li>
+<li>Administration</li>
+<li>Expertise</li>
+</ul>
+
+<p><strong>4. Category of NoSQL</strong></p>
+
+<ul>
+<li>Column</li>
+<li>Document</li>
+<li>Key-value</li>
+<li>Graph</li>
+</ul>
+
+<p><strong>5. How many NoSQL database are available in market?</strong></p>
+
+<p>More then 110 different (Open Source and Proprietary) NoSQL database available in market</p>
+
+<p><strong>6. If all NoSQL database fall under above category then what is purpose of having lots of NoSQL databases ?</strong></p>
+
+<p>Every NOSQL database has some special feature &amp; functionality which makes it different, Base on the project requirement one can choose NOSQL database.</p>
+
+<p><strong>7. Can I use multiple NoSQL in my project / application ?</strong></p>
+
+<p>Yes</p>
+
+<p><strong>8. List of popular NoSQL database with usage.</strong></p>
+
+<p><strong>Radis:</strong> For rapidly changing data (should fit mostly in memory). i.e. to store real-time stock prices, analytics, leaderboards and communication. And replacement of memcached.</p>
+
+<p><strong>MongoDB:</strong> When you need dynamic queries, defined indexes, map/reduce and good performance on a big DB. i.e. for most things that you would do with MySQL but having predefined columns really holds you back.</p>
+
+<p><strong>Cassandra:</strong> When you need to store data so huge that it doesn&#39;t fit on server, but still want a friendly familiar interface to it. When you don&#39;t need real-time analysis or other operation. i.e. Web analytics, Transaction logging, Data collection from huge sensor arrays.</p>
+
+<p><strong>Riak:</strong> If you need very good single-site scalability, availability and fault-tolerance, but you&#39;re ready to pay for multi-site replication. i.e. Point-of-sales data collection. Factory control systems. Places where even seconds of downtime hurt. Could be used as a well-update-able web server.</p>
+
+<p><strong>CouchDB:</strong> For accumulating, occasionally changing data, on which pre-defined queries are to be run. Places where versioning is important. i.e. CRM, CMS systems. Master-master replication is an especially interesting feature, allowing easy multi-site deployments.</p>
+
+<p><strong>HBase:</strong> Hadoop is probably still the best way to run Map/Reduce jobs on huge datasets. Best if you use the Hadoop/HDFS stack already. ie. Search engines. Analysing log data. Any place where scanning huge, two-dimensional join-less tables are a requirement.</p>
+
+<p><strong>Accumulo:</strong> If you need to restict access on the cell level. i.e. Same as HBase, since it&#39;s basically a replacement: Search engines.</p>
+
+<p><strong>Hypertable:</strong> If you need a better HBase. i.e/ Same as HBase, since it&#39;s basically a replacement: Search engines.</p>
+
+<p><strong>Neo4j:</strong> For graph-style, rich or complex, interconnected data. Neo4j is quite different from the others in this sense. i.e. For searching routes in social relations, public transport links, road maps, or network topologies.</p>
+
+<p><strong>ElasticSearch:</strong> When you have objects with (flexible) fields, and you need &quot;advanced search&quot; functionality. i.e. A dating service that handles age difference, geographic location, tastes and dislikes, etc. Or a leaderboard system that depends on many variables. you can replace your Solr with ElasticSearch.</p>
+
+<p><strong>Couchbase:</strong> Any application where low-latency data access, high concurrency support and high availability is a requirement. i.e. Low-latency use-cases like ad targeting or highly-concurrent web apps like online gaming (e.g. Zynga).</p>
+
+<p><strong>9. Can I have video tutorial to learn more about NoSQL?</strong></p>
+
+<p>Sure, Watch following video..</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qI_g07C_Q5I" frameborder="0" allowfullscreen></iframe>
+
+<p><strong>Reference &amp; More reading...</strong></p>
+
+<p><a href="http://en.wikipedia.org/wiki/NoSQL">http://en.wikipedia.org/wiki/NoSQL</a></p>
+
+<p><a href="http://kkovacs.eu/cassandra-vs-mongodb-vs-couchdb-vs-redis">http://kkovacs.eu/cassandra-vs-mongodb-vs-couchdb-vs-redis</a></p>
+
+<p><a href="http://www.dzone.com/mz/nosql">http://www.dzone.com/mz/nosql</a></p>
+
+<p><a href="http://www.nosqlweekly.com/">http://www.nosqlweekly.com/</a></p>
+
+<p><a href="http://nosql-database.org/">http://nosql-database.org/</a></p>
+
+               <!--      <p class="fsize16">Tags: 
+                        <a class="label label-default light" href="#"><i class="fa fa-tags"></i> </a> 
+                    </p> -->
+                    <br/>
+                     
+                        <div class="nav-previous">
+                          <a class="" href="http://localhost:4000/2014/06/Migrating%20Web%20Site%20to%20AWS%20Cloud%20-%20A%20Quick%20Guide" rel="prev"><i class="fa fa-long-arrow-left nav-previous-link"></i>Migrating Web Site to AWS Cloud - A Quick Guide</a>
+                        </div>
+                      
+                    
+                        <div class="nav-next">
+                          <a class="" href="http://localhost:4000/2014/06/Microservice%20Architecture%20-%20A%20Quick%20Guide" rel="next">Microservice Architecture - A Quick Guide<i class="fa fa-long-arrow-right nav-next-link"></i></a>
+                        </div>
+                       
+                     
+                      <br/>
+                    <hr/>
+                    <div id="disqus_thread"></div>
+                   
+                    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+                    </noscript>
+                    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                </div>
+                <div class="right col-md-3">
+    <!-- blog search -->
+    <div class="widget">
+        <h3>Blog Search</h3>
+        <form action="/search" method="get" class="blog-search col-lg-12 nomargin nopadding">
+            <div class="input-group input-group-lg">
+                <input type="text" class="form-control" name="q" id="search-query" placeholder="Search" autocomplete="off" />
+                <span class="input-group-btn">
+                <button class="btn btn-primary"><i class="fa fa-search"></i></button>
+                </span>
+            </div>
+        </form>
+    </div>
+    <div class="widget">
+        <h3>Recent Posts</h3>
+        <ul>
+            
+            <li><a href="/2014/12/How%20Smart%20Watch%20can%20change%20your%20life"><i class="fa fa-sign-out"></i> How Smart Watch can change your life</a> <small>4 December 2014</small></li>
+            
+            <li><a href="/2014/12/Wearable%20technology%20to%20monitor%20Parkinson%E2%80%99s%20disease"><i class="fa fa-sign-out"></i> Wearable technology to monitor Parkinson’s disease</a> <small>1 December 2014</small></li>
+            
+            <li><a href="/2014/11/Monolithic%20vs%20MicroService%20Architecture"><i class="fa fa-sign-out"></i> Monolithic vs MicroService Architecture</a> <small>28 November 2014</small></li>
+            
+            <li><a href="/2014/07/10%20Tips%20for%20fledgling%20developers"><i class="fa fa-sign-out"></i> 10 Tips for fledgling developers</a> <small>12 July 2014</small></li>
+            
+            <li><a href="/2014/06/Microservice%20Architecture%20-%20A%20Quick%20Guide"><i class="fa fa-sign-out"></i> Microservice Architecture - A Quick Guide</a> <small>20 June 2014</small></li>
+            
+        </ul>
+    </div>
+</div>
+            </div>
+        </article>
+    </section>
+     <footer>
+        <!-- SCROOL TO TOP -->
+        <a href="#toTop" class="fa fa-arrow-up toTop"></a>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 copyright">
+                    kpbird.com
+                    <br />2015 &copy; All Rights Reserved.
+                </div>
+                <div class="col-md-6 text-right">
+                    <div class="addthis_toolbox">
+                        <a class="addthis_button_linkedin_follow" addthis:userid="kpbird">
+                            <span class="social fa fa-linkedin"></span>
+                        </a>
+                        <a class="addthis_button_twitter_follow" addthis:userid="kpbird">
+                            <span class="social fa fa-twitter"></span>
+                        </a>
+                        <a class="addthis_button_google_follow" addthis:userid="+KetanParmar">
+                            <span class="social fa fa-google-plus"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- AddThis Smart Layers BEGIN -->
+    <!-- Go to http://www.addthis.com/get/smart-layers to customize -->
+    //  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5308cddf5fd4896a"></script>
+    // <script type="text/javascript">
+    // addthis.layers({
+    //     'theme': 'transparent',
+    //     'share': {
+    //         'position': 'left',
+    //         'numPreferredServices': 5
+    //     }
+    // });
+
+    // var addthis_share={
+    //     url_transforms:{
+    //         shorten:{
+    //             twitter:'bitly',
+    //             facebook:'bitly',
+    //             google:'bitly',
+    //             linkedin:'bitly'
+    //         }
+    //     },
+    //     shorteners:{
+    //         bitly:{}
+    //     }
+    // };
+
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-3380700-3', 'kpbird.com');
+  ga('send', 'pageview');
+    </script>
+     
+<script id="search-results-template" type="text/mustache">
+  {{#entries}}
+    <article>
+      <h3>
+        {{#date}}<small><time datetime="{{pubdate}}" pubdate>{{displaydate}}</time></small>{{/date}}
+        <a href="{{url}}">{{title}}</a>
+      </h3>
+    </article>
+  {{/entries}}
+</script>
+
+    <!-- AddThis Smart Layers END -->
+<!-- <script type="text/javascript" src="/../assets/plugins/jquery/jquery-1.10.2.min.js"></script> -->
+<script type="text/javascript" src="/../assets/js/search.min.js"></script>
+<script type="text/javascript" src="/../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/../assets/plugins/jquery-fitvids/jquery.fitvids.min.js"></script>
+<script type="text/javascript" src="/../assets/plugins/jquery-appear/jquery.appear.js"></script>
+<script type="text/javascript" src="/../assets/plugins/superslides/dist/jquery.superslides.min.js"></script>
+<script type="text/javascript" src="/../assets/plugins/jquery-owl-carousel/owl.carousel.min.js"></script>
+<script type="text/javascript" src="/../assets/plugins/carouFredSel/jquery.carouFredSel-6.2.1-packed.js"></script>
+<script type="text/javascript" src="/../assets/plugins/jquery-countTo/jquery.countTo.js"></script>
+<script type="text/javascript" src="/../assets/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+<script type="text/javascript" src="/../assets/plugins/jquery.mb.YTPlayer.js"></script>
+<script async type="text/javascript" src="/../assets/js/scripts.js"></script>
+
+<script async type="text/javascript" src="/../assets/js/blog.search.js"></script>
+
+
+<!-- Change UA-XXXXX-X with your site ID -->
+<!--<script>
+        window._gaq = [['_setAccount','UA-XXXXX-X'],['_trackPageview'],['_trackPageLoadTime']];
+        Modernizr.load({load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'});
+</script>  -->
+     <script type="text/javascript">
+                    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+                    var disqus_shortname = 'kpbird';
+                    /* * * DON'T EDIT BELOW THIS LINE * * */
+                     (function() {
+                        var dsq = document.createElement('script');
+                        dsq.type = 'text/javascript';
+                        dsq.async = true;
+                        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                    })();
+                    (function() {
+                        var s = document.createElement('script');
+                        s.async = true;
+                        s.type = 'text/javascript';
+                        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+                        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+                    }());
+                    </script>
+
+              
+</body>
+
+</html>
