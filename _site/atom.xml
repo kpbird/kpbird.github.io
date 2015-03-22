@@ -4,7 +4,7 @@
  <title>Ketan Parmar</title>
  <link type="application/atom+xml" href="http://romuluscrisan.com/atom.xml" rel="self"/>
  <link href="http://www.romuluscrisan.com/"/>
- <updated>2015-03-20T23:38:52+05:30</updated>
+ <updated>2015-03-22T22:43:51+05:30</updated>
  <id>http://www.kpbird.com/</id>
  <author>
    <name>Ketan Parmar</name>
@@ -493,6 +493,63 @@ services-architecture-advantages&lt;/a&gt;&lt;/li&gt;
 &lt;p&gt;&lt;a href=&quot;http://highscalability.com/blog/2010/12/21/sql-nosql-yes.html&quot;&gt;http://highscalability.com/blog/2010/12/21/sql-nosql-yes.html&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://aws.amazon.com/products/&quot;&gt;http://aws.amazon.com/products/&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Simple tips to secure Android app</title>
+   <link href="http://www.romuluscrisan.com/2014/05/simple-tips-to-secure-android-app"/>
+   <updated>2014-05-06T21:50:00+05:30</updated>
+   <id>http://www.romuluscrisan.com/2014/05/simple-tips-to-secure-android-app</id>
+   <content type="html">&lt;h1&gt;Simple tips to secure Android app&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.oneclickroot.com/wp-content/uploads/2012/10/Android-security.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Src: http://www.oneclickroot.com/wp-content/uploads/2012/10/Android-security.jpg&lt;/p&gt;
+
+&lt;p&gt;Android has security features built into the operating system that significantly reduce the frequency and impact of application security issues but as application developer, its our job to secure application. The level of security is depends upon application type &amp;amp; domain. There are &amp;nbsp;few security aspects we need not forget. I am collecting those common tips in this article.&lt;/p&gt;
+
+&lt;p&gt;Here, I list down most common things that developers should take care to protect the application.&lt;/p&gt;
+
+&lt;p&gt;1. Do not store private or sensitive data on SDCard. To store file on internal storage, use following methods with private mode (Context.MODE_PRIVATE) &lt;a href=&quot;http://developer.android.com/reference/android/content/Context.html#openFileOutput%28java.lang.String,%20int%29&quot;&gt;openFileOutput&lt;/a&gt; &amp;amp; &lt;a href=&quot;http://developer.android.com/reference/android/content/Context.html#openFileInput%28java.lang.String%29&quot;&gt;openFileInput&lt;/a&gt;. If you really wants to store data in sdcard then encrypt it. You will find many encryption libraries. I prefer &lt;a href=&quot;https://github.com/facebook/conceal&quot;&gt;conceal&lt;/a&gt; from facebook. &amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/p&gt;
+
+&lt;p&gt;2. Restrict ContentProvider using &lt;a href=&quot;http://developer.android.com/guide/topics/manifest/provider-element.html#exported&quot;&gt;exported flag&lt;/a&gt; set as false. It&amp;#39;s not the case that every time we develop ContentProvider for data exchange between applications but ContentProvider can be developed for single application or private.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;&amp;lt;provider android:exported=&amp;quot;false&amp;quot; android:name=&amp;quot;MyContentProvider&amp;quot; android:authorities=&amp;quot;com.example.mycontentprovider&amp;quot;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;3. Restrict WebView to access local data. HTML5 and related technologies have become popular &amp;nbsp;to develop Mobile Web App app or Hybrid app. For Hybrid uses WebView to display content from locally store HTML or fetch HTML and other content from the server. &amp;nbsp;Major security concerns for WebView are &lt;a href=&quot;http://developer.android.com/reference/android/webkit/WebSettings.html#setAllowFileAccess%28boolean%29&quot;&gt;setAllowFileAccess()&lt;/a&gt; and &lt;a href=&quot;http://developer.android.com/reference/android/webkit/WebSettings.html#setAllowContentAccess%28boolean%29&quot;&gt;setAllowContentAccess()&lt;/a&gt; methods.&lt;/p&gt;
+
+&lt;p&gt;4. Do not pass sensitive information through Broadcast &amp;amp; Intent. Use LocalBroadcastManager for broadcast data within process / app. &lt;a href=&quot;http://developer.android.com/reference/android/support/v4/content/LocalBroadcastManager.html&quot;&gt;LocalBroadcastManager&lt;/a&gt; is available in Support Library V4.&lt;/p&gt;
+
+&lt;p&gt;5. Don&amp;#39;t print sensitive information in LogCat. Information like username, password, web service URL, request or response, etc detail.&lt;/p&gt;
+
+&lt;p&gt;6. Remove unnecessary Log before publishing app.&lt;/p&gt;
+
+&lt;p&gt;7. Don&amp;#39;t process malicious Intents. &amp;nbsp;Before process Intent received in onReceive method of BroadcastReceiver, validate callers package name, action and other information.&lt;/p&gt;
+
+&lt;p&gt;8. Protect your &lt;a href=&quot;http://developer.android.com/guide/topics/manifest/service-element.html&quot;&gt;Service&lt;/a&gt; with Permission. Use exposed flag as &amp;nbsp;false When Service is developed for your app only.&lt;/p&gt;
+
+&lt;p&gt;9. Restrict access to Activities. If the activity is intended solely for the internal use of the app then use &lt;a href=&quot;http://developer.android.com/guide/topics/manifest/activity-element.html#exported&quot;&gt;exported flag&lt;/a&gt; set as false.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;&amp;lt;activity android:name=&amp;quot;.view.MyActivity&amp;quot; android:exported=&amp;quot;false&amp;quot;&amp;gt; &amp;lt;/activity&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;10. &amp;nbsp;Make sure that debug mode is false before publish APK.    &lt;/p&gt;
+
+&lt;p&gt;11. Encrypt sensitive data even if you store in internal storage.  &lt;/p&gt;
+
+&lt;p&gt;12. For cross app functionality, validate calling application before response.   &lt;/p&gt;
+
+&lt;p&gt;13. Properly verify server certificate TLS/SSL for HTTPS web call.  &lt;/p&gt;
+
+&lt;p&gt;14. Use NDK whenever you feel that information is not safe in Java code because It can decompile easily. i.e. Constant.  &lt;/p&gt;
+
+&lt;p&gt;15. Use &lt;a href=&quot;http://developer.android.com/tools/help/proguard.html&quot;&gt;ProGuard&lt;/a&gt; that shrinks, optimizes, and obfuscates your code.  &lt;/p&gt;
+
+&lt;p&gt;16. Remove unwanted / unused &lt;user-permission&gt; from AndroidManifest.xml  &lt;/p&gt;
+
+&lt;p&gt;17. Loading classes.dex outside of application is major security risk. &lt;a href=&quot;http://developer.android.com/reference/dalvik/system/DexClassLoader.html&quot;&gt;DexClassLoader&lt;/a&gt; allowed developer to load classes.dex on demand.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Reference:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://developer.android.com/training/articles/security-tips.html&quot;&gt;http://developer.android.com/training/articles/security-tips.html&lt;/a&gt;&lt;/p&gt;
 </content>
  </entry>
  

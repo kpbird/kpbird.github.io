@@ -3,11 +3,11 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-    <title>How Smart Watch can change your life</title>
+    <title>Simple tips to secure Android app</title>
     
 
-    <meta content="How Smart Watch can change your life" property="og:title">
-    <meta content="How Smart Watch can change your life" name="twitter:title">
+    <meta content="Simple tips to secure Android app" property="og:title">
+    <meta content="Simple tips to secure Android app" name="twitter:title">
     <meta content="Software developer, trainer, speaker and more by Ketan Parmar" property="og:site_name">
     <meta content="Ketan Parmar is a software developer, trainer, speaker." name="description">
     <meta content="Ketan Parmar is a software developer, trainer, speaker." property="og:description">
@@ -21,19 +21,19 @@
 
     <link href="/atom.xml" rel="alternate" title="Atom" type="application/atom+xml">
     <link href="/sitemap.xml" rel="sitemap" title="Sitemap" type="application/xml">
-    <link href="http://localhost:4000/2014/12/How-Smart-Watch-can-change-your-life" rel="canonical">
+    <link href="http://localhost:4000/2014/05/simple-tips-to-secure-android-app" rel="canonical">
     <meta content="article" property="og:type">
     <meta content="summary" name="twitter:card">
-    <meta content="http://localhost:4000/2014/12/How-Smart-Watch-can-change-your-life" property="og:url">
-    <meta content="http://localhost:4000/2014/12/How-Smart-Watch-can-change-your-life" name="twitter:url"> 
-    <meta content="2014-12-04T21:50:00+05:30" property="article:published_time">
+    <meta content="http://localhost:4000/2014/05/simple-tips-to-secure-android-app" property="og:url">
+    <meta content="http://localhost:4000/2014/05/simple-tips-to-secure-android-app" name="twitter:url"> 
+    <meta content="2014-05-06T21:50:00+05:30" property="article:published_time">
     <meta content="http://localhost:4000/index.html#about" property="article:author"> 
     
     
-    <meta property="og:image" content="http://localhost:4000/assets/images/posts//05be48e.jpg">
-    <meta name="twitter:image:src" content="http://localhost:4000/assets/images/posts//05be48e.jpg">  
-    <meta property="article:section" content="smart watch">   
-    <meta property="article:tag" content="SmartWatch"> 
+    <meta property="og:image" content="http://localhost:4000/assets/images/posts//android_security.jpg">
+    <meta name="twitter:image:src" content="http://localhost:4000/assets/images/posts//android_security.jpg">  
+    <meta property="article:section" content="android,security">   
+    <meta property="article:tag" content="Android,Security"> 
     <!--[if lt IE 9]>
     <script type="text/javascript" src="assets/plugins/lt-ie9/html5.js"></script>
     <script type="text/javascript" src="assets/plugins/lt-ie9/respond.min.js"></script>
@@ -98,52 +98,74 @@
             <div class="row">
                 <div class="left col-md-9">
                     <header>
-                        <h1>How Smart Watch can change your life</h1>
+                        <h1>Simple tips to secure Android app</h1>
                         <small class="fsize13">
-                            <a href="/2014/12/How-Smart-Watch-can-change-your-life" class="label label-default light"><i class="fa fa-dot-circle-o"></i> smart watch</a>
-                            <a href="/2014/12/How-Smart-Watch-can-change-your-life#disqus_thread" class="label label-default light">0 Comments</a>
-                            <span class="label label-default light">4 December 2014</span>
+                            <a href="/2014/05/simple-tips-to-secure-android-app" class="label label-default light"><i class="fa fa-dot-circle-o"></i> android,security</a>
+                            <a href="/2014/05/simple-tips-to-secure-android-app#disqus_thread" class="label label-default light">0 Comments</a>
+                            <span class="label label-default light">6 May 2014</span>
                         </small>
                     </header>
 
-                    <p><img src="/assets/images/posts/05be48e.jpg" alt="Smart Watch" title="Smart Watch" class="img-responsive"></p>
+                    <h1>Simple tips to secure Android app</h1>
 
-<p>_&quot;A smartwatch (or smart watch) is a computerized wristwatch with functionality that is enhanced beyond timekeeping, and is often comparable to a personal digital assistant (PDA) device&quot; - _Wikipedia</p>
+<p><img src="http://www.oneclickroot.com/wp-content/uploads/2012/10/Android-security.jpg" alt=""></p>
 
-<p>Avi Greengart, a consumer device analyst, predicted that 2013 may be &quot;the year of Smart watch&quot;. This prediction turned out to be true as majority of smart phone manufacturer are focusing on smart watch and wearable. Many of them have already released smart watch and others have near future release plans. It is forecasted that 350 million smart watches will ship by 2020<a href="https://media.licdn.com/mpr/mpr/shrinknp_500_500/p/4/005/09f/13c/35409df.png">1</a>.</p>
+<p>Src: http://www.oneclickroot.com/wp-content/uploads/2012/10/Android-security.jpg</p>
 
-<p><img src="https://media.licdn.com/mpr/mpr/shrinknp_500_500/p/4/005/09f/13c/35409df.png" alt=""></p>
+<p>Android has security features built into the operating system that significantly reduce the frequency and impact of application security issues but as application developer, its our job to secure application. The level of security is depends upon application type &amp; domain. There are &nbsp;few security aspects we need not forget. I am collecting those common tips in this article.</p>
 
-<p>Smart watch shipments 2013-2020 (in millions)</p>
+<p>Here, I list down most common things that developers should take care to protect the application.</p>
 
-<p>There are numerous day-to-day use cases that can be made simple yet secure with usage of smart watch. Let&#39;s have quick look, how smart watch can make your life easy.</p>
+<p>1. Do not store private or sensitive data on SDCard. To store file on internal storage, use following methods with private mode (Context.MODE_PRIVATE) <a href="http://developer.android.com/reference/android/content/Context.html#openFileOutput%28java.lang.String,%20int%29">openFileOutput</a> &amp; <a href="http://developer.android.com/reference/android/content/Context.html#openFileInput%28java.lang.String%29">openFileInput</a>. If you really wants to store data in sdcard then encrypt it. You will find many encryption libraries. I prefer <a href="https://github.com/facebook/conceal">conceal</a> from facebook. &nbsp;&nbsp;&nbsp; </p>
 
-<ol>
-<li><strong>Smart Watch as ID card:</strong> Do you forget to carry ID card every morning? NFC based smart watch can work as your ID card. Enterprise can do away with hassle of issuing separate ID card to employees having smart watch.</li>
-<li><strong>Smart Watch as Wallet:</strong> Do you feel your wallet is bulky with credit cards and other useless stuff? Smart watch can replace your need to carry credit cards. Smart Watch and &quot;Card on File&quot; concept can replace need of carrying plastic card in your wallet.</li>
-<li><strong>Smart Watch as Health monitor:</strong> Are you a health geek? Or having health issue which requires continuous monitoring? A smart watch with sensors like Heart Rate, Body Temperature, Accelerometer, etc., will collect your health data and upload to cloud for 24x7 care.</li>
-<li><strong>Smart Watch as Remote control</strong>: Are you confused with different remotes for different systems like home garage door, television, Set Top Box etc.? Smart Watch with Bluetooth can work as remote for your garage, television etc.</li>
-<li><strong>Smart Watch as Security Token:</strong> Do you need to carry RSA Token to access highly secure software or physical location (like Server Room). Smart watch can work as RSA token, it can generate software RSA key. Or it can add 3rd factor of authentication.</li>
-<li><strong>Smart Watch as SOS Device:</strong> Smart watch knows when you could be in danger and sends for help. Smart watch contains a gyroscope and an accelerometer, that detect physical activity or aggressive movements, and mobile app send SMS and email to configured emergency contacts with your current location.</li>
-<li><strong>Smart Watch as Notification/Reminder Device:</strong> This is prime feature of smart watch as of now. It will display different notification from smart phone and allow quick action. With smart watch you will never miss important things like breaking news, flight alerts, meeting calls, reminders, weather alerts.</li>
-</ol>
+<p>2. Restrict ContentProvider using <a href="http://developer.android.com/guide/topics/manifest/provider-element.html#exported">exported flag</a> set as false. It&#39;s not the case that every time we develop ContentProvider for data exchange between applications but ContentProvider can be developed for single application or private.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">&lt;provider android:exported=&quot;false&quot; android:name=&quot;MyContentProvider&quot; android:authorities=&quot;com.example.mycontentprovider&quot;&gt;
+</code></pre></div>
+<p>3. Restrict WebView to access local data. HTML5 and related technologies have become popular &nbsp;to develop Mobile Web App app or Hybrid app. For Hybrid uses WebView to display content from locally store HTML or fetch HTML and other content from the server. &nbsp;Major security concerns for WebView are <a href="http://developer.android.com/reference/android/webkit/WebSettings.html#setAllowFileAccess%28boolean%29">setAllowFileAccess()</a> and <a href="http://developer.android.com/reference/android/webkit/WebSettings.html#setAllowContentAccess%28boolean%29">setAllowContentAccess()</a> methods.</p>
 
-<p>Smart Watch will change our life in many ways. It can become your identity for office access, wallet for payment, car door keys and much more…Vision is smart watch will replace your need of carrying disparate accessibility tokens including a smart phone.</p>
+<p>4. Do not pass sensitive information through Broadcast &amp; Intent. Use LocalBroadcastManager for broadcast data within process / app. <a href="http://developer.android.com/reference/android/support/v4/content/LocalBroadcastManager.html">LocalBroadcastManager</a> is available in Support Library V4.</p>
+
+<p>5. Don&#39;t print sensitive information in LogCat. Information like username, password, web service URL, request or response, etc detail.</p>
+
+<p>6. Remove unnecessary Log before publishing app.</p>
+
+<p>7. Don&#39;t process malicious Intents. &nbsp;Before process Intent received in onReceive method of BroadcastReceiver, validate callers package name, action and other information.</p>
+
+<p>8. Protect your <a href="http://developer.android.com/guide/topics/manifest/service-element.html">Service</a> with Permission. Use exposed flag as &nbsp;false When Service is developed for your app only.</p>
+
+<p>9. Restrict access to Activities. If the activity is intended solely for the internal use of the app then use <a href="http://developer.android.com/guide/topics/manifest/activity-element.html#exported">exported flag</a> set as false.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">&lt;activity android:name=&quot;.view.MyActivity&quot; android:exported=&quot;false&quot;&gt; &lt;/activity&gt;
+</code></pre></div>
+<p>10. &nbsp;Make sure that debug mode is false before publish APK.    </p>
+
+<p>11. Encrypt sensitive data even if you store in internal storage.  </p>
+
+<p>12. For cross app functionality, validate calling application before response.   </p>
+
+<p>13. Properly verify server certificate TLS/SSL for HTTPS web call.  </p>
+
+<p>14. Use NDK whenever you feel that information is not safe in Java code because It can decompile easily. i.e. Constant.  </p>
+
+<p>15. Use <a href="http://developer.android.com/tools/help/proguard.html">ProGuard</a> that shrinks, optimizes, and obfuscates your code.  </p>
+
+<p>16. Remove unwanted / unused <user-permission> from AndroidManifest.xml  </p>
+
+<p>17. Loading classes.dex outside of application is major security risk. <a href="http://developer.android.com/reference/dalvik/system/DexClassLoader.html">DexClassLoader</a> allowed developer to load classes.dex on demand.</p>
 
 <p><strong>Reference:</strong></p>
 
-<p>[1] <a href="http://www.forbes.com/sites/michaelwolf/2013/09/27/smartwatch-market-forecast-to-reach-15-million-in-2014/">http://www.forbes.com/sites/michaelwolf/2013/09/27/smartwatch-market-forecast-to-reach-15-million-in-2014/</a></p>
+<p><a href="http://developer.android.com/training/articles/security-tips.html">http://developer.android.com/training/articles/security-tips.html</a></p>
 
                <!--      <p class="fsize16">Tags: 
                         <a class="label label-default light" href="#"><i class="fa fa-tags"></i> </a> 
                     </p> -->
                     <br/>
                      
-                        <div class="nav-previous">
-                          <a class="" href="http://localhost:4000/2014/12/Wearable-technology-to-monitor-Parkinson%E2%80%99s-disease" rel="prev"><i class="fa fa-long-arrow-left nav-previous-link"></i>Wearable technology to monitor Parkinson’s disease</a>
-                        </div>
-                      
                     
+                        <div class="nav-next">
+                          <a class="" href="http://localhost:4000/2014/06/Migrating-Web-Site-to-AWS-Cloud-A%20Quick-Guide" rel="next">Migrating Web Site to AWS Cloud - A Quick Guide<i class="fa fa-long-arrow-right nav-next-link"></i></a>
+                        </div>
+                       
                      
                       <br/>
                     <hr/>
