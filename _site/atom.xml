@@ -4,13 +4,66 @@
  <title>Ketan Parmar</title>
  <link type="application/atom+xml" href="http://romuluscrisan.com/atom.xml" rel="self"/>
  <link href="http://www.romuluscrisan.com/"/>
- <updated>2015-03-23T22:41:13+05:30</updated>
+ <updated>2015-03-28T23:39:58+05:30</updated>
  <id>http://www.kpbird.com/</id>
  <author>
    <name>Ketan Parmar</name>
    <email>contact@kpbird.com</email>
  </author>
  
+ 
+ <entry>
+   <title>Android 5.0 Lollipop API Change</title>
+   <link href="http://www.romuluscrisan.com/2015/10/android-50-lollipop-api-change"/>
+   <updated>2015-10-06T21:50:00+05:30</updated>
+   <id>http://www.romuluscrisan.com/2015/10/android-50-lollipop-api-change</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/images/posts/lollipop-1600.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;src:&amp;nbsp;http://www.android.com/new/images/banners/lollipop-1600.png  &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Android 5.0 Lollipop Features&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Material design&lt;/li&gt;
+&lt;li&gt;Performance focus&lt;/li&gt;
+&lt;li&gt;Notifications&lt;/li&gt;
+&lt;li&gt;Your apps on the big screen - TV&lt;/li&gt;
+&lt;li&gt;Document-centric apps&lt;/li&gt;
+&lt;li&gt;Advanced connectivity&lt;/li&gt;
+&lt;li&gt;High-performance graphics&lt;/li&gt;
+&lt;li&gt;More Powerful Audio&lt;/li&gt;
+&lt;li&gt;Enhanced Camera &amp;amp; Video&lt;/li&gt;
+&lt;li&gt;Screen capturing and sharing&lt;/li&gt;
+&lt;li&gt;New types of sensors&lt;/li&gt;
+&lt;li&gt;Chromium WebView&lt;/li&gt;
+&lt;li&gt;Accessibility &amp;amp; Input&lt;/li&gt;
+&lt;li&gt;Tools for building battery-efficient apps&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;| Type                   | Additions | Changes | Removals | Total |
+|------------------------|-----------|---------|----------|-------|
+| Packages               | 14        | 57      | 1        | 72    |
+| Classes and Interfaces | 147       | 360     | 0        | 507   |
+| Constructors           | 98        | 3       | 1        | 102   |
+| Methods                | 770       | 117     | 29       | 916   |
+| Fields                 | 1150      | 75      | 2        | 1227  |
+| Total                  | 2179      | 612     | 33       | 2824  |&lt;/p&gt;
+
+&lt;p&gt;The overall difference between &lt;strong&gt;API Levels 20 and 21&lt;/strong&gt; is approximately &lt;strong&gt;6.51%&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Android L Preview API Changes&lt;/strong&gt;  &lt;/p&gt;
+
+&lt;p&gt;| Type                      | Additions     | Changes   | Removals  | Total     |
+|------------------------   |-----------    |---------  |---------- |-------    |
+| Packages                  | 8             | 43        | 0         | 51        |
+| Classes and Interfaces    | 87            | 232       | 0         | 319       |
+| Constructors              | 84            | 2         | 0         | 86        |
+| Methods                   | 408           | 69        | 17        | 494       |
+| Fields                    | 754           | 22        | 1         | 777       |
+| Total                     | 1341          | 368       | 18        | 1727      |
+The overall difference between&amp;nbsp;&lt;strong&gt;API Levels 20&lt;/strong&gt;&amp;nbsp;and L-preview is approximately&amp;nbsp;&lt;strong&gt;3.77%.&lt;/strong&gt;&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>How Smart Watch can change your life</title>
@@ -179,6 +232,169 @@ services-architecture-advantages&lt;/a&gt;&lt;/li&gt;
 &lt;ul&gt;
 &lt;li&gt;µCon: The Microservices Conference : &lt;a href=&quot;http://killsmatter.com/conferences/6312-mucon&quot;&gt;https://skillsmatter.com/conferences/6312-mucon&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Android Login with Facebook</title>
+   <link href="http://www.romuluscrisan.com/2014/11/android-login-with-facebook"/>
+   <updated>2014-11-22T21:50:00+05:30</updated>
+   <id>http://www.romuluscrisan.com/2014/11/android-login-with-facebook</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;http://1.bp.blogspot.com/-iCx0todkMGM/VHBoCFbte1I/AAAAAAAAFQk/kwWnGCSH0zM/s400/device-2014-11-22-154940.png&quot; alt=&quot;&quot;&gt;&lt;img src=&quot;http://2.bp.blogspot.com/-4i7paQCAuI8/VHBoBI8q9OI/AAAAAAAAFQY/4iYGAbS4ncw/s400/device-2014-11-22-155020.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://3.bp.blogspot.com/-K9IoL8Kubeo/VHBoAuZ00qI/AAAAAAAAFQU/JV4_06ckPGM/s400/Screen%2BShot%2B2014-11-22%2Bat%2B3.50.35%2Bpm.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Pre-requisite&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;2. Facebook API Key from Facebook Application - &lt;a href=&quot;https://developers.facebook.com/docs/android/getting-started&quot;&gt;Detail&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;3. Hash Key of your debug certificate &amp;nbsp;- &lt;a href=&quot;http://sonyarouje.com/2011/09/18/facebook-hash-key-for-android-apps/&quot;&gt;Detail&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Usage&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Step 1: Import &amp;quot;FacebookLoginUtils.java&amp;quot; class in your package&lt;/p&gt;
+
+&lt;p&gt;Step 2: Implement callback listener&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt; public class MyActivity extends Activity implements FacebookLoginUtils.FacebookLoginStatus
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Step 3: Declare callback method&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;    @Override
+    public void OnSuccessFacebookLogin(Bundle profile) {
+        Log.i(TAG,profile.getString(FacebookLoginUtils.USERID));
+        Log.i(TAG,profile.getString(FacebookLoginUtils.EMAIL));
+        Log.i(TAG,profile.getString(FacebookLoginUtils.NAME));
+        Log.i(TAG,profile.getString(FacebookLoginUtils.FIRST_NAME));
+        Log.i(TAG,profile.getString(FacebookLoginUtils.LAST_NAME));
+
+    }
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Step 4: Declare object of FacebookLoginUtils.java&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;    private FacebookLoginUtils fLogin;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Step 5: Initialize object in onCreate method&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;        fLogin = new FacebookLoginUtils(this, R.id.activity_login_fb);
+        fLogin.setLoginStatus(this);
+        fLogin.setEnable(true);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Step 6: Declare few supporting methods&amp;nbsp;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;    protected void onResume() {
+        super.onResume();
+        fLogin.onResume();
+    };
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        fLogin.onPause();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        fLogin.onDestroy();
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int responseCode,Intent intent) {
+        fLogin.onActivityResult(requestCode, responseCode, intent);
+    }
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;FAQ&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Q: What is the problem of above approach ?&lt;/p&gt;
+
+&lt;p&gt;A: You activity has a lot of scattered code for Facebook login, It will be more complex and unmanageable when you will have another social network login like Facebook and Twitter.&lt;/p&gt;
+
+&lt;p&gt;Q: How I will receive a response for login success?&lt;/p&gt;
+
+&lt;p&gt;A: You need to implement interface &amp;quot;FacebookLoginStatus&amp;quot;, on successful login you will receive callback &amp;quot;OnSuccessFacebookLogin&amp;quot;&lt;/p&gt;
+
+&lt;p&gt;Q: What will be received on login success ?&lt;/p&gt;
+
+&lt;p&gt;A: You will have Name, Email , First Name, Last Name, User Id.&lt;/p&gt;
+
+&lt;p&gt;Q: Do I need to handle login failure / error ?&lt;/p&gt;
+
+&lt;p&gt;A: No, FacebookLoginUtils.java will handle login failure, error and display appropriate message on screen. &amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Note: Change facebook app key in /res/values/strings.xml#facebook&lt;/em&gt;app&lt;em&gt;id&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Android Login with Google Plus Utility</title>
+   <link href="http://www.romuluscrisan.com/2014/11/android-login-with-google-plus-utility"/>
+   <updated>2014-11-06T21:50:00+05:30</updated>
+   <id>http://www.romuluscrisan.com/2014/11/android-login-with-google-plus-utility</id>
+   <content type="html">&lt;h1&gt;Android Login with Google Plus Utility&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://1.bp.blogspot.com/-SxTNj0uRwW8/VGSvrKm53mI/AAAAAAAAFPo/izmq8IUVyY4/s320/device-2014-11-13-161116.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Pre-requisite&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Official Document: https://developers.google.com/+/mobile/android/sign-in&lt;/p&gt;
+
+&lt;p&gt;Tutorial from AndroidHive : http://www.androidhive.info/2014/02/android-login-with-google-plus-account-1/&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Please read AndroidHive article for initial setup &amp;amp; other process&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Usage&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 1:&lt;/strong&gt; Import &amp;quot;GooglePlusLoginUtils.java&amp;quot; class in your package&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 2:&lt;/strong&gt; Implement callback listener&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;public class LoginActivity extends Activity implements GooglePlusLoginUtils.GPlusLoginStatus
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Step 3:&lt;/strong&gt; Declare callback method&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;    public void OnSuccessGPlusLogin(Bundle profile) {
+ Log.i(TAG,profile.getString(GooglePlusLoginUtils.NAME));
+ Log.i(TAG,profile.getString(GooglePlusLoginUtils.EMAIL));
+ Log.i(TAG,profile.getString(GooglePlusLoginUtils.PHOTO));
+ Log.i(TAG,profile.getString(GooglePlusLoginUtils.PROFILE));
+    }
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Step 4:&lt;/strong&gt; Declare object of GooglePlusLoginUtils.java&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;private GooglePlusLoginUtils gLogin;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Step 5:&lt;/strong&gt; Initialize object in onCreate method&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt; gLogin = new GooglePlusLoginUtils(this, R.id.activity_login_gplus); // Id of login button
+        gLogin.setLoginStatus(this);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Step 6:&lt;/strong&gt; Declare few supporting methods&amp;nbsp;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt; @Override
+ protected void onStart() {
+         super.onStart();
+         gLogin.connect();
+ }
+ @Override
+ protected void onStop() {
+         super.onStop();
+         gLogin.disconnect();
+ }
+ @Override
+ protected void onActivityResult(int requestCode, int responseCode,Intent intent) {
+                gLogin.onActivityResult(requestCode, responseCode, intent);
+ }
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;FAQ&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Q: What is the problem of above approach ?&lt;/p&gt;
+
+&lt;p&gt;A: You activity has a lot of scattered code for Google Pluse login, It will be more complex and unmanageable when you will have another social network login like Facebook and Twitter.&lt;/p&gt;
+
+&lt;p&gt;Q: How I will receive a response for login success?&lt;/p&gt;
+
+&lt;p&gt;A: You need to implement interface &amp;quot;GPlusloginStatus&amp;quot;, on successful login you will receive callback &amp;quot;OnSuccessGPlusLogin&amp;quot;&lt;/p&gt;
+
+&lt;p&gt;Q: What will be received on login success ?&lt;/p&gt;
+
+&lt;p&gt;A: You will have Display name, Email , Photo and Profile url.&lt;/p&gt;
+
+&lt;p&gt;Q: Do I need to handle login failure / error ?&lt;/p&gt;
+
+&lt;p&gt;A: No, GooglePlusLoginUtils.java will handle login failure, error and display appropriate message on screen. &amp;nbsp;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp; &amp;nbsp;&lt;/p&gt;
 </content>
  </entry>
  
@@ -497,6 +713,236 @@ services-architecture-advantages&lt;/a&gt;&lt;/li&gt;
  </entry>
  
  <entry>
+   <title>Android Triangle Pager Sliding Tabs</title>
+   <link href="http://www.romuluscrisan.com/2014/06/android-triangle-pager-sliding-tabs"/>
+   <updated>2014-06-01T21:50:00+05:30</updated>
+   <id>http://www.romuluscrisan.com/2014/06/android-triangle-pager-sliding-tabs</id>
+   <content type="html">&lt;p&gt;Android Triangle Pager Sliding Tabs&lt;/p&gt;
+
+&lt;iframe allowfullscreen=&quot;&quot; frameborder=&quot;0&quot; height=&quot;315&quot; src=&quot;//www.youtube.com/embed/2w8-wzr-wx8&quot; width=&quot;420&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&amp;gt; &lt;strong&gt;_Note&lt;/strong&gt;: This is not a plug and play library that you can directly import in project and use. Triangle tabs is extension of PagerSlidingTabStrip library. In this article I will explain, how to modify &lt;a href=&quot;https://github.com/astuetz/PagerSlidingTabStrip&quot;&gt;PageSlidingTabStrip&lt;/a&gt; library to create Triangle Tabs._&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Android Triangle Tabs Video&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;**&lt;br&gt;
+** &lt;strong&gt;Customise&lt;/strong&gt;&lt;strong&gt;&amp;nbsp;PageSlidingTabStrip&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 1:&lt;/strong&gt; Import PageSlidingTabStrip library in AndroidStudio.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 2:&lt;/strong&gt; Let add new attribute for Triangle Tabs in attrs.xml (project -&amp;gt; res -&amp;gt; values). This attribute will allow developer to enable / disable triangle tabs.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;&amp;lt;attr name=&amp;quot;pstsTriangleIndicator&amp;quot; format=&amp;quot;boolean&amp;quot;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Step 3:&lt;/strong&gt; We need to modify Java code for Triangle Tabs.Goto source code and Open PagerSlidingTabStrip.java file&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 4:&lt;/strong&gt; Declare boolean variable above constructor, for pstsTriangleIndicator attribute.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;private boolean triangleIndicator = false;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Step 5:&lt;/strong&gt; Fatch pstsTriangleIndicator attribute, write following line in constructor&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;triangleIndicator = a.getBoolean(R.styleable.PagerSlidingTabStrip_pstsTriangleIndicator, triangleIndicator);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Step 6:&lt;/strong&gt; Now it&amp;#39;s time to draw triangle tab, goto onDraw method and add following code.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Original Code&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;canvas.drawRect(lineLeft, height - indicatorHeight, lineRight, height, rectPaint);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;New Code&lt;/strong&gt;, conditional code for triangle tabs&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;if (triangleIndicator) {
+      Rect r = new Rect();
+      int left = (int) lineLeft + (int) (((lineRight - lineLeft) / 2) - (indicatorHeight / 2)) - 20;
+      int top = height - indicatorHeight;
+      int right = (int) left + indicatorHeight + 30;
+      int bottom = height;
+      r.set(left, top, right, bottom);
+      Path path = getEquilateralTriangle(r);
+      canvas.drawPath(path, rectPaint);
+}
+else {
+      canvas.drawRect(lineLeft, height - indicatorHeight, lineRight, height, rectPaint);
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Step 7:&lt;/strong&gt; This is last step, declare getEquilateralTriangle() function. This function has code for triangle.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;public Path getEquilateralTriangle(Rect bounds) {
+        Point startPoint = null, p2 = null, p3 = null;
+        int width = bounds.right - bounds.left;
+        int height = bounds.bottom - bounds.top;
+
+        startPoint = new Point(bounds.left, bounds.bottom);
+
+        p2 = new Point(startPoint.x + width, startPoint.y);
+        p3 = new Point(startPoint.x + (width / 2), startPoint.y - height);
+
+        Path path = new Path();
+        path.moveTo(startPoint.x, startPoint.y);
+        path.lineTo(p2.x, p2.y);
+        path.lineTo(p3.x, p3.y);
+
+        return path;
+    }
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Usage&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 1:&lt;/strong&gt; Include the customized library as local library project or you can copy PagerSlidingTabStrip.java, attrs.xml and background_tab.xml in respective folders of your main project.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 2:&lt;/strong&gt; Include the PagerSlidingTabStrip widget in your layout. This should usually be placed above the ViewPager it represents. Noticed pstsTriangleIndicator attribute&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;&amp;lt;com.kpbird.triangletabs.pagerslidingtabstrip android:id=&amp;quot;@+id/activity_main_pagertabstrip&amp;quot; android:layout_width=&amp;quot;match_parent&amp;quot; android:layout_height=&amp;quot;45dp&amp;quot; custom:pststextallcaps=&amp;quot;true&amp;quot; custom:pstsindicatorcolor=&amp;quot;#FF3F9FE0&amp;quot; custom:pstsdividercolor=&amp;quot;#FF3F9FE0&amp;quot; custom:pstsunderlinecolor=&amp;quot;#FF3F9FE0&amp;quot; custom:pststriangleindicator=&amp;quot;true&amp;quot; custom:pstsshouldexpand=&amp;quot;true&amp;quot; custom:pstsindicatorheight=&amp;quot;15dp&amp;quot;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Step 3:&lt;/strong&gt; In your onCreate method (or onCreateView for a fragment), bind the widget to the ViewPager.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;// Declar variable
+private ViewPager pager;
+private PagerSlidingTabStrip pagertab;
+private MyPageAdapter pageAdapter;
+
+// Inside onCreate
+pager = (ViewPager) findViewById(R.id.activity_main_pager);
+pagertab = (PagerSlidingTabStrip) findViewById(R.id.activity_main_pagertabstrip);
+List fragments = getFragments();
+pageAdapter = new MyPageAdapter(getSupportFragmentManager(), fragments);
+pager.setAdapter(pageAdapter);
+pagertab.setViewPager(pager);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Step 4:&lt;/strong&gt; Compile &amp;amp; Run application&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;private boolean triangleIndicator = false;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Step 5:&lt;/strong&gt; Fatch pstsTriangleIndicator attribute, write following line in constructor&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;triangleIndicator = a.getBoolean(R.styleable.PagerSlidingTabStrip_pstsTriangleIndicator, triangleIndicator);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Step 6:&lt;/strong&gt; Now it&amp;#39;s time to draw triangle tab, goto onDraw method and add following code.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Original Code&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;canvas.drawRect(lineLeft, height - indicatorHeight, lineRight, height, rectPaint);
+New Code, conditional code for triangle tabs&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;if (triangleIndicator) {
+  Rect r = new Rect();
+  int left = (int) lineLeft + (int) (((lineRight - lineLeft) / 2) - (indicatorHeight / 2)) - 20;
+  int top = height - indicatorHeight;
+  int right = (int) left + indicatorHeight + 30;
+  int bottom = height;
+  r.set(left, top, right, bottom);
+  Path path = getEquilateralTriangle(r);
+  canvas.drawPath(path, rectPaint);
+} 
+else {
+  canvas.drawRect(lineLeft, height - indicatorHeight, lineRight, height, rectPaint);
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Step 7:&lt;/strong&gt; This is last step, declare getEquilateralTriangle() function. This function has code for triangle.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;public Path getEquilateralTriangle(Rect bounds) {
+    Point startPoint = null, p2 = null, p3 = null;
+    int width = bounds.right - bounds.left;
+    int height = bounds.bottom - bounds.top;
+
+    startPoint = new Point(bounds.left, bounds.bottom);
+
+    p2 = new Point(startPoint.x + width, startPoint.y);
+    p3 = new Point(startPoint.x + (width / 2), startPoint.y - height);
+
+    Path path = new Path();
+    path.moveTo(startPoint.x, startPoint.y);
+    path.lineTo(p2.x, p2.y);
+    path.lineTo(p3.x, p3.y);
+
+    return path;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Usage&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 1:&lt;/strong&gt; Include the customized library as local library project or you can copy PagerSlidingTabStrip.java, attrs.xml and background_tab.xml in respective folders of your main project.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 2:&lt;/strong&gt; Include the PagerSlidingTabStrip widget in your layout. This should usually be placed above the ViewPager it represents. Noticed pstsTriangleIndicator attribute&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;&amp;lt;com.kpbird.triangletabs.PagerSlidingTabStrip
+    android:id=&amp;quot;@+id/activity_main_pagertabstrip&amp;quot;
+    android:layout_width=&amp;quot;match_parent&amp;quot;
+    android:layout_height=&amp;quot;45dp&amp;quot;
+    custom:pstsTextAllCaps=&amp;quot;true&amp;quot;
+    custom:pstsIndicatorColor=&amp;quot;#FF3F9FE0&amp;quot;
+    custom:pstsDividerColor=&amp;quot;#FF3F9FE0&amp;quot;
+    custom:pstsUnderlineColor=&amp;quot;#FF3F9FE0&amp;quot;
+    custom:pstsTriangleIndicator=&amp;quot;true&amp;quot;
+    custom:pstsShouldExpand=&amp;quot;true&amp;quot;
+    custom:pstsIndicatorHeight=&amp;quot;15dp&amp;quot;
+/&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Step 3:&lt;/strong&gt; In your onCreate method (or onCreateView for a fragment), bind the widget to the ViewPager.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;// Declar variable 
+private ViewPager pager;
+private PagerSlidingTabStrip pagertab;
+private MyPageAdapter pageAdapter;
+
+// Inside onCreate
+pager = (ViewPager) findViewById(R.id.activity_main_pager);
+pagertab = (PagerSlidingTabStrip) findViewById(R.id.activity_main_pagertabstrip);
+List fragments = getFragments();
+pageAdapter = new MyPageAdapter(getSupportFragmentManager(), fragments);
+pager.setAdapter(pageAdapter);
+pagertab.setViewPager(pager);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Step 4:&lt;/strong&gt; Compile &amp;amp; Run application&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Android L Preview API Changes</title>
+   <link href="http://www.romuluscrisan.com/2014/06/android-l-preview-api-changes"/>
+   <updated>2014-06-01T21:50:00+05:30</updated>
+   <id>http://www.romuluscrisan.com/2014/06/android-l-preview-api-changes</id>
+   <content type="html">&lt;h1&gt;Android L Preview API Changes&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://cdn.redmondpie.com/wp-content/uploads/2014/06/Developer-Preview-Android-L.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;src:&amp;nbsp;http://developer.android.com/preview/images/l-dev-prev.png&lt;/p&gt;
+
+&lt;p&gt;**&lt;br&gt;
+** &lt;strong&gt;Android L Preview Features&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;A New Design - Material Design&lt;/li&gt;
+&lt;li&gt;A New Runtime - ART (Android Runtime)&lt;/li&gt;
+&lt;li&gt;Enhanced Notifications&lt;/li&gt;
+&lt;li&gt;Project Volta- Increased Efficiency&lt;/li&gt;
+&lt;li&gt;Support for OpenGL ES 3.1&lt;/li&gt;
+&lt;li&gt;Android Extension Pack&lt;/li&gt;
+&lt;li&gt;Camera API for advanced camera capabilities&lt;/li&gt;
+&lt;li&gt;Storage - Directory selection&lt;/li&gt;
+&lt;li&gt;Multiple network connections&lt;/li&gt;
+&lt;li&gt;Bluetooth broadcasting&lt;/li&gt;
+&lt;li&gt;NFC enhancements&lt;/li&gt;
+&lt;li&gt;Scheduling jobs&lt;/li&gt;
+&lt;li&gt;Enterprise - Managed provisioning&lt;/li&gt;
+&lt;li&gt;Render PDF as bitmap&lt;/li&gt;
+&lt;li&gt;Testing and accessibility improvements&lt;/li&gt;
+&lt;li&gt;Easier switching between input languages
+&lt;strong&gt;Android L Preview API Changes&lt;/strong&gt;&lt;br&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;| &lt;strong&gt;Type&lt;/strong&gt;                   | &lt;strong&gt;Additions&lt;/strong&gt; | &lt;strong&gt;Changes&lt;/strong&gt; | &lt;strong&gt;Removals&lt;/strong&gt; | &lt;strong&gt;Total&lt;/strong&gt; |
+|------------------------|-----------|---------|----------|-------|
+| Packages               | 8         | 43      | 0        | 51    |
+| Classes and Interfaces | 87        | 232     | 0        | 319   |
+| Constructors           | 84        | 2       | 0        | 86    |
+| Methods                | 408       | 69      | 17       | 494   |
+| Fields                 | 754       | 22      | 1        | 777   |
+| &lt;strong&gt;Total&lt;/strong&gt;                  | &lt;strong&gt;1341&lt;/strong&gt;      | &lt;strong&gt;368&lt;/strong&gt;     | &lt;strong&gt;18&lt;/strong&gt;       | &lt;strong&gt;1727&lt;/strong&gt;  |&lt;/p&gt;
+
+&lt;p&gt;The overall difference between &lt;strong&gt;API Levels 20&lt;/strong&gt; and L-preview is approximately &lt;strong&gt;3.77%.&lt;/strong&gt;  &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;New Packages&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;android.app.job&lt;/li&gt;
+&lt;li&gt;android.bluetooth.le&lt;/li&gt;
+&lt;li&gt;android.hardware.camera2&lt;/li&gt;
+&lt;li&gt;android.hardware.camera2.params&lt;/li&gt;
+&lt;li&gt;android.media.session&lt;/li&gt;
+&lt;li&gt;android.media.tv&lt;/li&gt;
+&lt;li&gt;android.service.voice&lt;/li&gt;
+&lt;li&gt;android.system&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+ </entry>
+ 
+ <entry>
    <title>Simple tips to secure Android app</title>
    <link href="http://www.romuluscrisan.com/2014/05/simple-tips-to-secure-android-app"/>
    <updated>2014-05-06T21:50:00+05:30</updated>
@@ -550,6 +996,1362 @@ services-architecture-advantages&lt;/a&gt;&lt;/li&gt;
 &lt;p&gt;&lt;strong&gt;Reference:&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://developer.android.com/training/articles/security-tips.html&quot;&gt;http://developer.android.com/training/articles/security-tips.html&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Use ADB over Wi-Fi without extra application or software</title>
+   <link href="http://www.romuluscrisan.com/2014/03/use-adb-over-wi-fi-without-extra"/>
+   <updated>2014-03-06T21:50:00+05:30</updated>
+   <id>http://www.romuluscrisan.com/2014/03/use-adb-over-wi-fi-without-extra</id>
+   <content type="html">&lt;h1&gt;Use ADB over Wi-Fi without extra application or software&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://2.bp.blogspot.com/-Wiba-cAGHCA/UyFBLX-36OI/AAAAAAAAEy0/vSyJ2jcdoto/s1600/Android-Developer2.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Image Source:&amp;nbsp;http://techbeasts.com/wp-content/uploads/2013/08/Android-Developer2.png&lt;/p&gt;
+
+&lt;p&gt;Normally developers use USB cable to connect Android device with computer for debug and other purposes.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;What are the problems with USB ?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;1. You can not move around with device (some app require to move around for testing)&lt;/p&gt;
+
+&lt;p&gt;2. Cable damage&lt;/p&gt;
+
+&lt;p&gt;3. USB socket of Android device can be damage&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;What is solution of above problems ?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Normally &amp;nbsp;developers use ADB over USB but it is also possible to use ADB over Wi-fi. Following steps explain how to use ADB over Wifi  &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Prerequisites&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Android device and computer should be connected in same network. &amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 1:&lt;/strong&gt; Connect Android device with USB cable to computer&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 2:&lt;/strong&gt; Use following command in terminal to make sure adb is running in USB mode.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$adb usb
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;restarting in USB mode&lt;/p&gt;
+
+&lt;p&gt;Connect to the device over USB.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 3:&lt;/strong&gt; Execute following command in terminal to make sure adb identify/list gets connected with the device.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$adb devices
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Step 4:&lt;/strong&gt; Change adb mode from USB to tcpip using following command.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$adb tcpip 5555
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;restarting in TCP mode port: 5555&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 5:&lt;/strong&gt; Now, adb is running over TCP/IP mode, Let&amp;#39;s find IP address of Android device. Go to Settings in Android device -&amp;gt; About -&amp;gt; Status -&amp;gt; IP address. note down the IP address of connected Android Device.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 6:&lt;/strong&gt; Use following command to connect ADB with IP address&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$adb connect #.#.#.#
+
+connected to #.#.#.#:5555
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Step 7:&lt;/strong&gt; Now adb is working over Wi-fi, You can remove USB cable from Android device.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 8:&lt;/strong&gt; To confirm adb is working over Wi-fi and your device is still connect. you can use following command&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$adb devices
+
+#.#.#.#:5555 device
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You&amp;#39;re now ready to go!, Enjoy ADB over Wi-fi.  &lt;/p&gt;
+
+&lt;p&gt;Note: Use following command to change ADB mode to USB  &lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$adb usb  
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Sony SmartWatch App Development 4</title>
+   <link href="http://www.romuluscrisan.com/2014/01/sony-smartwatch-app-development-4"/>
+   <updated>2014-01-06T21:50:00+05:30</updated>
+   <id>http://www.romuluscrisan.com/2014/01/sony-smartwatch-app-development-4</id>
+   <content type="html">&lt;p&gt;Sony SmartWatch App Development 4&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&quot;http://www.kpbird.com/2013/12/sony-smartwatch-app-development-3.html&quot;&gt;previous article&lt;/a&gt;, we looked at Notification API with Hello SmartWatch demo. In this article, we will focus on Control API.  &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://4.bp.blogspot.com/-8M7znWZHNw0/UrLyBfGpvAI/AAAAAAAAEq0/dIdN06TjKC4/s400/sonysmartwatch2trio.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Control API is&amp;nbsp;responsible&amp;nbsp;for&amp;nbsp;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Extension lifecycle:&lt;/strong&gt; It allows you to start and stop extension using Intent. Extension means SmartWatch Host application.
+
+&lt;ul&gt;
+&lt;li&gt;Control.Intents.CONTROL&lt;em&gt;START&lt;/em&gt;INTENT&lt;/li&gt;
+&lt;li&gt;Control.Intents.CONTROL&lt;em&gt;STOP&lt;/em&gt;INTENT.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Controlling the display:&lt;/strong&gt; Normally we don&amp;#39;t require to control the display. Default screen state is &amp;quot;Auto&amp;quot;, for the specific need you can change screen state by using Intent.
+
+&lt;ul&gt;
+&lt;li&gt;Control.Intents.SCREEN&lt;em&gt;STATE&lt;/em&gt;OFF&lt;/li&gt;
+&lt;li&gt;Control.Intents.SCREEN&lt;em&gt;STATE&lt;/em&gt;AUTO&lt;/li&gt;
+&lt;li&gt;Control.Intents.SCREEN&lt;em&gt;STATE&lt;/em&gt;DIM&lt;/li&gt;
+&lt;li&gt;Control.Intents.SCREEN&lt;em&gt;STATE&lt;/em&gt;ON&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Controlling the LEDs:&lt;/strong&gt; It used to switch on /off LEDs based on notification.
+
+&lt;ul&gt;
+&lt;li&gt;Control.Intents.CONTROL&lt;em&gt;LED&lt;/em&gt;INTENT&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Controlling the vibrator:&lt;/strong&gt; It allows you to vibrate SmartWatch.
+
+&lt;ul&gt;
+&lt;li&gt;Control.Intents.CONTROL&lt;em&gt;VIBRATE&lt;/em&gt;INTENT&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Key event:&lt;/strong&gt; It is used to capture hardware key i.e. home, back and menu key, which is available in SmartWatch2.
+
+&lt;ul&gt;
+&lt;li&gt;Control.Intents.CONTROL&lt;em&gt;KEY&lt;/em&gt;EVENT_INTENT&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Touch event:&lt;/strong&gt; It is used to capture touch events.
+
+&lt;ul&gt;
+&lt;li&gt;Control.Intents.CONTROL&lt;em&gt;TOUCH&lt;/em&gt;EVENT_INTENT&lt;/li&gt;
+&lt;li&gt;Control.Intents.CONTROL&lt;em&gt;SWIPE&lt;/em&gt;EVENT_INTENT&lt;/li&gt;
+&lt;li&gt;Control.Intents.CONTROL&lt;em&gt;OBJECT&lt;/em&gt;CLICK&lt;em&gt;EVENT&lt;/em&gt;INTENT&amp;nbsp;
+Sony&amp;#39;s Add-on SDK version 2.0 supports ListView and GridView but this article focuses on basic controls only. For the demo I will create a simple layout with ImageView and TextView. I will animate ImageView with thread and also capture onClick event of ImageView.&lt;br&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Screen Shots&lt;/strong&gt;  &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://4.bp.blogspot.com/-GFZGtsAMmJU/Ur0ZaooLj7I/AAAAAAAAEss/qXBfPXSCE9E/s320/1.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Open Accessory emulator and select SmartWatch 2&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://3.bp.blogspot.com/-H8BKenCO0BU/Ur0ZakKIpgI/AAAAAAAAEsw/tyYAWqk60gY/s320/2.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Select Control API&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://4.bp.blogspot.com/-IvspiCJ_F5c/Ur0ZavdqdZI/AAAAAAAAEso/2S-sUItU_mg/s320/3.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Select Hello SmartWatch Extension&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://3.bp.blogspot.com/-h8WDiAamRME/Ur0Zbb2TB8I/AAAAAAAAEtE/Jof-1fgO9eI/s320/4.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Enjoy dancing android&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://2.bp.blogspot.com/-o7IZv0n26x8/Ur0ZbSUHHAI/AAAAAAAAEs8/cHzKjE_ahCg/s320/5.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Click on Android will fire onClick event from host app to extension app&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://3.bp.blogspot.com/-jNlPcmX9x1Y/Ur0cJCwh7hI/AAAAAAAAEtU/_s9R1uHnB-I/s320/6.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Click on menu hardware button to make menu item visible.&lt;/p&gt;
+
+&lt;p&gt;Let&amp;#39;s extend example which was previously developed.&lt;br&gt;
+&lt;strong&gt;Step 1:&lt;/strong&gt; &amp;nbsp;Create java class named &amp;quot;HelloControlSmartWatch2.java&amp;quot; and extend with&amp;nbsp;ControlExtension.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;package com.kpbird.hellosmartwatch;
+import android.content.Context;
+import android.location.Address;
+import android.os.Bundle;
+import android.os.Handler;
+import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.widget.Toast;
+
+import com.sonyericsson.extras.liveware.aef.control.Control;
+import com.sonyericsson.extras.liveware.extension.util.control.ControlExtension;
+import com.sonyericsson.extras.liveware.extension.util.control.ControlObjectClickEvent;
+import com.sonyericsson.extras.liveware.extension.util.control.ControlTouchEvent;
+import com.sonyericsson.extras.liveware.extension.util.control.ControlView;
+import com.sonyericsson.extras.liveware.extension.util.control.ControlView.OnClickListener;
+import com.sonyericsson.extras.liveware.extension.util.control.ControlViewGroup;
+
+public class HelloControlSmartWatch2 extends ControlExtension {
+
+    private static final int ANIMATION_DELTA_MS = 500;
+    private static final int MENU_ITEM_0 = 0;
+    private static final int MENU_ITEM_1 = 1;
+    private static final int MENU_ITEM_2 = 2;
+
+    private boolean mIsShowingAnimation = false;
+    private Animation mAnimation = null;
+ private Handler mHandler;
+    private ControlViewGroup mLayout = null;
+    private String TAG = this.getClass().getSimpleName();
+    private Bundle[] mMenuItemsText = new Bundle[3];
+
+ public HelloControlSmartWatch2(Context context, String hostAppPackageName,Handler handler) {
+  super(context, hostAppPackageName);
+   if (handler == null) {
+             throw new IllegalArgumentException(&amp;quot;handler == null&amp;quot;);
+      }
+      mHandler = handler;
+      LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+      View layout = inflater.inflate(R.layout.hello_control_2, null);
+      mLayout = parseLayout(layout);
+      if(mLayout !=null){
+       ControlView androidAnim = mLayout.findViewById(R.id.imgHelloControl);
+       androidAnim.setOnClickListener(new OnClickListener() {
+
+    @Override
+    public void onClick() {
+      Toast.makeText(mContext, &amp;quot;Button Clicked&amp;quot;, Toast.LENGTH_LONG).show();
+      Log.i(TAG, &amp;quot;Android Button Clicked&amp;quot;);
+      toggleAnimation();
+    }
+   });
+
+      }
+
+         mMenuItemsText[0] = new Bundle();
+         mMenuItemsText[0].putInt(Control.Intents.EXTRA_MENU_ITEM_ID, MENU_ITEM_0);
+         mMenuItemsText[0].putString(Control.Intents.EXTRA_MENU_ITEM_TEXT, &amp;quot;Item 1&amp;quot;);
+
+         mMenuItemsText[1] = new Bundle();
+         mMenuItemsText[1].putInt(Control.Intents.EXTRA_MENU_ITEM_ID, MENU_ITEM_1);
+         mMenuItemsText[1].putString(Control.Intents.EXTRA_MENU_ITEM_TEXT, &amp;quot;Item 2&amp;quot;);
+
+         mMenuItemsText[2] = new Bundle();
+         mMenuItemsText[2].putInt(Control.Intents.EXTRA_MENU_ITEM_ID, MENU_ITEM_2);
+         mMenuItemsText[2].putString(Control.Intents.EXTRA_MENU_ITEM_TEXT, &amp;quot;Item 3&amp;quot;);
+
+ }
+
+ @Override
+ public void onResume() {
+  super.onResume();
+   showLayout(R.layout.hello_control_2, null);
+   startAnimation();
+ }
+
+ @Override
+ public void onPause() {
+  super.onPause();
+        stopAnimation();
+ }
+
+    @Override
+    public void onDestroy() {
+     stopAnimation();
+        mHandler = null;
+    };
+
+    public static int getSupportedControlWidth(Context context) {
+        return context.getResources().getDimensionPixelSize(R.dimen.smart_watch_2_control_width);
+    }
+
+    public static int getSupportedControlHeight(Context context) {
+        return context.getResources().getDimensionPixelSize(R.dimen.smart_watch_2_control_height);
+    }
+
+    @Override
+    public void onTouch(ControlTouchEvent event) {
+     Log.i(TAG, &amp;quot;onTouch() &amp;quot; + event.getAction());
+    }
+    @Override
+    public void onObjectClick(ControlObjectClickEvent event) {
+      Log.i(TAG, &amp;quot;onObjectClick() &amp;quot; + event.getClickType());
+      if (event.getLayoutReference() != -1) {
+             mLayout.onClick(event.getLayoutReference());
+         }
+    }
+    @Override
+    public void onKey(int action, int keyCode, long timeStamp) {
+        Log.i(TAG, &amp;quot;onKey() &amp;quot; + action + &amp;quot;t&amp;quot; + keyCode + &amp;quot;t&amp;quot; + timeStamp);
+        if (action == Control.Intents.KEY_ACTION_RELEASE
+                &amp;amp;amp;&amp;amp;amp; keyCode == Control.KeyCodes.KEYCODE_OPTIONS) {
+           showMenu(mMenuItemsText);
+        }
+    }
+
+    @Override
+    public void onMenuItemSelected(int menuItem) {
+        Log.d(TAG, &amp;quot;onMenuItemSelected() - menu item &amp;quot; + menuItem);
+        if (menuItem == MENU_ITEM_0) {
+            clearDisplay();
+            mHandler.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    onResume();
+                }
+            }, 1000);
+        }
+
+    }
+
+    private void toggleAnimation() {
+        if (mIsShowingAnimation) {
+            stopAnimation();
+        }
+        else {
+            startAnimation();
+        }
+    }
+
+    private void startAnimation() {
+        if (!mIsShowingAnimation) {
+            mIsShowingAnimation = true;
+            mAnimation = new Animation();
+            mAnimation.run();
+        }
+    }
+    private void stopAnimation() {
+        if (mIsShowingAnimation) {
+            // Stop animation on accessory
+            if (mAnimation != null) {
+                mAnimation.stop();
+                mHandler.removeCallbacks(mAnimation);
+                mAnimation = null;
+            }
+            mIsShowingAnimation = false;
+        }
+    }
+
+    private class Animation implements Runnable {
+
+        private int mIndex = 1;
+        private boolean mIsStopped = false;
+
+        Animation() {
+            mIndex = 1;
+        }
+
+        public void stop() {
+            mIsStopped = true;
+        }
+
+        @Override
+        public void run() {
+            int resourceId;
+            switch (mIndex) {
+                case 1:
+                    resourceId = R.drawable.dancing_android_0;
+                    break;
+                case 2:
+                    resourceId = R.drawable.dancing_android_1;
+                    break;
+
+                default:
+                    Log.e(TAG, &amp;quot;mIndex out of bounds: &amp;quot; + mIndex);
+                    resourceId = R.drawable.dancing_android_0;
+                    break;
+            }
+            mIndex++;
+            if (mIndex &amp;amp;gt; 2) {
+                mIndex = 1;
+            }
+
+            if (!mIsStopped) {
+                updateAnimation(resourceId);
+            }
+            if (mHandler != null &amp;amp;amp;&amp;amp;amp; !mIsStopped) {
+                mHandler.postDelayed(this, ANIMATION_DELTA_MS);
+            }
+        }
+        private void updateAnimation(int resourceId) {
+            sendImage(R.id.imgHelloControl, resourceId);
+        }
+    };
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Step 2:&lt;/strong&gt; Open HelloExtensionService.java and override &amp;quot;createExtensionControl&amp;quot; method. In this method we need to identify accessory type before creating object of HelloControlSmartWatch2 class. To identify accessory type ExtensionUtils class has method named &amp;quot;DeviceInfoHealper&amp;quot;.  &lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;@Override
+   public ControlExtension createControlExtension(String hostAppPackageName) {
+        // First we check if the API level and screen size required for
+        // SampleControlSmartWatch2 is supported
+        boolean advancedFeaturesSupported = DeviceInfoHelper.isSmartWatch2ApiAndScreenDetected(this, hostAppPackageName);
+        if (advancedFeaturesSupported) {
+            return new HelloControlSmartWatch2(this,hostAppPackageName, new Handler());
+        } else {
+         return null;
+        }
+    }
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Step 3:&lt;/strong&gt; Open&amp;nbsp;HelloRegistrationInformation.java and change return value from 0 to 2 of &amp;quot;getRequiredControlApiVersion&amp;quot; method, 0 means our example doesn&amp;#39;t require Control API, 1 and 2 represent minimum version of API required. We also need to override method named &amp;quot;isDisplaySizeSupported&amp;quot; for the confirmation of Display Size.  &lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;...
+...
+@Override
+ public int getRequiredControlApiVersion() {
+  return 2;
+ }
+....
+
+@Override
+    public boolean isDisplaySizeSupported(int width, int height) {
+        return ((width == HelloControlSmartWatch2.getSupportedControlWidth(mContext)
+                &amp;amp;amp;&amp;amp;amp; height == HelloControlSmartWatch2
+                        .getSupportedControlHeight(mContext) || width == HelloControlSmartWatch2
+                .getSupportedControlWidth(mContext) &amp;amp;amp;&amp;amp;amp; height == HelloControlSmartWatch2
+                .getSupportedControlHeight(mContext)) );
+    }
+...
+...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Step 4:&lt;/strong&gt; Finally, Open AndroidManiFest.xml and add following action in HelloExtensionReceiver. It will require to capture onClick, onTouch and onObject click event.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;...
+...
+                &amp;lt;action android:name=&amp;quot;com.sonyericsson.extras.aef.control.TOUCH_EVENT&amp;quot;&amp;gt;
+                &amp;lt;action android:name=&amp;quot;com.sonyericsson.extras.aef.control.SWIPE_EVENT&amp;quot;&amp;gt;
+                &amp;lt;action android:name=&amp;quot;com.sonyericsson.extras.aef.control.OBJECT_CLICK_EVENT&amp;quot;&amp;gt;
+                &amp;lt;action android:name=&amp;quot;com.sonyericsson.extras.aef.control.MENU_ITEM_SELECTED&amp;quot;&amp;gt;
+...
+...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Step 5:&lt;/strong&gt; Compile &amp;amp; Execute HelloSmartWatch example  &lt;/p&gt;
+
+&lt;h2&gt;&lt;a href=&quot;https://github.com/kpbird/Hello-SmartWatch&quot;&gt;Download Source Code&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;Note: 1. Import project in eclipse 2. Make sure that you change SmartExtensionUtils and SmartExtensionAPI path from project properties.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Sony SmartWatch App Development 3</title>
+   <link href="http://www.romuluscrisan.com/2013/12/sony-smartwatch-app-development-3"/>
+   <updated>2013-12-06T21:50:00+05:30</updated>
+   <id>http://www.romuluscrisan.com/2013/12/sony-smartwatch-app-development-3</id>
+   <content type="html">&lt;p&gt;Sony SmartWatch App Development 3&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://4.bp.blogspot.com/-8M7znWZHNw0/UrLyBfGpvAI/AAAAAAAAEq0/dIdN06TjKC4/s400/sonysmartwatch2trio.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;In previous two articles I covered development environment setup and&amp;nbsp;anatomy of SmartWatch. This article will contain deep dive into coding with simple Hello Word example.&lt;/p&gt;
+
+&lt;p&gt;This demo will cover Notification API only. We will develop a single Android project named &amp;quot;Hello SmartWatch&amp;quot; which acts as a Host application and Extension application both. It means I will use single codebase for both things. Hello SmartWatch project has an Activity to send and clear notification to SmartWatch.&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;I assume that you have already imported SmartExtensionAPI and SmartExtensionUtils libraries in workspace.&lt;/p&gt;
+
+&lt;p&gt;Let&amp;#39;s jump to the code.  &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;List of Classes and purpose&lt;/strong&gt;  &lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;MainActivity.java:&lt;/strong&gt; It is use to generate and clear notification.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;HelloExtensionReceiver.java:&lt;/strong&gt; It receives input event generated by SmartWatch and forward control to the Extension Service.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;HelloExtensionService.java:&lt;/strong&gt; core logic of Host application needs to be written in ExtensionService. It is also responsible to register a host application to SmartWatch.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;HelloRegistrationInformation.java:&lt;/strong&gt; It provides essential&amp;nbsp;information to register host application and API requirement.&amp;nbsp;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This demo application contains only above four classes but actual application may have more classes. In above classes MainActivity acts as a Smart Extension application and rest of classes acts as a Host application.  &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 1:&lt;/strong&gt; Create new Android project in eclipse named &amp;quot;HelloSmartWatch&amp;quot;.&lt;br&gt;
+&lt;strong&gt;Step 2:&lt;/strong&gt; Let&amp;#39;s create UI first. Open activity_main.xml and put two EditText box for Title and Message respectively and two buttons for Send and Clear notification respectively.  &lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;&amp;lt;linearlayout xmlns:android=&amp;quot;http://schemas.android.com/apk/res/android&amp;quot; xmlns:tools=&amp;quot;http://schemas.android.com/tools&amp;quot; android:layout_width=&amp;quot;match_parent&amp;quot; android:layout_height=&amp;quot;match_parent&amp;quot; android:orientation=&amp;quot;vertical&amp;quot; android:paddingbottom=&amp;quot;@dimen/activity_vertical_margin&amp;quot; android:paddingleft=&amp;quot;@dimen/activity_horizontal_margin&amp;quot; android:paddingright=&amp;quot;@dimen/activity_horizontal_margin&amp;quot; android:paddingtop=&amp;quot;@dimen/activity_vertical_margin&amp;quot; tools:context=&amp;quot;.MainActivity&amp;quot;&amp;gt;
+
+    &amp;lt;textview android:id=&amp;quot;@+id/textView1&amp;quot; android:layout_width=&amp;quot;match_parent&amp;quot; android:layout_height=&amp;quot;wrap_content&amp;quot; android:gravity=&amp;quot;center_horizontal&amp;quot; android:text=&amp;quot;Send Notification&amp;quot; android:textappearance=&amp;quot;?android:attr/textAppearanceLarge&amp;quot;&amp;gt;
+
+    &amp;lt;edittext android:id=&amp;quot;@+id/etTitle&amp;quot; android:layout_width=&amp;quot;match_parent&amp;quot; android:layout_height=&amp;quot;wrap_content&amp;quot; android:ems=&amp;quot;10&amp;quot; android:hint=&amp;quot;Title&amp;quot;&amp;gt;
+    &amp;lt;/edittext&amp;gt;
+
+    &amp;lt;edittext android:id=&amp;quot;@+id/etMessage&amp;quot; android:layout_width=&amp;quot;match_parent&amp;quot; android:layout_height=&amp;quot;wrap_content&amp;quot; android:ems=&amp;quot;10&amp;quot; android:hint=&amp;quot;Message&amp;quot;&amp;gt;
+    &amp;lt;/edittext&amp;gt;
+
+    &amp;lt;button android:id=&amp;quot;@+id/btnSend&amp;quot; android:layout_width=&amp;quot;match_parent&amp;quot; android:layout_height=&amp;quot;wrap_content&amp;quot; android:onclick=&amp;quot;buttonClicked&amp;quot; android:text=&amp;quot;Send Notification&amp;quot;&amp;gt;
+
+    &amp;lt;/button&amp;gt;&amp;lt;button android:id=&amp;quot;@+id/btnClearn&amp;quot; android:layout_width=&amp;quot;match_parent&amp;quot; android:layout_height=&amp;quot;wrap_content&amp;quot; android:onclick=&amp;quot;buttonClicked&amp;quot; android:text=&amp;quot;Clear Notification&amp;quot;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Step 3:&lt;/strong&gt; Let&amp;#39;s make button alive by writing action in MainActivity.java. I am using onClick property of buttons, so I don&amp;#39;t require to find object of button and setOnClickListener. I can write code in &amp;quot;buttonClicked&amp;quot; method which is defined. When a user click on &amp;quot;Send Notification&amp;quot; button I am simply firing ExtensionService with INTENT&lt;em&gt;ACTION&lt;/em&gt;ADD action and other required data and same for &amp;quot;Clear Notification&amp;quot; but with INTENT&lt;em&gt;ACTION&lt;/em&gt;CLEAR action.  &lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;package com.kpbird.hellosmartwatch;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
+
+public class MainActivity extends Activity {
+
+ @Override
+ protected void onCreate(Bundle savedInstanceState) {
+  super.onCreate(savedInstanceState);
+  setContentView(R.layout.activity_main);
+
+ }
+
+ public void buttonClicked(View v){
+  if(v.getId() == R.id.btnSend){
+   Intent serviceIntent = new Intent(this, HelloExtensionService.class);
+         serviceIntent.setAction(HelloExtensionService.INTENT_ACTION_ADD);
+         EditText etName = (EditText) findViewById(R.id.etTitle);
+         EditText etMsg = (EditText) findViewById(R.id.etMessage);
+         serviceIntent.putExtra(&amp;quot;name&amp;quot;, etName.getText().toString());
+         serviceIntent.putExtra(&amp;quot;message&amp;quot;, etMsg.getText().toString());
+         startService(serviceIntent);
+  }
+  else if(v.getId() == R.id.btnClearn){
+   Intent serviceIntent = new Intent(this, HelloExtensionService.class);
+         serviceIntent.setAction(HelloExtensionService.INTENT_ACTION_CLEAR);
+         startService(serviceIntent);
+  }
+
+ }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Step 4:&lt;/strong&gt; Create HelloExtensionReceiver.java, It extends&amp;nbsp;BroadcastReceiver. It works as bridge between SmartWatch and Host application, It will receive event generated in SmartWatch and forward it to HelloExtensionService.java  &lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;package com.kpbird.hellosmartwatch;
+
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.util.Log;
+
+public class HelloExtensionReceiver  extends BroadcastReceiver{
+
+ private String TAG = this.getClass().getSimpleName();
+ @Override
+ public void onReceive(Context context, Intent intent) {
+    Log.i(TAG, &amp;quot;HelloExtensionReceiver onReceiver: &amp;quot; + intent.getAction());
+       intent.setClass(context, HelloExtensionService.class);
+       context.startService(intent);
+ }
+
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Step 5:&lt;/strong&gt; Create&amp;nbsp;HelloRegistrationInformation.java and extends with RegistrationInformation&amp;nbsp;class. As the name suggests, It will use to register host application in Smart Connect.&amp;nbsp;It has six methods that we need to override, among these four methods are used to declare required APIs&amp;nbsp;and two methods used for extension registration and source registration. You can have multiple sources in a host application.  &lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;package com.kpbird.hellosmartwatch;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import android.content.ContentValues;
+import android.content.Context;
+
+import com.sonyericsson.extras.liveware.aef.notification.Notification;
+import com.sonyericsson.extras.liveware.aef.registration.Registration;
+import com.sonyericsson.extras.liveware.extension.util.ExtensionUtils;
+import com.sonyericsson.extras.liveware.extension.util.registration.RegistrationInformation;
+
+public class HelloRegistrationInformation extends RegistrationInformation{
+ private Context mContext;
+ public HelloRegistrationInformation(Context ctx){
+   if (ctx == null) {
+             throw new IllegalArgumentException(&amp;quot;context == null&amp;quot;);
+         }
+         mContext = ctx;
+ }
+ @Override
+ public int getRequiredNotificationApiVersion() {
+  return 1;
+ }
+ @Override
+ public int getRequiredWidgetApiVersion() {
+  return 0;
+ }
+
+ @Override
+ public int getRequiredControlApiVersion() {
+  return 0;
+ }
+
+ @Override
+ public int getRequiredSensorApiVersion() {
+  return 0;
+ }
+
+ @Override
+ public ContentValues getExtensionRegistrationConfiguration() {
+    String extensionIcon = ExtensionUtils.getUriString(mContext,R.drawable.ic_launcher);
+        String iconHostapp = ExtensionUtils.getUriString(mContext,R.drawable.ic_launcher);
+         String extensionIcon48 = ExtensionUtils.getUriString(mContext,R.drawable.ic_launcher_48);
+
+         String configurationText = &amp;quot;Hello SmartWatch&amp;quot;;
+         String extensionName = &amp;quot;Hello SmartWatch&amp;quot;;
+
+         ContentValues values = new ContentValues();
+         values.put(Registration.ExtensionColumns.CONFIGURATION_ACTIVITY,MainActivity.class.getName());
+         values.put(Registration.ExtensionColumns.CONFIGURATION_TEXT, configurationText);
+         values.put(Registration.ExtensionColumns.EXTENSION_ICON_URI, extensionIcon);
+         values.put(Registration.ExtensionColumns.EXTENSION_48PX_ICON_URI, extensionIcon48);
+
+         values.put(Registration.ExtensionColumns.EXTENSION_KEY,HelloExtensionService.EXTENSION_KEY);
+         values.put(Registration.ExtensionColumns.HOST_APP_ICON_URI, iconHostapp);
+         values.put(Registration.ExtensionColumns.NAME, extensionName);
+         values.put(Registration.ExtensionColumns.NOTIFICATION_API_VERSION,getRequiredNotificationApiVersion());
+         values.put(Registration.ExtensionColumns.PACKAGE_NAME, mContext.getPackageName());
+         return values;
+ }
+
+ @Override
+ public ContentValues[] getSourceRegistrationConfigurations() {
+
+   ContentValues sourceValues = null;
+
+         String iconSource1 = ExtensionUtils.getUriString(mContext,R.drawable.ic_launcher_30);
+         String iconSource2 = ExtensionUtils.getUriString(mContext,R.drawable.ic_launcher_18);
+         String iconBw = ExtensionUtils.getUriString(mContext,R.drawable.ic_launcher_18_bw);
+         String textToSpeech = &amp;quot;Notification from Hello SmartWatch Application&amp;quot;;
+         sourceValues = new ContentValues();
+         sourceValues.put(Notification.SourceColumns.ENABLED, true);
+         sourceValues.put(Notification.SourceColumns.ICON_URI_1, iconSource1);
+         sourceValues.put(Notification.SourceColumns.ICON_URI_2, iconSource2);
+         sourceValues.put(Notification.SourceColumns.ICON_URI_BLACK_WHITE, iconBw);
+         sourceValues.put(Notification.SourceColumns.UPDATE_TIME, System.currentTimeMillis());
+         sourceValues.put(Notification.SourceColumns.NAME, mContext.getString(R.string.app_name));
+         sourceValues.put(Notification.SourceColumns.EXTENSION_SPECIFIC_ID, HelloExtensionService.EXTENSION_SPECIFIC_ID);
+         sourceValues.put(Notification.SourceColumns.PACKAGE_NAME, mContext.getPackageName());
+         sourceValues.put(Notification.SourceColumns.TEXT_TO_SPEECH, textToSpeech);
+         sourceValues.put(Notification.SourceColumns.ACTION_1,&amp;quot;Hello&amp;quot;);
+         sourceValues.put(Notification.SourceColumns.ACTION_ICON_1,ExtensionUtils.getUriString(mContext, R.drawable.ic_launcher));
+
+  List&amp;lt;contentvalues&amp;gt; bulkValues = new ArrayList&amp;lt;contentvalues&amp;gt;();
+        bulkValues.add(sourceValues);
+        return bulkValues.toArray(new ContentValues[bulkValues.size()]);
+ }
+
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Step 6:&lt;/strong&gt; Create HelloExtensionService.java and extends with ExtensionService. It will contain main logic of SmartWatch host application. We need to implement two abstract methods named &amp;quot;getRegistrationInformation()&amp;quot;, which sends object of HelloRegistrationInformation class and &amp;quot;keepRunningWhenConnected()&amp;quot;,return true if you want to keep ExtensionService running as long as SmartWatch is connected with Smart Phone. For notification example we need to create two methods named &amp;quot;addData&amp;quot; and &amp;quot;clearData&amp;quot;. It will generate and clear notification in SmartWatch respectively. We also need to implement onStartCommand to interact with Service.  &lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;package com.kpbird.hellosmartwatch;
+
+import android.content.ContentValues;
+import android.content.Intent;
+import android.database.Cursor;
+import android.database.SQLException;
+import android.util.Log;
+import android.widget.Toast;
+
+import com.sonyericsson.extras.liveware.aef.notification.Notification;
+import com.sonyericsson.extras.liveware.aef.registration.Registration;
+import com.sonyericsson.extras.liveware.extension.util.ExtensionService;
+import com.sonyericsson.extras.liveware.extension.util.ExtensionUtils;
+import com.sonyericsson.extras.liveware.extension.util.notification.NotificationUtil;
+import com.sonyericsson.extras.liveware.extension.util.registration.DeviceInfoHelper;
+import com.sonyericsson.extras.liveware.extension.util.registration.RegistrationInformation;
+
+public class HelloExtensionService extends ExtensionService   {
+
+ public static final String EXTENSION_SPECIFIC_ID = &amp;quot;EXTENSION_SPECIFIC_ID_HELLO_NOTIFICATION&amp;quot;;
+ public static final String EXTENSION_KEY =  &amp;quot;com.kpbird.hellosmartwatch.key&amp;quot;;
+ public static final String INTENT_ACTION_ADD = &amp;quot;com.kpbird.hellosmartwatch.action.add&amp;quot;;
+ public static final String INTENT_ACTION_CLEAR = &amp;quot;com.kpbird.hellosmartwatch.action.clear&amp;quot;;
+
+ private String TAG = this.getClass().getSimpleName();
+ public HelloExtensionService() {
+  super(EXTENSION_KEY);
+  Log.i(TAG, &amp;quot;Constructor&amp;quot;);
+ }
+
+ @Override
+ public void onCreate() {
+  super.onCreate();
+  Log.i(TAG, &amp;quot;onCreate()&amp;quot;);
+ }
+
+ @Override
+ public void onDestroy() {
+  super.onDestroy();
+  Log.i(TAG, &amp;quot;onDestroy()&amp;quot;);
+ }
+
+ @Override
+ public int onStartCommand(Intent intent, int flags, int startId) {
+  int retVal = super.onStartCommand(intent, flags, startId);
+  if (intent != null) {
+   if (INTENT_ACTION_CLEAR.equals(intent.getAction())) {
+    Log.d(TAG, &amp;quot;onStart action: INTENT_ACTION_CLEAR&amp;quot;);
+    clearData(intent);
+    stopSelfCheck();
+   } else if (INTENT_ACTION_ADD.equals(intent.getAction())) {
+    Log.d(TAG, &amp;quot;onStart action: INTENT_ACTION_ADD&amp;quot;);
+    addData(intent);
+    stopSelfCheck();
+   }
+  }
+
+  return retVal;
+ }
+
+ @Override
+ protected RegistrationInformation getRegistrationInformation() {
+  return new HelloRegistrationInformation(this);
+ }
+
+ @Override
+ protected boolean keepRunningWhenConnected() {
+  return false;
+ }
+
+ private void clearData(Intent intent) {
+   NotificationUtil.deleteAllEvents(this);
+ }
+
+ private void addData(Intent intent) {
+  String name = &amp;quot;Name&amp;quot;;
+  String message = &amp;quot;Message&amp;quot;;
+  if (intent.getExtras().containsKey(&amp;quot;name&amp;quot;))
+   name = intent.getExtras().getString(&amp;quot;name&amp;quot;);
+  if (intent.getExtras().containsKey(&amp;quot;message&amp;quot;))
+   message = intent.getExtras().getString(&amp;quot;message&amp;quot;);
+
+  long time = System.currentTimeMillis();
+  long sourceId = NotificationUtil.getSourceId(this,
+    EXTENSION_SPECIFIC_ID);
+  Log.i(TAG, &amp;quot;Source ID :&amp;quot; + sourceId);
+  if (sourceId == NotificationUtil.INVALID_ID) {
+   Log.e(TAG, &amp;quot;Failed to insert data&amp;quot;);
+   return;
+  }
+  String profileImage = ExtensionUtils.getUriString(this,R.drawable.ic_launcher);
+
+  ContentValues eventValues = new ContentValues();
+  eventValues.put(Notification.EventColumns.EVENT_READ_STATUS, false);
+  eventValues.put(Notification.EventColumns.DISPLAY_NAME, name);
+  eventValues.put(Notification.EventColumns.MESSAGE, message);
+  eventValues.put(Notification.EventColumns.PERSONAL, 1);
+  eventValues.put(Notification.EventColumns.PROFILE_IMAGE_URI,profileImage);
+  eventValues.put(Notification.EventColumns.PUBLISHED_TIME, time);
+  eventValues.put(Notification.EventColumns.SOURCE_ID, sourceId);
+
+  try {
+   getContentResolver().insert(Notification.Event.URI, eventValues);
+  } catch (IllegalArgumentException e) {
+   Log.e(TAG, &amp;quot;Failed to insert event&amp;quot;, e);
+  } catch (SecurityException e) {
+   Log.e(TAG,
+     &amp;quot;Failed to insert event, is Live Ware Manager installed?&amp;quot;,
+     e);
+  } catch (SQLException e) {
+   Log.e(TAG, &amp;quot;Failed to insert event&amp;quot;, e);
+  }
+ }
+
+ @Override
+ protected void onViewEvent(Intent intent) {
+  String action = intent.getStringExtra(Notification.Intents.EXTRA_ACTION);
+  Log.i(TAG, &amp;quot;Action : &amp;quot; + action);
+  String hostAppPackageName = intent.getStringExtra(Registration.Intents.EXTRA_AHA_PACKAGE_NAME);
+  Log.i(TAG, &amp;quot;HostAppPackageName: &amp;quot; + hostAppPackageName);
+  boolean advancedFeaturesSupported = DeviceInfoHelper.isSmartWatch2ApiAndScreenDetected(this, hostAppPackageName);
+  Log.i(TAG, &amp;quot;Advanced Features Supported: &amp;quot; + advancedFeaturesSupported);
+  int eventId = intent.getIntExtra(Notification.Intents.EXTRA_EVENT_ID,-1);
+  try {
+   Cursor cursor = getContentResolver().query(Notification.Event.URI,null, Notification.EventColumns._ID + &amp;quot; = &amp;quot; + eventId,null, null);
+   if (cursor != null &amp;amp;amp;&amp;amp;amp; cursor.moveToFirst()) {
+    String name = cursor.getString(cursor.getColumnIndex(Notification.EventColumns.DISPLAY_NAME));
+    String message = cursor.getString(cursor.getColumnIndex(Notification.EventColumns.MESSAGE));
+    Toast.makeText(this,&amp;quot;Notification: Name: &amp;quot; + name + &amp;quot; Message: &amp;quot; + message,Toast.LENGTH_LONG).show();
+    Log.i(TAG, &amp;quot;Name: &amp;quot; + name);
+    Log.i(TAG, &amp;quot;Message: &amp;quot;+ message);
+   }
+   cursor.close();
+  } catch (Exception ex) {
+   ex.printStackTrace();
+  }
+ }
+
+ @Override
+ public void onRegisterResult(boolean success) {
+  super.onRegisterResult(success);
+   Log.d(TAG, &amp;quot;onRegisterResult :&amp;quot; + success);
+ }
+
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Step 7:&lt;/strong&gt;&amp;nbsp;Finally we need to register HelloExtensionReceiver and HelloExtensionService in AndroidManifest.xml like following. We also need to provide user permission &amp;quot;EXTENSION_PERMISSION&amp;quot;.  &lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;&amp;lt;!--?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;utf-8&amp;quot;?--&amp;gt;
+&amp;lt;manifest xmlns:android=&amp;quot;http://schemas.android.com/apk/res/android&amp;quot; package=&amp;quot;com.kpbird.hellosmartwatch&amp;quot; android:versioncode=&amp;quot;1&amp;quot; android:versionname=&amp;quot;1.0&amp;quot;&amp;gt;
+
+    &amp;lt;uses-sdk android:minsdkversion=&amp;quot;16&amp;quot; android:targetsdkversion=&amp;quot;16&amp;quot;&amp;gt;
+        &amp;lt;uses-permission android:name=&amp;quot;com.sonyericsson.extras.liveware.aef.EXTENSION_PERMISSION&amp;quot;&amp;gt;
+
+    &amp;lt;application android:allowbackup=&amp;quot;true&amp;quot; android:icon=&amp;quot;@drawable/ic_launcher&amp;quot; android:label=&amp;quot;@string/app_name&amp;quot; android:theme=&amp;quot;@style/AppTheme&amp;quot;&amp;gt;
+        &amp;lt;activity android:name=&amp;quot;com.kpbird.hellosmartwatch.MainActivity&amp;quot; android:label=&amp;quot;@string/app_name&amp;quot;&amp;gt;
+            &amp;lt;intent-filter&amp;gt;
+                &amp;lt;action android:name=&amp;quot;android.intent.action.MAIN&amp;quot;&amp;gt;
+
+                &amp;lt;category android:name=&amp;quot;android.intent.category.LAUNCHER&amp;quot;&amp;gt;
+            &amp;lt;/category&amp;gt;&amp;lt;/action&amp;gt;&amp;lt;/intent-filter&amp;gt;
+        &amp;lt;/activity&amp;gt;
+         &amp;lt;service android:name=&amp;quot;.HelloExtensionService&amp;quot;&amp;gt;
+
+        &amp;lt;receiver android:name=&amp;quot;.HelloExtensionReceiver&amp;quot; android:permission=&amp;quot;com.sonyericsson.extras.liveware.aef.HOSTAPP_PERMISSION&amp;quot;&amp;gt;
+            &amp;lt;intent-filter&amp;gt;
+
+                &amp;lt;!-- Generic extension intents. --&amp;gt;
+                &amp;lt;action android:name=&amp;quot;com.sonyericsson.extras.liveware.aef.registration.EXTENSION_REGISTER_REQUEST&amp;quot;&amp;gt;
+                &amp;lt;action android:name=&amp;quot;com.sonyericsson.extras.liveware.aef.registration.ACCESSORY_CONNECTION&amp;quot;&amp;gt;
+                &amp;lt;action android:name=&amp;quot;android.intent.action.LOCALE_CHANGED&amp;quot;&amp;gt;
+
+                &amp;lt;!-- Notification intents --&amp;gt;
+                &amp;lt;action android:name=&amp;quot;com.sonyericsson.extras.liveware.aef.notification.VIEW_EVENT_DETAIL&amp;quot;&amp;gt;
+                &amp;lt;action android:name=&amp;quot;com.sonyericsson.extras.liveware.aef.notification.REFRESH_REQUEST&amp;quot;&amp;gt;
+
+                &amp;lt;!-- Widget intents --&amp;gt;
+                &amp;lt;action android:name=&amp;quot;com.sonyericsson.extras.aef.widget.START_REFRESH_IMAGE_REQUEST&amp;quot;&amp;gt;
+                &amp;lt;action android:name=&amp;quot;com.sonyericsson.extras.aef.widget.STOP_REFRESH_IMAGE_REQUEST&amp;quot;&amp;gt;
+                &amp;lt;action android:name=&amp;quot;com.sonyericsson.extras.aef.widget.ONTOUCH&amp;quot;&amp;gt;
+                &amp;lt;action android:name=&amp;quot;com.sonyericsson.extras.liveware.extension.util.widget.scheduled.refresh&amp;quot;&amp;gt;
+
+                &amp;lt;!-- Control intents --&amp;gt;
+                &amp;lt;action android:name=&amp;quot;com.sonyericsson.extras.aef.control.START&amp;quot;&amp;gt;
+                &amp;lt;action android:name=&amp;quot;com.sonyericsson.extras.aef.control.STOP&amp;quot;&amp;gt;
+                &amp;lt;action android:name=&amp;quot;com.sonyericsson.extras.aef.control.PAUSE&amp;quot;&amp;gt;
+                &amp;lt;action android:name=&amp;quot;com.sonyericsson.extras.aef.control.RESUME&amp;quot;&amp;gt;
+                &amp;lt;action android:name=&amp;quot;com.sonyericsson.extras.aef.control.ERROR&amp;quot;&amp;gt;
+                &amp;lt;action android:name=&amp;quot;com.sonyericsson.extras.aef.control.KEY_EVENT&amp;quot;&amp;gt;
+                &amp;lt;action android:name=&amp;quot;com.sonyericsson.extras.aef.control.TOUCH_EVENT&amp;quot;&amp;gt;
+                &amp;lt;action android:name=&amp;quot;com.sonyericsson.extras.aef.control.SWIPE_EVENT&amp;quot;&amp;gt;
+            &amp;lt;/action&amp;gt;&amp;lt;/action&amp;gt;&amp;lt;/action&amp;gt;&amp;lt;/action&amp;gt;&amp;lt;/action&amp;gt;&amp;lt;/action&amp;gt;&amp;lt;/action&amp;gt;&amp;lt;/action&amp;gt;&amp;lt;/action&amp;gt;&amp;lt;/action&amp;gt;&amp;lt;/action&amp;gt;&amp;lt;/action&amp;gt;&amp;lt;/action&amp;gt;&amp;lt;/action&amp;gt;&amp;lt;/action&amp;gt;&amp;lt;/action&amp;gt;&amp;lt;/action&amp;gt;&amp;lt;/intent-filter&amp;gt;
+        &amp;lt;/receiver&amp;gt;
+    &amp;lt;/service&amp;gt;&amp;lt;/application&amp;gt;
+&amp;lt;/uses-permission&amp;gt;&amp;lt;/uses-sdk&amp;gt;&amp;lt;/manifest&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Step 8:&lt;/strong&gt; Connect your SmartPhone and run this example. It will display MainActivity. Before jumping to &amp;quot;Send Notification&amp;quot;, open Accessory Emulator and select Extension to verify that our HelloExtension is installed or not. Click on extension menu and it will display the registration details. If extension gets registered successfully then you can go back to Hello SmartWatch application and play with Send and Clear Notification functionality.  &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Screen Shots&lt;/strong&gt;  &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://2.bp.blogspot.com/-qmkgQsMXmlk/UrQkJWhwjWI/AAAAAAAAErA/PcH8ZoKKm3A/s400/1.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Open Accessory emulator and select SmartWatch 2, Wait for few second if Extensions and Notification API will not enable&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://4.bp.blogspot.com/-SKllSLoUvOE/UrQkKk8MXhI/AAAAAAAAErg/LmfkOywcWIs/s400/2.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Select Extensions&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://1.bp.blogspot.com/-r0k7Mq_Cd8A/UrQkKlXiEFI/AAAAAAAAErU/52L2Xo7CWUY/s400/3.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;You can see extension detail&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://4.bp.blogspot.com/-uOI58aGJD9A/UrQkKhPaznI/AAAAAAAAErc/WRx1bn8tXng/s400/4.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Click on &amp;quot;Show Extension Settings&amp;quot; will open this screen because at time of extension registration we provide MainActivity.java as Setting screen&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://4.bp.blogspot.com/-EkWxs4WopX8/UrQkLZCBaFI/AAAAAAAAEsE/aHJ3F8FbuIA/s400/5.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Type Notification title and message and click Send Notification&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://3.bp.blogspot.com/-Cf50vYHsDy0/UrQkLmZZOOI/AAAAAAAAErs/bo4Y_7sQ788/s400/6.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Go back to Accessory emulator and select Notification API &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://1.bp.blogspot.com/-MqMl_Pcl1R8/UrQkLqHKbRI/AAAAAAAAEr0/2NSEMVlD2hQ/s400/7.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Select source, This will come from HelloRegistrationInformation&amp;#39;s getSourceInformation function, It will display multiple option in the list if you have register multiple sources.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://1.bp.blogspot.com/-fHQ5sWfZ2Ak/UrQkMbVR_DI/AAAAAAAAEr4/zK_hM_qiqYw/s400/8.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Now, you can see the notification title which we just send&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://4.bp.blogspot.com/-HZZzmLRFRio/UrQkMpkoAbI/AAAAAAAAEsI/O5l7z5tTG-4/s400/9.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;click on menu button &amp;quot;:&amp;quot; will open action menu, you can add maximum 4 action, In our case we have implemented only one action &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://1.bp.blogspot.com/-bJmib0fKsxU/UrQkJYy4NXI/AAAAAAAAErI/MO63PEXhv2A/s400/10.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Click on action menu will call onViewEvent method in HelloExtensionService.java. You can write any action in this method. In our example we just display Toast.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://3.bp.blogspot.com/-JpNw91T2wfY/UrQkJS79eJI/AAAAAAAAErE/OsFdrO03eOA/s400/11.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;When you click on &amp;quot;Clear Notification&amp;quot; from HelloActivity and come back to emulator, you will see the effect&lt;/p&gt;
+
+&lt;h2&gt;&lt;a href=&quot;https://github.com/kpbird/Hello-SmartWatch&quot;&gt;Download Source Code&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;Note: 1. Import project in eclipse 2. Make sure that you change SmartExtensionUtils and SmartExtensionAPI path from project properties.&lt;/p&gt;
+
+&lt;p&gt;&lt;/contentvalues&gt;&lt;/contentvalues&gt;&lt;/button&gt;&lt;/textview&gt;&lt;/linearlayout&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Sony SmartWatch App Development 2</title>
+   <link href="http://www.romuluscrisan.com/2013/12/sony-smartwatch-app-development-2"/>
+   <updated>2013-12-06T21:50:00+05:30</updated>
+   <id>http://www.romuluscrisan.com/2013/12/sony-smartwatch-app-development-2</id>
+   <content type="html">&lt;p&gt;Sony SmartWatch App Development 2&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://1.bp.blogspot.com/-8M7znWZHNw0/UrLyBfGpvAI/AAAAAAAAEqw/qr9tGg-jKbo/s400/sonysmartwatch2trio.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;In previous article &lt;a href=&quot;http://www.kpbird.com/2013/12/smart-watch-app-development.html&quot;&gt;&amp;quot;Sony SmartWatch App Development&amp;quot;&lt;/a&gt;, I explained basics of SmartWatch, configuration of Sony&amp;#39;s Add-On SDK, configuration of SmartWatch emulator and execute simple notification application. This article explains anatomy of SmartWatch development.  &lt;/p&gt;
+
+&lt;p&gt;Sony&amp;#39;s Add-on SDK is unified SDK, which includes Smart Extension APIs, Small Apps API, IR Remote API and Camera Add-on API among these Smart Extension API is used for SmartWatch and Smart Wireless Handset Pro application development.  &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Smart Extension API has following subset for different purpose&lt;/strong&gt;  &lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Control API:&lt;/strong&gt; It is use to render data on device, It supports Grid view, List view, menu, image rendering, touch event and key press. Older version of Control API was supporting only image rendering but current version (2.0) supports XML based layout.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Notification API:&lt;/strong&gt; This can be most useful API among others. It is used to display notification in SmartWatch, which is generated in SmartPhone application. Notification API supports notification title,message, icon and colour.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Widget API:&lt;/strong&gt; It is used to render widget on device.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Sensor API:&lt;/strong&gt; It is used to fetch sensor data from SmartWatch. i.e. light and accelerometer.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Registration &amp;amp; Capabilities API:&lt;/strong&gt;&amp;nbsp;Registration is used to specify how many API subset your application requires ? Like I want to use only Notification API or Sensor API etc.. Capabilities API is used to fetch capability of Smart accessory, here capability means sensor, widget or other functionality, which accessory may have.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;SmartWatch Extension API and Development&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://2.bp.blogspot.com/-znsr7IpUOF8/UrLOaqFIdyI/AAAAAAAAEqc/M9QN-tLN2JY/s640/Screen+Shot+2013-12-16+at+4.01.49+pm.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Source: Sony Smart Extension API documentation  &lt;/p&gt;
+
+&lt;p&gt;There are three thing involved in SmartWatch application development.  &lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Host Application:&lt;/strong&gt; It handles all interaction with SmartWatch, It is installed as a part of Smart Connect (aka LiveWare). When you install host application from Google Play, you may not find it in launcher screen. It will be available in Smart Connect (LiveWare).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Smart Connect:&lt;/strong&gt; It acts as mediator / manager / framework between Host Application and SmartWatch. SmartWatch connect with Smart Connection application using bluetooth.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Smart Extension Apps:&lt;/strong&gt; It&amp;#39;s our normal Android application, which extends to work with SmartWatch. For example Facebook, SMS, Twitter, etc.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Communication between Host Application and Smart Extension Application&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://3.bp.blogspot.com/-YbX5HF75j_w/UrLOannrkhI/AAAAAAAAEqY/5umJNsugJPo/s640/Screen+Shot+2013-12-16+at+4.23.59+pm.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Above figure shows, How host application communicate with smart extension application. Smart extension API works on Intent and ContentProvider. In coding sense there can be a single application or Android project which contains both Host application and Smart Extension but there isn&amp;#39;t restriction to have single codebase. You can develop two different Android Project as per your requirement. My advice is to use single codebase or single Android project because it will be easier for user,when He/She will download from Google Play and You don&amp;#39;t require to manage separate codebase.&lt;/p&gt;
+
+&lt;p&gt;Next article will deep dive in to the code.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Smart Watch App Development</title>
+   <link href="http://www.romuluscrisan.com/2013/12/smart-watch-app-development"/>
+   <updated>2013-12-01T21:50:00+05:30</updated>
+   <id>http://www.romuluscrisan.com/2013/12/smart-watch-app-development</id>
+   <content type="html">&lt;p&gt;Smart Watch App Development&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Introduction&amp;nbsp;&lt;/strong&gt;&lt;strong&gt;Smart Watch or Smartwatch&lt;/strong&gt;  &lt;/p&gt;
+
+&lt;p&gt;&amp;quot;A smartwatch or smart watch, is a computerized wristwatch with functionality that is enhanced beyond timekeeping, and is often comparable to a personal digital assistant (PDA) device. While early models can perform basic tasks, such as calculations, translations, and game-playing, modern smartwatches are effectively wearable computers. Many smartwatches run mobile apps, while a smaller number of models run a mobile operating system and function as portable media players, offering playback of FM radio, audio, and video files to the user via a Bluetooth headset. Some smartphone models, (also called watch phones) feature full mobile phone capability, and can make or answer phone calls&amp;quot;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;-- Wikipedia&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://4.bp.blogspot.com/-8M7znWZHNw0/UrLyBfGpvAI/AAAAAAAAEq0/dIdN06TjKC4/s320/sonysmartwatch2trio.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;SmartWatch&amp;#39;s exist since 1980s but it wasn&amp;#39;t popular much because of lack in hardware/software technology and wasn&amp;#39;t supporting eco-system. Many big companies like Google, Sony, Samsung,etc. launch SmartWatch in 2013. I believe that 2014 will be the &lt;strong&gt;&amp;quot;year of the SmartWatch&amp;quot;&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Popular SmartWatchs&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Sony SmartWatch&lt;/li&gt;
+&lt;li&gt;Samsung Galaxy Gear&lt;/li&gt;
+&lt;li&gt;i&amp;#39;m Watch&lt;/li&gt;
+&lt;li&gt;Pebble&lt;/li&gt;
+&lt;li&gt;WiMM Labs (WiMM Labs was acquired by Google in 9-Jan-2013)
+&lt;strong&gt;Following SmartWatch allows to develop apps&lt;/strong&gt; In this article, I will focus on Sony SmartWatch app development. I am using iMac with OSX 10.9 for the development.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Prerequisites&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;JDK&lt;/li&gt;
+&lt;li&gt;Android SDK&lt;/li&gt;
+&lt;li&gt;Sony Add-On SDK&lt;/li&gt;
+&lt;li&gt;Emulator / Android Phone
+&lt;strong&gt;Setup Development Environment for Sony SmartWatch&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 1:&lt;/strong&gt; Install JDK [Ref: &lt;a href=&quot;http://goo.gl/UUYvez&quot;&gt;http://goo.gl/UUYvez&lt;/a&gt;]&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 2:&lt;/strong&gt; Install Android SDK [Ref: &lt;a href=&quot;http://goo.gl/E4nRT3&quot;&gt;http://goo.gl/E4nRT3&lt;/a&gt;]&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 3:&lt;/strong&gt; Download Sony Add-on SDK from this link &lt;a href=&quot;http://goo.gl/zcKlGD&quot;&gt;http://goo.gl/zcKlGD&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 4:&lt;/strong&gt; Extract zip file and copy &amp;quot;sony&lt;em&gt;add-on&lt;/em&gt;sdk&lt;em&gt;2&lt;/em&gt;1&amp;quot; into &lt;android sdk=&quot;&quot;&gt;/add-ons/&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://2.bp.blogspot.com/-l2Ty30ZpGxE/UqwAP4bhCFI/AAAAAAAAEoA/94UrDCMuJNg/s320/Screen+Shot+2013-12-14+at+12.22.31+pm.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Android SDK with Sony Add On Folder installed&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Setup SmartWatch Emulator&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 1:&lt;/strong&gt; You can use any SmartPhone or Android Emulator for SmartWatch Emulator, In my case I am using Sony Xperia P phone. You can use any Android based Smart Phone.&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 2:&lt;/strong&gt; Install Sony&amp;#39;s Smart Connect (LiveWare) Application from Google Play&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 3:&lt;/strong&gt; Install &amp;quot;acessory&lt;em&gt;emulator.apk&amp;quot; from &lt;android sdk=&quot;&quot;&gt;/add-ons/sony&lt;/em&gt;add-on&lt;em&gt;sdk&lt;/em&gt;2_1/apks&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://4.bp.blogspot.com/-W7wP8TUU5Ow/UqwCWCFRkvI/AAAAAAAAEoM/Fl0Q1YUWfKE/s400/device-2013-12-14-123040.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Accessory Emulator and Smart Connect Installed&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Compile &amp;amp; Install Sample Application&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 1:&lt;/strong&gt; Open Eclipse&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 2:&lt;/strong&gt; Import SmartExtensions from &lt;Android SDK&gt;/add-ons/samples/SmartExtensions&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://4.bp.blogspot.com/-vNKfBuX36aY/UqwG5AgwZKI/AAAAAAAAEoY/9svaEkqk_4M/s1600/Screen+Shot+2013-12-14+at+12.34.49+pm.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Right Click and Select Import&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://1.bp.blogspot.com/-GGy07vR-qZQ/UqwHZ8Y_6mI/AAAAAAAAEoo/INuySn1VWIY/s1600/Screen+Shot+2013-12-14+at+12.35.03+pm.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Select &amp;quot;Sony AddOn&amp;quot; folder from Android SDK&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://2.bp.blogspot.com/-mhSO62YCtGk/UqwHdbmIk-I/AAAAAAAAEow/43yRuayp1aw/s1600/Screen+Shot+2013-12-14+at+12.35.22+pm.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Select SmartExtension Projects&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://2.bp.blogspot.com/-Xj6wJcCPkQw/UqwHgrAu2aI/AAAAAAAAEo4/VQXI_C2IXr8/s1600/Screen+Shot+2013-12-14+at+12.37.28+pm.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;SamplePreferenceActivity app and two libraries will display as project&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 3:&lt;/strong&gt; Eclipse will display three projects SimplePerferenceActivity,SmartExtensionAPI and SmartExtensionUtils. SimplePerferenceActivity is our main sample application, SmartExtensionAPI and SmartExtensionUtils are library which requires to develop SmartWatch application.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 4:&lt;/strong&gt; Compile &amp;amp; Install &amp;quot;SimplePerferenceActivity&amp;quot; in your smartphone.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 5:&lt;/strong&gt; Open &amp;quot;Accessory Emulator&amp;quot; application from smartphone. It will display dialogbox with different options. Select &amp;quot;SmartWatch&amp;quot;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 6:&lt;/strong&gt; Accessory Emulator will display different options but only Extensions and Widget API will be active.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 7:&lt;/strong&gt; Select Widget API, It will display Sony SmartWatch Emulator with Sample Widget application.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://1.bp.blogspot.com/-bhcmL0TJFLw/UqwH-MEs_KI/AAAAAAAAEpI/qQo6uf_4uXA/s1600/device-2013-12-14-123057.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Open Accessory Emulator, Select &amp;quot;SmartWatch&amp;quot;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://3.bp.blogspot.com/--o1X7LxlTrc/UqwH-Le3dYI/AAAAAAAAEpE/PHXkT7n5wW0/s1600/device-2013-12-14-123106.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Enable options based on application, Select &amp;quot;Widget API&amp;quot;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://1.bp.blogspot.com/-s2uWPOOUfHY/UqwH-D-D-lI/AAAAAAAAEpA/W0-ks2OcLwE/s1600/device-2013-12-14-123115.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Sample Widget &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;References&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;http://developer.sonymobile.com/knowledge-base/sony-add-on-sdk/install-the-sony-add-on-sdk/&quot;&gt;http://developer.sonymobile.com/knowledge-base/sony-add-on-sdk/install-the-sony-add-on-sdk/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://developer.sonymobile.com/knowledge-base/sony-add-on-sdk/install-the-sony-add-on-sdk/install-detailed-instructions/&quot;&gt;http://developer.sonymobile.com/knowledge-base/sony-add-on-sdk/install-the-sony-add-on-sdk/install-detailed-instructions/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://developer.sonymobile.com/how-to-install-the-sony-add-on-sdk-manually/&quot;&gt;http://developer.sonymobile.com/how-to-install-the-sony-add-on-sdk-manually/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://developer.sonymobile.com/knowledge-base/tutorials/android_tutorial/how-to-create-an-app-extension-for-sony-smartwatch-2/&quot;&gt;http://developer.sonymobile.com/knowledge-base/tutorials/android_tutorial/how-to-create-an-app-extension-for-sony-smartwatch-2/&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Android 4.4 KitKat API Changes</title>
+   <link href="http://www.romuluscrisan.com/2013/11/android-44-kitket-api-changes"/>
+   <updated>2013-11-01T21:50:00+05:30</updated>
+   <id>http://www.romuluscrisan.com/2013/11/android-44-kitket-api-changes</id>
+   <content type="html">&lt;h1&gt;Android 4.4 KitKat API Changes&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;Android 4.4 API Level 19&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://stocklogos.com/sites/default/files/android-kitkat.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;source http://stocklogos.com/sites/default/files/android-kitkat.jpg&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Major Features&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Runs on 512 MB RAM&lt;/li&gt;
+&lt;li&gt;New NFC capabilities through Host Card Emulation&lt;/li&gt;
+&lt;li&gt;Printing framework&lt;/li&gt;
+&lt;li&gt;Storage access framework&lt;/li&gt;
+&lt;li&gt;Low-power sensors&lt;/li&gt;
+&lt;li&gt;SMS provider&lt;/li&gt;
+&lt;li&gt;Full-screen Immersive mode&lt;/li&gt;
+&lt;li&gt;Transitions framework for animating scenes&lt;/li&gt;
+&lt;li&gt;Chromium WebView&lt;/li&gt;
+&lt;li&gt;Screen recording&lt;/li&gt;
+&lt;li&gt;HTTP Live Streaming&lt;/li&gt;
+&lt;li&gt;Audio Tunneling to DSP&lt;/li&gt;
+&lt;li&gt;RenderScript Compute&lt;/li&gt;
+&lt;li&gt;New Bluetooth profiles&lt;/li&gt;
+&lt;li&gt;IR Blasters&lt;/li&gt;
+&lt;li&gt;Security enhancements&lt;/li&gt;
+&lt;li&gt;Tools for analyzing memory use&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;API Difference&lt;/strong&gt;&lt;br&gt;
+The overall difference between API Levels 18 and 19 is approximately 2.63%.&lt;/p&gt;
+
+&lt;p&gt;| ----- |
+| Type | &lt;strong&gt;Additions&lt;/strong&gt; | &lt;strong&gt;Changes&lt;/strong&gt; | Removals | &lt;strong&gt;Total&lt;/strong&gt; |
+| Packages | 6 | 48 | 0 | 54 |
+| Classes and&amp;nbsp;&lt;em&gt;Interfaces&lt;/em&gt; | 78 | 180 | 0 | 258 |
+| Constructors | 20 | 3 | 0 | 23 |
+| Methods | 268 | 26 | 5 | 299 |
+| Fields | 391 | 6 | 0 | 397 |
+| &lt;strong&gt;Total&lt;/strong&gt; | &lt;strong&gt;763&lt;/strong&gt; | &lt;strong&gt;263&lt;/strong&gt; | &lt;strong&gt;5&lt;/strong&gt; | &lt;strong&gt;1031&lt;/strong&gt; |&lt;/p&gt;
+
+&lt;p&gt;**&lt;br&gt;
+**&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;API Difference Package Wise&lt;/strong&gt;  &lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Volley Easy fast networking for Android</title>
+   <link href="http://www.romuluscrisan.com/2013/05/volley-easy-fast-networking-for-android"/>
+   <updated>2013-05-01T21:50:00+05:30</updated>
+   <id>http://www.romuluscrisan.com/2013/05/volley-easy-fast-networking-for-android</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/images/posts/volley.png&quot; alt=&quot;Smart Watch&quot; title=&quot;Smart Watch&quot; class=&quot;img-responsive&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Volley is a library that makes networking for Android apps easier and most importantly, faster. We&amp;#39;ll give an overview of how it works, common patterns that work well with it, and a walkthrough of how you can easily load thumbnail images for your ListView from the network in parallel.&lt;/p&gt;
+
+&lt;p&gt;Volley can be powerful alternative of AsyncTask. As Android developers, we are spending lots of time to write AsyncTask for ListView and web service calls. &amp;nbsp;Recently I read&amp;nbsp;awesome&amp;nbsp;article about AsyncTask, I suggest all Android developers to read this article &lt;a href=&quot;http://bon-app-etit.blogspot.in/2013/04/the-dark-side-of-asynctask.html&quot;&gt;&amp;quot;Dark Side of AsyncTask&amp;quot;&lt;/a&gt;&amp;nbsp;by &lt;a href=&quot;http://plus.google.com/106214265123129218556&quot;&gt;+Fré Dumazy&lt;/a&gt;,&amp;nbsp;&amp;nbsp;AsyncTask is redundant in every project. I hope many developer are agree with me, Thank to Volley framework now we can reduct effort,coding and time to write AsyncTasks.  &lt;/p&gt;
+
+&lt;p&gt;This article illustrate simple example of Volley library. VolleyTest application fetch JSON feed from Yahoo Pipe and display in ListView.  &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://2.bp.blogspot.com/-yn52R38ZQEM/UZ8usxVEhAI/AAAAAAAAD_E/541CNRi0i4Y/s320/Screen+Shot+2013-05-24+at+2.39.03+PM.png&quot; alt=&quot;&quot;&gt;&lt;img src=&quot;http://3.bp.blogspot.com/-zRuqVKGoHys/UZ8utKYHuPI/AAAAAAAAD_I/K7WiJq4x_lc/s320/Screen+Shot+2013-05-24+at+2.39.13+PM.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 1:&lt;/strong&gt; Download/Clone Volley library from git repo&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;git clone https://android.googlesource.com/platform/frameworks/volley&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 2:&lt;/strong&gt; Create new project in *Android Studio named &amp;quot;VolleyTest&amp;quot;&lt;/p&gt;
+
+&lt;p&gt;*Note: This is my first project in Android Studio&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 3:&lt;/strong&gt; Copy Volley library source code in &amp;quot;VolleyTest&amp;quot; project, Copying source in our project is safe and easy that&amp;#39;s why I copy source of Volley in VolleyTest project.&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://2.bp.blogspot.com/-xXRUVyaxs0Q/UZ4UCR0WtEI/AAAAAAAAD-0/cJBzvVM_m0g/s640/Screen+Shot+2013-05-23+at+3.49.11+PM.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 4: Add Internet permission in AndroidManifest.xml&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;&amp;lt;!--?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;utf-8&amp;quot;?--&amp;gt;
+&amp;lt;manifest xmlns:android=&amp;quot;http://schemas.android.com/apk/res/android&amp;quot; package=&amp;quot;com.kpbird.volleytest&amp;quot; android:versioncode=&amp;quot;1&amp;quot; android:versionname=&amp;quot;1.0&amp;quot;&amp;gt;
+
+    &amp;lt;uses-sdk android:minsdkversion=&amp;quot;9&amp;quot; android:targetsdkversion=&amp;quot;14&amp;quot;&amp;gt;
+
+    &amp;lt;application android:allowbackup=&amp;quot;true&amp;quot; android:icon=&amp;quot;@drawable/ic_launcher&amp;quot; android:label=&amp;quot;@string/app_name&amp;quot; android:theme=&amp;quot;@style/AppTheme&amp;quot;&amp;gt;
+        &amp;lt;activity android:name=&amp;quot;com.kpbird.volleytest.MainActivity&amp;quot; android:label=&amp;quot;@string/app_name&amp;quot;&amp;gt;
+            &amp;lt;intent-filter&amp;gt;
+                &amp;lt;action android:name=&amp;quot;android.intent.action.MAIN&amp;quot;&amp;gt;
+
+                &amp;lt;category android:name=&amp;quot;android.intent.category.LAUNCHER&amp;quot;&amp;gt;
+            &amp;lt;/category&amp;gt;&amp;lt;/action&amp;gt;&amp;lt;/intent-filter&amp;gt;
+        &amp;lt;/activity&amp;gt;
+
+    &amp;lt;/application&amp;gt;
+    &amp;lt;uses-permission android:name=&amp;quot;android.permission.INTERNET&amp;quot;&amp;gt;&amp;lt;/uses-permission&amp;gt;
+&amp;lt;/uses-sdk&amp;gt;&amp;lt;/manifest&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Step 5: Add ListView in activity_main.xml&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;&amp;lt;relativelayout xmlns:android=&amp;quot;http://schemas.android.com/apk/res/android&amp;quot; xmlns:tools=&amp;quot;http://schemas.android.com/tools&amp;quot; android:layout_width=&amp;quot;match_parent&amp;quot; android:layout_height=&amp;quot;match_parent&amp;quot; android:paddingleft=&amp;quot;@dimen/activity_horizontal_margin&amp;quot; android:paddingright=&amp;quot;@dimen/activity_horizontal_margin&amp;quot; android:paddingtop=&amp;quot;@dimen/activity_vertical_margin&amp;quot; android:paddingbottom=&amp;quot;@dimen/activity_vertical_margin&amp;quot; tools:context=&amp;quot;.MainActivity&amp;quot;&amp;gt;
+
+    &amp;lt;listview android:layout_width=&amp;quot;wrap_content&amp;quot; android:layout_height=&amp;quot;wrap_content&amp;quot; android:id=&amp;quot;@+id/listView&amp;quot; android:layout_alignparenttop=&amp;quot;true&amp;quot; android:layout_alignparentleft=&amp;quot;true&amp;quot;&amp;gt;
+&amp;lt;/listview&amp;gt;&amp;lt;/relativelayout&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Step 6: Create new xml for List row named &amp;quot;row_listview.xml&amp;quot;&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;&amp;lt;!--?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;utf-8&amp;quot;?--&amp;gt;
+
+&amp;lt;linearlayout xmlns:android=&amp;quot;http://schemas.android.com/apk/res/android&amp;quot; android:orientation=&amp;quot;vertical&amp;quot; android:layout_width=&amp;quot;match_parent&amp;quot; android:layout_height=&amp;quot;100dp&amp;quot;&amp;gt;
+
+    &amp;lt;textview android:layout_width=&amp;quot;fill_parent&amp;quot; android:layout_height=&amp;quot;wrap_content&amp;quot; android:textappearance=&amp;quot;?android:attr/textAppearanceLarge&amp;quot; android:text=&amp;quot;Large Text&amp;quot; android:id=&amp;quot;@+id/txtTitle&amp;quot; android:layout_gravity=&amp;quot;left|center_vertical&amp;quot;&amp;gt;
+    &amp;lt;textview android:layout_width=&amp;quot;match_parent&amp;quot; android:layout_height=&amp;quot;wrap_content&amp;quot; android:textappearance=&amp;quot;?android:attr/textAppearanceMedium&amp;quot; android:text=&amp;quot;Medium Text&amp;quot; android:id=&amp;quot;@+id/txtDesc&amp;quot; android:layout_gravity=&amp;quot;left|center_vertical&amp;quot; android:textcolor=&amp;quot;#929292&amp;quot; android:minlines=&amp;quot;2&amp;quot; android:ellipsize=&amp;quot;end&amp;quot; android:maxlines=&amp;quot;2&amp;quot;&amp;gt;
+    &amp;lt;textview android:layout_width=&amp;quot;fill_parent&amp;quot; android:layout_height=&amp;quot;wrap_content&amp;quot; android:textappearance=&amp;quot;?android:attr/textAppearanceSmall&amp;quot; android:text=&amp;quot;Small Text&amp;quot; android:id=&amp;quot;@+id/txtDate&amp;quot; android:layout_gravity=&amp;quot;left|center_vertical&amp;quot; android:textcolor=&amp;quot;#d6d6d6&amp;quot;&amp;gt;
+&amp;lt;/textview&amp;gt;&amp;lt;/textview&amp;gt;&amp;lt;/textview&amp;gt;&amp;lt;/linearlayout&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;**&lt;br&gt;
+** &lt;strong&gt;Step 7: Add Following code in MainActivity.java file&lt;/strong&gt;&lt;br&gt;
+There are three steps to make web call using Volley&lt;/p&gt;
+
+&lt;p&gt;1. Create new Queue Request object from Volley class  &lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;private RequestQueue mRequestQueue;
+.
+.
+.
+mRequestQueue =  Volley.newRequestQueue(this);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;2. Create object of JsonObjectRequest and provide all details like url, http method, listeners for success and error&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;JsonObjectRequest jr = new JsonObjectRequest(Request.Method.GET,url,null,new Response.Listener&amp;lt;jsonobject&amp;gt;() {
+            @Override
+            public void onResponse(JSONObject response) {
+                Log.i(TAG,response.toString());
+                parseJSON(response);
+                va.notifyDataSetChanged();
+                pd.dismiss();
+;            }
+        },new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Log.i(TAG,error.getMessage());
+            }
+        });
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;3. Add JsonObjectRequest to RequestQueue&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;Following code has regular Adapter, Model class. I took everything in one java file for simplicity,&amp;nbsp;  &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Complete Source Code&lt;/strong&gt;&lt;br&gt;
+**&lt;br&gt;
+**&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;package com.kpbird.volleytest;
+
+import android.app.ProgressDialog;
+import android.os.Bundle;
+import android.app.Activity;
+import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+import android.widget.ListView;
+import android.widget.TextView;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+import java.util.ArrayList;
+
+public class MainActivity extends Activity {
+
+private String TAG = this.getClass().getSimpleName();
+private ListView lstView;
+private RequestQueue mRequestQueue;
+private ArrayList&amp;lt;NewsModel&amp;gt; arrNews ;
+private LayoutInflater lf;
+private VolleyAdapter va;
+private ProgressDialog pd;
+
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_main);
+    lf = LayoutInflater.from(this);
+
+
+    arrNews = new ArrayList&amp;lt;NewsModel&amp;gt;();
+    va = new VolleyAdapter();
+
+    lstView = (ListView) findViewById(R.id.listView);
+    lstView.setAdapter(va);
+    mRequestQueue =  Volley.newRequestQueue(this);
+    String url = &amp;quot;http://pipes.yahooapis.com/pipes/pipe.run?_id=giWz8Vc33BG6rQEQo_NLYQ&amp;amp;_render=json&amp;quot;;
+    pd = ProgressDialog.show(this,&amp;quot;Please Wait...&amp;quot;,&amp;quot;Please Wait...&amp;quot;);
+    try{
+        Thread.sleep(2000);
+    }catch(Exception e){
+
+        }
+    JsonObjectRequest jr = new JsonObjectRequest(Request.Method.GET,url,null,new Response.Listener&amp;lt;JSONObject&amp;gt;() {
+        @Override
+        public void onResponse(JSONObject response) {
+            Log.i(TAG,response.toString());
+            parseJSON(response);
+            va.notifyDataSetChanged();
+            pd.dismiss();
+;            }
+    },new Response.ErrorListener() {
+        @Override
+        public void onErrorResponse(VolleyError error) {
+            Log.i(TAG,error.getMessage());
+        }
+    });
+    mRequestQueue.add(jr);
+
+
+
+}
+
+private void parseJSON(JSONObject json){
+    try{
+        JSONObject value = json.getJSONObject(&amp;quot;value&amp;quot;);
+        JSONArray items = value.getJSONArray(&amp;quot;items&amp;quot;);
+        for(int i=0;i&amp;lt;items.length();i++){
+
+                JSONObject item = items.getJSONObject(i);
+                NewsModel nm = new NewsModel();
+                nm.setTitle(item.optString(&amp;quot;title&amp;quot;));
+                nm.setDescription(item.optString(&amp;quot;description&amp;quot;));
+                nm.setLink(item.optString(&amp;quot;link&amp;quot;));
+                nm.setPubDate(item.optString(&amp;quot;pubDate&amp;quot;));
+                arrNews.add(nm);
+        }
+    }
+    catch(Exception e){
+        e.printStackTrace();
+    }
+
+
+}
+
+
+class NewsModel{
+    private String title;
+    private String link;
+    private String description;
+    private String pubDate;
+
+    void setTitle(String title) {
+        this.title = title;
+    }
+
+    void setLink(String link) {
+        this.link = link;
+    }
+
+    void setDescription(String description) {
+        this.description = description;
+    }
+
+    void setPubDate(String pubDate) {
+        this.pubDate = pubDate;
+    }
+
+    String getLink() {
+        return link;
+    }
+
+    String getDescription() {
+        return description;
+    }
+
+    String getPubDate() {
+        return pubDate;
+    }
+
+    String getTitle() {
+
+        return title;
+    }
+}
+
+
+class VolleyAdapter extends BaseAdapter{
+
+    @Override
+    public int getCount() {
+        return arrNews.size();
+    }
+
+    @Override
+    public Object getItem(int i) {
+        return arrNews.get(i);
+    }
+
+    @Override
+    public long getItemId(int i) {
+        return 0;
+    }
+
+    @Override
+    public View getView(int i, View view, ViewGroup viewGroup) {
+        ViewHolder vh ;
+       if(view == null){
+           vh = new ViewHolder();
+           view = lf.inflate(R.layout.row_listview,null);
+           vh.tvTitle = (TextView) view.findViewById(R.id.txtTitle);
+           vh.tvDesc = (TextView) view.findViewById(R.id.txtDesc);
+           vh.tvDate = (TextView) view.findViewById(R.id.txtDate);
+           view.setTag(vh);
+      }
+        else{
+           vh = (ViewHolder) view.getTag();
+       }
+
+        NewsModel nm = arrNews.get(i);
+        vh.tvTitle.setText(nm.getTitle());
+        vh.tvDesc.setText(nm.getDescription());
+        vh.tvDate.setText(nm.getPubDate());
+        return view;
+    }
+
+     class  ViewHolder{
+        TextView tvTitle;
+         TextView tvDesc;
+         TextView tvDate;
+
+    }
+
+}
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;/items.length();i++){&gt;&lt;/jsonobject&gt;&lt;/newsmodel&gt;&lt;/newsmodel&gt;&lt;/jsonobject&gt;&lt;/p&gt;
 </content>
  </entry>
  

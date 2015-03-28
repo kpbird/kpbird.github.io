@@ -6,7 +6,7 @@ category: "Architecture"
 tags: "Architecture, Microservice, Monolithic"
 excerpt: This is how industry move from monilighic to microservice... 
 
-image: "/007ac2e.png"
+image: "/007ac2e.jpeg"
 ---
 
 <img src="/assets/images/posts/007ac2e.png" alt="Monolithic vs MicroService Architecture" class="img-responsive">

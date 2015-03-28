@@ -5,7 +5,7 @@ date:   2013-12-06 16:20:00
 category: "Android, SmartWatch"
 tags: "Android,SmartWatch, Sony"
 excerpt: In previous article ["Sony SmartWatch App Development"][2], I explained basics of SmartWatch, configuration of Sony's Add-On SDK, configuration of SmartWatch emulator and execute simple notification application. This article explains anatomy of SmartWatch development.  
-
+image: "/sonysmartwatch2trio.jpg"
 ---
 
 # Sony SmartWatch App Development 2

@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title:  "Android Triangle Pager Sliding Tabs"
@@ -7,8 +6,10 @@ category: "Android"
 tags: "Android,User Interface, Pager Sliding Tabs"
 excerpt: Android Triangle Pager Sliding Tabs
 
+image: "/default.png"
 ---
-# Android Triangle Pager Sliding Tabs
+
+Android Triangle Pager Sliding Tabs
 
 <iframe allowfullscreen="" frameborder="0" height="315" src="//www.youtube.com/embed/2w8-wzr-wx8" width="420"></iframe>
 &gt; **_Note**: This is not a plug and play library that you can directly import in project and use. Triangle tabs is extension of PagerSlidingTabStrip library. In this article I will explain, how to modify [PageSlidingTabStrip][1] library to create Triangle Tabs._

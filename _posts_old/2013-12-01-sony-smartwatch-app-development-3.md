@@ -5,7 +5,7 @@ date:   2013-12-06 16:20:00
 category: "Android, SmartWatch"
 tags: "Android,SmartWatch, Sony"
 excerpt: In previous two articles I covered development environment setup and&nbsp;anatomy of SmartWatch. This article will contain deep dive into coding with simple Hello Word example.
-
+image: "/sonysmartwatch2trio.jpg"
 ---
 
 # Sony SmartWatch App Development 3

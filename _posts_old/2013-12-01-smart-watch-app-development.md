@@ -6,7 +6,7 @@ date:   2013-12-01 16:20:00
 category: "Android,SmartWatch"
 tags: "Android,SmartWatch,Sony"
 excerpt: A smartwatch or smart watch, is a computerized wristwatch with functionality that is enhanced beyond timekeeping, and is often comparable to a personal digital assistant (PDA) device. While early models can perform basic tasks, such as calculations, translations, and game-playing, modern smartwatches are effectively wearable computers. Many smartwatches run mobile apps, while a smaller number of models run a mobile operating system and function as portable media players, offering playback of FM radio, audio, and video files to the user via a Bluetooth headset. Some smartphone models, (also called watch phones) feature full mobile phone capability, and can make or answer phone calls
-
+image: "/sonysmartwatch2trio.jpg"
 ---
 
 # Smart Watch App Development

@@ -5,7 +5,7 @@ date:   2013-01-06 16:20:00
 category: "Android, SmartWatch"
 tags: "Android,SmartWatch, Sony"
 excerpt: In [previous article][1], we looked at Notification API with Hello SmartWatch demo. In this article, we will focus on Control API.  
-
+image: "/sonysmartwatch2trio.jpg"
 ---
 
 # Sony SmartWatch App Development 4

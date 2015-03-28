@@ -22,18 +22,42 @@
     <div class="widget">
         <h3>Categories</h3>
         <ul class="tag-box inline">
-{% assign tags_list = site.categories %}  
-  {% if tags_list.first[0] == null %}
-    {% for tag in tags_list %} 
-      <li><i class="fa fa-sign-out"></i> <a href="#{{ tag }}">{{ tag | capitalize }} <span>{{ site.tags[tag].size }}</span></a></li>
-    {% endfor %}
-  {% else %}
-    {% for tag in tags_list %} 
-      <li><i class="fa fa-sign-out"></i> <a href="#{{ tag[0] }}">{{ tag[0] | capitalize }} <span>{{ tag[1].size }}</span></a></li>
-    {% endfor %}
-  {% endif %}
-{% assign tags_list = nil %}
-</ul>
-
+		{% assign tags_list = site.categories %}  
+		  {% if tags_list.first[0] == null %}
+		    {% for tag in tags_list %} 
+		      <li><i class="fa fa-sign-out"></i> <a href="#{{ tag }}">{{ tag | capitalize }} <span>{{ site.tags[tag].size }}</span></a></li>
+		    {% endfor %}
+		  {% else %}
+		    {% for tag in tags_list %} 
+		      <li><i class="fa fa-sign-out"></i> <a href="#{{ tag[0] }}">{{ tag[0] | capitalize }} <span>{{ tag[1].size }}</span></a></li>
+		    {% endfor %}
+		  {% endif %}
+		{% assign tags_list = nil %}
+		</ul>
     </div>
+    <div class="widget">
+    	<center>
+    	<script type="text/javascript" src="http://jb.revolvermaps.com/2/4.js?i=1ole8lzza7z&amp;m=3&amp;h=128&amp;c=57ad68&amp;r=10" async="async"></script>
+    	</center>
+    </div>
+    <div class="widget">
+    	<center>
+    	<a href="http://www.alexa.com/siteinfo/kpbird.com"><script type='text/javascript' src='http://xslt.alexa.com/site_stats/js/t/b?url=kpbird.com'></script></a>
+    	</center>
+    </div>
+    <div class="widget">
+    	<center>
+    	<a href="http://www.dzone.com/aboutmvb">
+			<img border="0" src="http://4.bp.blogspot.com/-cTjWLbbiOjg/UzEKwZBm_BI/AAAAAAAAE0o/-Cn8NEX6y2g/s1600/big-mvbbutton.png">
+		</a>
+		</center>
+    </div>
+    <div class="widget">
+    	<center>
+    	<a href="http://www.javacodegeeks.com/" imageanchor="1">
+    		<img alt="Java Code Geeks" src="http://cdn.javacodegeeks.com/wp-content/uploads/2012/12/JavaCodeGeek_Badge.png" title="Java Code Geeks">
+    	</a>
+    	</center>
+    </div>
+
 </div>

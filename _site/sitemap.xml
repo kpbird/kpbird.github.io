@@ -2,10 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>http://localhost:4000/</loc>
-    <lastmod>2015-03-23T22:41:13+05:30</lastmod>
+    <lastmod>2015-03-28T23:39:58+05:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+  
+    <url>
+      <loc>http://localhost:4000/2015/10/android-50-lollipop-api-change</loc>
+      
+        <lastmod>2015-10-06T21:50:00+05:30</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
   
     <url>
       <loc>http://localhost:4000/2014/12/How-Smart-Watch-can-change-your-life</loc>
@@ -37,6 +50,32 @@
       <loc>http://localhost:4000/2014/11/Monolithic-vs-MicroService-Architecture</loc>
       
         <lastmod>2014-11-28T21:50:00+05:30</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/2014/11/android-login-with-facebook</loc>
+      
+        <lastmod>2014-11-22T21:50:00+05:30</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/2014/11/android-login-with-google-plus-utility</loc>
+      
+        <lastmod>2014-11-06T21:50:00+05:30</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -99,9 +138,126 @@
     </url>
   
     <url>
+      <loc>http://localhost:4000/2014/06/android-triangle-pager-sliding-tabs</loc>
+      
+        <lastmod>2014-06-01T21:50:00+05:30</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/2014/06/android-l-preview-api-changes</loc>
+      
+        <lastmod>2014-06-01T21:50:00+05:30</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+  
+    <url>
       <loc>http://localhost:4000/2014/05/simple-tips-to-secure-android-app</loc>
       
         <lastmod>2014-05-06T21:50:00+05:30</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/2014/03/use-adb-over-wi-fi-without-extra</loc>
+      
+        <lastmod>2014-03-06T21:50:00+05:30</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/2014/01/sony-smartwatch-app-development-4</loc>
+      
+        <lastmod>2014-01-06T21:50:00+05:30</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/2013/12/sony-smartwatch-app-development-3</loc>
+      
+        <lastmod>2013-12-06T21:50:00+05:30</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/2013/12/sony-smartwatch-app-development-2</loc>
+      
+        <lastmod>2013-12-06T21:50:00+05:30</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/2013/12/smart-watch-app-development</loc>
+      
+        <lastmod>2013-12-01T21:50:00+05:30</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/2013/11/android-44-kitket-api-changes</loc>
+      
+        <lastmod>2013-11-01T21:50:00+05:30</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/2013/05/volley-easy-fast-networking-for-android</loc>
+      
+        <lastmod>2013-05-01T21:50:00+05:30</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -115,7 +271,7 @@
   <url>
     <loc>http://localhost:4000/atom.xml</loc>
     
-      <lastmod>2015-03-23T22:41:13+05:30</lastmod>
+      <lastmod>2015-03-28T23:39:58+05:30</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -167,7 +323,7 @@
   <url>
     <loc>http://localhost:4000/sitemap.xml</loc>
     
-      <lastmod>2015-03-23T22:41:13+05:30</lastmod>
+      <lastmod>2015-03-28T23:39:58+05:30</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -180,7 +336,7 @@
   <url>
     <loc>http://localhost:4000//feed.xml</loc>
     
-      <lastmod>2015-03-23T22:41:13+05:30</lastmod>
+      <lastmod>2015-03-28T23:39:58+05:30</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -192,6 +348,32 @@
   
   <url>
     <loc>http://localhost:4000/blog/page/2/index.html</loc>
+    
+      <lastmod>2014-02-24</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.7</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/blog/page/3/index.html</loc>
+    
+      <lastmod>2014-02-24</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.7</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/blog/page/4/index.html</loc>
     
       <lastmod>2014-02-24</lastmod>
     

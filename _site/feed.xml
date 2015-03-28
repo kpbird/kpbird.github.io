@@ -8,7 +8,62 @@
     <title>Ketan Parmar</title>
     <link>http://localhost:4000</link>
     <description>Ketan Parmar is a software developer, trainer, speaker.</description>
-    <pubDate>Thu, 04 Dec 2014 21:50:00 +0530</pubDate>
+    <pubDate>Tue, 06 Oct 2015 21:50:00 +0530</pubDate>
+    <item>
+      <title>Android 5.0 Lollipop API Change</title>
+      <link>http://localhost:4000/2015/10/android-50-lollipop-api-change</link>
+      <description><![CDATA[Android 5.0 Lollipop API change and Major Features]]></description>
+      <comments>http://localhost:4000/2015/10/android-50-lollipop-api-change#disqus_thread</comments>
+      <pubDate>Tue, 06 Oct 2015 21:50:00 +0530</pubDate>
+      <guid>http://localhost:4000/2015/10/android-50-lollipop-api-change</guid>
+      <content:encoded><![CDATA[<p><img src="/assets/images/posts/lollipop-1600.png" /></p>
+
+<p>src:&nbsp;http://www.android.com/new/images/banners/lollipop-1600.png  </p>
+
+<p><strong>Android 5.0 Lollipop Features</strong></p>
+
+<ul>
+<li>Material design</li>
+<li>Performance focus</li>
+<li>Notifications</li>
+<li>Your apps on the big screen - TV</li>
+<li>Document-centric apps</li>
+<li>Advanced connectivity</li>
+<li>High-performance graphics</li>
+<li>More Powerful Audio</li>
+<li>Enhanced Camera &amp; Video</li>
+<li>Screen capturing and sharing</li>
+<li>New types of sensors</li>
+<li>Chromium WebView</li>
+<li>Accessibility &amp; Input</li>
+<li>Tools for building battery-efficient apps</li>
+</ul>
+
+<p>| Type                   | Additions | Changes | Removals | Total |
+|------------------------|-----------|---------|----------|-------|
+| Packages               | 14        | 57      | 1        | 72    |
+| Classes and Interfaces | 147       | 360     | 0        | 507   |
+| Constructors           | 98        | 3       | 1        | 102   |
+| Methods                | 770       | 117     | 29       | 916   |
+| Fields                 | 1150      | 75      | 2        | 1227  |
+| Total                  | 2179      | 612     | 33       | 2824  |</p>
+
+<p>The overall difference between <strong>API Levels 20 and 21</strong> is approximately <strong>6.51%</strong>.</p>
+
+<p><strong>Android L Preview API Changes</strong>  </p>
+
+<p>| Type                      | Additions     | Changes   | Removals  | Total     |
+|------------------------   |-----------    |---------  |---------- |-------    |
+| Packages                  | 8             | 43        | 0         | 51        |
+| Classes and Interfaces    | 87            | 232       | 0         | 319       |
+| Constructors              | 84            | 2         | 0         | 86        |
+| Methods                   | 408           | 69        | 17        | 494       |
+| Fields                    | 754           | 22        | 1         | 777       |
+| Total                     | 1341          | 368       | 18        | 1727      |
+The overall difference between&nbsp;<strong>API Levels 20</strong>&nbsp;and L-preview is approximately&nbsp;<strong>3.77%.</strong></p>
+]]></content:encoded>
+      <dc:date>2015-10-06T21:50:00+05:30</dc:date>
+    </item>
     <item>
       <title>How Smart Watch can change your life</title>
       <link>http://localhost:4000/2014/12/How-Smart-Watch-can-change-your-life</link>
@@ -184,6 +239,173 @@ services-architecture-advantages</a></li>
 </ul>
 ]]></content:encoded>
       <dc:date>2014-11-28T21:50:00+05:30</dc:date>
+    </item>
+    <item>
+      <title>Android Login with Facebook</title>
+      <link>http://localhost:4000/2014/11/android-login-with-facebook</link>
+      <description><![CDATA[Accessing segment tags might not be something you have to do everyday but there might be some scenarios where you need to manipulate the tags of your segments. This can be done using Studio File Type Framework which is part of the Studio SDK. The documentation is providing an overview of the entire framework and also includes high level overview of what I'm going to discuss in this article."]]></description>
+      <comments>http://localhost:4000/2014/11/android-login-with-facebook#disqus_thread</comments>
+      <pubDate>Sat, 22 Nov 2014 21:50:00 +0530</pubDate>
+      <guid>http://localhost:4000/2014/11/android-login-with-facebook</guid>
+      <content:encoded><![CDATA[<p><img src="http://1.bp.blogspot.com/-iCx0todkMGM/VHBoCFbte1I/AAAAAAAAFQk/kwWnGCSH0zM/s400/device-2014-11-22-154940.png" alt=""><img src="http://2.bp.blogspot.com/-4i7paQCAuI8/VHBoBI8q9OI/AAAAAAAAFQY/4iYGAbS4ncw/s400/device-2014-11-22-155020.png" alt=""></p>
+
+<p><img src="http://3.bp.blogspot.com/-K9IoL8Kubeo/VHBoAuZ00qI/AAAAAAAAFQU/JV4_06ckPGM/s400/Screen%2BShot%2B2014-11-22%2Bat%2B3.50.35%2Bpm.png" alt=""></p>
+
+<p><strong>Pre-requisite</strong></p>
+
+<p>2. Facebook API Key from Facebook Application - <a href="https://developers.facebook.com/docs/android/getting-started">Detail</a></p>
+
+<p>3. Hash Key of your debug certificate &nbsp;- <a href="http://sonyarouje.com/2011/09/18/facebook-hash-key-for-android-apps/">Detail</a></p>
+
+<p><strong>Usage</strong></p>
+
+<p>Step 1: Import &quot;FacebookLoginUtils.java&quot; class in your package</p>
+
+<p>Step 2: Implement callback listener</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"> public class MyActivity extends Activity implements FacebookLoginUtils.FacebookLoginStatus
+</code></pre></div>
+<p>Step 3: Declare callback method</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">    @Override
+    public void OnSuccessFacebookLogin(Bundle profile) {
+        Log.i(TAG,profile.getString(FacebookLoginUtils.USERID));
+        Log.i(TAG,profile.getString(FacebookLoginUtils.EMAIL));
+        Log.i(TAG,profile.getString(FacebookLoginUtils.NAME));
+        Log.i(TAG,profile.getString(FacebookLoginUtils.FIRST_NAME));
+        Log.i(TAG,profile.getString(FacebookLoginUtils.LAST_NAME));
+
+    }
+</code></pre></div>
+<p>Step 4: Declare object of FacebookLoginUtils.java</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">    private FacebookLoginUtils fLogin;
+</code></pre></div>
+<p>Step 5: Initialize object in onCreate method</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">        fLogin = new FacebookLoginUtils(this, R.id.activity_login_fb);
+        fLogin.setLoginStatus(this);
+        fLogin.setEnable(true);
+</code></pre></div>
+<p>Step 6: Declare few supporting methods&nbsp;</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">    protected void onResume() {
+        super.onResume();
+        fLogin.onResume();
+    };
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        fLogin.onPause();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        fLogin.onDestroy();
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int responseCode,Intent intent) {
+        fLogin.onActivityResult(requestCode, responseCode, intent);
+    }
+</code></pre></div>
+<p><strong>FAQ</strong></p>
+
+<p>Q: What is the problem of above approach ?</p>
+
+<p>A: You activity has a lot of scattered code for Facebook login, It will be more complex and unmanageable when you will have another social network login like Facebook and Twitter.</p>
+
+<p>Q: How I will receive a response for login success?</p>
+
+<p>A: You need to implement interface &quot;FacebookLoginStatus&quot;, on successful login you will receive callback &quot;OnSuccessFacebookLogin&quot;</p>
+
+<p>Q: What will be received on login success ?</p>
+
+<p>A: You will have Name, Email , First Name, Last Name, User Id.</p>
+
+<p>Q: Do I need to handle login failure / error ?</p>
+
+<p>A: No, FacebookLoginUtils.java will handle login failure, error and display appropriate message on screen. &nbsp;</p>
+
+<p><strong><em>Note: Change facebook app key in /res/values/strings.xml#facebook</em>app<em>id</em></strong></p>
+]]></content:encoded>
+      <dc:date>2014-11-22T21:50:00+05:30</dc:date>
+    </item>
+    <item>
+      <title>Android Login with Google Plus Utility</title>
+      <link>http://localhost:4000/2014/11/android-login-with-google-plus-utility</link>
+      <description><![CDATA[Google Plus login & signup utility,]]></description>
+      <comments>http://localhost:4000/2014/11/android-login-with-google-plus-utility#disqus_thread</comments>
+      <pubDate>Thu, 06 Nov 2014 21:50:00 +0530</pubDate>
+      <guid>http://localhost:4000/2014/11/android-login-with-google-plus-utility</guid>
+      <content:encoded><![CDATA[<h1>Android Login with Google Plus Utility</h1>
+
+<p><img src="https://1.bp.blogspot.com/-SxTNj0uRwW8/VGSvrKm53mI/AAAAAAAAFPo/izmq8IUVyY4/s320/device-2014-11-13-161116.png" alt=""></p>
+
+<p><strong>Pre-requisite</strong></p>
+
+<p>Official Document: https://developers.google.com/+/mobile/android/sign-in</p>
+
+<p>Tutorial from AndroidHive : http://www.androidhive.info/2014/02/android-login-with-google-plus-account-1/</p>
+
+<p><strong>Note:</strong> Please read AndroidHive article for initial setup &amp; other process</p>
+
+<p><strong>Usage</strong></p>
+
+<p><strong>Step 1:</strong> Import &quot;GooglePlusLoginUtils.java&quot; class in your package</p>
+
+<p><strong>Step 2:</strong> Implement callback listener</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">public class LoginActivity extends Activity implements GooglePlusLoginUtils.GPlusLoginStatus
+</code></pre></div>
+<p><strong>Step 3:</strong> Declare callback method</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">    public void OnSuccessGPlusLogin(Bundle profile) {
+ Log.i(TAG,profile.getString(GooglePlusLoginUtils.NAME));
+ Log.i(TAG,profile.getString(GooglePlusLoginUtils.EMAIL));
+ Log.i(TAG,profile.getString(GooglePlusLoginUtils.PHOTO));
+ Log.i(TAG,profile.getString(GooglePlusLoginUtils.PROFILE));
+    }
+</code></pre></div>
+<p><strong>Step 4:</strong> Declare object of GooglePlusLoginUtils.java</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">private GooglePlusLoginUtils gLogin;
+</code></pre></div>
+<p><strong>Step 5:</strong> Initialize object in onCreate method</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"> gLogin = new GooglePlusLoginUtils(this, R.id.activity_login_gplus); // Id of login button
+        gLogin.setLoginStatus(this);
+</code></pre></div>
+<p><strong>Step 6:</strong> Declare few supporting methods&nbsp;</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"> @Override
+ protected void onStart() {
+         super.onStart();
+         gLogin.connect();
+ }
+ @Override
+ protected void onStop() {
+         super.onStop();
+         gLogin.disconnect();
+ }
+ @Override
+ protected void onActivityResult(int requestCode, int responseCode,Intent intent) {
+                gLogin.onActivityResult(requestCode, responseCode, intent);
+ }
+</code></pre></div>
+<p><strong>FAQ</strong></p>
+
+<p>Q: What is the problem of above approach ?</p>
+
+<p>A: You activity has a lot of scattered code for Google Pluse login, It will be more complex and unmanageable when you will have another social network login like Facebook and Twitter.</p>
+
+<p>Q: How I will receive a response for login success?</p>
+
+<p>A: You need to implement interface &quot;GPlusloginStatus&quot;, on successful login you will receive callback &quot;OnSuccessGPlusLogin&quot;</p>
+
+<p>Q: What will be received on login success ?</p>
+
+<p>A: You will have Display name, Email , Photo and Profile url.</p>
+
+<p>Q: Do I need to handle login failure / error ?</p>
+
+<p>A: No, GooglePlusLoginUtils.java will handle login failure, error and display appropriate message on screen. &nbsp;&nbsp;</p>
+
+<p>&nbsp; &nbsp;</p>
+]]></content:encoded>
+      <dc:date>2014-11-06T21:50:00+05:30</dc:date>
     </item>
     <item>
       <title>10 Tips for fledgling developers</title>
@@ -507,65 +729,6 @@ services-architecture-advantages</a></li>
 ]]></content:encoded>
       <dc:date>2014-06-05T21:50:00+05:30</dc:date>
     </item>
-    <item>
-      <title>Simple tips to secure Android app</title>
-      <link>http://localhost:4000/2014/05/simple-tips-to-secure-android-app</link>
-      <description><![CDATA[Android has security features built into the operating system that significantly reduce the frequency and impact of application security issues but as application developer, its our job to secure application. The level of security is depends upon application type &amp; domain. There are &nbsp;few security aspects we need not forget. I am collecting those common tips in this article.]]></description>
-      <comments>http://localhost:4000/2014/05/simple-tips-to-secure-android-app#disqus_thread</comments>
-      <pubDate>Tue, 06 May 2014 21:50:00 +0530</pubDate>
-      <guid>http://localhost:4000/2014/05/simple-tips-to-secure-android-app</guid>
-      <content:encoded><![CDATA[<h1>Simple tips to secure Android app</h1>
-
-<p><img src="http://www.oneclickroot.com/wp-content/uploads/2012/10/Android-security.jpg" alt=""></p>
-
-<p>Src: http://www.oneclickroot.com/wp-content/uploads/2012/10/Android-security.jpg</p>
-
-<p>Android has security features built into the operating system that significantly reduce the frequency and impact of application security issues but as application developer, its our job to secure application. The level of security is depends upon application type &amp; domain. There are &nbsp;few security aspects we need not forget. I am collecting those common tips in this article.</p>
-
-<p>Here, I list down most common things that developers should take care to protect the application.</p>
-
-<p>1. Do not store private or sensitive data on SDCard. To store file on internal storage, use following methods with private mode (Context.MODE_PRIVATE) <a href="http://developer.android.com/reference/android/content/Context.html#openFileOutput%28java.lang.String,%20int%29">openFileOutput</a> &amp; <a href="http://developer.android.com/reference/android/content/Context.html#openFileInput%28java.lang.String%29">openFileInput</a>. If you really wants to store data in sdcard then encrypt it. You will find many encryption libraries. I prefer <a href="https://github.com/facebook/conceal">conceal</a> from facebook. &nbsp;&nbsp;&nbsp; </p>
-
-<p>2. Restrict ContentProvider using <a href="http://developer.android.com/guide/topics/manifest/provider-element.html#exported">exported flag</a> set as false. It&#39;s not the case that every time we develop ContentProvider for data exchange between applications but ContentProvider can be developed for single application or private.</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">&lt;provider android:exported=&quot;false&quot; android:name=&quot;MyContentProvider&quot; android:authorities=&quot;com.example.mycontentprovider&quot;&gt;
-</code></pre></div>
-<p>3. Restrict WebView to access local data. HTML5 and related technologies have become popular &nbsp;to develop Mobile Web App app or Hybrid app. For Hybrid uses WebView to display content from locally store HTML or fetch HTML and other content from the server. &nbsp;Major security concerns for WebView are <a href="http://developer.android.com/reference/android/webkit/WebSettings.html#setAllowFileAccess%28boolean%29">setAllowFileAccess()</a> and <a href="http://developer.android.com/reference/android/webkit/WebSettings.html#setAllowContentAccess%28boolean%29">setAllowContentAccess()</a> methods.</p>
-
-<p>4. Do not pass sensitive information through Broadcast &amp; Intent. Use LocalBroadcastManager for broadcast data within process / app. <a href="http://developer.android.com/reference/android/support/v4/content/LocalBroadcastManager.html">LocalBroadcastManager</a> is available in Support Library V4.</p>
-
-<p>5. Don&#39;t print sensitive information in LogCat. Information like username, password, web service URL, request or response, etc detail.</p>
-
-<p>6. Remove unnecessary Log before publishing app.</p>
-
-<p>7. Don&#39;t process malicious Intents. &nbsp;Before process Intent received in onReceive method of BroadcastReceiver, validate callers package name, action and other information.</p>
-
-<p>8. Protect your <a href="http://developer.android.com/guide/topics/manifest/service-element.html">Service</a> with Permission. Use exposed flag as &nbsp;false When Service is developed for your app only.</p>
-
-<p>9. Restrict access to Activities. If the activity is intended solely for the internal use of the app then use <a href="http://developer.android.com/guide/topics/manifest/activity-element.html#exported">exported flag</a> set as false.</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">&lt;activity android:name=&quot;.view.MyActivity&quot; android:exported=&quot;false&quot;&gt; &lt;/activity&gt;
-</code></pre></div>
-<p>10. &nbsp;Make sure that debug mode is false before publish APK.    </p>
-
-<p>11. Encrypt sensitive data even if you store in internal storage.  </p>
-
-<p>12. For cross app functionality, validate calling application before response.   </p>
-
-<p>13. Properly verify server certificate TLS/SSL for HTTPS web call.  </p>
-
-<p>14. Use NDK whenever you feel that information is not safe in Java code because It can decompile easily. i.e. Constant.  </p>
-
-<p>15. Use <a href="http://developer.android.com/tools/help/proguard.html">ProGuard</a> that shrinks, optimizes, and obfuscates your code.  </p>
-
-<p>16. Remove unwanted / unused <user-permission> from AndroidManifest.xml  </p>
-
-<p>17. Loading classes.dex outside of application is major security risk. <a href="http://developer.android.com/reference/dalvik/system/DexClassLoader.html">DexClassLoader</a> allowed developer to load classes.dex on demand.</p>
-
-<p><strong>Reference:</strong></p>
-
-<p><a href="http://developer.android.com/training/articles/security-tips.html">http://developer.android.com/training/articles/security-tips.html</a></p>
-]]></content:encoded>
-      <dc:date>2014-05-06T21:50:00+05:30</dc:date>
-    </item>
-    <dc:date>2014-12-04T21:50:00+05:30</dc:date>
+    <dc:date>2015-10-06T21:50:00+05:30</dc:date>
   </channel>
 </rss>

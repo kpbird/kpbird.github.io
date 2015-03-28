@@ -2,7 +2,7 @@
 layout: post
 title:  "Simple tips to secure Android app"
 date:   2014-05-06 16:20:00
-category: "Android,Security"
+category: "Android"
 tags: "Android,Security"
 excerpt: Android has security features built into the operating system that significantly reduce the frequency and impact of application security issues but as application developer, its our job to secure application. The level of security is depends upon application type &amp; domain. There are &nbsp;few security aspects we need not forget. I am collecting those common tips in this article.
 

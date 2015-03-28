@@ -5,7 +5,7 @@ date:   2015-10-06 16:20:00
 category: "Android"
 tags: "Android, Lollipop, API Change,SDK"
 excerpt: Android 5.0 Lollipop API change and Major Features
-
+image: "/lollipop-1600.png"
 ---
 
 
