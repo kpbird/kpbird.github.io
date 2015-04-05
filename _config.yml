@@ -11,7 +11,7 @@ title: Software developer, trainer, speaker and more by Ketan Parmar
 author: Ketan Parmar
 description: Ketan Parmar is a software developer, trainer, speaker.
 email: contact@kpbird.com
-url: http://localhost:4000
+url: http://kpbird.com
 rss_name: feed.xml
 rss_post_limit: 10
 permalink: /:year/:month/:title

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://localhost:4000/</loc>
-    <lastmod>2015-04-06T01:07:28+05:30</lastmod>
+    <loc>http://kpbird.com/</loc>
+    <lastmod>2015-04-06T01:36:51+05:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
     <url>
-      <loc>http://localhost:4000/2015/10/android-50-lollipop-api-change</loc>
+      <loc>http://kpbird.com/2015/10/android-50-lollipop-api-change</loc>
       
         <lastmod>2015-10-06T21:50:00+05:30</lastmod>
       
@@ -21,7 +21,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/2014/12/How-Smart-Watch-can-change-your-life</loc>
+      <loc>http://kpbird.com/2014/12/How-Smart-Watch-can-change-your-life</loc>
       
         <lastmod>2014-12-04T21:50:00+05:30</lastmod>
       
@@ -34,7 +34,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/2014/12/Wearable-technology-to-monitor-Parkinson%E2%80%99s-disease</loc>
+      <loc>http://kpbird.com/2014/12/Wearable-technology-to-monitor-Parkinson%E2%80%99s-disease</loc>
       
         <lastmod>2014-12-01T21:50:00+05:30</lastmod>
       
@@ -47,7 +47,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/2014/11/Monolithic-vs-MicroService-Architecture</loc>
+      <loc>http://kpbird.com/2014/11/Monolithic-vs-MicroService-Architecture</loc>
       
         <lastmod>2014-11-28T21:50:00+05:30</lastmod>
       
@@ -60,7 +60,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/2014/11/android-login-with-facebook</loc>
+      <loc>http://kpbird.com/2014/11/android-login-with-facebook</loc>
       
         <lastmod>2014-11-22T21:50:00+05:30</lastmod>
       
@@ -73,7 +73,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/2014/11/android-login-with-google-plus-utility</loc>
+      <loc>http://kpbird.com/2014/11/android-login-with-google-plus-utility</loc>
       
         <lastmod>2014-11-06T21:50:00+05:30</lastmod>
       
@@ -86,7 +86,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/2014/07/10-Tips-for-fledgling-developers</loc>
+      <loc>http://kpbird.com/2014/07/10-Tips-for-fledgling-developers</loc>
       
         <lastmod>2014-07-12T21:50:00+05:30</lastmod>
       
@@ -99,7 +99,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/2014/06/Microservice-Architecture-A-Quick-Guide</loc>
+      <loc>http://kpbird.com/2014/06/Microservice-Architecture-A-Quick-Guide</loc>
       
         <lastmod>2014-06-20T21:50:00+05:30</lastmod>
       
@@ -112,7 +112,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/2014/06/NoSQL-A-Quick-Guide</loc>
+      <loc>http://kpbird.com/2014/06/NoSQL-A-Quick-Guide</loc>
       
         <lastmod>2014-06-14T21:50:00+05:30</lastmod>
       
@@ -125,7 +125,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/2014/06/Migrating-Web-Site-to-AWS-Cloud-A%20Quick-Guide</loc>
+      <loc>http://kpbird.com/2014/06/Migrating-Web-Site-to-AWS-Cloud-A%20Quick-Guide</loc>
       
         <lastmod>2014-06-05T21:50:00+05:30</lastmod>
       
@@ -138,7 +138,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/2014/06/android-triangle-pager-sliding-tabs</loc>
+      <loc>http://kpbird.com/2014/06/android-triangle-pager-sliding-tabs</loc>
       
         <lastmod>2014-06-01T21:50:00+05:30</lastmod>
       
@@ -151,7 +151,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/2014/06/android-l-preview-api-changes</loc>
+      <loc>http://kpbird.com/2014/06/android-l-preview-api-changes</loc>
       
         <lastmod>2014-06-01T21:50:00+05:30</lastmod>
       
@@ -164,7 +164,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/2014/05/simple-tips-to-secure-android-app</loc>
+      <loc>http://kpbird.com/2014/05/simple-tips-to-secure-android-app</loc>
       
         <lastmod>2014-05-06T21:50:00+05:30</lastmod>
       
@@ -177,7 +177,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/2014/03/use-adb-over-wi-fi-without-extra</loc>
+      <loc>http://kpbird.com/2014/03/use-adb-over-wi-fi-without-extra</loc>
       
         <lastmod>2014-03-06T21:50:00+05:30</lastmod>
       
@@ -190,7 +190,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/2014/01/sony-smartwatch-app-development-4</loc>
+      <loc>http://kpbird.com/2014/01/sony-smartwatch-app-development-4</loc>
       
         <lastmod>2014-01-06T21:50:00+05:30</lastmod>
       
@@ -203,7 +203,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/2013/12/sony-smartwatch-app-development-3</loc>
+      <loc>http://kpbird.com/2013/12/sony-smartwatch-app-development-3</loc>
       
         <lastmod>2013-12-06T21:50:00+05:30</lastmod>
       
@@ -216,7 +216,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/2013/12/sony-smartwatch-app-development-2</loc>
+      <loc>http://kpbird.com/2013/12/sony-smartwatch-app-development-2</loc>
       
         <lastmod>2013-12-06T21:50:00+05:30</lastmod>
       
@@ -229,7 +229,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/2013/12/smart-watch-app-development</loc>
+      <loc>http://kpbird.com/2013/12/smart-watch-app-development</loc>
       
         <lastmod>2013-12-01T21:50:00+05:30</lastmod>
       
@@ -242,7 +242,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/2013/11/android-44-kitket-api-changes</loc>
+      <loc>http://kpbird.com/2013/11/android-44-kitket-api-changes</loc>
       
         <lastmod>2013-11-01T21:50:00+05:30</lastmod>
       
@@ -255,7 +255,7 @@
     </url>
   
     <url>
-      <loc>http://localhost:4000/2013/05/volley-easy-fast-networking-for-android</loc>
+      <loc>http://kpbird.com/2013/05/volley-easy-fast-networking-for-android</loc>
       
         <lastmod>2013-05-01T21:50:00+05:30</lastmod>
       
@@ -269,22 +269,9 @@
   
   
   <url>
-    <loc>http://localhost:4000/404.html</loc>
+    <loc>http://kpbird.com/404.html</loc>
     
-      <lastmod>2015-04-06T01:07:28+05:30</lastmod>
-    
-    
-      <changefreq>monthly</changefreq>
-    
-    
-      <priority>0.3</priority>
-    
-  </url>
-  
-  <url>
-    <loc>http://localhost:4000/atom.xml</loc>
-    
-      <lastmod>2015-04-06T01:07:28+05:30</lastmod>
+      <lastmod>2015-04-06T01:36:51+05:30</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -295,7 +282,20 @@
   </url>
   
   <url>
-    <loc>http://localhost:4000/blog/index.html</loc>
+    <loc>http://kpbird.com/atom.xml</loc>
+    
+      <lastmod>2015-04-06T01:36:51+05:30</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://kpbird.com/blog/index.html</loc>
     
       <lastmod>2014-02-24</lastmod>
     
@@ -308,7 +308,7 @@
   </url>
   
   <url>
-    <loc>http://localhost:4000/search/index.html</loc>
+    <loc>http://kpbird.com/search/index.html</loc>
     
       <lastmod>2014-10-02</lastmod>
     
@@ -321,7 +321,7 @@
   </url>
   
   <url>
-    <loc>http://localhost:4000/index.html</loc>
+    <loc>http://kpbird.com/index.html</loc>
     
       <lastmod>2014-02-24</lastmod>
     
@@ -334,9 +334,9 @@
   </url>
   
   <url>
-    <loc>http://localhost:4000/sitemap.xml</loc>
+    <loc>http://kpbird.com/sitemap.xml</loc>
     
-      <lastmod>2015-04-06T01:07:28+05:30</lastmod>
+      <lastmod>2015-04-06T01:36:51+05:30</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -347,9 +347,9 @@
   </url>
   
   <url>
-    <loc>http://localhost:4000//feed.xml</loc>
+    <loc>http://kpbird.com//feed.xml</loc>
     
-      <lastmod>2015-04-06T01:07:28+05:30</lastmod>
+      <lastmod>2015-04-06T01:36:51+05:30</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -360,7 +360,7 @@
   </url>
   
   <url>
-    <loc>http://localhost:4000/blog/page/2/index.html</loc>
+    <loc>http://kpbird.com/blog/page/2/index.html</loc>
     
       <lastmod>2014-02-24</lastmod>
     
@@ -373,7 +373,7 @@
   </url>
   
   <url>
-    <loc>http://localhost:4000/blog/page/3/index.html</loc>
+    <loc>http://kpbird.com/blog/page/3/index.html</loc>
     
       <lastmod>2014-02-24</lastmod>
     
@@ -386,7 +386,7 @@
   </url>
   
   <url>
-    <loc>http://localhost:4000/blog/page/4/index.html</loc>
+    <loc>http://kpbird.com/blog/page/4/index.html</loc>
     
       <lastmod>2014-02-24</lastmod>
     
