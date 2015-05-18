@@ -146,7 +146,7 @@
 
     &lt;/button&gt;&lt;button android:id=&quot;@+id/btnClearn&quot; android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;wrap_content&quot; android:onclick=&quot;buttonClicked&quot; android:text=&quot;Clear Notification&quot;&gt;
 </code></pre></div>
-<p><strong>Step 3:</strong> Let&#39;s make button alive by writing action in MainActivity.java. I am using onClick property of buttons, so I don&#39;t require to find object of button and setOnClickListener. I can write code in &quot;buttonClicked&quot; method which is defined. When a user click on &quot;Send Notification&quot; button I am simply firing ExtensionService with INTENT<em>ACTION</em>ADD action and other required data and same for &quot;Clear Notification&quot; but with INTENT<em>ACTION</em>CLEAR action.  </p>
+<p><strong>Step 3:</strong> Let&#39;s make button alive by writing action in MainActivity.java. I am using onClick property of buttons, so I don&#39;t require to find object of button and setOnClickListener. I can write code in &quot;buttonClicked&quot; method which is defined. When a user click on &quot;Send Notification&quot; button I am simply firing ExtensionService with INTENT_ACTION_ADD action and other required data and same for &quot;Clear Notification&quot; but with INTENT_ACTION_CLEAR action.  </p>
 <div class="highlight"><pre><code class="language-text" data-lang="text">package com.kpbird.hellosmartwatch;
 
 import android.app.Activity;
@@ -540,7 +540,7 @@ public class HelloExtensionService extends ExtensionService   {
 
 <p>When you click on &quot;Clear Notification&quot; from HelloActivity and come back to emulator, you will see the effect</p>
 
-<h2><a href="https://github.com/kpbird/Hello-SmartWatch">Download Source Code</a></h2>
+<h2 id="download-source-code"><a href="https://github.com/kpbird/Hello-SmartWatch">Download Source Code</a></h2>
 
 <p>Note: 1. Import project in eclipse 2. Make sure that you change SmartExtensionUtils and SmartExtensionAPI path from project properties.</p>
 
@@ -586,9 +586,9 @@ public class HelloExtensionService extends ExtensionService   {
         <h3>Recent Posts</h3>
         <ul>
             
-            <li><a href="/2015/10/android-50-lollipop-api-change"><i class="fa fa-sign-out"></i> Android 5.0 Lollipop API Change</a> <small>6 October 2015</small></li>
+            <li><a href="/2015/04/Android-Simple-SyncAdapter-Example"><i class="fa fa-sign-out"></i> Android Simple SyncAdapter</a> <small>26 April 2015</small></li>
             
-            <li><a href="/2014/12/How-Smart-Watch-can-change-your-life"><i class="fa fa-sign-out"></i> How Smart Watch can change your life</a> <small>4 December 2014</small></li>
+            <li><a href="/2014/12/How-Smart-Watch-can-change-your-life%20copy"><i class="fa fa-sign-out"></i> How Smart Watch can change your life</a> <small>4 December 2014</small></li>
             
             <li><a href="/2014/12/Wearable-technology-to-monitor-Parkinson%E2%80%99s-disease"><i class="fa fa-sign-out"></i> Wearable technology to monitor Parkinson’s disease</a> <small>1 December 2014</small></li>
             
@@ -604,7 +604,7 @@ public class HelloExtensionService extends ExtensionService   {
 		  
 		  
 		     
-		      <li><i class="fa fa-sign-out"></i> <a href="#android">Android <span>9</span></a></li>
+		      <li><i class="fa fa-sign-out"></i> <a href="#android">Android <span>10</span></a></li>
 		     
 		      <li><i class="fa fa-sign-out"></i> <a href="#smartwatch">Smartwatch <span>4</span></a></li>
 		     

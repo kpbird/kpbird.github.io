@@ -8,69 +8,191 @@
     <title>Ketan Parmar</title>
     <link>http://kpbird.com</link>
     <description>Ketan Parmar is a software developer, trainer, speaker.</description>
-    <pubDate>Tue, 06 Oct 2015 21:50:00 +0530</pubDate>
+    <pubDate>Sun, 26 Apr 2015 21:50:00 +0530</pubDate>
     <item>
-      <title>Android 5.0 Lollipop API Change</title>
-      <link>http://kpbird.com/2015/10/android-50-lollipop-api-change</link>
-      <description><![CDATA[Android 5.0 Lollipop API change and Major Features]]></description>
-      <comments>http://kpbird.com/2015/10/android-50-lollipop-api-change#disqus_thread</comments>
-      <pubDate>Tue, 06 Oct 2015 21:50:00 +0530</pubDate>
-      <guid>http://kpbird.com/2015/10/android-50-lollipop-api-change</guid>
-      <content:encoded><![CDATA[<p><img src="/assets/images/posts/lollipop-1600.png" /></p>
+      <title>Android Simple SyncAdapter</title>
+      <link>http://kpbird.com/2015/04/Android-Simple-SyncAdapter-Example</link>
+      <description><![CDATA[SyncAdapter is standard and preferred way to sync application data with server, cloud or MBaaS backend. SyncAdapter is the most efficient way to make your application update to date. It will help you to present fresh data when user open application. You can increase user experience by not making wait to user till you call web service and fetch the data. Almost all popular android application use SyncAdapter, you check from Setting -> Account, you will find accounts i.e. google, twitter, facebook, etc.. It means these application use SyncAdapter.]]></description>
+      <comments>http://kpbird.com/2015/04/Android-Simple-SyncAdapter-Example#disqus_thread</comments>
+      <pubDate>Sun, 26 Apr 2015 21:50:00 +0530</pubDate>
+      <guid>http://kpbird.com/2015/04/Android-Simple-SyncAdapter-Example</guid>
+      <content:encoded><![CDATA[<p><img src="/assets/images/posts/SyncAdapter_small.png" alt="Android SyncAdapter" title="Android SyncAdapter" class="img-responsive"></p>
 
-<p>src:&nbsp;http://www.android.com/new/images/banners/lollipop-1600.png  </p>
+<p>SyncAdapter is standard and preferred way to sync application data with server, cloud or MBaaS backend. SyncAdapter is the most efficient way to make your application update to date. It will help you to present fresh data when user open application. You can increase user experience by not making wait to user till you call web service and fetch the data. Almost all popular android application use SyncAdapter, you check from Setting -&gt; Account, you will find accounts i.e. google, twitter, facebook, etc.. It means these application use SyncAdapter.</p>
 
-<p><strong>Android 5.0 Lollipop Features</strong></p>
+<p><strong>Why SyncAdapter?</strong></p>
+
+<p>As Lazy developer you might think why should I put effort to write SyncAdapter. SyncAdapter is complex!!, I can directly make network call when required, and more... </p>
+
+<p>Let’s compare custom sync implement with SyncAdapter</p>
+
+<table><thead>
+<tr>
+<th>Custom Sync</th>
+<th>Sync Adapter</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Network Availability - manually</td>
+<td>Network Availability - Automatically</td>
+</tr>
+<tr>
+<td>Pending Queue - manually</td>
+<td>Pending Queue - Automatically</td>
+</tr>
+<tr>
+<td>Refresh on Network - manually</td>
+<td></td>
+</tr>
+<tr>
+<td>Periodic Update - manually</td>
+<td>Periodic Update - Automatically</td>
+</tr>
+<tr>
+<td>Sync Setting - manually</td>
+<td>Sync Setting - Automatically</td>
+</tr>
+<tr>
+<td>Network Bandwidth - manually</td>
+<td>Network Bandwidth - Automatically</td>
+</tr>
+<tr>
+<td>Battery Efficient - ?? Depend on you</td>
+<td>Battery Efficient - Yes</td>
+</tr>
+<tr>
+<td>And many more</td>
+<td>And many more</td>
+</tr>
+</tbody></table>
+
+<p>I hope above table is sufficient to convince to create sync adapter demo. </p>
+
+<p><strong>Concepts</strong></p>
+
+<p>Concepts are very important to read before jump to the demo. Many developer don’t read API document or understand concept and directly start sample and try to learn from it but I personally suggest to read concept first before open your IDE and read the code. SyncAdapter has mainly two section 1. Account management 2. Sync Adapter. If your app requires user credentials or server login, you can optionally integrate account management and authentication into your data transfer.</p>
+
+<p>SyncAdapter has following sections.</p>
+
+<ol>
+<li><strong>Sqlite Database:</strong> I guess you all are master of Sqlite database, SyncAdapter will store data in Sqlite using Content Provider. You may choose other options as well. </li>
+<li><strong>Content Provider:</strong>  Act as bridge between your database and SyncAdapter. To expose your data in Rest like url pattern.</li>
+<li><strong>AbstractAccountAuthenticator:</strong> As developer we need to extend this class and override methods, It is primarily use to manage authentication and account management. To use SyncAdapter you have to have custom account. This class is responsible to create account, maintain auth token and various things related to authentication.</li>
+<li><strong>Authenticator Service:</strong> This is normal Service, which we are using daily. The only difference is that this service create object of AbstractAccountAuthenticator class and bind.</li>
+<li><strong>AbstractThreadedSyncAdapter:</strong> As developer we need to extend this class and override methods. This is main piece of SyncAdapter puzzle. It has method onPerformSync, in which we need to write our code.<br></li>
+<li><strong>Sync Service:</strong> This is normal Service. It use to create object of AbstractThreadedSyncAdapter class and bind.</li>
+<li><strong>Authenticator.xml:</strong> You need to create this file under res/xml/ folder. This file is require to bind your authenticator component into the sync adapter and account frameworks, you need to provide these framework with metadata that describes the component. You can choose your own file name. These is not restriction on file name.</li>
+<li><strong>SyncAdapter.xml:</strong> You need to create this file under res/xml/ folder.  The metadata specifies the account type you&#39;ve created for your sync adapter, declares a content provider authority associated with your app.</li>
+<li><strong>AndroidManifast.xml:</strong> You must register Sync Service, Authenticator service and few other things in AndroidManifast file in order to work SyncAdapter, This is final piece of puzzle.</li>
+</ol>
+
+<p><strong>Diagram</strong></p>
+
+<p>Following diagram depicted relationship between all different components of Sync Adapter. Account Manager and Sync Manager are provide by Android OS, except these two thing everything else you need to implement.
+<a href="/assets/images/posts/SyncAdapter_large.png" target="_blank">
+<img src="/assets/images/posts/SyncAdapter_small.png" alt="Android SyncAdapter" title="Android SyncAdapter" class="img-responsive"></a></p>
+
+<p><strong>Coding - Let’s jump to the code</strong></p>
+
+<p>I am taking simple example ToDo list sync with Parse.com (Parse is BaaS service, If you want to know more aboud BaaS or MBaaS Service, please refere this article). </p>
+
+<p>You will find many sync adapter example with “AccountAuthenticatorActivity”, In this situation you need to develop your login screen by extending “AccountAuthenticatorActivity”, but this might not be case in every project. In few situation you might want to use sync adapter without login / registration. In this demo I will explain how to create todo list with Parse.com as backend and witout login / registration. </p>
+
+<p>When user start application, It will fetch primary gmail account and create Parse User through coding. For simplicity I will sync todo list only single direction, from Parse.com to local, you can have bi-directional sync based on need. </p>
+
+<ol>
+<li>Open Android Studio</li>
+<li>Create Project Name “SimpleSyncAdapter”
 
 <ul>
-<li>Material design</li>
-<li>Performance focus</li>
-<li>Notifications</li>
-<li>Your apps on the big screen - TV</li>
-<li>Document-centric apps</li>
-<li>Advanced connectivity</li>
-<li>High-performance graphics</li>
-<li>More Powerful Audio</li>
-<li>Enhanced Camera &amp; Video</li>
-<li>Screen capturing and sharing</li>
-<li>New types of sensors</li>
-<li>Chromium WebView</li>
-<li>Accessibility &amp; Input</li>
-<li>Tools for building battery-efficient apps</li>
-</ul>
+<li>Minimum SDK: 4.0</li>
+<li>Package Name: com.kpbird.simplesyncadapter</li>
+</ul></li>
+<li>Create Blank Activity</li>
+<li>Download Parse Android SDK (<a href="https://parse.com/docs/downloads">https://parse.com/docs/downloads</a>), Copy Parse.jar in lib folder and click “Sync Project with Gradle File” button in toolbar.</li>
+<li>We will create following files</li>
+</ol>
 
-<p>| Type                   | Additions | Changes | Removals | Total |
-|------------------------|-----------|---------|----------|-------|
-| Packages               | 14        | 57      | 1        | 72    |
-| Classes and Interfaces | 147       | 360     | 0        | 507   |
-| Constructors           | 98        | 3       | 1        | 102   |
-| Methods                | 770       | 117     | 29       | 916   |
-| Fields                 | 1150      | 75      | 2        | 1227  |
-| Total                  | 2179      | 612     | 33       | 2824  |</p>
+<table>
+  <tr>
+    <th>Sr</th>
+    <th>File</th>
+    <th>Purpose</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>SimpleAuthenticator.java</td>
+    <td>This class will hold authentication related information</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>SimpleAuthenticatorService.java</td>
+    <td>This class will provide object of SimpleAuthenticator class </td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>SimpleContentProvider.java</td>
+    <td>This class is responsible for database operation</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>SimpleInit.java</td>
+    <td>This will initialize Parse library and fetch default gmail account</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>SimpleSyncAdapter.java</td>
+    <td>This class ir responsible for Sync, Android OS will call onPerformSync method, we need to write our sync code in onPerformSync method.</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>SimpleSyncAdapterService.java</td>
+    <td>This will provide object of SimpleSyncAdapter to the sync framework</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>SyncConstants.java</td>
+    <td>This will hold all required constants</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>SyncUtil.java</td>
+    <td>This will have common methods </td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>authenticator.xml</td>
+    <td>Meta information of Authentication</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>sync_adapter.xml</td>
+    <td>Meta information of Sync Adapter</td>
+  </tr>
+</table>
 
-<p>The overall difference between <strong>API Levels 20 and 21</strong> is approximately <strong>6.51%</strong>.</p>
+<p>**Note: **Please update Parse.com API key before execute sample</p>
 
-<p><strong>Android L Preview API Changes</strong>  </p>
+<p><strong><a href="https://github.com/kpbird/SimpleSyncAdapter">https://github.com/kpbird/SimpleSyncAdapter</a></strong></p>
 
-<p>| Type                      | Additions     | Changes   | Removals  | Total     |
-|------------------------   |-----------    |---------  |---------- |-------    |
-| Packages                  | 8             | 43        | 0         | 51        |
-| Classes and Interfaces    | 87            | 232       | 0         | 319       |
-| Constructors              | 84            | 2         | 0         | 86        |
-| Methods                   | 408           | 69        | 17        | 494       |
-| Fields                    | 754           | 22        | 1         | 777       |
-| Total                     | 1341          | 368       | 18        | 1727      |
-The overall difference between&nbsp;<strong>API Levels 20</strong>&nbsp;and L-preview is approximately&nbsp;<strong>3.77%.</strong></p>
+<p><strong>Reference</strong></p>
+
+<ol>
+<li><p><a href="http://developer.android.com/training/sync-adapters/creating-sync-adapter.html">http://developer.android.com/training/sync-adapters/creating-sync-adapter.html</a></p></li>
+<li><p><a href="http://udinic.wordpress.com/2013/07/24/write-your-own-android-sync-adapter/">http://udinic.wordpress.com/2013/07/24/write-your-own-android-sync-adapter/</a></p></li>
+<li><p><a href="http://chariotsolutions.com/blog/post/android-data-sync/">http://chariotsolutions.com/blog/post/android-data-sync/</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=5onKZcJyJwI">https://www.youtube.com/watch?v=5onKZcJyJwI</a></p></li>
+</ol>
 ]]></content:encoded>
-      <dc:date>2015-10-06T21:50:00+05:30</dc:date>
+      <dc:date>2015-04-26T21:50:00+05:30</dc:date>
     </item>
     <item>
       <title>How Smart Watch can change your life</title>
-      <link>http://kpbird.com/2014/12/How-Smart-Watch-can-change-your-life</link>
+      <link>http://kpbird.com/2014/12/How-Smart-Watch-can-change-your-life%20copy</link>
       <description><![CDATA[A smartwatch (or smart watch) is a computerized wristwatch with functionality that is enhanced beyond timekeeping, and is often comparable to a personal digital assistant (PDA) device" - Wikipedia]]></description>
-      <comments>http://kpbird.com/2014/12/How-Smart-Watch-can-change-your-life#disqus_thread</comments>
+      <comments>http://kpbird.com/2014/12/How-Smart-Watch-can-change-your-life%20copy#disqus_thread</comments>
       <pubDate>Thu, 04 Dec 2014 21:50:00 +0530</pubDate>
-      <guid>http://kpbird.com/2014/12/How-Smart-Watch-can-change-your-life</guid>
+      <guid>http://kpbird.com/2014/12/How-Smart-Watch-can-change-your-life%20copy</guid>
       <content:encoded><![CDATA[<p><img src="/assets/images/posts/05be48e.jpg" alt="Smart Watch" title="Smart Watch" class="img-responsive"></p>
 
 <p>_&quot;A smartwatch (or smart watch) is a computerized wristwatch with functionality that is enhanced beyond timekeeping, and is often comparable to a personal digital assistant (PDA) device&quot; - _Wikipedia</p>
@@ -324,7 +446,7 @@ services-architecture-advantages</a></li>
 
 <p>A: No, FacebookLoginUtils.java will handle login failure, error and display appropriate message on screen. &nbsp;</p>
 
-<p><strong><em>Note: Change facebook app key in /res/values/strings.xml#facebook</em>app<em>id</em></strong></p>
+<p><strong><em>Note: Change facebook app key in /res/values/strings.xml#facebook</em>app_id_</strong></p>
 ]]></content:encoded>
       <dc:date>2014-11-22T21:50:00+05:30</dc:date>
     </item>
@@ -335,15 +457,15 @@ services-architecture-advantages</a></li>
       <comments>http://kpbird.com/2014/11/android-login-with-google-plus-utility#disqus_thread</comments>
       <pubDate>Thu, 06 Nov 2014 21:50:00 +0530</pubDate>
       <guid>http://kpbird.com/2014/11/android-login-with-google-plus-utility</guid>
-      <content:encoded><![CDATA[<h1>Android Login with Google Plus Utility</h1>
+      <content:encoded><![CDATA[<h1 id="android-login-with-google-plus-utility">Android Login with Google Plus Utility</h1>
 
 <p><img src="https://1.bp.blogspot.com/-SxTNj0uRwW8/VGSvrKm53mI/AAAAAAAAFPo/izmq8IUVyY4/s320/device-2014-11-13-161116.png" alt=""></p>
 
 <p><strong>Pre-requisite</strong></p>
 
-<p>Official Document: https://developers.google.com/+/mobile/android/sign-in</p>
+<p>Official Document: <a href="https://developers.google.com/+/mobile/android/sign-in">https://developers.google.com/+/mobile/android/sign-in</a></p>
 
-<p>Tutorial from AndroidHive : http://www.androidhive.info/2014/02/android-login-with-google-plus-account-1/</p>
+<p>Tutorial from AndroidHive : <a href="http://www.androidhive.info/2014/02/android-login-with-google-plus-account-1/">http://www.androidhive.info/2014/02/android-login-with-google-plus-account-1/</a></p>
 
 <p><strong>Note:</strong> Please read AndroidHive article for initial setup &amp; other process</p>
 
@@ -406,6 +528,150 @@ services-architecture-advantages</a></li>
 <p>&nbsp; &nbsp;</p>
 ]]></content:encoded>
       <dc:date>2014-11-06T21:50:00+05:30</dc:date>
+    </item>
+    <item>
+      <title>Android 5.0 Lollipop API Change</title>
+      <link>http://kpbird.com/2014/10/android-50-lollipop-api-change</link>
+      <description><![CDATA[Android 5.0 Lollipop API change and Major Features]]></description>
+      <comments>http://kpbird.com/2014/10/android-50-lollipop-api-change#disqus_thread</comments>
+      <pubDate>Mon, 06 Oct 2014 21:50:00 +0530</pubDate>
+      <guid>http://kpbird.com/2014/10/android-50-lollipop-api-change</guid>
+      <content:encoded><![CDATA[<p><img src="/assets/images/posts/lollipop-1600.png" /></p>
+
+<p>src:&nbsp;<a href="http://www.android.com/new/images/banners/lollipop-1600.png">http://www.android.com/new/images/banners/lollipop-1600.png</a>  </p>
+
+<p><strong>Android 5.0 Lollipop Features</strong></p>
+
+<ul>
+<li>Material design</li>
+<li>Performance focus</li>
+<li>Notifications</li>
+<li>Your apps on the big screen - TV</li>
+<li>Document-centric apps</li>
+<li>Advanced connectivity</li>
+<li>High-performance graphics</li>
+<li>More Powerful Audio</li>
+<li>Enhanced Camera &amp; Video</li>
+<li>Screen capturing and sharing</li>
+<li>New types of sensors</li>
+<li>Chromium WebView</li>
+<li>Accessibility &amp; Input</li>
+<li>Tools for building battery-efficient apps</li>
+</ul>
+
+<table><thead>
+<tr>
+<th>Type</th>
+<th>Additions</th>
+<th>Changes</th>
+<th>Removals</th>
+<th>Total</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Packages</td>
+<td>14</td>
+<td>57</td>
+<td>1</td>
+<td>72</td>
+</tr>
+<tr>
+<td>Classes and Interfaces</td>
+<td>147</td>
+<td>360</td>
+<td>0</td>
+<td>507</td>
+</tr>
+<tr>
+<td>Constructors</td>
+<td>98</td>
+<td>3</td>
+<td>1</td>
+<td>102</td>
+</tr>
+<tr>
+<td>Methods</td>
+<td>770</td>
+<td>117</td>
+<td>29</td>
+<td>916</td>
+</tr>
+<tr>
+<td>Fields</td>
+<td>1150</td>
+<td>75</td>
+<td>2</td>
+<td>1227</td>
+</tr>
+<tr>
+<td>Total</td>
+<td>2179</td>
+<td>612</td>
+<td>33</td>
+<td>2824</td>
+</tr>
+</tbody></table>
+
+<p>The overall difference between <strong>API Levels 20 and 21</strong> is approximately <strong>6.51%</strong>.</p>
+
+<p><strong>Android L Preview API Changes</strong>  </p>
+
+<table><thead>
+<tr>
+<th>Type</th>
+<th>Additions</th>
+<th>Changes</th>
+<th>Removals</th>
+<th>Total</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Packages</td>
+<td>8</td>
+<td>43</td>
+<td>0</td>
+<td>51</td>
+</tr>
+<tr>
+<td>Classes and Interfaces</td>
+<td>87</td>
+<td>232</td>
+<td>0</td>
+<td>319</td>
+</tr>
+<tr>
+<td>Constructors</td>
+<td>84</td>
+<td>2</td>
+<td>0</td>
+<td>86</td>
+</tr>
+<tr>
+<td>Methods</td>
+<td>408</td>
+<td>69</td>
+<td>17</td>
+<td>494</td>
+</tr>
+<tr>
+<td>Fields</td>
+<td>754</td>
+<td>22</td>
+<td>1</td>
+<td>777</td>
+</tr>
+<tr>
+<td>Total</td>
+<td>1341</td>
+<td>368</td>
+<td>18</td>
+<td>1727</td>
+</tr>
+</tbody></table>
+
+<p>The overall difference between&nbsp;<strong>API Levels 20</strong>&nbsp;and L-preview is approximately&nbsp;<strong>3.77%.</strong></p>
+]]></content:encoded>
+      <dc:date>2014-10-06T21:50:00+05:30</dc:date>
     </item>
     <item>
       <title>10 Tips for fledgling developers</title>
@@ -514,7 +780,7 @@ services-architecture-advantages</a></li>
 
 <ul>
 <li><p>Microservice architecture brings a lot of operations overhead.</p></li>
-<li><p>DevOps Skill required (http://en.wikipedia.org/wiki/DevOps).</p></li>
+<li><p>DevOps Skill required (<a href="http://en.wikipedia.org/wiki/DevOps">http://en.wikipedia.org/wiki/DevOps</a>).</p></li>
 <li><p>Duplication of Effort.</p></li>
 <li><p>Distributed System is complicated to manage .</p></li>
 <li><p>Default to trace problem because of distributed deployment.</p></li>
@@ -656,79 +922,6 @@ services-architecture-advantages</a></li>
 ]]></content:encoded>
       <dc:date>2014-06-14T21:50:00+05:30</dc:date>
     </item>
-    <item>
-      <title>Migrating Web Site to AWS Cloud - A Quick Guide</title>
-      <link>http://kpbird.com/2014/06/Migrating-Web-Site-to-AWS-Cloud-A%20Quick-Guide</link>
-      <description><![CDATA[This is a quick tip to migrate your existing website to AWS Cloud.I assume that you have basic knowledge of AWS Cloud and server side architecture. This post does not include a discussion of pros and cons of AWS or Cloud services. Elasticity and Auto-Scaling are two main features of Cloud. If we don't leverage these feature then there isn't any difference between hosting website in dedicate server or AWS Cloud. You can create EC2 instance and deploy your existing code. It will work perfect, but in this case you cannot apply auto-scale. There is no purpose of migrating web site to AWS Cloud without auto-scaling.]]></description>
-      <comments>http://kpbird.com/2014/06/Migrating-Web-Site-to-AWS-Cloud-A%20Quick-Guide#disqus_thread</comments>
-      <pubDate>Thu, 05 Jun 2014 21:50:00 +0530</pubDate>
-      <guid>http://kpbird.com/2014/06/Migrating-Web-Site-to-AWS-Cloud-A%20Quick-Guide</guid>
-      <content:encoded><![CDATA[<p><img src="/assets/images/posts/33c24ac.jpg" alt="Migrating Web Site to AWS Cloud - A Quick Guide" class="img-responsive"></p>
-
-<p>This is a quick tip to migrate your existing website to AWS Cloud.I assume that you have basic knowledge of AWS Cloud and server side architecture. This post does not include a discussion of pros and cons of AWS or Cloud services. Elasticity and Auto-Scaling are two main features of Cloud. If we don&#39;t leverage these feature then there isn&#39;t any difference between hosting website in dedicate server or AWS Cloud. You can create EC2 instance and deploy your existing code. It will work perfect, but in this case you cannot apply auto-scale. There is no purpose of migrating web site to AWS Cloud without auto-scaling.</p>
-
-<p><strong>AWS Cloud Service: Following list has description of essential AWS Cloud service.</strong></p>
-
-<p><strong>1. EC2 (Elastic Compute Cloud)</strong> - It supports operating systems that includes numerous Linux distributions, and Microsoft Windows Server. Amazon EC2 enables you to increase or decrease capacity within minutes, not hours or day.</p>
-
-<p><strong>2. RDS (Relational Database Service)</strong> - Amazon RDS gives you access to the capabilities of a familiar MySql, Oracle, Microsoft SQL Server, or PostgreSql database engine.</p>
-
-<p><strong>3. S3 (Simple Storage Service)</strong> - Amazon S3 provides a highly durable and available store for a variety of content, ranging from web applications to media files.</p>
-
-<p><strong>4. CloudFront</strong> - CloudFront is content delivery network. It can be used to deliver your entire website, including dynamic, static, streaming, and interactive content using a global network of edge locations.</p>
-
-<p><strong>5. ELB (Elastic Load Balancer)</strong> - Elastic Load Balancing automatically distributes incoming application traffic across multiple Amazon EC2 instances.</p>
-
-<p><strong>6. Auto-Scaling</strong> - Auto Scaling allows you to scale your Amazon EC2 capacity up or down automatically according to conditions you define. Mainly It&#39;s based on incoming traffic or CPU utilization.</p>
-
-<p><strong>7. Route 53 (DNS Service)</strong> - Amazon Route 53 is a highly available and scalable Domain Name System (DNS)</p>
-
-<p><strong>Architecture</strong>: Let&#39;s assume two different architecture, one deployed on dedicated server and another deployed in AWS Cloud. website developed in PHP/ASP/Java with MySql as backend.</p>
-
-<p><strong>Dedicated Server Architecture:</strong> This architecture has mainly three components load balancer, application servers and database.</p>
-
-<p><img src="/assets/images/posts/3ee65b8.jpg" alt="Migrating Web Site to AWS Cloud - A Quick Guide" class="img-responsive"></p>
-
-<p>AWS Cloud Architecture: This architecture has Route 53, ELB, EC2, CloudFront, S3, RDS and Auto-Scaling services used.</p>
-
-<p><img src="/assets/images/posts/2d2962b.jpg" alt="Migrating Web Site to AWS Cloud - A Quick Guide" class="img-responsive"></p>
-
-<p><strong>Migration Phases</strong></p>
-
-<p><strong>1. Planning</strong> – It will include financial assessment (TOC/ROI), technical assessment, prototype creation or proof of concept, data migration planning and application migration planning.</p>
-
-<p><strong>2. Execution</strong> – It will have execution of planning, modification of application source code and testing.</p>
-
-<p><strong>3. Deployment</strong> – It will have deploy application and data migration, AWS Cloud has various tools like AWS Elastic Beanstalk, AWS CloudFormation, AWS OpsWorks, etc.. for deployment and management.</p>
-
-<p><strong>4. Monitor</strong> – AWSCloud has AWS CloudTrail and Amazon CloudWatch services for monitor AWS resources.</p>
-
-<p><strong>Tips for the developers:</strong> Migrating to AWS Cloud require code and structure changes.</p>
-
-<ul>
-<li><p>Migrate MySQL database to RDS, MySql database can directly migrate (export - import) to RDS-MySql engine.</p></li>
-<li><p>As you are migrating to AWS Cloud, you have more storage options like SimpleDB and DynemoDB. You can take advantage of these storage services to off load data from MySql . It’s call hybrid approach -SQL and NOSQL</p></li>
-<li><p>In dedicated architecture all files, (for eg:- images, videos, etc...)are stored in web space /some folder in server. In case of AWS Cloud all files (images, videos, etc ...) should be stored on S3.</p></li>
-<li><p>In dedicated architecture, all web assets (CSS, JS, Icons, and Images) are stored in virtual directory of web server and web server or application will serve these assets, which is unnecessary on servers. In AWS Cloud, all web assets (CSS, JS, Icons, and Images) should be stored in S3 and link with CloudFront.</p></li>
-<li><p>In dedicated architecture, your cron jobs will run on same web server. In case of AWS Cloud, you may require dedicated EC2 instance for cron jobs or you can create schedule EC2 instance.</p></li>
-<li><p>In dedicate architecture, you may have only application which serves all request. For AWS you can use two separate servers, Web Server (i.e. Apache HTTP Server, Nginx Server, etc...) and Application Server (Tomcat, IIS, etc...)</p></li>
-<li><p>Few application services are available in AWS Cloud that you can use depending upon the requirement.</p></li>
-<li><p>Amazon SQS – Amazon Simple Queue Service (SQS) is a fast, reliable, scalable, fully managed message queuing service.</p></li>
-<li><p>Amazon SNS - Amazon Simple Notification Service is a fast, flexible, fully managed push messaging service. It also supports push notifications to Apple, Google, Fire OS, and Windows devices.</p></li>
-<li><p>Amazon SES - Amazon Simple Email Service is a cost-effective outbound-only email-sending service.</p></li>
-</ul>
-
-<p><strong>References:</strong></p>
-
-<p><a href="http://aws.amazon.com/whitepapers/migrating-your-existing-applications-to-the-aws-cloud-with-3-example-scenarios/">http://aws.amazon.com/whitepapers/migrating-your-existing-applications-to-the-aws-cloud-with-3-example-scenarios/
-</a></p>
-
-<p><a href="http://highscalability.com/blog/2010/12/21/sql-nosql-yes.html">http://highscalability.com/blog/2010/12/21/sql-nosql-yes.html</a></p>
-
-<p><a href="http://aws.amazon.com/products/">http://aws.amazon.com/products/</a></p>
-]]></content:encoded>
-      <dc:date>2014-06-05T21:50:00+05:30</dc:date>
-    </item>
-    <dc:date>2015-10-06T21:50:00+05:30</dc:date>
+    <dc:date>2015-04-26T21:50:00+05:30</dc:date>
   </channel>
 </rss>

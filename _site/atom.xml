@@ -4,7 +4,7 @@
  <title>Ketan Parmar</title>
  <link type="application/atom+xml" href="http://romuluscrisan.com/atom.xml" rel="self"/>
  <link href="http://www.romuluscrisan.com/"/>
- <updated>2015-04-06T01:36:51+05:30</updated>
+ <updated>2015-05-18T22:53:02+05:30</updated>
  <id>http://www.kpbird.com/</id>
  <author>
    <name>Ketan Parmar</name>
@@ -13,63 +13,185 @@
  
  
  <entry>
-   <title>Android 5.0 Lollipop API Change</title>
-   <link href="http://www.romuluscrisan.com/2015/10/android-50-lollipop-api-change"/>
-   <updated>2015-10-06T21:50:00+05:30</updated>
-   <id>http://www.romuluscrisan.com/2015/10/android-50-lollipop-api-change</id>
-   <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/images/posts/lollipop-1600.png&quot; /&gt;&lt;/p&gt;
+   <title>Android Simple SyncAdapter</title>
+   <link href="http://www.romuluscrisan.com/2015/04/Android-Simple-SyncAdapter-Example"/>
+   <updated>2015-04-26T21:50:00+05:30</updated>
+   <id>http://www.romuluscrisan.com/2015/04/Android-Simple-SyncAdapter-Example</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/images/posts/SyncAdapter_small.png&quot; alt=&quot;Android SyncAdapter&quot; title=&quot;Android SyncAdapter&quot; class=&quot;img-responsive&quot;&gt;&lt;/p&gt;
 
-&lt;p&gt;src:&amp;nbsp;http://www.android.com/new/images/banners/lollipop-1600.png  &lt;/p&gt;
+&lt;p&gt;SyncAdapter is standard and preferred way to sync application data with server, cloud or MBaaS backend. SyncAdapter is the most efficient way to make your application update to date. It will help you to present fresh data when user open application. You can increase user experience by not making wait to user till you call web service and fetch the data. Almost all popular android application use SyncAdapter, you check from Setting -&amp;gt; Account, you will find accounts i.e. google, twitter, facebook, etc.. It means these application use SyncAdapter.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Android 5.0 Lollipop Features&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Why SyncAdapter?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;As Lazy developer you might think why should I put effort to write SyncAdapter. SyncAdapter is complex!!, I can directly make network call when required, and more... &lt;/p&gt;
+
+&lt;p&gt;Let’s compare custom sync implement with SyncAdapter&lt;/p&gt;
+
+&lt;table&gt;&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Custom Sync&lt;/th&gt;
+&lt;th&gt;Sync Adapter&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Network Availability - manually&lt;/td&gt;
+&lt;td&gt;Network Availability - Automatically&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Pending Queue - manually&lt;/td&gt;
+&lt;td&gt;Pending Queue - Automatically&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Refresh on Network - manually&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Periodic Update - manually&lt;/td&gt;
+&lt;td&gt;Periodic Update - Automatically&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Sync Setting - manually&lt;/td&gt;
+&lt;td&gt;Sync Setting - Automatically&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Network Bandwidth - manually&lt;/td&gt;
+&lt;td&gt;Network Bandwidth - Automatically&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Battery Efficient - ?? Depend on you&lt;/td&gt;
+&lt;td&gt;Battery Efficient - Yes&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;And many more&lt;/td&gt;
+&lt;td&gt;And many more&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;p&gt;I hope above table is sufficient to convince to create sync adapter demo. &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Concepts&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Concepts are very important to read before jump to the demo. Many developer don’t read API document or understand concept and directly start sample and try to learn from it but I personally suggest to read concept first before open your IDE and read the code. SyncAdapter has mainly two section 1. Account management 2. Sync Adapter. If your app requires user credentials or server login, you can optionally integrate account management and authentication into your data transfer.&lt;/p&gt;
+
+&lt;p&gt;SyncAdapter has following sections.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Sqlite Database:&lt;/strong&gt; I guess you all are master of Sqlite database, SyncAdapter will store data in Sqlite using Content Provider. You may choose other options as well. &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Content Provider:&lt;/strong&gt;  Act as bridge between your database and SyncAdapter. To expose your data in Rest like url pattern.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AbstractAccountAuthenticator:&lt;/strong&gt; As developer we need to extend this class and override methods, It is primarily use to manage authentication and account management. To use SyncAdapter you have to have custom account. This class is responsible to create account, maintain auth token and various things related to authentication.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Authenticator Service:&lt;/strong&gt; This is normal Service, which we are using daily. The only difference is that this service create object of AbstractAccountAuthenticator class and bind.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AbstractThreadedSyncAdapter:&lt;/strong&gt; As developer we need to extend this class and override methods. This is main piece of SyncAdapter puzzle. It has method onPerformSync, in which we need to write our code.&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Sync Service:&lt;/strong&gt; This is normal Service. It use to create object of AbstractThreadedSyncAdapter class and bind.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Authenticator.xml:&lt;/strong&gt; You need to create this file under res/xml/ folder. This file is require to bind your authenticator component into the sync adapter and account frameworks, you need to provide these framework with metadata that describes the component. You can choose your own file name. These is not restriction on file name.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;SyncAdapter.xml:&lt;/strong&gt; You need to create this file under res/xml/ folder.  The metadata specifies the account type you&amp;#39;ve created for your sync adapter, declares a content provider authority associated with your app.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AndroidManifast.xml:&lt;/strong&gt; You must register Sync Service, Authenticator service and few other things in AndroidManifast file in order to work SyncAdapter, This is final piece of puzzle.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;Diagram&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Following diagram depicted relationship between all different components of Sync Adapter. Account Manager and Sync Manager are provide by Android OS, except these two thing everything else you need to implement.
+&lt;a href=&quot;/assets/images/posts/SyncAdapter_large.png&quot; target=&quot;_blank&quot;&gt;
+&lt;img src=&quot;/assets/images/posts/SyncAdapter_small.png&quot; alt=&quot;Android SyncAdapter&quot; title=&quot;Android SyncAdapter&quot; class=&quot;img-responsive&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Coding - Let’s jump to the code&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;I am taking simple example ToDo list sync with Parse.com (Parse is BaaS service, If you want to know more aboud BaaS or MBaaS Service, please refere this article). &lt;/p&gt;
+
+&lt;p&gt;You will find many sync adapter example with “AccountAuthenticatorActivity”, In this situation you need to develop your login screen by extending “AccountAuthenticatorActivity”, but this might not be case in every project. In few situation you might want to use sync adapter without login / registration. In this demo I will explain how to create todo list with Parse.com as backend and witout login / registration. &lt;/p&gt;
+
+&lt;p&gt;When user start application, It will fetch primary gmail account and create Parse User through coding. For simplicity I will sync todo list only single direction, from Parse.com to local, you can have bi-directional sync based on need. &lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Open Android Studio&lt;/li&gt;
+&lt;li&gt;Create Project Name “SimpleSyncAdapter”
 
 &lt;ul&gt;
-&lt;li&gt;Material design&lt;/li&gt;
-&lt;li&gt;Performance focus&lt;/li&gt;
-&lt;li&gt;Notifications&lt;/li&gt;
-&lt;li&gt;Your apps on the big screen - TV&lt;/li&gt;
-&lt;li&gt;Document-centric apps&lt;/li&gt;
-&lt;li&gt;Advanced connectivity&lt;/li&gt;
-&lt;li&gt;High-performance graphics&lt;/li&gt;
-&lt;li&gt;More Powerful Audio&lt;/li&gt;
-&lt;li&gt;Enhanced Camera &amp;amp; Video&lt;/li&gt;
-&lt;li&gt;Screen capturing and sharing&lt;/li&gt;
-&lt;li&gt;New types of sensors&lt;/li&gt;
-&lt;li&gt;Chromium WebView&lt;/li&gt;
-&lt;li&gt;Accessibility &amp;amp; Input&lt;/li&gt;
-&lt;li&gt;Tools for building battery-efficient apps&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;Minimum SDK: 4.0&lt;/li&gt;
+&lt;li&gt;Package Name: com.kpbird.simplesyncadapter&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Create Blank Activity&lt;/li&gt;
+&lt;li&gt;Download Parse Android SDK (&lt;a href=&quot;https://parse.com/docs/downloads&quot;&gt;https://parse.com/docs/downloads&lt;/a&gt;), Copy Parse.jar in lib folder and click “Sync Project with Gradle File” button in toolbar.&lt;/li&gt;
+&lt;li&gt;We will create following files&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;p&gt;| Type                   | Additions | Changes | Removals | Total |
-|------------------------|-----------|---------|----------|-------|
-| Packages               | 14        | 57      | 1        | 72    |
-| Classes and Interfaces | 147       | 360     | 0        | 507   |
-| Constructors           | 98        | 3       | 1        | 102   |
-| Methods                | 770       | 117     | 29       | 916   |
-| Fields                 | 1150      | 75      | 2        | 1227  |
-| Total                  | 2179      | 612     | 33       | 2824  |&lt;/p&gt;
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Sr&lt;/th&gt;
+    &lt;th&gt;File&lt;/th&gt;
+    &lt;th&gt;Purpose&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;1&lt;/td&gt;
+    &lt;td&gt;SimpleAuthenticator.java&lt;/td&gt;
+    &lt;td&gt;This class will hold authentication related information&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;2&lt;/td&gt;
+    &lt;td&gt;SimpleAuthenticatorService.java&lt;/td&gt;
+    &lt;td&gt;This class will provide object of SimpleAuthenticator class &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;3&lt;/td&gt;
+    &lt;td&gt;SimpleContentProvider.java&lt;/td&gt;
+    &lt;td&gt;This class is responsible for database operation&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;4&lt;/td&gt;
+    &lt;td&gt;SimpleInit.java&lt;/td&gt;
+    &lt;td&gt;This will initialize Parse library and fetch default gmail account&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;5&lt;/td&gt;
+    &lt;td&gt;SimpleSyncAdapter.java&lt;/td&gt;
+    &lt;td&gt;This class ir responsible for Sync, Android OS will call onPerformSync method, we need to write our sync code in onPerformSync method.&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;6&lt;/td&gt;
+    &lt;td&gt;SimpleSyncAdapterService.java&lt;/td&gt;
+    &lt;td&gt;This will provide object of SimpleSyncAdapter to the sync framework&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;7&lt;/td&gt;
+    &lt;td&gt;SyncConstants.java&lt;/td&gt;
+    &lt;td&gt;This will hold all required constants&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;8&lt;/td&gt;
+    &lt;td&gt;SyncUtil.java&lt;/td&gt;
+    &lt;td&gt;This will have common methods &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;9&lt;/td&gt;
+    &lt;td&gt;authenticator.xml&lt;/td&gt;
+    &lt;td&gt;Meta information of Authentication&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;10&lt;/td&gt;
+    &lt;td&gt;sync_adapter.xml&lt;/td&gt;
+    &lt;td&gt;Meta information of Sync Adapter&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
 
-&lt;p&gt;The overall difference between &lt;strong&gt;API Levels 20 and 21&lt;/strong&gt; is approximately &lt;strong&gt;6.51%&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;**Note: **Please update Parse.com API key before execute sample&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Android L Preview API Changes&lt;/strong&gt;  &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/kpbird/SimpleSyncAdapter&quot;&gt;https://github.com/kpbird/SimpleSyncAdapter&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;| Type                      | Additions     | Changes   | Removals  | Total     |
-|------------------------   |-----------    |---------  |---------- |-------    |
-| Packages                  | 8             | 43        | 0         | 51        |
-| Classes and Interfaces    | 87            | 232       | 0         | 319       |
-| Constructors              | 84            | 2         | 0         | 86        |
-| Methods                   | 408           | 69        | 17        | 494       |
-| Fields                    | 754           | 22        | 1         | 777       |
-| Total                     | 1341          | 368       | 18        | 1727      |
-The overall difference between&amp;nbsp;&lt;strong&gt;API Levels 20&lt;/strong&gt;&amp;nbsp;and L-preview is approximately&amp;nbsp;&lt;strong&gt;3.77%.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Reference&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://developer.android.com/training/sync-adapters/creating-sync-adapter.html&quot;&gt;http://developer.android.com/training/sync-adapters/creating-sync-adapter.html&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://udinic.wordpress.com/2013/07/24/write-your-own-android-sync-adapter/&quot;&gt;http://udinic.wordpress.com/2013/07/24/write-your-own-android-sync-adapter/&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://chariotsolutions.com/blog/post/android-data-sync/&quot;&gt;http://chariotsolutions.com/blog/post/android-data-sync/&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=5onKZcJyJwI&quot;&gt;https://www.youtube.com/watch?v=5onKZcJyJwI&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
 </content>
  </entry>
  
  <entry>
    <title>How Smart Watch can change your life</title>
-   <link href="http://www.romuluscrisan.com/2014/12/How-Smart-Watch-can-change-your-life"/>
+   <link href="http://www.romuluscrisan.com/2014/12/How-Smart-Watch-can-change-your-life%20copy"/>
    <updated>2014-12-04T21:50:00+05:30</updated>
-   <id>http://www.romuluscrisan.com/2014/12/How-Smart-Watch-can-change-your-life</id>
+   <id>http://www.romuluscrisan.com/2014/12/How-Smart-Watch-can-change-your-life copy</id>
    <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/images/posts/05be48e.jpg&quot; alt=&quot;Smart Watch&quot; title=&quot;Smart Watch&quot; class=&quot;img-responsive&quot;&gt;&lt;/p&gt;
 
 &lt;p&gt;_&amp;quot;A smartwatch (or smart watch) is a computerized wristwatch with functionality that is enhanced beyond timekeeping, and is often comparable to a personal digital assistant (PDA) device&amp;quot; - _Wikipedia&lt;/p&gt;
@@ -317,7 +439,7 @@ services-architecture-advantages&lt;/a&gt;&lt;/li&gt;
 
 &lt;p&gt;A: No, FacebookLoginUtils.java will handle login failure, error and display appropriate message on screen. &amp;nbsp;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;Note: Change facebook app key in /res/values/strings.xml#facebook&lt;/em&gt;app&lt;em&gt;id&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Note: Change facebook app key in /res/values/strings.xml#facebook&lt;/em&gt;app_id_&lt;/strong&gt;&lt;/p&gt;
 </content>
  </entry>
  
@@ -326,15 +448,15 @@ services-architecture-advantages&lt;/a&gt;&lt;/li&gt;
    <link href="http://www.romuluscrisan.com/2014/11/android-login-with-google-plus-utility"/>
    <updated>2014-11-06T21:50:00+05:30</updated>
    <id>http://www.romuluscrisan.com/2014/11/android-login-with-google-plus-utility</id>
-   <content type="html">&lt;h1&gt;Android Login with Google Plus Utility&lt;/h1&gt;
+   <content type="html">&lt;h1 id=&quot;android-login-with-google-plus-utility&quot;&gt;Android Login with Google Plus Utility&lt;/h1&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://1.bp.blogspot.com/-SxTNj0uRwW8/VGSvrKm53mI/AAAAAAAAFPo/izmq8IUVyY4/s320/device-2014-11-13-161116.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Pre-requisite&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Official Document: https://developers.google.com/+/mobile/android/sign-in&lt;/p&gt;
+&lt;p&gt;Official Document: &lt;a href=&quot;https://developers.google.com/+/mobile/android/sign-in&quot;&gt;https://developers.google.com/+/mobile/android/sign-in&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Tutorial from AndroidHive : http://www.androidhive.info/2014/02/android-login-with-google-plus-account-1/&lt;/p&gt;
+&lt;p&gt;Tutorial from AndroidHive : &lt;a href=&quot;http://www.androidhive.info/2014/02/android-login-with-google-plus-account-1/&quot;&gt;http://www.androidhive.info/2014/02/android-login-with-google-plus-account-1/&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Please read AndroidHive article for initial setup &amp;amp; other process&lt;/p&gt;
 
@@ -395,6 +517,148 @@ services-architecture-advantages&lt;/a&gt;&lt;/li&gt;
 &lt;p&gt;A: No, GooglePlusLoginUtils.java will handle login failure, error and display appropriate message on screen. &amp;nbsp;&amp;nbsp;&lt;/p&gt;
 
 &lt;p&gt;&amp;nbsp; &amp;nbsp;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Android 5.0 Lollipop API Change</title>
+   <link href="http://www.romuluscrisan.com/2014/10/android-50-lollipop-api-change"/>
+   <updated>2014-10-06T21:50:00+05:30</updated>
+   <id>http://www.romuluscrisan.com/2014/10/android-50-lollipop-api-change</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/images/posts/lollipop-1600.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;src:&amp;nbsp;&lt;a href=&quot;http://www.android.com/new/images/banners/lollipop-1600.png&quot;&gt;http://www.android.com/new/images/banners/lollipop-1600.png&lt;/a&gt;  &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Android 5.0 Lollipop Features&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Material design&lt;/li&gt;
+&lt;li&gt;Performance focus&lt;/li&gt;
+&lt;li&gt;Notifications&lt;/li&gt;
+&lt;li&gt;Your apps on the big screen - TV&lt;/li&gt;
+&lt;li&gt;Document-centric apps&lt;/li&gt;
+&lt;li&gt;Advanced connectivity&lt;/li&gt;
+&lt;li&gt;High-performance graphics&lt;/li&gt;
+&lt;li&gt;More Powerful Audio&lt;/li&gt;
+&lt;li&gt;Enhanced Camera &amp;amp; Video&lt;/li&gt;
+&lt;li&gt;Screen capturing and sharing&lt;/li&gt;
+&lt;li&gt;New types of sensors&lt;/li&gt;
+&lt;li&gt;Chromium WebView&lt;/li&gt;
+&lt;li&gt;Accessibility &amp;amp; Input&lt;/li&gt;
+&lt;li&gt;Tools for building battery-efficient apps&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;table&gt;&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Type&lt;/th&gt;
+&lt;th&gt;Additions&lt;/th&gt;
+&lt;th&gt;Changes&lt;/th&gt;
+&lt;th&gt;Removals&lt;/th&gt;
+&lt;th&gt;Total&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Packages&lt;/td&gt;
+&lt;td&gt;14&lt;/td&gt;
+&lt;td&gt;57&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;72&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Classes and Interfaces&lt;/td&gt;
+&lt;td&gt;147&lt;/td&gt;
+&lt;td&gt;360&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;507&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Constructors&lt;/td&gt;
+&lt;td&gt;98&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;102&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Methods&lt;/td&gt;
+&lt;td&gt;770&lt;/td&gt;
+&lt;td&gt;117&lt;/td&gt;
+&lt;td&gt;29&lt;/td&gt;
+&lt;td&gt;916&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fields&lt;/td&gt;
+&lt;td&gt;1150&lt;/td&gt;
+&lt;td&gt;75&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;1227&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Total&lt;/td&gt;
+&lt;td&gt;2179&lt;/td&gt;
+&lt;td&gt;612&lt;/td&gt;
+&lt;td&gt;33&lt;/td&gt;
+&lt;td&gt;2824&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;p&gt;The overall difference between &lt;strong&gt;API Levels 20 and 21&lt;/strong&gt; is approximately &lt;strong&gt;6.51%&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Android L Preview API Changes&lt;/strong&gt;  &lt;/p&gt;
+
+&lt;table&gt;&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Type&lt;/th&gt;
+&lt;th&gt;Additions&lt;/th&gt;
+&lt;th&gt;Changes&lt;/th&gt;
+&lt;th&gt;Removals&lt;/th&gt;
+&lt;th&gt;Total&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Packages&lt;/td&gt;
+&lt;td&gt;8&lt;/td&gt;
+&lt;td&gt;43&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;51&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Classes and Interfaces&lt;/td&gt;
+&lt;td&gt;87&lt;/td&gt;
+&lt;td&gt;232&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;319&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Constructors&lt;/td&gt;
+&lt;td&gt;84&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;86&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Methods&lt;/td&gt;
+&lt;td&gt;408&lt;/td&gt;
+&lt;td&gt;69&lt;/td&gt;
+&lt;td&gt;17&lt;/td&gt;
+&lt;td&gt;494&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fields&lt;/td&gt;
+&lt;td&gt;754&lt;/td&gt;
+&lt;td&gt;22&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;777&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Total&lt;/td&gt;
+&lt;td&gt;1341&lt;/td&gt;
+&lt;td&gt;368&lt;/td&gt;
+&lt;td&gt;18&lt;/td&gt;
+&lt;td&gt;1727&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;p&gt;The overall difference between&amp;nbsp;&lt;strong&gt;API Levels 20&lt;/strong&gt;&amp;nbsp;and L-preview is approximately&amp;nbsp;&lt;strong&gt;3.77%.&lt;/strong&gt;&lt;/p&gt;
 </content>
  </entry>
  
@@ -501,7 +765,7 @@ services-architecture-advantages&lt;/a&gt;&lt;/li&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;Microservice architecture brings a lot of operations overhead.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;DevOps Skill required (http://en.wikipedia.org/wiki/DevOps).&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;DevOps Skill required (&lt;a href=&quot;http://en.wikipedia.org/wiki/DevOps&quot;&gt;http://en.wikipedia.org/wiki/DevOps&lt;/a&gt;).&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Duplication of Effort.&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Distributed System is complicated to manage .&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Default to trace problem because of distributed deployment.&lt;/p&gt;&lt;/li&gt;
@@ -887,11 +1151,11 @@ pagertab.setViewPager(pager);
    <link href="http://www.romuluscrisan.com/2014/06/android-l-preview-api-changes"/>
    <updated>2014-06-01T21:50:00+05:30</updated>
    <id>http://www.romuluscrisan.com/2014/06/android-l-preview-api-changes</id>
-   <content type="html">&lt;h1&gt;Android L Preview API Changes&lt;/h1&gt;
+   <content type="html">&lt;h1 id=&quot;android-l-preview-api-changes&quot;&gt;Android L Preview API Changes&lt;/h1&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://cdn.redmondpie.com/wp-content/uploads/2014/06/Developer-Preview-Android-L.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 
-&lt;p&gt;src:&amp;nbsp;http://developer.android.com/preview/images/l-dev-prev.png&lt;/p&gt;
+&lt;p&gt;src:&amp;nbsp;&lt;a href=&quot;http://developer.android.com/preview/images/l-dev-prev.png&quot;&gt;http://developer.android.com/preview/images/l-dev-prev.png&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;**&lt;br&gt;
 ** &lt;strong&gt;Android L Preview Features&lt;/strong&gt;&lt;/p&gt;
@@ -916,14 +1180,58 @@ pagertab.setViewPager(pager);
 &lt;strong&gt;Android L Preview API Changes&lt;/strong&gt;&lt;br&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;| &lt;strong&gt;Type&lt;/strong&gt;                   | &lt;strong&gt;Additions&lt;/strong&gt; | &lt;strong&gt;Changes&lt;/strong&gt; | &lt;strong&gt;Removals&lt;/strong&gt; | &lt;strong&gt;Total&lt;/strong&gt; |
-|------------------------|-----------|---------|----------|-------|
-| Packages               | 8         | 43      | 0        | 51    |
-| Classes and Interfaces | 87        | 232     | 0        | 319   |
-| Constructors           | 84        | 2       | 0        | 86    |
-| Methods                | 408       | 69      | 17       | 494   |
-| Fields                 | 754       | 22      | 1        | 777   |
-| &lt;strong&gt;Total&lt;/strong&gt;                  | &lt;strong&gt;1341&lt;/strong&gt;      | &lt;strong&gt;368&lt;/strong&gt;     | &lt;strong&gt;18&lt;/strong&gt;       | &lt;strong&gt;1727&lt;/strong&gt;  |&lt;/p&gt;
+&lt;table&gt;&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;strong&gt;Type&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;Additions&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;Changes&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;Removals&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;Total&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Packages&lt;/td&gt;
+&lt;td&gt;8&lt;/td&gt;
+&lt;td&gt;43&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;51&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Classes and Interfaces&lt;/td&gt;
+&lt;td&gt;87&lt;/td&gt;
+&lt;td&gt;232&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;319&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Constructors&lt;/td&gt;
+&lt;td&gt;84&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;86&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Methods&lt;/td&gt;
+&lt;td&gt;408&lt;/td&gt;
+&lt;td&gt;69&lt;/td&gt;
+&lt;td&gt;17&lt;/td&gt;
+&lt;td&gt;494&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fields&lt;/td&gt;
+&lt;td&gt;754&lt;/td&gt;
+&lt;td&gt;22&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;777&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Total&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;1341&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;368&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;18&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;1727&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
 
 &lt;p&gt;The overall difference between &lt;strong&gt;API Levels 20&lt;/strong&gt; and L-preview is approximately &lt;strong&gt;3.77%.&lt;/strong&gt;  &lt;/p&gt;
 
@@ -947,11 +1255,11 @@ pagertab.setViewPager(pager);
    <link href="http://www.romuluscrisan.com/2014/05/simple-tips-to-secure-android-app"/>
    <updated>2014-05-06T21:50:00+05:30</updated>
    <id>http://www.romuluscrisan.com/2014/05/simple-tips-to-secure-android-app</id>
-   <content type="html">&lt;h1&gt;Simple tips to secure Android app&lt;/h1&gt;
+   <content type="html">&lt;h1 id=&quot;simple-tips-to-secure-android-app&quot;&gt;Simple tips to secure Android app&lt;/h1&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://www.oneclickroot.com/wp-content/uploads/2012/10/Android-security.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 
-&lt;p&gt;Src: http://www.oneclickroot.com/wp-content/uploads/2012/10/Android-security.jpg&lt;/p&gt;
+&lt;p&gt;Src: &lt;a href=&quot;http://www.oneclickroot.com/wp-content/uploads/2012/10/Android-security.jpg&quot;&gt;http://www.oneclickroot.com/wp-content/uploads/2012/10/Android-security.jpg&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Android has security features built into the operating system that significantly reduce the frequency and impact of application security issues but as application developer, its our job to secure application. The level of security is depends upon application type &amp;amp; domain. There are &amp;nbsp;few security aspects we need not forget. I am collecting those common tips in this article.&lt;/p&gt;
 
@@ -1004,11 +1312,11 @@ pagertab.setViewPager(pager);
    <link href="http://www.romuluscrisan.com/2014/03/use-adb-over-wi-fi-without-extra"/>
    <updated>2014-03-06T21:50:00+05:30</updated>
    <id>http://www.romuluscrisan.com/2014/03/use-adb-over-wi-fi-without-extra</id>
-   <content type="html">&lt;h1&gt;Use ADB over Wi-Fi without extra application or software&lt;/h1&gt;
+   <content type="html">&lt;h1 id=&quot;use-adb-over-wi-fi-without-extra-application-or-software&quot;&gt;Use ADB over Wi-Fi without extra application or software&lt;/h1&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://2.bp.blogspot.com/-Wiba-cAGHCA/UyFBLX-36OI/AAAAAAAAEy0/vSyJ2jcdoto/s1600/Android-Developer2.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 
-&lt;p&gt;Image Source:&amp;nbsp;http://techbeasts.com/wp-content/uploads/2013/08/Android-Developer2.png&lt;/p&gt;
+&lt;p&gt;Image Source:&amp;nbsp;&lt;a href=&quot;http://techbeasts.com/wp-content/uploads/2013/08/Android-Developer2.png&quot;&gt;http://techbeasts.com/wp-content/uploads/2013/08/Android-Developer2.png&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Normally developers use USB cable to connect Android device with computer for debug and other purposes.&lt;/p&gt;
 
@@ -1083,38 +1391,38 @@ connected to #.#.#.#:5555
 &lt;li&gt;&lt;strong&gt;Extension lifecycle:&lt;/strong&gt; It allows you to start and stop extension using Intent. Extension means SmartWatch Host application.
 
 &lt;ul&gt;
-&lt;li&gt;Control.Intents.CONTROL&lt;em&gt;START&lt;/em&gt;INTENT&lt;/li&gt;
-&lt;li&gt;Control.Intents.CONTROL&lt;em&gt;STOP&lt;/em&gt;INTENT.&lt;/li&gt;
+&lt;li&gt;Control.Intents.CONTROL_START_INTENT&lt;/li&gt;
+&lt;li&gt;Control.Intents.CONTROL_STOP_INTENT.&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Controlling the display:&lt;/strong&gt; Normally we don&amp;#39;t require to control the display. Default screen state is &amp;quot;Auto&amp;quot;, for the specific need you can change screen state by using Intent.
 
 &lt;ul&gt;
-&lt;li&gt;Control.Intents.SCREEN&lt;em&gt;STATE&lt;/em&gt;OFF&lt;/li&gt;
-&lt;li&gt;Control.Intents.SCREEN&lt;em&gt;STATE&lt;/em&gt;AUTO&lt;/li&gt;
-&lt;li&gt;Control.Intents.SCREEN&lt;em&gt;STATE&lt;/em&gt;DIM&lt;/li&gt;
-&lt;li&gt;Control.Intents.SCREEN&lt;em&gt;STATE&lt;/em&gt;ON&lt;/li&gt;
+&lt;li&gt;Control.Intents.SCREEN_STATE_OFF&lt;/li&gt;
+&lt;li&gt;Control.Intents.SCREEN_STATE_AUTO&lt;/li&gt;
+&lt;li&gt;Control.Intents.SCREEN_STATE_DIM&lt;/li&gt;
+&lt;li&gt;Control.Intents.SCREEN_STATE_ON&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Controlling the LEDs:&lt;/strong&gt; It used to switch on /off LEDs based on notification.
 
 &lt;ul&gt;
-&lt;li&gt;Control.Intents.CONTROL&lt;em&gt;LED&lt;/em&gt;INTENT&lt;/li&gt;
+&lt;li&gt;Control.Intents.CONTROL_LED_INTENT&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Controlling the vibrator:&lt;/strong&gt; It allows you to vibrate SmartWatch.
 
 &lt;ul&gt;
-&lt;li&gt;Control.Intents.CONTROL&lt;em&gt;VIBRATE&lt;/em&gt;INTENT&lt;/li&gt;
+&lt;li&gt;Control.Intents.CONTROL_VIBRATE_INTENT&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Key event:&lt;/strong&gt; It is used to capture hardware key i.e. home, back and menu key, which is available in SmartWatch2.
 
 &lt;ul&gt;
-&lt;li&gt;Control.Intents.CONTROL&lt;em&gt;KEY&lt;/em&gt;EVENT_INTENT&lt;/li&gt;
+&lt;li&gt;Control.Intents.CONTROL_KEY_EVENT_INTENT&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Touch event:&lt;/strong&gt; It is used to capture touch events.
 
 &lt;ul&gt;
-&lt;li&gt;Control.Intents.CONTROL&lt;em&gt;TOUCH&lt;/em&gt;EVENT_INTENT&lt;/li&gt;
-&lt;li&gt;Control.Intents.CONTROL&lt;em&gt;SWIPE&lt;/em&gt;EVENT_INTENT&lt;/li&gt;
-&lt;li&gt;Control.Intents.CONTROL&lt;em&gt;OBJECT&lt;/em&gt;CLICK&lt;em&gt;EVENT&lt;/em&gt;INTENT&amp;nbsp;
+&lt;li&gt;Control.Intents.CONTROL_TOUCH_EVENT_INTENT&lt;/li&gt;
+&lt;li&gt;Control.Intents.CONTROL_SWIPE_EVENT_INTENT&lt;/li&gt;
+&lt;li&gt;Control.Intents.CONTROL_OBJECT_CLICK_EVENT_INTENT&amp;nbsp;
 Sony&amp;#39;s Add-on SDK version 2.0 supports ListView and GridView but this article focuses on basic controls only. For the demo I will create a simple layout with ImageView and TextView. I will animate ImageView with thread and also capture onClick event of ImageView.&lt;br&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -1398,7 +1706,7 @@ public class HelloControlSmartWatch2 extends ControlExtension {
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;Step 5:&lt;/strong&gt; Compile &amp;amp; Execute HelloSmartWatch example  &lt;/p&gt;
 
-&lt;h2&gt;&lt;a href=&quot;https://github.com/kpbird/Hello-SmartWatch&quot;&gt;Download Source Code&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;download-source-code&quot;&gt;&lt;a href=&quot;https://github.com/kpbird/Hello-SmartWatch&quot;&gt;Download Source Code&lt;/a&gt;&lt;/h2&gt;
 
 &lt;p&gt;Note: 1. Import project in eclipse 2. Make sure that you change SmartExtensionUtils and SmartExtensionAPI path from project properties.&lt;/p&gt;
 </content>
@@ -1448,7 +1756,7 @@ public class HelloControlSmartWatch2 extends ControlExtension {
 
     &amp;lt;/button&amp;gt;&amp;lt;button android:id=&amp;quot;@+id/btnClearn&amp;quot; android:layout_width=&amp;quot;match_parent&amp;quot; android:layout_height=&amp;quot;wrap_content&amp;quot; android:onclick=&amp;quot;buttonClicked&amp;quot; android:text=&amp;quot;Clear Notification&amp;quot;&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;strong&gt;Step 3:&lt;/strong&gt; Let&amp;#39;s make button alive by writing action in MainActivity.java. I am using onClick property of buttons, so I don&amp;#39;t require to find object of button and setOnClickListener. I can write code in &amp;quot;buttonClicked&amp;quot; method which is defined. When a user click on &amp;quot;Send Notification&amp;quot; button I am simply firing ExtensionService with INTENT&lt;em&gt;ACTION&lt;/em&gt;ADD action and other required data and same for &amp;quot;Clear Notification&amp;quot; but with INTENT&lt;em&gt;ACTION&lt;/em&gt;CLEAR action.  &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Step 3:&lt;/strong&gt; Let&amp;#39;s make button alive by writing action in MainActivity.java. I am using onClick property of buttons, so I don&amp;#39;t require to find object of button and setOnClickListener. I can write code in &amp;quot;buttonClicked&amp;quot; method which is defined. When a user click on &amp;quot;Send Notification&amp;quot; button I am simply firing ExtensionService with INTENT_ACTION_ADD action and other required data and same for &amp;quot;Clear Notification&amp;quot; but with INTENT_ACTION_CLEAR action.  &lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;package com.kpbird.hellosmartwatch;
 
 import android.app.Activity;
@@ -1842,7 +2150,7 @@ public class HelloExtensionService extends ExtensionService   {
 
 &lt;p&gt;When you click on &amp;quot;Clear Notification&amp;quot; from HelloActivity and come back to emulator, you will see the effect&lt;/p&gt;
 
-&lt;h2&gt;&lt;a href=&quot;https://github.com/kpbird/Hello-SmartWatch&quot;&gt;Download Source Code&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;download-source-code&quot;&gt;&lt;a href=&quot;https://github.com/kpbird/Hello-SmartWatch&quot;&gt;Download Source Code&lt;/a&gt;&lt;/h2&gt;
 
 &lt;p&gt;Note: 1. Import project in eclipse 2. Make sure that you change SmartExtensionUtils and SmartExtensionAPI path from project properties.&lt;/p&gt;
 
@@ -1941,7 +2249,7 @@ public class HelloExtensionService extends ExtensionService   {
 
 &lt;p&gt;&lt;strong&gt;Step 3:&lt;/strong&gt; Download Sony Add-on SDK from this link &lt;a href=&quot;http://goo.gl/zcKlGD&quot;&gt;http://goo.gl/zcKlGD&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Step 4:&lt;/strong&gt; Extract zip file and copy &amp;quot;sony&lt;em&gt;add-on&lt;/em&gt;sdk&lt;em&gt;2&lt;/em&gt;1&amp;quot; into &lt;android sdk=&quot;&quot;&gt;/add-ons/&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Step 4:&lt;/strong&gt; Extract zip file and copy &amp;quot;sony_add-on_sdk_2_1&amp;quot; into &lt;android sdk=&quot;&quot;&gt;/add-ons/&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://2.bp.blogspot.com/-l2Ty30ZpGxE/UqwAP4bhCFI/AAAAAAAAEoA/94UrDCMuJNg/s320/Screen+Shot+2013-12-14+at+12.22.31+pm.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 
@@ -1953,7 +2261,7 @@ public class HelloExtensionService extends ExtensionService   {
 
 &lt;p&gt;&lt;strong&gt;Step 2:&lt;/strong&gt; Install Sony&amp;#39;s Smart Connect (LiveWare) Application from Google Play&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Step 3:&lt;/strong&gt; Install &amp;quot;acessory&lt;em&gt;emulator.apk&amp;quot; from &lt;android sdk=&quot;&quot;&gt;/add-ons/sony&lt;/em&gt;add-on&lt;em&gt;sdk&lt;/em&gt;2_1/apks&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Step 3:&lt;/strong&gt; Install &amp;quot;acessory_emulator.apk&amp;quot; from &lt;android sdk=&quot;&quot;&gt;/add-ons/sony_add-on_sdk_2_1/apks&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://4.bp.blogspot.com/-W7wP8TUU5Ow/UqwCWCFRkvI/AAAAAAAAEoM/Fl0Q1YUWfKE/s400/device-2013-12-14-123040.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 
@@ -2019,13 +2327,13 @@ public class HelloExtensionService extends ExtensionService   {
    <link href="http://www.romuluscrisan.com/2013/11/android-44-kitket-api-changes"/>
    <updated>2013-11-01T21:50:00+05:30</updated>
    <id>http://www.romuluscrisan.com/2013/11/android-44-kitket-api-changes</id>
-   <content type="html">&lt;h1&gt;Android 4.4 KitKat API Changes&lt;/h1&gt;
+   <content type="html">&lt;h1 id=&quot;android-4.4-kitkat-api-changes&quot;&gt;Android 4.4 KitKat API Changes&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Android 4.4 API Level 19&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://stocklogos.com/sites/default/files/android-kitkat.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 
-&lt;p&gt;source http://stocklogos.com/sites/default/files/android-kitkat.jpg&lt;/p&gt;
+&lt;p&gt;source &lt;a href=&quot;http://stocklogos.com/sites/default/files/android-kitkat.jpg&quot;&gt;http://stocklogos.com/sites/default/files/android-kitkat.jpg&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Major Features&lt;/strong&gt;&lt;/p&gt;
 
@@ -2085,7 +2393,7 @@ The overall difference between API Levels 18 and 19 is approximately 2.63%.&lt;/
 
 &lt;p&gt;&lt;strong&gt;Step 1:&lt;/strong&gt; Download/Clone Volley library from git repo&lt;/p&gt;
 
-&lt;p&gt;&amp;nbsp;git clone https://android.googlesource.com/platform/frameworks/volley&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;git clone &lt;a href=&quot;https://android.googlesource.com/platform/frameworks/volley&quot;&gt;https://android.googlesource.com/platform/frameworks/volley&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Step 2:&lt;/strong&gt; Create new project in *Android Studio named &amp;quot;VolleyTest&amp;quot;&lt;/p&gt;
 

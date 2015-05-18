@@ -2,15 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>http://kpbird.com/</loc>
-    <lastmod>2015-04-06T01:36:51+05:30</lastmod>
+    <lastmod>2015-05-18T22:53:02+05:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
     <url>
-      <loc>http://kpbird.com/2015/10/android-50-lollipop-api-change</loc>
+      <loc>http://kpbird.com/2015/04/Android-Simple-SyncAdapter-Example</loc>
       
-        <lastmod>2015-10-06T21:50:00+05:30</lastmod>
+        <lastmod>2015-04-26T21:50:00+05:30</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -21,7 +21,7 @@
     </url>
   
     <url>
-      <loc>http://kpbird.com/2014/12/How-Smart-Watch-can-change-your-life</loc>
+      <loc>http://kpbird.com/2014/12/How-Smart-Watch-can-change-your-life%20copy</loc>
       
         <lastmod>2014-12-04T21:50:00+05:30</lastmod>
       
@@ -76,6 +76,19 @@
       <loc>http://kpbird.com/2014/11/android-login-with-google-plus-utility</loc>
       
         <lastmod>2014-11-06T21:50:00+05:30</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+  
+    <url>
+      <loc>http://kpbird.com/2014/10/android-50-lollipop-api-change</loc>
+      
+        <lastmod>2014-10-06T21:50:00+05:30</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -271,7 +284,7 @@
   <url>
     <loc>http://kpbird.com/404.html</loc>
     
-      <lastmod>2015-04-06T01:36:51+05:30</lastmod>
+      <lastmod>2015-05-18T22:53:02+05:30</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -284,7 +297,7 @@
   <url>
     <loc>http://kpbird.com/atom.xml</loc>
     
-      <lastmod>2015-04-06T01:36:51+05:30</lastmod>
+      <lastmod>2015-05-18T22:53:02+05:30</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -336,7 +349,7 @@
   <url>
     <loc>http://kpbird.com/sitemap.xml</loc>
     
-      <lastmod>2015-04-06T01:36:51+05:30</lastmod>
+      <lastmod>2015-05-18T22:53:02+05:30</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -349,7 +362,7 @@
   <url>
     <loc>http://kpbird.com//feed.xml</loc>
     
-      <lastmod>2015-04-06T01:36:51+05:30</lastmod>
+      <lastmod>2015-05-18T22:53:02+05:30</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -387,6 +400,19 @@
   
   <url>
     <loc>http://kpbird.com/blog/page/4/index.html</loc>
+    
+      <lastmod>2014-02-24</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.7</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://kpbird.com/blog/page/5/index.html</loc>
     
       <lastmod>2014-02-24</lastmod>
     
