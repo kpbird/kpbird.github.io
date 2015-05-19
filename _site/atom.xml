@@ -4,7 +4,7 @@
  <title>Ketan Parmar</title>
  <link type="application/atom+xml" href="http://romuluscrisan.com/atom.xml" rel="self"/>
  <link href="http://www.romuluscrisan.com/"/>
- <updated>2015-05-18T22:53:02+05:30</updated>
+ <updated>2015-05-20T00:29:23+05:30</updated>
  <id>http://www.kpbird.com/</id>
  <author>
    <name>Ketan Parmar</name>
@@ -17,15 +17,16 @@
    <link href="http://www.romuluscrisan.com/2015/04/Android-Simple-SyncAdapter-Example"/>
    <updated>2015-04-26T21:50:00+05:30</updated>
    <id>http://www.romuluscrisan.com/2015/04/Android-Simple-SyncAdapter-Example</id>
-   <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/images/posts/SyncAdapter_small.png&quot; alt=&quot;Android SyncAdapter&quot; title=&quot;Android SyncAdapter&quot; class=&quot;img-responsive&quot;&gt;&lt;/p&gt;
+   <content type="html">&lt;p&gt;&lt;a href=&quot;/assets/images/posts/SyncAdapter_large.png&quot; target=&quot;_blank&quot;&gt;
+&lt;img src=&quot;/assets/images/posts/SyncAdapter_small.png&quot; alt=&quot;Android SyncAdapter&quot; title=&quot;Android SyncAdapter&quot; class=&quot;img-responsive&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;SyncAdapter is standard and preferred way to sync application data with server, cloud or MBaaS backend. SyncAdapter is the most efficient way to make your application update to date. It will help you to present fresh data when user open application. You can increase user experience by not making wait to user till you call web service and fetch the data. Almost all popular android application use SyncAdapter, you check from Setting -&amp;gt; Account, you will find accounts i.e. google, twitter, facebook, etc.. It means these application use SyncAdapter.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Why SyncAdapter?&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;As Lazy developer you might think why should I put effort to write SyncAdapter. SyncAdapter is complex!!, I can directly make network call when required, and more... &lt;/p&gt;
+&lt;p&gt;As Lazy developer you might think why should I put an effort to write SyncAdapter. SyncAdapter is complex!!, I can directly make network call when required, and more... &lt;/p&gt;
 
-&lt;p&gt;Let’s compare custom sync implement with SyncAdapter&lt;/p&gt;
+&lt;p&gt;Let’s compare custom sync with SyncAdapter&lt;/p&gt;
 
 &lt;table&gt;&lt;thead&gt;
 &lt;tr&gt;
@@ -43,7 +44,7 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;Refresh on Network - manually&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;Refresh on Network - Automatically&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;Periodic Update - manually&lt;/td&gt;
@@ -71,35 +72,35 @@
 
 &lt;p&gt;&lt;strong&gt;Concepts&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Concepts are very important to read before jump to the demo. Many developer don’t read API document or understand concept and directly start sample and try to learn from it but I personally suggest to read concept first before open your IDE and read the code. SyncAdapter has mainly two section 1. Account management 2. Sync Adapter. If your app requires user credentials or server login, you can optionally integrate account management and authentication into your data transfer.&lt;/p&gt;
+&lt;p&gt;Concepts are very important to read before jump to the demo. Many developer don’t read API document or understand concept and directly start sample and try to learn from it but I suggest to read concept first before open your IDE and read the code. SyncAdapter has mainly two section 1. Account management 2. Sync Adapter. If your app requires user credentials or server login, you can optionally integrate account management and authentication into your data transfer.&lt;/p&gt;
 
 &lt;p&gt;SyncAdapter has following sections.&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;Sqlite Database:&lt;/strong&gt; I guess you all are master of Sqlite database, SyncAdapter will store data in Sqlite using Content Provider. You may choose other options as well. &lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Content Provider:&lt;/strong&gt;  Act as bridge between your database and SyncAdapter. To expose your data in Rest like url pattern.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;AbstractAccountAuthenticator:&lt;/strong&gt; As developer we need to extend this class and override methods, It is primarily use to manage authentication and account management. To use SyncAdapter you have to have custom account. This class is responsible to create account, maintain auth token and various things related to authentication.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Content Provider:&lt;/strong&gt;  Act as bridge between your database and SyncAdapter. To expose your data in Rest like URL pattern.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AbstractAccountAuthenticator:&lt;/strong&gt; As developer we need to extend this class and override methods, It is primarily used to manage authentication and account management. To use SyncAdapter you must have custom account. This class is responsible to create account, maintain auth token and various things related to authentication.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Authenticator Service:&lt;/strong&gt; This is normal Service, which we are using daily. The only difference is that this service create object of AbstractAccountAuthenticator class and bind.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;AbstractThreadedSyncAdapter:&lt;/strong&gt; As developer we need to extend this class and override methods. This is main piece of SyncAdapter puzzle. It has method onPerformSync, in which we need to write our code.&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AbstractThreadedSyncAdapter:&lt;/strong&gt; As developer we need to extend this class and override methods. . This is the main piece of SyncAdapter puzzle. It has method onPerformSync, in which we need to write our code.&lt;br&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Sync Service:&lt;/strong&gt; This is normal Service. It use to create object of AbstractThreadedSyncAdapter class and bind.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Authenticator.xml:&lt;/strong&gt; You need to create this file under res/xml/ folder. This file is require to bind your authenticator component into the sync adapter and account frameworks, you need to provide these framework with metadata that describes the component. You can choose your own file name. These is not restriction on file name.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Authenticator.xml:&lt;/strong&gt; You need to create this file under res/xml/ folder. This file is required to bind your authenticator component into the sync adapter and account frameworks, you need to provide these framework with metadata that describes the component. You can choose your own file name. &lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;SyncAdapter.xml:&lt;/strong&gt; You need to create this file under res/xml/ folder.  The metadata specifies the account type you&amp;#39;ve created for your sync adapter, declares a content provider authority associated with your app.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;AndroidManifast.xml:&lt;/strong&gt; You must register Sync Service, Authenticator service and few other things in AndroidManifast file in order to work SyncAdapter, This is final piece of puzzle.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AndroidManifast.xml:&lt;/strong&gt; You must register Sync Service, Authenticator service and few other things in AndroidManifast file in order to work SyncAdapter, This is the final piece of puzzle.&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;&lt;strong&gt;Diagram&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Following diagram depicted relationship between all different components of Sync Adapter. Account Manager and Sync Manager are provide by Android OS, except these two thing everything else you need to implement.
+&lt;p&gt;Following diagram depicted relationship between all different components of Sync Adapter. Account Manager and Sync Manager are provided by Android OS, except these two thing everything else you need to implement.
 &lt;a href=&quot;/assets/images/posts/SyncAdapter_large.png&quot; target=&quot;_blank&quot;&gt;
 &lt;img src=&quot;/assets/images/posts/SyncAdapter_small.png&quot; alt=&quot;Android SyncAdapter&quot; title=&quot;Android SyncAdapter&quot; class=&quot;img-responsive&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Coding - Let’s jump to the code&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;I am taking simple example ToDo list sync with Parse.com (Parse is BaaS service, If you want to know more aboud BaaS or MBaaS Service, please refere this article). &lt;/p&gt;
+&lt;p&gt;I am taking simple example ToDo list sync with Parse.com (Parse is BaaS service, If you want to know more about BaaS or MBaaS Service, please refer this article). &lt;/p&gt;
 
-&lt;p&gt;You will find many sync adapter example with “AccountAuthenticatorActivity”, In this situation you need to develop your login screen by extending “AccountAuthenticatorActivity”, but this might not be case in every project. In few situation you might want to use sync adapter without login / registration. In this demo I will explain how to create todo list with Parse.com as backend and witout login / registration. &lt;/p&gt;
+&lt;p&gt;You will find many sync adapter example with “AccountAuthenticatorActivity”, In this situation you need to develop your login screen by extending “AccountAuthenticatorActivity”, but this might not be case in every project. In few situation you might want to use sync adapter without login / registration. In this demo I will explain how to create ToDo list with Parse.com as backend and without login / registration. &lt;/p&gt;
 
-&lt;p&gt;When user start application, It will fetch primary gmail account and create Parse User through coding. For simplicity I will sync todo list only single direction, from Parse.com to local, you can have bi-directional sync based on need. &lt;/p&gt;
+&lt;p&gt;When user start application, It will fetch primary Gmail account and create Parse User through coding. For simplicity I will sync ToDo list only single direction, from Parse.com to local, you can have bi-directional sync based on need. &lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;Open Android Studio&lt;/li&gt;
@@ -138,7 +139,7 @@
   &lt;tr&gt;
     &lt;td&gt;4&lt;/td&gt;
     &lt;td&gt;SimpleInit.java&lt;/td&gt;
-    &lt;td&gt;This will initialize Parse library and fetch default gmail account&lt;/td&gt;
+    &lt;td&gt;This will initialize Parse library and fetch default Gmail account&lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
     &lt;td&gt;5&lt;/td&gt;
@@ -172,9 +173,9 @@
   &lt;/tr&gt;
 &lt;/table&gt;
 
-&lt;p&gt;**Note: **Please update Parse.com API key before execute sample&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Please update Parse.com API key before execute sample&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/kpbird/SimpleSyncAdapter&quot;&gt;https://github.com/kpbird/SimpleSyncAdapter&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&quot;https://github.com/kpbird/simplesyncadapter&quot;&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/kpbird/SimpleSyncAdapter&quot;&gt;https://github.com/kpbird/SimpleSyncAdapter&lt;/a&gt;&lt;/strong&gt;&lt;/h3&gt;
 
 &lt;p&gt;&lt;strong&gt;Reference&lt;/strong&gt;&lt;/p&gt;
 

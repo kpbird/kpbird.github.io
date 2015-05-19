@@ -16,15 +16,16 @@
       <comments>http://kpbird.com/2015/04/Android-Simple-SyncAdapter-Example#disqus_thread</comments>
       <pubDate>Sun, 26 Apr 2015 21:50:00 +0530</pubDate>
       <guid>http://kpbird.com/2015/04/Android-Simple-SyncAdapter-Example</guid>
-      <content:encoded><![CDATA[<p><img src="/assets/images/posts/SyncAdapter_small.png" alt="Android SyncAdapter" title="Android SyncAdapter" class="img-responsive"></p>
+      <content:encoded><![CDATA[<p><a href="/assets/images/posts/SyncAdapter_large.png" target="_blank">
+<img src="/assets/images/posts/SyncAdapter_small.png" alt="Android SyncAdapter" title="Android SyncAdapter" class="img-responsive"></a></p>
 
 <p>SyncAdapter is standard and preferred way to sync application data with server, cloud or MBaaS backend. SyncAdapter is the most efficient way to make your application update to date. It will help you to present fresh data when user open application. You can increase user experience by not making wait to user till you call web service and fetch the data. Almost all popular android application use SyncAdapter, you check from Setting -&gt; Account, you will find accounts i.e. google, twitter, facebook, etc.. It means these application use SyncAdapter.</p>
 
 <p><strong>Why SyncAdapter?</strong></p>
 
-<p>As Lazy developer you might think why should I put effort to write SyncAdapter. SyncAdapter is complex!!, I can directly make network call when required, and more... </p>
+<p>As Lazy developer you might think why should I put an effort to write SyncAdapter. SyncAdapter is complex!!, I can directly make network call when required, and more... </p>
 
-<p>Let’s compare custom sync implement with SyncAdapter</p>
+<p>Let’s compare custom sync with SyncAdapter</p>
 
 <table><thead>
 <tr>
@@ -42,7 +43,7 @@
 </tr>
 <tr>
 <td>Refresh on Network - manually</td>
-<td></td>
+<td>Refresh on Network - Automatically</td>
 </tr>
 <tr>
 <td>Periodic Update - manually</td>
@@ -70,35 +71,35 @@
 
 <p><strong>Concepts</strong></p>
 
-<p>Concepts are very important to read before jump to the demo. Many developer don’t read API document or understand concept and directly start sample and try to learn from it but I personally suggest to read concept first before open your IDE and read the code. SyncAdapter has mainly two section 1. Account management 2. Sync Adapter. If your app requires user credentials or server login, you can optionally integrate account management and authentication into your data transfer.</p>
+<p>Concepts are very important to read before jump to the demo. Many developer don’t read API document or understand concept and directly start sample and try to learn from it but I suggest to read concept first before open your IDE and read the code. SyncAdapter has mainly two section 1. Account management 2. Sync Adapter. If your app requires user credentials or server login, you can optionally integrate account management and authentication into your data transfer.</p>
 
 <p>SyncAdapter has following sections.</p>
 
 <ol>
 <li><strong>Sqlite Database:</strong> I guess you all are master of Sqlite database, SyncAdapter will store data in Sqlite using Content Provider. You may choose other options as well. </li>
-<li><strong>Content Provider:</strong>  Act as bridge between your database and SyncAdapter. To expose your data in Rest like url pattern.</li>
-<li><strong>AbstractAccountAuthenticator:</strong> As developer we need to extend this class and override methods, It is primarily use to manage authentication and account management. To use SyncAdapter you have to have custom account. This class is responsible to create account, maintain auth token and various things related to authentication.</li>
+<li><strong>Content Provider:</strong>  Act as bridge between your database and SyncAdapter. To expose your data in Rest like URL pattern.</li>
+<li><strong>AbstractAccountAuthenticator:</strong> As developer we need to extend this class and override methods, It is primarily used to manage authentication and account management. To use SyncAdapter you must have custom account. This class is responsible to create account, maintain auth token and various things related to authentication.</li>
 <li><strong>Authenticator Service:</strong> This is normal Service, which we are using daily. The only difference is that this service create object of AbstractAccountAuthenticator class and bind.</li>
-<li><strong>AbstractThreadedSyncAdapter:</strong> As developer we need to extend this class and override methods. This is main piece of SyncAdapter puzzle. It has method onPerformSync, in which we need to write our code.<br></li>
+<li><strong>AbstractThreadedSyncAdapter:</strong> As developer we need to extend this class and override methods. . This is the main piece of SyncAdapter puzzle. It has method onPerformSync, in which we need to write our code.<br></li>
 <li><strong>Sync Service:</strong> This is normal Service. It use to create object of AbstractThreadedSyncAdapter class and bind.</li>
-<li><strong>Authenticator.xml:</strong> You need to create this file under res/xml/ folder. This file is require to bind your authenticator component into the sync adapter and account frameworks, you need to provide these framework with metadata that describes the component. You can choose your own file name. These is not restriction on file name.</li>
+<li><strong>Authenticator.xml:</strong> You need to create this file under res/xml/ folder. This file is required to bind your authenticator component into the sync adapter and account frameworks, you need to provide these framework with metadata that describes the component. You can choose your own file name. </li>
 <li><strong>SyncAdapter.xml:</strong> You need to create this file under res/xml/ folder.  The metadata specifies the account type you&#39;ve created for your sync adapter, declares a content provider authority associated with your app.</li>
-<li><strong>AndroidManifast.xml:</strong> You must register Sync Service, Authenticator service and few other things in AndroidManifast file in order to work SyncAdapter, This is final piece of puzzle.</li>
+<li><strong>AndroidManifast.xml:</strong> You must register Sync Service, Authenticator service and few other things in AndroidManifast file in order to work SyncAdapter, This is the final piece of puzzle.</li>
 </ol>
 
 <p><strong>Diagram</strong></p>
 
-<p>Following diagram depicted relationship between all different components of Sync Adapter. Account Manager and Sync Manager are provide by Android OS, except these two thing everything else you need to implement.
+<p>Following diagram depicted relationship between all different components of Sync Adapter. Account Manager and Sync Manager are provided by Android OS, except these two thing everything else you need to implement.
 <a href="/assets/images/posts/SyncAdapter_large.png" target="_blank">
 <img src="/assets/images/posts/SyncAdapter_small.png" alt="Android SyncAdapter" title="Android SyncAdapter" class="img-responsive"></a></p>
 
 <p><strong>Coding - Let’s jump to the code</strong></p>
 
-<p>I am taking simple example ToDo list sync with Parse.com (Parse is BaaS service, If you want to know more aboud BaaS or MBaaS Service, please refere this article). </p>
+<p>I am taking simple example ToDo list sync with Parse.com (Parse is BaaS service, If you want to know more about BaaS or MBaaS Service, please refer this article). </p>
 
-<p>You will find many sync adapter example with “AccountAuthenticatorActivity”, In this situation you need to develop your login screen by extending “AccountAuthenticatorActivity”, but this might not be case in every project. In few situation you might want to use sync adapter without login / registration. In this demo I will explain how to create todo list with Parse.com as backend and witout login / registration. </p>
+<p>You will find many sync adapter example with “AccountAuthenticatorActivity”, In this situation you need to develop your login screen by extending “AccountAuthenticatorActivity”, but this might not be case in every project. In few situation you might want to use sync adapter without login / registration. In this demo I will explain how to create ToDo list with Parse.com as backend and without login / registration. </p>
 
-<p>When user start application, It will fetch primary gmail account and create Parse User through coding. For simplicity I will sync todo list only single direction, from Parse.com to local, you can have bi-directional sync based on need. </p>
+<p>When user start application, It will fetch primary Gmail account and create Parse User through coding. For simplicity I will sync ToDo list only single direction, from Parse.com to local, you can have bi-directional sync based on need. </p>
 
 <ol>
 <li>Open Android Studio</li>
@@ -137,7 +138,7 @@
   <tr>
     <td>4</td>
     <td>SimpleInit.java</td>
-    <td>This will initialize Parse library and fetch default gmail account</td>
+    <td>This will initialize Parse library and fetch default Gmail account</td>
   </tr>
   <tr>
     <td>5</td>
@@ -171,9 +172,9 @@
   </tr>
 </table>
 
-<p>**Note: **Please update Parse.com API key before execute sample</p>
+<p><strong>Note:</strong> Please update Parse.com API key before execute sample</p>
 
-<p><strong><a href="https://github.com/kpbird/SimpleSyncAdapter">https://github.com/kpbird/SimpleSyncAdapter</a></strong></p>
+<h3 id="https://github.com/kpbird/simplesyncadapter"><strong><a href="https://github.com/kpbird/SimpleSyncAdapter">https://github.com/kpbird/SimpleSyncAdapter</a></strong></h3>
 
 <p><strong>Reference</strong></p>
 

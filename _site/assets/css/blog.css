@@ -163,6 +163,22 @@ div.blog-header p {
 	margin-top:-20px;
 }
 
+table{
+    border-collapse: collapse;
+    border-spacing: 5px;
+    border:1px solid #d6d6d6;
+}
+
+th{
+	padding: 5px;
+    border:1px solid #d6d6d6;
+    text-align: center;
+}
+
+td{
+	padding: 5px;
+    border:1px solid #d6d6d6;
+}
 
 
 /** Responsive
