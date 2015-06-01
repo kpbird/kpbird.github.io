@@ -63,6 +63,8 @@ You will find many sync adapter example with “AccountAuthenticatorActivity”,
 
 When user start application, It will fetch primary Gmail account and create Parse User through coding. For simplicity I will sync ToDo list only single direction, from Parse.com to local, you can have bi-directional sync based on need. 
 
+**Steps**
+
 1. Open Android Studio
 2. Create Project Name “SimpleSyncAdapter”
 	- Minimum SDK: 4.0
