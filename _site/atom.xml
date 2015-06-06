@@ -4,13 +4,154 @@
  <title>Ketan Parmar</title>
  <link type="application/atom+xml" href="http://romuluscrisan.com/atom.xml" rel="self"/>
  <link href="http://www.romuluscrisan.com/"/>
- <updated>2015-05-20T00:29:23+05:30</updated>
+ <updated>2015-06-06T16:53:08+05:30</updated>
  <id>http://www.kpbird.com/</id>
  <author>
    <name>Ketan Parmar</name>
    <email>contact@kpbird.com</email>
  </author>
  
+ 
+ <entry>
+   <title>Go Language For Java Developer Part-1</title>
+   <link href="http://www.romuluscrisan.com/2015/06/Go-Language-For-Java-Developer-Part-1"/>
+   <updated>2015-06-06T05:30:00+05:30</updated>
+   <id>http://www.romuluscrisan.com/2015/06/Go-Language-For-Java-Developer-Part-1</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/images/posts/golang.jpeg&quot; alt=&quot;Go Language For Java Developer&quot; title=&quot;Go Language For Java Developer&quot; class=&quot;img-responsive&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Go language is normally known as golang. It&amp;#39;s general purpose programming language developed at Google in 2007 by three Google employees namely Robert Griesemer, Rob Pike, and Ken Thompson. In November 2008 Google had announced Go Language to public and made it &lt;a href=&quot;https://go.googlesource.com/go&quot;&gt;open source&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Go language compiler is available for the Linux, Mac OS X, FreeBSD, NetBSD, OpenBSD, Plan 9, and Microsoft Windows operating systems and the i386, amd64, ARM and IBM POWER processor architectures.&lt;/p&gt;
+
+&lt;p&gt;Beginner Go language developer should visit following links.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;https://golang.org/&quot;&gt;Go Language&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://go.googlesource.com/go&quot;&gt;Go Language Source&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://golang.org/doc/faq#What_is_the_purpose_of_the_project&quot;&gt;Go Language FAQ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://plus.google.com/communities/114112804251407510571&quot;&gt;Go Google+ Community&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://go-lang.cat-v.org/&quot;&gt;Go Language Resource&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.golangpatterns.info/&quot;&gt;Go Language Patterns&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://golangweekly.com/&quot;&gt;Go Newsletter&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://yager.io/programming/go.html&quot;&gt;Why Go is not good?&lt;/a&gt; &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;As you are reading this article, It means I can assume that you know about Go Language and it&amp;#39;s advantage and shortcoming. As the title suggest it&amp;#39;s for Java developers, so I can also assume that you have knowledge of core Java. &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Install Go Language&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Download installer binary / package / installer as per your OS &lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://golang.org/dl/&quot;&gt;https://golang.org/dl/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Current version is go 1.4.2&lt;/li&gt;
+&lt;li&gt;Run package to install Go language&lt;/li&gt;
+&lt;li&gt;After setup completes, you need to set environment variable to go language&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;In case of OX, Add /usr/local/go/bin to the PATH environment variable. You can do this by    adding this line to your /etc/profile (for a system-wide installation) or   $HOME/.bash_profile:&lt;/p&gt;
+
+&lt;p&gt;export PATH=$PATH:/usr/local/go/bin&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;To verify installation, you can execute following command&lt;/p&gt;
+
+&lt;p&gt;$go version
+go version go1.4.2 darwin/amd64&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;Go Language IDE&lt;/strong&gt;
+Officially, Go Language don&amp;#39;t have any IDE but there are many open source 3rd party IDEs / Plugins are available. If you are familiar with IntelliJ or Eclipse then you can install plug-in for Go Language. For more details, please visit following link
+&lt;a href=&quot;http://geekmonkey.org/articles/20-comparison-of-ides-for-google-go&quot;&gt;http://geekmonkey.org/articles/20-comparison-of-ides-for-google-go&lt;/a&gt;    &lt;/p&gt;
+
+&lt;p&gt;Now, you have enough details to jump start coding. In next article I will cover fundamentals and syntax of Go Language.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Android M API Changes</title>
+   <link href="http://www.romuluscrisan.com/2015/06/Android-M-Preview-API-Changes"/>
+   <updated>2015-06-06T05:30:00+05:30</updated>
+   <id>http://www.romuluscrisan.com/2015/06/Android-M-Preview-API-Changes</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/images/posts/androidm.png&quot; alt=&quot;Android M API Changes&quot; title=&quot;Andoid M API Changes&quot; class=&quot;img-responsive&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Andorid M Preview Features&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;App Linking&lt;/li&gt;
+&lt;li&gt;Auto Backup for Apps&lt;/li&gt;
+&lt;li&gt;Authentication&lt;/li&gt;
+&lt;li&gt;Fingerprint Authentication&lt;/li&gt;
+&lt;li&gt;Direct Share&lt;/li&gt;
+&lt;li&gt;Voice Interactions&lt;/li&gt;
+&lt;li&gt;Assist API&lt;/li&gt;
+&lt;li&gt;Notifications&lt;/li&gt;
+&lt;li&gt;Bluetooth Stylus Support&lt;/li&gt;
+&lt;li&gt;Improved Bluetooth Low Energy Scanning&lt;/li&gt;
+&lt;li&gt;Hotspot 2.0 Release 1 Support&lt;/li&gt;
+&lt;li&gt;4K Display Mode&lt;/li&gt;
+&lt;li&gt;Themeable ColorStateLists&lt;/li&gt;
+&lt;li&gt;Audio Features&lt;/li&gt;
+&lt;li&gt;Video Features&lt;/li&gt;
+&lt;li&gt;Camera Features&lt;/li&gt;
+&lt;li&gt;Flashlight API&lt;/li&gt;
+&lt;li&gt;Reprocessing API&lt;/li&gt;
+&lt;li&gt;Android for Work Features&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The overall difference between API Levels 22 and mnc-preview-1 is approximately &lt;strong&gt;11.82%.&lt;/strong&gt; &lt;/p&gt;
+
+&lt;table&gt;
+&lt;tbody&gt;&lt;tr&gt;
+  &lt;th&gt;Type&lt;/th&gt;
+  &lt;th align=&quot;center&quot;&gt;&lt;b&gt;Additions&lt;/b&gt;&lt;/th&gt;
+  &lt;th align=&quot;center&quot;&gt;&lt;b&gt;Changes&lt;/b&gt;&lt;/th&gt;
+  &lt;th align=&quot;center&quot;&gt;Removals&lt;/th&gt;
+  &lt;th align=&quot;center&quot;&gt;&lt;b&gt;Total&lt;/b&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td&gt;Packages&lt;/td&gt;
+  &lt;td align=&quot;right&quot;&gt;4&lt;/td&gt;
+  &lt;td align=&quot;right&quot;&gt;52&lt;/td&gt;
+  &lt;td align=&quot;right&quot;&gt;28&lt;/td&gt;
+  &lt;td align=&quot;right&quot;&gt;84&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td&gt;Classes and &lt;i&gt;Interfaces&lt;/i&gt;&lt;/td&gt;
+  &lt;td align=&quot;right&quot;&gt;121&lt;/td&gt;
+  &lt;td align=&quot;right&quot;&gt;236&lt;/td&gt;
+  &lt;td align=&quot;right&quot;&gt;27&lt;/td&gt;
+  &lt;td align=&quot;right&quot;&gt;384&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td&gt;Constructors&lt;/td&gt;
+  &lt;td align=&quot;right&quot;&gt;3&lt;/td&gt;
+  &lt;td align=&quot;right&quot;&gt;0&lt;/td&gt;
+  &lt;td align=&quot;right&quot;&gt;2&lt;/td&gt;
+  &lt;td align=&quot;right&quot;&gt;5&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td&gt;Methods&lt;/td&gt;
+  &lt;td align=&quot;right&quot;&gt;510&lt;/td&gt;
+  &lt;td align=&quot;right&quot;&gt;123&lt;/td&gt;
+  &lt;td align=&quot;right&quot;&gt;28&lt;/td&gt;
+  &lt;td align=&quot;right&quot;&gt;661&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td&gt;Fields&lt;/td&gt;
+  &lt;td align=&quot;right&quot;&gt;403&lt;/td&gt;
+  &lt;td align=&quot;right&quot;&gt;81&lt;/td&gt;
+  &lt;td align=&quot;right&quot;&gt;39&lt;/td&gt;
+  &lt;td align=&quot;right&quot;&gt;523&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td style=&quot;background-color:#FAFAFA&quot;&gt;&lt;b&gt;Total&lt;/b&gt;&lt;/td&gt;
+  &lt;td style=&quot;background-color:#FAFAFA&quot; align=&quot;right&quot;&gt;&lt;strong&gt;1041&lt;/strong&gt;&lt;/td&gt;
+  &lt;td style=&quot;background-color:#FAFAFA&quot; align=&quot;right&quot;&gt;&lt;strong&gt;492&lt;/strong&gt;&lt;/td&gt;
+  &lt;td style=&quot;background-color:#FAFAFA&quot; align=&quot;right&quot;&gt;&lt;strong&gt;124&lt;/strong&gt;&lt;/td&gt;
+  &lt;td style=&quot;background-color:#FAFAFA&quot; align=&quot;right&quot;&gt;&lt;strong&gt;1657&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Reference: &lt;a href=&quot;http://developer.android.com/preview/index.html&quot;&gt;http://developer.android.com/preview/index.html&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Android Simple SyncAdapter</title>
@@ -101,6 +242,8 @@
 &lt;p&gt;You will find many sync adapter example with “AccountAuthenticatorActivity”, In this situation you need to develop your login screen by extending “AccountAuthenticatorActivity”, but this might not be case in every project. In few situation you might want to use sync adapter without login / registration. In this demo I will explain how to create ToDo list with Parse.com as backend and without login / registration. &lt;/p&gt;
 
 &lt;p&gt;When user start application, It will fetch primary Gmail account and create Parse User through coding. For simplicity I will sync ToDo list only single direction, from Parse.com to local, you can have bi-directional sync based on need. &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Steps&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;Open Android Studio&lt;/li&gt;

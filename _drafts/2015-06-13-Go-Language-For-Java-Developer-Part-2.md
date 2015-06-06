@@ -11,11 +11,11 @@ image: "/golang.jpeg"
 
 <img src="/assets/images/posts/golang.jpeg" alt="Go Language For Java Developer" title="Go Language For Java Developer" class="img-responsive">
 
-Normally first program you write in any programming language is "Hello World". Hello World is simple program which print "Hello Word" test on console / screen.
+Normally first program you write in any programming language is "Hello World". Hello World is simple program which print "Hello Word" text on console / screen.
 
 **Java: Hello World**
 
-As Java Developer you can understand following code. It is very easy for you to understand.
+As Java Developer you can easily understand following code. No need to explain. correct ? 
 
 	package com.kpbird.gotutorial; 
 	public class Main {
@@ -24,7 +24,7 @@ As Java Developer you can understand following code. It is very easy for you to 
 		}
 	}
 
-To compile & execute above code, you need to write following commands in the Terminal. 
+To compile & execute above code, you need to write following two commands in the Terminal. 
 
 	javac Main.java
 	java Main
@@ -44,9 +44,9 @@ You should see Hello World in terminal. If you don't see Hello World displayed t
 
 **Understand Go : Hello Word program**
 
-**1. Package Name (Line 1):** Go program start with package declaration. Every Go program must start with package declaration. Package declaration is used to organise source code. In Java we follow absolute path but with "." (dot) format like com.kpbird.gotutorial represent physical path com/kpbird/gotutorial. While in Go language package name represent only current folder name "gotutorial". Go language support two type of program a. Go Libraries b. Go Executable. Package main is a way to tell compiler that this Go program is executable. When you declare "package main" you don't need to create folder / directory called "main". 
+**1. Package Name (Line 1):** Go program start with package declaration. Every Go program must start with package declaration. Package declaration is used to organise source code. In Java we follow relative path but with "." (dot) format like com.kpbird.gotutorial represent physical path com/kpbird/gotutorial. While in Go language package name represent only current folder name "gotutorial". Go language support two type of program 1. Go Libraries 2. Go Executable. Package main is a way to tell compiler that this Go program is executable. When you declare "package main" you don't need to create folder / directory called "main". 
 
-**2. Import (Line 2):**  import keyword is used to include code from other package or library. The "fmt" package is short form of Format. It is used to format input and output. In Java, we don't need to write java.lang package explicitly compiler will do it behalf for us.  
+**2. Import (Line 2):**  import keyword is used to include code from other package or library. The "fmt" package is short form of Format. It is used to format input and output. In Java, we don't need to write java.lang package explicitly compiler will do it behalf of us.  
 
 **3. fund main() (Line 3):** Functions are building block of Go language. All functions start with keywords "func". func followed by name of function in our case "main" is the name of function. If function takes any argument we need to write in parentheses. Main is special function because main gets called when we execute Go program. It's like public static void main() in Java.
 

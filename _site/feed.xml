@@ -8,7 +8,152 @@
     <title>Ketan Parmar</title>
     <link>http://kpbird.com</link>
     <description>Ketan Parmar is a software developer, trainer, speaker.</description>
-    <pubDate>Sun, 26 Apr 2015 21:50:00 +0530</pubDate>
+    <pubDate>Sat, 06 Jun 2015 05:30:00 +0530</pubDate>
+    <item>
+      <title>Go Language For Java Developer Part-1</title>
+      <link>http://kpbird.com/2015/06/Go-Language-For-Java-Developer-Part-1</link>
+      <description><![CDATA[This article series is designed in mind with Java Developer who would like to learn Go Language.]]></description>
+      <comments>http://kpbird.com/2015/06/Go-Language-For-Java-Developer-Part-1#disqus_thread</comments>
+      <pubDate>Sat, 06 Jun 2015 05:30:00 +0530</pubDate>
+      <guid>http://kpbird.com/2015/06/Go-Language-For-Java-Developer-Part-1</guid>
+      <content:encoded><![CDATA[<p><img src="/assets/images/posts/golang.jpeg" alt="Go Language For Java Developer" title="Go Language For Java Developer" class="img-responsive"></p>
+
+<p>Go language is normally known as golang. It&#39;s general purpose programming language developed at Google in 2007 by three Google employees namely Robert Griesemer, Rob Pike, and Ken Thompson. In November 2008 Google had announced Go Language to public and made it <a href="https://go.googlesource.com/go">open source</a>.</p>
+
+<p>Go language compiler is available for the Linux, Mac OS X, FreeBSD, NetBSD, OpenBSD, Plan 9, and Microsoft Windows operating systems and the i386, amd64, ARM and IBM POWER processor architectures.</p>
+
+<p>Beginner Go language developer should visit following links.</p>
+
+<ol>
+<li><a href="https://golang.org/">Go Language</a></li>
+<li><a href="https://go.googlesource.com/go">Go Language Source</a></li>
+<li><a href="https://golang.org/doc/faq#What_is_the_purpose_of_the_project">Go Language FAQ</a></li>
+<li><a href="https://plus.google.com/communities/114112804251407510571">Go Google+ Community</a></li>
+<li><a href="http://go-lang.cat-v.org/">Go Language Resource</a></li>
+<li><a href="http://www.golangpatterns.info/">Go Language Patterns</a></li>
+<li><a href="http://golangweekly.com/">Go Newsletter</a></li>
+<li><a href="http://yager.io/programming/go.html">Why Go is not good?</a> </li>
+</ol>
+
+<p>As you are reading this article, It means I can assume that you know about Go Language and it&#39;s advantage and shortcoming. As the title suggest it&#39;s for Java developers, so I can also assume that you have knowledge of core Java. </p>
+
+<p><strong>Install Go Language</strong></p>
+
+<ol>
+<li>Download installer binary / package / installer as per your OS </li>
+<li><a href="https://golang.org/dl/">https://golang.org/dl/</a></li>
+<li>Current version is go 1.4.2</li>
+<li>Run package to install Go language</li>
+<li>After setup completes, you need to set environment variable to go language</li>
+<li><p>In case of OX, Add /usr/local/go/bin to the PATH environment variable. You can do this by    adding this line to your /etc/profile (for a system-wide installation) or   $HOME/.bash_profile:</p>
+
+<p>export PATH=$PATH:/usr/local/go/bin</p></li>
+<li><p>To verify installation, you can execute following command</p>
+
+<p>$go version
+go version go1.4.2 darwin/amd64</p></li>
+</ol>
+
+<p><strong>Go Language IDE</strong>
+Officially, Go Language don&#39;t have any IDE but there are many open source 3rd party IDEs / Plugins are available. If you are familiar with IntelliJ or Eclipse then you can install plug-in for Go Language. For more details, please visit following link
+<a href="http://geekmonkey.org/articles/20-comparison-of-ides-for-google-go">http://geekmonkey.org/articles/20-comparison-of-ides-for-google-go</a>    </p>
+
+<p>Now, you have enough details to jump start coding. In next article I will cover fundamentals and syntax of Go Language.</p>
+]]></content:encoded>
+      <dc:date>2015-06-06T05:30:00+05:30</dc:date>
+    </item>
+    <item>
+      <title>Android M API Changes</title>
+      <link>http://kpbird.com/2015/06/Android-M-Preview-API-Changes</link>
+      <description><![CDATA[Android M Preview, API changes and features.]]></description>
+      <comments>http://kpbird.com/2015/06/Android-M-Preview-API-Changes#disqus_thread</comments>
+      <pubDate>Sat, 06 Jun 2015 05:30:00 +0530</pubDate>
+      <guid>http://kpbird.com/2015/06/Android-M-Preview-API-Changes</guid>
+      <content:encoded><![CDATA[<p><img src="/assets/images/posts/androidm.png" alt="Android M API Changes" title="Andoid M API Changes" class="img-responsive"></p>
+
+<p>Andorid M Preview Features</p>
+
+<ul>
+<li>App Linking</li>
+<li>Auto Backup for Apps</li>
+<li>Authentication</li>
+<li>Fingerprint Authentication</li>
+<li>Direct Share</li>
+<li>Voice Interactions</li>
+<li>Assist API</li>
+<li>Notifications</li>
+<li>Bluetooth Stylus Support</li>
+<li>Improved Bluetooth Low Energy Scanning</li>
+<li>Hotspot 2.0 Release 1 Support</li>
+<li>4K Display Mode</li>
+<li>Themeable ColorStateLists</li>
+<li>Audio Features</li>
+<li>Video Features</li>
+<li>Camera Features</li>
+<li>Flashlight API</li>
+<li>Reprocessing API</li>
+<li>Android for Work Features</li>
+</ul>
+
+<p>The overall difference between API Levels 22 and mnc-preview-1 is approximately <strong>11.82%.</strong> </p>
+
+<table>
+<tbody><tr>
+  <th>Type</th>
+  <th align="center"><b>Additions</b></th>
+  <th align="center"><b>Changes</b></th>
+  <th align="center">Removals</th>
+  <th align="center"><b>Total</b></th>
+</tr>
+<tr>
+  <td>Packages</td>
+  <td align="right">4</td>
+  <td align="right">52</td>
+  <td align="right">28</td>
+  <td align="right">84</td>
+</tr>
+<tr>
+  <td>Classes and <i>Interfaces</i></td>
+  <td align="right">121</td>
+  <td align="right">236</td>
+  <td align="right">27</td>
+  <td align="right">384</td>
+</tr>
+<tr>
+  <td>Constructors</td>
+  <td align="right">3</td>
+  <td align="right">0</td>
+  <td align="right">2</td>
+  <td align="right">5</td>
+</tr>
+<tr>
+  <td>Methods</td>
+  <td align="right">510</td>
+  <td align="right">123</td>
+  <td align="right">28</td>
+  <td align="right">661</td>
+</tr>
+<tr>
+  <td>Fields</td>
+  <td align="right">403</td>
+  <td align="right">81</td>
+  <td align="right">39</td>
+  <td align="right">523</td>
+</tr>
+<tr>
+  <td style="background-color:#FAFAFA"><b>Total</b></td>
+  <td style="background-color:#FAFAFA" align="right"><strong>1041</strong></td>
+  <td style="background-color:#FAFAFA" align="right"><strong>492</strong></td>
+  <td style="background-color:#FAFAFA" align="right"><strong>124</strong></td>
+  <td style="background-color:#FAFAFA" align="right"><strong>1657</strong></td>
+</tr>
+</tbody>
+</table>
+
+<p>Reference: <a href="http://developer.android.com/preview/index.html">http://developer.android.com/preview/index.html</a></p>
+]]></content:encoded>
+      <dc:date>2015-06-06T05:30:00+05:30</dc:date>
+    </item>
     <item>
       <title>Android Simple SyncAdapter</title>
       <link>http://kpbird.com/2015/04/Android-Simple-SyncAdapter-Example</link>
@@ -100,6 +245,8 @@
 <p>You will find many sync adapter example with “AccountAuthenticatorActivity”, In this situation you need to develop your login screen by extending “AccountAuthenticatorActivity”, but this might not be case in every project. In few situation you might want to use sync adapter without login / registration. In this demo I will explain how to create ToDo list with Parse.com as backend and without login / registration. </p>
 
 <p>When user start application, It will fetch primary Gmail account and create Parse User through coding. For simplicity I will sync ToDo list only single direction, from Parse.com to local, you can have bi-directional sync based on need. </p>
+
+<p><strong>Steps</strong></p>
 
 <ol>
 <li>Open Android Studio</li>
@@ -742,187 +889,6 @@ services-architecture-advantages</a></li>
 ]]></content:encoded>
       <dc:date>2014-07-12T21:50:00+05:30</dc:date>
     </item>
-    <item>
-      <title>Microservice Architecture - A Quick Guide</title>
-      <link>http://kpbird.com/2014/06/Microservice-Architecture-A-Quick-Guide</link>
-      <description><![CDATA[What is Architecture? What is microservice architecture? Advantage of microservice architecture? and many more...]]></description>
-      <comments>http://kpbird.com/2014/06/Microservice-Architecture-A-Quick-Guide#disqus_thread</comments>
-      <pubDate>Fri, 20 Jun 2014 21:50:00 +0530</pubDate>
-      <guid>http://kpbird.com/2014/06/Microservice-Architecture-A-Quick-Guide</guid>
-      <content:encoded><![CDATA[<p><img src="/assets/images/posts/25c6a49.jpg" alt="Microservice Architecture - A Quick Guide" class="img-responsive"></p>
-
-<p><strong>1. What is Architecture (Software)?</strong></p>
-
-<p>Architecture is the fundamental organization of a system embodied in its components (i.e. Web Server, Application Server, Databases,Storage, Communication layer, etc...), their relationships to each other, and to the environment (i.e. deployment environment shared server, dedicated server, cloud deployment, etc..), and the principles guiding its design and evolution.</p>
-
-<p><strong>2. What is microservice architecture ?</strong></p>
-
-<p>Microservice means developing a single, small, meaningful functional feature as single service, each service has it’s own process and communicate with lightweight mechanism, deployed in single or multiple servers.</p>
-
-<p><strong>3. Advantages of microservice architecture ?</strong></p>
-
-<ul>
-<li><p>Each micro service is small and focused on a specific feature / business requirement.</p></li>
-<li><p>Microservice can be developed independently by small team of developers (normally 2 to 5 developers).</p></li>
-<li><p>Microservice is loosely coupled, means services are independent, in terms of development and deployment both.</p></li>
-<li><p>Microservice can be developed using different programming language (Personally I don&#39;t suggest to do it).</p></li>
-<li><p>Microservice allows easy and flexible way to integrate automatic deployment with Continuous Integration tools (for e.g: Jenkins, Hudson, bamboo etc..).</p></li>
-<li><p>The productivity of a new team member will be quick enough.</p></li>
-<li><p>Microservice is easy to understand, modify and maintain for a developer because separation of code,small team and focused work.</p></li>
-<li><p>Microservice allows you to take advantage of emerging and latest technologies (framework, programming language , programming practice, etc.).</p></li>
-<li><p>Microservice has code for business logic only, No mixup with HTML,CSS or other UI component.</p></li>
-<li><p>Microservice is easy to scale based on demand.</p></li>
-<li><p>Microservice can deploy on commodity hardware or low / medium configuration servers.</p></li>
-<li><p>Easy to integrate 3rd party service.</p></li>
-<li><p>Every microservice has it&#39;s own storage capability but it depends on the project’s requirement, you can have common database like MySQL or Oracle for all services.</p></li>
-</ul>
-
-<p><strong>4. Disadvantages of microservice architecture ?</strong></p>
-
-<ul>
-<li><p>Microservice architecture brings a lot of operations overhead.</p></li>
-<li><p>DevOps Skill required (<a href="http://en.wikipedia.org/wiki/DevOps">http://en.wikipedia.org/wiki/DevOps</a>).</p></li>
-<li><p>Duplication of Effort.</p></li>
-<li><p>Distributed System is complicated to manage .</p></li>
-<li><p>Default to trace problem because of distributed deployment.</p></li>
-<li><p>Complicated to manage whole products when number of services increases.</p></li>
-</ul>
-
-<p><strong>5. In which case / requirement microservice architecture best fit ?</strong></p>
-
-<p>When you need to support Desktop, web , mobile, Smart TVs, Wearable, etc... or you don&#39;t know in future which kind of devices you need to support.</p>
-
-<p><strong>6. Which products / companies are using Microservie architecture?</strong></p>
-
-<p>Most large scale web sites including Twitter, Netflix, Amazon and eBay have evolved from a monolithic architecture to a microservices architecture.</p>
-
-<p><strong>7. How independent micro services communicate with each other?</strong></p>
-
-<p>It&#39;s depend upon requirement, normally developers use HTTP/REST with JSON or Protobuf (Binary protocol) but are free to use any communication protocol.</p>
-
-<p><strong>8. Why is it that everyone are talking about microservices now?</strong></p>
-
-<p>It’s been nearly 15 years since the concept of Service Oriented Architecture really took hold. With the improvement of RESTful web service and JSON as a data interchange format has made it easier than ever to build easily interconnectable services simply and quickly.</p>
-
-<p><strong>9. Presentation</strong></p>
-
-<p><a href="http://www.infoq.com/presentations/Micro-Services">http://www.infoq.com/presentations/Micro-Services</a></p>
-
-<p><strong>10. Video</strong></p>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/2rKEveL55TY" frameborder="0" allowfullscreen></iframe>
-
-<p><strong>11. Picture: Monolithic vs Modular vs Service oriented architecture</strong></p>
-
-<p><img src="/assets/images/posts/0d60cc3.jpg" alt="Microservice Architecture - A Quick Guide" class="img-responsive"></p>
-]]></content:encoded>
-      <dc:date>2014-06-20T21:50:00+05:30</dc:date>
-    </item>
-    <item>
-      <title>NoSQL - A Quick Guide</title>
-      <link>http://kpbird.com/2014/06/NoSQL-A-Quick-Guide</link>
-      <description><![CDATA[NoSQL is buzz word now-a-days among the developers and software professionals. What is NoSQL? Where to use NoSQL? 3. Advantages and Disadvantages of NoSQL DB. and many more]]></description>
-      <comments>http://kpbird.com/2014/06/NoSQL-A-Quick-Guide#disqus_thread</comments>
-      <pubDate>Sat, 14 Jun 2014 21:50:00 +0530</pubDate>
-      <guid>http://kpbird.com/2014/06/NoSQL-A-Quick-Guide</guid>
-      <content:encoded><![CDATA[<p><img src="/assets/images/posts/07e4e1f.jpg" alt="NoSQL - A Quick Guide" class="img-responsive"></p>
-
-<p>NoSQL is buzz word now-a-days among the developers and software professionals.</p>
-
-<p><strong>1. What is NoSQL?</strong></p>
-
-<p>NoSQL database, also called Not Only SQL, is an approach to data management and database design that&#39;s useful for very large sets of distributed data.</p>
-
-<p><strong>2. Where to use NoSQL ?</strong></p>
-
-<p>Use NOSQL, When project has unstructured big data that require real-time or offline analysis or web/mobile application. i.e. Social Network app, Analytics app.</p>
-
-<p><strong>3. Advantages and Disadvantages of NoSQL DB.</strong></p>
-
-<p>Advantages of NoSQL</p>
-
-<ul>
-<li>Elastic scaling</li>
-<li>Big Data</li>
-<li>Ecomomics</li>
-<li>Flexible data models</li>
-</ul>
-
-<p>Disadvantages of NoSQL</p>
-
-<ul>
-<li>Maturity</li>
-<li>Support</li>
-<li>Analytics and business intelligence</li>
-<li>Administration</li>
-<li>Expertise</li>
-</ul>
-
-<p><strong>4. Category of NoSQL</strong></p>
-
-<ul>
-<li>Column</li>
-<li>Document</li>
-<li>Key-value</li>
-<li>Graph</li>
-</ul>
-
-<p><strong>5. How many NoSQL database are available in market?</strong></p>
-
-<p>More then 110 different (Open Source and Proprietary) NoSQL database available in market</p>
-
-<p><strong>6. If all NoSQL database fall under above category then what is purpose of having lots of NoSQL databases ?</strong></p>
-
-<p>Every NOSQL database has some special feature &amp; functionality which makes it different, Base on the project requirement one can choose NOSQL database.</p>
-
-<p><strong>7. Can I use multiple NoSQL in my project / application ?</strong></p>
-
-<p>Yes</p>
-
-<p><strong>8. List of popular NoSQL database with usage.</strong></p>
-
-<p><strong>Radis:</strong> For rapidly changing data (should fit mostly in memory). i.e. to store real-time stock prices, analytics, leaderboards and communication. And replacement of memcached.</p>
-
-<p><strong>MongoDB:</strong> When you need dynamic queries, defined indexes, map/reduce and good performance on a big DB. i.e. for most things that you would do with MySQL but having predefined columns really holds you back.</p>
-
-<p><strong>Cassandra:</strong> When you need to store data so huge that it doesn&#39;t fit on server, but still want a friendly familiar interface to it. When you don&#39;t need real-time analysis or other operation. i.e. Web analytics, Transaction logging, Data collection from huge sensor arrays.</p>
-
-<p><strong>Riak:</strong> If you need very good single-site scalability, availability and fault-tolerance, but you&#39;re ready to pay for multi-site replication. i.e. Point-of-sales data collection. Factory control systems. Places where even seconds of downtime hurt. Could be used as a well-update-able web server.</p>
-
-<p><strong>CouchDB:</strong> For accumulating, occasionally changing data, on which pre-defined queries are to be run. Places where versioning is important. i.e. CRM, CMS systems. Master-master replication is an especially interesting feature, allowing easy multi-site deployments.</p>
-
-<p><strong>HBase:</strong> Hadoop is probably still the best way to run Map/Reduce jobs on huge datasets. Best if you use the Hadoop/HDFS stack already. ie. Search engines. Analysing log data. Any place where scanning huge, two-dimensional join-less tables are a requirement.</p>
-
-<p><strong>Accumulo:</strong> If you need to restict access on the cell level. i.e. Same as HBase, since it&#39;s basically a replacement: Search engines.</p>
-
-<p><strong>Hypertable:</strong> If you need a better HBase. i.e/ Same as HBase, since it&#39;s basically a replacement: Search engines.</p>
-
-<p><strong>Neo4j:</strong> For graph-style, rich or complex, interconnected data. Neo4j is quite different from the others in this sense. i.e. For searching routes in social relations, public transport links, road maps, or network topologies.</p>
-
-<p><strong>ElasticSearch:</strong> When you have objects with (flexible) fields, and you need &quot;advanced search&quot; functionality. i.e. A dating service that handles age difference, geographic location, tastes and dislikes, etc. Or a leaderboard system that depends on many variables. you can replace your Solr with ElasticSearch.</p>
-
-<p><strong>Couchbase:</strong> Any application where low-latency data access, high concurrency support and high availability is a requirement. i.e. Low-latency use-cases like ad targeting or highly-concurrent web apps like online gaming (e.g. Zynga).</p>
-
-<p><strong>9. Can I have video tutorial to learn more about NoSQL?</strong></p>
-
-<p>Sure, Watch following video..</p>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/qI_g07C_Q5I" frameborder="0" allowfullscreen></iframe>
-
-<p><strong>Reference &amp; More reading...</strong></p>
-
-<p><a href="http://en.wikipedia.org/wiki/NoSQL">http://en.wikipedia.org/wiki/NoSQL</a></p>
-
-<p><a href="http://kkovacs.eu/cassandra-vs-mongodb-vs-couchdb-vs-redis">http://kkovacs.eu/cassandra-vs-mongodb-vs-couchdb-vs-redis</a></p>
-
-<p><a href="http://www.dzone.com/mz/nosql">http://www.dzone.com/mz/nosql</a></p>
-
-<p><a href="http://www.nosqlweekly.com/">http://www.nosqlweekly.com/</a></p>
-
-<p><a href="http://nosql-database.org/">http://nosql-database.org/</a></p>
-]]></content:encoded>
-      <dc:date>2014-06-14T21:50:00+05:30</dc:date>
-    </item>
-    <dc:date>2015-04-26T21:50:00+05:30</dc:date>
+    <dc:date>2015-06-06T05:30:00+05:30</dc:date>
   </channel>
 </rss>
