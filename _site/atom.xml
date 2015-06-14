@@ -4,13 +4,78 @@
  <title>Ketan Parmar</title>
  <link type="application/atom+xml" href="http://romuluscrisan.com/atom.xml" rel="self"/>
  <link href="http://www.romuluscrisan.com/"/>
- <updated>2015-06-06T16:53:08+05:30</updated>
+ <updated>2015-06-14T18:58:26+05:30</updated>
  <id>http://www.kpbird.com/</id>
  <author>
    <name>Ketan Parmar</name>
    <email>contact@kpbird.com</email>
  </author>
  
+ 
+ <entry>
+   <title>Go Language For Java Developer Part-2</title>
+   <link href="http://www.romuluscrisan.com/2015/06/Go-Language-For-Java-Developer-Part-2"/>
+   <updated>2015-06-13T21:50:00+05:30</updated>
+   <id>http://www.romuluscrisan.com/2015/06/Go-Language-For-Java-Developer-Part-2</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/images/posts/golang.jpeg&quot; alt=&quot;Go Language For Java Developer&quot; title=&quot;Go Language For Java Developer&quot; class=&quot;img-responsive&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Normally first program you write in any programming language is &amp;quot;Hello World&amp;quot;. Hello World is simple program which print &amp;quot;Hello Word&amp;quot; text on console / screen.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Java: Hello World&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;As Java Developer you can easily understand following code. No need to explain. correct ? &lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;package com.kpbird.gotutorial; 
+public class Main {
+    public static void main(String[] args) {
+        System.out.println(&amp;quot;Hello World&amp;quot;);        
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;To compile &amp;amp; execute above code, you need to write following two commands in the Terminal. &lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;javac Main.java
+java Main
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Go: Hello World&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Create directory where you need to keep the code. Create file named &amp;quot;main.go&amp;quot; and write following code&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;package main  // line 1
+import &amp;quot;fmt&amp;quot; // line 2
+func main() { // line 3
+    fmt.Println(&amp;quot;Hello World&amp;quot;) // line 4
+} // line 5
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;To execute above code, you need to write following command in the Terminal&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;go run main.go
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You should see Hello World in terminal. If you don&amp;#39;t see Hello World displayed then you may have mistake in typing program. The Go compiler will give you hint about where the mistake lies. &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Understand Go : Hello Word program&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1. Package Name (Line 1):&lt;/strong&gt; Go program start with package declaration. Every Go program must start with package declaration. Package declaration is used to organise source code. In Java we follow relative path but with &amp;quot;.&amp;quot; (dot) format like com.kpbird.gotutorial represent physical path com/kpbird/gotutorial. While in Go language package name represent only current folder name &amp;quot;gotutorial&amp;quot;. Go language support two type of program 1. Go Libraries 2. Go Executable. Package main is a way to tell compiler that this Go program is executable. When you declare &amp;quot;package main&amp;quot; you don&amp;#39;t need to create folder / directory called &amp;quot;main&amp;quot;. &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;2. Import (Line 2):&lt;/strong&gt;  import keyword is used to include code from other package or library. The &amp;quot;fmt&amp;quot; package is short form of Format. It is used to format input and output. In Java, we don&amp;#39;t need to write java.lang package explicitly compiler will do it behalf of us.  &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;3. fund main() (Line 3):&lt;/strong&gt; Functions are building block of Go language. All functions start with keywords &amp;quot;func&amp;quot;. func followed by name of function in our case &amp;quot;main&amp;quot; is the name of function. If function takes any argument we need to write in parentheses. Main is special function because main gets called when we execute Go program. It&amp;#39;s like public static void main() in Java.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;4. fmt.Println (Line 4):&lt;/strong&gt; Line 4 has three component 1. fmt package name. 2. Println function name 3. String argument &amp;quot;Hello World&amp;quot;. In Java, we use System.out.println().&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Java vs Go&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;We should not compare both languages because both are different. Go Language is functional features language in which functions are first-class citizen. Java Language is Object Oriented language in which Class / Object are first-class citizen.&lt;/p&gt;
+
+&lt;p&gt;To execute Java program, first we need to compile using &amp;quot;javac&amp;quot; command, after that we need to use &amp;quot;java&amp;quot; command execute a program. &lt;/p&gt;
+
+&lt;p&gt;To execute Go program, we just need to write Go run main.go. Single command will compile and execute program. To build program Go language has command build. It will generate native executable file as per the platform, that you can directly execute. &lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$Go build main.go
+$./main
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;In Go Language don&amp;#39;t have semi-colon (;) to end the statement. It means that you can&amp;#39;t write two statement in single line.&lt;/p&gt;
+
+&lt;p&gt;In Java Language, As we have semi-colon (;) to end the statement we can write entire code in single line.&lt;/p&gt;
+
+&lt;p&gt;Next article we will learn about data types in Go Language.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Go Language For Java Developer Part-1</title>

@@ -8,7 +8,74 @@
     <title>Ketan Parmar</title>
     <link>http://kpbird.com</link>
     <description>Ketan Parmar is a software developer, trainer, speaker.</description>
-    <pubDate>Sat, 06 Jun 2015 05:30:00 +0530</pubDate>
+    <pubDate>Sat, 13 Jun 2015 21:50:00 +0530</pubDate>
+    <item>
+      <title>Go Language For Java Developer Part-2</title>
+      <link>http://kpbird.com/2015/06/Go-Language-For-Java-Developer-Part-2</link>
+      <description><![CDATA[This article series is designed in mind with Java Developer who would like to learn Go Language.]]></description>
+      <comments>http://kpbird.com/2015/06/Go-Language-For-Java-Developer-Part-2#disqus_thread</comments>
+      <pubDate>Sat, 13 Jun 2015 21:50:00 +0530</pubDate>
+      <guid>http://kpbird.com/2015/06/Go-Language-For-Java-Developer-Part-2</guid>
+      <content:encoded><![CDATA[<p><img src="/assets/images/posts/golang.jpeg" alt="Go Language For Java Developer" title="Go Language For Java Developer" class="img-responsive"></p>
+
+<p>Normally first program you write in any programming language is &quot;Hello World&quot;. Hello World is simple program which print &quot;Hello Word&quot; text on console / screen.</p>
+
+<p><strong>Java: Hello World</strong></p>
+
+<p>As Java Developer you can easily understand following code. No need to explain. correct ? </p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">package com.kpbird.gotutorial; 
+public class Main {
+    public static void main(String[] args) {
+        System.out.println(&quot;Hello World&quot;);        
+    }
+}
+</code></pre></div>
+<p>To compile &amp; execute above code, you need to write following two commands in the Terminal. </p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">javac Main.java
+java Main
+</code></pre></div>
+<p><strong>Go: Hello World</strong></p>
+
+<p>Create directory where you need to keep the code. Create file named &quot;main.go&quot; and write following code</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">package main  // line 1
+import &quot;fmt&quot; // line 2
+func main() { // line 3
+    fmt.Println(&quot;Hello World&quot;) // line 4
+} // line 5
+</code></pre></div>
+<p>To execute above code, you need to write following command in the Terminal</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">go run main.go
+</code></pre></div>
+<p>You should see Hello World in terminal. If you don&#39;t see Hello World displayed then you may have mistake in typing program. The Go compiler will give you hint about where the mistake lies. </p>
+
+<p><strong>Understand Go : Hello Word program</strong></p>
+
+<p><strong>1. Package Name (Line 1):</strong> Go program start with package declaration. Every Go program must start with package declaration. Package declaration is used to organise source code. In Java we follow relative path but with &quot;.&quot; (dot) format like com.kpbird.gotutorial represent physical path com/kpbird/gotutorial. While in Go language package name represent only current folder name &quot;gotutorial&quot;. Go language support two type of program 1. Go Libraries 2. Go Executable. Package main is a way to tell compiler that this Go program is executable. When you declare &quot;package main&quot; you don&#39;t need to create folder / directory called &quot;main&quot;. </p>
+
+<p><strong>2. Import (Line 2):</strong>  import keyword is used to include code from other package or library. The &quot;fmt&quot; package is short form of Format. It is used to format input and output. In Java, we don&#39;t need to write java.lang package explicitly compiler will do it behalf of us.  </p>
+
+<p><strong>3. fund main() (Line 3):</strong> Functions are building block of Go language. All functions start with keywords &quot;func&quot;. func followed by name of function in our case &quot;main&quot; is the name of function. If function takes any argument we need to write in parentheses. Main is special function because main gets called when we execute Go program. It&#39;s like public static void main() in Java.</p>
+
+<p><strong>4. fmt.Println (Line 4):</strong> Line 4 has three component 1. fmt package name. 2. Println function name 3. String argument &quot;Hello World&quot;. In Java, we use System.out.println().</p>
+
+<p><strong>Java vs Go</strong></p>
+
+<p>We should not compare both languages because both are different. Go Language is functional features language in which functions are first-class citizen. Java Language is Object Oriented language in which Class / Object are first-class citizen.</p>
+
+<p>To execute Java program, first we need to compile using &quot;javac&quot; command, after that we need to use &quot;java&quot; command execute a program. </p>
+
+<p>To execute Go program, we just need to write Go run main.go. Single command will compile and execute program. To build program Go language has command build. It will generate native executable file as per the platform, that you can directly execute. </p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$Go build main.go
+$./main
+</code></pre></div>
+<p>In Go Language don&#39;t have semi-colon (;) to end the statement. It means that you can&#39;t write two statement in single line.</p>
+
+<p>In Java Language, As we have semi-colon (;) to end the statement we can write entire code in single line.</p>
+
+<p>Next article we will learn about data types in Go Language.</p>
+]]></content:encoded>
+      <dc:date>2015-06-13T21:50:00+05:30</dc:date>
+    </item>
     <item>
       <title>Go Language For Java Developer Part-1</title>
       <link>http://kpbird.com/2015/06/Go-Language-For-Java-Developer-Part-1</link>
@@ -821,74 +888,6 @@ services-architecture-advantages</a></li>
 ]]></content:encoded>
       <dc:date>2014-10-06T21:50:00+05:30</dc:date>
     </item>
-    <item>
-      <title>10 Tips for fledgling developers</title>
-      <link>http://kpbird.com/2014/07/10-Tips-for-fledgling-developers</link>
-      <description><![CDATA[Continue Study, Learn professional ethics, read a lot of code, learn tool thoroughly, and many more...]]></description>
-      <comments>http://kpbird.com/2014/07/10-Tips-for-fledgling-developers#disqus_thread</comments>
-      <pubDate>Sat, 12 Jul 2014 21:50:00 +0530</pubDate>
-      <guid>http://kpbird.com/2014/07/10-Tips-for-fledgling-developers</guid>
-      <content:encoded><![CDATA[<p><img src="/assets/images/posts/22783b7.jpg" alt="10 Tips for fledgling developers" class="img-responsive"></p>
-
-<p><strong>1. Continues Study</strong></p>
-
-<p>Never think that you have acquired all or most of the knowledge existing in the world. Almost everybody in India at age of 24 starts thinking that he has acquired all the wisdom and knowledge that he needs. This should be strictly avoided. Continue study after education. Study should be habituated exactly in the same way as you are brushing teeth and taking bath every morning. A regular study, everyday, is extremely essential. Study not only computer science but also other subject in which you are interested. It does not matter whether you study for 10 minutes or 1 hour, but consistency is a must. You should always study basics and fundamentals. There is no point in going for advance topics, you can always go back and re-read or re-iterate over the fundamental concepts. There are plenty of things in computer science that you can study (like operating system, compiler, languages, networking, databases, algorithms, architecture, etc..)</p>
-
-<p>For computer science I suggest to read following books</p>
-
-<ul>
-<li>Structure and Interpretation of Computer Programs by Albenson and Sussman.</li>
-<li>Introduction to Computer Architecture by Hennessy and Patterson.</li>
-<li>Fundamentals of Programming by Donald Knuth.</li>
-<li>Introduction to Algorithms by Cormen, Leiserson and Rivest</li>
-</ul>
-
-<p><strong>2. Learn Professional Ethics</strong></p>
-
-<p>As computer science professional, you are morally obliged to do a good job. What this means is that you are supposed to do your job not for your manager or company or client but for yourself.</p>
-
-<blockquote>
-<p><strong>“Doing duties of your life” - Bhagwatgeeta</strong></p>
-</blockquote>
-
-<p>The direct implication of this is: never ever write a bad code. You don’t need to be the fastest and run after deadline rather you need to write quality code. Never write junk code. Rewrite it till you are satisfied with the quality. Remember that you are writing code not only for compiler but for humans also, your code must be easy to unstandable by other developers. Writing good code is an art and aesthetic beauty build in it. You should feel uneasy at writing bad code. To judge quality of code, you should compare with good and popular open source library written in the same language.</p>
-
-<p><strong>3. Read a lot of code</strong></p>
-
-<p>Read a lot of quality code written by excellent programmers. Not just good programmers, like the best guy in your circle, but those who have delivered on international scale. It’s very easy because you have access to the huge amount of open source codebase today. You can either refer github or code.google.com, this is easy and helpful for you. When I was learning Java, I read code from the Tomcat project and JDK source code. I&#39;ve read lots of good code ever since and I still refer to it. Read the code. Look at the comments, see what the authors are doing, and how they went about it.</p>
-
-<p><strong>4. Learn your tools thoroughly</strong></p>
-
-<p>I think the loss of programming time is not in debugging or rewriting code, but in the innumerable seconds lost here and there by developers who don&#39;t really know their tools. I am referring to: the IDE, the language, the build system, the SVN, etc.. the IDE and the language are by far the most important. Remember maximum shortcut keys of IDE, memorize most useful methods and classes of language. for the language I suggest to read API documents. Keep the API documentation handy while developing. Sometimes, it may happen that functionality which you are trying to develop is readily available in API or there should be some class which will help in saving your efforts to a great extent.</p>
-
-<p><strong>5. Academic is not like the real world</strong></p>
-
-<p>Your percentage largely doesn’t matter. What matters is your practical experience you earn by solving real world problems. To the extent that it does matter to meet minimum criteria for interview process. It only determines whether your resume gets selected for job interviews. Academic is just startup, subject that you learn in college is just an introduction for language or concept, there are lot in depth things and concept you need to study for real world development. There are only three things which will help you to crack the interview - Knowledge, Knowledge and Knowledge.</p>
-
-<p><strong>6. Don&#39;t focus on job security</strong></p>
-
-<p>It’s normal human behavior, everyone wants stable and secure job in large company but The thing is though, those large companies usually aren&#39;t a very satisfying place to work. Things take a long time to get done, and the bureaucracy alone is enough to drain you mentally after a few years. our skills are outdated faster if you don’t upgrade your self with new tools and technologies. Usually large companies don’t allow that freedom to you. At that point, you&#39;re pretty much stuck at a crappy job. If you want long-term job security, the best way to achieve that is to just make sure that you&#39;re very good at what you do, and that you love doing it. If you have knowledge and experience, you will find job in market even if market is not booming. Make sure that you enjoy your job, If not then don’t be afraid to leave.</p>
-
-<p><strong>7. Build your portfolio</strong></p>
-
-<p>Your portfolio means your public presence, create account in stackoverflow and help other people, create your blog and share your knowledge and experience. create account in github and make your side project / library open source. Attend meet-up, conference or technical event in your city or nearby. Take part in technical discussion. Read technical blogs written by others and write your thought in comment section.</p>
-
-<p><strong>8. Working with Humans</strong></p>
-
-<p>The unexpected part is that it’s the human aspect (mostly not the technical ones) that trump everything – unless it’s a one person project for yourself :-). You need to communicate with your team members and work within their personalities, strengths, and weaknesses. And, human craziness can destroy even the most technically brilliant project. Making non-technical people understand technical insights has been a bit difficult in my experience.</p>
-
-<p><strong>9. Figure out your Goals</strong></p>
-
-<p>Always aspire doing bigger things in life. Viewing promotion path as your career goal is completely wrong concept. If you are really interested to study and learn new things. Never aspire of being manager but aspire of being excellent programmer / developer. Normally in Indian software company you will be promoted as some kind of managerial role after 6 or 7 years of experience. You might feel that you want to do certain things which you cannot do till you become a manager. When you become a manager, you will soon realize that now you just cannot do anything that you thought of. The three biggest mistakes that people usually make are aiming for money, aiming for promotion and aiming for fame. The moment you get some of these, you aspire for some more and then there is no end. I do not mean that you should not earn money, but you should understand how much money would satisfy your needs. Bill Clinton might be the richest person in the world; he is certainly not the happiest.</p>
-
-<p><strong>10. Follow your culture</strong></p>
-
-<p>I have seen the tradition that whatever junk is created in US, it rapidly spreads up in India and specially in our industry. This cultural change creates a very strong impact on everybody’s life. To act and behave like pseudo US/UK/etc. citizen is stupid thing, but believe me, there is nothing great in that. This all just makes you run away from your culture. And there is no wisdom in running away from your culture. Indian culture, which has great Vedas and stories like Mahabharata and Bhagwatgeeta is really great. You should understand that fundamental things in Indian culture teach you a lot and you should never forget them.</p>
-
-<p><strong>Finally, I would like to conclude by saying that it’s your life...don&#39;t waste it on stupid things...develop your tests, and start the fight.</strong></p>
-]]></content:encoded>
-      <dc:date>2014-07-12T21:50:00+05:30</dc:date>
-    </item>
-    <dc:date>2015-06-06T05:30:00+05:30</dc:date>
+    <dc:date>2015-06-13T21:50:00+05:30</dc:date>
   </channel>
 </rss>

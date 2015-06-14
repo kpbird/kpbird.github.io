@@ -2,10 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>http://kpbird.com/</loc>
-    <lastmod>2015-06-06T16:53:08+05:30</lastmod>
+    <lastmod>2015-06-14T18:58:26+05:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+  
+    <url>
+      <loc>http://kpbird.com/2015/06/Go-Language-For-Java-Developer-Part-2</loc>
+      
+        <lastmod>2015-06-13T21:50:00+05:30</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
   
     <url>
       <loc>http://kpbird.com/2015/06/Go-Language-For-Java-Developer-Part-1</loc>
@@ -310,7 +323,7 @@
   <url>
     <loc>http://kpbird.com/404.html</loc>
     
-      <lastmod>2015-06-06T16:53:08+05:30</lastmod>
+      <lastmod>2015-06-14T18:58:26+05:30</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -323,7 +336,7 @@
   <url>
     <loc>http://kpbird.com/atom.xml</loc>
     
-      <lastmod>2015-06-06T16:53:08+05:30</lastmod>
+      <lastmod>2015-06-14T18:58:26+05:30</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -375,7 +388,7 @@
   <url>
     <loc>http://kpbird.com/sitemap.xml</loc>
     
-      <lastmod>2015-06-06T16:53:08+05:30</lastmod>
+      <lastmod>2015-06-14T18:58:26+05:30</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -388,7 +401,7 @@
   <url>
     <loc>http://kpbird.com//feed.xml</loc>
     
-      <lastmod>2015-06-06T16:53:08+05:30</lastmod>
+      <lastmod>2015-06-14T18:58:26+05:30</lastmod>
     
     
       <changefreq>monthly</changefreq>

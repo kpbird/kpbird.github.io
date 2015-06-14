@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Go Language For Java Developer Part-2"
-date:   2013-06-27 16:20:00
+date:   2015-06-27 16:20:00
 category: "Go"
 tags: "Go, Go Language"
 excerpt: This article series is designed in mind with Java Developer who would like to learn Go Language. 
