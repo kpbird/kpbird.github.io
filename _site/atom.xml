@@ -4,7 +4,7 @@
  <title>Ketan Parmar</title>
  <link type="application/atom+xml" href="http://romuluscrisan.com/atom.xml" rel="self"/>
  <link href="http://www.romuluscrisan.com/"/>
- <updated>2015-06-21T13:46:25+05:30</updated>
+ <updated>2015-06-21T14:23:52+05:30</updated>
  <id>http://www.kpbird.com/</id>
  <author>
    <name>Ketan Parmar</name>
@@ -139,61 +139,61 @@
    <id>http://www.romuluscrisan.com/2015/06/Go-Language-For-Java-Developer-Part-3</id>
    <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/images/posts/golang.jpeg&quot; alt=&quot;Go Language For Java Developer&quot; title=&quot;Go Language For Java Developer&quot; class=&quot;img-responsive&quot;&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Java Language: Data Type&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&quot;java-language:-data-type&quot;&gt;&lt;strong&gt;Java Language: Data Type&lt;/strong&gt;&lt;/h3&gt;
 
 &lt;p&gt;In Java, We have premitive data types and objects. Java support 8 premitive data types for different purpose. &lt;/p&gt;
 
-&lt;table &gt;
-&lt;tbody&gt;&lt;tr&gt;
-&lt;th id=&quot;h1&quot; align=&quot;left&quot;&gt;&lt;strong&gt;Data Type&lt;/strong&gt;&lt;/th&gt;
-&lt;th id=&quot;h2&quot; align=&quot;left&quot;&gt;&lt;strong&gt;Default Value&lt;/strong&gt;&lt;/th&gt;
+&lt;table&gt;&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Data Type&lt;/th&gt;
+&lt;th&gt;Value&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;byte&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td &gt;byte&lt;/td&gt;
-&lt;td &gt;0&lt;/td&gt;
+&lt;td&gt;short&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td &gt;short&lt;/td&gt;
-&lt;td &gt;0&lt;/td&gt;
+&lt;td&gt;int&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td &gt;int&lt;/td&gt;
-&lt;td &gt;0&lt;/td&gt;
+&lt;td&gt;long&lt;/td&gt;
+&lt;td&gt;0L&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td &gt;long&lt;/td&gt;
-&lt;td &gt;0L&lt;/td&gt;
+&lt;td&gt;float&lt;/td&gt;
+&lt;td&gt;0.0f&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td &gt;float&lt;/td&gt;
-&lt;td &gt;0.0f&lt;/td&gt;
+&lt;td&gt;double&lt;/td&gt;
+&lt;td&gt;0.0d&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td &gt;double&lt;/td&gt;
-&lt;td &gt;0.0d&lt;/td&gt;
+&lt;td&gt;char&lt;/td&gt;
+&lt;td&gt;&amp;#39;\u0000&amp;#39;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td &gt;char&lt;/td&gt;
-&lt;td &gt;&#39;\u0000&#39;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td &gt;boolean&lt;/td&gt;
-&lt;td &gt;false&lt;/td&gt;
+&lt;td&gt;boolean&lt;/td&gt;
+&lt;td&gt;false&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;&lt;/table&gt;
 
-Reference: [https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html)
+&lt;p&gt;Reference: &lt;a href=&quot;https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html&quot;&gt;https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html&lt;/a&gt;&lt;/p&gt;
 
-**Go Language: Type**
+&lt;h3 id=&quot;go-language:-type&quot;&gt;&lt;strong&gt;Go Language: Type&lt;/strong&gt;&lt;/h3&gt;
 
-Go language is statically typed programming language. It means that variable always has specific type that can&#39;t be changed. Go language data type can be divided in main three categories. 
+&lt;p&gt;Go language is statically typed programming language. It means that variable always has specific type that can&amp;#39;t be changed. Go language data type can be divided in main three categories. &lt;/p&gt;
 
-1. Boolean: A boolean type represents the set of Boolean truth values denoted by the predeclared constants true and false. The predeclared boolean type is bool.
-
-2. Numeric: A numeric type represents sets of integer or floating-point values. The predeclared architecture-independent numeric types are: int, float32, float64, etc
-
-3. String: A string type represents the set of string values. A string value is a (possibly empty) sequence of bytes. Strings are immutable: once created, it is impossible to change the contents of a string. The predeclared string type is string.
-
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Boolean: A boolean type represents the set of Boolean truth values denoted by the predeclared constants true and false. The predeclared boolean type is bool.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Numeric: A numeric type represents sets of integer or floating-point values. The predeclared architecture-independent numeric types are: int, float32, float64, etc&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;String: A string type represents the set of string values. A string value is a (possibly empty) sequence of bytes. Strings are immutable: once created, it is impossible to change the contents of a string. The predeclared string type is string.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;table&gt;
     &lt;tr&gt;

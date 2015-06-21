@@ -11,60 +11,34 @@ image: "/golang.jpeg"
 
 <img src="/assets/images/posts/golang.jpeg" alt="Go Language For Java Developer" title="Go Language For Java Developer" class="img-responsive">
 
-**Java Language: Data Type**
+###**Java Language: Data Type**
 
 In Java, We have premitive data types and objects. Java support 8 premitive data types for different purpose. 
 
-<table >
-<tbody><tr>
-<th id="h1" align="left"><strong>Data Type</strong></th>
-<th id="h2" align="left"><strong>Default Value</strong></th>
-</tr>
-<tr>
-<td >byte</td>
-<td >0</td>
-</tr>
-<tr>
-<td >short</td>
-<td >0</td>
-</tr>
-<tr>
-<td >int</td>
-<td >0</td>
-</tr>
-<tr>
-<td >long</td>
-<td >0L</td>
-</tr>
-<tr>
-<td >float</td>
-<td >0.0f</td>
-</tr>
-<tr>
-<td >double</td>
-<td >0.0d</td>
-</tr>
-<tr>
-<td >char</td>
-<td >'\u0000'</td>
-</tr>
-<tr>
-<td >boolean</td>
-<td >false</td>
-</tr>
-</tbody></table>
+| Data Type | Value             |
+| --------- | ----------------- |
+| byte      | 0                 |
+| short     | 0                 |
+| int       | 0                 |
+| long      | 0L                |
+| float     | 0.0f              |
+| double    | 0.0d              |
+| char      | '\u0000'          |
+| boolean   | false             |
 
 Reference: [https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html)
 
-**Go Language: Type**
+###**Go Language: Type**
 
 Go language is statically typed programming language. It means that variable always has specific type that can't be changed. Go language data type can be divided in main three categories. 
+
 
 1. Boolean: A boolean type represents the set of Boolean truth values denoted by the predeclared constants true and false. The predeclared boolean type is bool.
 
 2. Numeric: A numeric type represents sets of integer or floating-point values. The predeclared architecture-independent numeric types are: int, float32, float64, etc
 
 3. String: A string type represents the set of string values. A string value is a (possibly empty) sequence of bytes. Strings are immutable: once created, it is impossible to change the contents of a string. The predeclared string type is string.
+
 
 
 <table>

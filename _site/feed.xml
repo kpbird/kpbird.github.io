@@ -140,61 +140,61 @@
       <guid>http://kpbird.com/2015/06/Go-Language-For-Java-Developer-Part-3</guid>
       <content:encoded><![CDATA[<p><img src="/assets/images/posts/golang.jpeg" alt="Go Language For Java Developer" title="Go Language For Java Developer" class="img-responsive"></p>
 
-<p><strong>Java Language: Data Type</strong></p>
+<h3 id="java-language:-data-type"><strong>Java Language: Data Type</strong></h3>
 
 <p>In Java, We have premitive data types and objects. Java support 8 premitive data types for different purpose. </p>
 
-<table >
-<tbody><tr>
-<th id="h1" align="left"><strong>Data Type</strong></th>
-<th id="h2" align="left"><strong>Default Value</strong></th>
+<table><thead>
+<tr>
+<th>Data Type</th>
+<th>Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>byte</td>
+<td>0</td>
 </tr>
 <tr>
-<td >byte</td>
-<td >0</td>
+<td>short</td>
+<td>0</td>
 </tr>
 <tr>
-<td >short</td>
-<td >0</td>
+<td>int</td>
+<td>0</td>
 </tr>
 <tr>
-<td >int</td>
-<td >0</td>
+<td>long</td>
+<td>0L</td>
 </tr>
 <tr>
-<td >long</td>
-<td >0L</td>
+<td>float</td>
+<td>0.0f</td>
 </tr>
 <tr>
-<td >float</td>
-<td >0.0f</td>
+<td>double</td>
+<td>0.0d</td>
 </tr>
 <tr>
-<td >double</td>
-<td >0.0d</td>
+<td>char</td>
+<td>&#39;\u0000&#39;</td>
 </tr>
 <tr>
-<td >char</td>
-<td >'\u0000'</td>
-</tr>
-<tr>
-<td >boolean</td>
-<td >false</td>
+<td>boolean</td>
+<td>false</td>
 </tr>
 </tbody></table>
 
-Reference: [https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html)
+<p>Reference: <a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html">https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html</a></p>
 
-**Go Language: Type**
+<h3 id="go-language:-type"><strong>Go Language: Type</strong></h3>
 
-Go language is statically typed programming language. It means that variable always has specific type that can't be changed. Go language data type can be divided in main three categories. 
+<p>Go language is statically typed programming language. It means that variable always has specific type that can&#39;t be changed. Go language data type can be divided in main three categories. </p>
 
-1. Boolean: A boolean type represents the set of Boolean truth values denoted by the predeclared constants true and false. The predeclared boolean type is bool.
-
-2. Numeric: A numeric type represents sets of integer or floating-point values. The predeclared architecture-independent numeric types are: int, float32, float64, etc
-
-3. String: A string type represents the set of string values. A string value is a (possibly empty) sequence of bytes. Strings are immutable: once created, it is impossible to change the contents of a string. The predeclared string type is string.
-
+<ol>
+<li><p>Boolean: A boolean type represents the set of Boolean truth values denoted by the predeclared constants true and false. The predeclared boolean type is bool.</p></li>
+<li><p>Numeric: A numeric type represents sets of integer or floating-point values. The predeclared architecture-independent numeric types are: int, float32, float64, etc</p></li>
+<li><p>String: A string type represents the set of string values. A string value is a (possibly empty) sequence of bytes. Strings are immutable: once created, it is impossible to change the contents of a string. The predeclared string type is string.</p></li>
+</ol>
 
 <table>
     <tr>
