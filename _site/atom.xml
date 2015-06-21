@@ -4,13 +4,280 @@
  <title>Ketan Parmar</title>
  <link type="application/atom+xml" href="http://romuluscrisan.com/atom.xml" rel="self"/>
  <link href="http://www.romuluscrisan.com/"/>
- <updated>2015-06-16T22:59:37+05:30</updated>
+ <updated>2015-06-21T13:46:25+05:30</updated>
  <id>http://www.kpbird.com/</id>
  <author>
    <name>Ketan Parmar</name>
    <email>contact@kpbird.com</email>
  </author>
  
+ 
+ <entry>
+   <title>Android App Review: First Run C25K Fitness Trainer</title>
+   <link href="http://www.romuluscrisan.com/2015/06/Android-App-Review-First-Run-C25K-Fitness-Trainer"/>
+   <updated>2015-06-21T21:50:00+05:30</updated>
+   <id>http://www.romuluscrisan.com/2015/06/Android-App-Review-First-Run-C25K-Fitness-Trainer</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/images/posts/firstrun.png&quot; alt=&quot;Android App Review: First Run C25K Fitness Trainer&quot; title=&quot;Android App Review: First Run C25K Fitness Trainer&quot; class=&quot;img-responsive&quot;&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;design-review&quot;&gt;Design Review&lt;/h3&gt;
+
+&lt;p&gt;First Run application design don&amp;#39;t have &amp;#39;Wow&amp;#39; factor but it&amp;#39;s also not ugly. You will find inconsistency in many screens. At first, the application will impress you with splash screen and login / signup screen. Sign In / Signup screen&amp;#39;s design looks perfect with social login options as well as manual signup and sign in options. You can also use this application without Sign In / Sign Up. &lt;/p&gt;
+
+&lt;p&gt;Here is my observation for the design &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/firstrun/firstrun1.png&quot; alt=&quot;Android App Review: First Run C25K Fitness Trainer&quot; title=&quot;Android App Review: First Run C25K Fitness Trainer&quot; class=&quot;img-responsive&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;This screen is part of application. Yes, Entire screen without design. When user select Music folder this screen appear. &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/firstrun/firstrun2.png&quot; alt=&quot;Android App Review: First Run C25K Fitness Trainer&quot; title=&quot;Android App Review: First Run C25K Fitness Trainer&quot; class=&quot;img-responsive&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Sign Up or Sign In screen. Looks perfect. Application logo and background image are placed perfectly. Nice design to provide Social and manual login options. &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/firstrun/firstrun3.png&quot; alt=&quot;Android App Review: First Run C25K Fitness Trainer&quot; title=&quot;Android App Review: First Run C25K Fitness Trainer&quot; class=&quot;img-responsive&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Sign Up Dialog. When I looked at this screen first time, I had a question in my mind, Why EditText are rounded corner and Button with square corner? Both looks very odd. When dialog appear cursor blink to Email EditText but keyboard is not visible. Generally, when cursor blinks keyboard should be visible. The height of EditText is larger than button&amp;#39;s height. It gives feeling like button is squeezed.&lt;/p&gt;
+
+&lt;p&gt;When you click on Sign Up without typing anything, Application display message &amp;quot;Invalid Email ID&amp;quot; in toast. Message text and the way it is displayed, is not professional. There isn&amp;#39;t any visual indication for wrong data (email or password). Application displays only Toast messages.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/firstrun/firstrun4.png&quot; alt=&quot;Android App Review: First Run C25K Fitness Trainer&quot; title=&quot;Android App Review: First Run C25K Fitness Trainer&quot; class=&quot;img-responsive&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Sign In screen. When you click on Sign Up button, Application will open dialog on same screen but when you click on Sign In button, Application will open new screen / activity without background image. Which gives feeling inconsistency. &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/firstrun/firstrun5.png&quot; alt=&quot;Android App Review: First Run C25K Fitness Trainer&quot; title=&quot;Android App Review: First Run C25K Fitness Trainer&quot; class=&quot;img-responsive&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;When user selects program, above screen appear. &amp;quot;Prepare your run...&amp;quot; message is not vertically centre. Entire screen is blank except this message. It looks ugly. &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/firstrun/firstrun6.png&quot; alt=&quot;Android App Review: First Run C25K Fitness Trainer&quot; title=&quot;Android App Review: First Run C25K Fitness Trainer&quot; class=&quot;img-responsive&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;You can easily recognise that the content display, inside WebView. 1) Back arrow is non standard. 2) Running form label and the arrow image is not properly align. This screens can be improved a lot. There can be three steps wizard with nice designs. Caption text below video can justify.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/firstrun/firstrun7.png&quot; alt=&quot;Android App Review: First Run C25K Fitness Trainer&quot; title=&quot;Android App Review: First Run C25K Fitness Trainer&quot; class=&quot;img-responsive&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Inconsistency, Few screen has action bar back button and few screen don&amp;#39;t have. Actionbar Title and Sub title is in italic. Point 2 in image, thickness and cap between lines are different. Point 3 player control is too small.&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;performance-review&quot;&gt;Performance Review&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/firstrun/firstrun8.png&quot; alt=&quot;Android App Review: First Run C25K Fitness Trainer&quot; title=&quot;Android App Review: First Run C25K Fitness Trainer&quot; class=&quot;img-responsive&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;This is GPU Overdraw benchmark, It&amp;#39;s good that only centre section is red. Read this link for more information about GPU Overdraw &lt;a href=&quot;https://developer.android.com/tools/performance/debug-gpu-overdraw/index.html&quot;&gt;https://developer.android.com/tools/performance/debug-gpu-overdraw/index.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/firstrun/firstrun9.png&quot; alt=&quot;Android App Review: First Run C25K Fitness Trainer&quot; title=&quot;Android App Review: First Run C25K Fitness Trainer&quot; class=&quot;img-responsive&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Profile GPU Rendering gives you a quick visual representation of how much time it takes to render the frames of a UI window relative to the 16-ms-per-frame benchmark. Above image has issue in few frame rendering. Read this link for more information &lt;a href=&quot;https://developer.android.com/tools/performance/profile-gpu-rendering/index.html&quot;&gt;https://developer.android.com/tools/performance/profile-gpu-rendering/index.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;memory-profile&quot;&gt;Memory Profile&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/firstrun/firstrun10.png&quot; alt=&quot;Android App Review: First Run C25K Fitness Trainer&quot; title=&quot;Android App Review: First Run C25K Fitness Trainer&quot; class=&quot;img-responsive&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;This application is memory hungry, Above screen shot illustrate memory allocation of the application on start. 58 MB Heap Size and 42 MB allocation is huge. Application may have issue with lower end devices. 33 MB is allocated as 1-byte array. It might happen that application persist high resolution images in memory.&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;security&quot;&gt;Security&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Security is always major flow in Android application. In this application there are many security flows ranging from minor to serious.&lt;/strong&gt;  &lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;library,-framework-&amp;amp;-services&quot;&gt;Library, Framework &amp;amp; Services&lt;/h3&gt;
+
+&lt;p&gt;Following libraries, frameworks and services are integrated in the application.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;AChart Engine - &lt;a href=&quot;http://www.achartengine.org/&quot;&gt;http://www.achartengine.org/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Amazon AWS - &lt;a href=&quot;http://aws.amazon.com/mobile/sdk/&quot;&gt;http://aws.amazon.com/mobile/sdk/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;AppVirality - &lt;a href=&quot;https://www.appvirality.com/&quot;&gt;https://www.appvirality.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Facebook SDK - &lt;a href=&quot;https://developers.facebook.com/docs/android/&quot;&gt;https://developers.facebook.com/docs/android/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Flurry - &lt;a href=&quot;https://developer.yahoo.com/flurry/&quot;&gt;https://developer.yahoo.com/flurry/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Mint Splunk -  &lt;a href=&quot;https://mint.splunk.com/&quot;&gt;https://mint.splunk.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Twitter4j - &lt;a href=&quot;http://twitter4j.org/en/index.html&quot;&gt;http://twitter4j.org/en/index.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Bolts-Android  - &lt;a href=&quot;https://github.com/BoltsFramework/Bolts-Android&quot;&gt;https://github.com/BoltsFramework/Bolts-Android&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Google Analytics - &lt;a href=&quot;https://developers.google.com/analytics/devguides/collection/android/v4/&quot;&gt;https://developers.google.com/analytics/devguides/collection/android/v4/&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;android-manifest-statics&quot;&gt;Android Manifest Statics&lt;/h4&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Package Name: com.firstrun.prototyze&lt;/li&gt;
+&lt;li&gt;Version Code: 21&lt;/li&gt;
+&lt;li&gt;Version Name: 5.0.1-1624448&lt;/li&gt;
+&lt;li&gt;Support Screen: Any&lt;/li&gt;
+&lt;li&gt;GCM: Yes&lt;/li&gt;
+&lt;li&gt;User Permission: 17&lt;/li&gt;
+&lt;li&gt;Activity: 23&lt;/li&gt;
+&lt;li&gt;Receiver: 6&lt;/li&gt;
+&lt;li&gt;Service: 3&lt;/li&gt;
+&lt;li&gt;Meta Data: 5&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;br&gt;  &lt;/p&gt;
+
+&lt;h4 id=&quot;summary&quot;&gt;Summary&lt;/h4&gt;
+
+&lt;p&gt;Overall I would say it&amp;#39;s an average application from technical perspective. Wow factor is missing in Design. Performance is good, Security need drastic improvement.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/firstrun/firstrun11.png&quot; alt=&quot;Android App Review: First Run C25K Fitness Trainer&quot; title=&quot;Android App Review: First Run C25K Fitness Trainer&quot; class=&quot;img-responsive&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;disclaimer&quot;&gt;Disclaimer&lt;/h4&gt;
+
+&lt;p&gt;The information provided in this article is purely for knowledge sharing purpose. No intension to favour or harm reputation of the application. Insight information of application is provided for knowledge sharing and learning purpose. Owner of the blog don&amp;#39;t have any responsibility of how, when and what purpose reader use this information. &lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Go Language For Java Developer Part-3</title>
+   <link href="http://www.romuluscrisan.com/2015/06/Go-Language-For-Java-Developer-Part-3"/>
+   <updated>2015-06-20T21:50:00+05:30</updated>
+   <id>http://www.romuluscrisan.com/2015/06/Go-Language-For-Java-Developer-Part-3</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/images/posts/golang.jpeg&quot; alt=&quot;Go Language For Java Developer&quot; title=&quot;Go Language For Java Developer&quot; class=&quot;img-responsive&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Java Language: Data Type&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;In Java, We have premitive data types and objects. Java support 8 premitive data types for different purpose. &lt;/p&gt;
+
+&lt;table &gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;th id=&quot;h1&quot; align=&quot;left&quot;&gt;&lt;strong&gt;Data Type&lt;/strong&gt;&lt;/th&gt;
+&lt;th id=&quot;h2&quot; align=&quot;left&quot;&gt;&lt;strong&gt;Default Value&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td &gt;byte&lt;/td&gt;
+&lt;td &gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td &gt;short&lt;/td&gt;
+&lt;td &gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td &gt;int&lt;/td&gt;
+&lt;td &gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td &gt;long&lt;/td&gt;
+&lt;td &gt;0L&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td &gt;float&lt;/td&gt;
+&lt;td &gt;0.0f&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td &gt;double&lt;/td&gt;
+&lt;td &gt;0.0d&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td &gt;char&lt;/td&gt;
+&lt;td &gt;&#39;\u0000&#39;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td &gt;boolean&lt;/td&gt;
+&lt;td &gt;false&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+
+Reference: [https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html)
+
+**Go Language: Type**
+
+Go language is statically typed programming language. It means that variable always has specific type that can&#39;t be changed. Go language data type can be divided in main three categories. 
+
+1. Boolean: A boolean type represents the set of Boolean truth values denoted by the predeclared constants true and false. The predeclared boolean type is bool.
+
+2. Numeric: A numeric type represents sets of integer or floating-point values. The predeclared architecture-independent numeric types are: int, float32, float64, etc
+
+3. String: A string type represents the set of string values. A string value is a (possibly empty) sequence of bytes. Strings are immutable: once created, it is impossible to change the contents of a string. The predeclared string type is string.
+
+
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th id=&quot;h1&quot; align=&quot;left&quot;&gt;&lt;strong&gt;Data Type&lt;/strong&gt;&lt;/th&gt;
+        &lt;th id=&quot;h2&quot; align=&quot;left&quot;&gt;&lt;strong&gt;Default Value&lt;/strong&gt;&lt;/th&gt;
+        &lt;th&gt;Range&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td &gt;bool&lt;/td&gt;
+        &lt;td &gt;false&lt;/td&gt;
+        &lt;td&gt;true or false&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td &gt;int&lt;/td&gt;
+        &lt;td &gt;0&lt;/td&gt;
+        &lt;td&gt;either int32 or int64&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td &gt;int8&lt;/td&gt;
+        &lt;td &gt;0&lt;/td&gt;
+        &lt;td&gt;signed 16-bit integers (-32768 to 32767)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td &gt;int16&lt;/td&gt;
+        &lt;td &gt;0&lt;/td&gt;
+        &lt;td&gt;signed 16-bit integers (-32768 to 32767)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td &gt;int32&lt;/td&gt;
+        &lt;td &gt;0&lt;/td&gt;
+        &lt;td&gt;signed 32-bit integers (-2147483648 to 2147483647)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td &gt;int64&lt;/td&gt;
+        &lt;td &gt;0&lt;/td&gt;
+        &lt;td&gt;signed 64-bit integers (-9223372036854775808 to 9223372036854775807)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td &gt;uint&lt;/td&gt;
+        &lt;td &gt;0&lt;/td&gt;
+        &lt;td&gt;either 32 or 64 bits&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td &gt;uint8&lt;/td&gt;
+        &lt;td &gt;0&lt;/td&gt;
+        &lt;td&gt;unsigned  8-bit integers (0 to 255)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td &gt;uint16&lt;/td&gt;
+        &lt;td &gt;0&lt;/td&gt;
+        &lt;td&gt;unsigned 16-bit integers (0 to 65535)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td &gt;uint32&lt;/td&gt;
+        &lt;td &gt;0&lt;/td&gt;
+        &lt;td&gt;unsigned 32-bit integers (0 to 4294967295)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td &gt;uint64&lt;/td&gt;
+        &lt;td &gt;0&lt;/td&gt;
+        &lt;td&gt;unsigned 64-bit integers (0 to 18446744073709551615)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td &gt;float32&lt;/td&gt;
+        &lt;td &gt;0&lt;/td&gt;
+        &lt;td&gt;IEEE-754 32-bit floating-point numbers&lt;/td&gt;
+    &lt;/tr&gt;                                       
+    &lt;tr&gt;
+        &lt;td &gt;float64&lt;/td&gt;
+        &lt;td &gt;0&lt;/td&gt;
+        &lt;td&gt;IEEE-754 64-bit floating-point numbers&lt;/td&gt;
+    &lt;/tr&gt;                                       
+    &lt;tr&gt;
+        &lt;td &gt;string&lt;/td&gt;
+        &lt;td &gt;&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+    &lt;/tr&gt;                                       
+&lt;/table&gt;
+
+&lt;p&gt;Refernce: &lt;a href=&quot;https://golang.org/ref/spec#Types&quot;&gt;https://golang.org/ref/spec#Types&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Next article we will larn about variable in Go Language&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Go Language For Java Developer Part-2</title>

@@ -4,7 +4,7 @@ title:  "Go Language For Java Developer Part-1"
 date:   2015-06-06 00:00:00
 category: "Go"
 tags: "Go, Go Language"
-excerpt: This article series is designed in mind with Java Developer who would like to learn Go Language. 
+excerpt: This article series is designed keeping in mind,The Java Developers who would like to learn Go Language. 
 
 image: "/golang.jpeg"
 ---

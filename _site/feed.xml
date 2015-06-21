@@ -8,11 +8,282 @@
     <title>Ketan Parmar</title>
     <link>http://kpbird.com</link>
     <description>Ketan Parmar is a software developer, trainer, speaker.</description>
-    <pubDate>Sat, 13 Jun 2015 21:50:00 +0530</pubDate>
+    <pubDate>Sun, 21 Jun 2015 21:50:00 +0530</pubDate>
+    <item>
+      <title>Android App Review: First Run C25K Fitness Trainer</title>
+      <link>http://kpbird.com/2015/06/Android-App-Review-First-Run-C25K-Fitness-Trainer</link>
+      <description><![CDATA[First Run C25K Fitness Trainer Android application review. It include Design, Performance, Security and insight]]></description>
+      <comments>http://kpbird.com/2015/06/Android-App-Review-First-Run-C25K-Fitness-Trainer#disqus_thread</comments>
+      <pubDate>Sun, 21 Jun 2015 21:50:00 +0530</pubDate>
+      <guid>http://kpbird.com/2015/06/Android-App-Review-First-Run-C25K-Fitness-Trainer</guid>
+      <content:encoded><![CDATA[<p><img src="/assets/images/posts/firstrun.png" alt="Android App Review: First Run C25K Fitness Trainer" title="Android App Review: First Run C25K Fitness Trainer" class="img-responsive"></p>
+
+<h3 id="design-review">Design Review</h3>
+
+<p>First Run application design don&#39;t have &#39;Wow&#39; factor but it&#39;s also not ugly. You will find inconsistency in many screens. At first, the application will impress you with splash screen and login / signup screen. Sign In / Signup screen&#39;s design looks perfect with social login options as well as manual signup and sign in options. You can also use this application without Sign In / Sign Up. </p>
+
+<p>Here is my observation for the design </p>
+
+<p><img src="/assets/images/posts/firstrun/firstrun1.png" alt="Android App Review: First Run C25K Fitness Trainer" title="Android App Review: First Run C25K Fitness Trainer" class="img-responsive"></p>
+
+<p>This screen is part of application. Yes, Entire screen without design. When user select Music folder this screen appear. </p>
+
+<p><img src="/assets/images/posts/firstrun/firstrun2.png" alt="Android App Review: First Run C25K Fitness Trainer" title="Android App Review: First Run C25K Fitness Trainer" class="img-responsive"></p>
+
+<p>Sign Up or Sign In screen. Looks perfect. Application logo and background image are placed perfectly. Nice design to provide Social and manual login options. </p>
+
+<p><img src="/assets/images/posts/firstrun/firstrun3.png" alt="Android App Review: First Run C25K Fitness Trainer" title="Android App Review: First Run C25K Fitness Trainer" class="img-responsive"></p>
+
+<p>Sign Up Dialog. When I looked at this screen first time, I had a question in my mind, Why EditText are rounded corner and Button with square corner? Both looks very odd. When dialog appear cursor blink to Email EditText but keyboard is not visible. Generally, when cursor blinks keyboard should be visible. The height of EditText is larger than button&#39;s height. It gives feeling like button is squeezed.</p>
+
+<p>When you click on Sign Up without typing anything, Application display message &quot;Invalid Email ID&quot; in toast. Message text and the way it is displayed, is not professional. There isn&#39;t any visual indication for wrong data (email or password). Application displays only Toast messages.</p>
+
+<p><img src="/assets/images/posts/firstrun/firstrun4.png" alt="Android App Review: First Run C25K Fitness Trainer" title="Android App Review: First Run C25K Fitness Trainer" class="img-responsive"></p>
+
+<p>Sign In screen. When you click on Sign Up button, Application will open dialog on same screen but when you click on Sign In button, Application will open new screen / activity without background image. Which gives feeling inconsistency. </p>
+
+<p><img src="/assets/images/posts/firstrun/firstrun5.png" alt="Android App Review: First Run C25K Fitness Trainer" title="Android App Review: First Run C25K Fitness Trainer" class="img-responsive"></p>
+
+<p>When user selects program, above screen appear. &quot;Prepare your run...&quot; message is not vertically centre. Entire screen is blank except this message. It looks ugly. </p>
+
+<p><img src="/assets/images/posts/firstrun/firstrun6.png" alt="Android App Review: First Run C25K Fitness Trainer" title="Android App Review: First Run C25K Fitness Trainer" class="img-responsive"></p>
+
+<p>You can easily recognise that the content display, inside WebView. 1) Back arrow is non standard. 2) Running form label and the arrow image is not properly align. This screens can be improved a lot. There can be three steps wizard with nice designs. Caption text below video can justify.</p>
+
+<p><img src="/assets/images/posts/firstrun/firstrun7.png" alt="Android App Review: First Run C25K Fitness Trainer" title="Android App Review: First Run C25K Fitness Trainer" class="img-responsive"></p>
+
+<p>Inconsistency, Few screen has action bar back button and few screen don&#39;t have. Actionbar Title and Sub title is in italic. Point 2 in image, thickness and cap between lines are different. Point 3 player control is too small.</p>
+
+<p><br></p>
+
+<h3 id="performance-review">Performance Review</h3>
+
+<p><img src="/assets/images/posts/firstrun/firstrun8.png" alt="Android App Review: First Run C25K Fitness Trainer" title="Android App Review: First Run C25K Fitness Trainer" class="img-responsive"></p>
+
+<p>This is GPU Overdraw benchmark, It&#39;s good that only centre section is red. Read this link for more information about GPU Overdraw <a href="https://developer.android.com/tools/performance/debug-gpu-overdraw/index.html">https://developer.android.com/tools/performance/debug-gpu-overdraw/index.html</a></p>
+
+<p><img src="/assets/images/posts/firstrun/firstrun9.png" alt="Android App Review: First Run C25K Fitness Trainer" title="Android App Review: First Run C25K Fitness Trainer" class="img-responsive"></p>
+
+<p>Profile GPU Rendering gives you a quick visual representation of how much time it takes to render the frames of a UI window relative to the 16-ms-per-frame benchmark. Above image has issue in few frame rendering. Read this link for more information <a href="https://developer.android.com/tools/performance/profile-gpu-rendering/index.html">https://developer.android.com/tools/performance/profile-gpu-rendering/index.html</a></p>
+
+<p><br></p>
+
+<h3 id="memory-profile">Memory Profile</h3>
+
+<p><img src="/assets/images/posts/firstrun/firstrun10.png" alt="Android App Review: First Run C25K Fitness Trainer" title="Android App Review: First Run C25K Fitness Trainer" class="img-responsive"></p>
+
+<p>This application is memory hungry, Above screen shot illustrate memory allocation of the application on start. 58 MB Heap Size and 42 MB allocation is huge. Application may have issue with lower end devices. 33 MB is allocated as 1-byte array. It might happen that application persist high resolution images in memory.</p>
+
+<p><br></p>
+
+<h3 id="security">Security</h3>
+
+<p><strong>Security is always major flow in Android application. In this application there are many security flows ranging from minor to serious.</strong>  </p>
+
+<p><br></p>
+
+<h3 id="library,-framework-&amp;-services">Library, Framework &amp; Services</h3>
+
+<p>Following libraries, frameworks and services are integrated in the application.</p>
+
+<ol>
+<li>AChart Engine - <a href="http://www.achartengine.org/">http://www.achartengine.org/</a></li>
+<li>Amazon AWS - <a href="http://aws.amazon.com/mobile/sdk/">http://aws.amazon.com/mobile/sdk/</a></li>
+<li>AppVirality - <a href="https://www.appvirality.com/">https://www.appvirality.com/</a></li>
+<li>Facebook SDK - <a href="https://developers.facebook.com/docs/android/">https://developers.facebook.com/docs/android/</a></li>
+<li>Flurry - <a href="https://developer.yahoo.com/flurry/">https://developer.yahoo.com/flurry/</a></li>
+<li>Mint Splunk -  <a href="https://mint.splunk.com/">https://mint.splunk.com/</a></li>
+<li>Twitter4j - <a href="http://twitter4j.org/en/index.html">http://twitter4j.org/en/index.html</a></li>
+<li>Bolts-Android  - <a href="https://github.com/BoltsFramework/Bolts-Android">https://github.com/BoltsFramework/Bolts-Android</a></li>
+<li>Google Analytics - <a href="https://developers.google.com/analytics/devguides/collection/android/v4/">https://developers.google.com/analytics/devguides/collection/android/v4/</a></li>
+</ol>
+
+<p><br></p>
+
+<h4 id="android-manifest-statics">Android Manifest Statics</h4>
+
+<ol>
+<li>Package Name: com.firstrun.prototyze</li>
+<li>Version Code: 21</li>
+<li>Version Name: 5.0.1-1624448</li>
+<li>Support Screen: Any</li>
+<li>GCM: Yes</li>
+<li>User Permission: 17</li>
+<li>Activity: 23</li>
+<li>Receiver: 6</li>
+<li>Service: 3</li>
+<li>Meta Data: 5</li>
+</ol>
+
+<p><br>  </p>
+
+<h4 id="summary">Summary</h4>
+
+<p>Overall I would say it&#39;s an average application from technical perspective. Wow factor is missing in Design. Performance is good, Security need drastic improvement.</p>
+
+<p><img src="/assets/images/posts/firstrun/firstrun11.png" alt="Android App Review: First Run C25K Fitness Trainer" title="Android App Review: First Run C25K Fitness Trainer" class="img-responsive"> </p>
+
+<p><br></p>
+
+<h4 id="disclaimer">Disclaimer</h4>
+
+<p>The information provided in this article is purely for knowledge sharing purpose. No intension to favour or harm reputation of the application. Insight information of application is provided for knowledge sharing and learning purpose. Owner of the blog don&#39;t have any responsibility of how, when and what purpose reader use this information. </p>
+]]></content:encoded>
+      <dc:date>2015-06-21T21:50:00+05:30</dc:date>
+    </item>
+    <item>
+      <title>Go Language For Java Developer Part-3</title>
+      <link>http://kpbird.com/2015/06/Go-Language-For-Java-Developer-Part-3</link>
+      <description><![CDATA[This article series is designed keeping in mind,The Java Developers who would like to learn Go Language.]]></description>
+      <comments>http://kpbird.com/2015/06/Go-Language-For-Java-Developer-Part-3#disqus_thread</comments>
+      <pubDate>Sat, 20 Jun 2015 21:50:00 +0530</pubDate>
+      <guid>http://kpbird.com/2015/06/Go-Language-For-Java-Developer-Part-3</guid>
+      <content:encoded><![CDATA[<p><img src="/assets/images/posts/golang.jpeg" alt="Go Language For Java Developer" title="Go Language For Java Developer" class="img-responsive"></p>
+
+<p><strong>Java Language: Data Type</strong></p>
+
+<p>In Java, We have premitive data types and objects. Java support 8 premitive data types for different purpose. </p>
+
+<table >
+<tbody><tr>
+<th id="h1" align="left"><strong>Data Type</strong></th>
+<th id="h2" align="left"><strong>Default Value</strong></th>
+</tr>
+<tr>
+<td >byte</td>
+<td >0</td>
+</tr>
+<tr>
+<td >short</td>
+<td >0</td>
+</tr>
+<tr>
+<td >int</td>
+<td >0</td>
+</tr>
+<tr>
+<td >long</td>
+<td >0L</td>
+</tr>
+<tr>
+<td >float</td>
+<td >0.0f</td>
+</tr>
+<tr>
+<td >double</td>
+<td >0.0d</td>
+</tr>
+<tr>
+<td >char</td>
+<td >'\u0000'</td>
+</tr>
+<tr>
+<td >boolean</td>
+<td >false</td>
+</tr>
+</tbody></table>
+
+Reference: [https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html)
+
+**Go Language: Type**
+
+Go language is statically typed programming language. It means that variable always has specific type that can't be changed. Go language data type can be divided in main three categories. 
+
+1. Boolean: A boolean type represents the set of Boolean truth values denoted by the predeclared constants true and false. The predeclared boolean type is bool.
+
+2. Numeric: A numeric type represents sets of integer or floating-point values. The predeclared architecture-independent numeric types are: int, float32, float64, etc
+
+3. String: A string type represents the set of string values. A string value is a (possibly empty) sequence of bytes. Strings are immutable: once created, it is impossible to change the contents of a string. The predeclared string type is string.
+
+
+<table>
+    <tr>
+        <th id="h1" align="left"><strong>Data Type</strong></th>
+        <th id="h2" align="left"><strong>Default Value</strong></th>
+        <th>Range</th>
+    </tr>
+    <tr>
+        <td >bool</td>
+        <td >false</td>
+        <td>true or false</td>
+    </tr>
+    <tr>
+        <td >int</td>
+        <td >0</td>
+        <td>either int32 or int64</td>
+    </tr>
+    <tr>
+        <td >int8</td>
+        <td >0</td>
+        <td>signed 16-bit integers (-32768 to 32767)</td>
+    </tr>
+    <tr>
+        <td >int16</td>
+        <td >0</td>
+        <td>signed 16-bit integers (-32768 to 32767)</td>
+    </tr>
+    <tr>
+        <td >int32</td>
+        <td >0</td>
+        <td>signed 32-bit integers (-2147483648 to 2147483647)</td>
+    </tr>
+    <tr>
+        <td >int64</td>
+        <td >0</td>
+        <td>signed 64-bit integers (-9223372036854775808 to 9223372036854775807)</td>
+    </tr>
+    <tr>
+        <td >uint</td>
+        <td >0</td>
+        <td>either 32 or 64 bits</td>
+    </tr>
+    <tr>
+        <td >uint8</td>
+        <td >0</td>
+        <td>unsigned  8-bit integers (0 to 255)</td>
+    </tr>
+    <tr>
+        <td >uint16</td>
+        <td >0</td>
+        <td>unsigned 16-bit integers (0 to 65535)</td>
+    </tr>
+    <tr>
+        <td >uint32</td>
+        <td >0</td>
+        <td>unsigned 32-bit integers (0 to 4294967295)</td>
+    </tr>
+    <tr>
+        <td >uint64</td>
+        <td >0</td>
+        <td>unsigned 64-bit integers (0 to 18446744073709551615)</td>
+    </tr>
+    <tr>
+        <td >float32</td>
+        <td >0</td>
+        <td>IEEE-754 32-bit floating-point numbers</td>
+    </tr>                                       
+    <tr>
+        <td >float64</td>
+        <td >0</td>
+        <td>IEEE-754 64-bit floating-point numbers</td>
+    </tr>                                       
+    <tr>
+        <td >string</td>
+        <td ></td>
+        <td></td>
+    </tr>                                       
+</table>
+
+<p>Refernce: <a href="https://golang.org/ref/spec#Types">https://golang.org/ref/spec#Types</a></p>
+
+<p>Next article we will larn about variable in Go Language</p>
+]]></content:encoded>
+      <dc:date>2015-06-20T21:50:00+05:30</dc:date>
+    </item>
     <item>
       <title>Go Language For Java Developer Part-2</title>
       <link>http://kpbird.com/2015/06/Go-Language-For-Java-Developer-Part-2</link>
-      <description><![CDATA[This article series is designed in mind with Java Developer who would like to learn Go Language.]]></description>
+      <description><![CDATA[This article series is designed keeping in mind,The Java Developers who would like to learn Go Language.]]></description>
       <comments>http://kpbird.com/2015/06/Go-Language-For-Java-Developer-Part-2#disqus_thread</comments>
       <pubDate>Sat, 13 Jun 2015 21:50:00 +0530</pubDate>
       <guid>http://kpbird.com/2015/06/Go-Language-For-Java-Developer-Part-2</guid>
@@ -79,7 +350,7 @@ $./main
     <item>
       <title>Go Language For Java Developer Part-1</title>
       <link>http://kpbird.com/2015/06/Go-Language-For-Java-Developer-Part-1</link>
-      <description><![CDATA[This article series is designed in mind with Java Developer who would like to learn Go Language.]]></description>
+      <description><![CDATA[This article series is designed keeping in mind,The Java Developers who would like to learn Go Language.]]></description>
       <comments>http://kpbird.com/2015/06/Go-Language-For-Java-Developer-Part-1#disqus_thread</comments>
       <pubDate>Sat, 06 Jun 2015 05:30:00 +0530</pubDate>
       <guid>http://kpbird.com/2015/06/Go-Language-For-Java-Developer-Part-1</guid>
@@ -665,229 +936,6 @@ services-architecture-advantages</a></li>
 ]]></content:encoded>
       <dc:date>2014-11-22T21:50:00+05:30</dc:date>
     </item>
-    <item>
-      <title>Android Login with Google Plus Utility</title>
-      <link>http://kpbird.com/2014/11/android-login-with-google-plus-utility</link>
-      <description><![CDATA[Google Plus login & signup utility,]]></description>
-      <comments>http://kpbird.com/2014/11/android-login-with-google-plus-utility#disqus_thread</comments>
-      <pubDate>Thu, 06 Nov 2014 21:50:00 +0530</pubDate>
-      <guid>http://kpbird.com/2014/11/android-login-with-google-plus-utility</guid>
-      <content:encoded><![CDATA[<h1 id="android-login-with-google-plus-utility">Android Login with Google Plus Utility</h1>
-
-<p><img src="https://1.bp.blogspot.com/-SxTNj0uRwW8/VGSvrKm53mI/AAAAAAAAFPo/izmq8IUVyY4/s320/device-2014-11-13-161116.png" alt=""></p>
-
-<p><strong>Pre-requisite</strong></p>
-
-<p>Official Document: <a href="https://developers.google.com/+/mobile/android/sign-in">https://developers.google.com/+/mobile/android/sign-in</a></p>
-
-<p>Tutorial from AndroidHive : <a href="http://www.androidhive.info/2014/02/android-login-with-google-plus-account-1/">http://www.androidhive.info/2014/02/android-login-with-google-plus-account-1/</a></p>
-
-<p><strong>Note:</strong> Please read AndroidHive article for initial setup &amp; other process</p>
-
-<p><strong>Usage</strong></p>
-
-<p><strong>Step 1:</strong> Import &quot;GooglePlusLoginUtils.java&quot; class in your package</p>
-
-<p><strong>Step 2:</strong> Implement callback listener</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">public class LoginActivity extends Activity implements GooglePlusLoginUtils.GPlusLoginStatus
-</code></pre></div>
-<p><strong>Step 3:</strong> Declare callback method</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">    public void OnSuccessGPlusLogin(Bundle profile) {
- Log.i(TAG,profile.getString(GooglePlusLoginUtils.NAME));
- Log.i(TAG,profile.getString(GooglePlusLoginUtils.EMAIL));
- Log.i(TAG,profile.getString(GooglePlusLoginUtils.PHOTO));
- Log.i(TAG,profile.getString(GooglePlusLoginUtils.PROFILE));
-    }
-</code></pre></div>
-<p><strong>Step 4:</strong> Declare object of GooglePlusLoginUtils.java</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">private GooglePlusLoginUtils gLogin;
-</code></pre></div>
-<p><strong>Step 5:</strong> Initialize object in onCreate method</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text"> gLogin = new GooglePlusLoginUtils(this, R.id.activity_login_gplus); // Id of login button
-        gLogin.setLoginStatus(this);
-</code></pre></div>
-<p><strong>Step 6:</strong> Declare few supporting methods&nbsp;</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text"> @Override
- protected void onStart() {
-         super.onStart();
-         gLogin.connect();
- }
- @Override
- protected void onStop() {
-         super.onStop();
-         gLogin.disconnect();
- }
- @Override
- protected void onActivityResult(int requestCode, int responseCode,Intent intent) {
-                gLogin.onActivityResult(requestCode, responseCode, intent);
- }
-</code></pre></div>
-<p><strong>FAQ</strong></p>
-
-<p>Q: What is the problem of above approach ?</p>
-
-<p>A: You activity has a lot of scattered code for Google Pluse login, It will be more complex and unmanageable when you will have another social network login like Facebook and Twitter.</p>
-
-<p>Q: How I will receive a response for login success?</p>
-
-<p>A: You need to implement interface &quot;GPlusloginStatus&quot;, on successful login you will receive callback &quot;OnSuccessGPlusLogin&quot;</p>
-
-<p>Q: What will be received on login success ?</p>
-
-<p>A: You will have Display name, Email , Photo and Profile url.</p>
-
-<p>Q: Do I need to handle login failure / error ?</p>
-
-<p>A: No, GooglePlusLoginUtils.java will handle login failure, error and display appropriate message on screen. &nbsp;&nbsp;</p>
-
-<p>&nbsp; &nbsp;</p>
-]]></content:encoded>
-      <dc:date>2014-11-06T21:50:00+05:30</dc:date>
-    </item>
-    <item>
-      <title>Android 5.0 Lollipop API Change</title>
-      <link>http://kpbird.com/2014/10/android-50-lollipop-api-change</link>
-      <description><![CDATA[Android 5.0 Lollipop API change and Major Features]]></description>
-      <comments>http://kpbird.com/2014/10/android-50-lollipop-api-change#disqus_thread</comments>
-      <pubDate>Mon, 06 Oct 2014 21:50:00 +0530</pubDate>
-      <guid>http://kpbird.com/2014/10/android-50-lollipop-api-change</guid>
-      <content:encoded><![CDATA[<p><img src="/assets/images/posts/lollipop-1600.png" /></p>
-
-<p>src:&nbsp;<a href="http://www.android.com/new/images/banners/lollipop-1600.png">http://www.android.com/new/images/banners/lollipop-1600.png</a>  </p>
-
-<p><strong>Android 5.0 Lollipop Features</strong></p>
-
-<ul>
-<li>Material design</li>
-<li>Performance focus</li>
-<li>Notifications</li>
-<li>Your apps on the big screen - TV</li>
-<li>Document-centric apps</li>
-<li>Advanced connectivity</li>
-<li>High-performance graphics</li>
-<li>More Powerful Audio</li>
-<li>Enhanced Camera &amp; Video</li>
-<li>Screen capturing and sharing</li>
-<li>New types of sensors</li>
-<li>Chromium WebView</li>
-<li>Accessibility &amp; Input</li>
-<li>Tools for building battery-efficient apps</li>
-</ul>
-
-<table><thead>
-<tr>
-<th>Type</th>
-<th>Additions</th>
-<th>Changes</th>
-<th>Removals</th>
-<th>Total</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>Packages</td>
-<td>14</td>
-<td>57</td>
-<td>1</td>
-<td>72</td>
-</tr>
-<tr>
-<td>Classes and Interfaces</td>
-<td>147</td>
-<td>360</td>
-<td>0</td>
-<td>507</td>
-</tr>
-<tr>
-<td>Constructors</td>
-<td>98</td>
-<td>3</td>
-<td>1</td>
-<td>102</td>
-</tr>
-<tr>
-<td>Methods</td>
-<td>770</td>
-<td>117</td>
-<td>29</td>
-<td>916</td>
-</tr>
-<tr>
-<td>Fields</td>
-<td>1150</td>
-<td>75</td>
-<td>2</td>
-<td>1227</td>
-</tr>
-<tr>
-<td>Total</td>
-<td>2179</td>
-<td>612</td>
-<td>33</td>
-<td>2824</td>
-</tr>
-</tbody></table>
-
-<p>The overall difference between <strong>API Levels 20 and 21</strong> is approximately <strong>6.51%</strong>.</p>
-
-<p><strong>Android L Preview API Changes</strong>  </p>
-
-<table><thead>
-<tr>
-<th>Type</th>
-<th>Additions</th>
-<th>Changes</th>
-<th>Removals</th>
-<th>Total</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>Packages</td>
-<td>8</td>
-<td>43</td>
-<td>0</td>
-<td>51</td>
-</tr>
-<tr>
-<td>Classes and Interfaces</td>
-<td>87</td>
-<td>232</td>
-<td>0</td>
-<td>319</td>
-</tr>
-<tr>
-<td>Constructors</td>
-<td>84</td>
-<td>2</td>
-<td>0</td>
-<td>86</td>
-</tr>
-<tr>
-<td>Methods</td>
-<td>408</td>
-<td>69</td>
-<td>17</td>
-<td>494</td>
-</tr>
-<tr>
-<td>Fields</td>
-<td>754</td>
-<td>22</td>
-<td>1</td>
-<td>777</td>
-</tr>
-<tr>
-<td>Total</td>
-<td>1341</td>
-<td>368</td>
-<td>18</td>
-<td>1727</td>
-</tr>
-</tbody></table>
-
-<p>The overall difference between&nbsp;<strong>API Levels 20</strong>&nbsp;and L-preview is approximately&nbsp;<strong>3.77%.</strong></p>
-]]></content:encoded>
-      <dc:date>2014-10-06T21:50:00+05:30</dc:date>
-    </item>
-    <dc:date>2015-06-13T21:50:00+05:30</dc:date>
+    <dc:date>2015-06-21T21:50:00+05:30</dc:date>
   </channel>
 </rss>
