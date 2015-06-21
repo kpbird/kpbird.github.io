@@ -1,0 +1,893 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+  xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+  <channel>
+    <title>Ketan Parmar</title>
+    <link>http://kpbird.com</link>
+    <description>Ketan Parmar is a software developer, trainer, speaker.</description>
+    <pubDate>Sat, 13 Jun 2015 21:50:00 +0530</pubDate>
+    <item>
+      <title>Go Language For Java Developer Part-2</title>
+      <link>http://kpbird.com/2015/06/Go-Language-For-Java-Developer-Part-2</link>
+      <description><![CDATA[This article series is designed in mind with Java Developer who would like to learn Go Language.]]></description>
+      <comments>http://kpbird.com/2015/06/Go-Language-For-Java-Developer-Part-2#disqus_thread</comments>
+      <pubDate>Sat, 13 Jun 2015 21:50:00 +0530</pubDate>
+      <guid>http://kpbird.com/2015/06/Go-Language-For-Java-Developer-Part-2</guid>
+      <content:encoded><![CDATA[<p><img src="/assets/images/posts/golang.jpeg" alt="Go Language For Java Developer" title="Go Language For Java Developer" class="img-responsive"></p>
+
+<p>Normally first program you write in any programming language is &quot;Hello World&quot;. Hello World is simple program which print &quot;Hello Word&quot; text on console / screen.</p>
+
+<p><strong>Java: Hello World</strong></p>
+
+<p>As Java Developer you can easily understand following code. No need to explain. correct ? </p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">package com.kpbird.gotutorial; 
+public class Main {
+    public static void main(String[] args) {
+        System.out.println(&quot;Hello World&quot;);        
+    }
+}
+</code></pre></div>
+<p>To compile &amp; execute above code, you need to write following two commands in the Terminal. </p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">javac Main.java
+java Main
+</code></pre></div>
+<p><strong>Go: Hello World</strong></p>
+
+<p>Create directory where you need to keep the code. Create file named &quot;main.go&quot; and write following code</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">package main  // line 1
+import &quot;fmt&quot; // line 2
+func main() { // line 3
+    fmt.Println(&quot;Hello World&quot;) // line 4
+} // line 5
+</code></pre></div>
+<p>To execute above code, you need to write following command in the Terminal</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">go run main.go
+</code></pre></div>
+<p>You should see Hello World in terminal. If you don&#39;t see Hello World displayed then you may have mistake in typing program. The Go compiler will give you hint about where the mistake lies. </p>
+
+<p><strong>Understand Go : Hello Word program</strong></p>
+
+<p><strong>1. Package Name (Line 1):</strong> Go program start with package declaration. Every Go program must start with package declaration. Package declaration is used to organise source code. In Java we follow relative path but with &quot;.&quot; (dot) format like com.kpbird.gotutorial represent physical path com/kpbird/gotutorial. While in Go language package name represent only current folder name &quot;gotutorial&quot;. Go language support two type of program 1. Go Libraries 2. Go Executable. Package main is a way to tell compiler that this Go program is executable. When you declare &quot;package main&quot; you don&#39;t need to create folder / directory called &quot;main&quot;. </p>
+
+<p><strong>2. Import (Line 2):</strong>  import keyword is used to include code from other package or library. The &quot;fmt&quot; package is short form of Format. It is used to format input and output. In Java, we don&#39;t need to write java.lang package explicitly compiler will do it behalf of us.  </p>
+
+<p><strong>3. fund main() (Line 3):</strong> Functions are building block of Go language. All functions start with keywords &quot;func&quot;. func followed by name of function in our case &quot;main&quot; is the name of function. If function takes any argument we need to write in parentheses. Main is special function because main gets called when we execute Go program. It&#39;s like public static void main() in Java.</p>
+
+<p><strong>4. fmt.Println (Line 4):</strong> Line 4 has three component 1. fmt package name. 2. Println function name 3. String argument &quot;Hello World&quot;. In Java, we use System.out.println().</p>
+
+<p><strong>Java vs Go</strong></p>
+
+<p>We should not compare both languages because both are different. Go Language is functional features language in which functions are first-class citizen. Java Language is Object Oriented language in which Class / Object are first-class citizen.</p>
+
+<p>To execute Java program, first we need to compile using &quot;javac&quot; command, after that we need to use &quot;java&quot; command execute a program. </p>
+
+<p>To execute Go program, we just need to write Go run main.go. Single command will compile and execute program. To build program Go language has command build. It will generate native executable file as per the platform, that you can directly execute. </p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$Go build main.go
+$./main
+</code></pre></div>
+<p>In Go Language don&#39;t have semi-colon (;) to end the statement. It means that you can&#39;t write two statement in single line.</p>
+
+<p>In Java Language, As we have semi-colon (;) to end the statement we can write entire code in single line.</p>
+
+<p>Next article we will learn about data types in Go Language.</p>
+]]></content:encoded>
+      <dc:date>2015-06-13T21:50:00+05:30</dc:date>
+    </item>
+    <item>
+      <title>Go Language For Java Developer Part-1</title>
+      <link>http://kpbird.com/2015/06/Go-Language-For-Java-Developer-Part-1</link>
+      <description><![CDATA[This article series is designed in mind with Java Developer who would like to learn Go Language.]]></description>
+      <comments>http://kpbird.com/2015/06/Go-Language-For-Java-Developer-Part-1#disqus_thread</comments>
+      <pubDate>Sat, 06 Jun 2015 05:30:00 +0530</pubDate>
+      <guid>http://kpbird.com/2015/06/Go-Language-For-Java-Developer-Part-1</guid>
+      <content:encoded><![CDATA[<p><img src="/assets/images/posts/golang.jpeg" alt="Go Language For Java Developer" title="Go Language For Java Developer" class="img-responsive"></p>
+
+<p>Go language is normally known as golang. It&#39;s general purpose programming language developed at Google in 2007 by three Google employees namely Robert Griesemer, Rob Pike, and Ken Thompson. In November 2008 Google had announced Go Language to public and made it <a href="https://go.googlesource.com/go">open source</a>.</p>
+
+<p>Go language compiler is available for the Linux, Mac OS X, FreeBSD, NetBSD, OpenBSD, Plan 9, and Microsoft Windows operating systems and the i386, amd64, ARM and IBM POWER processor architectures.</p>
+
+<p>Beginner Go language developer should visit following links.</p>
+
+<ol>
+<li><a href="https://golang.org/">Go Language</a></li>
+<li><a href="https://go.googlesource.com/go">Go Language Source</a></li>
+<li><a href="https://golang.org/doc/faq#What_is_the_purpose_of_the_project">Go Language FAQ</a></li>
+<li><a href="https://plus.google.com/communities/114112804251407510571">Go Google+ Community</a></li>
+<li><a href="http://go-lang.cat-v.org/">Go Language Resource</a></li>
+<li><a href="http://www.golangpatterns.info/">Go Language Patterns</a></li>
+<li><a href="http://golangweekly.com/">Go Newsletter</a></li>
+<li><a href="http://yager.io/programming/go.html">Why Go is not good?</a> </li>
+</ol>
+
+<p>As you are reading this article, It means I can assume that you know about Go Language and it&#39;s advantage and shortcoming. As the title suggest it&#39;s for Java developers, so I can also assume that you have knowledge of core Java. </p>
+
+<p><strong>Install Go Language</strong></p>
+
+<ol>
+<li>Download installer binary / package / installer as per your OS </li>
+<li><a href="https://golang.org/dl/">https://golang.org/dl/</a></li>
+<li>Current version is go 1.4.2</li>
+<li>Run package to install Go language</li>
+<li>After setup completes, you need to set environment variable to go language</li>
+<li><p>In case of OX, Add /usr/local/go/bin to the PATH environment variable. You can do this by    adding this line to your /etc/profile (for a system-wide installation) or   $HOME/.bash_profile:</p>
+
+<p>export PATH=$PATH:/usr/local/go/bin</p></li>
+<li><p>To verify installation, you can execute following command</p>
+
+<p>$go version
+go version go1.4.2 darwin/amd64</p></li>
+</ol>
+
+<p><strong>Go Language IDE</strong>
+Officially, Go Language don&#39;t have any IDE but there are many open source 3rd party IDEs / Plugins are available. If you are familiar with IntelliJ or Eclipse then you can install plug-in for Go Language. For more details, please visit following link
+<a href="http://geekmonkey.org/articles/20-comparison-of-ides-for-google-go">http://geekmonkey.org/articles/20-comparison-of-ides-for-google-go</a>    </p>
+
+<p>Now, you have enough details to jump start coding. In next article I will cover fundamentals and syntax of Go Language.</p>
+]]></content:encoded>
+      <dc:date>2015-06-06T05:30:00+05:30</dc:date>
+    </item>
+    <item>
+      <title>Android M API Changes</title>
+      <link>http://kpbird.com/2015/06/Android-M-Preview-API-Changes</link>
+      <description><![CDATA[Android M Preview, API changes and features.]]></description>
+      <comments>http://kpbird.com/2015/06/Android-M-Preview-API-Changes#disqus_thread</comments>
+      <pubDate>Sat, 06 Jun 2015 05:30:00 +0530</pubDate>
+      <guid>http://kpbird.com/2015/06/Android-M-Preview-API-Changes</guid>
+      <content:encoded><![CDATA[<p><img src="/assets/images/posts/androidm.png" alt="Android M API Changes" title="Andoid M API Changes" class="img-responsive"></p>
+
+<p>Andorid M Preview Features</p>
+
+<ul>
+<li>App Linking</li>
+<li>Auto Backup for Apps</li>
+<li>Authentication</li>
+<li>Fingerprint Authentication</li>
+<li>Direct Share</li>
+<li>Voice Interactions</li>
+<li>Assist API</li>
+<li>Notifications</li>
+<li>Bluetooth Stylus Support</li>
+<li>Improved Bluetooth Low Energy Scanning</li>
+<li>Hotspot 2.0 Release 1 Support</li>
+<li>4K Display Mode</li>
+<li>Themeable ColorStateLists</li>
+<li>Audio Features</li>
+<li>Video Features</li>
+<li>Camera Features</li>
+<li>Flashlight API</li>
+<li>Reprocessing API</li>
+<li>Android for Work Features</li>
+</ul>
+
+<p>The overall difference between API Levels 22 and mnc-preview-1 is approximately <strong>11.82%.</strong> </p>
+
+<table>
+<tbody><tr>
+  <th>Type</th>
+  <th align="center"><b>Additions</b></th>
+  <th align="center"><b>Changes</b></th>
+  <th align="center">Removals</th>
+  <th align="center"><b>Total</b></th>
+</tr>
+<tr>
+  <td>Packages</td>
+  <td align="right">4</td>
+  <td align="right">52</td>
+  <td align="right">28</td>
+  <td align="right">84</td>
+</tr>
+<tr>
+  <td>Classes and <i>Interfaces</i></td>
+  <td align="right">121</td>
+  <td align="right">236</td>
+  <td align="right">27</td>
+  <td align="right">384</td>
+</tr>
+<tr>
+  <td>Constructors</td>
+  <td align="right">3</td>
+  <td align="right">0</td>
+  <td align="right">2</td>
+  <td align="right">5</td>
+</tr>
+<tr>
+  <td>Methods</td>
+  <td align="right">510</td>
+  <td align="right">123</td>
+  <td align="right">28</td>
+  <td align="right">661</td>
+</tr>
+<tr>
+  <td>Fields</td>
+  <td align="right">403</td>
+  <td align="right">81</td>
+  <td align="right">39</td>
+  <td align="right">523</td>
+</tr>
+<tr>
+  <td style="background-color:#FAFAFA"><b>Total</b></td>
+  <td style="background-color:#FAFAFA" align="right"><strong>1041</strong></td>
+  <td style="background-color:#FAFAFA" align="right"><strong>492</strong></td>
+  <td style="background-color:#FAFAFA" align="right"><strong>124</strong></td>
+  <td style="background-color:#FAFAFA" align="right"><strong>1657</strong></td>
+</tr>
+</tbody>
+</table>
+
+<p>Reference: <a href="http://developer.android.com/preview/index.html">http://developer.android.com/preview/index.html</a></p>
+]]></content:encoded>
+      <dc:date>2015-06-06T05:30:00+05:30</dc:date>
+    </item>
+    <item>
+      <title>Android Simple SyncAdapter</title>
+      <link>http://kpbird.com/2015/04/Android-Simple-SyncAdapter-Example</link>
+      <description><![CDATA[SyncAdapter is standard and preferred way to sync application data with server, cloud or MBaaS backend. SyncAdapter is the most efficient way to make your application update to date. It will help you to present fresh data when user open application. You can increase user experience by not making wait to user till you call web service and fetch the data. Almost all popular android application use SyncAdapter, you check from Setting -> Account, you will find accounts i.e. google, twitter, facebook, etc.. It means these application use SyncAdapter.]]></description>
+      <comments>http://kpbird.com/2015/04/Android-Simple-SyncAdapter-Example#disqus_thread</comments>
+      <pubDate>Sun, 26 Apr 2015 21:50:00 +0530</pubDate>
+      <guid>http://kpbird.com/2015/04/Android-Simple-SyncAdapter-Example</guid>
+      <content:encoded><![CDATA[<p><a href="/assets/images/posts/SyncAdapter_large.png" target="_blank">
+<img src="/assets/images/posts/SyncAdapter_small.png" alt="Android SyncAdapter" title="Android SyncAdapter" class="img-responsive"></a></p>
+
+<p>SyncAdapter is standard and preferred way to sync application data with server, cloud or MBaaS backend. SyncAdapter is the most efficient way to make your application update to date. It will help you to present fresh data when user open application. You can increase user experience by not making wait to user till you call web service and fetch the data. Almost all popular android application use SyncAdapter, you check from Setting -&gt; Account, you will find accounts i.e. google, twitter, facebook, etc.. It means these application use SyncAdapter.</p>
+
+<p><strong>Why SyncAdapter?</strong></p>
+
+<p>As Lazy developer you might think why should I put an effort to write SyncAdapter. SyncAdapter is complex!!, I can directly make network call when required, and more... </p>
+
+<p>Let’s compare custom sync with SyncAdapter</p>
+
+<table><thead>
+<tr>
+<th>Custom Sync</th>
+<th>Sync Adapter</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Network Availability - manually</td>
+<td>Network Availability - Automatically</td>
+</tr>
+<tr>
+<td>Pending Queue - manually</td>
+<td>Pending Queue - Automatically</td>
+</tr>
+<tr>
+<td>Refresh on Network - manually</td>
+<td>Refresh on Network - Automatically</td>
+</tr>
+<tr>
+<td>Periodic Update - manually</td>
+<td>Periodic Update - Automatically</td>
+</tr>
+<tr>
+<td>Sync Setting - manually</td>
+<td>Sync Setting - Automatically</td>
+</tr>
+<tr>
+<td>Network Bandwidth - manually</td>
+<td>Network Bandwidth - Automatically</td>
+</tr>
+<tr>
+<td>Battery Efficient - ?? Depend on you</td>
+<td>Battery Efficient - Yes</td>
+</tr>
+<tr>
+<td>And many more</td>
+<td>And many more</td>
+</tr>
+</tbody></table>
+
+<p>I hope above table is sufficient to convince to create sync adapter demo. </p>
+
+<p><strong>Concepts</strong></p>
+
+<p>Concepts are very important to read before jump to the demo. Many developer don’t read API document or understand concept and directly start sample and try to learn from it but I suggest to read concept first before open your IDE and read the code. SyncAdapter has mainly two section 1. Account management 2. Sync Adapter. If your app requires user credentials or server login, you can optionally integrate account management and authentication into your data transfer.</p>
+
+<p>SyncAdapter has following sections.</p>
+
+<ol>
+<li><strong>Sqlite Database:</strong> I guess you all are master of Sqlite database, SyncAdapter will store data in Sqlite using Content Provider. You may choose other options as well. </li>
+<li><strong>Content Provider:</strong>  Act as bridge between your database and SyncAdapter. To expose your data in Rest like URL pattern.</li>
+<li><strong>AbstractAccountAuthenticator:</strong> As developer we need to extend this class and override methods, It is primarily used to manage authentication and account management. To use SyncAdapter you must have custom account. This class is responsible to create account, maintain auth token and various things related to authentication.</li>
+<li><strong>Authenticator Service:</strong> This is normal Service, which we are using daily. The only difference is that this service create object of AbstractAccountAuthenticator class and bind.</li>
+<li><strong>AbstractThreadedSyncAdapter:</strong> As developer we need to extend this class and override methods. . This is the main piece of SyncAdapter puzzle. It has method onPerformSync, in which we need to write our code.<br></li>
+<li><strong>Sync Service:</strong> This is normal Service. It use to create object of AbstractThreadedSyncAdapter class and bind.</li>
+<li><strong>Authenticator.xml:</strong> You need to create this file under res/xml/ folder. This file is required to bind your authenticator component into the sync adapter and account frameworks, you need to provide these framework with metadata that describes the component. You can choose your own file name. </li>
+<li><strong>SyncAdapter.xml:</strong> You need to create this file under res/xml/ folder.  The metadata specifies the account type you&#39;ve created for your sync adapter, declares a content provider authority associated with your app.</li>
+<li><strong>AndroidManifast.xml:</strong> You must register Sync Service, Authenticator service and few other things in AndroidManifast file in order to work SyncAdapter, This is the final piece of puzzle.</li>
+</ol>
+
+<p><strong>Diagram</strong></p>
+
+<p>Following diagram depicted relationship between all different components of Sync Adapter. Account Manager and Sync Manager are provided by Android OS, except these two thing everything else you need to implement.
+<a href="/assets/images/posts/SyncAdapter_large.png" target="_blank">
+<img src="/assets/images/posts/SyncAdapter_small.png" alt="Android SyncAdapter" title="Android SyncAdapter" class="img-responsive"></a></p>
+
+<p><strong>Coding - Let’s jump to the code</strong></p>
+
+<p>I am taking simple example ToDo list sync with Parse.com (Parse is BaaS service, If you want to know more about BaaS or MBaaS Service, please refer this article). </p>
+
+<p>You will find many sync adapter example with “AccountAuthenticatorActivity”, In this situation you need to develop your login screen by extending “AccountAuthenticatorActivity”, but this might not be case in every project. In few situation you might want to use sync adapter without login / registration. In this demo I will explain how to create ToDo list with Parse.com as backend and without login / registration. </p>
+
+<p>When user start application, It will fetch primary Gmail account and create Parse User through coding. For simplicity I will sync ToDo list only single direction, from Parse.com to local, you can have bi-directional sync based on need. </p>
+
+<p><strong>Steps</strong></p>
+
+<ol>
+<li>Open Android Studio</li>
+<li>Create Project Name “SimpleSyncAdapter”
+
+<ul>
+<li>Minimum SDK: 4.0</li>
+<li>Package Name: com.kpbird.simplesyncadapter</li>
+</ul></li>
+<li>Create Blank Activity</li>
+<li>Download Parse Android SDK (<a href="https://parse.com/docs/downloads">https://parse.com/docs/downloads</a>), Copy Parse.jar in lib folder and click “Sync Project with Gradle File” button in toolbar.</li>
+<li>We will create following files</li>
+</ol>
+
+<table>
+  <tr>
+    <th>Sr</th>
+    <th>File</th>
+    <th>Purpose</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>SimpleAuthenticator.java</td>
+    <td>This class will hold authentication related information</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>SimpleAuthenticatorService.java</td>
+    <td>This class will provide object of SimpleAuthenticator class </td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>SimpleContentProvider.java</td>
+    <td>This class is responsible for database operation</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>SimpleInit.java</td>
+    <td>This will initialize Parse library and fetch default Gmail account</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>SimpleSyncAdapter.java</td>
+    <td>This class ir responsible for Sync, Android OS will call onPerformSync method, we need to write our sync code in onPerformSync method.</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>SimpleSyncAdapterService.java</td>
+    <td>This will provide object of SimpleSyncAdapter to the sync framework</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>SyncConstants.java</td>
+    <td>This will hold all required constants</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>SyncUtil.java</td>
+    <td>This will have common methods </td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>authenticator.xml</td>
+    <td>Meta information of Authentication</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>sync_adapter.xml</td>
+    <td>Meta information of Sync Adapter</td>
+  </tr>
+</table>
+
+<p><strong>Note:</strong> Please update Parse.com API key before execute sample</p>
+
+<h3 id="https://github.com/kpbird/simplesyncadapter"><strong><a href="https://github.com/kpbird/SimpleSyncAdapter">https://github.com/kpbird/SimpleSyncAdapter</a></strong></h3>
+
+<p><strong>Reference</strong></p>
+
+<ol>
+<li><p><a href="http://developer.android.com/training/sync-adapters/creating-sync-adapter.html">http://developer.android.com/training/sync-adapters/creating-sync-adapter.html</a></p></li>
+<li><p><a href="http://udinic.wordpress.com/2013/07/24/write-your-own-android-sync-adapter/">http://udinic.wordpress.com/2013/07/24/write-your-own-android-sync-adapter/</a></p></li>
+<li><p><a href="http://chariotsolutions.com/blog/post/android-data-sync/">http://chariotsolutions.com/blog/post/android-data-sync/</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=5onKZcJyJwI">https://www.youtube.com/watch?v=5onKZcJyJwI</a></p></li>
+</ol>
+]]></content:encoded>
+      <dc:date>2015-04-26T21:50:00+05:30</dc:date>
+    </item>
+    <item>
+      <title>How Smart Watch can change your life</title>
+      <link>http://kpbird.com/2014/12/How-Smart-Watch-can-change-your-life%20copy</link>
+      <description><![CDATA[A smartwatch (or smart watch) is a computerized wristwatch with functionality that is enhanced beyond timekeeping, and is often comparable to a personal digital assistant (PDA) device" - Wikipedia]]></description>
+      <comments>http://kpbird.com/2014/12/How-Smart-Watch-can-change-your-life%20copy#disqus_thread</comments>
+      <pubDate>Thu, 04 Dec 2014 21:50:00 +0530</pubDate>
+      <guid>http://kpbird.com/2014/12/How-Smart-Watch-can-change-your-life%20copy</guid>
+      <content:encoded><![CDATA[<p><img src="/assets/images/posts/05be48e.jpg" alt="Smart Watch" title="Smart Watch" class="img-responsive"></p>
+
+<p>_&quot;A smartwatch (or smart watch) is a computerized wristwatch with functionality that is enhanced beyond timekeeping, and is often comparable to a personal digital assistant (PDA) device&quot; - _Wikipedia</p>
+
+<p>Avi Greengart, a consumer device analyst, predicted that 2013 may be &quot;the year of Smart watch&quot;. This prediction turned out to be true as majority of smart phone manufacturer are focusing on smart watch and wearable. Many of them have already released smart watch and others have near future release plans. It is forecasted that 350 million smart watches will ship by 2020<a href="https://media.licdn.com/mpr/mpr/shrinknp_500_500/p/4/005/09f/13c/35409df.png">1</a>.</p>
+
+<p><img src="https://media.licdn.com/mpr/mpr/shrinknp_500_500/p/4/005/09f/13c/35409df.png" alt=""></p>
+
+<p>Smart watch shipments 2013-2020 (in millions)</p>
+
+<p>There are numerous day-to-day use cases that can be made simple yet secure with usage of smart watch. Let&#39;s have quick look, how smart watch can make your life easy.</p>
+
+<ol>
+<li><strong>Smart Watch as ID card:</strong> Do you forget to carry ID card every morning? NFC based smart watch can work as your ID card. Enterprise can do away with hassle of issuing separate ID card to employees having smart watch.</li>
+<li><strong>Smart Watch as Wallet:</strong> Do you feel your wallet is bulky with credit cards and other useless stuff? Smart watch can replace your need to carry credit cards. Smart Watch and &quot;Card on File&quot; concept can replace need of carrying plastic card in your wallet.</li>
+<li><strong>Smart Watch as Health monitor:</strong> Are you a health geek? Or having health issue which requires continuous monitoring? A smart watch with sensors like Heart Rate, Body Temperature, Accelerometer, etc., will collect your health data and upload to cloud for 24x7 care.</li>
+<li><strong>Smart Watch as Remote control</strong>: Are you confused with different remotes for different systems like home garage door, television, Set Top Box etc.? Smart Watch with Bluetooth can work as remote for your garage, television etc.</li>
+<li><strong>Smart Watch as Security Token:</strong> Do you need to carry RSA Token to access highly secure software or physical location (like Server Room). Smart watch can work as RSA token, it can generate software RSA key. Or it can add 3rd factor of authentication.</li>
+<li><strong>Smart Watch as SOS Device:</strong> Smart watch knows when you could be in danger and sends for help. Smart watch contains a gyroscope and an accelerometer, that detect physical activity or aggressive movements, and mobile app send SMS and email to configured emergency contacts with your current location.</li>
+<li><strong>Smart Watch as Notification/Reminder Device:</strong> This is prime feature of smart watch as of now. It will display different notification from smart phone and allow quick action. With smart watch you will never miss important things like breaking news, flight alerts, meeting calls, reminders, weather alerts.</li>
+</ol>
+
+<p>Smart Watch will change our life in many ways. It can become your identity for office access, wallet for payment, car door keys and much more…Vision is smart watch will replace your need of carrying disparate accessibility tokens including a smart phone.</p>
+
+<p><strong>Reference:</strong></p>
+
+<p>[1] <a href="http://www.forbes.com/sites/michaelwolf/2013/09/27/smartwatch-market-forecast-to-reach-15-million-in-2014/">http://www.forbes.com/sites/michaelwolf/2013/09/27/smartwatch-market-forecast-to-reach-15-million-in-2014/</a></p>
+]]></content:encoded>
+      <dc:date>2014-12-04T21:50:00+05:30</dc:date>
+    </item>
+    <item>
+      <title>Wearable technology to monitor Parkinson’s disease</title>
+      <link>http://kpbird.com/2014/12/Wearable-technology-to-monitor-Parkinson%E2%80%99s-disease</link>
+      <description><![CDATA[What is parkinson's disease, how smart watch and warable device help doctors and patients...]]></description>
+      <comments>http://kpbird.com/2014/12/Wearable-technology-to-monitor-Parkinson%E2%80%99s-disease#disqus_thread</comments>
+      <pubDate>Mon, 01 Dec 2014 21:50:00 +0530</pubDate>
+      <guid>http://kpbird.com/2014/12/Wearable-technology-to-monitor-Parkinson%E2%80%99s-disease</guid>
+      <content:encoded><![CDATA[<p><img src="/assets/images/posts/3504283.jpg" alt="Wearable technology to monitor Parkinson’s disease" class="img-responsive"></p>
+
+<p><strong>Introduction</strong></p>
+
+<p>Parkinson&#39;s disease is a degenerative disorder of central nervous system. It&#39;s more common in older people after the age of 60. It is sometime call idiopathic because it has not external identifiable cause. The early symptoms of disease are shaking, difficulty with walking, rigidity, bradykinesia (slowness of movements), postural instability, freezing and loss a sense of smell. In later stage when disease increase, patient may have behavior and thinking issues. According to the National Parkinson’s Foundation survey in 2010 [1], nearly 1 million people in the U.S. are living with Parkinson’s disease, with between 50,000 and 60,000 new cases diagnosed each year. Medication costs for an individual person with Parkinson&#39;s disease average $2,500 a year [2].</p>
+
+<p><strong>Problem</strong></p>
+
+<p>There is not biological markers to diagnose Parkinson’s disease. Researchers are working hard to identify the cause of disease.</p>
+
+<p>The physicians are use following techniques for diagnosis.</p>
+
+<ol>
+<li>The doctor tries to observe if patient’s expression is animated.</li>
+<li>Patient’s arms are observed for tremor, which is present either when they are at rest, or extended.</li>
+<li>Is there stiffness in patient’s limbs or neck?</li>
+<li>Can patient rise from a chair easily?</li>
+<li>Do patient walk normally or with short steps, and symmetrically swing their arms? The doctor will pull patient backwards.</li>
+<li>How quickly can patient regain his/her balance?</li>
+</ol>
+
+<p>Above techniques are traditional and subjective, the result may vary as per doctor&#39;s observation. These techniques have not changed since Dr. James Parkinson suggested before 200 years (1817). There is no cure for Parkinson’s, but the drug levadopa and other medications can control symptoms for years together. In addition to above techniques physician suggest a patient to undergo PET Scan, CT Scan and MRI to check other effects on body. Accurate and objective diagnosis is primary challenge for physician.</p>
+
+<p><strong>Solution</strong></p>
+
+<p>The primary symptoms of Parkinson&#39;s disease is Moto symptoms - Shaking or tremor and walking difficulty. Latest technical innovation in sensors and wearable has potential to transform current practice of observing &amp; capturing effect of Moto symptoms on patients. With the wearable device monitoring, symptoms can be measured objectively. For instance, a patient might inform the doctor that he felt tremor for several minutes, whereas actual duration would have been few seconds. With these wearable device doctors can get precise measurements about the &quot;frequency and severity&quot; of symptoms.</p>
+
+<p>There are multifold benefits of using wearable to monitor patients.</p>
+
+<ol>
+<li>Automatically capture data without any effort made by patient.
+Real-time analysis.</li>
+<li>Data will be store in cloud to provide accessibility anywhere, anytime.</li>
+<li>Doctors can diagnosis multiple patient at a same time with cloud based system.</li>
+<li>Patient need not visit doctor for routine observation.</li>
+<li>Data will be helpful for research.</li>
+<li>Data will be used to monitor effect of new drug.</li>
+<li>Data will be used for progression of disease and behavior pattern.</li>
+</ol>
+
+<p><strong>Conclusion</strong></p>
+
+<p>Wearable has potential to revolutionize diagnosis technique for Parkinson&#39;s disease. Using wearable technology, researchers can actually monitor and measurable Moto symptoms. It will help to find new drugs, can save thousands of dollars and most importantly researchers will find cause and treatment of Parkinson&#39;s disease to save patient&#39;s life.</p>
+
+<p><strong>Reference</strong></p>
+
+<p>[1] <a href="http://www.webmd.com/parkinsons-disease/news/20101004/parkinsons-later-diagnosis-earlier-death">http://www.webmd.com/parkinsons-disease/news/20101004/parkinsons-later-diagnosis-earlier-death</a></p>
+
+<p>[2] <a href="http://www.pdf.org/en/parkinson_statistics">http://www.pdf.org/en/parkinson_statistics</a></p>
+]]></content:encoded>
+      <dc:date>2014-12-01T21:50:00+05:30</dc:date>
+    </item>
+    <item>
+      <title>Monolithic vs MicroService Architecture</title>
+      <link>http://kpbird.com/2014/11/Monolithic-vs-MicroService-Architecture</link>
+      <description><![CDATA[This is how industry move from monilighic to microservice...]]></description>
+      <comments>http://kpbird.com/2014/11/Monolithic-vs-MicroService-Architecture#disqus_thread</comments>
+      <pubDate>Fri, 28 Nov 2014 21:50:00 +0530</pubDate>
+      <guid>http://kpbird.com/2014/11/Monolithic-vs-MicroService-Architecture</guid>
+      <content:encoded><![CDATA[<p><img src="/assets/images/posts/007ac2e.png" alt="Monolithic vs MicroService Architecture" class="img-responsive"></p>
+
+<p><em>Monolithic architecture is something that build from single piece of material, historically from rock. Monolith term normally use for object made from single large piece of material.”</em> - <strong>Non-Technical Definition</strong></p>
+
+<p><em>“Monolithic application has single code base with multiple modules. Modules are divided as either for business features or technical features. It has single build system which build entire application and/or dependency. It also has single executable or deployable binary”</em> – <strong>Technical Definition</strong></p>
+
+<p>Industry is using this approach since long to develop enterprise application. Many companies have invested years to build enterprise application with monolithic approach. Sometime it also called multi-tier architecture because monolithic applications are divided in three or more layers or tire i.e. presentation, business, database, application, etc. It was a time of browser evaluation. Enterprise was focused on desktop/laptop devices with Web Browser as client, which doesn&#39;t require to expose data with API, mainly because browsers can understand only HTML, CSS and JavaScript. Although, Enterprise was using Enterprise Data Bus(EDB), Electronic Data Interchange(EDI) , Enterprise Data Exchange (EDX) and many more (<a href="http://www.oasis-open.org/standards">https://www.oasis-open.org/standards</a>) data exchange format to interact with each other in back-end. Monolithic architecture need of enterprises&#39; at that time.</p>
+
+<p>Suddenly, entire paradigm shift from browser / desktop to mobile / smart devices. Enterprise need to serve data to different devices and form factors (smart phone, tablet, handheld, etc). Smart phone become always available, always on and personal device for everyone, which demand information anytime, anywhere, on fingertip. Mobile application is nearly useless without internet connectivity and backend services. Now is a time for mobile first, every enterprises are looking forward to develop mobile application before web. To developer mobile application enterprise need to expose data using API (REST or SOAP) because legacy data exchange format was not compatible with mobile application. With increasing demand of mobile application force to change back-end architecture. This is prime force behind migrating monolithic architecture to microservice architecture.</p>
+
+<p>Microservice architecture is an approach of building large enterprise application with multiple small unit called service, each service develop, deploy and test individually. Each service intercommunicate with a common communication protocol like REST web service with JSON. Each service run individually either in single machine or different machine but they execute its own separate process. Each service may have own database or storage system or they can share common database or storage system. Microservice is all about distribute or break application in small chunks.</p>
+
+<p>Microservice is more than code and structure. It’s way of working. Its culture in a way, every developer or team own some part of large application. Microservice is not ultimate solution for every application but it’s surely solution for large enterprise application. Microservice has some shortfalls like increase lot of operations overhead, DevOps skills required, complex to manage because of distributed system, bug tracking become challenging.</p>
+
+<p><strong>Difficulties with monolithic application, when it grow</strong></p>
+
+<ul>
+<li>Large monolithic code base makes complicated to understand, especially for new developer</li>
+<li>Scaling become challenging</li>
+<li>Continuously integration / deployment become complex and time consuming. You may require dedicated team for build and deploy</li>
+<li>Overloaded IDE, Large code base makes IDE slow, build time increase.</li>
+<li>Extremely difficult to change technology or language or framework because everything is tightly coupled and depend up on each other.</li>
+</ul>
+
+<p><strong>Privilege with Microservice architecture, when it grow</strong></p>
+
+<ul>
+<li>Each microservice is small and focused on a specific feature / business requirement.</li>
+<li>Microservice can be developed independently by small team of developers (normally 2 to 5 developers).</li>
+<li>Microservice is loosely coupled, means services are independent, in terms of development and deployment both.</li>
+<li>Microservice can be developed using different programming language (Personally I don&#39;t suggest to do it).</li>
+<li>Microservice allows easy and flexible way to integrate automatic deployment with Continuous Integration tools (for e.g: Jenkins, Hudson, bamboo etc..).
+The productivity of a new team member will be quick enough.</li>
+<li>Microservice allows you to take advantage of emerging and latest technologies (framework, programming language, programming practice, etc.).</li>
+<li>Microservice is easy to scale based on demand.
+In a nutshell, monolithic vs microservice architecture is like elephant vs ant approach. What you wants to build a giant system like elephant or army of ant, small, fast and effective.</li>
+</ul>
+
+<p><strong>People to follow</strong></p>
+
+<ul>
+<li>Martin Fowler <a href="http://twitter.com/@martinfowler">@martinfowler</a></li>
+<li>Victor Klang <a href="http://twitter.com/@viktorklang">@viktorklang</a></li>
+<li>Jeppe Cramon <a href="http://twitter.com/@jeppec">@jeppec</a></li>
+<li>Benjamin Wootton <a href="http://twitter.com/@benjaminwootton">@benjaminwootton</a></li>
+<li>Russ Miles <a href="http://twitter.com/@russmiles">@russmiles</a></li>
+</ul>
+
+<p><strong>Article &amp; Presentation</strong></p>
+
+<ul>
+<li><a href="http://martinfowler.com/articles/microservices.html">http://martinfowler.com/articles/microservices.html</a></li>
+<li><a href="http://yow.eventer.com/yow-2012-1012/micro-services-architecture-by-fred-george-1286">http://yow.eventer.com/yow-2012-1012/micro-services-architecture-by-fred-george-1286</a></li>
+<li><a href="http://www.infoq.com/presentations/Breaking-the-Monolith">http://www.infoq.com/presentations/Breaking-the-Monolith</a></li>
+<li><a href="http://www.linkedin.com/today/post/article/20140529022253-6461201-seven-micro-%0Aservices-architecture-advantages">https://www.linkedin.com/today/post/article/20140529022253-6461201-seven-micro-
+services-architecture-advantages</a></li>
+</ul>
+
+<p><strong>Case Studies</strong></p>
+
+<ul>
+<li>Build Microservices at Krma <a href="http://blog.yourkarma.com/building-microservices-at-karma">https://blog.yourkarma.com/building-microservices-at-karma</a></li>
+<li>Migrating to Microservice <a href="http://www.infoq.com/presentations/migration-cloud-native">http://www.infoq.com/presentations/migration-cloud-native</a></li>
+</ul>
+
+<p><strong>Event</strong></p>
+
+<ul>
+<li>µCon: The Microservices Conference : <a href="http://killsmatter.com/conferences/6312-mucon">https://skillsmatter.com/conferences/6312-mucon</a></li>
+</ul>
+]]></content:encoded>
+      <dc:date>2014-11-28T21:50:00+05:30</dc:date>
+    </item>
+    <item>
+      <title>Android Login with Facebook</title>
+      <link>http://kpbird.com/2014/11/android-login-with-facebook</link>
+      <description><![CDATA[Accessing segment tags might not be something you have to do everyday but there might be some scenarios where you need to manipulate the tags of your segments. This can be done using Studio File Type Framework which is part of the Studio SDK. The documentation is providing an overview of the entire framework and also includes high level overview of what I'm going to discuss in this article."]]></description>
+      <comments>http://kpbird.com/2014/11/android-login-with-facebook#disqus_thread</comments>
+      <pubDate>Sat, 22 Nov 2014 21:50:00 +0530</pubDate>
+      <guid>http://kpbird.com/2014/11/android-login-with-facebook</guid>
+      <content:encoded><![CDATA[<p><img src="http://1.bp.blogspot.com/-iCx0todkMGM/VHBoCFbte1I/AAAAAAAAFQk/kwWnGCSH0zM/s400/device-2014-11-22-154940.png" alt=""><img src="http://2.bp.blogspot.com/-4i7paQCAuI8/VHBoBI8q9OI/AAAAAAAAFQY/4iYGAbS4ncw/s400/device-2014-11-22-155020.png" alt=""></p>
+
+<p><img src="http://3.bp.blogspot.com/-K9IoL8Kubeo/VHBoAuZ00qI/AAAAAAAAFQU/JV4_06ckPGM/s400/Screen%2BShot%2B2014-11-22%2Bat%2B3.50.35%2Bpm.png" alt=""></p>
+
+<p><strong>Pre-requisite</strong></p>
+
+<p>2. Facebook API Key from Facebook Application - <a href="https://developers.facebook.com/docs/android/getting-started">Detail</a></p>
+
+<p>3. Hash Key of your debug certificate &nbsp;- <a href="http://sonyarouje.com/2011/09/18/facebook-hash-key-for-android-apps/">Detail</a></p>
+
+<p><strong>Usage</strong></p>
+
+<p>Step 1: Import &quot;FacebookLoginUtils.java&quot; class in your package</p>
+
+<p>Step 2: Implement callback listener</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"> public class MyActivity extends Activity implements FacebookLoginUtils.FacebookLoginStatus
+</code></pre></div>
+<p>Step 3: Declare callback method</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">    @Override
+    public void OnSuccessFacebookLogin(Bundle profile) {
+        Log.i(TAG,profile.getString(FacebookLoginUtils.USERID));
+        Log.i(TAG,profile.getString(FacebookLoginUtils.EMAIL));
+        Log.i(TAG,profile.getString(FacebookLoginUtils.NAME));
+        Log.i(TAG,profile.getString(FacebookLoginUtils.FIRST_NAME));
+        Log.i(TAG,profile.getString(FacebookLoginUtils.LAST_NAME));
+
+    }
+</code></pre></div>
+<p>Step 4: Declare object of FacebookLoginUtils.java</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">    private FacebookLoginUtils fLogin;
+</code></pre></div>
+<p>Step 5: Initialize object in onCreate method</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">        fLogin = new FacebookLoginUtils(this, R.id.activity_login_fb);
+        fLogin.setLoginStatus(this);
+        fLogin.setEnable(true);
+</code></pre></div>
+<p>Step 6: Declare few supporting methods&nbsp;</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">    protected void onResume() {
+        super.onResume();
+        fLogin.onResume();
+    };
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        fLogin.onPause();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        fLogin.onDestroy();
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int responseCode,Intent intent) {
+        fLogin.onActivityResult(requestCode, responseCode, intent);
+    }
+</code></pre></div>
+<p><strong>FAQ</strong></p>
+
+<p>Q: What is the problem of above approach ?</p>
+
+<p>A: You activity has a lot of scattered code for Facebook login, It will be more complex and unmanageable when you will have another social network login like Facebook and Twitter.</p>
+
+<p>Q: How I will receive a response for login success?</p>
+
+<p>A: You need to implement interface &quot;FacebookLoginStatus&quot;, on successful login you will receive callback &quot;OnSuccessFacebookLogin&quot;</p>
+
+<p>Q: What will be received on login success ?</p>
+
+<p>A: You will have Name, Email , First Name, Last Name, User Id.</p>
+
+<p>Q: Do I need to handle login failure / error ?</p>
+
+<p>A: No, FacebookLoginUtils.java will handle login failure, error and display appropriate message on screen. &nbsp;</p>
+
+<p><strong><em>Note: Change facebook app key in /res/values/strings.xml#facebook</em>app_id_</strong></p>
+]]></content:encoded>
+      <dc:date>2014-11-22T21:50:00+05:30</dc:date>
+    </item>
+    <item>
+      <title>Android Login with Google Plus Utility</title>
+      <link>http://kpbird.com/2014/11/android-login-with-google-plus-utility</link>
+      <description><![CDATA[Google Plus login & signup utility,]]></description>
+      <comments>http://kpbird.com/2014/11/android-login-with-google-plus-utility#disqus_thread</comments>
+      <pubDate>Thu, 06 Nov 2014 21:50:00 +0530</pubDate>
+      <guid>http://kpbird.com/2014/11/android-login-with-google-plus-utility</guid>
+      <content:encoded><![CDATA[<h1 id="android-login-with-google-plus-utility">Android Login with Google Plus Utility</h1>
+
+<p><img src="https://1.bp.blogspot.com/-SxTNj0uRwW8/VGSvrKm53mI/AAAAAAAAFPo/izmq8IUVyY4/s320/device-2014-11-13-161116.png" alt=""></p>
+
+<p><strong>Pre-requisite</strong></p>
+
+<p>Official Document: <a href="https://developers.google.com/+/mobile/android/sign-in">https://developers.google.com/+/mobile/android/sign-in</a></p>
+
+<p>Tutorial from AndroidHive : <a href="http://www.androidhive.info/2014/02/android-login-with-google-plus-account-1/">http://www.androidhive.info/2014/02/android-login-with-google-plus-account-1/</a></p>
+
+<p><strong>Note:</strong> Please read AndroidHive article for initial setup &amp; other process</p>
+
+<p><strong>Usage</strong></p>
+
+<p><strong>Step 1:</strong> Import &quot;GooglePlusLoginUtils.java&quot; class in your package</p>
+
+<p><strong>Step 2:</strong> Implement callback listener</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">public class LoginActivity extends Activity implements GooglePlusLoginUtils.GPlusLoginStatus
+</code></pre></div>
+<p><strong>Step 3:</strong> Declare callback method</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">    public void OnSuccessGPlusLogin(Bundle profile) {
+ Log.i(TAG,profile.getString(GooglePlusLoginUtils.NAME));
+ Log.i(TAG,profile.getString(GooglePlusLoginUtils.EMAIL));
+ Log.i(TAG,profile.getString(GooglePlusLoginUtils.PHOTO));
+ Log.i(TAG,profile.getString(GooglePlusLoginUtils.PROFILE));
+    }
+</code></pre></div>
+<p><strong>Step 4:</strong> Declare object of GooglePlusLoginUtils.java</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">private GooglePlusLoginUtils gLogin;
+</code></pre></div>
+<p><strong>Step 5:</strong> Initialize object in onCreate method</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"> gLogin = new GooglePlusLoginUtils(this, R.id.activity_login_gplus); // Id of login button
+        gLogin.setLoginStatus(this);
+</code></pre></div>
+<p><strong>Step 6:</strong> Declare few supporting methods&nbsp;</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"> @Override
+ protected void onStart() {
+         super.onStart();
+         gLogin.connect();
+ }
+ @Override
+ protected void onStop() {
+         super.onStop();
+         gLogin.disconnect();
+ }
+ @Override
+ protected void onActivityResult(int requestCode, int responseCode,Intent intent) {
+                gLogin.onActivityResult(requestCode, responseCode, intent);
+ }
+</code></pre></div>
+<p><strong>FAQ</strong></p>
+
+<p>Q: What is the problem of above approach ?</p>
+
+<p>A: You activity has a lot of scattered code for Google Pluse login, It will be more complex and unmanageable when you will have another social network login like Facebook and Twitter.</p>
+
+<p>Q: How I will receive a response for login success?</p>
+
+<p>A: You need to implement interface &quot;GPlusloginStatus&quot;, on successful login you will receive callback &quot;OnSuccessGPlusLogin&quot;</p>
+
+<p>Q: What will be received on login success ?</p>
+
+<p>A: You will have Display name, Email , Photo and Profile url.</p>
+
+<p>Q: Do I need to handle login failure / error ?</p>
+
+<p>A: No, GooglePlusLoginUtils.java will handle login failure, error and display appropriate message on screen. &nbsp;&nbsp;</p>
+
+<p>&nbsp; &nbsp;</p>
+]]></content:encoded>
+      <dc:date>2014-11-06T21:50:00+05:30</dc:date>
+    </item>
+    <item>
+      <title>Android 5.0 Lollipop API Change</title>
+      <link>http://kpbird.com/2014/10/android-50-lollipop-api-change</link>
+      <description><![CDATA[Android 5.0 Lollipop API change and Major Features]]></description>
+      <comments>http://kpbird.com/2014/10/android-50-lollipop-api-change#disqus_thread</comments>
+      <pubDate>Mon, 06 Oct 2014 21:50:00 +0530</pubDate>
+      <guid>http://kpbird.com/2014/10/android-50-lollipop-api-change</guid>
+      <content:encoded><![CDATA[<p><img src="/assets/images/posts/lollipop-1600.png" /></p>
+
+<p>src:&nbsp;<a href="http://www.android.com/new/images/banners/lollipop-1600.png">http://www.android.com/new/images/banners/lollipop-1600.png</a>  </p>
+
+<p><strong>Android 5.0 Lollipop Features</strong></p>
+
+<ul>
+<li>Material design</li>
+<li>Performance focus</li>
+<li>Notifications</li>
+<li>Your apps on the big screen - TV</li>
+<li>Document-centric apps</li>
+<li>Advanced connectivity</li>
+<li>High-performance graphics</li>
+<li>More Powerful Audio</li>
+<li>Enhanced Camera &amp; Video</li>
+<li>Screen capturing and sharing</li>
+<li>New types of sensors</li>
+<li>Chromium WebView</li>
+<li>Accessibility &amp; Input</li>
+<li>Tools for building battery-efficient apps</li>
+</ul>
+
+<table><thead>
+<tr>
+<th>Type</th>
+<th>Additions</th>
+<th>Changes</th>
+<th>Removals</th>
+<th>Total</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Packages</td>
+<td>14</td>
+<td>57</td>
+<td>1</td>
+<td>72</td>
+</tr>
+<tr>
+<td>Classes and Interfaces</td>
+<td>147</td>
+<td>360</td>
+<td>0</td>
+<td>507</td>
+</tr>
+<tr>
+<td>Constructors</td>
+<td>98</td>
+<td>3</td>
+<td>1</td>
+<td>102</td>
+</tr>
+<tr>
+<td>Methods</td>
+<td>770</td>
+<td>117</td>
+<td>29</td>
+<td>916</td>
+</tr>
+<tr>
+<td>Fields</td>
+<td>1150</td>
+<td>75</td>
+<td>2</td>
+<td>1227</td>
+</tr>
+<tr>
+<td>Total</td>
+<td>2179</td>
+<td>612</td>
+<td>33</td>
+<td>2824</td>
+</tr>
+</tbody></table>
+
+<p>The overall difference between <strong>API Levels 20 and 21</strong> is approximately <strong>6.51%</strong>.</p>
+
+<p><strong>Android L Preview API Changes</strong>  </p>
+
+<table><thead>
+<tr>
+<th>Type</th>
+<th>Additions</th>
+<th>Changes</th>
+<th>Removals</th>
+<th>Total</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Packages</td>
+<td>8</td>
+<td>43</td>
+<td>0</td>
+<td>51</td>
+</tr>
+<tr>
+<td>Classes and Interfaces</td>
+<td>87</td>
+<td>232</td>
+<td>0</td>
+<td>319</td>
+</tr>
+<tr>
+<td>Constructors</td>
+<td>84</td>
+<td>2</td>
+<td>0</td>
+<td>86</td>
+</tr>
+<tr>
+<td>Methods</td>
+<td>408</td>
+<td>69</td>
+<td>17</td>
+<td>494</td>
+</tr>
+<tr>
+<td>Fields</td>
+<td>754</td>
+<td>22</td>
+<td>1</td>
+<td>777</td>
+</tr>
+<tr>
+<td>Total</td>
+<td>1341</td>
+<td>368</td>
+<td>18</td>
+<td>1727</td>
+</tr>
+</tbody></table>
+
+<p>The overall difference between&nbsp;<strong>API Levels 20</strong>&nbsp;and L-preview is approximately&nbsp;<strong>3.77%.</strong></p>
+]]></content:encoded>
+      <dc:date>2014-10-06T21:50:00+05:30</dc:date>
+    </item>
+    <dc:date>2015-06-13T21:50:00+05:30</dc:date>
+  </channel>
+</rss>
