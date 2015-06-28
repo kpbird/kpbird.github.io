@@ -8,7 +8,165 @@
     <title>Ketan Parmar</title>
     <link>http://kpbird.com</link>
     <description>Ketan Parmar is a software developer, trainer, speaker.</description>
-    <pubDate>Sun, 21 Jun 2015 21:50:00 +0530</pubDate>
+    <pubDate>Sat, 27 Jun 2015 21:50:00 +0530</pubDate>
+    <item>
+      <title>Go Language For Java Developer Part-4</title>
+      <link>http://kpbird.com/2015/06/Go-Language-For-Java-Developer-Part-4</link>
+      <description><![CDATA[This article series is designed keeping in mind,The Java Developers who would like to learn Go Language.]]></description>
+      <comments>http://kpbird.com/2015/06/Go-Language-For-Java-Developer-Part-4#disqus_thread</comments>
+      <pubDate>Sat, 27 Jun 2015 21:50:00 +0530</pubDate>
+      <guid>http://kpbird.com/2015/06/Go-Language-For-Java-Developer-Part-4</guid>
+      <content:encoded><![CDATA[<p><img src="/assets/images/posts/golang.jpeg" alt="Go Language For Java Developer" title="Go Language For Java Developer" class="img-responsive"></p>
+
+<h3 id="keywords"><strong>Keywords</strong></h3>
+
+<p>Following keywords are reserved and may not be used as identifiers.</p>
+
+<h4 id="java-language-keywords">Java Language Keywords</h4>
+
+<p><br></p>
+
+<table><thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead><tbody>
+<tr>
+<td>abstract</td>
+<td>continue</td>
+<td>for</td>
+<td>new</td>
+<td>switch</td>
+</tr>
+<tr>
+<td>assert</td>
+<td>default</td>
+<td>goto</td>
+<td>package</td>
+<td>synchronized</td>
+</tr>
+<tr>
+<td>boolean</td>
+<td>do</td>
+<td>if</td>
+<td>private</td>
+<td>this</td>
+</tr>
+<tr>
+<td>break</td>
+<td>double</td>
+<td>implements</td>
+<td>protected</td>
+<td>throw</td>
+</tr>
+<tr>
+<td>byte</td>
+<td>else</td>
+<td>import</td>
+<td>public</td>
+<td>throws</td>
+</tr>
+<tr>
+<td>case</td>
+<td>enum</td>
+<td>instanceof</td>
+<td>return</td>
+<td>transient</td>
+</tr>
+<tr>
+<td>catch</td>
+<td>extends</td>
+<td>int</td>
+<td>short</td>
+<td>try</td>
+</tr>
+<tr>
+<td>char</td>
+<td>final</td>
+<td>interface</td>
+<td>static</td>
+<td>void</td>
+</tr>
+<tr>
+<td>class</td>
+<td>finally</td>
+<td>long</td>
+<td>strictfp</td>
+<td>volatile</td>
+</tr>
+<tr>
+<td>const</td>
+<td>float</td>
+<td>native</td>
+<td>super</td>
+<td>while</td>
+</tr>
+</tbody></table>
+
+<p><br></p>
+
+<h4 id="go-language-keywords">Go Language Keywords</h4>
+
+<p><br></p>
+
+<table >
+  <tr>
+    <td >break</td>
+    <td >default</td>
+    <td >func</td>
+    <td >interface</td>
+    <td >select</td>
+  </tr>
+  <tr>
+    <td >case</td>
+    <td >defer</td>
+    <td >go</td>
+    <td >map</td>
+    <td >struct</td>
+  </tr>
+  <tr>
+    <td >chan</td>
+    <td >else</td>
+    <td >goto</td>
+    <td >package</td>
+    <td >switch</td>
+  </tr>
+  <tr>
+    <td >const</td>
+    <td >fallthrough</td>
+    <td >if</td>
+    <td >range</td>
+    <td >type</td>
+  </tr>
+  <tr>
+    <td >continue</td>
+    <td >for</td>
+    <td >import</td>
+    <td >return</td>
+    <td >var</td>
+  </tr>
+</table>
+
+<p><br></p>
+
+<p>There are few obvious keywords like break, case, if, for, etc but few keywords are new in Go Language.</p>
+
+<ol>
+<li>fund: To declare function</li>
+<li>interface: To declare interface (It&#39;s different than Java&#39;s interface)</li>
+<li>defer: something like finalise method in Java</li>
+<li>go: To create thread</li>
+<li>chan: To do synchronised between threads</li>
+<li>var: To declare variable</li>
+<li>range: It&#39;s like iterator in Java</li>
+</ol>
+]]></content:encoded>
+      <dc:date>2015-06-27T21:50:00+05:30</dc:date>
+    </item>
     <item>
       <title>Android App Review: First Run C25K Fitness Trainer</title>
       <link>http://kpbird.com/2015/06/Android-App-Review-First-Run-C25K-Fitness-Trainer</link>
@@ -848,94 +1006,6 @@ services-architecture-advantages</a></li>
 ]]></content:encoded>
       <dc:date>2014-11-28T21:50:00+05:30</dc:date>
     </item>
-    <item>
-      <title>Android Login with Facebook</title>
-      <link>http://kpbird.com/2014/11/android-login-with-facebook</link>
-      <description><![CDATA[Accessing segment tags might not be something you have to do everyday but there might be some scenarios where you need to manipulate the tags of your segments. This can be done using Studio File Type Framework which is part of the Studio SDK. The documentation is providing an overview of the entire framework and also includes high level overview of what I'm going to discuss in this article."]]></description>
-      <comments>http://kpbird.com/2014/11/android-login-with-facebook#disqus_thread</comments>
-      <pubDate>Sat, 22 Nov 2014 21:50:00 +0530</pubDate>
-      <guid>http://kpbird.com/2014/11/android-login-with-facebook</guid>
-      <content:encoded><![CDATA[<p><img src="http://1.bp.blogspot.com/-iCx0todkMGM/VHBoCFbte1I/AAAAAAAAFQk/kwWnGCSH0zM/s400/device-2014-11-22-154940.png" alt=""><img src="http://2.bp.blogspot.com/-4i7paQCAuI8/VHBoBI8q9OI/AAAAAAAAFQY/4iYGAbS4ncw/s400/device-2014-11-22-155020.png" alt=""></p>
-
-<p><img src="http://3.bp.blogspot.com/-K9IoL8Kubeo/VHBoAuZ00qI/AAAAAAAAFQU/JV4_06ckPGM/s400/Screen%2BShot%2B2014-11-22%2Bat%2B3.50.35%2Bpm.png" alt=""></p>
-
-<p><strong>Pre-requisite</strong></p>
-
-<p>2. Facebook API Key from Facebook Application - <a href="https://developers.facebook.com/docs/android/getting-started">Detail</a></p>
-
-<p>3. Hash Key of your debug certificate &nbsp;- <a href="http://sonyarouje.com/2011/09/18/facebook-hash-key-for-android-apps/">Detail</a></p>
-
-<p><strong>Usage</strong></p>
-
-<p>Step 1: Import &quot;FacebookLoginUtils.java&quot; class in your package</p>
-
-<p>Step 2: Implement callback listener</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text"> public class MyActivity extends Activity implements FacebookLoginUtils.FacebookLoginStatus
-</code></pre></div>
-<p>Step 3: Declare callback method</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">    @Override
-    public void OnSuccessFacebookLogin(Bundle profile) {
-        Log.i(TAG,profile.getString(FacebookLoginUtils.USERID));
-        Log.i(TAG,profile.getString(FacebookLoginUtils.EMAIL));
-        Log.i(TAG,profile.getString(FacebookLoginUtils.NAME));
-        Log.i(TAG,profile.getString(FacebookLoginUtils.FIRST_NAME));
-        Log.i(TAG,profile.getString(FacebookLoginUtils.LAST_NAME));
-
-    }
-</code></pre></div>
-<p>Step 4: Declare object of FacebookLoginUtils.java</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">    private FacebookLoginUtils fLogin;
-</code></pre></div>
-<p>Step 5: Initialize object in onCreate method</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">        fLogin = new FacebookLoginUtils(this, R.id.activity_login_fb);
-        fLogin.setLoginStatus(this);
-        fLogin.setEnable(true);
-</code></pre></div>
-<p>Step 6: Declare few supporting methods&nbsp;</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">    protected void onResume() {
-        super.onResume();
-        fLogin.onResume();
-    };
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-        fLogin.onPause();
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        fLogin.onDestroy();
-    }
-
-    @Override
-    protected void onActivityResult(int requestCode, int responseCode,Intent intent) {
-        fLogin.onActivityResult(requestCode, responseCode, intent);
-    }
-</code></pre></div>
-<p><strong>FAQ</strong></p>
-
-<p>Q: What is the problem of above approach ?</p>
-
-<p>A: You activity has a lot of scattered code for Facebook login, It will be more complex and unmanageable when you will have another social network login like Facebook and Twitter.</p>
-
-<p>Q: How I will receive a response for login success?</p>
-
-<p>A: You need to implement interface &quot;FacebookLoginStatus&quot;, on successful login you will receive callback &quot;OnSuccessFacebookLogin&quot;</p>
-
-<p>Q: What will be received on login success ?</p>
-
-<p>A: You will have Name, Email , First Name, Last Name, User Id.</p>
-
-<p>Q: Do I need to handle login failure / error ?</p>
-
-<p>A: No, FacebookLoginUtils.java will handle login failure, error and display appropriate message on screen. &nbsp;</p>
-
-<p><strong><em>Note: Change facebook app key in /res/values/strings.xml#facebook</em>app_id_</strong></p>
-]]></content:encoded>
-      <dc:date>2014-11-22T21:50:00+05:30</dc:date>
-    </item>
-    <dc:date>2015-06-21T21:50:00+05:30</dc:date>
+    <dc:date>2015-06-27T21:50:00+05:30</dc:date>
   </channel>
 </rss>
