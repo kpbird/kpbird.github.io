@@ -12,6 +12,7 @@ image: "/golang.jpeg"
 <img src="/assets/images/posts/golang.jpeg" alt="Go Language For Java Developer" title="Go Language For Java Developer" class="img-responsive">
 
 
+
 Normally first program you write in any programming language is "Hello World". Hello World is simple program which print "Hello Word" text on console / screen.
 
 **Java: Hello World**

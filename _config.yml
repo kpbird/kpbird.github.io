@@ -17,3 +17,4 @@ url: http://kpbird.com
 rss_name: feed.xml
 rss_post_limit: 10
 permalink: /:year/:month/:title
+slugify: true

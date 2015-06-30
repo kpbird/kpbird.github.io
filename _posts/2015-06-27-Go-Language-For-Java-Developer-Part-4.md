@@ -11,6 +11,12 @@ image: "/golang.jpeg"
 
 <img src="/assets/images/posts/golang.jpeg" alt="Go Language For Java Developer" title="Go Language For Java Developer" class="img-responsive">
 
+Previous article of the Go series
+
+* [Part-1 : Introduction of Go Language ](http://kpbird.com/2015/06/Go-Language-For-Java-Developer-Part-1/)
+* [Part-2 : Hello Word](http://kpbird.com/2015/06/Go-Language-For-Java-Developer-Part-2/)
+* [Part-3 : Data Type](http://kpbird.com/2015/06/Go-Language-For-Java-Developer-Part-3/)
+
 ###**Keywords**
 
 Following keywords are reserved and may not be used as identifiers.
@@ -80,7 +86,7 @@ Following keywords are reserved and may not be used as identifiers.
 
 There are few obvious keywords like break, case, if, for, etc but few keywords are new in Go Language.
 
-1. fund: To declare function
+1. func: To declare function
 2. interface: To declare interface (It's different than Java's interface)
 3. defer: something like finalise method in Java
 4. go: To create thread

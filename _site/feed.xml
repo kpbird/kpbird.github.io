@@ -18,6 +18,14 @@
       <guid>http://kpbird.com/2015/06/Go-Language-For-Java-Developer-Part-4</guid>
       <content:encoded><![CDATA[<p><img src="/assets/images/posts/golang.jpeg" alt="Go Language For Java Developer" title="Go Language For Java Developer" class="img-responsive"></p>
 
+<p>Previous article of the Go series</p>
+
+<ul>
+<li><a href="http://kpbird.com/2015/06/Go-Language-For-Java-Developer-Part-1/">Part-1 : Introduction of Go Language </a></li>
+<li><a href="http://kpbird.com/2015/06/Go-Language-For-Java-Developer-Part-2/">Part-2 : Hello Word</a></li>
+<li><a href="http://kpbird.com/2015/06/Go-Language-For-Java-Developer-Part-3/">Part-3 : Data Type</a></li>
+</ul>
+
 <h3 id="keywords"><strong>Keywords</strong></h3>
 
 <p>Following keywords are reserved and may not be used as identifiers.</p>
@@ -156,7 +164,7 @@
 <p>There are few obvious keywords like break, case, if, for, etc but few keywords are new in Go Language.</p>
 
 <ol>
-<li>fund: To declare function</li>
+<li>func: To declare function</li>
 <li>interface: To declare interface (It&#39;s different than Java&#39;s interface)</li>
 <li>defer: something like finalise method in Java</li>
 <li>go: To create thread</li>
