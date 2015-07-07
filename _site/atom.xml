@@ -4,13 +4,126 @@
  <title>Ketan Parmar</title>
  <link type="application/atom+xml" href="http://romuluscrisan.com/atom.xml" rel="self"/>
  <link href="http://www.romuluscrisan.com/"/>
- <updated>2015-06-30T23:22:15+05:30</updated>
+ <updated>2015-07-07T22:56:36+05:30</updated>
  <id>http://www.kpbird.com/</id>
  <author>
    <name>Ketan Parmar</name>
    <email>contact@kpbird.com</email>
  </author>
  
+ 
+ <entry>
+   <title>Go Language For Java Developer Part-5</title>
+   <link href="http://www.romuluscrisan.com/2015/07/Go-Language-For-Java-Developer-Part-5"/>
+   <updated>2015-07-04T21:50:00+05:30</updated>
+   <id>http://www.romuluscrisan.com/2015/07/Go-Language-For-Java-Developer-Part-5</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/images/posts/golang.jpeg&quot; alt=&quot;Go Language For Java Developer&quot; title=&quot;Go Language For Java Developer&quot; class=&quot;img-responsive&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Previous article of the Go series&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://kpbird.com/2015/06/Go-Language-For-Java-Developer-Part-1/&quot;&gt;Part-1 : Introduction of Go Language &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://kpbird.com/2015/06/Go-Language-For-Java-Developer-Part-2/&quot;&gt;Part-2 : Hello Word&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://kpbird.com/2015/06/Go-Language-For-Java-Developer-Part-3/&quot;&gt;Part-3 : Data Type&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://kpbird.com/2015/06/Go-Language-For-Java-Developer-Part-4/&quot;&gt;Part-4: Keywords is Go Language&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;variables&quot;&gt;&lt;strong&gt;Variables&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;Variable: A variable is a storage location for holding a value. The set of permissible values is determined by the variable&amp;#39;s type.&lt;/p&gt;
+
+&lt;h4 id=&quot;java-variable&quot;&gt;Java Variable&lt;/h4&gt;
+
+&lt;p&gt;Java language has primitive type and objects, both have different syntax to declare a variable&lt;/p&gt;
+
+&lt;p&gt;Primitive type variable&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;int a
+String b
+float c
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Object type variable&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;Animal a = new Animal()
+Student s = new Student()
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Java is object oriented language so that we can have access modifier for variable declaration&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;private int a
+public String b
+protected float c
+private Animal a 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;In Java we can declare variable at many places like Local variable, Parameters, Class level, Instance variable.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Variable Naming&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Variable names are case-sensitive&lt;/li&gt;
+&lt;li&gt;An unlimited-length sequence of Unicode letters and digits&lt;/li&gt;
+&lt;li&gt;Beginning with a letter, the dollar sign &amp;quot;$&amp;quot;, or the underscore character &amp;quot;_&amp;quot;.&lt;/li&gt;
+&lt;li&gt;No special characters allowd as identifier of variable&lt;/li&gt;
+&lt;li&gt;We can&amp;#39;t use reserved keywords&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;go-variable&quot;&gt;Go Variable&lt;/h4&gt;
+
+&lt;p&gt;Variables in Go are created by first using the &lt;em&gt;&amp;#39;var&amp;#39;&lt;/em&gt; keyword, then specifying the variable name, the type and finally assigning a value to the variable.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;package main
+import &amp;quot;fmt&amp;quot;
+func main() {
+    var x int  // Line 1
+    x = 10 // Line 2
+    var y string = &amp;quot;Hello Go!&amp;quot; // Line 3
+    fmt.Println(x)
+    fmt.Println(y)
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;In Line 1, var indicate it&amp;#39;s variable, x is name of variable and int is type of variable. 
+In Line 2, we are assigning value in x variable. 
+In Line 3, we have declare string variable and assign in single line&lt;/p&gt;
+
+&lt;p&gt;Since creating a new variable with a starting value is so common Go also supports a shorter statement:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;y := &amp;quot;Hello Go!&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;With above shorter syntax Go compiler will automatically identify that y is variable of type string and value is &amp;quot;Hello Go!&amp;quot;.&lt;/p&gt;
+
+&lt;p&gt;Declare multiple variable at same time&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;var (
+    name string
+    age int
+    location string
+)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Go is not object oriented language so we don&amp;#39;t have access modifier like we have in Java. In Go language, We have two place to declare variables 1. Inside Function 2. Out Side Function.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Function / Local Variable&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;package main
+import &amp;quot;fmt&amp;quot;
+func main(){
+    var x int = 10  
+    fmt.Println(x)
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Global Variable&lt;/strong&gt;: Any function can access y variable, x is local variable only accessible inside main function&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;package main
+import &amp;quot;fmt&amp;quot;
+var y int =10
+func main(){
+    var x int = 10
+    fmt.Println(x)
+    fmt.Println(y)
+}
+func hello(){
+    fmt.Println(y)
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Variable Name&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Name must be start with letter&lt;/li&gt;
+&lt;li&gt;Name may contain letter, number and underscore (_)&lt;/li&gt;
+&lt;li&gt;Name is character sensetive Num and num consider as two different variable&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Go Language For Java Developer Part-4</title>

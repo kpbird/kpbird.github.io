@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Go Language For Java Developer Part-2"
-date:   2015-06-27 16:20:00
+title:  "Go Language For Java Developer Part-5"
+date:   2015-07-04 16:20:00
 category: "Go"
 tags: "Go, Go Language"
 excerpt: This article series is designed keeping in mind,The Java Developers who would like to learn Go Language. 
@@ -11,6 +11,12 @@ image: "/golang.jpeg"
 
 <img src="/assets/images/posts/golang.jpeg" alt="Go Language For Java Developer" title="Go Language For Java Developer" class="img-responsive">
 
+Previous article of the Go series
+
+* [Part-1 : Introduction of Go Language ](http://kpbird.com/2015/06/Go-Language-For-Java-Developer-Part-1/)
+* [Part-2 : Hello Word](http://kpbird.com/2015/06/Go-Language-For-Java-Developer-Part-2/)
+* [Part-3 : Data Type](http://kpbird.com/2015/06/Go-Language-For-Java-Developer-Part-3/)
+* [Part-4: Keywords is Go Language](http://kpbird.com/2015/06/Go-Language-For-Java-Developer-Part-4/)
 
 ###**Variables**
 
@@ -18,7 +24,7 @@ Variable: A variable is a storage location for holding a value. The set of permi
 
 ####Java Variable
 
-Java language has primitive type and objects, both has different syntax to declare variable
+Java language has primitive type and objects, both have different syntax to declare a variable
 
 Primitive type variable
 

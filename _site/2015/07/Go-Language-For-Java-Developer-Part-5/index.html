@@ -3,11 +3,11 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-    <title>Category archive for random</title>
+    <title>Go Language For Java Developer Part-5</title>
     
 
-    <meta content="Category archive for random" property="og:title">
-    <meta content="Category archive for random" name="twitter:title">
+    <meta content="Go Language For Java Developer Part-5" property="og:title">
+    <meta content="Go Language For Java Developer Part-5" name="twitter:title">
     <meta content="Software developer, trainer, speaker and more by Ketan Parmar" property="og:site_name">
     <meta content="Ketan Parmar is a software developer, trainer, speaker." name="description">
     <meta content="Ketan Parmar is a software developer, trainer, speaker." property="og:description">
@@ -21,15 +21,21 @@
 
     <link href="/atom.xml" rel="alternate" title="Atom" type="application/atom+xml">
     <link href="/sitemap.xml" rel="sitemap" title="Sitemap" type="application/xml">
-    <link href="http://kpbird.com/random/index.html" rel="canonical">
+    <link href="http://kpbird.com/2015/07/Go-Language-For-Java-Developer-Part-5" rel="canonical">
     <meta content="article" property="og:type">
     <meta content="summary" name="twitter:card">
-    <meta content="http://kpbird.com/random/index.html" property="og:url">
-    <meta content="http://kpbird.com/random/index.html" name="twitter:url">  
+    <meta content="http://kpbird.com/2015/07/Go-Language-For-Java-Developer-Part-5" property="og:url">
+    <meta content="http://kpbird.com/2015/07/Go-Language-For-Java-Developer-Part-5" name="twitter:url"> 
+    <meta content="2015-07-04T21:50:00+05:30" property="article:published_time">
+    <meta content="http://kpbird.com/index.html#about" property="article:author"> 
     
     
-    <meta property="og:image" content="http://kpbird.com/assets/images/preview/content/people/1.jpg">
-    <meta name="twitter:image:src" content="http://kpbird.com/assets/images/preview/content/people/1.jpg">  
+    <meta property="og:image" content="http://kpbird.com/assets/images/posts//golang.jpeg">
+    <meta name="twitter:image:src" content="http://kpbird.com/assets/images/posts//golang.jpeg">  
+    <meta property="article:section" content="go">   
+    <meta property="article:tag" content="Go,">
+    <meta property="article:tag" content="Go">
+    <meta property="article:tag" content="Language"> 
     <!--[if lt IE 9]>
     <script type="text/javascript" src="assets/plugins/lt-ie9/html5.js"></script>
     <script type="text/javascript" src="assets/plugins/lt-ie9/respond.min.js"></script>
@@ -93,21 +99,137 @@
         <article class="container">
             <div class="row">
                 <div class="left col-md-9">
-                    <div class="category-archive">
-					  <header>
-					    <span class="title">Category archive for random</span>
-					  </header>
-					  <div>
-					                   <div class="widget">
-            <ul>
-            
-                <li><a href="/2014/07/10-Tips-for-fledgling-developers"><i class="fa fa-sign-out"></i> 10 Tips for fledgling developers</a> <small>12 July 2014</small></li>
-            
-            </ul>
-            </div>
+                    <header>
+                        <h1>Go Language For Java Developer Part-5</h1>
+                        <small class="fsize13">
+                            <a href="/tag/go" class="label label-default light"><i class="fa fa-dot-circle-o"></i> go</a>
+                            <a href="/2015/07/Go-Language-For-Java-Developer-Part-5#disqus_thread" class="label label-default light">0 Comments</a>
+                            <span class="label label-default light">4 July 2015</span>
+                        </small>
+                    </header>
 
-					  </div>
-					</div>
+                    <p><img src="/assets/images/posts/golang.jpeg" alt="Go Language For Java Developer" title="Go Language For Java Developer" class="img-responsive"></p>
+
+<p>Previous article of the Go series</p>
+
+<ul>
+<li><a href="http://kpbird.com/2015/06/Go-Language-For-Java-Developer-Part-1/">Part-1 : Introduction of Go Language </a></li>
+<li><a href="http://kpbird.com/2015/06/Go-Language-For-Java-Developer-Part-2/">Part-2 : Hello Word</a></li>
+<li><a href="http://kpbird.com/2015/06/Go-Language-For-Java-Developer-Part-3/">Part-3 : Data Type</a></li>
+<li><a href="http://kpbird.com/2015/06/Go-Language-For-Java-Developer-Part-4/">Part-4: Keywords is Go Language</a></li>
+</ul>
+
+<h3 id="variables"><strong>Variables</strong></h3>
+
+<p>Variable: A variable is a storage location for holding a value. The set of permissible values is determined by the variable&#39;s type.</p>
+
+<h4 id="java-variable">Java Variable</h4>
+
+<p>Java language has primitive type and objects, both have different syntax to declare a variable</p>
+
+<p>Primitive type variable</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">int a
+String b
+float c
+</code></pre></div>
+<p>Object type variable</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">Animal a = new Animal()
+Student s = new Student()
+</code></pre></div>
+<p>Java is object oriented language so that we can have access modifier for variable declaration</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">private int a
+public String b
+protected float c
+private Animal a 
+</code></pre></div>
+<p>In Java we can declare variable at many places like Local variable, Parameters, Class level, Instance variable.</p>
+
+<p><strong>Variable Naming</strong></p>
+
+<ol>
+<li>Variable names are case-sensitive</li>
+<li>An unlimited-length sequence of Unicode letters and digits</li>
+<li>Beginning with a letter, the dollar sign &quot;$&quot;, or the underscore character &quot;_&quot;.</li>
+<li>No special characters allowd as identifier of variable</li>
+<li>We can&#39;t use reserved keywords</li>
+</ol>
+
+<h4 id="go-variable">Go Variable</h4>
+
+<p>Variables in Go are created by first using the <em>&#39;var&#39;</em> keyword, then specifying the variable name, the type and finally assigning a value to the variable.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">package main
+import &quot;fmt&quot;
+func main() {
+    var x int  // Line 1
+    x = 10 // Line 2
+    var y string = &quot;Hello Go!&quot; // Line 3
+    fmt.Println(x)
+    fmt.Println(y)
+}
+</code></pre></div>
+<p>In Line 1, var indicate it&#39;s variable, x is name of variable and int is type of variable. 
+In Line 2, we are assigning value in x variable. 
+In Line 3, we have declare string variable and assign in single line</p>
+
+<p>Since creating a new variable with a starting value is so common Go also supports a shorter statement:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">y := &quot;Hello Go!&quot;
+</code></pre></div>
+<p>With above shorter syntax Go compiler will automatically identify that y is variable of type string and value is &quot;Hello Go!&quot;.</p>
+
+<p>Declare multiple variable at same time</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">var (
+    name string
+    age int
+    location string
+)
+</code></pre></div>
+<p>Go is not object oriented language so we don&#39;t have access modifier like we have in Java. In Go language, We have two place to declare variables 1. Inside Function 2. Out Side Function.</p>
+
+<p><strong>Function / Local Variable</strong></p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">package main
+import &quot;fmt&quot;
+func main(){
+    var x int = 10  
+    fmt.Println(x)
+}
+</code></pre></div>
+<p><strong>Global Variable</strong>: Any function can access y variable, x is local variable only accessible inside main function</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">package main
+import &quot;fmt&quot;
+var y int =10
+func main(){
+    var x int = 10
+    fmt.Println(x)
+    fmt.Println(y)
+}
+func hello(){
+    fmt.Println(y)
+}
+</code></pre></div>
+<p><strong>Variable Name</strong></p>
+
+<ol>
+<li>Name must be start with letter</li>
+<li>Name may contain letter, number and underscore (_)</li>
+<li>Name is character sensetive Num and num consider as two different variable</li>
+</ol>
+
+               
+                    <br/>
+                     
+                        <div class="nav-previous">
+                          <a class="" href="http://kpbird.com/2015/06/Go-Language-For-Java-Developer-Part-4" rel="prev"><i class="fa fa-long-arrow-left nav-previous-link"></i>Go Language For Java Developer Part-4</a>
+                        </div>
+                      
+                    
+                     
+                      <br/>
+                    <hr/>
+                    <div id="disqus_thread"></div>
+                   
+                    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+                    </noscript>
+                    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
                 </div>
                 <div class="right col-md-3">
     <!-- blog search -->
@@ -126,6 +248,8 @@
         <h3>Recent Posts</h3>
         <ul>
             
+            <li><a href="/2015/07/Go-Language-For-Java-Developer-Part-5"><i class="fa fa-sign-out"></i> Go Language For Java Developer Part-5</a> <small>4 July 2015</small></li>
+            
             <li><a href="/2015/06/Go-Language-For-Java-Developer-Part-4"><i class="fa fa-sign-out"></i> Go Language For Java Developer Part-4</a> <small>27 June 2015</small></li>
             
             <li><a href="/2015/06/Android-App-Review-First-Run-C25K-Fitness-Trainer"><i class="fa fa-sign-out"></i> Android App Review: First Run C25K Fitness Trainer</a> <small>21 June 2015</small></li>
@@ -133,8 +257,6 @@
             <li><a href="/2015/06/Go-Language-For-Java-Developer-Part-3"><i class="fa fa-sign-out"></i> Go Language For Java Developer Part-3</a> <small>20 June 2015</small></li>
             
             <li><a href="/2015/06/Go-Language-For-Java-Developer-Part-2"><i class="fa fa-sign-out"></i> Go Language For Java Developer Part-2</a> <small>13 June 2015</small></li>
-            
-            <li><a href="/2015/06/Go-Language-For-Java-Developer-Part-1"><i class="fa fa-sign-out"></i> Go Language For Java Developer Part-1</a> <small>6 June 2015</small></li>
             
         </ul>
     </div>
@@ -144,23 +266,23 @@
 		  
 		  
 		     
-		      <li><i class="fa fa-sign-out"></i> <a href="/android">Android <span>11</span></a></li>
+		      <li><i class="fa fa-sign-out"></i> <a href=" /tag/android">Android <span>11</span></a></li>
 		     
-		      <li><i class="fa fa-sign-out"></i> <a href="/smartwatch">Smartwatch <span>4</span></a></li>
+		      <li><i class="fa fa-sign-out"></i> <a href=" /tag/smartwatch">Smartwatch <span>4</span></a></li>
 		     
-		      <li><i class="fa fa-sign-out"></i> <a href="/architecture">Architecture <span>3</span></a></li>
+		      <li><i class="fa fa-sign-out"></i> <a href=" /tag/architecture">Architecture <span>3</span></a></li>
 		     
-		      <li><i class="fa fa-sign-out"></i> <a href="/bigdata">Bigdata <span>1</span></a></li>
+		      <li><i class="fa fa-sign-out"></i> <a href=" /tag/bigdata">Bigdata <span>1</span></a></li>
 		     
-		      <li><i class="fa fa-sign-out"></i> <a href="/random">Random <span>1</span></a></li>
+		      <li><i class="fa fa-sign-out"></i> <a href=" /tag/random">Random <span>1</span></a></li>
 		     
-		      <li><i class="fa fa-sign-out"></i> <a href="/wearable">Wearable <span>1</span></a></li>
+		      <li><i class="fa fa-sign-out"></i> <a href=" /tag/wearable">Wearable <span>1</span></a></li>
 		     
-		      <li><i class="fa fa-sign-out"></i> <a href="/smart watch">Smart watch <span>1</span></a></li>
+		      <li><i class="fa fa-sign-out"></i> <a href=" /tag/smart watch">Smart watch <span>1</span></a></li>
 		     
-		      <li><i class="fa fa-sign-out"></i> <a href="/go">Go <span>4</span></a></li>
+		      <li><i class="fa fa-sign-out"></i> <a href=" /tag/go">Go <span>5</span></a></li>
 		     
-		      <li><i class="fa fa-sign-out"></i> <a href="/app review">App review <span>1</span></a></li>
+		      <li><i class="fa fa-sign-out"></i> <a href=" /tag/app review">App review <span>1</span></a></li>
 		    
 		  
 		

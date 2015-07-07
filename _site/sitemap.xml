@@ -2,10 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>http://kpbird.com/</loc>
-    <lastmod>2015-06-30T23:22:15+05:30</lastmod>
+    <lastmod>2015-07-07T22:56:36+05:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+  
+    <url>
+      <loc>http://kpbird.com/2015/07/Go-Language-For-Java-Developer-Part-5</loc>
+      
+        <lastmod>2015-07-04T21:50:00+05:30</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
   
     <url>
       <loc>http://kpbird.com/2015/06/Go-Language-For-Java-Developer-Part-4</loc>
@@ -362,7 +375,7 @@
   <url>
     <loc>http://kpbird.com/404.html</loc>
     
-      <lastmod>2015-06-30T23:22:15+05:30</lastmod>
+      <lastmod>2015-07-07T22:56:36+05:30</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -375,7 +388,7 @@
   <url>
     <loc>http://kpbird.com/atom.xml</loc>
     
-      <lastmod>2015-06-30T23:22:15+05:30</lastmod>
+      <lastmod>2015-07-07T22:56:36+05:30</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -427,7 +440,7 @@
   <url>
     <loc>http://kpbird.com/sitemap.xml</loc>
     
-      <lastmod>2015-06-30T23:22:15+05:30</lastmod>
+      <lastmod>2015-07-07T22:56:36+05:30</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -438,22 +451,9 @@
   </url>
   
   <url>
-    <loc>http://kpbird.com/android/index.html</loc>
+    <loc>http://kpbird.com/tag/android/index.html</loc>
     
-      <lastmod>2015-06-30T23:22:15+05:30</lastmod>
-    
-    
-      <changefreq>monthly</changefreq>
-    
-    
-      <priority>0.3</priority>
-    
-  </url>
-  
-  <url>
-    <loc>http://kpbird.com/smartwatch/index.html</loc>
-    
-      <lastmod>2015-06-30T23:22:15+05:30</lastmod>
+      <lastmod>2015-07-07T22:56:36+05:30</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -464,22 +464,9 @@
   </url>
   
   <url>
-    <loc>http://kpbird.com/architecture/index.html</loc>
+    <loc>http://kpbird.com/tag/smartwatch/index.html</loc>
     
-      <lastmod>2015-06-30T23:22:15+05:30</lastmod>
-    
-    
-      <changefreq>monthly</changefreq>
-    
-    
-      <priority>0.3</priority>
-    
-  </url>
-  
-  <url>
-    <loc>http://kpbird.com/bigdata/index.html</loc>
-    
-      <lastmod>2015-06-30T23:22:15+05:30</lastmod>
+      <lastmod>2015-07-07T22:56:36+05:30</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -490,22 +477,9 @@
   </url>
   
   <url>
-    <loc>http://kpbird.com/random/index.html</loc>
+    <loc>http://kpbird.com/tag/architecture/index.html</loc>
     
-      <lastmod>2015-06-30T23:22:15+05:30</lastmod>
-    
-    
-      <changefreq>monthly</changefreq>
-    
-    
-      <priority>0.3</priority>
-    
-  </url>
-  
-  <url>
-    <loc>http://kpbird.com/wearable/index.html</loc>
-    
-      <lastmod>2015-06-30T23:22:15+05:30</lastmod>
+      <lastmod>2015-07-07T22:56:36+05:30</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -516,22 +490,9 @@
   </url>
   
   <url>
-    <loc>http://kpbird.com/smart watch/index.html</loc>
+    <loc>http://kpbird.com/tag/bigdata/index.html</loc>
     
-      <lastmod>2015-06-30T23:22:15+05:30</lastmod>
-    
-    
-      <changefreq>monthly</changefreq>
-    
-    
-      <priority>0.3</priority>
-    
-  </url>
-  
-  <url>
-    <loc>http://kpbird.com/go/index.html</loc>
-    
-      <lastmod>2015-06-30T23:22:15+05:30</lastmod>
+      <lastmod>2015-07-07T22:56:36+05:30</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -542,9 +503,61 @@
   </url>
   
   <url>
-    <loc>http://kpbird.com/app review/index.html</loc>
+    <loc>http://kpbird.com/tag/random/index.html</loc>
     
-      <lastmod>2015-06-30T23:22:15+05:30</lastmod>
+      <lastmod>2015-07-07T22:56:36+05:30</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://kpbird.com/tag/wearable/index.html</loc>
+    
+      <lastmod>2015-07-07T22:56:36+05:30</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://kpbird.com/tag/smart watch/index.html</loc>
+    
+      <lastmod>2015-07-07T22:56:36+05:30</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://kpbird.com/tag/go/index.html</loc>
+    
+      <lastmod>2015-07-07T22:56:36+05:30</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://kpbird.com/tag/app review/index.html</loc>
+    
+      <lastmod>2015-07-07T22:56:36+05:30</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -557,7 +570,7 @@
   <url>
     <loc>http://kpbird.com//feed.xml</loc>
     
-      <lastmod>2015-06-30T23:22:15+05:30</lastmod>
+      <lastmod>2015-07-07T22:56:36+05:30</lastmod>
     
     
       <changefreq>monthly</changefreq>

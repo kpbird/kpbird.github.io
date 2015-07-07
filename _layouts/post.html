@@ -11,7 +11,7 @@
                     <header>
                         <h1>{{page.title}}</h1>
                         <small class="fsize13">
-                            <a href="{{ site.base-url }}/{{ page.categories }}" class="label label-default light"><i class="fa fa-dot-circle-o"></i> {{ page.categories }}</a>
+                            <a href="{{ site.base-url }}{{site.category_archive.path}}/{{ page.categories }}" class="label label-default light"><i class="fa fa-dot-circle-o"></i> {{ page.categories }}</a>
                             <a href="{{ page.url }}#disqus_thread" class="label label-default light">0 Comments</a>
                             <span class="label label-default light">{{page.date | date:"%-d %B %Y" }}</span>
                         </small>

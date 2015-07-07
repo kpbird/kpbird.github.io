@@ -8,7 +8,122 @@
     <title>Ketan Parmar</title>
     <link>http://kpbird.com</link>
     <description>Ketan Parmar is a software developer, trainer, speaker.</description>
-    <pubDate>Sat, 27 Jun 2015 21:50:00 +0530</pubDate>
+    <pubDate>Sat, 04 Jul 2015 21:50:00 +0530</pubDate>
+    <item>
+      <title>Go Language For Java Developer Part-5</title>
+      <link>http://kpbird.com/2015/07/Go-Language-For-Java-Developer-Part-5</link>
+      <description><![CDATA[This article series is designed keeping in mind,The Java Developers who would like to learn Go Language.]]></description>
+      <comments>http://kpbird.com/2015/07/Go-Language-For-Java-Developer-Part-5#disqus_thread</comments>
+      <pubDate>Sat, 04 Jul 2015 21:50:00 +0530</pubDate>
+      <guid>http://kpbird.com/2015/07/Go-Language-For-Java-Developer-Part-5</guid>
+      <content:encoded><![CDATA[<p><img src="/assets/images/posts/golang.jpeg" alt="Go Language For Java Developer" title="Go Language For Java Developer" class="img-responsive"></p>
+
+<p>Previous article of the Go series</p>
+
+<ul>
+<li><a href="http://kpbird.com/2015/06/Go-Language-For-Java-Developer-Part-1/">Part-1 : Introduction of Go Language </a></li>
+<li><a href="http://kpbird.com/2015/06/Go-Language-For-Java-Developer-Part-2/">Part-2 : Hello Word</a></li>
+<li><a href="http://kpbird.com/2015/06/Go-Language-For-Java-Developer-Part-3/">Part-3 : Data Type</a></li>
+<li><a href="http://kpbird.com/2015/06/Go-Language-For-Java-Developer-Part-4/">Part-4: Keywords is Go Language</a></li>
+</ul>
+
+<h3 id="variables"><strong>Variables</strong></h3>
+
+<p>Variable: A variable is a storage location for holding a value. The set of permissible values is determined by the variable&#39;s type.</p>
+
+<h4 id="java-variable">Java Variable</h4>
+
+<p>Java language has primitive type and objects, both have different syntax to declare a variable</p>
+
+<p>Primitive type variable</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">int a
+String b
+float c
+</code></pre></div>
+<p>Object type variable</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">Animal a = new Animal()
+Student s = new Student()
+</code></pre></div>
+<p>Java is object oriented language so that we can have access modifier for variable declaration</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">private int a
+public String b
+protected float c
+private Animal a 
+</code></pre></div>
+<p>In Java we can declare variable at many places like Local variable, Parameters, Class level, Instance variable.</p>
+
+<p><strong>Variable Naming</strong></p>
+
+<ol>
+<li>Variable names are case-sensitive</li>
+<li>An unlimited-length sequence of Unicode letters and digits</li>
+<li>Beginning with a letter, the dollar sign &quot;$&quot;, or the underscore character &quot;_&quot;.</li>
+<li>No special characters allowd as identifier of variable</li>
+<li>We can&#39;t use reserved keywords</li>
+</ol>
+
+<h4 id="go-variable">Go Variable</h4>
+
+<p>Variables in Go are created by first using the <em>&#39;var&#39;</em> keyword, then specifying the variable name, the type and finally assigning a value to the variable.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">package main
+import &quot;fmt&quot;
+func main() {
+    var x int  // Line 1
+    x = 10 // Line 2
+    var y string = &quot;Hello Go!&quot; // Line 3
+    fmt.Println(x)
+    fmt.Println(y)
+}
+</code></pre></div>
+<p>In Line 1, var indicate it&#39;s variable, x is name of variable and int is type of variable. 
+In Line 2, we are assigning value in x variable. 
+In Line 3, we have declare string variable and assign in single line</p>
+
+<p>Since creating a new variable with a starting value is so common Go also supports a shorter statement:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">y := &quot;Hello Go!&quot;
+</code></pre></div>
+<p>With above shorter syntax Go compiler will automatically identify that y is variable of type string and value is &quot;Hello Go!&quot;.</p>
+
+<p>Declare multiple variable at same time</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">var (
+    name string
+    age int
+    location string
+)
+</code></pre></div>
+<p>Go is not object oriented language so we don&#39;t have access modifier like we have in Java. In Go language, We have two place to declare variables 1. Inside Function 2. Out Side Function.</p>
+
+<p><strong>Function / Local Variable</strong></p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">package main
+import &quot;fmt&quot;
+func main(){
+    var x int = 10  
+    fmt.Println(x)
+}
+</code></pre></div>
+<p><strong>Global Variable</strong>: Any function can access y variable, x is local variable only accessible inside main function</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">package main
+import &quot;fmt&quot;
+var y int =10
+func main(){
+    var x int = 10
+    fmt.Println(x)
+    fmt.Println(y)
+}
+func hello(){
+    fmt.Println(y)
+}
+</code></pre></div>
+<p><strong>Variable Name</strong></p>
+
+<ol>
+<li>Name must be start with letter</li>
+<li>Name may contain letter, number and underscore (_)</li>
+<li>Name is character sensetive Num and num consider as two different variable</li>
+</ol>
+]]></content:encoded>
+      <dc:date>2015-07-04T21:50:00+05:30</dc:date>
+    </item>
     <item>
       <title>Go Language For Java Developer Part-4</title>
       <link>http://kpbird.com/2015/06/Go-Language-For-Java-Developer-Part-4</link>
@@ -934,86 +1049,6 @@ Real-time analysis.</li>
 ]]></content:encoded>
       <dc:date>2014-12-01T21:50:00+05:30</dc:date>
     </item>
-    <item>
-      <title>Monolithic vs MicroService Architecture</title>
-      <link>http://kpbird.com/2014/11/Monolithic-vs-MicroService-Architecture</link>
-      <description><![CDATA[This is how industry move from monilighic to microservice...]]></description>
-      <comments>http://kpbird.com/2014/11/Monolithic-vs-MicroService-Architecture#disqus_thread</comments>
-      <pubDate>Fri, 28 Nov 2014 21:50:00 +0530</pubDate>
-      <guid>http://kpbird.com/2014/11/Monolithic-vs-MicroService-Architecture</guid>
-      <content:encoded><![CDATA[<p><img src="/assets/images/posts/007ac2e.png" alt="Monolithic vs MicroService Architecture" class="img-responsive"></p>
-
-<p><em>Monolithic architecture is something that build from single piece of material, historically from rock. Monolith term normally use for object made from single large piece of material.”</em> - <strong>Non-Technical Definition</strong></p>
-
-<p><em>“Monolithic application has single code base with multiple modules. Modules are divided as either for business features or technical features. It has single build system which build entire application and/or dependency. It also has single executable or deployable binary”</em> – <strong>Technical Definition</strong></p>
-
-<p>Industry is using this approach since long to develop enterprise application. Many companies have invested years to build enterprise application with monolithic approach. Sometime it also called multi-tier architecture because monolithic applications are divided in three or more layers or tire i.e. presentation, business, database, application, etc. It was a time of browser evaluation. Enterprise was focused on desktop/laptop devices with Web Browser as client, which doesn&#39;t require to expose data with API, mainly because browsers can understand only HTML, CSS and JavaScript. Although, Enterprise was using Enterprise Data Bus(EDB), Electronic Data Interchange(EDI) , Enterprise Data Exchange (EDX) and many more (<a href="http://www.oasis-open.org/standards">https://www.oasis-open.org/standards</a>) data exchange format to interact with each other in back-end. Monolithic architecture need of enterprises&#39; at that time.</p>
-
-<p>Suddenly, entire paradigm shift from browser / desktop to mobile / smart devices. Enterprise need to serve data to different devices and form factors (smart phone, tablet, handheld, etc). Smart phone become always available, always on and personal device for everyone, which demand information anytime, anywhere, on fingertip. Mobile application is nearly useless without internet connectivity and backend services. Now is a time for mobile first, every enterprises are looking forward to develop mobile application before web. To developer mobile application enterprise need to expose data using API (REST or SOAP) because legacy data exchange format was not compatible with mobile application. With increasing demand of mobile application force to change back-end architecture. This is prime force behind migrating monolithic architecture to microservice architecture.</p>
-
-<p>Microservice architecture is an approach of building large enterprise application with multiple small unit called service, each service develop, deploy and test individually. Each service intercommunicate with a common communication protocol like REST web service with JSON. Each service run individually either in single machine or different machine but they execute its own separate process. Each service may have own database or storage system or they can share common database or storage system. Microservice is all about distribute or break application in small chunks.</p>
-
-<p>Microservice is more than code and structure. It’s way of working. Its culture in a way, every developer or team own some part of large application. Microservice is not ultimate solution for every application but it’s surely solution for large enterprise application. Microservice has some shortfalls like increase lot of operations overhead, DevOps skills required, complex to manage because of distributed system, bug tracking become challenging.</p>
-
-<p><strong>Difficulties with monolithic application, when it grow</strong></p>
-
-<ul>
-<li>Large monolithic code base makes complicated to understand, especially for new developer</li>
-<li>Scaling become challenging</li>
-<li>Continuously integration / deployment become complex and time consuming. You may require dedicated team for build and deploy</li>
-<li>Overloaded IDE, Large code base makes IDE slow, build time increase.</li>
-<li>Extremely difficult to change technology or language or framework because everything is tightly coupled and depend up on each other.</li>
-</ul>
-
-<p><strong>Privilege with Microservice architecture, when it grow</strong></p>
-
-<ul>
-<li>Each microservice is small and focused on a specific feature / business requirement.</li>
-<li>Microservice can be developed independently by small team of developers (normally 2 to 5 developers).</li>
-<li>Microservice is loosely coupled, means services are independent, in terms of development and deployment both.</li>
-<li>Microservice can be developed using different programming language (Personally I don&#39;t suggest to do it).</li>
-<li>Microservice allows easy and flexible way to integrate automatic deployment with Continuous Integration tools (for e.g: Jenkins, Hudson, bamboo etc..).
-The productivity of a new team member will be quick enough.</li>
-<li>Microservice allows you to take advantage of emerging and latest technologies (framework, programming language, programming practice, etc.).</li>
-<li>Microservice is easy to scale based on demand.
-In a nutshell, monolithic vs microservice architecture is like elephant vs ant approach. What you wants to build a giant system like elephant or army of ant, small, fast and effective.</li>
-</ul>
-
-<p><strong>People to follow</strong></p>
-
-<ul>
-<li>Martin Fowler <a href="http://twitter.com/@martinfowler">@martinfowler</a></li>
-<li>Victor Klang <a href="http://twitter.com/@viktorklang">@viktorklang</a></li>
-<li>Jeppe Cramon <a href="http://twitter.com/@jeppec">@jeppec</a></li>
-<li>Benjamin Wootton <a href="http://twitter.com/@benjaminwootton">@benjaminwootton</a></li>
-<li>Russ Miles <a href="http://twitter.com/@russmiles">@russmiles</a></li>
-</ul>
-
-<p><strong>Article &amp; Presentation</strong></p>
-
-<ul>
-<li><a href="http://martinfowler.com/articles/microservices.html">http://martinfowler.com/articles/microservices.html</a></li>
-<li><a href="http://yow.eventer.com/yow-2012-1012/micro-services-architecture-by-fred-george-1286">http://yow.eventer.com/yow-2012-1012/micro-services-architecture-by-fred-george-1286</a></li>
-<li><a href="http://www.infoq.com/presentations/Breaking-the-Monolith">http://www.infoq.com/presentations/Breaking-the-Monolith</a></li>
-<li><a href="http://www.linkedin.com/today/post/article/20140529022253-6461201-seven-micro-%0Aservices-architecture-advantages">https://www.linkedin.com/today/post/article/20140529022253-6461201-seven-micro-
-services-architecture-advantages</a></li>
-</ul>
-
-<p><strong>Case Studies</strong></p>
-
-<ul>
-<li>Build Microservices at Krma <a href="http://blog.yourkarma.com/building-microservices-at-karma">https://blog.yourkarma.com/building-microservices-at-karma</a></li>
-<li>Migrating to Microservice <a href="http://www.infoq.com/presentations/migration-cloud-native">http://www.infoq.com/presentations/migration-cloud-native</a></li>
-</ul>
-
-<p><strong>Event</strong></p>
-
-<ul>
-<li>µCon: The Microservices Conference : <a href="http://killsmatter.com/conferences/6312-mucon">https://skillsmatter.com/conferences/6312-mucon</a></li>
-</ul>
-]]></content:encoded>
-      <dc:date>2014-11-28T21:50:00+05:30</dc:date>
-    </item>
-    <dc:date>2015-06-27T21:50:00+05:30</dc:date>
+    <dc:date>2015-07-04T21:50:00+05:30</dc:date>
   </channel>
 </rss>
