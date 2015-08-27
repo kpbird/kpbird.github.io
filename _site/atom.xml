@@ -4,7 +4,7 @@
  <title>Ketan Parmar</title>
  <link type="application/atom+xml" href="http://romuluscrisan.com/atom.xml" rel="self"/>
  <link href="http://www.romuluscrisan.com/"/>
- <updated>2015-07-07T23:00:41+05:30</updated>
+ <updated>2015-08-17T22:41:34+05:30</updated>
  <id>http://www.kpbird.com/</id>
  <author>
    <name>Ketan Parmar</name>
@@ -360,7 +360,7 @@ func hello(){
 
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;library,-framework-&amp;amp;-services&quot;&gt;Library, Framework &amp;amp; Services&lt;/h3&gt;
+&lt;h3 id=&quot;library-framework-amp-services&quot;&gt;Library, Framework &amp;amp; Services&lt;/h3&gt;
 
 &lt;p&gt;Following libraries, frameworks and services are integrated in the application.&lt;/p&gt;
 
@@ -416,7 +416,7 @@ func hello(){
    <id>http://www.romuluscrisan.com/2015/06/Go-Language-For-Java-Developer-Part-3</id>
    <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/images/posts/golang.jpeg&quot; alt=&quot;Go Language For Java Developer&quot; title=&quot;Go Language For Java Developer&quot; class=&quot;img-responsive&quot;&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;java-language:-data-type&quot;&gt;&lt;strong&gt;Java Language: Data Type&lt;/strong&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;java-language-data-type&quot;&gt;&lt;strong&gt;Java Language: Data Type&lt;/strong&gt;&lt;/h3&gt;
 
 &lt;p&gt;In Java, We have premitive data types and objects. Java support 8 premitive data types for different purpose. &lt;/p&gt;
 
@@ -462,7 +462,7 @@ func hello(){
 
 &lt;p&gt;Reference: &lt;a href=&quot;https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html&quot;&gt;https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;go-language:-type&quot;&gt;&lt;strong&gt;Go Language: Type&lt;/strong&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;go-language-type&quot;&gt;&lt;strong&gt;Go Language: Type&lt;/strong&gt;&lt;/h3&gt;
 
 &lt;p&gt;Go language is statically typed programming language. It means that variable always has specific type that can&amp;#39;t be changed. Go language data type can be divided in main three categories. &lt;/p&gt;
 
@@ -927,7 +927,7 @@ Officially, Go Language don&amp;#39;t have any IDE but there are many open sourc
 
 &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Please update Parse.com API key before execute sample&lt;/p&gt;
 
-&lt;h3 id=&quot;https://github.com/kpbird/simplesyncadapter&quot;&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/kpbird/SimpleSyncAdapter&quot;&gt;https://github.com/kpbird/SimpleSyncAdapter&lt;/a&gt;&lt;/strong&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;https-github-com-kpbird-simplesyncadapter&quot;&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/kpbird/SimpleSyncAdapter&quot;&gt;https://github.com/kpbird/SimpleSyncAdapter&lt;/a&gt;&lt;/strong&gt;&lt;/h3&gt;
 
 &lt;p&gt;&lt;strong&gt;Reference&lt;/strong&gt;&lt;/p&gt;
 
@@ -3080,7 +3080,7 @@ public class HelloExtensionService extends ExtensionService   {
    <link href="http://www.romuluscrisan.com/2013/11/android-44-kitket-api-changes"/>
    <updated>2013-11-01T21:50:00+05:30</updated>
    <id>http://www.romuluscrisan.com/2013/11/android-44-kitket-api-changes</id>
-   <content type="html">&lt;h1 id=&quot;android-4.4-kitkat-api-changes&quot;&gt;Android 4.4 KitKat API Changes&lt;/h1&gt;
+   <content type="html">&lt;h1 id=&quot;android-4-4-kitkat-api-changes&quot;&gt;Android 4.4 KitKat API Changes&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Android 4.4 API Level 19&lt;/strong&gt;&lt;/p&gt;
 

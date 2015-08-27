@@ -363,7 +363,7 @@ func hello(){
 
 <p><br></p>
 
-<h3 id="library,-framework-&amp;-services">Library, Framework &amp; Services</h3>
+<h3 id="library-framework-amp-services">Library, Framework &amp; Services</h3>
 
 <p>Following libraries, frameworks and services are integrated in the application.</p>
 
@@ -421,7 +421,7 @@ func hello(){
       <guid>http://kpbird.com/2015/06/Go-Language-For-Java-Developer-Part-3</guid>
       <content:encoded><![CDATA[<p><img src="/assets/images/posts/golang.jpeg" alt="Go Language For Java Developer" title="Go Language For Java Developer" class="img-responsive"></p>
 
-<h3 id="java-language:-data-type"><strong>Java Language: Data Type</strong></h3>
+<h3 id="java-language-data-type"><strong>Java Language: Data Type</strong></h3>
 
 <p>In Java, We have premitive data types and objects. Java support 8 premitive data types for different purpose. </p>
 
@@ -467,7 +467,7 @@ func hello(){
 
 <p>Reference: <a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html">https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html</a></p>
 
-<h3 id="go-language:-type"><strong>Go Language: Type</strong></h3>
+<h3 id="go-language-type"><strong>Go Language: Type</strong></h3>
 
 <p>Go language is statically typed programming language. It means that variable always has specific type that can&#39;t be changed. Go language data type can be divided in main three categories. </p>
 
@@ -940,7 +940,7 @@ Officially, Go Language don&#39;t have any IDE but there are many open source 3r
 
 <p><strong>Note:</strong> Please update Parse.com API key before execute sample</p>
 
-<h3 id="https://github.com/kpbird/simplesyncadapter"><strong><a href="https://github.com/kpbird/SimpleSyncAdapter">https://github.com/kpbird/SimpleSyncAdapter</a></strong></h3>
+<h3 id="https-github-com-kpbird-simplesyncadapter"><strong><a href="https://github.com/kpbird/SimpleSyncAdapter">https://github.com/kpbird/SimpleSyncAdapter</a></strong></h3>
 
 <p><strong>Reference</strong></p>
 
