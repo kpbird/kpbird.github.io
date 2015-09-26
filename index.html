@@ -160,11 +160,8 @@ sitemap:
                         </li>
                         <li><a href="#skills" class="scrollTo">Skills</a>
                         </li>
-                        <li><a href="/blog">Blog</a>
-                        </li>
                         <li><a href="#contact" class="scrollTo">Contact</a>
-                        </li>
-                         <li><a href="/search" >Search</a>
+                        <li><a href="http://kpbird.blogspot.com" target="_blank">Blog</a>
                         </li>
                     </ul>
                 </div>
@@ -285,37 +282,7 @@ sitemap:
             </div>
         </article>
     </section>
-    <section id="quick-blog" class="alternate" >
-        <div class="container" >
-            <header class="text-center">
-                <h1>BLOG</h1>
-                <p>RECENT Posts</p>
-            </header>
-            <div class="divider">
-            </div>
-            <article>
-                <div class="row animate_fade_in">
-                    {% for post in site.posts offset:0 limit:3 %}
-                    <div class="col-md-4 col-height quick-hover">
-                        <div class="quick-item">
-                            {% if post.image != '' %}
-        <img src="/assets/images/posts/{{ post.image }}" alt="post image" title="post image" class="img-responsive" itemprop="image" >
-    {% endif%}
-                            <h4>{{ post.title }}</h4>
-                            <p>{{ post.summary }}</p>
-                            <a href="{{ post.url }}" class="btn btn-xs"><i class="fa fa-sign-out"></i> READ MORE</a>
-                        </div>
-                    </div>
-                    {% endfor %}
-                </div>
-            </article>
-            <div class="divider">
-            </div>
-            <article class="text-center" data-animation="bounceIn">
-                <a href="/blog" class="plusNav" title="more from blog">+</a>
-            </article>
-        </div>
-    </section>
+    
     <section id="contact">
         <div class="container">
             <header class="text-center">

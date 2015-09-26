@@ -2,380 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>http://kpbird.com/</loc>
-    <lastmod>2015-08-17T22:41:34+05:30</lastmod>
+    <lastmod>2015-09-26T12:22:59+05:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
-    <url>
-      <loc>http://kpbird.com/2015/07/Go-Language-For-Java-Developer-Part-5</loc>
-      
-        <lastmod>2015-07-04T21:50:00+05:30</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.5</priority>
-      
-    </url>
-  
-    <url>
-      <loc>http://kpbird.com/2015/06/Go-Language-For-Java-Developer-Part-4</loc>
-      
-        <lastmod>2015-06-27T21:50:00+05:30</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.5</priority>
-      
-    </url>
-  
-    <url>
-      <loc>http://kpbird.com/2015/06/Android-App-Review-First-Run-C25K-Fitness-Trainer</loc>
-      
-        <lastmod>2015-06-21T21:50:00+05:30</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.5</priority>
-      
-    </url>
-  
-    <url>
-      <loc>http://kpbird.com/2015/06/Go-Language-For-Java-Developer-Part-3</loc>
-      
-        <lastmod>2015-06-20T21:50:00+05:30</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.5</priority>
-      
-    </url>
-  
-    <url>
-      <loc>http://kpbird.com/2015/06/Go-Language-For-Java-Developer-Part-2</loc>
-      
-        <lastmod>2015-06-13T21:50:00+05:30</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.5</priority>
-      
-    </url>
-  
-    <url>
-      <loc>http://kpbird.com/2015/06/Go-Language-For-Java-Developer-Part-1</loc>
-      
-        <lastmod>2015-06-06T05:30:00+05:30</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.5</priority>
-      
-    </url>
-  
-    <url>
-      <loc>http://kpbird.com/2015/06/Android-M-Preview-API-Changes</loc>
-      
-        <lastmod>2015-06-06T05:30:00+05:30</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.5</priority>
-      
-    </url>
-  
-    <url>
-      <loc>http://kpbird.com/2015/04/Android-Simple-SyncAdapter-Example</loc>
-      
-        <lastmod>2015-04-26T21:50:00+05:30</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.5</priority>
-      
-    </url>
-  
-    <url>
-      <loc>http://kpbird.com/2014/12/How-Smart-Watch-can-change-your-life%20copy</loc>
-      
-        <lastmod>2014-12-04T21:50:00+05:30</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.5</priority>
-      
-    </url>
-  
-    <url>
-      <loc>http://kpbird.com/2014/12/Wearable-technology-to-monitor-Parkinson%E2%80%99s-disease</loc>
-      
-        <lastmod>2014-12-01T21:50:00+05:30</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.5</priority>
-      
-    </url>
-  
-    <url>
-      <loc>http://kpbird.com/2014/11/Monolithic-vs-MicroService-Architecture</loc>
-      
-        <lastmod>2014-11-28T21:50:00+05:30</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.5</priority>
-      
-    </url>
-  
-    <url>
-      <loc>http://kpbird.com/2014/11/android-login-with-facebook</loc>
-      
-        <lastmod>2014-11-22T21:50:00+05:30</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.5</priority>
-      
-    </url>
-  
-    <url>
-      <loc>http://kpbird.com/2014/11/android-login-with-google-plus-utility</loc>
-      
-        <lastmod>2014-11-06T21:50:00+05:30</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.5</priority>
-      
-    </url>
-  
-    <url>
-      <loc>http://kpbird.com/2014/10/android-50-lollipop-api-change</loc>
-      
-        <lastmod>2014-10-06T21:50:00+05:30</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.5</priority>
-      
-    </url>
-  
-    <url>
-      <loc>http://kpbird.com/2014/07/10-Tips-for-fledgling-developers</loc>
-      
-        <lastmod>2014-07-12T21:50:00+05:30</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.5</priority>
-      
-    </url>
-  
-    <url>
-      <loc>http://kpbird.com/2014/06/Microservice-Architecture-A-Quick-Guide</loc>
-      
-        <lastmod>2014-06-20T21:50:00+05:30</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.5</priority>
-      
-    </url>
-  
-    <url>
-      <loc>http://kpbird.com/2014/06/NoSQL-A-Quick-Guide</loc>
-      
-        <lastmod>2014-06-14T21:50:00+05:30</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.5</priority>
-      
-    </url>
-  
-    <url>
-      <loc>http://kpbird.com/2014/06/Migrating-Web-Site-to-AWS-Cloud-A%20Quick-Guide</loc>
-      
-        <lastmod>2014-06-05T21:50:00+05:30</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.5</priority>
-      
-    </url>
-  
-    <url>
-      <loc>http://kpbird.com/2014/06/android-triangle-pager-sliding-tabs</loc>
-      
-        <lastmod>2014-06-01T21:50:00+05:30</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.5</priority>
-      
-    </url>
-  
-    <url>
-      <loc>http://kpbird.com/2014/06/android-l-preview-api-changes</loc>
-      
-        <lastmod>2014-06-01T21:50:00+05:30</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.5</priority>
-      
-    </url>
-  
-    <url>
-      <loc>http://kpbird.com/2014/05/simple-tips-to-secure-android-app</loc>
-      
-        <lastmod>2014-05-06T21:50:00+05:30</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.5</priority>
-      
-    </url>
-  
-    <url>
-      <loc>http://kpbird.com/2014/03/use-adb-over-wi-fi-without-extra</loc>
-      
-        <lastmod>2014-03-06T21:50:00+05:30</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.5</priority>
-      
-    </url>
-  
-    <url>
-      <loc>http://kpbird.com/2014/01/sony-smartwatch-app-development-4</loc>
-      
-        <lastmod>2014-01-06T21:50:00+05:30</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.5</priority>
-      
-    </url>
-  
-    <url>
-      <loc>http://kpbird.com/2013/12/sony-smartwatch-app-development-3</loc>
-      
-        <lastmod>2013-12-06T21:50:00+05:30</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.5</priority>
-      
-    </url>
-  
-    <url>
-      <loc>http://kpbird.com/2013/12/sony-smartwatch-app-development-2</loc>
-      
-        <lastmod>2013-12-06T21:50:00+05:30</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.5</priority>
-      
-    </url>
-  
-    <url>
-      <loc>http://kpbird.com/2013/12/smart-watch-app-development</loc>
-      
-        <lastmod>2013-12-01T21:50:00+05:30</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.5</priority>
-      
-    </url>
-  
-    <url>
-      <loc>http://kpbird.com/2013/11/android-44-kitket-api-changes</loc>
-      
-        <lastmod>2013-11-01T21:50:00+05:30</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.5</priority>
-      
-    </url>
-  
-    <url>
-      <loc>http://kpbird.com/2013/05/volley-easy-fast-networking-for-android</loc>
-      
-        <lastmod>2013-05-01T21:50:00+05:30</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.5</priority>
-      
-    </url>
-  
   
   <url>
-    <loc>http://kpbird.com/atom.xml</loc>
+    <loc>http://kpbird.com/404.html</loc>
     
-      <lastmod>2015-08-17T22:41:34+05:30</lastmod>
+      <lastmod>2015-09-26T12:22:59+05:30</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -386,15 +22,15 @@
   </url>
   
   <url>
-    <loc>http://kpbird.com/index.html</loc>
+    <loc>http://kpbird.com/atom.xml</loc>
     
-      <lastmod>2014-02-24</lastmod>
+      <lastmod>2015-09-26T12:22:59+05:30</lastmod>
     
     
       <changefreq>monthly</changefreq>
     
     
-      <priority>0.7</priority>
+      <priority>0.3</priority>
     
   </url>
   
@@ -412,7 +48,7 @@
   </url>
   
   <url>
-    <loc>http://kpbird.com/blog/index.html</loc>
+    <loc>http://kpbird.com/index.html</loc>
     
       <lastmod>2014-02-24</lastmod>
     
@@ -427,124 +63,7 @@
   <url>
     <loc>http://kpbird.com/sitemap.xml</loc>
     
-      <lastmod>2015-08-17T22:41:34+05:30</lastmod>
-    
-    
-      <changefreq>monthly</changefreq>
-    
-    
-      <priority>0.3</priority>
-    
-  </url>
-  
-  <url>
-    <loc>http://kpbird.com/tag/android/index.html</loc>
-    
-      <lastmod>2015-08-17T22:41:34+05:30</lastmod>
-    
-    
-      <changefreq>monthly</changefreq>
-    
-    
-      <priority>0.3</priority>
-    
-  </url>
-  
-  <url>
-    <loc>http://kpbird.com/tag/smartwatch/index.html</loc>
-    
-      <lastmod>2015-08-17T22:41:34+05:30</lastmod>
-    
-    
-      <changefreq>monthly</changefreq>
-    
-    
-      <priority>0.3</priority>
-    
-  </url>
-  
-  <url>
-    <loc>http://kpbird.com/tag/architecture/index.html</loc>
-    
-      <lastmod>2015-08-17T22:41:34+05:30</lastmod>
-    
-    
-      <changefreq>monthly</changefreq>
-    
-    
-      <priority>0.3</priority>
-    
-  </url>
-  
-  <url>
-    <loc>http://kpbird.com/tag/bigdata/index.html</loc>
-    
-      <lastmod>2015-08-17T22:41:34+05:30</lastmod>
-    
-    
-      <changefreq>monthly</changefreq>
-    
-    
-      <priority>0.3</priority>
-    
-  </url>
-  
-  <url>
-    <loc>http://kpbird.com/tag/random/index.html</loc>
-    
-      <lastmod>2015-08-17T22:41:34+05:30</lastmod>
-    
-    
-      <changefreq>monthly</changefreq>
-    
-    
-      <priority>0.3</priority>
-    
-  </url>
-  
-  <url>
-    <loc>http://kpbird.com/tag/wearable/index.html</loc>
-    
-      <lastmod>2015-08-17T22:41:34+05:30</lastmod>
-    
-    
-      <changefreq>monthly</changefreq>
-    
-    
-      <priority>0.3</priority>
-    
-  </url>
-  
-  <url>
-    <loc>http://kpbird.com/tag/smart watch/index.html</loc>
-    
-      <lastmod>2015-08-17T22:41:34+05:30</lastmod>
-    
-    
-      <changefreq>monthly</changefreq>
-    
-    
-      <priority>0.3</priority>
-    
-  </url>
-  
-  <url>
-    <loc>http://kpbird.com/tag/go/index.html</loc>
-    
-      <lastmod>2015-08-17T22:41:34+05:30</lastmod>
-    
-    
-      <changefreq>monthly</changefreq>
-    
-    
-      <priority>0.3</priority>
-    
-  </url>
-  
-  <url>
-    <loc>http://kpbird.com/tag/app review/index.html</loc>
-    
-      <lastmod>2015-08-17T22:41:34+05:30</lastmod>
+      <lastmod>2015-09-26T12:22:59+05:30</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -557,78 +76,13 @@
   <url>
     <loc>http://kpbird.com//feed.xml</loc>
     
-      <lastmod>2015-08-17T22:41:34+05:30</lastmod>
+      <lastmod>2015-09-26T12:22:59+05:30</lastmod>
     
     
       <changefreq>monthly</changefreq>
     
     
       <priority>0.3</priority>
-    
-  </url>
-  
-  <url>
-    <loc>http://kpbird.com/blog/page/2/index.html</loc>
-    
-      <lastmod>2014-02-24</lastmod>
-    
-    
-      <changefreq>monthly</changefreq>
-    
-    
-      <priority>0.7</priority>
-    
-  </url>
-  
-  <url>
-    <loc>http://kpbird.com/blog/page/3/index.html</loc>
-    
-      <lastmod>2014-02-24</lastmod>
-    
-    
-      <changefreq>monthly</changefreq>
-    
-    
-      <priority>0.7</priority>
-    
-  </url>
-  
-  <url>
-    <loc>http://kpbird.com/blog/page/4/index.html</loc>
-    
-      <lastmod>2014-02-24</lastmod>
-    
-    
-      <changefreq>monthly</changefreq>
-    
-    
-      <priority>0.7</priority>
-    
-  </url>
-  
-  <url>
-    <loc>http://kpbird.com/blog/page/5/index.html</loc>
-    
-      <lastmod>2014-02-24</lastmod>
-    
-    
-      <changefreq>monthly</changefreq>
-    
-    
-      <priority>0.7</priority>
-    
-  </url>
-  
-  <url>
-    <loc>http://kpbird.com/blog/page/6/index.html</loc>
-    
-      <lastmod>2014-02-24</lastmod>
-    
-    
-      <changefreq>monthly</changefreq>
-    
-    
-      <priority>0.7</priority>
     
   </url>
   
