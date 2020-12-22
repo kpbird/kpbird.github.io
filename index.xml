@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ketan Parmar (kpbird)</title>
-    <link>http://kpbird.github.io/</link>
+    <link>https://kpbird.github.io/</link>
     <description>Recent content on Ketan Parmar (kpbird)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;#169; 2020. All rights reserved.</copyright>
-    <lastBuildDate>Fri, 21 Jun 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://kpbird.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 21 Jun 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://kpbird.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Microservice Architecture: The Real Challenge</title>
-      <link>http://kpbird.github.io/post/2019-06-21_microservice-architecture-the-real-challenge-c1561b619cd6/</link>
+      <link>https://kpbird.github.io/post/2019-06-21_microservice-architecture-the-real-challenge-c1561b619cd6/</link>
       <pubDate>Fri, 21 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://kpbird.github.io/post/2019-06-21_microservice-architecture-the-real-challenge-c1561b619cd6/</guid>
+      <guid>https://kpbird.github.io/post/2019-06-21_microservice-architecture-the-real-challenge-c1561b619cd6/</guid>
       <description>Microservice Architecture: The Real Challenge Microservice is a buzzword among the developer community. In this article, we will explore the most important points about Microservice architecture that are seldom addressed elsewhere. We will try to cover all the practical problems of moving to microservice architecture.
 Let&amp;rsquo;s start with some advantages of microservice architecture. Following are three major advantage for which you may consider moving to microservice architecture.
  Engineering flexibility: Each service team can choose a different programming language or framework.</description>
@@ -21,10 +21,10 @@ Let&amp;rsquo;s start with some advantages of microservice architecture. Followi
     
     <item>
       <title>RFC 8259 --- The JavaScript Object Notation (JSON) Data Interchange Format</title>
-      <link>http://kpbird.github.io/post/2019-06-07_rfc-8259-the-javascript-object-notation-json-data-interchange-format-607f70fd19a3/</link>
+      <link>https://kpbird.github.io/post/2019-06-07_rfc-8259-the-javascript-object-notation-json-data-interchange-format-607f70fd19a3/</link>
       <pubDate>Fri, 07 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://kpbird.github.io/post/2019-06-07_rfc-8259-the-javascript-object-notation-json-data-interchange-format-607f70fd19a3/</guid>
+      <guid>https://kpbird.github.io/post/2019-06-07_rfc-8259-the-javascript-object-notation-json-data-interchange-format-607f70fd19a3/</guid>
       <description>RFC 8259 &amp;mdash; The JavaScript Object Notation (JSON) Data Interchange Format ![source: https://www.json.org/]
 JSON has become defacto data exchange format for REST API. It is so common that developers consider JSON as a default protocol for communication until specified otherwise.
 In this article, I will try to cover the history of JSON along with RFC and IETF.
@@ -33,30 +33,30 @@ In this article, I will try to cover the history of JSON along with RFC and IETF
     
     <item>
       <title>Golang: Find the type of the variable</title>
-      <link>http://kpbird.github.io/post/2018-03-24_golang-find-the-type-of-the-variable-12f1b7ce869a/</link>
+      <link>https://kpbird.github.io/post/2018-03-24_golang-find-the-type-of-the-variable-12f1b7ce869a/</link>
       <pubDate>Sat, 24 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://kpbird.github.io/post/2018-03-24_golang-find-the-type-of-the-variable-12f1b7ce869a/</guid>
+      <guid>https://kpbird.github.io/post/2018-03-24_golang-find-the-type-of-the-variable-12f1b7ce869a/</guid>
       <description>Golang: Find the type of the variable The Go reflection package has methods for inspecting the type of variables. The following snippet will print out the reflection type of a string, integer and float. Document https://golang.org/pkg/reflect/#Type
 package main import ( &amp;#34;fmt&amp;#34; &amp;#34;reflect&amp;#34; ) func main() { b := true s := &amp;#34;&amp;#34; n := 1 f := 1.0 a := []string{&amp;#34;foo&amp;#34;, &amp;#34;bar&amp;#34;, &amp;#34;baz&amp;#34;} fmt.Println(reflect.TypeOf(b)) fmt.Println(reflect.TypeOf(s)) fmt.Println(reflect.TypeOf(n)) fmt.Println(reflect.TypeOf(f)) fmt.Println(reflect.TypeOf(a)) } How to print variable type The Printf is capable of print exactly variable type using %T formatting</description>
     </item>
     
     <item>
       <title>My Personal Technology Radar for 2018</title>
-      <link>http://kpbird.github.io/post/2018-02-12_my-personal-technology-radar-for-2018-d3b53f18866b/</link>
+      <link>https://kpbird.github.io/post/2018-02-12_my-personal-technology-radar-for-2018-d3b53f18866b/</link>
       <pubDate>Mon, 12 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://kpbird.github.io/post/2018-02-12_my-personal-technology-radar-for-2018-d3b53f18866b/</guid>
+      <guid>https://kpbird.github.io/post/2018-02-12_my-personal-technology-radar-for-2018-d3b53f18866b/</guid>
       <description>My Personal Technology Radar for 2018 Technology radar is published by ThoughtWorks. It publishes insights into the technology and trends which may shape the future. It also maintains position of existing tools and technologies. I am writing my personal technology radar in this article. I will explain tools, technologies and frameworks which I will keep an eye on for this year.
 Software industry is moving too fast these days. The main problem for every one is to predict which technology will grow and become mainstream and which one are just buzz words.</description>
     </item>
     
     <item>
       <title>Golang: Generate fixed size random string</title>
-      <link>http://kpbird.github.io/post/2018-02-11_golang-generate-fixed-size-random-string-dd6dbd5e63c0/</link>
+      <link>https://kpbird.github.io/post/2018-02-11_golang-generate-fixed-size-random-string-dd6dbd5e63c0/</link>
       <pubDate>Sun, 11 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://kpbird.github.io/post/2018-02-11_golang-generate-fixed-size-random-string-dd6dbd5e63c0/</guid>
+      <guid>https://kpbird.github.io/post/2018-02-11_golang-generate-fixed-size-random-string-dd6dbd5e63c0/</guid>
       <description>Golang: Generate fixed size random string There are many ways you can generate random string, In this article I will explore fastest method to generate fixed size random string
 Generate Random String using rand.Intn() This is most simplest way to generate random string but not slowest (ASCII table http://www.asciitable.com/)
 //RandomString - Generate a random string of A-Z chars with len = l  func RandomString(len int) string { bytes := make([]byte, len) for i := 0; i &amp;lt; len; i++ { bytes[i] = byte(65 + rand.</description>
@@ -64,20 +64,20 @@ Generate Random String using rand.Intn() This is most simplest way to generate r
     
     <item>
       <title>Golang: parse and format unix timestamp</title>
-      <link>http://kpbird.github.io/post/2018-02-11_golang-parse-and-format-unix-timestamp-6f467389cfe1/</link>
+      <link>https://kpbird.github.io/post/2018-02-11_golang-parse-and-format-unix-timestamp-6f467389cfe1/</link>
       <pubDate>Sun, 11 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://kpbird.github.io/post/2018-02-11_golang-parse-and-format-unix-timestamp-6f467389cfe1/</guid>
+      <guid>https://kpbird.github.io/post/2018-02-11_golang-parse-and-format-unix-timestamp-6f467389cfe1/</guid>
       <description>1. If you have unix timestamp in String The time.Parse function does not do Unix timestamps. Instead you can use strconv.ParseIntto parse the string to int64 and create the timestamp with time.Unix:
 package main import ( &amp;#34;fmt&amp;#34; &amp;#34;time&amp;#34; &amp;#34;strconv&amp;#34; ) func main() { i, err := strconv.ParseInt(&amp;#34;1518328047&amp;#34;, 10, 64) if err != nil { panic(err) } tm := time.Unix(i, 0) fmt.Println(tm) } 2. If you have unix timestamp in int The time.</description>
     </item>
     
     <item>
       <title>Golang: Serialize struct using gob: Part 2</title>
-      <link>http://kpbird.github.io/post/2017-07-29_golang-serialize-struct-using-gob-part-2-f6134dd4f22c/</link>
+      <link>https://kpbird.github.io/post/2017-07-29_golang-serialize-struct-using-gob-part-2-f6134dd4f22c/</link>
       <pubDate>Sat, 29 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://kpbird.github.io/post/2017-07-29_golang-serialize-struct-using-gob-part-2-f6134dd4f22c/</guid>
+      <guid>https://kpbird.github.io/post/2017-07-29_golang-serialize-struct-using-gob-part-2-f6134dd4f22c/</guid>
       <description>[Golang: Serialize struct using gob &amp;mdash; Part 2 In this article we will explore following functions of gob
 func (dec \*Decoder) Decode(e interface{}) error func (enc \*Encoder) Encode(e interface{}) error Encode and Decode functions are helpful when you want to write network application.
 Example 1: Simple encoding and decoding student structure
@@ -86,10 +86,10 @@ package main import ( &amp;#34;fmt&amp;#34; &amp;#34;encoding/gob&amp;#34; &amp;
     
     <item>
       <title>Book Review: Fraud: Cybercrime Story</title>
-      <link>http://kpbird.github.io/post/2017-07-20_book-review-fraud-cybercrime-story-25eb8cd706e8/</link>
+      <link>https://kpbird.github.io/post/2017-07-20_book-review-fraud-cybercrime-story-25eb8cd706e8/</link>
       <pubDate>Thu, 20 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://kpbird.github.io/post/2017-07-20_book-review-fraud-cybercrime-story-25eb8cd706e8/</guid>
+      <guid>https://kpbird.github.io/post/2017-07-20_book-review-fraud-cybercrime-story-25eb8cd706e8/</guid>
       <description>https://www.amazon.in/dp/B073ZFT1VR/ref=rdr_kindle_ext_tmb
 The book is a quick read at just over 81 pages. It&amp;rsquo;s a book that you would like to &amp;ldquo;Read In One Sitting&amp;rdquo;.
 The book has a story about Cybercrime, How fraud happens? What is real life, a serious effect of Cybercrime in our life?
@@ -98,19 +98,19 @@ I like the writing style. the characterization is excellent. Especially the hero
     
     <item>
       <title>Golang: Serialize struct using gob: Part 1</title>
-      <link>http://kpbird.github.io/post/2017-07-15_golang-serialize-struct-using-gob-part-1-e927a6547c00/</link>
+      <link>https://kpbird.github.io/post/2017-07-15_golang-serialize-struct-using-gob-part-1-e927a6547c00/</link>
       <pubDate>Sat, 15 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://kpbird.github.io/post/2017-07-15_golang-serialize-struct-using-gob-part-1-e927a6547c00/</guid>
+      <guid>https://kpbird.github.io/post/2017-07-15_golang-serialize-struct-using-gob-part-1-e927a6547c00/</guid>
       <description>Golang: Serialize struct using gob: Part 1 Serialize of the struct will help you to transfer data over network or it will help you to write data on disk. In a distributed system you generate data then serialize, compress and send. On other end you receive data then decompress, deserialize and process. The entire process must be fast and efficient. Go lang has it&amp;rsquo;s own serialize format called gob. Using gob you can encode and decode structure.</description>
     </item>
     
     <item>
       <title>Golang gracefully stop application</title>
-      <link>http://kpbird.github.io/post/2017-02-18_golang-gracefully-stop-application-23c2390bb212/</link>
+      <link>https://kpbird.github.io/post/2017-02-18_golang-gracefully-stop-application-23c2390bb212/</link>
       <pubDate>Sat, 18 Feb 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://kpbird.github.io/post/2017-02-18_golang-gracefully-stop-application-23c2390bb212/</guid>
+      <guid>https://kpbird.github.io/post/2017-02-18_golang-gracefully-stop-application-23c2390bb212/</guid>
       <description>Golang: Gracefully stop application To shutdown go application gracefully, you can use open source libraries or write your own code.
 Following are popular libraries to stop go application gracefully
  https://github.com/tylerb/graceful https://github.com/braintree/manners  In this article, I will explain how to write your own code to stop go app gracefully
@@ -119,10 +119,10 @@ Step 1: make channel which can listen for signals from OS. Refer [os.Signal] pac
     
     <item>
       <title>Golang: Send GCM - Google Cloud Message to Android Device</title>
-      <link>http://kpbird.github.io/post/2017-02-11_golang-send-gcm-google-cloud-message-to-android-device-34053f933c64/</link>
+      <link>https://kpbird.github.io/post/2017-02-11_golang-send-gcm-google-cloud-message-to-android-device-34053f933c64/</link>
       <pubDate>Sat, 11 Feb 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://kpbird.github.io/post/2017-02-11_golang-send-gcm-google-cloud-message-to-android-device-34053f933c64/</guid>
+      <guid>https://kpbird.github.io/post/2017-02-11_golang-send-gcm-google-cloud-message-to-android-device-34053f933c64/</guid>
       <description>Assumption  Go lang is installed in your computer Android sample application with GCM support  Step1: Generate server API key for GCM, This article will help you to generate server API key: [https://support.clevertap.com/docs/android/how-to-find-your-gcm-sender-id-and-gcm-api-server-key.html]
 Step2: Install Go library for GCM
 $ go get github.com/google/go-gcm Step3: Write the following function in your main.go, replace server API key in the following function. You can provide multiple client tokens in &amp;ldquo;regIDs&amp;rdquo; in case, you would like to broadcast message to multiple devices.</description>
@@ -130,10 +130,10 @@ $ go get github.com/google/go-gcm Step3: Write the following function in your ma
     
     <item>
       <title>Golang: Send Push Notification to iOS device</title>
-      <link>http://kpbird.github.io/post/2017-02-11_golang-send-push-notification-to-ios-device-7ade7fd07746/</link>
+      <link>https://kpbird.github.io/post/2017-02-11_golang-send-push-notification-to-ios-device-7ade7fd07746/</link>
       <pubDate>Sat, 11 Feb 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://kpbird.github.io/post/2017-02-11_golang-send-push-notification-to-ios-device-7ade7fd07746/</guid>
+      <guid>https://kpbird.github.io/post/2017-02-11_golang-send-push-notification-to-ios-device-7ade7fd07746/</guid>
       <description>Assumptions  Go language is installed in your computer iOS sample application with APNs support for testing  Step1: Generate certificate PEM file. This article will help you to generate PEM [https://www.raywenderlich.com/123862/push-notifications-tutorial]
 Step2: Install Go library for APNs
 go get github.com/anachronistic/apns Step3: Write the following function in your main.go. Place certificate PEM file in config folder. You can change push URL as per your requirement.
@@ -142,10 +142,10 @@ func SendPushToClient(pushText string,pushToken string) { fmt.</description>
     
     <item>
       <title>Go Language for Java Developers Part 4</title>
-      <link>http://kpbird.github.io/post/2015-09-23_go-language-for-java-developer-part-4-c6626c514b86/</link>
+      <link>https://kpbird.github.io/post/2015-09-23_go-language-for-java-developer-part-4-c6626c514b86/</link>
       <pubDate>Wed, 23 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://kpbird.github.io/post/2015-09-23_go-language-for-java-developer-part-4-c6626c514b86/</guid>
+      <guid>https://kpbird.github.io/post/2015-09-23_go-language-for-java-developer-part-4-c6626c514b86/</guid>
       <description>Following keywords are reserved and may not be used as identifiers.
 Java Keywords
 Go Lang Keywords
@@ -154,10 +154,10 @@ There are few obvious keywords like break, case, if, for, etc but few keywords a
     
     <item>
       <title>Go Language for Java Developers Part 4</title>
-      <link>http://kpbird.github.io/post/2015-09-23_go-language-for-java-developer-part-5-67e3c9226108/</link>
+      <link>https://kpbird.github.io/post/2015-09-23_go-language-for-java-developer-part-5-67e3c9226108/</link>
       <pubDate>Wed, 23 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://kpbird.github.io/post/2015-09-23_go-language-for-java-developer-part-5-67e3c9226108/</guid>
+      <guid>https://kpbird.github.io/post/2015-09-23_go-language-for-java-developer-part-5-67e3c9226108/</guid>
       <description>Variable: A variable is a storage location for holding a value. The set of permissible values is determined by the variable&amp;rsquo;s type.
 Java language has primitive type and objects, both have different syntax to declare a variable either Primitive type or Object type.
 Animal a = new Animal() Student s = new Student() Java is object oriented language so that we can have access modifier for variable declaration
@@ -166,29 +166,29 @@ private int a public String b protected float c private Animal a In the Java we 
     
     <item>
       <title>Monolithic vs MicroService architecture</title>
-      <link>http://kpbird.github.io/post/2015-09-23_monolithic-vs-microservice-architecture-5bf276e113cf/</link>
+      <link>https://kpbird.github.io/post/2015-09-23_monolithic-vs-microservice-architecture-5bf276e113cf/</link>
       <pubDate>Wed, 23 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://kpbird.github.io/post/2015-09-23_monolithic-vs-microservice-architecture-5bf276e113cf/</guid>
+      <guid>https://kpbird.github.io/post/2015-09-23_monolithic-vs-microservice-architecture-5bf276e113cf/</guid>
       <description>Monolithic architecture is something that build from single piece of material, historically from rock. Monolith term normally use for object made from single large piece of material. &amp;mdash; Non-Technical Definition Monolithic application has single code base with multiple modules. Modules are divided as either for business features or technical features. It has single build system which build entire application and/or dependency. It also has single executable or deployable binary &amp;mdash; Technical Definition Industry is using this approach since long to develop enterprise application.</description>
     </item>
     
     <item>
       <title>Go Language for Java Developers Part 1</title>
-      <link>http://kpbird.github.io/post/2015-08-31_go-language-for-java-developer-part-1-8885e70a454d/</link>
+      <link>https://kpbird.github.io/post/2015-08-31_go-language-for-java-developer-part-1-8885e70a454d/</link>
       <pubDate>Mon, 31 Aug 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://kpbird.github.io/post/2015-08-31_go-language-for-java-developer-part-1-8885e70a454d/</guid>
+      <guid>https://kpbird.github.io/post/2015-08-31_go-language-for-java-developer-part-1-8885e70a454d/</guid>
       <description>Go language is normally known as golang. It&amp;rsquo;s general purpose programming language developed at Google in 2007 by three Google employees namely Robert Griesemer, Rob Pike, and Ken Thompson. In November 2008 Google had announced Go Language to public and made it [open source].
 Go language compiler is available for the Linux, Mac OS X, FreeBSD, NetBSD, OpenBSD, Plan 9, and Microsoft Windows operating systems and the i386, amd64, ARM and IBM POWER processor architectures.</description>
     </item>
     
     <item>
       <title>Go Language for Java Developers Part 2</title>
-      <link>http://kpbird.github.io/post/2015-08-31_go-language-for-java-developer-part-2-852ad2c1ce5f/</link>
+      <link>https://kpbird.github.io/post/2015-08-31_go-language-for-java-developer-part-2-852ad2c1ce5f/</link>
       <pubDate>Mon, 31 Aug 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://kpbird.github.io/post/2015-08-31_go-language-for-java-developer-part-2-852ad2c1ce5f/</guid>
+      <guid>https://kpbird.github.io/post/2015-08-31_go-language-for-java-developer-part-2-852ad2c1ce5f/</guid>
       <description>Normally first program you write in any programming language is &amp;ldquo;Hello World&amp;rdquo;. Hello World is simple program which print &amp;ldquo;Hello Word&amp;rdquo; text on console / screen.
 Java: Hello World As Java Developer you can easily understand following code. No need to explain. correct ?
 package com.kpbird.gotutorial; public class Main { public static void main(String[] args) { System.out.println(&amp;#34;Hello World&amp;#34;); } } To compile &amp;amp; execute above code, you need to write following two commands in the Terminal.</description>
@@ -196,10 +196,10 @@ package com.kpbird.gotutorial; public class Main { public static void main(Strin
     
     <item>
       <title>Go Language for Java Developers Part 3</title>
-      <link>http://kpbird.github.io/post/2015-08-31_go-language-for-java-developer-part-3-2a698797b6b8/</link>
+      <link>https://kpbird.github.io/post/2015-08-31_go-language-for-java-developer-part-3-2a698797b6b8/</link>
       <pubDate>Mon, 31 Aug 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://kpbird.github.io/post/2015-08-31_go-language-for-java-developer-part-3-2a698797b6b8/</guid>
+      <guid>https://kpbird.github.io/post/2015-08-31_go-language-for-java-developer-part-3-2a698797b6b8/</guid>
       <description>Java Language: Data Type In Java, We have premitive data types and objects. Java support 8 premitive data types for different purpose.
 Data Type Value byte 0 short 0 int 0 long 0L float 0.0f double 0.0d char &amp;lsquo;\u0000&amp;rsquo; boolean false
 Reference: https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html
@@ -208,10 +208,10 @@ Go Language: Type Go language is statically typed programming language. It means
     
     <item>
       <title>NoSQL- A quick guide</title>
-      <link>http://kpbird.github.io/post/2015-08-27_nosql-a-quick-guide-2156c1bfcdc8/</link>
+      <link>https://kpbird.github.io/post/2015-08-27_nosql-a-quick-guide-2156c1bfcdc8/</link>
       <pubDate>Thu, 27 Aug 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://kpbird.github.io/post/2015-08-27_nosql-a-quick-guide-2156c1bfcdc8/</guid>
+      <guid>https://kpbird.github.io/post/2015-08-27_nosql-a-quick-guide-2156c1bfcdc8/</guid>
       <description>NoSQL is buzz word now-a-days among the developers and software professionals.
 What is NoSQL? NoSQL database, also called Not Only SQL, is an approach to data management and database design that&amp;rsquo;s useful for very large sets of distributed data.
 Where to use NoSQL ? Use NoSQL, When project has unstructured big data that require real-time or offline analysis or web/mobile application. i.e. Social Network app, Analytics app.
@@ -220,38 +220,38 @@ Advantages and Disadvantages of NoSQL DB.</description>
     
     <item>
       <title>10 Tips for fledgling developers</title>
-      <link>http://kpbird.github.io/post/2014-07-12_10-tips-for-fledgling-developers-2215d1e4fa65/</link>
+      <link>https://kpbird.github.io/post/2014-07-12_10-tips-for-fledgling-developers-2215d1e4fa65/</link>
       <pubDate>Sat, 12 Jul 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kpbird.github.io/post/2014-07-12_10-tips-for-fledgling-developers-2215d1e4fa65/</guid>
+      <guid>https://kpbird.github.io/post/2014-07-12_10-tips-for-fledgling-developers-2215d1e4fa65/</guid>
       <description>Continues Study Never think that you have acquired all or most of the knowledge existing in the world. Almost everybody in India at age of 24 starts thinking that he has acquired all the wisdom and knowledge that he needs. This should be strictly avoided. Continue study after education. Study should be habituated exactly in the same way as you are brushing teeth and taking bath every morning. A regular study, everyday, is extremely essential.</description>
     </item>
     
     <item>
       <title>Migrate Web Site to AWS Cloud --- A Quick Guide</title>
-      <link>http://kpbird.github.io/post/2014-07-05_migrating-web-site-to-aws-cloud-a-quick-guide-7576d2aae4e5/</link>
+      <link>https://kpbird.github.io/post/2014-07-05_migrating-web-site-to-aws-cloud-a-quick-guide-7576d2aae4e5/</link>
       <pubDate>Sat, 05 Jul 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kpbird.github.io/post/2014-07-05_migrating-web-site-to-aws-cloud-a-quick-guide-7576d2aae4e5/</guid>
+      <guid>https://kpbird.github.io/post/2014-07-05_migrating-web-site-to-aws-cloud-a-quick-guide-7576d2aae4e5/</guid>
       <description>Migrate Website to AWS Cloud This is a quick tip to migrate your existing website to AWS Cloud. I assume that you have basic knowledge of AWS Cloud and server side architecture. This post does not include a discussion of pros and cons of AWS or Cloud services. Elasticity and Auto-Scaling are two main features of Cloud. If we don&amp;rsquo;t leverage these feature then there isn&amp;rsquo;t any difference between hosting website in dedicate server or AWS Cloud.</description>
     </item>
     
     <item>
       <title>Microservice Architecture: A Quick Guide</title>
-      <link>http://kpbird.github.io/post/2014-06-20_microservice-architecture-a-quick-guide-3990785350fc/</link>
+      <link>https://kpbird.github.io/post/2014-06-20_microservice-architecture-a-quick-guide-3990785350fc/</link>
       <pubDate>Fri, 20 Jun 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kpbird.github.io/post/2014-06-20_microservice-architecture-a-quick-guide-3990785350fc/</guid>
+      <guid>https://kpbird.github.io/post/2014-06-20_microservice-architecture-a-quick-guide-3990785350fc/</guid>
       <description>What is Architecture (Software)? Architecture is the fundamental organization of a system embodied in its components (i.e. Web Server, Application Server, Databases,Storage, Communication layer, etc&amp;hellip;), their relationships to each other, and to the environment (i.e. deployment environment shared server, dedicated server, cloud deployment, etc..), and the principles guiding its design and evolution.
 What is microservice architecture ? Microservice means developing a single, small, meaningful functional feature as single service, each service has it&amp;rsquo;s own process and communicate with lightweight mechanism, deployed in single or multiple servers.</description>
     </item>
     
     <item>
       <title>About</title>
-      <link>http://kpbird.github.io/about/</link>
+      <link>https://kpbird.github.io/about/</link>
       <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kpbird.github.io/about/</guid>
+      <guid>https://kpbird.github.io/about/</guid>
       <description>I’m a multi-disciplined Mobile, Web, and Cloud architect with 13+ years experience spanning various client, server and cloud infrastructure technologies.
 A technical leader with a proven record of delivering outcomes in fast-paced and early-stage organizations. Expertise to understand customer&amp;rsquo;s needs, define tool and technology, design system architecture. Work toward the innovative solutions while motivating teams towards collective success.
  Language: Go Lang, Java, Kotlin, Node.js, Python, JavaScript, Frameworks: Spring Boot, Ktor, Gin, Spark, Hibernate, Express.</description>

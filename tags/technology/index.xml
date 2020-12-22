@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Technology on Ketan Parmar (kpbird)</title>
-    <link>http://kpbird.github.io/tags/technology/</link>
+    <link>https://kpbird.github.io/tags/technology/</link>
     <description>Recent content in Technology on Ketan Parmar (kpbird)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;#169; 2020. All rights reserved.</copyright>
-    <lastBuildDate>Mon, 12 Feb 2018 00:00:00 +0000</lastBuildDate><atom:link href="http://kpbird.github.io/tags/technology/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 12 Feb 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://kpbird.github.io/tags/technology/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My Personal Technology Radar for 2018</title>
-      <link>http://kpbird.github.io/post/2018-02-12_my-personal-technology-radar-for-2018-d3b53f18866b/</link>
+      <link>https://kpbird.github.io/post/2018-02-12_my-personal-technology-radar-for-2018-d3b53f18866b/</link>
       <pubDate>Mon, 12 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://kpbird.github.io/post/2018-02-12_my-personal-technology-radar-for-2018-d3b53f18866b/</guid>
+      <guid>https://kpbird.github.io/post/2018-02-12_my-personal-technology-radar-for-2018-d3b53f18866b/</guid>
       <description>My Personal Technology Radar for 2018 Technology radar is published by ThoughtWorks. It publishes insights into the technology and trends which may shape the future. It also maintains position of existing tools and technologies. I am writing my personal technology radar in this article. I will explain tools, technologies and frameworks which I will keep an eye on for this year.
 Software industry is moving too fast these days. The main problem for every one is to predict which technology will grow and become mainstream and which one are just buzz words.</description>
     </item>

@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>microservice on Ketan Parmar (kpbird)</title>
-    <link>http://kpbird.github.io/tags/microservice/</link>
+    <link>https://kpbird.github.io/tags/microservice/</link>
     <description>Recent content in microservice on Ketan Parmar (kpbird)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;#169; 2020. All rights reserved.</copyright>
-    <lastBuildDate>Fri, 21 Jun 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://kpbird.github.io/tags/microservice/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 21 Jun 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://kpbird.github.io/tags/microservice/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Microservice Architecture: The Real Challenge</title>
-      <link>http://kpbird.github.io/post/2019-06-21_microservice-architecture-the-real-challenge-c1561b619cd6/</link>
+      <link>https://kpbird.github.io/post/2019-06-21_microservice-architecture-the-real-challenge-c1561b619cd6/</link>
       <pubDate>Fri, 21 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://kpbird.github.io/post/2019-06-21_microservice-architecture-the-real-challenge-c1561b619cd6/</guid>
+      <guid>https://kpbird.github.io/post/2019-06-21_microservice-architecture-the-real-challenge-c1561b619cd6/</guid>
       <description>Microservice Architecture: The Real Challenge Microservice is a buzzword among the developer community. In this article, we will explore the most important points about Microservice architecture that are seldom addressed elsewhere. We will try to cover all the practical problems of moving to microservice architecture.
 Let&amp;rsquo;s start with some advantages of microservice architecture. Following are three major advantage for which you may consider moving to microservice architecture.
  Engineering flexibility: Each service team can choose a different programming language or framework.</description>
@@ -21,19 +21,19 @@ Let&amp;rsquo;s start with some advantages of microservice architecture. Followi
     
     <item>
       <title>Monolithic vs MicroService architecture</title>
-      <link>http://kpbird.github.io/post/2015-09-23_monolithic-vs-microservice-architecture-5bf276e113cf/</link>
+      <link>https://kpbird.github.io/post/2015-09-23_monolithic-vs-microservice-architecture-5bf276e113cf/</link>
       <pubDate>Wed, 23 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://kpbird.github.io/post/2015-09-23_monolithic-vs-microservice-architecture-5bf276e113cf/</guid>
+      <guid>https://kpbird.github.io/post/2015-09-23_monolithic-vs-microservice-architecture-5bf276e113cf/</guid>
       <description>Monolithic architecture is something that build from single piece of material, historically from rock. Monolith term normally use for object made from single large piece of material. &amp;mdash; Non-Technical Definition Monolithic application has single code base with multiple modules. Modules are divided as either for business features or technical features. It has single build system which build entire application and/or dependency. It also has single executable or deployable binary &amp;mdash; Technical Definition Industry is using this approach since long to develop enterprise application.</description>
     </item>
     
     <item>
       <title>Microservice Architecture: A Quick Guide</title>
-      <link>http://kpbird.github.io/post/2014-06-20_microservice-architecture-a-quick-guide-3990785350fc/</link>
+      <link>https://kpbird.github.io/post/2014-06-20_microservice-architecture-a-quick-guide-3990785350fc/</link>
       <pubDate>Fri, 20 Jun 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kpbird.github.io/post/2014-06-20_microservice-architecture-a-quick-guide-3990785350fc/</guid>
+      <guid>https://kpbird.github.io/post/2014-06-20_microservice-architecture-a-quick-guide-3990785350fc/</guid>
       <description>What is Architecture (Software)? Architecture is the fundamental organization of a system embodied in its components (i.e. Web Server, Application Server, Databases,Storage, Communication layer, etc&amp;hellip;), their relationships to each other, and to the environment (i.e. deployment environment shared server, dedicated server, cloud deployment, etc..), and the principles guiding its design and evolution.
 What is microservice architecture ? Microservice means developing a single, small, meaningful functional feature as single service, each service has it&amp;rsquo;s own process and communicate with lightweight mechanism, deployed in single or multiple servers.</description>
     </item>

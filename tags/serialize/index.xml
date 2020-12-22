@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Serialize on Ketan Parmar (kpbird)</title>
-    <link>http://kpbird.github.io/tags/serialize/</link>
+    <link>https://kpbird.github.io/tags/serialize/</link>
     <description>Recent content in Serialize on Ketan Parmar (kpbird)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;#169; 2020. All rights reserved.</copyright>
-    <lastBuildDate>Sat, 29 Jul 2017 00:00:00 +0000</lastBuildDate><atom:link href="http://kpbird.github.io/tags/serialize/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 29 Jul 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://kpbird.github.io/tags/serialize/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Golang: Serialize struct using gob: Part 2</title>
-      <link>http://kpbird.github.io/post/2017-07-29_golang-serialize-struct-using-gob-part-2-f6134dd4f22c/</link>
+      <link>https://kpbird.github.io/post/2017-07-29_golang-serialize-struct-using-gob-part-2-f6134dd4f22c/</link>
       <pubDate>Sat, 29 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://kpbird.github.io/post/2017-07-29_golang-serialize-struct-using-gob-part-2-f6134dd4f22c/</guid>
+      <guid>https://kpbird.github.io/post/2017-07-29_golang-serialize-struct-using-gob-part-2-f6134dd4f22c/</guid>
       <description>[Golang: Serialize struct using gob &amp;mdash; Part 2 In this article we will explore following functions of gob
 func (dec \*Decoder) Decode(e interface{}) error func (enc \*Encoder) Encode(e interface{}) error Encode and Decode functions are helpful when you want to write network application.
 Example 1: Simple encoding and decoding student structure
@@ -22,10 +22,10 @@ package main import ( &amp;#34;fmt&amp;#34; &amp;#34;encoding/gob&amp;#34; &amp;
     
     <item>
       <title>Golang: Serialize struct using gob: Part 1</title>
-      <link>http://kpbird.github.io/post/2017-07-15_golang-serialize-struct-using-gob-part-1-e927a6547c00/</link>
+      <link>https://kpbird.github.io/post/2017-07-15_golang-serialize-struct-using-gob-part-1-e927a6547c00/</link>
       <pubDate>Sat, 15 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://kpbird.github.io/post/2017-07-15_golang-serialize-struct-using-gob-part-1-e927a6547c00/</guid>
+      <guid>https://kpbird.github.io/post/2017-07-15_golang-serialize-struct-using-gob-part-1-e927a6547c00/</guid>
       <description>Golang: Serialize struct using gob: Part 1 Serialize of the struct will help you to transfer data over network or it will help you to write data on disk. In a distributed system you generate data then serialize, compress and send. On other end you receive data then decompress, deserialize and process. The entire process must be fast and efficient. Go lang has it&amp;rsquo;s own serialize format called gob. Using gob you can encode and decode structure.</description>
     </item>
     

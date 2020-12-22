@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cloud on Ketan Parmar (kpbird)</title>
-    <link>http://kpbird.github.io/tags/cloud/</link>
+    <link>https://kpbird.github.io/tags/cloud/</link>
     <description>Recent content in Cloud on Ketan Parmar (kpbird)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;#169; 2020. All rights reserved.</copyright>
-    <lastBuildDate>Sat, 05 Jul 2014 00:00:00 +0000</lastBuildDate><atom:link href="http://kpbird.github.io/tags/cloud/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 05 Jul 2014 00:00:00 +0000</lastBuildDate><atom:link href="https://kpbird.github.io/tags/cloud/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Migrate Web Site to AWS Cloud --- A Quick Guide</title>
-      <link>http://kpbird.github.io/post/2014-07-05_migrating-web-site-to-aws-cloud-a-quick-guide-7576d2aae4e5/</link>
+      <link>https://kpbird.github.io/post/2014-07-05_migrating-web-site-to-aws-cloud-a-quick-guide-7576d2aae4e5/</link>
       <pubDate>Sat, 05 Jul 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kpbird.github.io/post/2014-07-05_migrating-web-site-to-aws-cloud-a-quick-guide-7576d2aae4e5/</guid>
+      <guid>https://kpbird.github.io/post/2014-07-05_migrating-web-site-to-aws-cloud-a-quick-guide-7576d2aae4e5/</guid>
       <description>Migrate Website to AWS Cloud This is a quick tip to migrate your existing website to AWS Cloud. I assume that you have basic knowledge of AWS Cloud and server side architecture. This post does not include a discussion of pros and cons of AWS or Cloud services. Elasticity and Auto-Scaling are two main features of Cloud. If we don&amp;rsquo;t leverage these feature then there isn&amp;rsquo;t any difference between hosting website in dedicate server or AWS Cloud.</description>
     </item>
     

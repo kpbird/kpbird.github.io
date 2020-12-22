@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>NoSQL on Ketan Parmar (kpbird)</title>
-    <link>http://kpbird.github.io/tags/nosql/</link>
+    <link>https://kpbird.github.io/tags/nosql/</link>
     <description>Recent content in NoSQL on Ketan Parmar (kpbird)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;#169; 2020. All rights reserved.</copyright>
-    <lastBuildDate>Thu, 27 Aug 2015 00:00:00 +0000</lastBuildDate><atom:link href="http://kpbird.github.io/tags/nosql/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 27 Aug 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://kpbird.github.io/tags/nosql/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>NoSQL- A quick guide</title>
-      <link>http://kpbird.github.io/post/2015-08-27_nosql-a-quick-guide-2156c1bfcdc8/</link>
+      <link>https://kpbird.github.io/post/2015-08-27_nosql-a-quick-guide-2156c1bfcdc8/</link>
       <pubDate>Thu, 27 Aug 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://kpbird.github.io/post/2015-08-27_nosql-a-quick-guide-2156c1bfcdc8/</guid>
+      <guid>https://kpbird.github.io/post/2015-08-27_nosql-a-quick-guide-2156c1bfcdc8/</guid>
       <description>NoSQL is buzz word now-a-days among the developers and software professionals.
 What is NoSQL? NoSQL database, also called Not Only SQL, is an approach to data management and database design that&amp;rsquo;s useful for very large sets of distributed data.
 Where to use NoSQL ? Use NoSQL, When project has unstructured big data that require real-time or offline analysis or web/mobile application. i.e. Social Network app, Analytics app.

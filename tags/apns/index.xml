@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>APNS on Ketan Parmar (kpbird)</title>
-    <link>http://kpbird.github.io/tags/apns/</link>
+    <link>https://kpbird.github.io/tags/apns/</link>
     <description>Recent content in APNS on Ketan Parmar (kpbird)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;#169; 2020. All rights reserved.</copyright>
-    <lastBuildDate>Sat, 11 Feb 2017 00:00:00 +0000</lastBuildDate><atom:link href="http://kpbird.github.io/tags/apns/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 11 Feb 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://kpbird.github.io/tags/apns/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Golang: Send Push Notification to iOS device</title>
-      <link>http://kpbird.github.io/post/2017-02-11_golang-send-push-notification-to-ios-device-7ade7fd07746/</link>
+      <link>https://kpbird.github.io/post/2017-02-11_golang-send-push-notification-to-ios-device-7ade7fd07746/</link>
       <pubDate>Sat, 11 Feb 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://kpbird.github.io/post/2017-02-11_golang-send-push-notification-to-ios-device-7ade7fd07746/</guid>
+      <guid>https://kpbird.github.io/post/2017-02-11_golang-send-push-notification-to-ios-device-7ade7fd07746/</guid>
       <description>Assumptions  Go language is installed in your computer iOS sample application with APNs support for testing  Step1: Generate certificate PEM file. This article will help you to generate PEM [https://www.raywenderlich.com/123862/push-notifications-tutorial]
 Step2: Install Go library for APNs
 go get github.com/anachronistic/apns Step3: Write the following function in your main.go. Place certificate PEM file in config folder. You can change push URL as per your requirement.
