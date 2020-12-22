@@ -120,7 +120,23 @@
           <a class="card-title text-reset" href="https://kpbird.github.io/post/2018-03-24_golang-find-the-type-of-the-variable-12f1b7ce869a/"> Golang: Find the type of the variable</a>
         </h2>
         <div class="card-text">
-          <div class="font-weight-bold small post-meta"> 123 Words </div>
+           <div class="font-weight-bold small post-meta"> </span>
+              
+              
+                
+                  
+                
+              
+                
+              
+                
+                  
+                
+              
+                
+                  
+                
+              By Ketan Parmar &#183; 0 min read &#183; <span class=''>Last updated: March 24, 2018</div>
           <p>Golang: Find the type of the variable The Go reflection package has methods for inspecting the type of variables. The following snippet will print out the reflection type of a string, integer and float. Document https://golang.org/pkg/reflect/#Type
 package main import ( &#34;fmt&#34; &#34;reflect&#34; ) func main() { b := true s := &#34;&#34; n := 1 f := 1.0 a := []string{&#34;foo&#34;, &#34;bar&#34;, &#34;baz&#34;} fmt.Println(reflect.TypeOf(b)) fmt.Println(reflect.TypeOf(s)) fmt.Println(reflect.TypeOf(n)) fmt.Println(reflect.TypeOf(f)) fmt.Println(reflect.TypeOf(a)) } How to print variable type The Printf is capable of print exactly variable type using %T formatting</p>
           <a class="font-weight-bold text-reset text-decoration-none" href="https://kpbird.github.io/post/2018-03-24_golang-find-the-type-of-the-variable-12f1b7ce869a/"><nobr>Read more →</nobr></a>
@@ -134,7 +150,23 @@ package main import ( &#34;fmt&#34; &#34;reflect&#34; ) func main() { b := true 
           <a class="card-title text-reset" href="https://kpbird.github.io/post/2018-02-11_golang-generate-fixed-size-random-string-dd6dbd5e63c0/"> Golang: Generate fixed size random string</a>
         </h2>
         <div class="card-text">
-          <div class="font-weight-bold small post-meta"> 910 Words </div>
+           <div class="font-weight-bold small post-meta"> </span>
+              
+              
+                
+                  
+                
+              
+                
+              
+                
+                  
+                
+              
+                
+                  
+                
+              By Ketan Parmar &#183; 7 min read &#183; <span class=''>Last updated: February 11, 2018</div>
           <p>Golang: Generate fixed size random string There are many ways you can generate random string, In this article I will explore fastest method to generate fixed size random string
 Generate Random String using rand.Intn() This is most simplest way to generate random string but not slowest (ASCII table http://www.asciitable.com/)
 //RandomString - Generate a random string of A-Z chars with len = l  func RandomString(len int) string { bytes := make([]byte, len) for i := 0; i &lt; len; i++ { bytes[i] = byte(65 + rand.</p>
@@ -149,7 +181,23 @@ Generate Random String using rand.Intn() This is most simplest way to generate r
           <a class="card-title text-reset" href="https://kpbird.github.io/post/2018-02-11_golang-parse-and-format-unix-timestamp-6f467389cfe1/"> Golang: parse and format unix timestamp</a>
         </h2>
         <div class="card-text">
-          <div class="font-weight-bold small post-meta"> 153 Words </div>
+           <div class="font-weight-bold small post-meta"> </span>
+              
+              
+                
+                  
+                
+              
+                
+              
+                
+                  
+                
+              
+                
+                  
+                
+              By Ketan Parmar &#183; 1 min read &#183; <span class=''>Last updated: February 11, 2018</div>
           <p>1. If you have unix timestamp in String The time.Parse function does not do Unix timestamps. Instead you can use strconv.ParseIntto parse the string to int64 and create the timestamp with time.Unix:
 package main import ( &#34;fmt&#34; &#34;time&#34; &#34;strconv&#34; ) func main() { i, err := strconv.ParseInt(&#34;1518328047&#34;, 10, 64) if err != nil { panic(err) } tm := time.Unix(i, 0) fmt.Println(tm) } 2. If you have unix timestamp in int The time.</p>
           <a class="font-weight-bold text-reset text-decoration-none" href="https://kpbird.github.io/post/2018-02-11_golang-parse-and-format-unix-timestamp-6f467389cfe1/"><nobr>Read more →</nobr></a>
@@ -163,7 +211,23 @@ package main import ( &#34;fmt&#34; &#34;time&#34; &#34;strconv&#34; ) func main
           <a class="card-title text-reset" href="https://kpbird.github.io/post/2017-07-29_golang-serialize-struct-using-gob-part-2-f6134dd4f22c/"> Golang: Serialize struct using gob: Part 2</a>
         </h2>
         <div class="card-text">
-          <div class="font-weight-bold small post-meta"> 484 Words </div>
+           <div class="font-weight-bold small post-meta"> </span>
+              
+              
+                
+                  
+                
+              
+                
+              
+                
+                  
+                
+              
+                
+                  
+                
+              By Ketan Parmar &#183; 3 min read &#183; <span class=''>Last updated: July 29, 2017</div>
           <p>[Golang: Serialize struct using gob &mdash; Part 2 In this article we will explore following functions of gob
 func (dec \*Decoder) Decode(e interface{}) error func (enc \*Encoder) Encode(e interface{}) error Encode and Decode functions are helpful when you want to write network application.
 Example 1: Simple encoding and decoding student structure
@@ -179,7 +243,23 @@ package main import ( &#34;fmt&#34; &#34;encoding/gob&#34; &#34;bytes&#34; ) typ
           <a class="card-title text-reset" href="https://kpbird.github.io/post/2017-07-15_golang-serialize-struct-using-gob-part-1-e927a6547c00/"> Golang: Serialize struct using gob: Part 1</a>
         </h2>
         <div class="card-text">
-          <div class="font-weight-bold small post-meta"> 517 Words </div>
+           <div class="font-weight-bold small post-meta"> </span>
+              
+              
+                
+                  
+                
+              
+                
+              
+                
+                  
+                
+              
+                
+                  
+                
+              By Ketan Parmar &#183; 3 min read &#183; <span class=''>Last updated: July 15, 2017</div>
           <p>Golang: Serialize struct using gob: Part 1 Serialize of the struct will help you to transfer data over network or it will help you to write data on disk. In a distributed system you generate data then serialize, compress and send. On other end you receive data then decompress, deserialize and process. The entire process must be fast and efficient. Go lang has it&rsquo;s own serialize format called gob. Using gob you can encode and decode structure.</p>
           <a class="font-weight-bold text-reset text-decoration-none" href="https://kpbird.github.io/post/2017-07-15_golang-serialize-struct-using-gob-part-1-e927a6547c00/"><nobr>Read more →</nobr></a>
         </div>
@@ -192,7 +272,23 @@ package main import ( &#34;fmt&#34; &#34;encoding/gob&#34; &#34;bytes&#34; ) typ
           <a class="card-title text-reset" href="https://kpbird.github.io/post/2017-02-18_golang-gracefully-stop-application-23c2390bb212/"> Golang gracefully stop application</a>
         </h2>
         <div class="card-text">
-          <div class="font-weight-bold small post-meta"> 377 Words </div>
+           <div class="font-weight-bold small post-meta"> </span>
+              
+              
+                
+                  
+                
+              
+                
+              
+                
+                  
+                
+              
+                
+                  
+                
+              By Ketan Parmar &#183; 2 min read &#183; <span class=''>Last updated: February 18, 2017</div>
           <p>Golang: Gracefully stop application To shutdown go application gracefully, you can use open source libraries or write your own code.
 Following are popular libraries to stop go application gracefully
  https://github.com/tylerb/graceful https://github.com/braintree/manners  In this article, I will explain how to write your own code to stop go app gracefully
@@ -208,7 +304,23 @@ Step 1: make channel which can listen for signals from OS. Refer [os.Signal] pac
           <a class="card-title text-reset" href="https://kpbird.github.io/post/2015-09-23_go-language-for-java-developer-part-4-c6626c514b86/"> Go Language for Java Developers Part 4</a>
         </h2>
         <div class="card-text">
-          <div class="font-weight-bold small post-meta"> 80 Words </div>
+           <div class="font-weight-bold small post-meta"> </span>
+              
+              
+                
+                  
+                
+              
+                
+              
+                
+                  
+                
+              
+                
+                  
+                
+              By Ketan Parmar &#183; 0 min read &#183; <span class=''>Last updated: September 23, 2015</div>
           <p>Following keywords are reserved and may not be used as identifiers.
 Java Keywords
 Go Lang Keywords
@@ -224,7 +336,23 @@ There are few obvious keywords like break, case, if, for, etc but few keywords a
           <a class="card-title text-reset" href="https://kpbird.github.io/post/2015-09-23_go-language-for-java-developer-part-5-67e3c9226108/"> Go Language for Java Developers Part 4</a>
         </h2>
         <div class="card-text">
-          <div class="font-weight-bold small post-meta"> 415 Words </div>
+           <div class="font-weight-bold small post-meta"> </span>
+              
+              
+                
+                  
+                
+              
+                
+              
+                
+                  
+                
+              
+                
+                  
+                
+              By Ketan Parmar &#183; 3 min read &#183; <span class=''>Last updated: September 23, 2015</div>
           <p>Variable: A variable is a storage location for holding a value. The set of permissible values is determined by the variable&rsquo;s type.
 Java language has primitive type and objects, both have different syntax to declare a variable either Primitive type or Object type.
 Animal a = new Animal() Student s = new Student() Java is object oriented language so that we can have access modifier for variable declaration
@@ -240,7 +368,23 @@ private int a public String b protected float c private Animal a In the Java we 
           <a class="card-title text-reset" href="https://kpbird.github.io/post/2015-08-31_go-language-for-java-developer-part-1-8885e70a454d/"> Go Language for Java Developers Part 1</a>
         </h2>
         <div class="card-text">
-          <div class="font-weight-bold small post-meta"> 275 Words </div>
+           <div class="font-weight-bold small post-meta"> </span>
+              
+              
+                
+                  
+                
+              
+                
+              
+                
+                  
+                
+              
+                
+                  
+                
+              By Ketan Parmar &#183; 2 min read &#183; <span class=''>Last updated: August 31, 2015</div>
           <p>Go language is normally known as golang. It&rsquo;s general purpose programming language developed at Google in 2007 by three Google employees namely Robert Griesemer, Rob Pike, and Ken Thompson. In November 2008 Google had announced Go Language to public and made it [open source].
 Go language compiler is available for the Linux, Mac OS X, FreeBSD, NetBSD, OpenBSD, Plan 9, and Microsoft Windows operating systems and the i386, amd64, ARM and IBM POWER processor architectures.</p>
           <a class="font-weight-bold text-reset text-decoration-none" href="https://kpbird.github.io/post/2015-08-31_go-language-for-java-developer-part-1-8885e70a454d/"><nobr>Read more →</nobr></a>
@@ -254,7 +398,23 @@ Go language compiler is available for the Linux, Mac OS X, FreeBSD, NetBSD, Open
           <a class="card-title text-reset" href="https://kpbird.github.io/post/2015-08-31_go-language-for-java-developer-part-2-852ad2c1ce5f/"> Go Language for Java Developers Part 2</a>
         </h2>
         <div class="card-text">
-          <div class="font-weight-bold small post-meta"> 578 Words </div>
+           <div class="font-weight-bold small post-meta"> </span>
+              
+              
+                
+                  
+                
+              
+                
+              
+                
+                  
+                
+              
+                
+                  
+                
+              By Ketan Parmar &#183; 4 min read &#183; <span class=''>Last updated: August 31, 2015</div>
           <p>Normally first program you write in any programming language is &ldquo;Hello World&rdquo;. Hello World is simple program which print &ldquo;Hello Word&rdquo; text on console / screen.
 Java: Hello World As Java Developer you can easily understand following code. No need to explain. correct ?
 package com.kpbird.gotutorial; public class Main { public static void main(String[] args) { System.out.println(&#34;Hello World&#34;); } } To compile &amp; execute above code, you need to write following two commands in the Terminal.</p>
@@ -269,7 +429,23 @@ package com.kpbird.gotutorial; public class Main { public static void main(Strin
           <a class="card-title text-reset" href="https://kpbird.github.io/post/2015-08-31_go-language-for-java-developer-part-3-2a698797b6b8/"> Go Language for Java Developers Part 3</a>
         </h2>
         <div class="card-text">
-          <div class="font-weight-bold small post-meta"> 265 Words </div>
+           <div class="font-weight-bold small post-meta"> </span>
+              
+              
+                
+                  
+                
+              
+                
+              
+                
+                  
+                
+              
+                
+                  
+                
+              By Ketan Parmar &#183; 2 min read &#183; <span class=''>Last updated: August 31, 2015</div>
           <p>Java Language: Data Type In Java, We have premitive data types and objects. Java support 8 premitive data types for different purpose.
 Data Type Value byte 0 short 0 int 0 long 0L float 0.0f double 0.0d char &lsquo;\u0000&rsquo; boolean false
 Reference: https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html
