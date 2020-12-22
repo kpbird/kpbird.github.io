@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  
+    
+      
+
+
+
+
+
+
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>Golang: Generate fixed size random string | Ketan Parmar (kpbird)</title>
+<meta name="title" content="Golang: Generate fixed size random string | Ketan Parmar (kpbird)" />
+<meta name="description" content="There are many ways you can generate random string, In this article I will explore fastest method to generate fixed size random string"> 
+
+
+<link rel="canonical" href="http://kpbird.github.io/post/2018-02-11_golang-generate-fixed-size-random-string-dd6dbd5e63c0/" />
+
+
+  
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:description" content="There are many ways you can generate random string, In this article I will explore fastest method to generate fixed size random string" /> 
+  <meta name="twitter:title" content="Golang: Generate fixed size random string | Ketan Parmar (kpbird)" />
+  <meta name="twitter:url" content="http://kpbird.github.io/post/2018-02-11_golang-generate-fixed-size-random-string-dd6dbd5e63c0/" />
+  <meta name="twitter:site" content="@Softorage" /> 
+  <meta name="twitter:creator" content="@Softorage" /> 
+  <meta name="twitter:image" content="" /> 
+
+
+
+  
+  <meta property="og:title" content="Golang: Generate fixed size random string | Ketan Parmar (kpbird)" />
+  <meta property="og:description" content="There are many ways you can generate random string, In this article I will explore fastest method to generate fixed size random string" /> 
+  <meta property="og:site_name" content="Ketan Parmar (kpbird)" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="http://kpbird.github.io/post/2018-02-11_golang-generate-fixed-size-random-string-dd6dbd5e63c0/" />
+  
+  <meta property="og:image" content="" /> 
+
+
+
+<meta property="article:published_time" content="2018-02-11 00:00:00 &#43;0000 UTC" />
+
+
+  
+  
+  <script type="application/ld+json">
+      { 
+          "@context": "http://schema.org", 
+          "@type": "BlogPosting",
+          "headline": "Golang: Generate fixed size random string",
+          
+          "url": "http://kpbird.github.io/",
+          
+          "datePublished": "2018-02-11T00:00:00Z",
+          
+          
+          "dateModified": "2018-02-11T00:00:00Z",
+          
+          "description": There are many ways you can generate random string, In this article I will explore fastest method to generate fixed size random string,
+          
+          "logo": "/assets/favicon/android-chrome-512x512.png",
+          
+          
+          "author": {
+              "@type": "Person",
+              "name": "Ketan Parmar"
+          },
+          
+          "publisher": {
+            "@type": "Organization",
+            "name": "Ketan Parmar",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "/assets/favicon/android-chrome-512x512.png"
+            }
+          },
+          
+          "sameAs" : [
+            
+            
+              "https://github.com/kpbird",  
+            
+              "https://www.linkedin.com/in/kpbird/",  
+            
+              "https://medium.com/@kpbird",  
+            
+              "https://twitter.com/kpbird"
+            ]
+          
+        }
+      </script>
+  
+
+
+    
+    <meta name="generator" content="Hugo 0.79.0" />
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/assets/css/main.min.4da6b94aea0df18f73bf13c5be667e4552f3f9c293fee82eab77d443bf7e04e5.css" integrity="sha256-Taa5SuoN8Y9zvxPFvmZ&#43;RVLz&#43;cKT/uguq3fUQ79&#43;BOU=" crossorigin="anonymous">
+  
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  
+  <link rel=apple-touch-icon sizes=180x180 href=http://kpbird.github.io//assets/favicon/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=http://kpbird.github.io//assets/favicon/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=http://kpbird.github.io//assets/favicon/favicon-16x16.png><link rel=manifest href=http://kpbird.github.io//assets/favicon/site.webmanifest><link rel=mask-icon href=http://kpbird.github.io//assets/favicon/safari-pinned-tab.svg color=#7817c4><link rel=icon href=http://kpbird.github.io//assets/favicon/favicon.ico type=image/x-icon><link rel="shortcut icon" href=http://kpbird.github.io//assets/favicon/favicon.ico type=image/x-icon><meta name=apple-mobile-web-app-title content="Vibrant Shadows Theme"><meta name=application-name content="Vibrant Shadows Theme"><meta name=msapplication-TileColor content="#ffffff"><meta name=theme-color content="#ffffff">
+  
+  
+  
+  <meta name="theme-color" content="#fff6f8">
+  
+  <meta name="msapplication-navbutton-color" content="#fff6f8">
+  
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  
+  
+</head>
+<body><header>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top flex-column">
+    <div class="container-fluid">
+      
+      <a class="navbar-brand rounded px-3" href="http://kpbird.github.io/"><span class="text-nav"><span class="brand"><img src="/assets/favicon/favicon-32x32.png" alt="Ketan Parmar logo" height="32"></img>&nbsp;&nbsp;&nbsp;Ketan Parmar</span></span></a>
+      
+      
+        <a class="navbar-toggler border-0 bg-nav p-2" role="button" href="#" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="text-clr2">&#9776;</span>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-md-auto">
+             
+            
+              
+                <li class="nav-item mx-1 my-2">
+                  <a class="btn bg-nav text-clr1" href="/about/">About</a>
+                </li>
+              
+            
+          </ul>
+          
+            
+          
+        </div>
+      
+    </div>
+    
+  </nav>
+</header>
+<div id="content">
+<div class="container-fluid bg-clr1 text-light text-center pb-3 pt-4 position-relative shadow">
+  <div style="height:3.5rem;"></div>
+  <h1>Golang: Generate fixed size random string</h1>
+  <p class="description">There are many ways you can generate random string, In this article I will explore fastest method to generate fixed size random string</p>
+</div>
+<div class="container-fluid bg-nav p-4">
+  <div class="row">
+    <div class="col-md-3">
+      
+      <div class="bg-mat p-4 rounded" style="overflow-x: auto;">
+        <div class="h4 mb-3">
+        Contents
+        </div>
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#golang-generate-fixed-size-randomstring">Golang: Generate fixed size random string</a></li>
+    <li><a href="#generate-random-string-using-randintn">Generate Random String using rand.Intn()</a></li>
+    <li><a href="#generate-random-string-usingrunes">Generate Random String using Runes</a></li>
+    <li><a href="#generate-random-string-usingbytes">Generate Random String using Bytes</a></li>
+    <li><a href="#generate-random-string-using-remainder">Generate Random String using Remainder</a></li>
+    <li><a href="#generate-random-string-usingmasking">Generate Random String using Masking</a></li>
+    <li><a href="#generate-random-string-using-masking-with-rand">Generate Random String using Masking with rand.</a></li>
+    <li><a href="#generate-random-string-using-remainder-improved">Generate Random String using Remainder Improved</a></li>
+    <li><a href="#benchmark-result">Benchmark Result</a></li>
+    <li><a href="#source-code">Source code</a></li>
+    <li><a href="#reading">Reading</a></li>
+  </ol>
+</nav>
+      </div>
+      
+    </div>
+    <div class="col-md-9">
+        
+      
+      <div class="py-1">
+        <div class="row">
+          <div class="col-md-7 small text-muted post-meta my-1"></span>
+            
+            
+              
+                
+              
+            
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            By Ketan Parmar &#183; 7 min read &#183; <span class=''>Last updated: February 11, 2018</div>
+          
+          
+          
+          <div class="col-md-auto ml-3 my-1">
+            <div class="row">
+              <div class="col-auto p-0">
+              Share on:&nbsp;&nbsp;
+              </div>
+              <div class="col p-0">
+                <span class="lead">
+                  
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fkpbird.github.io%2fpost%2f2018-02-11_golang-generate-fixed-size-random-string-dd6dbd5e63c0%2f&quote=Golang%3a%20Generate%20fixed%20size%20random%c2%a0string" rel="noreferrer nofollow" target="_blank" title="Share on Facebook" aria-label="Share on Facebook"><span class="fab fa-facebook"></span></a>&nbsp;&nbsp;
+                  
+                  
+                    <a href="https://twitter.com/intent/tweet?source=http%3a%2f%2fkpbird.github.io%2fpost%2f2018-02-11_golang-generate-fixed-size-random-string-dd6dbd5e63c0%2f&text=Golang%3a%20Generate%20fixed%20size%20random%c2%a0string:%0Ahttp%3a%2f%2fkpbird.github.io%2fpost%2f2018-02-11_golang-generate-fixed-size-random-string-dd6dbd5e63c0%2f" rel="noreferrer nofollow" target="_blank" title="Share on Twitter" aria-label="Share on Twitter"><span class="fab fa-twitter"></span></a>&nbsp;&nbsp;
+                  
+                  
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2fkpbird.github.io%2fpost%2f2018-02-11_golang-generate-fixed-size-random-string-dd6dbd5e63c0%2f&title=Golang%3a%20Generate%20fixed%20size%20random%c2%a0string&summary=There%20are%20many%20ways%20you%20can%20generate%20random%20string%2c%20In%20this%20article%20I%20will%20explore%20fastest%20method%20to%20generate%20fixed%20size%20random%20string&source=Ketan%20Parmar%20%28kpbird%29" rel="noreferrer nofollow" target="_blank" title="Share on LinkedIn" aria-label="Share on LinkedIn"><span class="fab fa-linkedin"></span></a>&nbsp;&nbsp;
+                  
+                  
+                    <a href="https://t.me/share/url?url=http%3a%2f%2fkpbird.github.io%2fpost%2f2018-02-11_golang-generate-fixed-size-random-string-dd6dbd5e63c0%2f&text=Golang%3a%20Generate%20fixed%20size%20random%c2%a0string" rel="noreferrer nofollow" target="_blank" title="Share on Telegram" aria-label="Share on Telegram"><span class="fab fa-telegram"></span></a>&nbsp;&nbsp;
+                  
+                  
+                    <a href="whatsapp://send?text=http%3a%2f%2fkpbird.github.io%2fpost%2f2018-02-11_golang-generate-fixed-size-random-string-dd6dbd5e63c0%2f%0A%0AGolang%3a%20Generate%20fixed%20size%20random%c2%a0string" data-text="Golang: Generate fixed size random string" data-href="http://kpbird.github.io/post/2018-02-11_golang-generate-fixed-size-random-string-dd6dbd5e63c0/" rel="noreferrer nofollow" target="_blank" title="Share on Whatsapp" aria-label="Share on Whatsapp"><span class="fab fa-whatsapp"></span></a>&nbsp;&nbsp;
+                  
+                  
+                    <a href="https://reddit.com/submit?url=http%3a%2f%2fkpbird.github.io%2fpost%2f2018-02-11_golang-generate-fixed-size-random-string-dd6dbd5e63c0%2f&title=Golang%3a%20Generate%20fixed%20size%20random%c2%a0string" rel="noreferrer nofollow" target="_blank" title="Share on Reddit" aria-label="Share on Reddit"><span class="fab fa-reddit"></span></a>&nbsp;&nbsp;
+                  
+                  
+                    <a href="mailto:?subject=Golang%3a%20Generate%20fixed%20size%20random%c2%a0string&body=There%20are%20many%20ways%20you%20can%20generate%20random%20string%2c%20In%20this%20article%20I%20will%20explore%20fastest%20method%20to%20generate%20fixed%20size%20random%20string%0A%0Ahttp%3a%2f%2fkpbird.github.io%2fpost%2f2018-02-11_golang-generate-fixed-size-random-string-dd6dbd5e63c0%2f" target="_blank" title="Share via email" aria-label="Share via email"><span class="fas fa-envelope"></span></a>
+                  
+                </span>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        
+        
+        
+      </div>
+      
+      
+      <div class="py-3 my-2">
+      <p><img src="https://cdn-images-1.medium.com/max/800/1*-Z05lYhuGheEOMR3cFED4w.jpeg" alt="alt"></p>
+<h2 id="golang-generate-fixed-size-randomstring">Golang: Generate fixed size random string</h2>
+<p>There are many ways you can generate random string, In this article I
+will explore fastest method to generate fixed size random string</p>
+<h2 id="generate-random-string-using-randintn">Generate Random String using rand.Intn()</h2>
+<p>This is most simplest way to generate random string but not slowest
+(ASCII table <a href="http://www.asciitable.com/">http://www.asciitable.com/</a>)</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#75715e">//RandomString - Generate a random string of A-Z chars with len = l
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">RandomString</span>(<span style="color:#a6e22e">len</span> <span style="color:#66d9ef">int</span>) <span style="color:#66d9ef">string</span> {
+
+      <span style="color:#a6e22e">bytes</span> <span style="color:#f92672">:=</span> make([]<span style="color:#66d9ef">byte</span>, <span style="color:#a6e22e">len</span>)
+     <span style="color:#66d9ef">for</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">:=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> &lt; <span style="color:#a6e22e">len</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span> {
+          <span style="color:#a6e22e">bytes</span>[<span style="color:#a6e22e">i</span>] = byte(<span style="color:#ae81ff">65</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">rand</span>.<span style="color:#a6e22e">Intn</span>(<span style="color:#ae81ff">25</span>))  <span style="color:#75715e">//A=65 and Z = 65+25
+</span><span style="color:#75715e"></span>      }
+      <span style="color:#66d9ef">return</span> string(<span style="color:#a6e22e">bytes</span>)
+}
+</code></pre></div><h2 id="generate-random-string-usingrunes">Generate Random String using Runes</h2>
+<p>Simple solution with [rand.Intn]. rand is part of import &ldquo;math/rand&rdquo;
+package. It implement pseudo-random number generators.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">letterRunes</span> = []rune(<span style="color:#e6db74">&#34;abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ&#34;</span>)
+
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">RandStringRunes</span>(<span style="color:#a6e22e">n</span> <span style="color:#66d9ef">int</span>) <span style="color:#66d9ef">string</span> {
+    <span style="color:#a6e22e">b</span> <span style="color:#f92672">:=</span> make([]<span style="color:#66d9ef">rune</span>, <span style="color:#a6e22e">n</span>)
+    <span style="color:#66d9ef">for</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">:=</span> <span style="color:#66d9ef">range</span> <span style="color:#a6e22e">b</span> {
+        <span style="color:#a6e22e">b</span>[<span style="color:#a6e22e">i</span>] = <span style="color:#a6e22e">letterRunes</span>[<span style="color:#a6e22e">rand</span>.<span style="color:#a6e22e">Intn</span>(len(<span style="color:#a6e22e">letterRunes</span>))]
+    }
+    <span style="color:#66d9ef">return</span> string(<span style="color:#a6e22e">b</span>)
+}
+</code></pre></div><h2 id="generate-random-string-usingbytes">Generate Random String using Bytes</h2>
+<p>We could achieve it to be a const As an extra gain, the expression
+len(letters) will also be a const! (The expression len(s) is constant if
+s is a string constant.)</p>
+<p>strings can be indexed which indexes its bytes, perfect, exactly what we
+want.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">letterBytes</span> = <span style="color:#e6db74">&#34;abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ&#34;</span>
+
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">RandStringBytes</span>(<span style="color:#a6e22e">n</span> <span style="color:#66d9ef">int</span>) <span style="color:#66d9ef">string</span> {
+    <span style="color:#a6e22e">b</span> <span style="color:#f92672">:=</span> make([]<span style="color:#66d9ef">byte</span>, <span style="color:#a6e22e">n</span>)
+    <span style="color:#66d9ef">for</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">:=</span> <span style="color:#66d9ef">range</span> <span style="color:#a6e22e">b</span> {
+        <span style="color:#a6e22e">b</span>[<span style="color:#a6e22e">i</span>] = <span style="color:#a6e22e">letterBytes</span>[<span style="color:#a6e22e">rand</span>.<span style="color:#a6e22e">Intn</span>(len(<span style="color:#a6e22e">letterBytes</span>))]
+    }
+    <span style="color:#66d9ef">return</span> string(<span style="color:#a6e22e">b</span>)
+}
+</code></pre></div><h2 id="generate-random-string-using-remainder">Generate Random String using Remainder</h2>
+<p>rand.Intn() much slower compared to rand.Int63() which produces a random
+number with 63 random bits. So we could simply call rand.Int63() and use
+the remainder after dividing by len(letterBytes):</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">RandStringBytesRmndr</span>(<span style="color:#a6e22e">n</span> <span style="color:#66d9ef">int</span>) <span style="color:#66d9ef">string</span> {
+    <span style="color:#a6e22e">b</span> <span style="color:#f92672">:=</span> make([]<span style="color:#66d9ef">byte</span>, <span style="color:#a6e22e">n</span>)
+    <span style="color:#66d9ef">for</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">:=</span> <span style="color:#66d9ef">range</span> <span style="color:#a6e22e">b</span> {
+        <span style="color:#a6e22e">b</span>[<span style="color:#a6e22e">i</span>] = <span style="color:#a6e22e">letterBytes</span>[<span style="color:#a6e22e">rand</span>.<span style="color:#a6e22e">Int63</span>() <span style="color:#f92672">%</span> int64(len(<span style="color:#a6e22e">letterBytes</span>))]
+    }
+    <span style="color:#66d9ef">return</span> string(<span style="color:#a6e22e">b</span>)
+}
+</code></pre></div><h2 id="generate-random-string-usingmasking">Generate Random String using Masking</h2>
+<p>Building on the previous solution, we can maintain the equal
+distribution of letters by using only as many of the lowest bits of the
+random number as many is required to represent the number of letters. So
+for example if we have 52 letters, it requires 6 bits to represent it:
+<code>52 = 110100b</code>. So we will only use the lowest 6 bits of the number returned by <code>rand.Int63()</code>. And to maintain equal distribution of letters, we only
+&quot;accept&quot; the number if it falls in the range
+<code>0..len(letterBytes)-1</code>. If the lowest
+bits are greater, we discard it and query a new random number.</p>
+<p>Note that the chance of the lowest bits to be greater than or equal to
+<code>len(letterBytes)</code> is less than
+<code>0.5</code> in general (<code>0.25</code> on average), which means that even if this would be the
+case, repeating this &quot;rare&quot; case decreases the chance of not finding a good number. After <code>n</code> repetition, the chance that we sill don't have a good index is much less than <code>pow(0.5, n)</code>, and this is just an upper estimation. In case of 52 letters the chance that the 6 lowest bits are
+not good is only <code>(64-52)/64 = 0.19</code>; which means for example that chances to not have a good number after 10
+repetition is <code>1e-8</code>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">letterBytes</span> = <span style="color:#e6db74">&#34;abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ&#34;</span>
+<span style="color:#66d9ef">const</span> (
+    <span style="color:#a6e22e">letterIdxBits</span> = <span style="color:#ae81ff">6</span>                    <span style="color:#75715e">// 6 bits to represent a letter index
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">letterIdxMask</span> = <span style="color:#ae81ff">1</span><span style="color:#f92672">&lt;&lt;</span><span style="color:#a6e22e">letterIdxBits</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span> <span style="color:#75715e">// All 1-bits, as many as letterIdxBits
+</span><span style="color:#75715e"></span>)
+
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">RandStringBytesMask</span>(<span style="color:#a6e22e">n</span> <span style="color:#66d9ef">int</span>) <span style="color:#66d9ef">string</span> {
+    <span style="color:#a6e22e">b</span> <span style="color:#f92672">:=</span> make([]<span style="color:#66d9ef">byte</span>, <span style="color:#a6e22e">n</span>)
+    <span style="color:#66d9ef">for</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">:=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> &lt; <span style="color:#a6e22e">n</span>; {
+        <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">idx</span> <span style="color:#f92672">:=</span> int(<span style="color:#a6e22e">rand</span>.<span style="color:#a6e22e">Int63</span>() <span style="color:#f92672">&amp;</span> <span style="color:#a6e22e">letterIdxMask</span>); <span style="color:#a6e22e">idx</span> &lt; len(<span style="color:#a6e22e">letterBytes</span>) {
+            <span style="color:#a6e22e">b</span>[<span style="color:#a6e22e">i</span>] = <span style="color:#a6e22e">letterBytes</span>[<span style="color:#a6e22e">idx</span>]
+            <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>
+        }
+    }
+    <span style="color:#66d9ef">return</span> string(<span style="color:#a6e22e">b</span>)
+}
+</code></pre></div><h2 id="generate-random-string-using-masking-with-rand">Generate Random String using Masking with rand.</h2>
+<p>There is a <code>crypto/rand</code> package which provides a <code>Read(b []byte)</code> function, so
+we could use that to get as many bytes with a single call as many we need. This wouldn't help in terms of performance as <code>crypto/rand</code> implements a cryptographically secure pseudorandom number generator so it's much
+slower.</p>
+<p>So let&rsquo;s stick to the <code>math/rand</code> package. The <code>rand.Rand</code> uses a <code>rand.Source</code> as the source of random
+bits. <code>rand.Source</code> is an interface which specifies a <code>Int63() int64</code> method: exactly and the only thing we needed and used in our latest solution.</p>
+<p>So we don&rsquo;t really need a <code>rand.Rand</code> (either explicit or the global, shared one of the <code>rand</code>{.markup&ndash;code
+.markup&ndash;p-code}package), a <code>rand.Source</code> is perfectly enough for us:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">src</span> = <span style="color:#a6e22e">rand</span>.<span style="color:#a6e22e">NewSource</span>(<span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">Now</span>().<span style="color:#a6e22e">UnixNano</span>())
+
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">RandStringBytesMaskImprSrc</span>(<span style="color:#a6e22e">n</span> <span style="color:#66d9ef">int</span>) <span style="color:#66d9ef">string</span> {
+    <span style="color:#a6e22e">b</span> <span style="color:#f92672">:=</span> make([]<span style="color:#66d9ef">byte</span>, <span style="color:#a6e22e">n</span>)
+    <span style="color:#75715e">// A src.Int63() generates 63 random bits, enough for letterIdxMax characters!
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">for</span> <span style="color:#a6e22e">i</span>, <span style="color:#a6e22e">cache</span>, <span style="color:#a6e22e">remain</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">n</span><span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">src</span>.<span style="color:#a6e22e">Int63</span>(), <span style="color:#a6e22e">letterIdxMax</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">0</span>; {
+        <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">remain</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span> {
+            <span style="color:#a6e22e">cache</span>, <span style="color:#a6e22e">remain</span> = <span style="color:#a6e22e">src</span>.<span style="color:#a6e22e">Int63</span>(), <span style="color:#a6e22e">letterIdxMax</span>
+        }
+        <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">idx</span> <span style="color:#f92672">:=</span> int(<span style="color:#a6e22e">cache</span> <span style="color:#f92672">&amp;</span> <span style="color:#a6e22e">letterIdxMask</span>); <span style="color:#a6e22e">idx</span> &lt; len(<span style="color:#a6e22e">letterBytes</span>) {
+            <span style="color:#a6e22e">b</span>[<span style="color:#a6e22e">i</span>] = <span style="color:#a6e22e">letterBytes</span>[<span style="color:#a6e22e">idx</span>]
+            <span style="color:#a6e22e">i</span><span style="color:#f92672">--</span>
+        }
+        <span style="color:#a6e22e">cache</span> <span style="color:#f92672">&gt;&gt;=</span> <span style="color:#a6e22e">letterIdxBits</span>
+        <span style="color:#a6e22e">remain</span><span style="color:#f92672">--</span>
+    }
+
+    <span style="color:#66d9ef">return</span> string(<span style="color:#a6e22e">b</span>)
+}
+</code></pre></div><h2 id="generate-random-string-using-remainder-improved">Generate Random String using Remainder Improved</h2>
+<p>This is improved version of Reminder method. This is as fast as Mask
+with rand.Source</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">RandASCIIBytes</span>(<span style="color:#a6e22e">n</span> <span style="color:#66d9ef">int</span>) []<span style="color:#66d9ef">byte</span> {
+ <span style="color:#a6e22e">output</span> <span style="color:#f92672">:=</span> make([]<span style="color:#66d9ef">byte</span>, <span style="color:#a6e22e">n</span>)
+
+<span style="color:#75715e">// We will take n bytes, one byte for each character of output.
+</span><span style="color:#75715e"></span> <span style="color:#a6e22e">randomness</span> <span style="color:#f92672">:=</span> make([]<span style="color:#66d9ef">byte</span>, <span style="color:#a6e22e">n</span>)
+
+<span style="color:#75715e">// read all random
+</span><span style="color:#75715e"></span> <span style="color:#a6e22e">_</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">rand</span>.<span style="color:#a6e22e">Read</span>(<span style="color:#a6e22e">randomness</span>)
+ <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
+  panic(<span style="color:#a6e22e">err</span>)
+ }
+
+<span style="color:#a6e22e">l</span> <span style="color:#f92672">:=</span> len(<span style="color:#a6e22e">letterBytes</span>)
+ <span style="color:#75715e">// fill output
+</span><span style="color:#75715e"></span> <span style="color:#66d9ef">for</span> <span style="color:#a6e22e">pos</span> <span style="color:#f92672">:=</span> <span style="color:#66d9ef">range</span> <span style="color:#a6e22e">output</span> {
+  <span style="color:#75715e">// get random item
+</span><span style="color:#75715e"></span>  <span style="color:#a6e22e">random</span> <span style="color:#f92672">:=</span> uint8(<span style="color:#a6e22e">randomness</span>[<span style="color:#a6e22e">pos</span>])
+
+<span style="color:#75715e">// random % 64
+</span><span style="color:#75715e"></span>  <span style="color:#a6e22e">randomPos</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">random</span> <span style="color:#f92672">%</span> uint8(<span style="color:#a6e22e">l</span>)
+
+<span style="color:#75715e">// put into output
+</span><span style="color:#75715e"></span>  <span style="color:#a6e22e">output</span>[<span style="color:#a6e22e">pos</span>] = <span style="color:#a6e22e">letterBytes</span>[<span style="color:#a6e22e">randomPos</span>]
+ }
+
+<span style="color:#66d9ef">return</span> <span style="color:#a6e22e">output</span>
+}
+</code></pre></div><h2 id="benchmark-result">Benchmark Result</h2>
+<p>Fastest way to generate random number is using Mask with rand.Source
+(BenchmarkBytesMaskImprSrc) and Reminder (BenchmarkRandASCIIBytes)</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">BenchmarkRandomString-4          5000000               335 ns/op  
+BenchmarkRunes-4                 3000000               446 ns/op    
+BenchmarkBytes-4                 5000000               346 ns/op    
+BenchmarkBytesRmndr-4            5000000               279 ns/op      
+BenchmarkBytesMask-4             5000000               333 ns/op        
+BenchmarkBytesMaskImpr-4        20000000               108 ns/op              
+BenchmarkBytesMaskImprSrc-4     20000000                86.2 ns/op            
+BenchmarkRandASCIIBytes-4       20000000                96.2 ns/op            
+</code></pre></div><h2 id="source-code">Source code</h2>
+<p><a href="https://github.com/kpbird/golang_random_string">https://github.com/kpbird/golang_random_string</a></p>
+<h2 id="reading">Reading</h2>
+<ol>
+<li><a href="http://www.pcg-random.org/">http://www.pcg-random.org/</a></li>
+<li><a href="https://golang.org/pkg/math/rand/">https://golang.org/pkg/math/rand/</a></li>
+</ol>
+<p>Courtesy András Belicza(<a href="https://github.com/icza">https://github.com/icza</a>)</p>
+
+      </div>
+      
+      
+      <div class="pt-4 mt-2 border-top">
+        <div class="row">
+          <div class="col-md-7 small text-muted post-meta my-1">
+            
+            
+              
+            
+              
+            
+              
+            
+              
+            </div>
+          
+          
+          
+        </div>
+      
+        
+          <div class="mt-3">
+            <span class="">Tags:</span>&nbsp;&nbsp;&nbsp;<a href="/tags/go"><span class="badge badge-pill bg-clr2 text-nav mr-2 py-2">GO</span></a><a href="/tags/go-lang"><span class="badge badge-pill bg-clr2 text-nav mr-2 py-2">GO LANG</span></a></div>
+        
+      
+      </div>
+      
+    </div>
+  </div>
+  
+  
+  
+</div>
+
+    </div><footer class="text-center p-2 text-muted footer">
+  
+    
+    <div class="py-2 lead">
+      
+        
+          <a class="ml-2" href="https://github.com/kpbird"><span class="fab fa-github" aria-label="Join us on Github"></span></a>
+        
+      
+        
+          <a class="ml-2" href="https://www.linkedin.com/in/kpbird/"><span class="fab fa-linkedin" aria-label="Join us on Linkedin"></span></a>
+        
+      
+        
+          <a class="ml-2" href="https://medium.com/@kpbird"><span class="fab fa-medium" aria-label="Join us on Medium"></span></a>
+        
+      
+        
+          <a class="ml-2" href="https://twitter.com/kpbird"><span class="fab fa-twitter" aria-label="Join us on Twitter"></span></a>
+        
+      
+    </div>
+    
+  
+
+  <div class="py-2 lead">
+      Make it work, make it right, make it fast. – Kent Beck
+    </div>
+
+  <div class="py-2 copyright">
+    <small>Copyright &#169; 2020 Ketan Parmar <b>&#183;</b> Content license: CC-BY-SA-3.0 <b>&#183;</b> Powered by <a class="font-weight-bold text-reset text-decoration-none" href="https://gohugo.io">Hugo</a> <b>&#183;</b> Theme <a class="font-weight-bold text-reset text-decoration-none" href="https://github.com/Softorage/HugoTheme-VibrantShadows">Vibrant Shadows</a> by <span class="softorage"><a class="font-weight-bold text-reset" href="https://softorage.com">Softorage</a></span></small>
+  </div>
+</footer>
+
+    
+    
+    
+    <script src="/assets/js/main.min.6ff0d57b7558f0225c80bade926a349330bc25d85e7ceff50d911f1156023c3e.js" integrity="sha256-b/DVe3VY8CJcgLrekmo0kzC8JdhefO/1DZEfEVYCPD4=" crossorigin="anonymous"></script>
+    <script src="/assets/js/custom.min.c8274a0cac0477f854e63f09626cc63858bb2bc9db8faecbb2834846952c7fd6.js" integrity="sha256-yCdKDKwEd/hU5j8JYmzGOFi7K8nbj67LsoNIRpUsf9Y=" crossorigin="anonymous"></script>
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Lato&display=swap" rel="stylesheet">
+    
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+  </body>
+</html>

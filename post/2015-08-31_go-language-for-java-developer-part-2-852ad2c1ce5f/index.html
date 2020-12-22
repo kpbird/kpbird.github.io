@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  
+    
+      
+
+
+
+
+
+
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>Go Language for Java Developers Part 2 | Ketan Parmar (kpbird)</title>
+<meta name="title" content="Go Language for Java Developers Part 2 | Ketan Parmar (kpbird)" />
+<meta name="description" content="Normally first program you write in any programming language is Hello World. "> 
+
+
+<link rel="canonical" href="http://kpbird.github.io/post/2015-08-31_go-language-for-java-developer-part-2-852ad2c1ce5f/" />
+
+
+  
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:description" content="Normally first program you write in any programming language is Hello World. " /> 
+  <meta name="twitter:title" content="Go Language for Java Developers Part 2 | Ketan Parmar (kpbird)" />
+  <meta name="twitter:url" content="http://kpbird.github.io/post/2015-08-31_go-language-for-java-developer-part-2-852ad2c1ce5f/" />
+  <meta name="twitter:site" content="@Softorage" /> 
+  <meta name="twitter:creator" content="@Softorage" /> 
+  <meta name="twitter:image" content="" /> 
+
+
+
+  
+  <meta property="og:title" content="Go Language for Java Developers Part 2 | Ketan Parmar (kpbird)" />
+  <meta property="og:description" content="Normally first program you write in any programming language is Hello World. " /> 
+  <meta property="og:site_name" content="Ketan Parmar (kpbird)" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="http://kpbird.github.io/post/2015-08-31_go-language-for-java-developer-part-2-852ad2c1ce5f/" />
+  
+  <meta property="og:image" content="" /> 
+
+
+
+<meta property="article:published_time" content="2015-08-31 00:00:00 &#43;0000 UTC" />
+
+
+  
+  
+  <script type="application/ld+json">
+      { 
+          "@context": "http://schema.org", 
+          "@type": "BlogPosting",
+          "headline": "Go Language for Java Developers Part 2",
+          
+          "url": "http://kpbird.github.io/",
+          
+          "datePublished": "2015-08-31T00:00:00Z",
+          
+          
+          "dateModified": "2015-08-31T00:00:00Z",
+          
+          "description": Normally first program you write in any programming language is Hello World. ,
+          
+          "logo": "/assets/favicon/android-chrome-512x512.png",
+          
+          
+          "author": {
+              "@type": "Person",
+              "name": "Ketan Parmar"
+          },
+          
+          "publisher": {
+            "@type": "Organization",
+            "name": "Ketan Parmar",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "/assets/favicon/android-chrome-512x512.png"
+            }
+          },
+          
+          "sameAs" : [
+            
+            
+              "https://github.com/kpbird",  
+            
+              "https://www.linkedin.com/in/kpbird/",  
+            
+              "https://medium.com/@kpbird",  
+            
+              "https://twitter.com/kpbird"
+            ]
+          
+        }
+      </script>
+  
+
+
+    
+    <meta name="generator" content="Hugo 0.79.0" />
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/assets/css/main.min.4da6b94aea0df18f73bf13c5be667e4552f3f9c293fee82eab77d443bf7e04e5.css" integrity="sha256-Taa5SuoN8Y9zvxPFvmZ&#43;RVLz&#43;cKT/uguq3fUQ79&#43;BOU=" crossorigin="anonymous">
+  
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  
+  <link rel=apple-touch-icon sizes=180x180 href=http://kpbird.github.io//assets/favicon/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=http://kpbird.github.io//assets/favicon/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=http://kpbird.github.io//assets/favicon/favicon-16x16.png><link rel=manifest href=http://kpbird.github.io//assets/favicon/site.webmanifest><link rel=mask-icon href=http://kpbird.github.io//assets/favicon/safari-pinned-tab.svg color=#7817c4><link rel=icon href=http://kpbird.github.io//assets/favicon/favicon.ico type=image/x-icon><link rel="shortcut icon" href=http://kpbird.github.io//assets/favicon/favicon.ico type=image/x-icon><meta name=apple-mobile-web-app-title content="Vibrant Shadows Theme"><meta name=application-name content="Vibrant Shadows Theme"><meta name=msapplication-TileColor content="#ffffff"><meta name=theme-color content="#ffffff">
+  
+  
+  
+  <meta name="theme-color" content="#fff6f8">
+  
+  <meta name="msapplication-navbutton-color" content="#fff6f8">
+  
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  
+  
+</head>
+<body><header>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top flex-column">
+    <div class="container-fluid">
+      
+      <a class="navbar-brand rounded px-3" href="http://kpbird.github.io/"><span class="text-nav"><span class="brand"><img src="/assets/favicon/favicon-32x32.png" alt="Ketan Parmar logo" height="32"></img>&nbsp;&nbsp;&nbsp;Ketan Parmar</span></span></a>
+      
+      
+        <a class="navbar-toggler border-0 bg-nav p-2" role="button" href="#" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="text-clr2">&#9776;</span>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-md-auto">
+             
+            
+              
+                <li class="nav-item mx-1 my-2">
+                  <a class="btn bg-nav text-clr1" href="/about/">About</a>
+                </li>
+              
+            
+          </ul>
+          
+            
+          
+        </div>
+      
+    </div>
+    
+  </nav>
+</header>
+<div id="content">
+<div class="container-fluid bg-clr1 text-light text-center pb-3 pt-4 position-relative shadow">
+  <div style="height:3.5rem;"></div>
+  <h1>Go Language for Java Developers Part 2</h1>
+  <p class="description">Normally first program you write in any programming language is Hello World. </p>
+</div>
+<div class="container-fluid bg-nav p-4">
+  <div class="row">
+    <div class="col-md-3">
+      
+      <div class="bg-mat p-4 rounded" style="overflow-x: auto;">
+        <div class="h4 mb-3">
+        Contents
+        </div>
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#java-hello-world">Java: Hello World</a></li>
+    <li><a href="#go-hello-world">Go: Hello World</a></li>
+    <li><a href="#understand-go-hello-word-program">Understand Go : Hello Word program</a></li>
+    <li><a href="#java-vs-go">Java vs Go</a></li>
+  </ol>
+</nav>
+      </div>
+      
+    </div>
+    <div class="col-md-9">
+        
+      
+      <div class="py-1">
+        <div class="row">
+          <div class="col-md-7 small text-muted post-meta my-1"></span>
+            
+            
+              
+                
+              
+            
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            By Ketan Parmar &#183; 4 min read &#183; <span class=''>Last updated: August 31, 2015</div>
+          
+          
+          
+          <div class="col-md-auto ml-3 my-1">
+            <div class="row">
+              <div class="col-auto p-0">
+              Share on:&nbsp;&nbsp;
+              </div>
+              <div class="col p-0">
+                <span class="lead">
+                  
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fkpbird.github.io%2fpost%2f2015-08-31_go-language-for-java-developer-part-2-852ad2c1ce5f%2f&quote=Go%20Language%20for%20Java%20Developers%20Part%202" rel="noreferrer nofollow" target="_blank" title="Share on Facebook" aria-label="Share on Facebook"><span class="fab fa-facebook"></span></a>&nbsp;&nbsp;
+                  
+                  
+                    <a href="https://twitter.com/intent/tweet?source=http%3a%2f%2fkpbird.github.io%2fpost%2f2015-08-31_go-language-for-java-developer-part-2-852ad2c1ce5f%2f&text=Go%20Language%20for%20Java%20Developers%20Part%202:%0Ahttp%3a%2f%2fkpbird.github.io%2fpost%2f2015-08-31_go-language-for-java-developer-part-2-852ad2c1ce5f%2f" rel="noreferrer nofollow" target="_blank" title="Share on Twitter" aria-label="Share on Twitter"><span class="fab fa-twitter"></span></a>&nbsp;&nbsp;
+                  
+                  
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2fkpbird.github.io%2fpost%2f2015-08-31_go-language-for-java-developer-part-2-852ad2c1ce5f%2f&title=Go%20Language%20for%20Java%20Developers%20Part%202&summary=Normally%20first%20program%20you%20write%20in%20any%20programming%20language%20is%20Hello%20World.%20&source=Ketan%20Parmar%20%28kpbird%29" rel="noreferrer nofollow" target="_blank" title="Share on LinkedIn" aria-label="Share on LinkedIn"><span class="fab fa-linkedin"></span></a>&nbsp;&nbsp;
+                  
+                  
+                    <a href="https://t.me/share/url?url=http%3a%2f%2fkpbird.github.io%2fpost%2f2015-08-31_go-language-for-java-developer-part-2-852ad2c1ce5f%2f&text=Go%20Language%20for%20Java%20Developers%20Part%202" rel="noreferrer nofollow" target="_blank" title="Share on Telegram" aria-label="Share on Telegram"><span class="fab fa-telegram"></span></a>&nbsp;&nbsp;
+                  
+                  
+                    <a href="whatsapp://send?text=http%3a%2f%2fkpbird.github.io%2fpost%2f2015-08-31_go-language-for-java-developer-part-2-852ad2c1ce5f%2f%0A%0AGo%20Language%20for%20Java%20Developers%20Part%202" data-text="Go Language for Java Developers Part 2" data-href="http://kpbird.github.io/post/2015-08-31_go-language-for-java-developer-part-2-852ad2c1ce5f/" rel="noreferrer nofollow" target="_blank" title="Share on Whatsapp" aria-label="Share on Whatsapp"><span class="fab fa-whatsapp"></span></a>&nbsp;&nbsp;
+                  
+                  
+                    <a href="https://reddit.com/submit?url=http%3a%2f%2fkpbird.github.io%2fpost%2f2015-08-31_go-language-for-java-developer-part-2-852ad2c1ce5f%2f&title=Go%20Language%20for%20Java%20Developers%20Part%202" rel="noreferrer nofollow" target="_blank" title="Share on Reddit" aria-label="Share on Reddit"><span class="fab fa-reddit"></span></a>&nbsp;&nbsp;
+                  
+                  
+                    <a href="mailto:?subject=Go%20Language%20for%20Java%20Developers%20Part%202&body=Normally%20first%20program%20you%20write%20in%20any%20programming%20language%20is%20Hello%20World.%20%0A%0Ahttp%3a%2f%2fkpbird.github.io%2fpost%2f2015-08-31_go-language-for-java-developer-part-2-852ad2c1ce5f%2f" target="_blank" title="Share via email" aria-label="Share via email"><span class="fas fa-envelope"></span></a>
+                  
+                </span>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        
+        
+        
+      </div>
+      
+      
+      <div class="py-3 my-2">
+      <p><img src="https://cdn-images-1.medium.com/max/800/1*cA-oukgXIi5kltxtEpDtZw.jpeg" alt="alt"></p>
+<p>Normally first program you write in any programming language is &ldquo;Hello
+World&rdquo;. Hello World is simple program which print &ldquo;Hello Word&rdquo; text on
+console / screen.</p>
+<h2 id="java-hello-world">Java: Hello World</h2>
+<p>As Java Developer you can easily understand following code. No need to
+explain. correct ?</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> com.kpbird.gotutorial<span style="color:#f92672">;</span> 
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Main</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Hello World&#34;</span><span style="color:#f92672">);</span>        
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><p>To compile &amp; execute above code, you need to write following two
+commands in the Terminal.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">javac Main.java 
+java Main
+</code></pre></div><h2 id="go-hello-world">Go: Hello World</h2>
+<p>Create directory where you need to keep the code. Create file named
+&ldquo;main.go&rdquo; and write following code</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>  <span style="color:#75715e">// line 1
+</span><span style="color:#75715e"></span><span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span> <span style="color:#75715e">// line 2
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() { <span style="color:#75715e">// line 3
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;Hello World&#34;</span>) <span style="color:#75715e">// line 4
+</span><span style="color:#75715e"></span>} <span style="color:#75715e">// line 5
+</span></code></pre></div><p>To execute above code, you need to write following command in the
+Terminal</p>
+<p>You should see Hello World in terminal. If you don&rsquo;t see Hello World
+displayed then you may have mistake in typing program. The Go compiler
+will give you hint about where the mistake lies.</p>
+<h2 id="understand-go-hello-word-program">Understand Go : Hello Word program</h2>
+<p><strong>1. Package Name (Line 1):</strong> Go program start with package declaration.
+Every Go program must start with package declaration. Package
+declaration is used to organise source code. In Java we follow relative
+path but with &ldquo;.&rdquo; (dot) format like com.kpbird.gotutorial represent
+physical path com/kpbird/gotutorial. While in Go language package name
+represent only current folder name &ldquo;gotutorial&rdquo;. Go language support two
+type of program 1. Go Libraries 2. Go Executable. Package main is a way
+to tell compiler that this Go program is executable. When you declare
+&ldquo;package main&rdquo; you don&rsquo;t need to create folder / directory called
+&ldquo;main&rdquo;.</p>
+<p><strong>2. Import (Line 2):</strong> import keyword is used to include code from
+other package or library. The &ldquo;fmt&rdquo; package is short form of Format. It
+is used to format input and output. In Java, we don&rsquo;t need to write
+java.lang package explicitly compiler will do it behalf of us.</p>
+<p><strong>3. fund main() (Line 3):</strong> Functions are building block of Go
+language. All functions start with keywords &ldquo;func&rdquo;. func followed by
+name of function in our case &ldquo;main&rdquo; is the name of function. If function
+takes any argument we need to write in parentheses. Main is special
+function because main gets called when we execute Go program. It&rsquo;s like
+public static void main() in Java.</p>
+<p><strong>4. fmt.Println (Line 4):</strong> Line 4 has three component 1. fmt package
+name. 2. Println function name 3. String argument &ldquo;Hello World&rdquo;. In
+Java, we use System.out.println().</p>
+<h2 id="java-vs-go">Java vs Go</h2>
+<p>We should not compare both languages because both are different. Go
+Language is functional features language in which functions are
+first-class citizen. Java Language is Object Oriented language in which
+Class / Object are first-class citizen.</p>
+<p>To execute Java program, first we need to compile using &ldquo;javac&rdquo; command,
+after that we need to use &ldquo;java&rdquo; command execute a program.</p>
+<p>To execute Go program, we just need to write Go run main.go. Single
+command will compile and execute program. To build program Go language
+has command build. It will generate native executable file as per the
+platform, that you can directly execute.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">$Go build main.go 
+$./main
+</code></pre></div><p>In Go Language don&rsquo;t have semi-colon (;) to end the statement. It means
+that you can&rsquo;t write two statement in single line.</p>
+<p>In Java Language, As we have semi-colon (;) to end the statement we can
+write entire code in single line.</p>
+<p>Next article we will learn about data types in Go Language.</p>
+
+      </div>
+      
+      
+      <div class="pt-4 mt-2 border-top">
+        <div class="row">
+          <div class="col-md-7 small text-muted post-meta my-1">
+            
+            
+              
+            
+              
+            
+              
+            
+              
+            </div>
+          
+          
+          
+        </div>
+      
+        
+          <div class="mt-3">
+            <span class="">Tags:</span>&nbsp;&nbsp;&nbsp;<a href="/tags/go"><span class="badge badge-pill bg-clr2 text-nav mr-2 py-2">GO</span></a><a href="/tags/go-lang"><span class="badge badge-pill bg-clr2 text-nav mr-2 py-2">GO LANG</span></a></div>
+        
+      
+      </div>
+      
+    </div>
+  </div>
+  
+  
+  
+</div>
+
+    </div><footer class="text-center p-2 text-muted footer">
+  
+    
+    <div class="py-2 lead">
+      
+        
+          <a class="ml-2" href="https://github.com/kpbird"><span class="fab fa-github" aria-label="Join us on Github"></span></a>
+        
+      
+        
+          <a class="ml-2" href="https://www.linkedin.com/in/kpbird/"><span class="fab fa-linkedin" aria-label="Join us on Linkedin"></span></a>
+        
+      
+        
+          <a class="ml-2" href="https://medium.com/@kpbird"><span class="fab fa-medium" aria-label="Join us on Medium"></span></a>
+        
+      
+        
+          <a class="ml-2" href="https://twitter.com/kpbird"><span class="fab fa-twitter" aria-label="Join us on Twitter"></span></a>
+        
+      
+    </div>
+    
+  
+
+  <div class="py-2 lead">
+      Make it work, make it right, make it fast. – Kent Beck
+    </div>
+
+  <div class="py-2 copyright">
+    <small>Copyright &#169; 2020 Ketan Parmar <b>&#183;</b> Content license: CC-BY-SA-3.0 <b>&#183;</b> Powered by <a class="font-weight-bold text-reset text-decoration-none" href="https://gohugo.io">Hugo</a> <b>&#183;</b> Theme <a class="font-weight-bold text-reset text-decoration-none" href="https://github.com/Softorage/HugoTheme-VibrantShadows">Vibrant Shadows</a> by <span class="softorage"><a class="font-weight-bold text-reset" href="https://softorage.com">Softorage</a></span></small>
+  </div>
+</footer>
+
+    
+    
+    
+    <script src="/assets/js/main.min.6ff0d57b7558f0225c80bade926a349330bc25d85e7ceff50d911f1156023c3e.js" integrity="sha256-b/DVe3VY8CJcgLrekmo0kzC8JdhefO/1DZEfEVYCPD4=" crossorigin="anonymous"></script>
+    <script src="/assets/js/custom.min.c8274a0cac0477f854e63f09626cc63858bb2bc9db8faecbb2834846952c7fd6.js" integrity="sha256-yCdKDKwEd/hU5j8JYmzGOFi7K8nbj67LsoNIRpUsf9Y=" crossorigin="anonymous"></script>
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Lato&display=swap" rel="stylesheet">
+    
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+  </body>
+</html>

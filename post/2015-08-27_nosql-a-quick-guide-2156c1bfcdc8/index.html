@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  
+    
+      
+
+
+
+
+
+
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>NoSQL- A quick guide | Ketan Parmar (kpbird)</title>
+<meta name="title" content="NoSQL- A quick guide | Ketan Parmar (kpbird)" />
+<meta name="description" content="NoSQL is buzz word now-a-days among the developers and software professionals."> 
+
+
+<link rel="canonical" href="http://kpbird.github.io/post/2015-08-27_nosql-a-quick-guide-2156c1bfcdc8/" />
+
+
+  
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:description" content="NoSQL is buzz word now-a-days among the developers and software professionals." /> 
+  <meta name="twitter:title" content="NoSQL- A quick guide | Ketan Parmar (kpbird)" />
+  <meta name="twitter:url" content="http://kpbird.github.io/post/2015-08-27_nosql-a-quick-guide-2156c1bfcdc8/" />
+  <meta name="twitter:site" content="@Softorage" /> 
+  <meta name="twitter:creator" content="@Softorage" /> 
+  <meta name="twitter:image" content="" /> 
+
+
+
+  
+  <meta property="og:title" content="NoSQL- A quick guide | Ketan Parmar (kpbird)" />
+  <meta property="og:description" content="NoSQL is buzz word now-a-days among the developers and software professionals." /> 
+  <meta property="og:site_name" content="Ketan Parmar (kpbird)" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="http://kpbird.github.io/post/2015-08-27_nosql-a-quick-guide-2156c1bfcdc8/" />
+  
+  <meta property="og:image" content="" /> 
+
+
+
+<meta property="article:published_time" content="2015-08-27 00:00:00 &#43;0000 UTC" />
+
+
+  
+  
+  <script type="application/ld+json">
+      { 
+          "@context": "http://schema.org", 
+          "@type": "BlogPosting",
+          "headline": "NoSQL- A quick guide",
+          
+          "url": "http://kpbird.github.io/",
+          
+          "datePublished": "2015-08-27T00:00:00Z",
+          
+          
+          "dateModified": "2015-08-27T00:00:00Z",
+          
+          "description": NoSQL is buzz word now-a-days among the developers and software professionals.,
+          
+          "logo": "/assets/favicon/android-chrome-512x512.png",
+          
+          
+          "author": {
+              "@type": "Person",
+              "name": "Ketan Parmar"
+          },
+          
+          "publisher": {
+            "@type": "Organization",
+            "name": "Ketan Parmar",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "/assets/favicon/android-chrome-512x512.png"
+            }
+          },
+          
+          "sameAs" : [
+            
+            
+              "https://github.com/kpbird",  
+            
+              "https://www.linkedin.com/in/kpbird/",  
+            
+              "https://medium.com/@kpbird",  
+            
+              "https://twitter.com/kpbird"
+            ]
+          
+        }
+      </script>
+  
+
+
+    
+    <meta name="generator" content="Hugo 0.79.0" />
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/assets/css/main.min.4da6b94aea0df18f73bf13c5be667e4552f3f9c293fee82eab77d443bf7e04e5.css" integrity="sha256-Taa5SuoN8Y9zvxPFvmZ&#43;RVLz&#43;cKT/uguq3fUQ79&#43;BOU=" crossorigin="anonymous">
+  
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  
+  <link rel=apple-touch-icon sizes=180x180 href=http://kpbird.github.io//assets/favicon/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=http://kpbird.github.io//assets/favicon/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=http://kpbird.github.io//assets/favicon/favicon-16x16.png><link rel=manifest href=http://kpbird.github.io//assets/favicon/site.webmanifest><link rel=mask-icon href=http://kpbird.github.io//assets/favicon/safari-pinned-tab.svg color=#7817c4><link rel=icon href=http://kpbird.github.io//assets/favicon/favicon.ico type=image/x-icon><link rel="shortcut icon" href=http://kpbird.github.io//assets/favicon/favicon.ico type=image/x-icon><meta name=apple-mobile-web-app-title content="Vibrant Shadows Theme"><meta name=application-name content="Vibrant Shadows Theme"><meta name=msapplication-TileColor content="#ffffff"><meta name=theme-color content="#ffffff">
+  
+  
+  
+  <meta name="theme-color" content="#fff6f8">
+  
+  <meta name="msapplication-navbutton-color" content="#fff6f8">
+  
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  
+  
+</head>
+<body><header>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top flex-column">
+    <div class="container-fluid">
+      
+      <a class="navbar-brand rounded px-3" href="http://kpbird.github.io/"><span class="text-nav"><span class="brand"><img src="/assets/favicon/favicon-32x32.png" alt="Ketan Parmar logo" height="32"></img>&nbsp;&nbsp;&nbsp;Ketan Parmar</span></span></a>
+      
+      
+        <a class="navbar-toggler border-0 bg-nav p-2" role="button" href="#" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="text-clr2">&#9776;</span>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-md-auto">
+             
+            
+              
+                <li class="nav-item mx-1 my-2">
+                  <a class="btn bg-nav text-clr1" href="/about/">About</a>
+                </li>
+              
+            
+          </ul>
+          
+            
+          
+        </div>
+      
+    </div>
+    
+  </nav>
+</header>
+<div id="content">
+<div class="container-fluid bg-clr1 text-light text-center pb-3 pt-4 position-relative shadow">
+  <div style="height:3.5rem;"></div>
+  <h1>NoSQL- A quick guide</h1>
+  <p class="description">NoSQL is buzz word now-a-days among the developers and software professionals.</p>
+</div>
+<div class="container-fluid bg-nav p-4">
+  <div class="row">
+    <div class="col-md-3">
+      
+      <div class="bg-mat p-4 rounded" style="overflow-x: auto;">
+        <div class="h4 mb-3">
+        Contents
+        </div>
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#what-is-nosql">What is NoSQL?</a></li>
+    <li><a href="#where-to-use-nosql">Where to use NoSQL ?</a></li>
+    <li><a href="#advantages-and-disadvantages-of-nosql-db">Advantages and Disadvantages of NoSQL DB.</a></li>
+    <li><a href="#category-of-nosql">Category of NoSQL</a></li>
+    <li><a href="#how-many-nosql-database-are-available-in-market">How many NoSQL database are available in market?</a></li>
+    <li><a href="#if-all-nosql-database-fall-under-above-category-then-what-is">If all NoSQL database fall under above category then what is</a></li>
+    <li><a href="#can-i-use-multiple-nosql-in-my-project--application">Can I use multiple NoSQL in my project / application ?</a></li>
+    <li><a href="#list-of-popular-nosql-database-with-usage">List of popular NoSQL database with usage.</a></li>
+    <li><a href="#can-i-have-video-tutorial-to-learn-more-about-nosql">Can I have video tutorial to learn more about NoSQL?</a></li>
+    <li><a href="#references">References</a></li>
+  </ol>
+</nav>
+      </div>
+      
+    </div>
+    <div class="col-md-9">
+        
+      
+      <div class="py-1">
+        <div class="row">
+          <div class="col-md-7 small text-muted post-meta my-1"></span>
+            
+            
+              
+                
+              
+            
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            By Ketan Parmar &#183; 4 min read &#183; <span class=''>Last updated: August 27, 2015</div>
+          
+          
+          
+          <div class="col-md-auto ml-3 my-1">
+            <div class="row">
+              <div class="col-auto p-0">
+              Share on:&nbsp;&nbsp;
+              </div>
+              <div class="col p-0">
+                <span class="lead">
+                  
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fkpbird.github.io%2fpost%2f2015-08-27_nosql-a-quick-guide-2156c1bfcdc8%2f&quote=NoSQL-%20A%20quick%20guide" rel="noreferrer nofollow" target="_blank" title="Share on Facebook" aria-label="Share on Facebook"><span class="fab fa-facebook"></span></a>&nbsp;&nbsp;
+                  
+                  
+                    <a href="https://twitter.com/intent/tweet?source=http%3a%2f%2fkpbird.github.io%2fpost%2f2015-08-27_nosql-a-quick-guide-2156c1bfcdc8%2f&text=NoSQL-%20A%20quick%20guide:%0Ahttp%3a%2f%2fkpbird.github.io%2fpost%2f2015-08-27_nosql-a-quick-guide-2156c1bfcdc8%2f" rel="noreferrer nofollow" target="_blank" title="Share on Twitter" aria-label="Share on Twitter"><span class="fab fa-twitter"></span></a>&nbsp;&nbsp;
+                  
+                  
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2fkpbird.github.io%2fpost%2f2015-08-27_nosql-a-quick-guide-2156c1bfcdc8%2f&title=NoSQL-%20A%20quick%20guide&summary=NoSQL%20is%20buzz%20word%20now-a-days%20among%20the%20developers%20and%20software%20professionals.&source=Ketan%20Parmar%20%28kpbird%29" rel="noreferrer nofollow" target="_blank" title="Share on LinkedIn" aria-label="Share on LinkedIn"><span class="fab fa-linkedin"></span></a>&nbsp;&nbsp;
+                  
+                  
+                    <a href="https://t.me/share/url?url=http%3a%2f%2fkpbird.github.io%2fpost%2f2015-08-27_nosql-a-quick-guide-2156c1bfcdc8%2f&text=NoSQL-%20A%20quick%20guide" rel="noreferrer nofollow" target="_blank" title="Share on Telegram" aria-label="Share on Telegram"><span class="fab fa-telegram"></span></a>&nbsp;&nbsp;
+                  
+                  
+                    <a href="whatsapp://send?text=http%3a%2f%2fkpbird.github.io%2fpost%2f2015-08-27_nosql-a-quick-guide-2156c1bfcdc8%2f%0A%0ANoSQL-%20A%20quick%20guide" data-text="NoSQL- A quick guide" data-href="http://kpbird.github.io/post/2015-08-27_nosql-a-quick-guide-2156c1bfcdc8/" rel="noreferrer nofollow" target="_blank" title="Share on Whatsapp" aria-label="Share on Whatsapp"><span class="fab fa-whatsapp"></span></a>&nbsp;&nbsp;
+                  
+                  
+                    <a href="https://reddit.com/submit?url=http%3a%2f%2fkpbird.github.io%2fpost%2f2015-08-27_nosql-a-quick-guide-2156c1bfcdc8%2f&title=NoSQL-%20A%20quick%20guide" rel="noreferrer nofollow" target="_blank" title="Share on Reddit" aria-label="Share on Reddit"><span class="fab fa-reddit"></span></a>&nbsp;&nbsp;
+                  
+                  
+                    <a href="mailto:?subject=NoSQL-%20A%20quick%20guide&body=NoSQL%20is%20buzz%20word%20now-a-days%20among%20the%20developers%20and%20software%20professionals.%0A%0Ahttp%3a%2f%2fkpbird.github.io%2fpost%2f2015-08-27_nosql-a-quick-guide-2156c1bfcdc8%2f" target="_blank" title="Share via email" aria-label="Share via email"><span class="fas fa-envelope"></span></a>
+                  
+                </span>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        
+        
+        
+      </div>
+      
+      
+      <div class="py-3 my-2">
+      <p><img src="https://cdn-images-1.medium.com/max/800/1*t6RtB_rCBUlpZXc9Hl68Uw.jpeg" alt="g"></p>
+<p>NoSQL is buzz word now-a-days among the developers and software
+professionals.</p>
+<h2 id="what-is-nosql">What is NoSQL?</h2>
+<p>NoSQL database, also called Not Only SQL, is an approach to data
+management and database design that&rsquo;s useful for very large sets of
+distributed data.</p>
+<h2 id="where-to-use-nosql">Where to use NoSQL ?</h2>
+<p>Use NoSQL, When project has unstructured big data that require real-time
+or offline analysis or web/mobile application. i.e. Social Network app,
+Analytics app.</p>
+<h2 id="advantages-and-disadvantages-of-nosql-db">Advantages and Disadvantages of NoSQL DB.</h2>
+<p>Advantages of NoSQL</p>
+<ul>
+<li>Elastic scaling</li>
+<li>Big Data</li>
+<li>e-commerce</li>
+<li>Flexible data models</li>
+</ul>
+<p>Disadvantages of NoSQL</p>
+<ul>
+<li>Maturity</li>
+<li>Support</li>
+<li>Analytics and business intelligence</li>
+<li>Administration</li>
+<li>Expertise</li>
+</ul>
+<h2 id="category-of-nosql">Category of NoSQL</h2>
+<ul>
+<li>Column</li>
+<li>Document</li>
+<li>Key-value</li>
+<li>Graph</li>
+</ul>
+<h2 id="how-many-nosql-database-are-available-in-market">How many NoSQL database are available in market?</h2>
+<p>More then 110 different (Open Source and Proprietary) NoSQL database
+available in market</p>
+<h2 id="if-all-nosql-database-fall-under-above-category-then-what-is">If all NoSQL database fall under above category then what is</h2>
+<p>purpose of having lots of NoSQL databases ?</p>
+<p>Every NoSQL database has some special feature &amp; functionality which
+makes it different, Base on the project requirement one can choose NoSQL
+database.</p>
+<h2 id="can-i-use-multiple-nosql-in-my-project--application">Can I use multiple NoSQL in my project / application ?</h2>
+<p>Yes</p>
+<h2 id="list-of-popular-nosql-database-with-usage">List of popular NoSQL database with usage.</h2>
+<ul>
+<li>
+<p><strong>Radis:</strong> For rapidly changing data (should fit mostly in memory). i.e.
+to store real-time stock prices, analytics, leader boards and
+communication. And replacement of memcached.</p>
+</li>
+<li>
+<p><strong>MongoDB:</strong> When you need dynamic queries, defined indexes, map/reduce
+and good performance on a big DB. i.e. for most things that you would do
+with MySQL but having predefined columns really holds you back.</p>
+</li>
+<li>
+<p><strong>Cassandra:</strong> When you need to store data so huge that it doesn&rsquo;t fit
+on server, but still want a friendly familiar interface to it. When you
+don&rsquo;t need real-time analysis or other operation. i.e. Web analytics,
+Transaction logging, Data collection from huge sensor arrays.</p>
+</li>
+<li>
+<p><strong>Riak:</strong> If you need very good single-site scalability, availability
+and fault-tolerance, but you&rsquo;re ready to pay for multi-site replication.
+i.e. Point-of-sales data collection. Factory control systems. Places
+where even seconds of downtime hurt. Could be used as a well-update-able
+web server.</p>
+</li>
+<li>
+<p><strong>CouchDB:</strong> For accumulating, occasionally changing data, on which
+pre-defined queries are to be run. Places where versioning is important.
+i.e. CRM, CMS systems. Master-master replication is an especially
+interesting feature, allowing easy multi-site deployments.</p>
+</li>
+<li>
+<p><strong>HBase:</strong> Hadoop is probably still the best way to run Map/Reduce jobs
+on huge datasets. Best if you use the Hadoop/HDFS stack already. ie.
+Search engines. Analysing log data. Any place where scanning huge,
+two-dimensional join-less tables are a requirement.</p>
+</li>
+<li>
+<p><strong>Accumulo:</strong> If you need to restrict access on the cell level. i.e. Same
+as HBase, since it&rsquo;s basically a replacement: Search engines.</p>
+</li>
+<li>
+<p><strong>Hypertable:</strong> If you need a better HBase. i.e/ Same as HBase, since
+it&rsquo;s basically a replacement: Search engines.</p>
+</li>
+<li>
+<p><strong>Neo4j:</strong> For graph-style, rich or complex, interconnected data. Neo4j
+is quite different from the others in this sense. i.e. For searching
+routes in social relations, public transport links, road maps, or
+network topologies.</p>
+</li>
+<li>
+<p><strong>ElasticSearch:</strong> When you have objects with (flexible) fields, and you
+need &ldquo;advanced search&rdquo; functionality. i.e. A dating service that handles
+age difference, geographic location, tastes and dislikes, etc. Or a
+leader board system that depends on many variables. you can replace your
+Solr with ElasticSearch.</p>
+</li>
+<li>
+<p><strong>Couchbase:</strong> Any application where low-latency data access, high
+concurrency support and high availability is a requirement. i.e.
+Low-latency use-cases like ad targeting or highly-concurrent web apps
+like online gaming (e.g. Zynga).</p>
+</li>
+</ul>
+<h2 id="can-i-have-video-tutorial-to-learn-more-about-nosql">Can I have video tutorial to learn more about NoSQL?</h2>
+<p>Sure, Watch following video..</p>
+<p><a href="https://www.youtube.com/watch?v=qI_g07C_Q5I" title="Everything Is AWESOME"><img src="https://yt-embed.herokuapp.com/embed?v=qI_g07C_Q5I" alt="Everything Is AWESOME"></a></p>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/NoSQL">http://en.wikipedia.org/wiki/NoSQL</a></li>
+<li><a href="http://kkovacs.eu/cassandra-vs-mongodb-vs-couchdb-vs-redis">http://kkovacs.eu/cassandra-vs-mongodb-vs-couchdb-vs-redis</a></li>
+<li><a href="http://www.dzone.com/mz/nosql">http://www.dzone.com/mz/nosql</a></li>
+<li><a href="http://www.nosqlweekly.com/">http://www.nosqlweekly.com/</a></li>
+<li><a href="http://nosql-database.org/">http://nosql-database.org/</a></li>
+</ul>
+
+      </div>
+      
+      
+      <div class="pt-4 mt-2 border-top">
+        <div class="row">
+          <div class="col-md-7 small text-muted post-meta my-1">
+            
+            
+              
+            
+              
+            
+              
+            
+              
+            </div>
+          
+          
+          
+        </div>
+      
+        
+          <div class="mt-3">
+            <span class="">Tags:</span>&nbsp;&nbsp;&nbsp;<a href="/tags/nosql"><span class="badge badge-pill bg-clr2 text-nav mr-2 py-2">NO S Q L</span></a><a href="/tags/guide"><span class="badge badge-pill bg-clr2 text-nav mr-2 py-2">GUIDE</span></a></div>
+        
+      
+      </div>
+      
+    </div>
+  </div>
+  
+  
+  
+</div>
+
+    </div><footer class="text-center p-2 text-muted footer">
+  
+    
+    <div class="py-2 lead">
+      
+        
+          <a class="ml-2" href="https://github.com/kpbird"><span class="fab fa-github" aria-label="Join us on Github"></span></a>
+        
+      
+        
+          <a class="ml-2" href="https://www.linkedin.com/in/kpbird/"><span class="fab fa-linkedin" aria-label="Join us on Linkedin"></span></a>
+        
+      
+        
+          <a class="ml-2" href="https://medium.com/@kpbird"><span class="fab fa-medium" aria-label="Join us on Medium"></span></a>
+        
+      
+        
+          <a class="ml-2" href="https://twitter.com/kpbird"><span class="fab fa-twitter" aria-label="Join us on Twitter"></span></a>
+        
+      
+    </div>
+    
+  
+
+  <div class="py-2 lead">
+      Make it work, make it right, make it fast. – Kent Beck
+    </div>
+
+  <div class="py-2 copyright">
+    <small>Copyright &#169; 2020 Ketan Parmar <b>&#183;</b> Content license: CC-BY-SA-3.0 <b>&#183;</b> Powered by <a class="font-weight-bold text-reset text-decoration-none" href="https://gohugo.io">Hugo</a> <b>&#183;</b> Theme <a class="font-weight-bold text-reset text-decoration-none" href="https://github.com/Softorage/HugoTheme-VibrantShadows">Vibrant Shadows</a> by <span class="softorage"><a class="font-weight-bold text-reset" href="https://softorage.com">Softorage</a></span></small>
+  </div>
+</footer>
+
+    
+    
+    
+    <script src="/assets/js/main.min.6ff0d57b7558f0225c80bade926a349330bc25d85e7ceff50d911f1156023c3e.js" integrity="sha256-b/DVe3VY8CJcgLrekmo0kzC8JdhefO/1DZEfEVYCPD4=" crossorigin="anonymous"></script>
+    <script src="/assets/js/custom.min.c8274a0cac0477f854e63f09626cc63858bb2bc9db8faecbb2834846952c7fd6.js" integrity="sha256-yCdKDKwEd/hU5j8JYmzGOFi7K8nbj67LsoNIRpUsf9Y=" crossorigin="anonymous"></script>
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Lato&display=swap" rel="stylesheet">
+    
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+  </body>
+</html>

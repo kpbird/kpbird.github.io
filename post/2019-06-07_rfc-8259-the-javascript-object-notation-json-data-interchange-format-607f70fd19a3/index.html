@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  
+    
+      
+
+
+
+
+
+
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>RFC 8259 --- The JavaScript Object Notation (JSON) Data Interchange Format | Ketan Parmar (kpbird)</title>
+<meta name="title" content="RFC 8259 --- The JavaScript Object Notation (JSON) Data Interchange Format | Ketan Parmar (kpbird)" />
+<meta name="description" content="JSON has become defacto data exchange format for REST API. It is so common that developers consider JSON as a default protocol for..."> 
+
+
+<link rel="canonical" href="http://kpbird.github.io/post/2019-06-07_rfc-8259-the-javascript-object-notation-json-data-interchange-format-607f70fd19a3/" />
+
+
+  
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:description" content="JSON has become defacto data exchange format for REST API. It is so common that developers consider JSON as a default protocol for..." /> 
+  <meta name="twitter:title" content="RFC 8259 --- The JavaScript Object Notation (JSON) Data Interchange Format | Ketan Parmar (kpbird)" />
+  <meta name="twitter:url" content="http://kpbird.github.io/post/2019-06-07_rfc-8259-the-javascript-object-notation-json-data-interchange-format-607f70fd19a3/" />
+  <meta name="twitter:site" content="@Softorage" /> 
+  <meta name="twitter:creator" content="@Softorage" /> 
+  <meta name="twitter:image" content="" /> 
+
+
+
+  
+  <meta property="og:title" content="RFC 8259 --- The JavaScript Object Notation (JSON) Data Interchange Format | Ketan Parmar (kpbird)" />
+  <meta property="og:description" content="JSON has become defacto data exchange format for REST API. It is so common that developers consider JSON as a default protocol for..." /> 
+  <meta property="og:site_name" content="Ketan Parmar (kpbird)" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="http://kpbird.github.io/post/2019-06-07_rfc-8259-the-javascript-object-notation-json-data-interchange-format-607f70fd19a3/" />
+  
+  <meta property="og:image" content="" /> 
+
+
+
+<meta property="article:published_time" content="2019-06-07 00:00:00 &#43;0000 UTC" />
+
+
+  
+  
+  <script type="application/ld+json">
+      { 
+          "@context": "http://schema.org", 
+          "@type": "BlogPosting",
+          "headline": "RFC 8259 --- The JavaScript Object Notation (JSON) Data Interchange Format",
+          
+          "url": "http://kpbird.github.io/",
+          
+          "datePublished": "2019-06-07T00:00:00Z",
+          
+          
+          "dateModified": "2019-06-07T00:00:00Z",
+          
+          "description": JSON has become defacto data exchange format for REST API. It is so common that developers consider JSON as a default protocol for...,
+          
+          "logo": "/assets/favicon/android-chrome-512x512.png",
+          
+          
+          "author": {
+              "@type": "Person",
+              "name": "Ketan Parmar"
+          },
+          
+          "publisher": {
+            "@type": "Organization",
+            "name": "Ketan Parmar",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "/assets/favicon/android-chrome-512x512.png"
+            }
+          },
+          
+          "sameAs" : [
+            
+            
+              "https://github.com/kpbird",  
+            
+              "https://www.linkedin.com/in/kpbird/",  
+            
+              "https://medium.com/@kpbird",  
+            
+              "https://twitter.com/kpbird"
+            ]
+          
+        }
+      </script>
+  
+
+
+    
+    <meta name="generator" content="Hugo 0.79.0" />
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/assets/css/main.min.4da6b94aea0df18f73bf13c5be667e4552f3f9c293fee82eab77d443bf7e04e5.css" integrity="sha256-Taa5SuoN8Y9zvxPFvmZ&#43;RVLz&#43;cKT/uguq3fUQ79&#43;BOU=" crossorigin="anonymous">
+  
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  
+  <link rel=apple-touch-icon sizes=180x180 href=http://kpbird.github.io//assets/favicon/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=http://kpbird.github.io//assets/favicon/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=http://kpbird.github.io//assets/favicon/favicon-16x16.png><link rel=manifest href=http://kpbird.github.io//assets/favicon/site.webmanifest><link rel=mask-icon href=http://kpbird.github.io//assets/favicon/safari-pinned-tab.svg color=#7817c4><link rel=icon href=http://kpbird.github.io//assets/favicon/favicon.ico type=image/x-icon><link rel="shortcut icon" href=http://kpbird.github.io//assets/favicon/favicon.ico type=image/x-icon><meta name=apple-mobile-web-app-title content="Vibrant Shadows Theme"><meta name=application-name content="Vibrant Shadows Theme"><meta name=msapplication-TileColor content="#ffffff"><meta name=theme-color content="#ffffff">
+  
+  
+  
+  <meta name="theme-color" content="#fff6f8">
+  
+  <meta name="msapplication-navbutton-color" content="#fff6f8">
+  
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  
+  
+</head>
+<body><header>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top flex-column">
+    <div class="container-fluid">
+      
+      <a class="navbar-brand rounded px-3" href="http://kpbird.github.io/"><span class="text-nav"><span class="brand"><img src="/assets/favicon/favicon-32x32.png" alt="Ketan Parmar logo" height="32"></img>&nbsp;&nbsp;&nbsp;Ketan Parmar</span></span></a>
+      
+      
+        <a class="navbar-toggler border-0 bg-nav p-2" role="button" href="#" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="text-clr2">&#9776;</span>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-md-auto">
+             
+            
+              
+                <li class="nav-item mx-1 my-2">
+                  <a class="btn bg-nav text-clr1" href="/about/">About</a>
+                </li>
+              
+            
+          </ul>
+          
+            
+          
+        </div>
+      
+    </div>
+    
+  </nav>
+</header>
+<div id="content">
+<div class="container-fluid bg-clr1 text-light text-center pb-3 pt-4 position-relative shadow">
+  <div style="height:3.5rem;"></div>
+  <h1>RFC 8259 --- The JavaScript Object Notation (JSON) Data Interchange Format</h1>
+  <p class="description">JSON has become defacto data exchange format for REST API. It is so common that developers consider JSON as a default protocol for...</p>
+</div>
+<div class="container-fluid bg-nav p-4">
+  <div class="row">
+    <div class="col-md-3">
+      
+      <div class="bg-mat p-4 rounded" style="overflow-x: auto;">
+        <div class="h4 mb-3">
+        Contents
+        </div>
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#rfc-8259---the-javascript-object-notation-json-data-interchange-format">RFC 8259 &mdash; The JavaScript Object Notation (JSON) Data Interchange Format</a></li>
+  </ol>
+</nav>
+      </div>
+      
+    </div>
+    <div class="col-md-9">
+        
+      
+      <div class="py-1">
+        <div class="row">
+          <div class="col-md-7 small text-muted post-meta my-1"></span>
+            
+            
+              
+                
+              
+            
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            By Ketan Parmar &#183; 6 min read &#183; <span class=''>Last updated: June 7, 2019</div>
+          
+          
+          
+          <div class="col-md-auto ml-3 my-1">
+            <div class="row">
+              <div class="col-auto p-0">
+              Share on:&nbsp;&nbsp;
+              </div>
+              <div class="col p-0">
+                <span class="lead">
+                  
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fkpbird.github.io%2fpost%2f2019-06-07_rfc-8259-the-javascript-object-notation-json-data-interchange-format-607f70fd19a3%2f&quote=RFC%208259%e2%80%8a---%e2%80%8aThe%20JavaScript%20Object%20Notation%20%28JSON%29%20Data%20Interchange%20Format" rel="noreferrer nofollow" target="_blank" title="Share on Facebook" aria-label="Share on Facebook"><span class="fab fa-facebook"></span></a>&nbsp;&nbsp;
+                  
+                  
+                    <a href="https://twitter.com/intent/tweet?source=http%3a%2f%2fkpbird.github.io%2fpost%2f2019-06-07_rfc-8259-the-javascript-object-notation-json-data-interchange-format-607f70fd19a3%2f&text=RFC%208259%e2%80%8a---%e2%80%8aThe%20JavaScript%20Object%20Notation%20%28JSON%29%20Data%20Interchange%20Format:%0Ahttp%3a%2f%2fkpbird.github.io%2fpost%2f2019-06-07_rfc-8259-the-javascript-object-notation-json-data-interchange-format-607f70fd19a3%2f" rel="noreferrer nofollow" target="_blank" title="Share on Twitter" aria-label="Share on Twitter"><span class="fab fa-twitter"></span></a>&nbsp;&nbsp;
+                  
+                  
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2fkpbird.github.io%2fpost%2f2019-06-07_rfc-8259-the-javascript-object-notation-json-data-interchange-format-607f70fd19a3%2f&title=RFC%208259%e2%80%8a---%e2%80%8aThe%20JavaScript%20Object%20Notation%20%28JSON%29%20Data%20Interchange%20Format&summary=JSON%20has%20become%20defacto%20data%20exchange%20format%20for%20REST%20API.%20It%20is%20so%20common%20that%20developers%20consider%20JSON%20as%20a%20default%20protocol%20for...&source=Ketan%20Parmar%20%28kpbird%29" rel="noreferrer nofollow" target="_blank" title="Share on LinkedIn" aria-label="Share on LinkedIn"><span class="fab fa-linkedin"></span></a>&nbsp;&nbsp;
+                  
+                  
+                    <a href="https://t.me/share/url?url=http%3a%2f%2fkpbird.github.io%2fpost%2f2019-06-07_rfc-8259-the-javascript-object-notation-json-data-interchange-format-607f70fd19a3%2f&text=RFC%208259%e2%80%8a---%e2%80%8aThe%20JavaScript%20Object%20Notation%20%28JSON%29%20Data%20Interchange%20Format" rel="noreferrer nofollow" target="_blank" title="Share on Telegram" aria-label="Share on Telegram"><span class="fab fa-telegram"></span></a>&nbsp;&nbsp;
+                  
+                  
+                    <a href="whatsapp://send?text=http%3a%2f%2fkpbird.github.io%2fpost%2f2019-06-07_rfc-8259-the-javascript-object-notation-json-data-interchange-format-607f70fd19a3%2f%0A%0ARFC%208259%e2%80%8a---%e2%80%8aThe%20JavaScript%20Object%20Notation%20%28JSON%29%20Data%20Interchange%20Format" data-text="RFC 8259 --- The JavaScript Object Notation (JSON) Data Interchange Format" data-href="http://kpbird.github.io/post/2019-06-07_rfc-8259-the-javascript-object-notation-json-data-interchange-format-607f70fd19a3/" rel="noreferrer nofollow" target="_blank" title="Share on Whatsapp" aria-label="Share on Whatsapp"><span class="fab fa-whatsapp"></span></a>&nbsp;&nbsp;
+                  
+                  
+                    <a href="https://reddit.com/submit?url=http%3a%2f%2fkpbird.github.io%2fpost%2f2019-06-07_rfc-8259-the-javascript-object-notation-json-data-interchange-format-607f70fd19a3%2f&title=RFC%208259%e2%80%8a---%e2%80%8aThe%20JavaScript%20Object%20Notation%20%28JSON%29%20Data%20Interchange%20Format" rel="noreferrer nofollow" target="_blank" title="Share on Reddit" aria-label="Share on Reddit"><span class="fab fa-reddit"></span></a>&nbsp;&nbsp;
+                  
+                  
+                    <a href="mailto:?subject=RFC%208259%e2%80%8a---%e2%80%8aThe%20JavaScript%20Object%20Notation%20%28JSON%29%20Data%20Interchange%20Format&body=JSON%20has%20become%20defacto%20data%20exchange%20format%20for%20REST%20API.%20It%20is%20so%20common%20that%20developers%20consider%20JSON%20as%20a%20default%20protocol%20for...%0A%0Ahttp%3a%2f%2fkpbird.github.io%2fpost%2f2019-06-07_rfc-8259-the-javascript-object-notation-json-data-interchange-format-607f70fd19a3%2f" target="_blank" title="Share via email" aria-label="Share via email"><span class="fas fa-envelope"></span></a>
+                  
+                </span>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        
+        
+        
+      </div>
+      
+      
+      <div class="py-3 my-2">
+      <h2 id="rfc-8259---the-javascript-object-notation-json-data-interchange-format">RFC 8259 &mdash; The JavaScript Object Notation (JSON) Data Interchange Format</h2>
+<p>![source: <a href="https://www.json.org/">https://www.json.org/</a>]</p>
+<p>JSON has become defacto data exchange format for REST API. It is so
+common that developers consider JSON as a default protocol for
+communication until specified otherwise.</p>
+<p>In this article, I will try to cover the history of JSON along with RFC
+and IETF.</p>
+<p>&ldquo;JSON (JavaScript Object Notation) is a lightweight data-interchange
+format. It is easy for humans to read and write. It is easy for machines
+to parse and generate. It is based on a subset of the [JavaScript
+Programming Language], [Standard ECMA-262 3rd Edition &mdash; December
+1999]. JSON is a text format that is completely language independent but
+uses conventions that are familiar to programmers of the C-family of
+languages, including C, C++, C#, Java, JavaScript, Perl, Python, and
+many others. These properties make JSON an ideal data-interchange
+language.&rdquo; &mdash; The official definition from json.org</p>
+<p>JSON was first introduced by [Douglas Crockfold] in 2001. Since then,
+JSON has been adopted by all the big tech companies like Google,
+Facebook, Twitter etc. Before JSON was popular, XML was a standard way
+for most data exchange purposes. XML is still used by many enterprise
+companies like Amazon AWS. Since the rise of smartphone and mobile
+applications, REST API and JSON have become default choice of
+developers.</p>
+<p>RFC 8259 is the official and standard document used by developers to
+develop JSON SDK/ Libraries in different programming languages.</p>
+<p>If you are a young developer you may have following questions.</p>
+<ol>
+<li>What is RFC?</li>
+<li>Who writes and approves RFC?</li>
+<li>Who maintains RFC?</li>
+</ol>
+<p>RFC is &ldquo;Request For Comments&rdquo;. It&rsquo;s a formal document from the Internet
+Engineering Task Force (IETF) created following a collaborative
+approach. RFCs have a long history, starting back in 1969 in ARPANET
+times. The Internet was created in this way, with RFCs being a starting
+point of discussion or protocol implementation details that people used
+to implement in the actual software. Mark Nottingham&rsquo;s excellent article
+on [How to read RFCs] is a good starting point for the interested ones.</p>
+<p>IETF is the body that defines standard Internet operating protocols,
+i.e. TCP/IP, WebSocket, JSON, XML, HTTP/2 and many others. IETF is
+invariably behind all the standards of any existing and emerging
+technologies in the Internet.</p>
+<p>The IETF has a hierarchical structure with distributed activities. At
+the top of the hierarchy is the Internet Engineering Steering Group
+(IESG) largely responsible for deciding which topic areas the IETF
+will/won&rsquo;t address in its work. The IESG defines certain topic areas
+such as networking or applications and recruits Area Directors (ADs) to
+oversee them. The Area Directors, in turn, establish charters for
+working groups (WGs) to define standards. Eventually,
+individuals &mdash; not companies &mdash; join the working groups to participate
+in the standards-writing process and eventually publish (and maintain)
+Requests for Comments (RFCs), the IETF&rsquo;s standards documents.</p>
+<p>Let&rsquo;s go back to JSON and RFC 8259.</p>
+<p>I highly recommend reading JSON RFC for a complete overview of what JSON
+is all about: <a href="https://tools.ietf.org/html/rfc8259">https://tools.ietf.org/html/rfc8259</a></p>
+<p>Few important lines from RFC&hellip;</p>
+<pre><code>JSON can represent four primitive types (strings, numbers, booleans, and null) and two structured types (objects and arrays).
+</code></pre><p>Null is a valid data type, though few libraries don&rsquo;t support null properly. Consequently, JSON doesn&rsquo;t have a float data type, a number can be treated as a float or integer.</p>
+<pre><code>An object is an unordered collection of zero or more name/value pairs, where a name is a string and a value is a string, number, boolean, null, object, or array.
+</code></pre><p>It&rsquo;s important to emphasise here that an object is an unordered collection, so when you retrieve an object, the order is not guaranteed.</p>
+<pre><code> An array is an ordered sequence of zero or more values.
+</code></pre><p>An array is an ordered sequence, so when you retrieve elements from the array it will maintain the sequence.</p>
+<pre><code>A JSON value MUST be an object, array, number, or string, or one of
+the following three literal names:
+
+false null true
+
+</code></pre><p>The literal names must be lowercase. No other literal names except these 3 are allowed.</p>
+<pre><code>The representation of numbers is similar to that used in most
+programming languages.  A number is represented in base 10 using
+decimal digits.  It contains an integer component that may be
+prefixed with an optional minus sign, which may be followed by a
+fraction part and/or an exponent part.  Leading zeros are not
+allowed.
+
+</code></pre><p>The number is 10 based, JSON doesn&rsquo;t natively support other number systems such as binary or hexadecimal, but you can send octal or hexadecimal values as a string if you really wanted.</p>
+<p>You can also refer the original RFC for JSON, written by Dr Crockfold in July 2006. <a href="https://tools.ietf.org/html/rfc4627">https://tools.ietf.org/html/rfc4627</a></p>
+<p>Apart from JSON, here are few interesting RFCs you may want to peruse if interested.</p>
+<p>Http/3 - <a href="https://tools.ietf.org/html/draft-ietf-quic-http-10">https://tools.ietf.org/html/draft-ietf-quic-http-10</a></p>
+
+      </div>
+      
+      
+      <div class="pt-4 mt-2 border-top">
+        <div class="row">
+          <div class="col-md-7 small text-muted post-meta my-1">
+            
+            
+              
+            
+              
+            
+              
+            
+              
+            </div>
+          
+          
+          
+        </div>
+      
+        
+          <div class="mt-3">
+            <span class="">Tags:</span>&nbsp;&nbsp;&nbsp;<a href="/tags/rfc"><span class="badge badge-pill bg-clr2 text-nav mr-2 py-2">R F C</span></a><a href="/tags/rfc-8259"><span class="badge badge-pill bg-clr2 text-nav mr-2 py-2">R F C 8259</span></a><a href="/tags/json"><span class="badge badge-pill bg-clr2 text-nav mr-2 py-2">J S O N</span></a></div>
+        
+      
+      </div>
+      
+    </div>
+  </div>
+  
+  
+  
+</div>
+
+    </div><footer class="text-center p-2 text-muted footer">
+  
+    
+    <div class="py-2 lead">
+      
+        
+          <a class="ml-2" href="https://github.com/kpbird"><span class="fab fa-github" aria-label="Join us on Github"></span></a>
+        
+      
+        
+          <a class="ml-2" href="https://www.linkedin.com/in/kpbird/"><span class="fab fa-linkedin" aria-label="Join us on Linkedin"></span></a>
+        
+      
+        
+          <a class="ml-2" href="https://medium.com/@kpbird"><span class="fab fa-medium" aria-label="Join us on Medium"></span></a>
+        
+      
+        
+          <a class="ml-2" href="https://twitter.com/kpbird"><span class="fab fa-twitter" aria-label="Join us on Twitter"></span></a>
+        
+      
+    </div>
+    
+  
+
+  <div class="py-2 lead">
+      Make it work, make it right, make it fast. – Kent Beck
+    </div>
+
+  <div class="py-2 copyright">
+    <small>Copyright &#169; 2020 Ketan Parmar <b>&#183;</b> Content license: CC-BY-SA-3.0 <b>&#183;</b> Powered by <a class="font-weight-bold text-reset text-decoration-none" href="https://gohugo.io">Hugo</a> <b>&#183;</b> Theme <a class="font-weight-bold text-reset text-decoration-none" href="https://github.com/Softorage/HugoTheme-VibrantShadows">Vibrant Shadows</a> by <span class="softorage"><a class="font-weight-bold text-reset" href="https://softorage.com">Softorage</a></span></small>
+  </div>
+</footer>
+
+    
+    
+    
+    <script src="/assets/js/main.min.6ff0d57b7558f0225c80bade926a349330bc25d85e7ceff50d911f1156023c3e.js" integrity="sha256-b/DVe3VY8CJcgLrekmo0kzC8JdhefO/1DZEfEVYCPD4=" crossorigin="anonymous"></script>
+    <script src="/assets/js/custom.min.c8274a0cac0477f854e63f09626cc63858bb2bc9db8faecbb2834846952c7fd6.js" integrity="sha256-yCdKDKwEd/hU5j8JYmzGOFi7K8nbj67LsoNIRpUsf9Y=" crossorigin="anonymous"></script>
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Lato&display=swap" rel="stylesheet">
+    
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+  </body>
+</html>

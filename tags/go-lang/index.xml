@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Go lang on Ketan Parmar (kpbird)</title>
+    <link>http://kpbird.github.io/tags/go-lang/</link>
+    <description>Recent content in Go lang on Ketan Parmar (kpbird)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright &amp;#169; 2020. All rights reserved.</copyright>
+    <lastBuildDate>Sat, 24 Mar 2018 00:00:00 +0000</lastBuildDate><atom:link href="http://kpbird.github.io/tags/go-lang/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Golang: Find the type of the variable</title>
+      <link>http://kpbird.github.io/post/2018-03-24_golang-find-the-type-of-the-variable-12f1b7ce869a/</link>
+      <pubDate>Sat, 24 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://kpbird.github.io/post/2018-03-24_golang-find-the-type-of-the-variable-12f1b7ce869a/</guid>
+      <description>Golang: Find the type of the variable The Go reflection package has methods for inspecting the type of variables. The following snippet will print out the reflection type of a string, integer and float. Document https://golang.org/pkg/reflect/#Type
+package main import ( &amp;#34;fmt&amp;#34; &amp;#34;reflect&amp;#34; ) func main() { b := true s := &amp;#34;&amp;#34; n := 1 f := 1.0 a := []string{&amp;#34;foo&amp;#34;, &amp;#34;bar&amp;#34;, &amp;#34;baz&amp;#34;} fmt.Println(reflect.TypeOf(b)) fmt.Println(reflect.TypeOf(s)) fmt.Println(reflect.TypeOf(n)) fmt.Println(reflect.TypeOf(f)) fmt.Println(reflect.TypeOf(a)) } How to print variable type The Printf is capable of print exactly variable type using %T formatting</description>
+    </item>
+    
+    <item>
+      <title>Golang: Generate fixed size random string</title>
+      <link>http://kpbird.github.io/post/2018-02-11_golang-generate-fixed-size-random-string-dd6dbd5e63c0/</link>
+      <pubDate>Sun, 11 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://kpbird.github.io/post/2018-02-11_golang-generate-fixed-size-random-string-dd6dbd5e63c0/</guid>
+      <description>Golang: Generate fixed size random string There are many ways you can generate random string, In this article I will explore fastest method to generate fixed size random string
+Generate Random String using rand.Intn() This is most simplest way to generate random string but not slowest (ASCII table http://www.asciitable.com/)
+//RandomString - Generate a random string of A-Z chars with len = l  func RandomString(len int) string { bytes := make([]byte, len) for i := 0; i &amp;lt; len; i++ { bytes[i] = byte(65 + rand.</description>
+    </item>
+    
+    <item>
+      <title>Golang: parse and format unix timestamp</title>
+      <link>http://kpbird.github.io/post/2018-02-11_golang-parse-and-format-unix-timestamp-6f467389cfe1/</link>
+      <pubDate>Sun, 11 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://kpbird.github.io/post/2018-02-11_golang-parse-and-format-unix-timestamp-6f467389cfe1/</guid>
+      <description>1. If you have unix timestamp in String The time.Parse function does not do Unix timestamps. Instead you can use strconv.ParseIntto parse the string to int64 and create the timestamp with time.Unix:
+package main import ( &amp;#34;fmt&amp;#34; &amp;#34;time&amp;#34; &amp;#34;strconv&amp;#34; ) func main() { i, err := strconv.ParseInt(&amp;#34;1518328047&amp;#34;, 10, 64) if err != nil { panic(err) } tm := time.Unix(i, 0) fmt.Println(tm) } 2. If you have unix timestamp in int The time.</description>
+    </item>
+    
+    <item>
+      <title>Golang: Serialize struct using gob: Part 2</title>
+      <link>http://kpbird.github.io/post/2017-07-29_golang-serialize-struct-using-gob-part-2-f6134dd4f22c/</link>
+      <pubDate>Sat, 29 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://kpbird.github.io/post/2017-07-29_golang-serialize-struct-using-gob-part-2-f6134dd4f22c/</guid>
+      <description>[Golang: Serialize struct using gob &amp;mdash; Part 2 In this article we will explore following functions of gob
+func (dec \*Decoder) Decode(e interface{}) error func (enc \*Encoder) Encode(e interface{}) error Encode and Decode functions are helpful when you want to write network application.
+Example 1: Simple encoding and decoding student structure
+package main import ( &amp;#34;fmt&amp;#34; &amp;#34;encoding/gob&amp;#34; &amp;#34;bytes&amp;#34; ) type Student struct { Name string Age int32 } func main() { fmt.</description>
+    </item>
+    
+    <item>
+      <title>Golang: Serialize struct using gob: Part 1</title>
+      <link>http://kpbird.github.io/post/2017-07-15_golang-serialize-struct-using-gob-part-1-e927a6547c00/</link>
+      <pubDate>Sat, 15 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://kpbird.github.io/post/2017-07-15_golang-serialize-struct-using-gob-part-1-e927a6547c00/</guid>
+      <description>Golang: Serialize struct using gob: Part 1 Serialize of the struct will help you to transfer data over network or it will help you to write data on disk. In a distributed system you generate data then serialize, compress and send. On other end you receive data then decompress, deserialize and process. The entire process must be fast and efficient. Go lang has it&amp;rsquo;s own serialize format called gob. Using gob you can encode and decode structure.</description>
+    </item>
+    
+    <item>
+      <title>Golang gracefully stop application</title>
+      <link>http://kpbird.github.io/post/2017-02-18_golang-gracefully-stop-application-23c2390bb212/</link>
+      <pubDate>Sat, 18 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://kpbird.github.io/post/2017-02-18_golang-gracefully-stop-application-23c2390bb212/</guid>
+      <description>Golang: Gracefully stop application To shutdown go application gracefully, you can use open source libraries or write your own code.
+Following are popular libraries to stop go application gracefully
+ https://github.com/tylerb/graceful https://github.com/braintree/manners  In this article, I will explain how to write your own code to stop go app gracefully
+Step 1: make channel which can listen for signals from OS. Refer [os.Signal] package for more detail. os.Signal package is used to access incoming signals from OS.</description>
+    </item>
+    
+    <item>
+      <title>Go Language for Java Developers Part 4</title>
+      <link>http://kpbird.github.io/post/2015-09-23_go-language-for-java-developer-part-4-c6626c514b86/</link>
+      <pubDate>Wed, 23 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://kpbird.github.io/post/2015-09-23_go-language-for-java-developer-part-4-c6626c514b86/</guid>
+      <description>Following keywords are reserved and may not be used as identifiers.
+Java Keywords
+Go Lang Keywords
+There are few obvious keywords like break, case, if, for, etc but few keywords are new in Go Language.  func: To declare the function interface: To declare the interface (It&amp;rsquo;s different than Java&amp;rsquo;s interface) defer: something like finalise method in Java go: To create a thread chan: To do synchronised between threads var: To declare a variable range: It&amp;rsquo;s like an iterator in Java  </description>
+    </item>
+    
+    <item>
+      <title>Go Language for Java Developers Part 4</title>
+      <link>http://kpbird.github.io/post/2015-09-23_go-language-for-java-developer-part-5-67e3c9226108/</link>
+      <pubDate>Wed, 23 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://kpbird.github.io/post/2015-09-23_go-language-for-java-developer-part-5-67e3c9226108/</guid>
+      <description>Variable: A variable is a storage location for holding a value. The set of permissible values is determined by the variable&amp;rsquo;s type.
+Java language has primitive type and objects, both have different syntax to declare a variable either Primitive type or Object type.
+Animal a = new Animal() Student s = new Student() Java is object oriented language so that we can have access modifier for variable declaration
+private int a public String b protected float c private Animal a In the Java we can declare a variable at many places like Local variable, Parameters, Class level, Instance variable.</description>
+    </item>
+    
+    <item>
+      <title>Go Language for Java Developers Part 1</title>
+      <link>http://kpbird.github.io/post/2015-08-31_go-language-for-java-developer-part-1-8885e70a454d/</link>
+      <pubDate>Mon, 31 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://kpbird.github.io/post/2015-08-31_go-language-for-java-developer-part-1-8885e70a454d/</guid>
+      <description>Go language is normally known as golang. It&amp;rsquo;s general purpose programming language developed at Google in 2007 by three Google employees namely Robert Griesemer, Rob Pike, and Ken Thompson. In November 2008 Google had announced Go Language to public and made it [open source].
+Go language compiler is available for the Linux, Mac OS X, FreeBSD, NetBSD, OpenBSD, Plan 9, and Microsoft Windows operating systems and the i386, amd64, ARM and IBM POWER processor architectures.</description>
+    </item>
+    
+    <item>
+      <title>Go Language for Java Developers Part 2</title>
+      <link>http://kpbird.github.io/post/2015-08-31_go-language-for-java-developer-part-2-852ad2c1ce5f/</link>
+      <pubDate>Mon, 31 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://kpbird.github.io/post/2015-08-31_go-language-for-java-developer-part-2-852ad2c1ce5f/</guid>
+      <description>Normally first program you write in any programming language is &amp;ldquo;Hello World&amp;rdquo;. Hello World is simple program which print &amp;ldquo;Hello Word&amp;rdquo; text on console / screen.
+Java: Hello World As Java Developer you can easily understand following code. No need to explain. correct ?
+package com.kpbird.gotutorial; public class Main { public static void main(String[] args) { System.out.println(&amp;#34;Hello World&amp;#34;); } } To compile &amp;amp; execute above code, you need to write following two commands in the Terminal.</description>
+    </item>
+    
+    <item>
+      <title>Go Language for Java Developers Part 3</title>
+      <link>http://kpbird.github.io/post/2015-08-31_go-language-for-java-developer-part-3-2a698797b6b8/</link>
+      <pubDate>Mon, 31 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://kpbird.github.io/post/2015-08-31_go-language-for-java-developer-part-3-2a698797b6b8/</guid>
+      <description>Java Language: Data Type In Java, We have premitive data types and objects. Java support 8 premitive data types for different purpose.
+Data Type Value byte 0 short 0 int 0 long 0L float 0.0f double 0.0d char &amp;lsquo;\u0000&amp;rsquo; boolean false
+Reference: https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html
+Go Language: Type Go language is statically typed programming language. It means that variable always has specific type that can&amp;rsquo;t be changed. Go language data type can be divided in main three categories.</description>
+    </item>
+    
+  </channel>
+</rss>

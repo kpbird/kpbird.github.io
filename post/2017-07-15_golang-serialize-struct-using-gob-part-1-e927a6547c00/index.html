@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  
+    
+      
+
+
+
+
+
+
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>Golang: Serialize struct using gob: Part 1 | Ketan Parmar (kpbird)</title>
+<meta name="title" content="Golang: Serialize struct using gob: Part 1 | Ketan Parmar (kpbird)" />
+<meta name="description" content="Serialize of the struct will help you to transfer data over network or it will help you to write data on disk. In a distributed system you..."> 
+
+
+<link rel="canonical" href="http://kpbird.github.io/post/2017-07-15_golang-serialize-struct-using-gob-part-1-e927a6547c00/" />
+
+
+  
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:description" content="Serialize of the struct will help you to transfer data over network or it will help you to write data on disk. In a distributed system you..." /> 
+  <meta name="twitter:title" content="Golang: Serialize struct using gob: Part 1 | Ketan Parmar (kpbird)" />
+  <meta name="twitter:url" content="http://kpbird.github.io/post/2017-07-15_golang-serialize-struct-using-gob-part-1-e927a6547c00/" />
+  <meta name="twitter:site" content="@Softorage" /> 
+  <meta name="twitter:creator" content="@Softorage" /> 
+  <meta name="twitter:image" content="" /> 
+
+
+
+  
+  <meta property="og:title" content="Golang: Serialize struct using gob: Part 1 | Ketan Parmar (kpbird)" />
+  <meta property="og:description" content="Serialize of the struct will help you to transfer data over network or it will help you to write data on disk. In a distributed system you..." /> 
+  <meta property="og:site_name" content="Ketan Parmar (kpbird)" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="http://kpbird.github.io/post/2017-07-15_golang-serialize-struct-using-gob-part-1-e927a6547c00/" />
+  
+  <meta property="og:image" content="" /> 
+
+
+
+<meta property="article:published_time" content="2017-07-15 00:00:00 &#43;0000 UTC" />
+
+
+  
+  
+  <script type="application/ld+json">
+      { 
+          "@context": "http://schema.org", 
+          "@type": "BlogPosting",
+          "headline": "Golang: Serialize struct using gob: Part 1",
+          
+          "url": "http://kpbird.github.io/",
+          
+          "datePublished": "2017-07-15T00:00:00Z",
+          
+          
+          "dateModified": "2017-07-15T00:00:00Z",
+          
+          "description": Serialize of the struct will help you to transfer data over network or it will help you to write data on disk. In a distributed system you...,
+          
+          "logo": "/assets/favicon/android-chrome-512x512.png",
+          
+          
+          "author": {
+              "@type": "Person",
+              "name": "Ketan Parmar"
+          },
+          
+          "publisher": {
+            "@type": "Organization",
+            "name": "Ketan Parmar",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "/assets/favicon/android-chrome-512x512.png"
+            }
+          },
+          
+          "sameAs" : [
+            
+            
+              "https://github.com/kpbird",  
+            
+              "https://www.linkedin.com/in/kpbird/",  
+            
+              "https://medium.com/@kpbird",  
+            
+              "https://twitter.com/kpbird"
+            ]
+          
+        }
+      </script>
+  
+
+
+    
+    <meta name="generator" content="Hugo 0.79.0" />
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/assets/css/main.min.4da6b94aea0df18f73bf13c5be667e4552f3f9c293fee82eab77d443bf7e04e5.css" integrity="sha256-Taa5SuoN8Y9zvxPFvmZ&#43;RVLz&#43;cKT/uguq3fUQ79&#43;BOU=" crossorigin="anonymous">
+  
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  
+  <link rel=apple-touch-icon sizes=180x180 href=http://kpbird.github.io//assets/favicon/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=http://kpbird.github.io//assets/favicon/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=http://kpbird.github.io//assets/favicon/favicon-16x16.png><link rel=manifest href=http://kpbird.github.io//assets/favicon/site.webmanifest><link rel=mask-icon href=http://kpbird.github.io//assets/favicon/safari-pinned-tab.svg color=#7817c4><link rel=icon href=http://kpbird.github.io//assets/favicon/favicon.ico type=image/x-icon><link rel="shortcut icon" href=http://kpbird.github.io//assets/favicon/favicon.ico type=image/x-icon><meta name=apple-mobile-web-app-title content="Vibrant Shadows Theme"><meta name=application-name content="Vibrant Shadows Theme"><meta name=msapplication-TileColor content="#ffffff"><meta name=theme-color content="#ffffff">
+  
+  
+  
+  <meta name="theme-color" content="#fff6f8">
+  
+  <meta name="msapplication-navbutton-color" content="#fff6f8">
+  
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  
+  
+</head>
+<body><header>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top flex-column">
+    <div class="container-fluid">
+      
+      <a class="navbar-brand rounded px-3" href="http://kpbird.github.io/"><span class="text-nav"><span class="brand"><img src="/assets/favicon/favicon-32x32.png" alt="Ketan Parmar logo" height="32"></img>&nbsp;&nbsp;&nbsp;Ketan Parmar</span></span></a>
+      
+      
+        <a class="navbar-toggler border-0 bg-nav p-2" role="button" href="#" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="text-clr2">&#9776;</span>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-md-auto">
+             
+            
+              
+                <li class="nav-item mx-1 my-2">
+                  <a class="btn bg-nav text-clr1" href="/about/">About</a>
+                </li>
+              
+            
+          </ul>
+          
+            
+          
+        </div>
+      
+    </div>
+    
+  </nav>
+</header>
+<div id="content">
+<div class="container-fluid bg-clr1 text-light text-center pb-3 pt-4 position-relative shadow">
+  <div style="height:3.5rem;"></div>
+  <h1>Golang: Serialize struct using gob: Part 1</h1>
+  <p class="description">Serialize of the struct will help you to transfer data over network or it will help you to write data on disk. In a distributed system you...</p>
+</div>
+<div class="container-fluid bg-nav p-4">
+  <div class="row">
+    <div class="col-md-3">
+      
+      <div class="bg-mat p-4 rounded" style="overflow-x: auto;">
+        <div class="h4 mb-3">
+        Contents
+        </div>
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#golang-serialize-struct-using-gobpart1">Golang: Serialize struct using gob: Part 1</a></li>
+    <li><a href="#example-1">Example 1</a></li>
+    <li><a href="#example-2">Example 2</a></li>
+    <li><a href="#reference">Reference</a></li>
+  </ol>
+</nav>
+      </div>
+      
+    </div>
+    <div class="col-md-9">
+        
+      
+      <div class="py-1">
+        <div class="row">
+          <div class="col-md-7 small text-muted post-meta my-1"></span>
+            
+            
+              
+                
+              
+            
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            By Ketan Parmar &#183; 3 min read &#183; <span class=''>Last updated: July 15, 2017</div>
+          
+          
+          
+          <div class="col-md-auto ml-3 my-1">
+            <div class="row">
+              <div class="col-auto p-0">
+              Share on:&nbsp;&nbsp;
+              </div>
+              <div class="col p-0">
+                <span class="lead">
+                  
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fkpbird.github.io%2fpost%2f2017-07-15_golang-serialize-struct-using-gob-part-1-e927a6547c00%2f&quote=Golang%3a%20Serialize%20struct%20using%20gob%3a%e2%80%8aPart%c2%a01" rel="noreferrer nofollow" target="_blank" title="Share on Facebook" aria-label="Share on Facebook"><span class="fab fa-facebook"></span></a>&nbsp;&nbsp;
+                  
+                  
+                    <a href="https://twitter.com/intent/tweet?source=http%3a%2f%2fkpbird.github.io%2fpost%2f2017-07-15_golang-serialize-struct-using-gob-part-1-e927a6547c00%2f&text=Golang%3a%20Serialize%20struct%20using%20gob%3a%e2%80%8aPart%c2%a01:%0Ahttp%3a%2f%2fkpbird.github.io%2fpost%2f2017-07-15_golang-serialize-struct-using-gob-part-1-e927a6547c00%2f" rel="noreferrer nofollow" target="_blank" title="Share on Twitter" aria-label="Share on Twitter"><span class="fab fa-twitter"></span></a>&nbsp;&nbsp;
+                  
+                  
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2fkpbird.github.io%2fpost%2f2017-07-15_golang-serialize-struct-using-gob-part-1-e927a6547c00%2f&title=Golang%3a%20Serialize%20struct%20using%20gob%3a%e2%80%8aPart%c2%a01&summary=Serialize%20of%20the%20struct%20will%20help%20you%20to%20transfer%20data%20over%20network%20or%20it%20will%20help%20you%20to%20write%20data%20on%20disk.%20In%20a%20distributed%20system%20you...&source=Ketan%20Parmar%20%28kpbird%29" rel="noreferrer nofollow" target="_blank" title="Share on LinkedIn" aria-label="Share on LinkedIn"><span class="fab fa-linkedin"></span></a>&nbsp;&nbsp;
+                  
+                  
+                    <a href="https://t.me/share/url?url=http%3a%2f%2fkpbird.github.io%2fpost%2f2017-07-15_golang-serialize-struct-using-gob-part-1-e927a6547c00%2f&text=Golang%3a%20Serialize%20struct%20using%20gob%3a%e2%80%8aPart%c2%a01" rel="noreferrer nofollow" target="_blank" title="Share on Telegram" aria-label="Share on Telegram"><span class="fab fa-telegram"></span></a>&nbsp;&nbsp;
+                  
+                  
+                    <a href="whatsapp://send?text=http%3a%2f%2fkpbird.github.io%2fpost%2f2017-07-15_golang-serialize-struct-using-gob-part-1-e927a6547c00%2f%0A%0AGolang%3a%20Serialize%20struct%20using%20gob%3a%e2%80%8aPart%c2%a01" data-text="Golang: Serialize struct using gob: Part 1" data-href="http://kpbird.github.io/post/2017-07-15_golang-serialize-struct-using-gob-part-1-e927a6547c00/" rel="noreferrer nofollow" target="_blank" title="Share on Whatsapp" aria-label="Share on Whatsapp"><span class="fab fa-whatsapp"></span></a>&nbsp;&nbsp;
+                  
+                  
+                    <a href="https://reddit.com/submit?url=http%3a%2f%2fkpbird.github.io%2fpost%2f2017-07-15_golang-serialize-struct-using-gob-part-1-e927a6547c00%2f&title=Golang%3a%20Serialize%20struct%20using%20gob%3a%e2%80%8aPart%c2%a01" rel="noreferrer nofollow" target="_blank" title="Share on Reddit" aria-label="Share on Reddit"><span class="fab fa-reddit"></span></a>&nbsp;&nbsp;
+                  
+                  
+                    <a href="mailto:?subject=Golang%3a%20Serialize%20struct%20using%20gob%3a%e2%80%8aPart%c2%a01&body=Serialize%20of%20the%20struct%20will%20help%20you%20to%20transfer%20data%20over%20network%20or%20it%20will%20help%20you%20to%20write%20data%20on%20disk.%20In%20a%20distributed%20system%20you...%0A%0Ahttp%3a%2f%2fkpbird.github.io%2fpost%2f2017-07-15_golang-serialize-struct-using-gob-part-1-e927a6547c00%2f" target="_blank" title="Share via email" aria-label="Share via email"><span class="fas fa-envelope"></span></a>
+                  
+                </span>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        
+        
+        
+      </div>
+      
+      
+      <div class="py-3 my-2">
+      <p><img src="https://cdn-images-1.medium.com/max/800/1*pFaeNO48gYlRMQii977cQg.jpeg" alt="alt"></p>
+<h2 id="golang-serialize-struct-using-gobpart1">Golang: Serialize struct using gob: Part 1</h2>
+<p>Serialize of the struct will help you to transfer data over network or
+it will help you to write data on disk. In a distributed system you
+generate data then serialize, compress and send. On other end you
+receive data then decompress, deserialize and process. The entire
+process must be fast and efficient. Go lang has it&rsquo;s own serialize
+format called gob. Using gob you can encode and decode structure. You
+can use other formats like JSON, XML, protobuff, capnproto, etc.. You
+should choose a format or protocol based on your requirement. I suggest
+to use Go&rsquo;s gob format when you have sender and receiver both are
+developed in Go lang.</p>
+<p>Package: pkg/encoding/gob</p>
+<ol>
+<li>Stream of gob is self describing, It means we don&rsquo;t need to create
+separate file to explain, like we need to create file in
+protobuff</li>
+<li>Each data item in the stream is preceded by a specification of its
+type, expressed in terms of a small set of predefined types.</li>
+</ol>
+<p>Gob is very simple package from out side. It has only 8 functions and 5
+types.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">Register</span>(<span style="color:#a6e22e">value</span> <span style="color:#66d9ef">interface</span>{})\
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">RegisterName</span>(<span style="color:#a6e22e">name</span> <span style="color:#66d9ef">string</span>, <span style="color:#a6e22e">value</span> <span style="color:#66d9ef">interface</span>{})\
+<span style="color:#66d9ef">type</span> <span style="color:#a6e22e">CommonType</span>\
+<span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Decoder</span>\
+ <span style="color:#66d9ef">func</span> <span style="color:#a6e22e">NewDecoder</span>(<span style="color:#a6e22e">r</span> <span style="color:#a6e22e">io</span>.<span style="color:#a6e22e">Reader</span>) <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#f92672">*</span><span style="color:#a6e22e">Decoder</span>\
+ <span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">dec</span> <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#f92672">*</span><span style="color:#a6e22e">Decoder</span>) <span style="color:#a6e22e">Decode</span>(<span style="color:#a6e22e">e</span> <span style="color:#66d9ef">interface</span>{}) <span style="color:#66d9ef">error</span>\
+ <span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">dec</span> <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#f92672">*</span><span style="color:#a6e22e">Decoder</span>) <span style="color:#a6e22e">DecodeValue</span>(<span style="color:#a6e22e">v</span> <span style="color:#a6e22e">reflect</span>.<span style="color:#a6e22e">Value</span>) <span style="color:#66d9ef">error</span>\
+<span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Encoder</span>\
+ <span style="color:#66d9ef">func</span> <span style="color:#a6e22e">NewEncoder</span>(<span style="color:#a6e22e">w</span> <span style="color:#a6e22e">io</span>.<span style="color:#a6e22e">Writer</span>) <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#f92672">*</span><span style="color:#a6e22e">Encoder</span>\
+ <span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">enc</span> <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#f92672">*</span><span style="color:#a6e22e">Encoder</span>) <span style="color:#a6e22e">Encode</span>(<span style="color:#a6e22e">e</span> <span style="color:#66d9ef">interface</span>{}) <span style="color:#66d9ef">error</span>\
+ <span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">enc</span> <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#f92672">*</span><span style="color:#a6e22e">Encoder</span>) <span style="color:#a6e22e">EncodeValue</span>(<span style="color:#a6e22e">value</span> <span style="color:#a6e22e">reflect</span>.<span style="color:#a6e22e">Value</span>) <span style="color:#66d9ef">error</span>\
+<span style="color:#66d9ef">type</span> <span style="color:#a6e22e">GobDecoder</span>\
+<span style="color:#66d9ef">type</span> <span style="color:#a6e22e">GobEncoder</span>
+</code></pre></div><h2 id="example-1">Example 1</h2>
+<p>In this simple example, We have student structure. It has two fields
+Name and Age. We have used method gob.NewEncoder and gob.NewDecoder both
+methods accepts io.Writer and io.Reader object. These methods use to
+write and read gob file.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+<span style="color:#f92672">import</span> (
+       <span style="color:#e6db74">&#34;fmt&#34;</span>
+       <span style="color:#e6db74">&#34;os&#34;</span>
+       <span style="color:#e6db74">&#34;encoding/gob&#34;</span>
+)
+
+<span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Student</span> <span style="color:#66d9ef">struct</span> {
+       <span style="color:#a6e22e">Name</span> <span style="color:#66d9ef">string</span>
+       <span style="color:#a6e22e">Age</span> <span style="color:#66d9ef">int32</span>
+}
+
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+
+       <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;Gob Example&#34;</span>)
+       <span style="color:#a6e22e">student</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">Student</span>{<span style="color:#e6db74">&#34;Ketan Parmar&#34;</span>,<span style="color:#ae81ff">35</span>}
+       <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">writeGob</span>(<span style="color:#e6db74">&#34;./student.gob&#34;</span>,<span style="color:#a6e22e">student</span>)
+       <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span>{
+              <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">err</span>)
+       }
+
+
+       <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">studentRead</span> = <span style="color:#a6e22e">new</span> (<span style="color:#a6e22e">Student</span>)
+       <span style="color:#a6e22e">err</span> = <span style="color:#a6e22e">readGob</span>(<span style="color:#e6db74">&#34;./student.gob&#34;</span>,<span style="color:#a6e22e">studentRead</span>)
+       <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
+              <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">err</span>)
+       } <span style="color:#66d9ef">else</span> {
+              <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">studentRead</span>.<span style="color:#a6e22e">Name</span>, <span style="color:#e6db74">&#34;\t&#34;</span>, <span style="color:#a6e22e">studentRead</span>.<span style="color:#a6e22e">Age</span>)
+       }
+
+
+}
+
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">writeGob</span>(<span style="color:#a6e22e">filePath</span> <span style="color:#66d9ef">string</span>,<span style="color:#a6e22e">object</span> <span style="color:#66d9ef">interface</span>{}) <span style="color:#66d9ef">error</span> {
+       <span style="color:#a6e22e">file</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">os</span>.<span style="color:#a6e22e">Create</span>(<span style="color:#a6e22e">filePath</span>)
+       <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">==</span> <span style="color:#66d9ef">nil</span> {
+              <span style="color:#a6e22e">encoder</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">gob</span>.<span style="color:#a6e22e">NewEncoder</span>(<span style="color:#a6e22e">file</span>)
+              <span style="color:#a6e22e">encoder</span>.<span style="color:#a6e22e">Encode</span>(<span style="color:#a6e22e">object</span>)
+       }
+       <span style="color:#a6e22e">file</span>.<span style="color:#a6e22e">Close</span>()
+       <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">err</span>
+}
+
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">readGob</span>(<span style="color:#a6e22e">filePath</span> <span style="color:#66d9ef">string</span>,<span style="color:#a6e22e">object</span> <span style="color:#66d9ef">interface</span>{}) <span style="color:#66d9ef">error</span> {
+       <span style="color:#a6e22e">file</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">os</span>.<span style="color:#a6e22e">Open</span>(<span style="color:#a6e22e">filePath</span>)
+       <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">==</span> <span style="color:#66d9ef">nil</span> {
+              <span style="color:#a6e22e">decoder</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">gob</span>.<span style="color:#a6e22e">NewDecoder</span>(<span style="color:#a6e22e">file</span>)
+              <span style="color:#a6e22e">err</span> = <span style="color:#a6e22e">decoder</span>.<span style="color:#a6e22e">Decode</span>(<span style="color:#a6e22e">object</span>)
+       }
+       <span style="color:#a6e22e">file</span>.<span style="color:#a6e22e">Close</span>()
+       <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">err</span>
+}
+</code></pre></div><h2 id="example-2">Example 2</h2>
+<p>Let&rsquo;s create array / slice of student structure and fill some data. For
+following example we do not need to change readGob and writeGob
+functions.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+<span style="color:#f92672">import</span> (
+       <span style="color:#e6db74">&#34;fmt&#34;</span>
+       <span style="color:#e6db74">&#34;os&#34;</span>
+       <span style="color:#e6db74">&#34;encoding/gob&#34;</span>
+)
+
+<span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Student</span> <span style="color:#66d9ef">struct</span> {
+       <span style="color:#a6e22e">Name</span> <span style="color:#66d9ef">string</span>
+       <span style="color:#a6e22e">Age</span> <span style="color:#66d9ef">int32</span>
+}
+<span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Students</span> []<span style="color:#a6e22e">Student</span>
+
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+
+       <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;Gob Example&#34;</span>)
+       <span style="color:#a6e22e">students</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">Students</span>{}
+       <span style="color:#a6e22e">students</span> = append(<span style="color:#a6e22e">students</span>,<span style="color:#a6e22e">Student</span>{<span style="color:#e6db74">&#34;Student 1&#34;</span>,<span style="color:#ae81ff">20</span>})
+       <span style="color:#a6e22e">students</span> = append(<span style="color:#a6e22e">students</span>,<span style="color:#a6e22e">Student</span>{<span style="color:#e6db74">&#34;Student 2&#34;</span>,<span style="color:#ae81ff">25</span>})
+       <span style="color:#a6e22e">students</span> = append(<span style="color:#a6e22e">students</span>,<span style="color:#a6e22e">Student</span>{<span style="color:#e6db74">&#34;Student 3&#34;</span>,<span style="color:#ae81ff">30</span>})
+
+
+       <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">writeGob</span>(<span style="color:#e6db74">&#34;./student.gob&#34;</span>,<span style="color:#a6e22e">students</span>)
+       <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span>{
+              <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">err</span>)
+       }
+
+       <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">studentRead</span> = <span style="color:#a6e22e">new</span> (<span style="color:#a6e22e">Students</span>)
+       <span style="color:#a6e22e">err</span> = <span style="color:#a6e22e">readGob</span>(<span style="color:#e6db74">&#34;./student.gob&#34;</span>,<span style="color:#a6e22e">studentRead</span>)
+       <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
+              <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">err</span>)
+       } <span style="color:#66d9ef">else</span> {
+              <span style="color:#66d9ef">for</span> <span style="color:#a6e22e">_</span>,<span style="color:#a6e22e">v</span> <span style="color:#f92672">:=</span> <span style="color:#66d9ef">range</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">studentRead</span>{
+                     <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">v</span>.<span style="color:#a6e22e">Name</span>, <span style="color:#e6db74">&#34;\t&#34;</span>, <span style="color:#a6e22e">v</span>.<span style="color:#a6e22e">Age</span>)
+              }
+       }
+}
+</code></pre></div><p>In this article, I have explored NewEncoder and NewDecoder functions. In
+next article, I will explore other functions like Register, Encode,
+EncodeValue, Decode and DecodeValue.</p>
+<h2 id="reference">Reference</h2>
+<ol>
+<li><a href="https://blog.golang.org/gobs-of-data">https://blog.golang.org/gobs-of-data</a></li>
+<li><a href="https://golang.org/pkg/encoding/gob/">https://golang.org/pkg/encoding/gob/</a></li>
+<li><a href="http://www.robotamer.com/code/go/gotamer/gob.html">http://www.robotamer.com/code/go/gotamer/gob.html</a></li>
+<li><a href="https://github.com/alecthomas/go_serialization_benchmarks">https://github.com/alecthomas/go_serialization_benchmarks</a></li>
+<li><a href="https://appliedgo.net/networking">https://appliedgo.net/networking</a></li>
+</ol>
+
+      </div>
+      
+      
+      <div class="pt-4 mt-2 border-top">
+        <div class="row">
+          <div class="col-md-7 small text-muted post-meta my-1">
+            
+            
+              
+            
+              
+            
+              
+            
+              
+            </div>
+          
+          
+          
+        </div>
+      
+        
+          <div class="mt-3">
+            <span class="">Tags:</span>&nbsp;&nbsp;&nbsp;<a href="/tags/go"><span class="badge badge-pill bg-clr2 text-nav mr-2 py-2">GO</span></a><a href="/tags/go-lang"><span class="badge badge-pill bg-clr2 text-nav mr-2 py-2">GO LANG</span></a><a href="/tags/serialize"><span class="badge badge-pill bg-clr2 text-nav mr-2 py-2">SERIALIZE</span></a></div>
+        
+      
+      </div>
+      
+    </div>
+  </div>
+  
+  
+  
+</div>
+
+    </div><footer class="text-center p-2 text-muted footer">
+  
+    
+    <div class="py-2 lead">
+      
+        
+          <a class="ml-2" href="https://github.com/kpbird"><span class="fab fa-github" aria-label="Join us on Github"></span></a>
+        
+      
+        
+          <a class="ml-2" href="https://www.linkedin.com/in/kpbird/"><span class="fab fa-linkedin" aria-label="Join us on Linkedin"></span></a>
+        
+      
+        
+          <a class="ml-2" href="https://medium.com/@kpbird"><span class="fab fa-medium" aria-label="Join us on Medium"></span></a>
+        
+      
+        
+          <a class="ml-2" href="https://twitter.com/kpbird"><span class="fab fa-twitter" aria-label="Join us on Twitter"></span></a>
+        
+      
+    </div>
+    
+  
+
+  <div class="py-2 lead">
+      Make it work, make it right, make it fast. – Kent Beck
+    </div>
+
+  <div class="py-2 copyright">
+    <small>Copyright &#169; 2020 Ketan Parmar <b>&#183;</b> Content license: CC-BY-SA-3.0 <b>&#183;</b> Powered by <a class="font-weight-bold text-reset text-decoration-none" href="https://gohugo.io">Hugo</a> <b>&#183;</b> Theme <a class="font-weight-bold text-reset text-decoration-none" href="https://github.com/Softorage/HugoTheme-VibrantShadows">Vibrant Shadows</a> by <span class="softorage"><a class="font-weight-bold text-reset" href="https://softorage.com">Softorage</a></span></small>
+  </div>
+</footer>
+
+    
+    
+    
+    <script src="/assets/js/main.min.6ff0d57b7558f0225c80bade926a349330bc25d85e7ceff50d911f1156023c3e.js" integrity="sha256-b/DVe3VY8CJcgLrekmo0kzC8JdhefO/1DZEfEVYCPD4=" crossorigin="anonymous"></script>
+    <script src="/assets/js/custom.min.c8274a0cac0477f854e63f09626cc63858bb2bc9db8faecbb2834846952c7fd6.js" integrity="sha256-yCdKDKwEd/hU5j8JYmzGOFi7K8nbj67LsoNIRpUsf9Y=" crossorigin="anonymous"></script>
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Lato&display=swap" rel="stylesheet">
+    
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+  </body>
+</html>

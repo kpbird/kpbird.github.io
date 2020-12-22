@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GCM on Ketan Parmar (kpbird)</title>
+    <link>http://kpbird.github.io/tags/gcm/</link>
+    <description>Recent content in GCM on Ketan Parmar (kpbird)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright &amp;#169; 2020. All rights reserved.</copyright>
+    <lastBuildDate>Sat, 11 Feb 2017 00:00:00 +0000</lastBuildDate><atom:link href="http://kpbird.github.io/tags/gcm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Golang: Send GCM - Google Cloud Message to Android Device</title>
+      <link>http://kpbird.github.io/post/2017-02-11_golang-send-gcm-google-cloud-message-to-android-device-34053f933c64/</link>
+      <pubDate>Sat, 11 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://kpbird.github.io/post/2017-02-11_golang-send-gcm-google-cloud-message-to-android-device-34053f933c64/</guid>
+      <description>Assumption  Go lang is installed in your computer Android sample application with GCM support  Step1: Generate server API key for GCM, This article will help you to generate server API key: [https://support.clevertap.com/docs/android/how-to-find-your-gcm-sender-id-and-gcm-api-server-key.html]
+Step2: Install Go library for GCM
+$ go get github.com/google/go-gcm Step3: Write the following function in your main.go, replace server API key in the following function. You can provide multiple client tokens in &amp;ldquo;regIDs&amp;rdquo; in case, you would like to broadcast message to multiple devices.</description>
+    </item>
+    
+  </channel>
+</rss>

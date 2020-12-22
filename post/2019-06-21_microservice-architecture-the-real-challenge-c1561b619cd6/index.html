@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  
+    
+      
+
+
+
+
+
+
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>Microservice Architecture: The Real Challenge | Ketan Parmar (kpbird)</title>
+<meta name="title" content="Microservice Architecture: The Real Challenge | Ketan Parmar (kpbird)" />
+<meta name="description" content="Microservice is a buzzword among the developer community. In this article, we will explore the most important points about Microservice..."> 
+
+
+<link rel="canonical" href="http://kpbird.github.io/post/2019-06-21_microservice-architecture-the-real-challenge-c1561b619cd6/" />
+
+
+  
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:description" content="Microservice is a buzzword among the developer community. In this article, we will explore the most important points about Microservice..." /> 
+  <meta name="twitter:title" content="Microservice Architecture: The Real Challenge | Ketan Parmar (kpbird)" />
+  <meta name="twitter:url" content="http://kpbird.github.io/post/2019-06-21_microservice-architecture-the-real-challenge-c1561b619cd6/" />
+  <meta name="twitter:site" content="@Softorage" /> 
+  <meta name="twitter:creator" content="@Softorage" /> 
+  <meta name="twitter:image" content="" /> 
+
+
+
+  
+  <meta property="og:title" content="Microservice Architecture: The Real Challenge | Ketan Parmar (kpbird)" />
+  <meta property="og:description" content="Microservice is a buzzword among the developer community. In this article, we will explore the most important points about Microservice..." /> 
+  <meta property="og:site_name" content="Ketan Parmar (kpbird)" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="http://kpbird.github.io/post/2019-06-21_microservice-architecture-the-real-challenge-c1561b619cd6/" />
+  
+  <meta property="og:image" content="" /> 
+
+
+
+<meta property="article:published_time" content="2019-06-21 00:00:00 &#43;0000 UTC" />
+
+
+  
+  
+  <script type="application/ld+json">
+      { 
+          "@context": "http://schema.org", 
+          "@type": "BlogPosting",
+          "headline": "Microservice Architecture: The Real Challenge",
+          
+          "url": "http://kpbird.github.io/",
+          
+          "datePublished": "2019-06-21T00:00:00Z",
+          
+          
+          "dateModified": "2019-06-21T00:00:00Z",
+          
+          "description": Microservice is a buzzword among the developer community. In this article, we will explore the most important points about Microservice...,
+          
+          "logo": "/assets/favicon/android-chrome-512x512.png",
+          
+          
+          "author": {
+              "@type": "Person",
+              "name": "Ketan Parmar"
+          },
+          
+          "publisher": {
+            "@type": "Organization",
+            "name": "Ketan Parmar",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "/assets/favicon/android-chrome-512x512.png"
+            }
+          },
+          
+          "sameAs" : [
+            
+            
+              "https://github.com/kpbird",  
+            
+              "https://www.linkedin.com/in/kpbird/",  
+            
+              "https://medium.com/@kpbird",  
+            
+              "https://twitter.com/kpbird"
+            ]
+          
+        }
+      </script>
+  
+
+
+    
+    <meta name="generator" content="Hugo 0.79.0" />
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/assets/css/main.min.4da6b94aea0df18f73bf13c5be667e4552f3f9c293fee82eab77d443bf7e04e5.css" integrity="sha256-Taa5SuoN8Y9zvxPFvmZ&#43;RVLz&#43;cKT/uguq3fUQ79&#43;BOU=" crossorigin="anonymous">
+  
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  
+  <link rel=apple-touch-icon sizes=180x180 href=http://kpbird.github.io//assets/favicon/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=http://kpbird.github.io//assets/favicon/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=http://kpbird.github.io//assets/favicon/favicon-16x16.png><link rel=manifest href=http://kpbird.github.io//assets/favicon/site.webmanifest><link rel=mask-icon href=http://kpbird.github.io//assets/favicon/safari-pinned-tab.svg color=#7817c4><link rel=icon href=http://kpbird.github.io//assets/favicon/favicon.ico type=image/x-icon><link rel="shortcut icon" href=http://kpbird.github.io//assets/favicon/favicon.ico type=image/x-icon><meta name=apple-mobile-web-app-title content="Vibrant Shadows Theme"><meta name=application-name content="Vibrant Shadows Theme"><meta name=msapplication-TileColor content="#ffffff"><meta name=theme-color content="#ffffff">
+  
+  
+  
+  <meta name="theme-color" content="#fff6f8">
+  
+  <meta name="msapplication-navbutton-color" content="#fff6f8">
+  
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  
+  
+</head>
+<body><header>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top flex-column">
+    <div class="container-fluid">
+      
+      <a class="navbar-brand rounded px-3" href="http://kpbird.github.io/"><span class="text-nav"><span class="brand"><img src="/assets/favicon/favicon-32x32.png" alt="Ketan Parmar logo" height="32"></img>&nbsp;&nbsp;&nbsp;Ketan Parmar</span></span></a>
+      
+      
+        <a class="navbar-toggler border-0 bg-nav p-2" role="button" href="#" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="text-clr2">&#9776;</span>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-md-auto">
+             
+            
+              
+                <li class="nav-item mx-1 my-2">
+                  <a class="btn bg-nav text-clr1" href="/about/">About</a>
+                </li>
+              
+            
+          </ul>
+          
+            
+          
+        </div>
+      
+    </div>
+    
+  </nav>
+</header>
+<div id="content">
+<div class="container-fluid bg-clr1 text-light text-center pb-3 pt-4 position-relative shadow">
+  <div style="height:3.5rem;"></div>
+  <h1>Microservice Architecture: The Real Challenge</h1>
+  <p class="description">Microservice is a buzzword among the developer community. In this article, we will explore the most important points about Microservice...</p>
+</div>
+<div class="container-fluid bg-nav p-4">
+  <div class="row">
+    <div class="col-md-3">
+      
+      <div class="bg-mat p-4 rounded" style="overflow-x: auto;">
+        <div class="h4 mb-3">
+        Contents
+        </div>
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#microservice-architecture-the-real-challenge">Microservice Architecture: The Real Challenge</a></li>
+    <li><a href="#1-communication-between-services">1. Communication between services</a></li>
+    <li><a href="#services-management">Services Management</a></li>
+    <li><a href="#observability">Observability</a></li>
+    <li><a href="#developers-life">Developer&rsquo;s Life</a></li>
+    <li><a href="#summary">Summary</a></li>
+  </ol>
+</nav>
+      </div>
+      
+    </div>
+    <div class="col-md-9">
+        
+      
+      <div class="py-1">
+        <div class="row">
+          <div class="col-md-7 small text-muted post-meta my-1"></span>
+            
+            
+              
+                
+              
+            
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            By Ketan Parmar &#183; 18 min read &#183; <span class=''>Last updated: June 21, 2019</div>
+          
+          
+          
+          <div class="col-md-auto ml-3 my-1">
+            <div class="row">
+              <div class="col-auto p-0">
+              Share on:&nbsp;&nbsp;
+              </div>
+              <div class="col p-0">
+                <span class="lead">
+                  
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fkpbird.github.io%2fpost%2f2019-06-21_microservice-architecture-the-real-challenge-c1561b619cd6%2f&quote=Microservice%20Architecture%3a%20The%20Real%20Challenge" rel="noreferrer nofollow" target="_blank" title="Share on Facebook" aria-label="Share on Facebook"><span class="fab fa-facebook"></span></a>&nbsp;&nbsp;
+                  
+                  
+                    <a href="https://twitter.com/intent/tweet?source=http%3a%2f%2fkpbird.github.io%2fpost%2f2019-06-21_microservice-architecture-the-real-challenge-c1561b619cd6%2f&text=Microservice%20Architecture%3a%20The%20Real%20Challenge:%0Ahttp%3a%2f%2fkpbird.github.io%2fpost%2f2019-06-21_microservice-architecture-the-real-challenge-c1561b619cd6%2f" rel="noreferrer nofollow" target="_blank" title="Share on Twitter" aria-label="Share on Twitter"><span class="fab fa-twitter"></span></a>&nbsp;&nbsp;
+                  
+                  
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2fkpbird.github.io%2fpost%2f2019-06-21_microservice-architecture-the-real-challenge-c1561b619cd6%2f&title=Microservice%20Architecture%3a%20The%20Real%20Challenge&summary=Microservice%20is%20a%20buzzword%20among%20the%20developer%20community.%20In%20this%20article%2c%20we%20will%20explore%20the%20most%20important%20points%20about%20Microservice...&source=Ketan%20Parmar%20%28kpbird%29" rel="noreferrer nofollow" target="_blank" title="Share on LinkedIn" aria-label="Share on LinkedIn"><span class="fab fa-linkedin"></span></a>&nbsp;&nbsp;
+                  
+                  
+                    <a href="https://t.me/share/url?url=http%3a%2f%2fkpbird.github.io%2fpost%2f2019-06-21_microservice-architecture-the-real-challenge-c1561b619cd6%2f&text=Microservice%20Architecture%3a%20The%20Real%20Challenge" rel="noreferrer nofollow" target="_blank" title="Share on Telegram" aria-label="Share on Telegram"><span class="fab fa-telegram"></span></a>&nbsp;&nbsp;
+                  
+                  
+                    <a href="whatsapp://send?text=http%3a%2f%2fkpbird.github.io%2fpost%2f2019-06-21_microservice-architecture-the-real-challenge-c1561b619cd6%2f%0A%0AMicroservice%20Architecture%3a%20The%20Real%20Challenge" data-text="Microservice Architecture: The Real Challenge" data-href="http://kpbird.github.io/post/2019-06-21_microservice-architecture-the-real-challenge-c1561b619cd6/" rel="noreferrer nofollow" target="_blank" title="Share on Whatsapp" aria-label="Share on Whatsapp"><span class="fab fa-whatsapp"></span></a>&nbsp;&nbsp;
+                  
+                  
+                    <a href="https://reddit.com/submit?url=http%3a%2f%2fkpbird.github.io%2fpost%2f2019-06-21_microservice-architecture-the-real-challenge-c1561b619cd6%2f&title=Microservice%20Architecture%3a%20The%20Real%20Challenge" rel="noreferrer nofollow" target="_blank" title="Share on Reddit" aria-label="Share on Reddit"><span class="fab fa-reddit"></span></a>&nbsp;&nbsp;
+                  
+                  
+                    <a href="mailto:?subject=Microservice%20Architecture%3a%20The%20Real%20Challenge&body=Microservice%20is%20a%20buzzword%20among%20the%20developer%20community.%20In%20this%20article%2c%20we%20will%20explore%20the%20most%20important%20points%20about%20Microservice...%0A%0Ahttp%3a%2f%2fkpbird.github.io%2fpost%2f2019-06-21_microservice-architecture-the-real-challenge-c1561b619cd6%2f" target="_blank" title="Share via email" aria-label="Share via email"><span class="fas fa-envelope"></span></a>
+                  
+                </span>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        
+        
+        
+      </div>
+      
+      
+      <div class="py-3 my-2">
+      <p><img src="https://cdn-images-1.medium.com/max/800/1*bdTbYdVXLNPjvc28yU5swQ.png" alt="Technology"></p>
+<h2 id="microservice-architecture-the-real-challenge">Microservice Architecture: The Real Challenge</h2>
+<p><em>Microservice</em> is a buzzword among the developer community. In this
+article, we will explore the most important points about Microservice
+architecture that are seldom addressed elsewhere. We will try to cover
+all the practical problems of moving to microservice architecture.</p>
+<p>Let&rsquo;s start with some advantages of microservice architecture. Following
+are three major advantage for which you may consider moving to
+microservice architecture.</p>
+<ol>
+<li>Engineering flexibility: Each service team can choose a different
+programming language or framework. (provided interoperability is
+taken care of between the languages and protocols).</li>
+<li>Independent development: Services can be developed, deployed and
+maintained independently (It&rsquo;s not 100% true, we will see why
+later)</li>
+<li>Technology flexibility: Easy to introduce new technology i.e.
+Blockchain, AI/ML etc.</li>
+</ol>
+<p>You will find many articles on the Internet discussing the advantages of
+microservices in detail but my intention is to highlight some practical
+problems.</p>
+<p>If you are doing microservice for the first time then It will be
+Pandora&rsquo;s box. You will find many surprises which you never read on any
+article advocating microservices.</p>
+<p>So, Let&rsquo;s jump to the practical world of microservice architecture. We
+will focus on the following areas of microservice architecture.</p>
+<ol>
+<li>Communication between services</li>
+<li>Service Management</li>
+<li>Observability</li>
+<li>Developer&rsquo;s Life</li>
+</ol>
+<h2 id="1-communication-between-services">1. Communication between services</h2>
+<p>The complexity of communication between services (aka routing) increases
+exponentially with the number of services. It&rsquo;s simple and manageable if
+the project has 10&ndash;12 services but it becomes more and more complex if
+the project has 20+ services. It&rsquo;s difficult to remember and understand
+which service communicate with whom. Imagine a star network with 100s of
+nodes.</p>
+<p>Following diagram shows a simple and complex example.</p>
+<ul>
+<li>
+<p><a href="https://microservices.io">https://microservices.io</a></p>
+</li>
+<li>
+<p><a href="https://softwareengineering.stackexchange.com/questions/339817/should-services-talk-directly-to-each-other-in-a-microservice-architecture">https://softwareengineering.stackexchange.com/questions/339817/should-services-talk-directly-to-each-other-in-a-microservice-architecture</a></p>
+</li>
+</ul>
+<p>Any consideration for choosing microservice architecture must answer the
+following questions first.</p>
+<ol>
+<li>How does service A makes a request to service B? The answer can be
+dependent upon a number of services you have in the product. It can
+be simple HTTP, RPC or Websocket which send a request and gets a
+response back. After deciding communication protocol next thing
+would be&hellip;</li>
+<li>Where are (healthy) instances running?</li>
+<li>How does service A find Healthy instances of a particular
+service?</li>
+<li>How to define &ldquo;health&rdquo; of a service?</li>
+</ol>
+<p>You need tools which helps you to solve the above issues. A tool that
+continuously monitors all instances of all services and keeps track of
+their health status. Basically, you need a service registry. [Consul] by
+HashiCorp is the most common service registry. Consul will help to
+maintain a list of instances, which instances are healthy and which are
+not.</p>
+<p>You can also look for [ZooKeeper by Apache] or you can use container
+orchestrator engines like Kuberneters. Container orchestrator will take
+care of all.</p>
+<p>If you don&rsquo;t want to depend upon 3rd party tools and like adventure then
+you can use DNS registry. If you decided to use DNS as a service
+registry then remember that DNS doesn&rsquo;t return port number by default.
+Of course, you can do SRV or DNS lookup which returns the port number,
+but it&rsquo;s not normal practice and DNS is not fast to respond to change
+and It also does not give health status.</p>
+<p>The really simple option is to create small EC2 instance per service and
+scale manually as per your need. It will work if you have a limited
+number of services but it will not give you agility and speed of service
+registry. Scaling will be slow because you need to create EC2 instance
+each time and creating instance takes time.</p>
+<p>If you are a Redis fan and you already have Redis in your current
+infrastructure, you can explore [Hydra]. Hydra is a node package which
+helps for routing, discovery, registry etc. which facilitates building
+distributed applications such as Microservices. Hydra does this by
+leveraging the power of Redis.</p>
+<p>We solved (sort of) the first problem of microservice, which is to
+identify healthy instances of service.</p>
+<p>let&rsquo;s move on to the second challenge, which is load balancing.</p>
+<ol>
+<li>You need to decide which instance of service you need to send a
+request to.</li>
+<li>What should be the timeout?</li>
+<li>What if the request fails?</li>
+<li>If a request fails then you need to decide retry policy.</li>
+<li>How many time do you need to retry?</li>
+</ol>
+<p>In Microservice, defensive coding is important. Defensive coding means
+taking extra care of error handling. Every service communicates with
+others via Network and many things can go wrong on the network. It is
+possible that service is slow in response or service might be
+overloaded, In this situation, you need to think how best you can handle
+the response.</p>
+<p>Rate limiting is a common technique that you need to use. A service
+receives traffic from a bunch of other services. What to do when a
+service gets overloaded with request? What you can do to prevent
+overloading in the first place? The rate limit is an option to preserve
+overloading service. Consul has a feature to configure the rate limit.</p>
+<p>Now, There are main two popular ways to handle this complex business
+logic regarding service to service communication, i.e. rate limit, load
+balancing, service discovery, health check etc.</p>
+<ol>
+<li>Client-Side management</li>
+<li>Service Mesh</li>
+</ol>
+<p><strong>Client-Side management</strong> is simple. For example, When service A wants
+to call Service B, Service A acts as a client of Service B and Service B
+acts as a server. Service A has all client-side logic to handle
+everything Service B is offering it. Service A can have all logic
+related to timeouts, retries, which instance to call, etc. This approach
+offers the following benefits and challenges.</p>
+<ol>
+<li>Easy to understand, potentially easier to debug.</li>
+<li>Managing client libraries can be difficult especially when services
+are developed in different programming languages.</li>
+<li>It&rsquo;s a tight coupling between services. Eg. Any change in Service
+A&rsquo;s API/RPC needs to be implemented in all services which have a
+client of Service A. This will be a lot of effort if you have 100s
+of services because client-side logic is built into all service. You
+need to update all instances which have Service A&rsquo;s client even
+though Server itself doesn&rsquo;t have undergone any changes. Compare
+this with a monolithic architecture. You deploy an update once, and
+that&rsquo;s it.</li>
+</ol>
+<p><strong>In a Service Mesh approach</strong>, the logic related to client-side is
+extracted in to a proxy program called &ldquo;Sidecar&rdquo; or &ldquo;Mesh&rdquo;. Service Mesh
+runs alongside every service. In this approach, Mesh instance
+communicate with each other, services are not directly communicating
+with each other. Mesh is communicating to Service registry and Mesh
+knows how to call other service and where to find it. It also knows
+which instances are healthy. It automatically collects logs, matrics and
+sends it to proper places. Service Mesh approach has become popular
+recently. I suggest don&rsquo;t jump start Service Mesh if you are
+implementing microservice for the first time because It will be the most
+important piece in your infrastructure. If anything goes wrong with
+Service Mesh, your entire system will be down. Before implementing
+Service Mesh, make sure you assign a dedicated team who understand
+Service Mesh framework inside out. The service mesh is a new approach
+so, there are not many mature production ready frameworks available.
+[Istio] is getting popular and [Linkerd] is another popular framework.</p>
+<p>Service Mesh has the following benefit and challenge.</p>
+<ol>
+<li>No libraries to maintain, automatic observability and security,
+easier to manage a large number of services.</li>
+<li>It&rsquo;s another critical piece of infrastructure to manage.</li>
+</ol>
+<p>Finally, What is the solution of Routing in microservice?</p>
+<p>It depends upon the type of project size and complexity but If it&rsquo;s your
+first microservice project. I suggest starting with Consul by
+HarshiCorp.</p>
+<h2 id="services-management">Services Management</h2>
+<p>Management of services is challenging if you do not have the right tools
+and knowledge. I suggest you should start with Docker, run Docker in
+production, debug Docker in production, fix docker issues in production.
+Once you are comfortable with Docker in production then implement
+service registry i.e. Consul. Make yourself comfortable with a service
+registry in production. Don&rsquo;t jump start to container orchestration
+engine. Start slow, start with a small team. Don&rsquo;t introduce container
+orchestration engine until you feel that you have too many services and
+too many servers which you are not able to manage manually.</p>
+<p>The popular container orchestration frameworks</p>
+<ol>
+<li>Kubernetes</li>
+<li>Docker Swarm</li>
+<li>Nomad</li>
+<li>Mesos + Marathon</li>
+<li>Cloud Providers Features &mdash; Amazon ECS/ Fargate</li>
+</ol>
+<p>Kubernetes is the most popular amongst the open source community. I also
+recommend going for it unless you are working on .Net and deploy the
+project on Azure. [Microsoft Azure Fabric] Service Mesh is readymade
+service provided by Azure. Kuberneters make your life simple. Kubernetes
+is developed by Google&rsquo;s Engineers. Kubernetes is an open source project
+and part of CNFC. In Kubernetes, everything is managed using Pods. Pods
+are essentially like mini VM where you can run one or more containers
+(Docker). You can run service mesh as a sidecar on the same pod with
+Istio. Kubernetes has many features out of the box. There are many tools
+like Helm, Minikube, Kopts etc. which will make development and
+deployment much easier.</p>
+<h2 id="observability">Observability</h2>
+<p>Once you are using Kubernetes for microservice architecture, your next
+challenges will be: How to see things? What&rsquo;s going inside the cluster?
+Where to get accurate logs? How to scale services independently? How to
+manage ingress? How to configure a load balancer for services? How to
+protect sensitive information? And many more&hellip;</p>
+<p>In a Monolithic system, you can have SSH into the instance and check
+what&rsquo;s going on in the system but in the word of Kubernetes and
+microservices, software or program runs behind many layers
+(virtualization, docker engine, etc). Many dockers run on a single VM.
+In this case, developers may ask Why my service is slow? Why others'
+services are fast? Why my service is slow sometimes but not always? Why
+my request for other service gets time-out sometimes? Any many more&hellip;
+to answer all the questions you start collecting metrics and logs.
+Metrics might not help as you expected even with 20 to 30 services
+because it will generate a lot of data so you will be confused with
+where to look and what to look in matrices. Now the question is which
+matrix do you care about? Maybe start with memory and CPU? You may be
+looking for container&rsquo;s CPU and Memory and Host VM&rsquo;s CPU and Memory,
+Disk Usage and Network usage. Even if you have 20&ndash;30 services with 2&ndash;3
+instances of each makes 100 containers to watch. It will generate huge
+data. It&rsquo;s just too much information that you can&rsquo;t make sense of. So,
+Make sure to collect matrices and logs which will help you to answer
+questions when something critical happens. Here are a few tools which
+will help you increase observability</p>
+<p><strong>Logs</strong>: ELK, Spunk, Sumo Logic, Cloud provider&rsquo;s log collectors.</p>
+<p><strong>Metrics</strong>: Prometheus, InfluxDB, Datadog, Wavefront, New Relic.</p>
+<p><strong>Tracing</strong>: Zipking, Opentracing, Jaeger, Stackdrive.</p>
+<p>Distributed tracing is the most essential part of observability. It will
+act as Systrace of your services. In which you can identify data flows
+between service with time. You can identify the various issue. You can
+identify which service is faster and which one is slower. Think about
+which logs and matrices you care about and log only those.</p>
+<h2 id="developers-life">Developer&rsquo;s Life</h2>
+<p>You want your developer to be happy. You need to understand how they
+work in monolithic architecture and what will change when you move to
+microservice. Everyone always wants development, test and production
+environment to be as identical as possible. A developer wants to run a
+service on his/her laptop. In a microservice architecture, Developer A&rsquo;s
+service depends upon Service B which is being developed by a different
+team. It may happen that the developer&rsquo;s service is dependent on 5&ndash;6
+different services. It would be challenging to fulfil all dependency on
+a laptop. If you are running Docker in production, developers may run
+Docker in the laptop to test but if you are running Kubernetes in
+production then does that mean developers will need to run Kubernetes in
+a laptop? The answer depends on your setup. It will work if you have a
+limited number of services but assume that you have more then 30
+services. It&rsquo;s nearly impossible to install everything on a developer&rsquo;s
+laptop. Now, you need to think about how you can provide all the
+dependencies locally. The bad news is that there isn&rsquo;t any proper
+solution available yet. Nobody has solved this problem perfectly. There
+are a few approaches that you can take and the most popular is a shared
+cloud environment. You can have a development environment where all
+services are deployed and you can run your service against it from your
+laptop. It will work with some shortcomings. As many teams are
+developing different services and deploy on the same shared environment.
+It may happen that some other teams deploy the latest version of their
+service and you are not aware of changes deployed by another team, your
+service may stop because of that. Another approach is Mock services.
+It&rsquo;s not full service, it will not have a real data set. You may lose
+corner cases and developing and testing Mock services will take
+additional time. The last approach can be to map dependencies to load
+them automatically. You need some program which identifies dependencies
+of your service and procure it for you before you execute your service.
+This is very hard to do. There isn&rsquo;t any ready to use tool available now
+for dependency management. I think a shared cloud environment is easy
+and useful approach as of now.</p>
+<p>Next challenge would be tools and integration. You need development
+tools which are integrated with IDE for debugging and also integration
+with orchestration framework. You also need to build CI / CD pipeline
+which supports containers.</p>
+<h2 id="summary">Summary</h2>
+<p>Don&rsquo;t worry about new tools and technologies yet. Use the tools you
+know. There are many new technologies like Docker, Istio, Kuberneters,
+Serverless, GraphQL, TICK Stack, MEAN Stack, Event Sourcing, CQRS
+pattern, Micro Frontends etc. but the most important things that
+companies really care about are success and performance. Remember that
+you are trying to solve a business problem. Business only cares about
+solving a business problem. They do not care about which tools &amp;
+technologies you employ. If you think that you can solve a business
+problem with old stable technologies then go for it. It&rsquo;s not necessary
+to use cutting edge technologies just for the sake of novelty or hype.
+Make project success, get the users in the market then think about
+microservices and other latest technologies, that too only if it
+improves upon the existing solution significantly. Moving from
+monolithic to a microservice architecture isn&rsquo;t just a change in coding.
+It&rsquo;s a much bigger change in organisational structure, communication and
+coding culture.</p>
+<blockquote>
+<p>Use it when you <em>really</em> need it.</p>
+</blockquote>
+
+      </div>
+      
+      
+      <div class="pt-4 mt-2 border-top">
+        <div class="row">
+          <div class="col-md-7 small text-muted post-meta my-1">
+            
+            
+              
+            
+              
+            
+              
+            
+              
+            </div>
+          
+          
+          
+        </div>
+      
+        
+          <div class="mt-3">
+            <span class="">Tags:</span>&nbsp;&nbsp;&nbsp;<a href="/tags/microservice"><span class="badge badge-pill bg-clr2 text-nav mr-2 py-2">MICRO SERVICE</span></a><a href="/tags/architecture"><span class="badge badge-pill bg-clr2 text-nav mr-2 py-2">ARCHITECTURE</span></a></div>
+        
+      
+      </div>
+      
+    </div>
+  </div>
+  
+  
+  
+</div>
+
+    </div><footer class="text-center p-2 text-muted footer">
+  
+    
+    <div class="py-2 lead">
+      
+        
+          <a class="ml-2" href="https://github.com/kpbird"><span class="fab fa-github" aria-label="Join us on Github"></span></a>
+        
+      
+        
+          <a class="ml-2" href="https://www.linkedin.com/in/kpbird/"><span class="fab fa-linkedin" aria-label="Join us on Linkedin"></span></a>
+        
+      
+        
+          <a class="ml-2" href="https://medium.com/@kpbird"><span class="fab fa-medium" aria-label="Join us on Medium"></span></a>
+        
+      
+        
+          <a class="ml-2" href="https://twitter.com/kpbird"><span class="fab fa-twitter" aria-label="Join us on Twitter"></span></a>
+        
+      
+    </div>
+    
+  
+
+  <div class="py-2 lead">
+      Make it work, make it right, make it fast. – Kent Beck
+    </div>
+
+  <div class="py-2 copyright">
+    <small>Copyright &#169; 2020 Ketan Parmar <b>&#183;</b> Content license: CC-BY-SA-3.0 <b>&#183;</b> Powered by <a class="font-weight-bold text-reset text-decoration-none" href="https://gohugo.io">Hugo</a> <b>&#183;</b> Theme <a class="font-weight-bold text-reset text-decoration-none" href="https://github.com/Softorage/HugoTheme-VibrantShadows">Vibrant Shadows</a> by <span class="softorage"><a class="font-weight-bold text-reset" href="https://softorage.com">Softorage</a></span></small>
+  </div>
+</footer>
+
+    
+    
+    
+    <script src="/assets/js/main.min.6ff0d57b7558f0225c80bade926a349330bc25d85e7ceff50d911f1156023c3e.js" integrity="sha256-b/DVe3VY8CJcgLrekmo0kzC8JdhefO/1DZEfEVYCPD4=" crossorigin="anonymous"></script>
+    <script src="/assets/js/custom.min.c8274a0cac0477f854e63f09626cc63858bb2bc9db8faecbb2834846952c7fd6.js" integrity="sha256-yCdKDKwEd/hU5j8JYmzGOFi7K8nbj67LsoNIRpUsf9Y=" crossorigin="anonymous"></script>
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Lato&display=swap" rel="stylesheet">
+    
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+  </body>
+</html>

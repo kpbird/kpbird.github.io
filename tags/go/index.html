@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  
+    
+      
+
+
+
+
+
+
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>Go | Ketan Parmar (kpbird)</title>
+<meta name="title" content="Go | Ketan Parmar (kpbird)" />
+<meta name="description" content="Truth can only be found in one place: the code. ― Robert C. Martin"> 
+
+
+<link rel="canonical" href="http://kpbird.github.io/tags/go/" />
+
+
+  
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:description" content="" /> 
+  <meta name="twitter:title" content="Go | Ketan Parmar (kpbird)" />
+  <meta name="twitter:url" content="http://kpbird.github.io/tags/go/" />
+  <meta name="twitter:site" content="@Softorage" /> 
+  <meta name="twitter:creator" content="@Softorage" /> 
+  <meta name="twitter:image" content="" /> 
+
+
+
+  
+  <meta property="og:title" content="Go | Ketan Parmar (kpbird)" />
+  <meta property="og:description" content="" /> 
+  <meta property="og:site_name" content="Ketan Parmar (kpbird)" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://kpbird.github.io/tags/go/" />
+  
+  <meta property="og:image" content="" /> 
+
+
+
+<meta property="article:published_time" content="2018-03-24 00:00:00 &#43;0000 UTC" />
+
+
+  
+  
+  
+
+
+    
+    <meta name="generator" content="Hugo 0.79.0" />
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/assets/css/main.min.4da6b94aea0df18f73bf13c5be667e4552f3f9c293fee82eab77d443bf7e04e5.css" integrity="sha256-Taa5SuoN8Y9zvxPFvmZ&#43;RVLz&#43;cKT/uguq3fUQ79&#43;BOU=" crossorigin="anonymous">
+  
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  
+  <link rel="alternate" type="application/rss+xml" href="http://kpbird.github.io/tags/go/index.xml" title="Ketan Parmar (kpbird)" /><link rel=apple-touch-icon sizes=180x180 href=http://kpbird.github.io//assets/favicon/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=http://kpbird.github.io//assets/favicon/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=http://kpbird.github.io//assets/favicon/favicon-16x16.png><link rel=manifest href=http://kpbird.github.io//assets/favicon/site.webmanifest><link rel=mask-icon href=http://kpbird.github.io//assets/favicon/safari-pinned-tab.svg color=#7817c4><link rel=icon href=http://kpbird.github.io//assets/favicon/favicon.ico type=image/x-icon><link rel="shortcut icon" href=http://kpbird.github.io//assets/favicon/favicon.ico type=image/x-icon><meta name=apple-mobile-web-app-title content="Vibrant Shadows Theme"><meta name=application-name content="Vibrant Shadows Theme"><meta name=msapplication-TileColor content="#ffffff"><meta name=theme-color content="#ffffff">
+  
+  
+  
+  <meta name="theme-color" content="#fff6f8">
+  
+  <meta name="msapplication-navbutton-color" content="#fff6f8">
+  
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  
+  
+</head>
+<body><header>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top flex-column">
+    <div class="container-fluid">
+      
+      <a class="navbar-brand rounded px-3" href="http://kpbird.github.io/"><span class="text-nav"><span class="brand"><img src="/assets/favicon/favicon-32x32.png" alt="Ketan Parmar logo" height="32"></img>&nbsp;&nbsp;&nbsp;Ketan Parmar</span></span></a>
+      
+      
+        <a class="navbar-toggler border-0 bg-nav p-2" role="button" href="#" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="text-clr2">&#9776;</span>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-md-auto">
+             
+            
+              
+                <li class="nav-item mx-1 my-2">
+                  <a class="btn bg-nav text-clr1" href="/about/">About</a>
+                </li>
+              
+            
+          </ul>
+          
+            
+          
+        </div>
+      
+    </div>
+    
+  </nav>
+</header>
+<div id="content"><div class="container-fluid bg-clr1 text-nav text-center pb-3 pt-4 position-relative shadow-sm">
+  <div style="height:3.5rem;"></div>
+  <h1>Go</h1>
+  
+</div>
+<div class="container-fluid bg-mat py-3">
+  
+  
+    <div class="card mb-3">
+      <div class="card-body">
+        <h2>
+          <a class="card-title text-reset" href="http://kpbird.github.io/post/2018-03-24_golang-find-the-type-of-the-variable-12f1b7ce869a/"> Golang: Find the type of the variable</a>
+        </h2>
+        <div class="card-text">
+          <div class="font-weight-bold small post-meta"> 123 Words </div>
+          <p>Golang: Find the type of the variable The Go reflection package has methods for inspecting the type of variables. The following snippet will print out the reflection type of a string, integer and float. Document https://golang.org/pkg/reflect/#Type
+package main import ( &#34;fmt&#34; &#34;reflect&#34; ) func main() { b := true s := &#34;&#34; n := 1 f := 1.0 a := []string{&#34;foo&#34;, &#34;bar&#34;, &#34;baz&#34;} fmt.Println(reflect.TypeOf(b)) fmt.Println(reflect.TypeOf(s)) fmt.Println(reflect.TypeOf(n)) fmt.Println(reflect.TypeOf(f)) fmt.Println(reflect.TypeOf(a)) } How to print variable type The Printf is capable of print exactly variable type using %T formatting</p>
+          <a class="font-weight-bold text-reset text-decoration-none" href="http://kpbird.github.io/post/2018-03-24_golang-find-the-type-of-the-variable-12f1b7ce869a/"><nobr>Read more →</nobr></a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card mb-3">
+      <div class="card-body">
+        <h2>
+          <a class="card-title text-reset" href="http://kpbird.github.io/post/2018-02-11_golang-generate-fixed-size-random-string-dd6dbd5e63c0/"> Golang: Generate fixed size random string</a>
+        </h2>
+        <div class="card-text">
+          <div class="font-weight-bold small post-meta"> 910 Words </div>
+          <p>Golang: Generate fixed size random string There are many ways you can generate random string, In this article I will explore fastest method to generate fixed size random string
+Generate Random String using rand.Intn() This is most simplest way to generate random string but not slowest (ASCII table http://www.asciitable.com/)
+//RandomString - Generate a random string of A-Z chars with len = l  func RandomString(len int) string { bytes := make([]byte, len) for i := 0; i &lt; len; i++ { bytes[i] = byte(65 + rand.</p>
+          <a class="font-weight-bold text-reset text-decoration-none" href="http://kpbird.github.io/post/2018-02-11_golang-generate-fixed-size-random-string-dd6dbd5e63c0/"><nobr>Read more →</nobr></a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card mb-3">
+      <div class="card-body">
+        <h2>
+          <a class="card-title text-reset" href="http://kpbird.github.io/post/2018-02-11_golang-parse-and-format-unix-timestamp-6f467389cfe1/"> Golang: parse and format unix timestamp</a>
+        </h2>
+        <div class="card-text">
+          <div class="font-weight-bold small post-meta"> 153 Words </div>
+          <p>1. If you have unix timestamp in String The time.Parse function does not do Unix timestamps. Instead you can use strconv.ParseIntto parse the string to int64 and create the timestamp with time.Unix:
+package main import ( &#34;fmt&#34; &#34;time&#34; &#34;strconv&#34; ) func main() { i, err := strconv.ParseInt(&#34;1518328047&#34;, 10, 64) if err != nil { panic(err) } tm := time.Unix(i, 0) fmt.Println(tm) } 2. If you have unix timestamp in int The time.</p>
+          <a class="font-weight-bold text-reset text-decoration-none" href="http://kpbird.github.io/post/2018-02-11_golang-parse-and-format-unix-timestamp-6f467389cfe1/"><nobr>Read more →</nobr></a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card mb-3">
+      <div class="card-body">
+        <h2>
+          <a class="card-title text-reset" href="http://kpbird.github.io/post/2017-07-29_golang-serialize-struct-using-gob-part-2-f6134dd4f22c/"> Golang: Serialize struct using gob: Part 2</a>
+        </h2>
+        <div class="card-text">
+          <div class="font-weight-bold small post-meta"> 484 Words </div>
+          <p>[Golang: Serialize struct using gob &mdash; Part 2 In this article we will explore following functions of gob
+func (dec \*Decoder) Decode(e interface{}) error func (enc \*Encoder) Encode(e interface{}) error Encode and Decode functions are helpful when you want to write network application.
+Example 1: Simple encoding and decoding student structure
+package main import ( &#34;fmt&#34; &#34;encoding/gob&#34; &#34;bytes&#34; ) type Student struct { Name string Age int32 } func main() { fmt.</p>
+          <a class="font-weight-bold text-reset text-decoration-none" href="http://kpbird.github.io/post/2017-07-29_golang-serialize-struct-using-gob-part-2-f6134dd4f22c/"><nobr>Read more →</nobr></a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card mb-3">
+      <div class="card-body">
+        <h2>
+          <a class="card-title text-reset" href="http://kpbird.github.io/post/2017-07-15_golang-serialize-struct-using-gob-part-1-e927a6547c00/"> Golang: Serialize struct using gob: Part 1</a>
+        </h2>
+        <div class="card-text">
+          <div class="font-weight-bold small post-meta"> 517 Words </div>
+          <p>Golang: Serialize struct using gob: Part 1 Serialize of the struct will help you to transfer data over network or it will help you to write data on disk. In a distributed system you generate data then serialize, compress and send. On other end you receive data then decompress, deserialize and process. The entire process must be fast and efficient. Go lang has it&rsquo;s own serialize format called gob. Using gob you can encode and decode structure.</p>
+          <a class="font-weight-bold text-reset text-decoration-none" href="http://kpbird.github.io/post/2017-07-15_golang-serialize-struct-using-gob-part-1-e927a6547c00/"><nobr>Read more →</nobr></a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card mb-3">
+      <div class="card-body">
+        <h2>
+          <a class="card-title text-reset" href="http://kpbird.github.io/post/2017-02-18_golang-gracefully-stop-application-23c2390bb212/"> Golang gracefully stop application</a>
+        </h2>
+        <div class="card-text">
+          <div class="font-weight-bold small post-meta"> 377 Words </div>
+          <p>Golang: Gracefully stop application To shutdown go application gracefully, you can use open source libraries or write your own code.
+Following are popular libraries to stop go application gracefully
+ https://github.com/tylerb/graceful https://github.com/braintree/manners  In this article, I will explain how to write your own code to stop go app gracefully
+Step 1: make channel which can listen for signals from OS. Refer [os.Signal] package for more detail. os.Signal package is used to access incoming signals from OS.</p>
+          <a class="font-weight-bold text-reset text-decoration-none" href="http://kpbird.github.io/post/2017-02-18_golang-gracefully-stop-application-23c2390bb212/"><nobr>Read more →</nobr></a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card mb-3">
+      <div class="card-body">
+        <h2>
+          <a class="card-title text-reset" href="http://kpbird.github.io/post/2017-02-11_golang-send-gcm-google-cloud-message-to-android-device-34053f933c64/"> Golang: Send GCM - Google Cloud Message to Android Device</a>
+        </h2>
+        <div class="card-text">
+          <div class="font-weight-bold small post-meta"> 221 Words </div>
+          <p>Assumption  Go lang is installed in your computer Android sample application with GCM support  Step1: Generate server API key for GCM, This article will help you to generate server API key: [https://support.clevertap.com/docs/android/how-to-find-your-gcm-sender-id-and-gcm-api-server-key.html]
+Step2: Install Go library for GCM
+$ go get github.com/google/go-gcm Step3: Write the following function in your main.go, replace server API key in the following function. You can provide multiple client tokens in &ldquo;regIDs&rdquo; in case, you would like to broadcast message to multiple devices.</p>
+          <a class="font-weight-bold text-reset text-decoration-none" href="http://kpbird.github.io/post/2017-02-11_golang-send-gcm-google-cloud-message-to-android-device-34053f933c64/"><nobr>Read more →</nobr></a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card mb-3">
+      <div class="card-body">
+        <h2>
+          <a class="card-title text-reset" href="http://kpbird.github.io/post/2017-02-11_golang-send-push-notification-to-ios-device-7ade7fd07746/"> Golang: Send Push Notification to iOS device</a>
+        </h2>
+        <div class="card-text">
+          <div class="font-weight-bold small post-meta"> 195 Words </div>
+          <p>Assumptions  Go language is installed in your computer iOS sample application with APNs support for testing  Step1: Generate certificate PEM file. This article will help you to generate PEM [https://www.raywenderlich.com/123862/push-notifications-tutorial]
+Step2: Install Go library for APNs
+go get github.com/anachronistic/apns Step3: Write the following function in your main.go. Place certificate PEM file in config folder. You can change push URL as per your requirement.
+func SendPushToClient(pushText string,pushToken string) { fmt.</p>
+          <a class="font-weight-bold text-reset text-decoration-none" href="http://kpbird.github.io/post/2017-02-11_golang-send-push-notification-to-ios-device-7ade7fd07746/"><nobr>Read more →</nobr></a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card mb-3">
+      <div class="card-body">
+        <h2>
+          <a class="card-title text-reset" href="http://kpbird.github.io/post/2015-09-23_go-language-for-java-developer-part-4-c6626c514b86/"> Go Language for Java Developers Part 4</a>
+        </h2>
+        <div class="card-text">
+          <div class="font-weight-bold small post-meta"> 80 Words </div>
+          <p>Following keywords are reserved and may not be used as identifiers.
+Java Keywords
+Go Lang Keywords
+There are few obvious keywords like break, case, if, for, etc but few keywords are new in Go Language.  func: To declare the function interface: To declare the interface (It&rsquo;s different than Java&rsquo;s interface) defer: something like finalise method in Java go: To create a thread chan: To do synchronised between threads var: To declare a variable range: It&rsquo;s like an iterator in Java  </p>
+          <a class="font-weight-bold text-reset text-decoration-none" href="http://kpbird.github.io/post/2015-09-23_go-language-for-java-developer-part-4-c6626c514b86/"><nobr>Read more →</nobr></a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card mb-3">
+      <div class="card-body">
+        <h2>
+          <a class="card-title text-reset" href="http://kpbird.github.io/post/2015-09-23_go-language-for-java-developer-part-5-67e3c9226108/"> Go Language for Java Developers Part 4</a>
+        </h2>
+        <div class="card-text">
+          <div class="font-weight-bold small post-meta"> 415 Words </div>
+          <p>Variable: A variable is a storage location for holding a value. The set of permissible values is determined by the variable&rsquo;s type.
+Java language has primitive type and objects, both have different syntax to declare a variable either Primitive type or Object type.
+Animal a = new Animal() Student s = new Student() Java is object oriented language so that we can have access modifier for variable declaration
+private int a public String b protected float c private Animal a In the Java we can declare a variable at many places like Local variable, Parameters, Class level, Instance variable.</p>
+          <a class="font-weight-bold text-reset text-decoration-none" href="http://kpbird.github.io/post/2015-09-23_go-language-for-java-developer-part-5-67e3c9226108/"><nobr>Read more →</nobr></a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card mb-3">
+      <div class="card-body">
+        <h2>
+          <a class="card-title text-reset" href="http://kpbird.github.io/post/2015-08-31_go-language-for-java-developer-part-1-8885e70a454d/"> Go Language for Java Developers Part 1</a>
+        </h2>
+        <div class="card-text">
+          <div class="font-weight-bold small post-meta"> 275 Words </div>
+          <p>Go language is normally known as golang. It&rsquo;s general purpose programming language developed at Google in 2007 by three Google employees namely Robert Griesemer, Rob Pike, and Ken Thompson. In November 2008 Google had announced Go Language to public and made it [open source].
+Go language compiler is available for the Linux, Mac OS X, FreeBSD, NetBSD, OpenBSD, Plan 9, and Microsoft Windows operating systems and the i386, amd64, ARM and IBM POWER processor architectures.</p>
+          <a class="font-weight-bold text-reset text-decoration-none" href="http://kpbird.github.io/post/2015-08-31_go-language-for-java-developer-part-1-8885e70a454d/"><nobr>Read more →</nobr></a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card mb-3">
+      <div class="card-body">
+        <h2>
+          <a class="card-title text-reset" href="http://kpbird.github.io/post/2015-08-31_go-language-for-java-developer-part-2-852ad2c1ce5f/"> Go Language for Java Developers Part 2</a>
+        </h2>
+        <div class="card-text">
+          <div class="font-weight-bold small post-meta"> 578 Words </div>
+          <p>Normally first program you write in any programming language is &ldquo;Hello World&rdquo;. Hello World is simple program which print &ldquo;Hello Word&rdquo; text on console / screen.
+Java: Hello World As Java Developer you can easily understand following code. No need to explain. correct ?
+package com.kpbird.gotutorial; public class Main { public static void main(String[] args) { System.out.println(&#34;Hello World&#34;); } } To compile &amp; execute above code, you need to write following two commands in the Terminal.</p>
+          <a class="font-weight-bold text-reset text-decoration-none" href="http://kpbird.github.io/post/2015-08-31_go-language-for-java-developer-part-2-852ad2c1ce5f/"><nobr>Read more →</nobr></a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card mb-3">
+      <div class="card-body">
+        <h2>
+          <a class="card-title text-reset" href="http://kpbird.github.io/post/2015-08-31_go-language-for-java-developer-part-3-2a698797b6b8/"> Go Language for Java Developers Part 3</a>
+        </h2>
+        <div class="card-text">
+          <div class="font-weight-bold small post-meta"> 265 Words </div>
+          <p>Java Language: Data Type In Java, We have premitive data types and objects. Java support 8 premitive data types for different purpose.
+Data Type Value byte 0 short 0 int 0 long 0L float 0.0f double 0.0d char &lsquo;\u0000&rsquo; boolean false
+Reference: https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html
+Go Language: Type Go language is statically typed programming language. It means that variable always has specific type that can&rsquo;t be changed. Go language data type can be divided in main three categories.</p>
+          <a class="font-weight-bold text-reset text-decoration-none" href="http://kpbird.github.io/post/2015-08-31_go-language-for-java-developer-part-3-2a698797b6b8/"><nobr>Read more →</nobr></a>
+        </div>
+      </div>
+    </div>
+  
+</div>
+    </div><footer class="text-center p-2 text-muted footer">
+  
+    
+    <div class="py-2 lead">
+      
+        
+          <a class="ml-2" href="https://github.com/kpbird"><span class="fab fa-github" aria-label="Join us on Github"></span></a>
+        
+      
+        
+          <a class="ml-2" href="https://www.linkedin.com/in/kpbird/"><span class="fab fa-linkedin" aria-label="Join us on Linkedin"></span></a>
+        
+      
+        
+          <a class="ml-2" href="https://medium.com/@kpbird"><span class="fab fa-medium" aria-label="Join us on Medium"></span></a>
+        
+      
+        
+          <a class="ml-2" href="https://twitter.com/kpbird"><span class="fab fa-twitter" aria-label="Join us on Twitter"></span></a>
+        
+      
+    </div>
+    
+  
+
+  <div class="py-2 lead">
+      Make it work, make it right, make it fast. – Kent Beck
+    </div>
+
+  <div class="py-2 copyright">
+    <small>Copyright &#169; 2020 Ketan Parmar <b>&#183;</b> Content license: CC-BY-SA-3.0 <b>&#183;</b> Powered by <a class="font-weight-bold text-reset text-decoration-none" href="https://gohugo.io">Hugo</a> <b>&#183;</b> Theme <a class="font-weight-bold text-reset text-decoration-none" href="https://github.com/Softorage/HugoTheme-VibrantShadows">Vibrant Shadows</a> by <span class="softorage"><a class="font-weight-bold text-reset" href="https://softorage.com">Softorage</a></span></small>
+  </div>
+</footer>
+
+    
+    
+    
+    <script src="/assets/js/main.min.6ff0d57b7558f0225c80bade926a349330bc25d85e7ceff50d911f1156023c3e.js" integrity="sha256-b/DVe3VY8CJcgLrekmo0kzC8JdhefO/1DZEfEVYCPD4=" crossorigin="anonymous"></script>
+    <script src="/assets/js/custom.min.c8274a0cac0477f854e63f09626cc63858bb2bc9db8faecbb2834846952c7fd6.js" integrity="sha256-yCdKDKwEd/hU5j8JYmzGOFi7K8nbj67LsoNIRpUsf9Y=" crossorigin="anonymous"></script>
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Lato&display=swap" rel="stylesheet">
+    
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+  </body>
+</html>

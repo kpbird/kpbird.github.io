@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>RFC on Ketan Parmar (kpbird)</title>
+    <link>http://kpbird.github.io/tags/rfc/</link>
+    <description>Recent content in RFC on Ketan Parmar (kpbird)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright &amp;#169; 2020. All rights reserved.</copyright>
+    <lastBuildDate>Fri, 07 Jun 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://kpbird.github.io/tags/rfc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RFC 8259 --- The JavaScript Object Notation (JSON) Data Interchange Format</title>
+      <link>http://kpbird.github.io/post/2019-06-07_rfc-8259-the-javascript-object-notation-json-data-interchange-format-607f70fd19a3/</link>
+      <pubDate>Fri, 07 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://kpbird.github.io/post/2019-06-07_rfc-8259-the-javascript-object-notation-json-data-interchange-format-607f70fd19a3/</guid>
+      <description>RFC 8259 &amp;mdash; The JavaScript Object Notation (JSON) Data Interchange Format ![source: https://www.json.org/]
+JSON has become defacto data exchange format for REST API. It is so common that developers consider JSON as a default protocol for communication until specified otherwise.
+In this article, I will try to cover the history of JSON along with RFC and IETF.
+&amp;ldquo;JSON (JavaScript Object Notation) is a lightweight data-interchange format. It is easy for humans to read and write.</description>
+    </item>
+    
+  </channel>
+</rss>

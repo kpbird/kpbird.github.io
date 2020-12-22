@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  
+    
+      
+
+
+
+
+
+
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>Migrate Web Site to AWS Cloud --- A Quick Guide | Ketan Parmar (kpbird)</title>
+<meta name="title" content="Migrate Web Site to AWS Cloud --- A Quick Guide | Ketan Parmar (kpbird)" />
+<meta name="description" content="This is a quick tip to migrate your existing website to AWS Cloud. I assume that you have basic knowledge of AWS Cloud and server side..."> 
+
+
+<link rel="canonical" href="http://kpbird.github.io/post/2014-07-05_migrating-web-site-to-aws-cloud-a-quick-guide-7576d2aae4e5/" />
+
+
+  
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:description" content="This is a quick tip to migrate your existing website to AWS Cloud. I assume that you have basic knowledge of AWS Cloud and server side..." /> 
+  <meta name="twitter:title" content="Migrate Web Site to AWS Cloud --- A Quick Guide | Ketan Parmar (kpbird)" />
+  <meta name="twitter:url" content="http://kpbird.github.io/post/2014-07-05_migrating-web-site-to-aws-cloud-a-quick-guide-7576d2aae4e5/" />
+  <meta name="twitter:site" content="@Softorage" /> 
+  <meta name="twitter:creator" content="@Softorage" /> 
+  <meta name="twitter:image" content="" /> 
+
+
+
+  
+  <meta property="og:title" content="Migrate Web Site to AWS Cloud --- A Quick Guide | Ketan Parmar (kpbird)" />
+  <meta property="og:description" content="This is a quick tip to migrate your existing website to AWS Cloud. I assume that you have basic knowledge of AWS Cloud and server side..." /> 
+  <meta property="og:site_name" content="Ketan Parmar (kpbird)" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="http://kpbird.github.io/post/2014-07-05_migrating-web-site-to-aws-cloud-a-quick-guide-7576d2aae4e5/" />
+  
+  <meta property="og:image" content="" /> 
+
+
+
+<meta property="article:published_time" content="2014-07-05 00:00:00 &#43;0000 UTC" />
+
+
+  
+  
+  <script type="application/ld+json">
+      { 
+          "@context": "http://schema.org", 
+          "@type": "BlogPosting",
+          "headline": "Migrate Web Site to AWS Cloud --- A Quick Guide",
+          
+          "url": "http://kpbird.github.io/",
+          
+          "datePublished": "2014-07-05T00:00:00Z",
+          
+          
+          "dateModified": "2014-07-05T00:00:00Z",
+          
+          "description": This is a quick tip to migrate your existing website to AWS Cloud. I assume that you have basic knowledge of AWS Cloud and server side...,
+          
+          "logo": "/assets/favicon/android-chrome-512x512.png",
+          
+          
+          "author": {
+              "@type": "Person",
+              "name": "Ketan Parmar"
+          },
+          
+          "publisher": {
+            "@type": "Organization",
+            "name": "Ketan Parmar",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "/assets/favicon/android-chrome-512x512.png"
+            }
+          },
+          
+          "sameAs" : [
+            
+            
+              "https://github.com/kpbird",  
+            
+              "https://www.linkedin.com/in/kpbird/",  
+            
+              "https://medium.com/@kpbird",  
+            
+              "https://twitter.com/kpbird"
+            ]
+          
+        }
+      </script>
+  
+
+
+    
+    <meta name="generator" content="Hugo 0.79.0" />
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/assets/css/main.min.4da6b94aea0df18f73bf13c5be667e4552f3f9c293fee82eab77d443bf7e04e5.css" integrity="sha256-Taa5SuoN8Y9zvxPFvmZ&#43;RVLz&#43;cKT/uguq3fUQ79&#43;BOU=" crossorigin="anonymous">
+  
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  
+  <link rel=apple-touch-icon sizes=180x180 href=http://kpbird.github.io//assets/favicon/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=http://kpbird.github.io//assets/favicon/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=http://kpbird.github.io//assets/favicon/favicon-16x16.png><link rel=manifest href=http://kpbird.github.io//assets/favicon/site.webmanifest><link rel=mask-icon href=http://kpbird.github.io//assets/favicon/safari-pinned-tab.svg color=#7817c4><link rel=icon href=http://kpbird.github.io//assets/favicon/favicon.ico type=image/x-icon><link rel="shortcut icon" href=http://kpbird.github.io//assets/favicon/favicon.ico type=image/x-icon><meta name=apple-mobile-web-app-title content="Vibrant Shadows Theme"><meta name=application-name content="Vibrant Shadows Theme"><meta name=msapplication-TileColor content="#ffffff"><meta name=theme-color content="#ffffff">
+  
+  
+  
+  <meta name="theme-color" content="#fff6f8">
+  
+  <meta name="msapplication-navbutton-color" content="#fff6f8">
+  
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  
+  
+</head>
+<body><header>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top flex-column">
+    <div class="container-fluid">
+      
+      <a class="navbar-brand rounded px-3" href="http://kpbird.github.io/"><span class="text-nav"><span class="brand"><img src="/assets/favicon/favicon-32x32.png" alt="Ketan Parmar logo" height="32"></img>&nbsp;&nbsp;&nbsp;Ketan Parmar</span></span></a>
+      
+      
+        <a class="navbar-toggler border-0 bg-nav p-2" role="button" href="#" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="text-clr2">&#9776;</span>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-md-auto">
+             
+            
+              
+                <li class="nav-item mx-1 my-2">
+                  <a class="btn bg-nav text-clr1" href="/about/">About</a>
+                </li>
+              
+            
+          </ul>
+          
+            
+          
+        </div>
+      
+    </div>
+    
+  </nav>
+</header>
+<div id="content">
+<div class="container-fluid bg-clr1 text-light text-center pb-3 pt-4 position-relative shadow">
+  <div style="height:3.5rem;"></div>
+  <h1>Migrate Web Site to AWS Cloud --- A Quick Guide</h1>
+  <p class="description">This is a quick tip to migrate your existing website to AWS Cloud. I assume that you have basic knowledge of AWS Cloud and server side...</p>
+</div>
+<div class="container-fluid bg-nav p-4">
+  <div class="row">
+    <div class="col-md-3">
+      
+      <div class="bg-mat p-4 rounded" style="overflow-x: auto;">
+        <div class="h4 mb-3">
+        Contents
+        </div>
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#migrate-website-to-aws-cloud">Migrate Website to AWS Cloud</a></li>
+    <li><a href="#migration-phases">Migration Phases</a></li>
+    <li><a href="#reference">Reference</a></li>
+  </ol>
+</nav>
+      </div>
+      
+    </div>
+    <div class="col-md-9">
+        
+      
+      <div class="py-1">
+        <div class="row">
+          <div class="col-md-7 small text-muted post-meta my-1"></span>
+            
+            
+              
+                
+              
+            
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            By Ketan Parmar &#183; 5 min read &#183; <span class=''>Last updated: July 5, 2014</div>
+          
+          
+          
+          <div class="col-md-auto ml-3 my-1">
+            <div class="row">
+              <div class="col-auto p-0">
+              Share on:&nbsp;&nbsp;
+              </div>
+              <div class="col p-0">
+                <span class="lead">
+                  
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fkpbird.github.io%2fpost%2f2014-07-05_migrating-web-site-to-aws-cloud-a-quick-guide-7576d2aae4e5%2f&quote=Migrate%20Web%20Site%20to%20AWS%20Cloud%e2%80%8a---%e2%80%8aA%20Quick%c2%a0Guide" rel="noreferrer nofollow" target="_blank" title="Share on Facebook" aria-label="Share on Facebook"><span class="fab fa-facebook"></span></a>&nbsp;&nbsp;
+                  
+                  
+                    <a href="https://twitter.com/intent/tweet?source=http%3a%2f%2fkpbird.github.io%2fpost%2f2014-07-05_migrating-web-site-to-aws-cloud-a-quick-guide-7576d2aae4e5%2f&text=Migrate%20Web%20Site%20to%20AWS%20Cloud%e2%80%8a---%e2%80%8aA%20Quick%c2%a0Guide:%0Ahttp%3a%2f%2fkpbird.github.io%2fpost%2f2014-07-05_migrating-web-site-to-aws-cloud-a-quick-guide-7576d2aae4e5%2f" rel="noreferrer nofollow" target="_blank" title="Share on Twitter" aria-label="Share on Twitter"><span class="fab fa-twitter"></span></a>&nbsp;&nbsp;
+                  
+                  
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2fkpbird.github.io%2fpost%2f2014-07-05_migrating-web-site-to-aws-cloud-a-quick-guide-7576d2aae4e5%2f&title=Migrate%20Web%20Site%20to%20AWS%20Cloud%e2%80%8a---%e2%80%8aA%20Quick%c2%a0Guide&summary=This%20is%20a%20quick%20tip%20to%20migrate%20your%20existing%20website%20to%20AWS%20Cloud.%20I%20assume%20that%20you%20have%20basic%20knowledge%20of%20AWS%20Cloud%20and%20server%20side...&source=Ketan%20Parmar%20%28kpbird%29" rel="noreferrer nofollow" target="_blank" title="Share on LinkedIn" aria-label="Share on LinkedIn"><span class="fab fa-linkedin"></span></a>&nbsp;&nbsp;
+                  
+                  
+                    <a href="https://t.me/share/url?url=http%3a%2f%2fkpbird.github.io%2fpost%2f2014-07-05_migrating-web-site-to-aws-cloud-a-quick-guide-7576d2aae4e5%2f&text=Migrate%20Web%20Site%20to%20AWS%20Cloud%e2%80%8a---%e2%80%8aA%20Quick%c2%a0Guide" rel="noreferrer nofollow" target="_blank" title="Share on Telegram" aria-label="Share on Telegram"><span class="fab fa-telegram"></span></a>&nbsp;&nbsp;
+                  
+                  
+                    <a href="whatsapp://send?text=http%3a%2f%2fkpbird.github.io%2fpost%2f2014-07-05_migrating-web-site-to-aws-cloud-a-quick-guide-7576d2aae4e5%2f%0A%0AMigrate%20Web%20Site%20to%20AWS%20Cloud%e2%80%8a---%e2%80%8aA%20Quick%c2%a0Guide" data-text="Migrate Web Site to AWS Cloud --- A Quick Guide" data-href="http://kpbird.github.io/post/2014-07-05_migrating-web-site-to-aws-cloud-a-quick-guide-7576d2aae4e5/" rel="noreferrer nofollow" target="_blank" title="Share on Whatsapp" aria-label="Share on Whatsapp"><span class="fab fa-whatsapp"></span></a>&nbsp;&nbsp;
+                  
+                  
+                    <a href="https://reddit.com/submit?url=http%3a%2f%2fkpbird.github.io%2fpost%2f2014-07-05_migrating-web-site-to-aws-cloud-a-quick-guide-7576d2aae4e5%2f&title=Migrate%20Web%20Site%20to%20AWS%20Cloud%e2%80%8a---%e2%80%8aA%20Quick%c2%a0Guide" rel="noreferrer nofollow" target="_blank" title="Share on Reddit" aria-label="Share on Reddit"><span class="fab fa-reddit"></span></a>&nbsp;&nbsp;
+                  
+                  
+                    <a href="mailto:?subject=Migrate%20Web%20Site%20to%20AWS%20Cloud%e2%80%8a---%e2%80%8aA%20Quick%c2%a0Guide&body=This%20is%20a%20quick%20tip%20to%20migrate%20your%20existing%20website%20to%20AWS%20Cloud.%20I%20assume%20that%20you%20have%20basic%20knowledge%20of%20AWS%20Cloud%20and%20server%20side...%0A%0Ahttp%3a%2f%2fkpbird.github.io%2fpost%2f2014-07-05_migrating-web-site-to-aws-cloud-a-quick-guide-7576d2aae4e5%2f" target="_blank" title="Share via email" aria-label="Share via email"><span class="fas fa-envelope"></span></a>
+                  
+                </span>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        
+        
+        
+      </div>
+      
+      
+      <div class="py-3 my-2">
+      <p><img src="https://cdn-images-1.medium.com/max/800/0*3A4dnStPeONwt8k4.jpg" alt="![][()]"></p>
+<h2 id="migrate-website-to-aws-cloud">Migrate Website to AWS Cloud</h2>
+<p>This is a quick tip to migrate your existing website to AWS Cloud. I
+assume that you have basic knowledge of AWS Cloud and server side
+architecture. This post does not include a discussion of pros and cons
+of AWS or Cloud services. Elasticity and Auto-Scaling are two main
+features of Cloud. If we don&rsquo;t leverage these feature then there isn&rsquo;t
+any difference between hosting website in dedicate server or AWS Cloud.
+You can create EC2 instance and deploy your existing code. It will work
+perfect, but in this case you cannot apply auto-scale. There is no
+purpose of migrating web site to AWS Cloud without auto-scaling.</p>
+<p>AWS Cloud Service: Following list has description of essential AWS Cloud
+service.</p>
+<ol>
+<li>EC2 (Elastic Compute Cloud) &mdash; It supports operating systems that
+includes numerous Linux distributions, and Microsoft Windows Server.
+Amazon EC2 enables you to increase or decrease capacity within
+minutes, not hours or day.</li>
+<li>RDS (Relational Database Service) &mdash; Amazon RDS gives you access
+to the capabilities of a familiar MySql, Oracle, Microsoft SQL
+Server, or PostgreSql database engine.</li>
+<li>S3 (Simple Storage Service) &mdash; Amazon S3 provides a highly durable
+and available store for a variety of content, ranging from web
+applications to media files.</li>
+<li>CloudFront &mdash; CloudFront is content delivery network. It can be
+used to deliver your entire website, including dynamic, static,
+streaming, and interactive content using a global network of edge
+locations.</li>
+<li>ELB (Elastic Load Balancer) &mdash; Elastic Load Balancing
+automatically distributes incoming application traffic across
+multiple Amazon EC2 instances.</li>
+<li>Auto-Scaling &mdash; Auto Scaling allows you to scale your Amazon EC2
+capacity up or down automatically according to conditions you
+define. Mainly It&rsquo;s based on incoming traffic or CPU
+utilization.</li>
+<li>Route 53 (DNS Service) &mdash; Amazon Route 53 is a highly available
+and scalable Domain Name System (DNS)</li>
+</ol>
+<p>Architecture: Let&rsquo;s assume two different architecture, one deployed on
+dedicated server and another deployed in AWS Cloud. website developed in
+PHP/ASP/Java with MySql as backend.</p>
+<p>Dedicated Server Architecture : This architecture has mainly three
+components load balancer, application servers and database.</p>
+<p><img src="https://cdn-images-1.medium.com/max/800/0*LRjuwDEVA18buBXt.png" alt="![][]"></p>
+<p>AWS Cloud Architecture: This architecture has Route 53, ELB, EC2,
+CloudFront, S3, RDS and Auto-Scaling services used.</p>
+<p><img src="https://cdn-images-1.medium.com/max/800/0*sMte1S5xAKEpOd87.png" alt="![][]"></p>
+<h2 id="migration-phases">Migration Phases</h2>
+<ul>
+<li>Planning &mdash; It will include financial assessment (TOC/ROI),
+technical assessment, prototype creation or proof of concept, data
+migration planning and application migration planning.</li>
+<li>Execution &mdash; It will have execution of planning, modification of
+application source code and testing.</li>
+<li>Deployment &mdash; It will have deploy application and data migration,
+AWS Cloud has various tools like AWS Elastic Beanstalk, AWS
+CloudFormation, AWS OpsWorks, etc.. for deployment and
+management.</li>
+<li>Monitor &mdash; AWSCloud has AWS CloudTrail and Amazon CloudWatch
+services for monitor AWS resources.</li>
+</ul>
+<p>Tips for the developers: Migrating to AWS Cloud require code and
+structure changes.</p>
+<ul>
+<li>Migrate MySQL database to RDS, MySql database can directly migrate
+(export &mdash; import) to RDS-MySql engine.</li>
+<li>As you are migrating to AWS Cloud, you have more storage options
+like SimpleDB and DynemoDB. You can take advantage of these storage
+services to off load data from MySql . It&rsquo;s call hybrid approach
+-SQL and NOSQL</li>
+<li>In dedicated architecture all files, (for eg:- images, videos,
+etc&hellip;)are stored in web space /some folder in server. In case of
+AWS Cloud all files (images, videos, etc &hellip;) should be stored on
+S3.</li>
+<li>In dedicated architecture, all web assets (CSS, JS, Icons, and
+Images) are stored in virtual directory of web server and web server
+or application will serve these assets, which is unnecessary on
+servers. In AWS Cloud, all web assets (CSS, JS, Icons, and Images)
+should be stored in S3 and link with CloudFront.</li>
+<li>In dedicated architecture, your cron jobs will run on same web
+server. In case of AWS Cloud, you may require dedicated EC2 instance
+for cron jobs or you can create schedule EC2 instance.</li>
+<li>In dedicate architecture, you may have only application which
+serves all request. For AWS you can use two separate servers, Web
+Server (i.e. Apache HTTP Server, Nginx Server, etc&hellip;) and
+Application Server (Tomcat, IIS, etc&hellip;)</li>
+<li>Few application services are available in AWS Cloud that you can
+use depending upon the requirement.</li>
+</ul>
+<ol>
+<li>Amazon SQS: Amazon Simple Queue Service (SQS) is a fast,
+reliable, scalable, fully managed message queuing service.</li>
+<li>Amazon SNS: Amazon Simple Notification Service is a fast,
+flexible, fully managed push messaging service. It also supports
+push notifications to Apple, Google, Fire OS, and Windows
+devices.</li>
+<li>Amazon SES: Amazon Simple Email Service is a cost-effective
+outbound-only email-sending service.</li>
+</ol>
+<h2 id="reference">Reference</h2>
+<ul>
+<li><a href="http://aws.amazon.com/whitepapers/migrating-your-existing-applications-to-the-aws-cloud-with-3-example-scenarios">White Paper</a></li>
+<li><a href="http://highscalability.com/blog/2010/12/21/sql-nosql-yes.html">SQL or NoSQL</a></li>
+<li><a href="http://aws.amazon.com/products/">AWS Products</a></li>
+</ul>
+
+      </div>
+      
+      
+      <div class="pt-4 mt-2 border-top">
+        <div class="row">
+          <div class="col-md-7 small text-muted post-meta my-1">
+            
+            
+              
+            
+              
+            
+              
+            
+              
+            </div>
+          
+          
+          
+        </div>
+      
+        
+          <div class="mt-3">
+            <span class="">Tags:</span>&nbsp;&nbsp;&nbsp;<a href="/tags/aws"><span class="badge badge-pill bg-clr2 text-nav mr-2 py-2">A W S</span></a><a href="/tags/cloud"><span class="badge badge-pill bg-clr2 text-nav mr-2 py-2">CLOUD</span></a><a href="/tags/guide"><span class="badge badge-pill bg-clr2 text-nav mr-2 py-2">GUIDE</span></a></div>
+        
+      
+      </div>
+      
+    </div>
+  </div>
+  
+  
+  
+</div>
+
+    </div><footer class="text-center p-2 text-muted footer">
+  
+    
+    <div class="py-2 lead">
+      
+        
+          <a class="ml-2" href="https://github.com/kpbird"><span class="fab fa-github" aria-label="Join us on Github"></span></a>
+        
+      
+        
+          <a class="ml-2" href="https://www.linkedin.com/in/kpbird/"><span class="fab fa-linkedin" aria-label="Join us on Linkedin"></span></a>
+        
+      
+        
+          <a class="ml-2" href="https://medium.com/@kpbird"><span class="fab fa-medium" aria-label="Join us on Medium"></span></a>
+        
+      
+        
+          <a class="ml-2" href="https://twitter.com/kpbird"><span class="fab fa-twitter" aria-label="Join us on Twitter"></span></a>
+        
+      
+    </div>
+    
+  
+
+  <div class="py-2 lead">
+      Make it work, make it right, make it fast. – Kent Beck
+    </div>
+
+  <div class="py-2 copyright">
+    <small>Copyright &#169; 2020 Ketan Parmar <b>&#183;</b> Content license: CC-BY-SA-3.0 <b>&#183;</b> Powered by <a class="font-weight-bold text-reset text-decoration-none" href="https://gohugo.io">Hugo</a> <b>&#183;</b> Theme <a class="font-weight-bold text-reset text-decoration-none" href="https://github.com/Softorage/HugoTheme-VibrantShadows">Vibrant Shadows</a> by <span class="softorage"><a class="font-weight-bold text-reset" href="https://softorage.com">Softorage</a></span></small>
+  </div>
+</footer>
+
+    
+    
+    
+    <script src="/assets/js/main.min.6ff0d57b7558f0225c80bade926a349330bc25d85e7ceff50d911f1156023c3e.js" integrity="sha256-b/DVe3VY8CJcgLrekmo0kzC8JdhefO/1DZEfEVYCPD4=" crossorigin="anonymous"></script>
+    <script src="/assets/js/custom.min.c8274a0cac0477f854e63f09626cc63858bb2bc9db8faecbb2834846952c7fd6.js" integrity="sha256-yCdKDKwEd/hU5j8JYmzGOFi7K8nbj67LsoNIRpUsf9Y=" crossorigin="anonymous"></script>
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Lato&display=swap" rel="stylesheet">
+    
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+  </body>
+</html>
