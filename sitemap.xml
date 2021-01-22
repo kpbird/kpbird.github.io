@@ -3,12 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://kpbird.github.io/tags/architecture/</loc>
-    <lastmod>2019-06-21T00:00:00+00:00</lastmod>
+    <loc>https://kpbird.github.io/tags/graphql/</loc>
+    <lastmod>2021-01-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kpbird.github.io/post/2021-01-22-graphql-tldr/</loc>
+    <lastmod>2021-01-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kpbird.github.io/tags/guide/</loc>
+    <lastmod>2021-01-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://kpbird.github.io/</loc>
+    <lastmod>2021-01-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kpbird.github.io/post/</loc>
+    <lastmod>2021-01-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kpbird.github.io/tags/</loc>
+    <lastmod>2021-01-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kpbird.github.io/tags/tldr/</loc>
+    <lastmod>2021-01-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kpbird.github.io/tags/architecture/</loc>
     <lastmod>2019-06-21T00:00:00+00:00</lastmod>
   </url>
   
@@ -19,16 +49,6 @@
   
   <url>
     <loc>https://kpbird.github.io/post/2019-06-21_microservice-architecture-the-real-challenge-c1561b619cd6/</loc>
-    <lastmod>2019-06-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kpbird.github.io/post/</loc>
-    <lastmod>2019-06-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kpbird.github.io/tags/</loc>
     <lastmod>2019-06-21T00:00:00+00:00</lastmod>
   </url>
   
@@ -180,11 +200,6 @@
   <url>
     <loc>https://kpbird.github.io/post/2015-08-31_go-language-for-java-developer-part-3-2a698797b6b8/</loc>
     <lastmod>2015-08-31T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kpbird.github.io/tags/guide/</loc>
-    <lastmod>2015-08-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>

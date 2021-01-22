@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GraphQL on Ketan Parmar (kpbird)</title>
+    <link>https://kpbird.github.io/tags/graphql/</link>
+    <description>Recent content in GraphQL on Ketan Parmar (kpbird)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright &amp;#169; 2020. All rights reserved.</copyright>
+    <lastBuildDate>Fri, 22 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://kpbird.github.io/tags/graphql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GraphQL - TL;DR</title>
+      <link>https://kpbird.github.io/post/2021-01-22-graphql-tldr/</link>
+      <pubDate>Fri, 22 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://kpbird.github.io/post/2021-01-22-graphql-tldr/</guid>
+      <description>GraphQL — TL;DR 
+ Facebook develops GraphQL in 2015. On 7 November 2018, the GraphQL project was moved from Facebook to the newly-established GraphQL Foundation. Lee Byron https://leebyron.com/ is co-creator of GraphQL at Facebook GraphQL is a data query and manipulation language for APIs. It can be alternative to REST API or co-exist with REST API GraphQL is not a query language of GraphDB but you can use GraphDB with GraphQL.</description>
+    </item>
+    
+  </channel>
+</rss>
