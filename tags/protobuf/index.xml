@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>protobuf on Ketan Parmar (kpbird)</title>
+    <link>https://kpbird.github.io/tags/protobuf/</link>
+    <description>Recent content in protobuf on Ketan Parmar (kpbird)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright &amp;#169; 2020. All rights reserved.</copyright>
+    <lastBuildDate>Tue, 02 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://kpbird.github.io/tags/protobuf/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ProtocolBuffers - TL;DR</title>
+      <link>https://kpbird.github.io/post/2021-02-02-protocolbuffers-tldr/</link>
+      <pubDate>Tue, 02 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://kpbird.github.io/post/2021-02-02-protocolbuffers-tldr/</guid>
+      <description>ProtocolBuffer TL;DR 
+ Protocol buffers are a language-neutral, platform-neutral extensible mechanism for serializing structured data. Protocol buffers are also known as protobuf Protocol buffers are developed by Google for internal use. It is available for the public in 2008. Protobuf is binary serialize protocol, unlike JSON and XML which are text-based human-readable protocol. It’s non-human-readable because of binary serialize. Apache Thrift, Ion, Fast Buffers, FlatBuffers, Cap’n Proto, SBE (Simple Binary Encoding) are some of the alternatives of Protocol Buffers.</description>
+    </item>
+    
+  </channel>
+</rss>
