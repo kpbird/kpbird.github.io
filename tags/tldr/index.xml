@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;#169; 2020. All rights reserved.</copyright>
-    <lastBuildDate>Tue, 02 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://kpbird.github.io/tags/tldr/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 09 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://kpbird.github.io/tags/tldr/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>gRPC - TL;DR</title>
+      <link>https://kpbird.github.io/post/2021-02-09-grpc-tldr/</link>
+      <pubDate>Tue, 09 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://kpbird.github.io/post/2021-02-09-grpc-tldr/</guid>
+      <description>gRPC TL;DR 
+ gRPC system initially developed at Google in 2015 for internal use. It is open-sourced in 2016. gRPC is an open-source remote procedure call (RPC) framework. gRPC is used for a server to server or client to server communication. gRPC is preferred when you need low latency, highly scalable and distributed system. Most common use case of gRPC is to communication between microservices. It can also use in mobile and desktop application to communicate with Server.</description>
+    </item>
+    
     <item>
       <title>ProtocolBuffers - TL;DR</title>
       <link>https://kpbird.github.io/post/2021-02-02-protocolbuffers-tldr/</link>
